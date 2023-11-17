@@ -1,0 +1,11110 @@
+oe	word
+ae	word
+y	word
+e	word
+i	word
+ih	nonword
+uh	nonword
+o	word
+a	word
+u	word
+oe oe	word
+oe ae	word
+oe y	word
+oe e	word
+oe i	word
+oe ih	nonword
+oe uh	nonword
+oe o	nonword
+oe a	nonword
+oe u	nonword
+ae oe	word
+ae ae	word
+ae y	word
+ae e	word
+ae i	word
+ae ih	nonword
+ae uh	nonword
+ae o	nonword
+ae a	nonword
+ae u	nonword
+y oe	word
+y ae	word
+y y	word
+y e	word
+y i	word
+y ih	nonword
+y uh	nonword
+y o	nonword
+y a	nonword
+y u	nonword
+e oe	word
+e ae	word
+e y	word
+e e	word
+e i	word
+e ih	nonword
+e uh	nonword
+e o	word
+e a	word
+e u	word
+i oe	word
+i ae	word
+i y	word
+i e	word
+i i	word
+i ih	nonword
+i uh	nonword
+i o	word
+i a	word
+i u	word
+ih oe	nonword
+ih ae	nonword
+ih y	nonword
+ih e	nonword
+ih i	nonword
+ih ih	nonword
+ih uh	nonword
+ih o	nonword
+ih a	nonword
+ih u	nonword
+uh oe	nonword
+uh ae	nonword
+uh y	nonword
+uh e	nonword
+uh i	nonword
+uh ih	nonword
+uh uh	nonword
+uh o	nonword
+uh a	nonword
+uh u	nonword
+o oe	nonword
+o ae	nonword
+o y	nonword
+o e	word
+o i	word
+o ih	nonword
+o uh	nonword
+o o	word
+o a	word
+o u	word
+a oe	nonword
+a ae	nonword
+a y	nonword
+a e	word
+a i	word
+a ih	nonword
+a uh	nonword
+a o	word
+a a	word
+a u	word
+u oe	nonword
+u ae	nonword
+u y	nonword
+u e	word
+u i	word
+u ih	nonword
+u uh	nonword
+u o	word
+u a	word
+u u	word
+oe oe oe	word
+oe oe ae	word
+oe oe y	word
+oe oe e	word
+oe oe i	word
+oe oe ih	nonword
+oe oe uh	nonword
+oe oe o	nonword
+oe oe a	nonword
+oe oe u	nonword
+oe ae oe	word
+oe ae ae	word
+oe ae y	word
+oe ae e	word
+oe ae i	word
+oe ae ih	nonword
+oe ae uh	nonword
+oe ae o	nonword
+oe ae a	nonword
+oe ae u	nonword
+oe y oe	word
+oe y ae	word
+oe y y	word
+oe y e	word
+oe y i	word
+oe y ih	nonword
+oe y uh	nonword
+oe y o	nonword
+oe y a	nonword
+oe y u	nonword
+oe e oe	word
+oe e ae	word
+oe e y	word
+oe e e	word
+oe e i	word
+oe e ih	nonword
+oe e uh	nonword
+oe e o	nonword
+oe e a	nonword
+oe e u	nonword
+oe i oe	word
+oe i ae	word
+oe i y	word
+oe i e	word
+oe i i	word
+oe i ih	nonword
+oe i uh	nonword
+oe i o	nonword
+oe i a	nonword
+oe i u	nonword
+oe ih oe	nonword
+oe ih ae	nonword
+oe ih y	nonword
+oe ih e	nonword
+oe ih i	nonword
+oe ih ih	nonword
+oe ih uh	nonword
+oe ih o	nonword
+oe ih a	nonword
+oe ih u	nonword
+oe uh oe	nonword
+oe uh ae	nonword
+oe uh y	nonword
+oe uh e	nonword
+oe uh i	nonword
+oe uh ih	nonword
+oe uh uh	nonword
+oe uh o	nonword
+oe uh a	nonword
+oe uh u	nonword
+oe o oe	nonword
+oe o ae	nonword
+oe o y	nonword
+oe o e	nonword
+oe o i	nonword
+oe o ih	nonword
+oe o uh	nonword
+oe o o	nonword
+oe o a	nonword
+oe o u	nonword
+oe a oe	nonword
+oe a ae	nonword
+oe a y	nonword
+oe a e	nonword
+oe a i	nonword
+oe a ih	nonword
+oe a uh	nonword
+oe a o	nonword
+oe a a	nonword
+oe a u	nonword
+oe u oe	nonword
+oe u ae	nonword
+oe u y	nonword
+oe u e	nonword
+oe u i	nonword
+oe u ih	nonword
+oe u uh	nonword
+oe u o	nonword
+oe u a	nonword
+oe u u	nonword
+ae oe oe	word
+ae oe ae	word
+ae oe y	word
+ae oe e	word
+ae oe i	word
+ae oe ih	nonword
+ae oe uh	nonword
+ae oe o	nonword
+ae oe a	nonword
+ae oe u	nonword
+ae ae oe	word
+ae ae ae	word
+ae ae y	word
+ae ae e	word
+ae ae i	word
+ae ae ih	nonword
+ae ae uh	nonword
+ae ae o	nonword
+ae ae a	nonword
+ae ae u	nonword
+ae y oe	word
+ae y ae	word
+ae y y	word
+ae y e	word
+ae y i	word
+ae y ih	nonword
+ae y uh	nonword
+ae y o	nonword
+ae y a	nonword
+ae y u	nonword
+ae e oe	word
+ae e ae	word
+ae e y	word
+ae e e	word
+ae e i	word
+ae e ih	nonword
+ae e uh	nonword
+ae e o	nonword
+ae e a	nonword
+ae e u	nonword
+ae i oe	word
+ae i ae	word
+ae i y	word
+ae i e	word
+ae i i	word
+ae i ih	nonword
+ae i uh	nonword
+ae i o	nonword
+ae i a	nonword
+ae i u	nonword
+ae ih oe	nonword
+ae ih ae	nonword
+ae ih y	nonword
+ae ih e	nonword
+ae ih i	nonword
+ae ih ih	nonword
+ae ih uh	nonword
+ae ih o	nonword
+ae ih a	nonword
+ae ih u	nonword
+ae uh oe	nonword
+ae uh ae	nonword
+ae uh y	nonword
+ae uh e	nonword
+ae uh i	nonword
+ae uh ih	nonword
+ae uh uh	nonword
+ae uh o	nonword
+ae uh a	nonword
+ae uh u	nonword
+ae o oe	nonword
+ae o ae	nonword
+ae o y	nonword
+ae o e	nonword
+ae o i	nonword
+ae o ih	nonword
+ae o uh	nonword
+ae o o	nonword
+ae o a	nonword
+ae o u	nonword
+ae a oe	nonword
+ae a ae	nonword
+ae a y	nonword
+ae a e	nonword
+ae a i	nonword
+ae a ih	nonword
+ae a uh	nonword
+ae a o	nonword
+ae a a	nonword
+ae a u	nonword
+ae u oe	nonword
+ae u ae	nonword
+ae u y	nonword
+ae u e	nonword
+ae u i	nonword
+ae u ih	nonword
+ae u uh	nonword
+ae u o	nonword
+ae u a	nonword
+ae u u	nonword
+y oe oe	word
+y oe ae	word
+y oe y	word
+y oe e	word
+y oe i	word
+y oe ih	nonword
+y oe uh	nonword
+y oe o	nonword
+y oe a	nonword
+y oe u	nonword
+y ae oe	word
+y ae ae	word
+y ae y	word
+y ae e	word
+y ae i	word
+y ae ih	nonword
+y ae uh	nonword
+y ae o	nonword
+y ae a	nonword
+y ae u	nonword
+y y oe	word
+y y ae	word
+y y y	word
+y y e	word
+y y i	word
+y y ih	nonword
+y y uh	nonword
+y y o	nonword
+y y a	nonword
+y y u	nonword
+y e oe	word
+y e ae	word
+y e y	word
+y e e	word
+y e i	word
+y e ih	nonword
+y e uh	nonword
+y e o	nonword
+y e a	nonword
+y e u	nonword
+y i oe	word
+y i ae	word
+y i y	word
+y i e	word
+y i i	word
+y i ih	nonword
+y i uh	nonword
+y i o	nonword
+y i a	nonword
+y i u	nonword
+y ih oe	nonword
+y ih ae	nonword
+y ih y	nonword
+y ih e	nonword
+y ih i	nonword
+y ih ih	nonword
+y ih uh	nonword
+y ih o	nonword
+y ih a	nonword
+y ih u	nonword
+y uh oe	nonword
+y uh ae	nonword
+y uh y	nonword
+y uh e	nonword
+y uh i	nonword
+y uh ih	nonword
+y uh uh	nonword
+y uh o	nonword
+y uh a	nonword
+y uh u	nonword
+y o oe	nonword
+y o ae	nonword
+y o y	nonword
+y o e	nonword
+y o i	nonword
+y o ih	nonword
+y o uh	nonword
+y o o	nonword
+y o a	nonword
+y o u	nonword
+y a oe	nonword
+y a ae	nonword
+y a y	nonword
+y a e	nonword
+y a i	nonword
+y a ih	nonword
+y a uh	nonword
+y a o	nonword
+y a a	nonword
+y a u	nonword
+y u oe	nonword
+y u ae	nonword
+y u y	nonword
+y u e	nonword
+y u i	nonword
+y u ih	nonword
+y u uh	nonword
+y u o	nonword
+y u a	nonword
+y u u	nonword
+e oe oe	word
+e oe ae	word
+e oe y	word
+e oe e	word
+e oe i	word
+e oe ih	nonword
+e oe uh	nonword
+e oe o	nonword
+e oe a	nonword
+e oe u	nonword
+e ae oe	word
+e ae ae	word
+e ae y	word
+e ae e	word
+e ae i	word
+e ae ih	nonword
+e ae uh	nonword
+e ae o	nonword
+e ae a	nonword
+e ae u	nonword
+e y oe	word
+e y ae	word
+e y y	word
+e y e	word
+e y i	word
+e y ih	nonword
+e y uh	nonword
+e y o	nonword
+e y a	nonword
+e y u	nonword
+e e oe	word
+e e ae	word
+e e y	word
+e e e	word
+e e i	word
+e e ih	nonword
+e e uh	nonword
+e e o	word
+e e a	word
+e e u	word
+e i oe	word
+e i ae	word
+e i y	word
+e i e	word
+e i i	word
+e i ih	nonword
+e i uh	nonword
+e i o	word
+e i a	word
+e i u	word
+e ih oe	nonword
+e ih ae	nonword
+e ih y	nonword
+e ih e	nonword
+e ih i	nonword
+e ih ih	nonword
+e ih uh	nonword
+e ih o	nonword
+e ih a	nonword
+e ih u	nonword
+e uh oe	nonword
+e uh ae	nonword
+e uh y	nonword
+e uh e	nonword
+e uh i	nonword
+e uh ih	nonword
+e uh uh	nonword
+e uh o	nonword
+e uh a	nonword
+e uh u	nonword
+e o oe	nonword
+e o ae	nonword
+e o y	nonword
+e o e	word
+e o i	word
+e o ih	nonword
+e o uh	nonword
+e o o	word
+e o a	word
+e o u	word
+e a oe	nonword
+e a ae	nonword
+e a y	nonword
+e a e	word
+e a i	word
+e a ih	nonword
+e a uh	nonword
+e a o	word
+e a a	word
+e a u	word
+e u oe	nonword
+e u ae	nonword
+e u y	nonword
+e u e	word
+e u i	word
+e u ih	nonword
+e u uh	nonword
+e u o	word
+e u a	word
+e u u	word
+i oe oe	word
+i oe ae	word
+i oe y	word
+i oe e	word
+i oe i	word
+i oe ih	nonword
+i oe uh	nonword
+i oe o	nonword
+i oe a	nonword
+i oe u	nonword
+i ae oe	word
+i ae ae	word
+i ae y	word
+i ae e	word
+i ae i	word
+i ae ih	nonword
+i ae uh	nonword
+i ae o	nonword
+i ae a	nonword
+i ae u	nonword
+i y oe	word
+i y ae	word
+i y y	word
+i y e	word
+i y i	word
+i y ih	nonword
+i y uh	nonword
+i y o	nonword
+i y a	nonword
+i y u	nonword
+i e oe	word
+i e ae	word
+i e y	word
+i e e	word
+i e i	word
+i e ih	nonword
+i e uh	nonword
+i e o	word
+i e a	word
+i e u	word
+i i oe	word
+i i ae	word
+i i y	word
+i i e	word
+i i i	word
+i i ih	nonword
+i i uh	nonword
+i i o	word
+i i a	word
+i i u	word
+i ih oe	nonword
+i ih ae	nonword
+i ih y	nonword
+i ih e	nonword
+i ih i	nonword
+i ih ih	nonword
+i ih uh	nonword
+i ih o	nonword
+i ih a	nonword
+i ih u	nonword
+i uh oe	nonword
+i uh ae	nonword
+i uh y	nonword
+i uh e	nonword
+i uh i	nonword
+i uh ih	nonword
+i uh uh	nonword
+i uh o	nonword
+i uh a	nonword
+i uh u	nonword
+i o oe	nonword
+i o ae	nonword
+i o y	nonword
+i o e	word
+i o i	word
+i o ih	nonword
+i o uh	nonword
+i o o	word
+i o a	word
+i o u	word
+i a oe	nonword
+i a ae	nonword
+i a y	nonword
+i a e	word
+i a i	word
+i a ih	nonword
+i a uh	nonword
+i a o	word
+i a a	word
+i a u	word
+i u oe	nonword
+i u ae	nonword
+i u y	nonword
+i u e	word
+i u i	word
+i u ih	nonword
+i u uh	nonword
+i u o	word
+i u a	word
+i u u	word
+ih oe oe	nonword
+ih oe ae	nonword
+ih oe y	nonword
+ih oe e	nonword
+ih oe i	nonword
+ih oe ih	nonword
+ih oe uh	nonword
+ih oe o	nonword
+ih oe a	nonword
+ih oe u	nonword
+ih ae oe	nonword
+ih ae ae	nonword
+ih ae y	nonword
+ih ae e	nonword
+ih ae i	nonword
+ih ae ih	nonword
+ih ae uh	nonword
+ih ae o	nonword
+ih ae a	nonword
+ih ae u	nonword
+ih y oe	nonword
+ih y ae	nonword
+ih y y	nonword
+ih y e	nonword
+ih y i	nonword
+ih y ih	nonword
+ih y uh	nonword
+ih y o	nonword
+ih y a	nonword
+ih y u	nonword
+ih e oe	nonword
+ih e ae	nonword
+ih e y	nonword
+ih e e	nonword
+ih e i	nonword
+ih e ih	nonword
+ih e uh	nonword
+ih e o	nonword
+ih e a	nonword
+ih e u	nonword
+ih i oe	nonword
+ih i ae	nonword
+ih i y	nonword
+ih i e	nonword
+ih i i	nonword
+ih i ih	nonword
+ih i uh	nonword
+ih i o	nonword
+ih i a	nonword
+ih i u	nonword
+ih ih oe	nonword
+ih ih ae	nonword
+ih ih y	nonword
+ih ih e	nonword
+ih ih i	nonword
+ih ih ih	nonword
+ih ih uh	nonword
+ih ih o	nonword
+ih ih a	nonword
+ih ih u	nonword
+ih uh oe	nonword
+ih uh ae	nonword
+ih uh y	nonword
+ih uh e	nonword
+ih uh i	nonword
+ih uh ih	nonword
+ih uh uh	nonword
+ih uh o	nonword
+ih uh a	nonword
+ih uh u	nonword
+ih o oe	nonword
+ih o ae	nonword
+ih o y	nonword
+ih o e	nonword
+ih o i	nonword
+ih o ih	nonword
+ih o uh	nonword
+ih o o	nonword
+ih o a	nonword
+ih o u	nonword
+ih a oe	nonword
+ih a ae	nonword
+ih a y	nonword
+ih a e	nonword
+ih a i	nonword
+ih a ih	nonword
+ih a uh	nonword
+ih a o	nonword
+ih a a	nonword
+ih a u	nonword
+ih u oe	nonword
+ih u ae	nonword
+ih u y	nonword
+ih u e	nonword
+ih u i	nonword
+ih u ih	nonword
+ih u uh	nonword
+ih u o	nonword
+ih u a	nonword
+ih u u	nonword
+uh oe oe	nonword
+uh oe ae	nonword
+uh oe y	nonword
+uh oe e	nonword
+uh oe i	nonword
+uh oe ih	nonword
+uh oe uh	nonword
+uh oe o	nonword
+uh oe a	nonword
+uh oe u	nonword
+uh ae oe	nonword
+uh ae ae	nonword
+uh ae y	nonword
+uh ae e	nonword
+uh ae i	nonword
+uh ae ih	nonword
+uh ae uh	nonword
+uh ae o	nonword
+uh ae a	nonword
+uh ae u	nonword
+uh y oe	nonword
+uh y ae	nonword
+uh y y	nonword
+uh y e	nonword
+uh y i	nonword
+uh y ih	nonword
+uh y uh	nonword
+uh y o	nonword
+uh y a	nonword
+uh y u	nonword
+uh e oe	nonword
+uh e ae	nonword
+uh e y	nonword
+uh e e	nonword
+uh e i	nonword
+uh e ih	nonword
+uh e uh	nonword
+uh e o	nonword
+uh e a	nonword
+uh e u	nonword
+uh i oe	nonword
+uh i ae	nonword
+uh i y	nonword
+uh i e	nonword
+uh i i	nonword
+uh i ih	nonword
+uh i uh	nonword
+uh i o	nonword
+uh i a	nonword
+uh i u	nonword
+uh ih oe	nonword
+uh ih ae	nonword
+uh ih y	nonword
+uh ih e	nonword
+uh ih i	nonword
+uh ih ih	nonword
+uh ih uh	nonword
+uh ih o	nonword
+uh ih a	nonword
+uh ih u	nonword
+uh uh oe	nonword
+uh uh ae	nonword
+uh uh y	nonword
+uh uh e	nonword
+uh uh i	nonword
+uh uh ih	nonword
+uh uh uh	nonword
+uh uh o	nonword
+uh uh a	nonword
+uh uh u	nonword
+uh o oe	nonword
+uh o ae	nonword
+uh o y	nonword
+uh o e	nonword
+uh o i	nonword
+uh o ih	nonword
+uh o uh	nonword
+uh o o	nonword
+uh o a	nonword
+uh o u	nonword
+uh a oe	nonword
+uh a ae	nonword
+uh a y	nonword
+uh a e	nonword
+uh a i	nonword
+uh a ih	nonword
+uh a uh	nonword
+uh a o	nonword
+uh a a	nonword
+uh a u	nonword
+uh u oe	nonword
+uh u ae	nonword
+uh u y	nonword
+uh u e	nonword
+uh u i	nonword
+uh u ih	nonword
+uh u uh	nonword
+uh u o	nonword
+uh u a	nonword
+uh u u	nonword
+o oe oe	nonword
+o oe ae	nonword
+o oe y	nonword
+o oe e	nonword
+o oe i	nonword
+o oe ih	nonword
+o oe uh	nonword
+o oe o	nonword
+o oe a	nonword
+o oe u	nonword
+o ae oe	nonword
+o ae ae	nonword
+o ae y	nonword
+o ae e	nonword
+o ae i	nonword
+o ae ih	nonword
+o ae uh	nonword
+o ae o	nonword
+o ae a	nonword
+o ae u	nonword
+o y oe	nonword
+o y ae	nonword
+o y y	nonword
+o y e	nonword
+o y i	nonword
+o y ih	nonword
+o y uh	nonword
+o y o	nonword
+o y a	nonword
+o y u	nonword
+o e oe	nonword
+o e ae	nonword
+o e y	nonword
+o e e	word
+o e i	word
+o e ih	nonword
+o e uh	nonword
+o e o	word
+o e a	word
+o e u	word
+o i oe	nonword
+o i ae	nonword
+o i y	nonword
+o i e	word
+o i i	word
+o i ih	nonword
+o i uh	nonword
+o i o	word
+o i a	word
+o i u	word
+o ih oe	nonword
+o ih ae	nonword
+o ih y	nonword
+o ih e	nonword
+o ih i	nonword
+o ih ih	nonword
+o ih uh	nonword
+o ih o	nonword
+o ih a	nonword
+o ih u	nonword
+o uh oe	nonword
+o uh ae	nonword
+o uh y	nonword
+o uh e	nonword
+o uh i	nonword
+o uh ih	nonword
+o uh uh	nonword
+o uh o	nonword
+o uh a	nonword
+o uh u	nonword
+o o oe	nonword
+o o ae	nonword
+o o y	nonword
+o o e	word
+o o i	word
+o o ih	nonword
+o o uh	nonword
+o o o	word
+o o a	word
+o o u	word
+o a oe	nonword
+o a ae	nonword
+o a y	nonword
+o a e	word
+o a i	word
+o a ih	nonword
+o a uh	nonword
+o a o	word
+o a a	word
+o a u	word
+o u oe	nonword
+o u ae	nonword
+o u y	nonword
+o u e	word
+o u i	word
+o u ih	nonword
+o u uh	nonword
+o u o	word
+o u a	word
+o u u	word
+a oe oe	nonword
+a oe ae	nonword
+a oe y	nonword
+a oe e	nonword
+a oe i	nonword
+a oe ih	nonword
+a oe uh	nonword
+a oe o	nonword
+a oe a	nonword
+a oe u	nonword
+a ae oe	nonword
+a ae ae	nonword
+a ae y	nonword
+a ae e	nonword
+a ae i	nonword
+a ae ih	nonword
+a ae uh	nonword
+a ae o	nonword
+a ae a	nonword
+a ae u	nonword
+a y oe	nonword
+a y ae	nonword
+a y y	nonword
+a y e	nonword
+a y i	nonword
+a y ih	nonword
+a y uh	nonword
+a y o	nonword
+a y a	nonword
+a y u	nonword
+a e oe	nonword
+a e ae	nonword
+a e y	nonword
+a e e	word
+a e i	word
+a e ih	nonword
+a e uh	nonword
+a e o	word
+a e a	word
+a e u	word
+a i oe	nonword
+a i ae	nonword
+a i y	nonword
+a i e	word
+a i i	word
+a i ih	nonword
+a i uh	nonword
+a i o	word
+a i a	word
+a i u	word
+a ih oe	nonword
+a ih ae	nonword
+a ih y	nonword
+a ih e	nonword
+a ih i	nonword
+a ih ih	nonword
+a ih uh	nonword
+a ih o	nonword
+a ih a	nonword
+a ih u	nonword
+a uh oe	nonword
+a uh ae	nonword
+a uh y	nonword
+a uh e	nonword
+a uh i	nonword
+a uh ih	nonword
+a uh uh	nonword
+a uh o	nonword
+a uh a	nonword
+a uh u	nonword
+a o oe	nonword
+a o ae	nonword
+a o y	nonword
+a o e	word
+a o i	word
+a o ih	nonword
+a o uh	nonword
+a o o	word
+a o a	word
+a o u	word
+a a oe	nonword
+a a ae	nonword
+a a y	nonword
+a a e	word
+a a i	word
+a a ih	nonword
+a a uh	nonword
+a a o	word
+a a a	word
+a a u	word
+a u oe	nonword
+a u ae	nonword
+a u y	nonword
+a u e	word
+a u i	word
+a u ih	nonword
+a u uh	nonword
+a u o	word
+a u a	word
+a u u	word
+u oe oe	nonword
+u oe ae	nonword
+u oe y	nonword
+u oe e	nonword
+u oe i	nonword
+u oe ih	nonword
+u oe uh	nonword
+u oe o	nonword
+u oe a	nonword
+u oe u	nonword
+u ae oe	nonword
+u ae ae	nonword
+u ae y	nonword
+u ae e	nonword
+u ae i	nonword
+u ae ih	nonword
+u ae uh	nonword
+u ae o	nonword
+u ae a	nonword
+u ae u	nonword
+u y oe	nonword
+u y ae	nonword
+u y y	nonword
+u y e	nonword
+u y i	nonword
+u y ih	nonword
+u y uh	nonword
+u y o	nonword
+u y a	nonword
+u y u	nonword
+u e oe	nonword
+u e ae	nonword
+u e y	nonword
+u e e	word
+u e i	word
+u e ih	nonword
+u e uh	nonword
+u e o	word
+u e a	word
+u e u	word
+u i oe	nonword
+u i ae	nonword
+u i y	nonword
+u i e	word
+u i i	word
+u i ih	nonword
+u i uh	nonword
+u i o	word
+u i a	word
+u i u	word
+u ih oe	nonword
+u ih ae	nonword
+u ih y	nonword
+u ih e	nonword
+u ih i	nonword
+u ih ih	nonword
+u ih uh	nonword
+u ih o	nonword
+u ih a	nonword
+u ih u	nonword
+u uh oe	nonword
+u uh ae	nonword
+u uh y	nonword
+u uh e	nonword
+u uh i	nonword
+u uh ih	nonword
+u uh uh	nonword
+u uh o	nonword
+u uh a	nonword
+u uh u	nonword
+u o oe	nonword
+u o ae	nonword
+u o y	nonword
+u o e	word
+u o i	word
+u o ih	nonword
+u o uh	nonword
+u o o	word
+u o a	word
+u o u	word
+u a oe	nonword
+u a ae	nonword
+u a y	nonword
+u a e	word
+u a i	word
+u a ih	nonword
+u a uh	nonword
+u a o	word
+u a a	word
+u a u	word
+u u oe	nonword
+u u ae	nonword
+u u y	nonword
+u u e	word
+u u i	word
+u u ih	nonword
+u u uh	nonword
+u u o	word
+u u a	word
+u u u	word
+oe oe oe oe	word
+oe oe oe ae	word
+oe oe oe y	word
+oe oe oe e	word
+oe oe oe i	word
+oe oe oe ih	nonword
+oe oe oe uh	nonword
+oe oe oe o	nonword
+oe oe oe a	nonword
+oe oe oe u	nonword
+oe oe ae oe	word
+oe oe ae ae	word
+oe oe ae y	word
+oe oe ae e	word
+oe oe ae i	word
+oe oe ae ih	nonword
+oe oe ae uh	nonword
+oe oe ae o	nonword
+oe oe ae a	nonword
+oe oe ae u	nonword
+oe oe y oe	word
+oe oe y ae	word
+oe oe y y	word
+oe oe y e	word
+oe oe y i	word
+oe oe y ih	nonword
+oe oe y uh	nonword
+oe oe y o	nonword
+oe oe y a	nonword
+oe oe y u	nonword
+oe oe e oe	word
+oe oe e ae	word
+oe oe e y	word
+oe oe e e	word
+oe oe e i	word
+oe oe e ih	nonword
+oe oe e uh	nonword
+oe oe e o	nonword
+oe oe e a	nonword
+oe oe e u	nonword
+oe oe i oe	word
+oe oe i ae	word
+oe oe i y	word
+oe oe i e	word
+oe oe i i	word
+oe oe i ih	nonword
+oe oe i uh	nonword
+oe oe i o	nonword
+oe oe i a	nonword
+oe oe i u	nonword
+oe oe ih oe	nonword
+oe oe ih ae	nonword
+oe oe ih y	nonword
+oe oe ih e	nonword
+oe oe ih i	nonword
+oe oe ih ih	nonword
+oe oe ih uh	nonword
+oe oe ih o	nonword
+oe oe ih a	nonword
+oe oe ih u	nonword
+oe oe uh oe	nonword
+oe oe uh ae	nonword
+oe oe uh y	nonword
+oe oe uh e	nonword
+oe oe uh i	nonword
+oe oe uh ih	nonword
+oe oe uh uh	nonword
+oe oe uh o	nonword
+oe oe uh a	nonword
+oe oe uh u	nonword
+oe oe o oe	nonword
+oe oe o ae	nonword
+oe oe o y	nonword
+oe oe o e	nonword
+oe oe o i	nonword
+oe oe o ih	nonword
+oe oe o uh	nonword
+oe oe o o	nonword
+oe oe o a	nonword
+oe oe o u	nonword
+oe oe a oe	nonword
+oe oe a ae	nonword
+oe oe a y	nonword
+oe oe a e	nonword
+oe oe a i	nonword
+oe oe a ih	nonword
+oe oe a uh	nonword
+oe oe a o	nonword
+oe oe a a	nonword
+oe oe a u	nonword
+oe oe u oe	nonword
+oe oe u ae	nonword
+oe oe u y	nonword
+oe oe u e	nonword
+oe oe u i	nonword
+oe oe u ih	nonword
+oe oe u uh	nonword
+oe oe u o	nonword
+oe oe u a	nonword
+oe oe u u	nonword
+oe ae oe oe	word
+oe ae oe ae	word
+oe ae oe y	word
+oe ae oe e	word
+oe ae oe i	word
+oe ae oe ih	nonword
+oe ae oe uh	nonword
+oe ae oe o	nonword
+oe ae oe a	nonword
+oe ae oe u	nonword
+oe ae ae oe	word
+oe ae ae ae	word
+oe ae ae y	word
+oe ae ae e	word
+oe ae ae i	word
+oe ae ae ih	nonword
+oe ae ae uh	nonword
+oe ae ae o	nonword
+oe ae ae a	nonword
+oe ae ae u	nonword
+oe ae y oe	word
+oe ae y ae	word
+oe ae y y	word
+oe ae y e	word
+oe ae y i	word
+oe ae y ih	nonword
+oe ae y uh	nonword
+oe ae y o	nonword
+oe ae y a	nonword
+oe ae y u	nonword
+oe ae e oe	word
+oe ae e ae	word
+oe ae e y	word
+oe ae e e	word
+oe ae e i	word
+oe ae e ih	nonword
+oe ae e uh	nonword
+oe ae e o	nonword
+oe ae e a	nonword
+oe ae e u	nonword
+oe ae i oe	word
+oe ae i ae	word
+oe ae i y	word
+oe ae i e	word
+oe ae i i	word
+oe ae i ih	nonword
+oe ae i uh	nonword
+oe ae i o	nonword
+oe ae i a	nonword
+oe ae i u	nonword
+oe ae ih oe	nonword
+oe ae ih ae	nonword
+oe ae ih y	nonword
+oe ae ih e	nonword
+oe ae ih i	nonword
+oe ae ih ih	nonword
+oe ae ih uh	nonword
+oe ae ih o	nonword
+oe ae ih a	nonword
+oe ae ih u	nonword
+oe ae uh oe	nonword
+oe ae uh ae	nonword
+oe ae uh y	nonword
+oe ae uh e	nonword
+oe ae uh i	nonword
+oe ae uh ih	nonword
+oe ae uh uh	nonword
+oe ae uh o	nonword
+oe ae uh a	nonword
+oe ae uh u	nonword
+oe ae o oe	nonword
+oe ae o ae	nonword
+oe ae o y	nonword
+oe ae o e	nonword
+oe ae o i	nonword
+oe ae o ih	nonword
+oe ae o uh	nonword
+oe ae o o	nonword
+oe ae o a	nonword
+oe ae o u	nonword
+oe ae a oe	nonword
+oe ae a ae	nonword
+oe ae a y	nonword
+oe ae a e	nonword
+oe ae a i	nonword
+oe ae a ih	nonword
+oe ae a uh	nonword
+oe ae a o	nonword
+oe ae a a	nonword
+oe ae a u	nonword
+oe ae u oe	nonword
+oe ae u ae	nonword
+oe ae u y	nonword
+oe ae u e	nonword
+oe ae u i	nonword
+oe ae u ih	nonword
+oe ae u uh	nonword
+oe ae u o	nonword
+oe ae u a	nonword
+oe ae u u	nonword
+oe y oe oe	word
+oe y oe ae	word
+oe y oe y	word
+oe y oe e	word
+oe y oe i	word
+oe y oe ih	nonword
+oe y oe uh	nonword
+oe y oe o	nonword
+oe y oe a	nonword
+oe y oe u	nonword
+oe y ae oe	word
+oe y ae ae	word
+oe y ae y	word
+oe y ae e	word
+oe y ae i	word
+oe y ae ih	nonword
+oe y ae uh	nonword
+oe y ae o	nonword
+oe y ae a	nonword
+oe y ae u	nonword
+oe y y oe	word
+oe y y ae	word
+oe y y y	word
+oe y y e	word
+oe y y i	word
+oe y y ih	nonword
+oe y y uh	nonword
+oe y y o	nonword
+oe y y a	nonword
+oe y y u	nonword
+oe y e oe	word
+oe y e ae	word
+oe y e y	word
+oe y e e	word
+oe y e i	word
+oe y e ih	nonword
+oe y e uh	nonword
+oe y e o	nonword
+oe y e a	nonword
+oe y e u	nonword
+oe y i oe	word
+oe y i ae	word
+oe y i y	word
+oe y i e	word
+oe y i i	word
+oe y i ih	nonword
+oe y i uh	nonword
+oe y i o	nonword
+oe y i a	nonword
+oe y i u	nonword
+oe y ih oe	nonword
+oe y ih ae	nonword
+oe y ih y	nonword
+oe y ih e	nonword
+oe y ih i	nonword
+oe y ih ih	nonword
+oe y ih uh	nonword
+oe y ih o	nonword
+oe y ih a	nonword
+oe y ih u	nonword
+oe y uh oe	nonword
+oe y uh ae	nonword
+oe y uh y	nonword
+oe y uh e	nonword
+oe y uh i	nonword
+oe y uh ih	nonword
+oe y uh uh	nonword
+oe y uh o	nonword
+oe y uh a	nonword
+oe y uh u	nonword
+oe y o oe	nonword
+oe y o ae	nonword
+oe y o y	nonword
+oe y o e	nonword
+oe y o i	nonword
+oe y o ih	nonword
+oe y o uh	nonword
+oe y o o	nonword
+oe y o a	nonword
+oe y o u	nonword
+oe y a oe	nonword
+oe y a ae	nonword
+oe y a y	nonword
+oe y a e	nonword
+oe y a i	nonword
+oe y a ih	nonword
+oe y a uh	nonword
+oe y a o	nonword
+oe y a a	nonword
+oe y a u	nonword
+oe y u oe	nonword
+oe y u ae	nonword
+oe y u y	nonword
+oe y u e	nonword
+oe y u i	nonword
+oe y u ih	nonword
+oe y u uh	nonword
+oe y u o	nonword
+oe y u a	nonword
+oe y u u	nonword
+oe e oe oe	word
+oe e oe ae	word
+oe e oe y	word
+oe e oe e	word
+oe e oe i	word
+oe e oe ih	nonword
+oe e oe uh	nonword
+oe e oe o	nonword
+oe e oe a	nonword
+oe e oe u	nonword
+oe e ae oe	word
+oe e ae ae	word
+oe e ae y	word
+oe e ae e	word
+oe e ae i	word
+oe e ae ih	nonword
+oe e ae uh	nonword
+oe e ae o	nonword
+oe e ae a	nonword
+oe e ae u	nonword
+oe e y oe	word
+oe e y ae	word
+oe e y y	word
+oe e y e	word
+oe e y i	word
+oe e y ih	nonword
+oe e y uh	nonword
+oe e y o	nonword
+oe e y a	nonword
+oe e y u	nonword
+oe e e oe	word
+oe e e ae	word
+oe e e y	word
+oe e e e	word
+oe e e i	word
+oe e e ih	nonword
+oe e e uh	nonword
+oe e e o	nonword
+oe e e a	nonword
+oe e e u	nonword
+oe e i oe	word
+oe e i ae	word
+oe e i y	word
+oe e i e	word
+oe e i i	word
+oe e i ih	nonword
+oe e i uh	nonword
+oe e i o	nonword
+oe e i a	nonword
+oe e i u	nonword
+oe e ih oe	nonword
+oe e ih ae	nonword
+oe e ih y	nonword
+oe e ih e	nonword
+oe e ih i	nonword
+oe e ih ih	nonword
+oe e ih uh	nonword
+oe e ih o	nonword
+oe e ih a	nonword
+oe e ih u	nonword
+oe e uh oe	nonword
+oe e uh ae	nonword
+oe e uh y	nonword
+oe e uh e	nonword
+oe e uh i	nonword
+oe e uh ih	nonword
+oe e uh uh	nonword
+oe e uh o	nonword
+oe e uh a	nonword
+oe e uh u	nonword
+oe e o oe	nonword
+oe e o ae	nonword
+oe e o y	nonword
+oe e o e	nonword
+oe e o i	nonword
+oe e o ih	nonword
+oe e o uh	nonword
+oe e o o	nonword
+oe e o a	nonword
+oe e o u	nonword
+oe e a oe	nonword
+oe e a ae	nonword
+oe e a y	nonword
+oe e a e	nonword
+oe e a i	nonword
+oe e a ih	nonword
+oe e a uh	nonword
+oe e a o	nonword
+oe e a a	nonword
+oe e a u	nonword
+oe e u oe	nonword
+oe e u ae	nonword
+oe e u y	nonword
+oe e u e	nonword
+oe e u i	nonword
+oe e u ih	nonword
+oe e u uh	nonword
+oe e u o	nonword
+oe e u a	nonword
+oe e u u	nonword
+oe i oe oe	word
+oe i oe ae	word
+oe i oe y	word
+oe i oe e	word
+oe i oe i	word
+oe i oe ih	nonword
+oe i oe uh	nonword
+oe i oe o	nonword
+oe i oe a	nonword
+oe i oe u	nonword
+oe i ae oe	word
+oe i ae ae	word
+oe i ae y	word
+oe i ae e	word
+oe i ae i	word
+oe i ae ih	nonword
+oe i ae uh	nonword
+oe i ae o	nonword
+oe i ae a	nonword
+oe i ae u	nonword
+oe i y oe	word
+oe i y ae	word
+oe i y y	word
+oe i y e	word
+oe i y i	word
+oe i y ih	nonword
+oe i y uh	nonword
+oe i y o	nonword
+oe i y a	nonword
+oe i y u	nonword
+oe i e oe	word
+oe i e ae	word
+oe i e y	word
+oe i e e	word
+oe i e i	word
+oe i e ih	nonword
+oe i e uh	nonword
+oe i e o	nonword
+oe i e a	nonword
+oe i e u	nonword
+oe i i oe	word
+oe i i ae	word
+oe i i y	word
+oe i i e	word
+oe i i i	word
+oe i i ih	nonword
+oe i i uh	nonword
+oe i i o	nonword
+oe i i a	nonword
+oe i i u	nonword
+oe i ih oe	nonword
+oe i ih ae	nonword
+oe i ih y	nonword
+oe i ih e	nonword
+oe i ih i	nonword
+oe i ih ih	nonword
+oe i ih uh	nonword
+oe i ih o	nonword
+oe i ih a	nonword
+oe i ih u	nonword
+oe i uh oe	nonword
+oe i uh ae	nonword
+oe i uh y	nonword
+oe i uh e	nonword
+oe i uh i	nonword
+oe i uh ih	nonword
+oe i uh uh	nonword
+oe i uh o	nonword
+oe i uh a	nonword
+oe i uh u	nonword
+oe i o oe	nonword
+oe i o ae	nonword
+oe i o y	nonword
+oe i o e	nonword
+oe i o i	nonword
+oe i o ih	nonword
+oe i o uh	nonword
+oe i o o	nonword
+oe i o a	nonword
+oe i o u	nonword
+oe i a oe	nonword
+oe i a ae	nonword
+oe i a y	nonword
+oe i a e	nonword
+oe i a i	nonword
+oe i a ih	nonword
+oe i a uh	nonword
+oe i a o	nonword
+oe i a a	nonword
+oe i a u	nonword
+oe i u oe	nonword
+oe i u ae	nonword
+oe i u y	nonword
+oe i u e	nonword
+oe i u i	nonword
+oe i u ih	nonword
+oe i u uh	nonword
+oe i u o	nonword
+oe i u a	nonword
+oe i u u	nonword
+oe ih oe oe	nonword
+oe ih oe ae	nonword
+oe ih oe y	nonword
+oe ih oe e	nonword
+oe ih oe i	nonword
+oe ih oe ih	nonword
+oe ih oe uh	nonword
+oe ih oe o	nonword
+oe ih oe a	nonword
+oe ih oe u	nonword
+oe ih ae oe	nonword
+oe ih ae ae	nonword
+oe ih ae y	nonword
+oe ih ae e	nonword
+oe ih ae i	nonword
+oe ih ae ih	nonword
+oe ih ae uh	nonword
+oe ih ae o	nonword
+oe ih ae a	nonword
+oe ih ae u	nonword
+oe ih y oe	nonword
+oe ih y ae	nonword
+oe ih y y	nonword
+oe ih y e	nonword
+oe ih y i	nonword
+oe ih y ih	nonword
+oe ih y uh	nonword
+oe ih y o	nonword
+oe ih y a	nonword
+oe ih y u	nonword
+oe ih e oe	nonword
+oe ih e ae	nonword
+oe ih e y	nonword
+oe ih e e	nonword
+oe ih e i	nonword
+oe ih e ih	nonword
+oe ih e uh	nonword
+oe ih e o	nonword
+oe ih e a	nonword
+oe ih e u	nonword
+oe ih i oe	nonword
+oe ih i ae	nonword
+oe ih i y	nonword
+oe ih i e	nonword
+oe ih i i	nonword
+oe ih i ih	nonword
+oe ih i uh	nonword
+oe ih i o	nonword
+oe ih i a	nonword
+oe ih i u	nonword
+oe ih ih oe	nonword
+oe ih ih ae	nonword
+oe ih ih y	nonword
+oe ih ih e	nonword
+oe ih ih i	nonword
+oe ih ih ih	nonword
+oe ih ih uh	nonword
+oe ih ih o	nonword
+oe ih ih a	nonword
+oe ih ih u	nonword
+oe ih uh oe	nonword
+oe ih uh ae	nonword
+oe ih uh y	nonword
+oe ih uh e	nonword
+oe ih uh i	nonword
+oe ih uh ih	nonword
+oe ih uh uh	nonword
+oe ih uh o	nonword
+oe ih uh a	nonword
+oe ih uh u	nonword
+oe ih o oe	nonword
+oe ih o ae	nonword
+oe ih o y	nonword
+oe ih o e	nonword
+oe ih o i	nonword
+oe ih o ih	nonword
+oe ih o uh	nonword
+oe ih o o	nonword
+oe ih o a	nonword
+oe ih o u	nonword
+oe ih a oe	nonword
+oe ih a ae	nonword
+oe ih a y	nonword
+oe ih a e	nonword
+oe ih a i	nonword
+oe ih a ih	nonword
+oe ih a uh	nonword
+oe ih a o	nonword
+oe ih a a	nonword
+oe ih a u	nonword
+oe ih u oe	nonword
+oe ih u ae	nonword
+oe ih u y	nonword
+oe ih u e	nonword
+oe ih u i	nonword
+oe ih u ih	nonword
+oe ih u uh	nonword
+oe ih u o	nonword
+oe ih u a	nonword
+oe ih u u	nonword
+oe uh oe oe	nonword
+oe uh oe ae	nonword
+oe uh oe y	nonword
+oe uh oe e	nonword
+oe uh oe i	nonword
+oe uh oe ih	nonword
+oe uh oe uh	nonword
+oe uh oe o	nonword
+oe uh oe a	nonword
+oe uh oe u	nonword
+oe uh ae oe	nonword
+oe uh ae ae	nonword
+oe uh ae y	nonword
+oe uh ae e	nonword
+oe uh ae i	nonword
+oe uh ae ih	nonword
+oe uh ae uh	nonword
+oe uh ae o	nonword
+oe uh ae a	nonword
+oe uh ae u	nonword
+oe uh y oe	nonword
+oe uh y ae	nonword
+oe uh y y	nonword
+oe uh y e	nonword
+oe uh y i	nonword
+oe uh y ih	nonword
+oe uh y uh	nonword
+oe uh y o	nonword
+oe uh y a	nonword
+oe uh y u	nonword
+oe uh e oe	nonword
+oe uh e ae	nonword
+oe uh e y	nonword
+oe uh e e	nonword
+oe uh e i	nonword
+oe uh e ih	nonword
+oe uh e uh	nonword
+oe uh e o	nonword
+oe uh e a	nonword
+oe uh e u	nonword
+oe uh i oe	nonword
+oe uh i ae	nonword
+oe uh i y	nonword
+oe uh i e	nonword
+oe uh i i	nonword
+oe uh i ih	nonword
+oe uh i uh	nonword
+oe uh i o	nonword
+oe uh i a	nonword
+oe uh i u	nonword
+oe uh ih oe	nonword
+oe uh ih ae	nonword
+oe uh ih y	nonword
+oe uh ih e	nonword
+oe uh ih i	nonword
+oe uh ih ih	nonword
+oe uh ih uh	nonword
+oe uh ih o	nonword
+oe uh ih a	nonword
+oe uh ih u	nonword
+oe uh uh oe	nonword
+oe uh uh ae	nonword
+oe uh uh y	nonword
+oe uh uh e	nonword
+oe uh uh i	nonword
+oe uh uh ih	nonword
+oe uh uh uh	nonword
+oe uh uh o	nonword
+oe uh uh a	nonword
+oe uh uh u	nonword
+oe uh o oe	nonword
+oe uh o ae	nonword
+oe uh o y	nonword
+oe uh o e	nonword
+oe uh o i	nonword
+oe uh o ih	nonword
+oe uh o uh	nonword
+oe uh o o	nonword
+oe uh o a	nonword
+oe uh o u	nonword
+oe uh a oe	nonword
+oe uh a ae	nonword
+oe uh a y	nonword
+oe uh a e	nonword
+oe uh a i	nonword
+oe uh a ih	nonword
+oe uh a uh	nonword
+oe uh a o	nonword
+oe uh a a	nonword
+oe uh a u	nonword
+oe uh u oe	nonword
+oe uh u ae	nonword
+oe uh u y	nonword
+oe uh u e	nonword
+oe uh u i	nonword
+oe uh u ih	nonword
+oe uh u uh	nonword
+oe uh u o	nonword
+oe uh u a	nonword
+oe uh u u	nonword
+oe o oe oe	nonword
+oe o oe ae	nonword
+oe o oe y	nonword
+oe o oe e	nonword
+oe o oe i	nonword
+oe o oe ih	nonword
+oe o oe uh	nonword
+oe o oe o	nonword
+oe o oe a	nonword
+oe o oe u	nonword
+oe o ae oe	nonword
+oe o ae ae	nonword
+oe o ae y	nonword
+oe o ae e	nonword
+oe o ae i	nonword
+oe o ae ih	nonword
+oe o ae uh	nonword
+oe o ae o	nonword
+oe o ae a	nonword
+oe o ae u	nonword
+oe o y oe	nonword
+oe o y ae	nonword
+oe o y y	nonword
+oe o y e	nonword
+oe o y i	nonword
+oe o y ih	nonword
+oe o y uh	nonword
+oe o y o	nonword
+oe o y a	nonword
+oe o y u	nonword
+oe o e oe	nonword
+oe o e ae	nonword
+oe o e y	nonword
+oe o e e	nonword
+oe o e i	nonword
+oe o e ih	nonword
+oe o e uh	nonword
+oe o e o	nonword
+oe o e a	nonword
+oe o e u	nonword
+oe o i oe	nonword
+oe o i ae	nonword
+oe o i y	nonword
+oe o i e	nonword
+oe o i i	nonword
+oe o i ih	nonword
+oe o i uh	nonword
+oe o i o	nonword
+oe o i a	nonword
+oe o i u	nonword
+oe o ih oe	nonword
+oe o ih ae	nonword
+oe o ih y	nonword
+oe o ih e	nonword
+oe o ih i	nonword
+oe o ih ih	nonword
+oe o ih uh	nonword
+oe o ih o	nonword
+oe o ih a	nonword
+oe o ih u	nonword
+oe o uh oe	nonword
+oe o uh ae	nonword
+oe o uh y	nonword
+oe o uh e	nonword
+oe o uh i	nonword
+oe o uh ih	nonword
+oe o uh uh	nonword
+oe o uh o	nonword
+oe o uh a	nonword
+oe o uh u	nonword
+oe o o oe	nonword
+oe o o ae	nonword
+oe o o y	nonword
+oe o o e	nonword
+oe o o i	nonword
+oe o o ih	nonword
+oe o o uh	nonword
+oe o o o	nonword
+oe o o a	nonword
+oe o o u	nonword
+oe o a oe	nonword
+oe o a ae	nonword
+oe o a y	nonword
+oe o a e	nonword
+oe o a i	nonword
+oe o a ih	nonword
+oe o a uh	nonword
+oe o a o	nonword
+oe o a a	nonword
+oe o a u	nonword
+oe o u oe	nonword
+oe o u ae	nonword
+oe o u y	nonword
+oe o u e	nonword
+oe o u i	nonword
+oe o u ih	nonword
+oe o u uh	nonword
+oe o u o	nonword
+oe o u a	nonword
+oe o u u	nonword
+oe a oe oe	nonword
+oe a oe ae	nonword
+oe a oe y	nonword
+oe a oe e	nonword
+oe a oe i	nonword
+oe a oe ih	nonword
+oe a oe uh	nonword
+oe a oe o	nonword
+oe a oe a	nonword
+oe a oe u	nonword
+oe a ae oe	nonword
+oe a ae ae	nonword
+oe a ae y	nonword
+oe a ae e	nonword
+oe a ae i	nonword
+oe a ae ih	nonword
+oe a ae uh	nonword
+oe a ae o	nonword
+oe a ae a	nonword
+oe a ae u	nonword
+oe a y oe	nonword
+oe a y ae	nonword
+oe a y y	nonword
+oe a y e	nonword
+oe a y i	nonword
+oe a y ih	nonword
+oe a y uh	nonword
+oe a y o	nonword
+oe a y a	nonword
+oe a y u	nonword
+oe a e oe	nonword
+oe a e ae	nonword
+oe a e y	nonword
+oe a e e	nonword
+oe a e i	nonword
+oe a e ih	nonword
+oe a e uh	nonword
+oe a e o	nonword
+oe a e a	nonword
+oe a e u	nonword
+oe a i oe	nonword
+oe a i ae	nonword
+oe a i y	nonword
+oe a i e	nonword
+oe a i i	nonword
+oe a i ih	nonword
+oe a i uh	nonword
+oe a i o	nonword
+oe a i a	nonword
+oe a i u	nonword
+oe a ih oe	nonword
+oe a ih ae	nonword
+oe a ih y	nonword
+oe a ih e	nonword
+oe a ih i	nonword
+oe a ih ih	nonword
+oe a ih uh	nonword
+oe a ih o	nonword
+oe a ih a	nonword
+oe a ih u	nonword
+oe a uh oe	nonword
+oe a uh ae	nonword
+oe a uh y	nonword
+oe a uh e	nonword
+oe a uh i	nonword
+oe a uh ih	nonword
+oe a uh uh	nonword
+oe a uh o	nonword
+oe a uh a	nonword
+oe a uh u	nonword
+oe a o oe	nonword
+oe a o ae	nonword
+oe a o y	nonword
+oe a o e	nonword
+oe a o i	nonword
+oe a o ih	nonword
+oe a o uh	nonword
+oe a o o	nonword
+oe a o a	nonword
+oe a o u	nonword
+oe a a oe	nonword
+oe a a ae	nonword
+oe a a y	nonword
+oe a a e	nonword
+oe a a i	nonword
+oe a a ih	nonword
+oe a a uh	nonword
+oe a a o	nonword
+oe a a a	nonword
+oe a a u	nonword
+oe a u oe	nonword
+oe a u ae	nonword
+oe a u y	nonword
+oe a u e	nonword
+oe a u i	nonword
+oe a u ih	nonword
+oe a u uh	nonword
+oe a u o	nonword
+oe a u a	nonword
+oe a u u	nonword
+oe u oe oe	nonword
+oe u oe ae	nonword
+oe u oe y	nonword
+oe u oe e	nonword
+oe u oe i	nonword
+oe u oe ih	nonword
+oe u oe uh	nonword
+oe u oe o	nonword
+oe u oe a	nonword
+oe u oe u	nonword
+oe u ae oe	nonword
+oe u ae ae	nonword
+oe u ae y	nonword
+oe u ae e	nonword
+oe u ae i	nonword
+oe u ae ih	nonword
+oe u ae uh	nonword
+oe u ae o	nonword
+oe u ae a	nonword
+oe u ae u	nonword
+oe u y oe	nonword
+oe u y ae	nonword
+oe u y y	nonword
+oe u y e	nonword
+oe u y i	nonword
+oe u y ih	nonword
+oe u y uh	nonword
+oe u y o	nonword
+oe u y a	nonword
+oe u y u	nonword
+oe u e oe	nonword
+oe u e ae	nonword
+oe u e y	nonword
+oe u e e	nonword
+oe u e i	nonword
+oe u e ih	nonword
+oe u e uh	nonword
+oe u e o	nonword
+oe u e a	nonword
+oe u e u	nonword
+oe u i oe	nonword
+oe u i ae	nonword
+oe u i y	nonword
+oe u i e	nonword
+oe u i i	nonword
+oe u i ih	nonword
+oe u i uh	nonword
+oe u i o	nonword
+oe u i a	nonword
+oe u i u	nonword
+oe u ih oe	nonword
+oe u ih ae	nonword
+oe u ih y	nonword
+oe u ih e	nonword
+oe u ih i	nonword
+oe u ih ih	nonword
+oe u ih uh	nonword
+oe u ih o	nonword
+oe u ih a	nonword
+oe u ih u	nonword
+oe u uh oe	nonword
+oe u uh ae	nonword
+oe u uh y	nonword
+oe u uh e	nonword
+oe u uh i	nonword
+oe u uh ih	nonword
+oe u uh uh	nonword
+oe u uh o	nonword
+oe u uh a	nonword
+oe u uh u	nonword
+oe u o oe	nonword
+oe u o ae	nonword
+oe u o y	nonword
+oe u o e	nonword
+oe u o i	nonword
+oe u o ih	nonword
+oe u o uh	nonword
+oe u o o	nonword
+oe u o a	nonword
+oe u o u	nonword
+oe u a oe	nonword
+oe u a ae	nonword
+oe u a y	nonword
+oe u a e	nonword
+oe u a i	nonword
+oe u a ih	nonword
+oe u a uh	nonword
+oe u a o	nonword
+oe u a a	nonword
+oe u a u	nonword
+oe u u oe	nonword
+oe u u ae	nonword
+oe u u y	nonword
+oe u u e	nonword
+oe u u i	nonword
+oe u u ih	nonword
+oe u u uh	nonword
+oe u u o	nonword
+oe u u a	nonword
+oe u u u	nonword
+ae oe oe oe	word
+ae oe oe ae	word
+ae oe oe y	word
+ae oe oe e	word
+ae oe oe i	word
+ae oe oe ih	nonword
+ae oe oe uh	nonword
+ae oe oe o	nonword
+ae oe oe a	nonword
+ae oe oe u	nonword
+ae oe ae oe	word
+ae oe ae ae	word
+ae oe ae y	word
+ae oe ae e	word
+ae oe ae i	word
+ae oe ae ih	nonword
+ae oe ae uh	nonword
+ae oe ae o	nonword
+ae oe ae a	nonword
+ae oe ae u	nonword
+ae oe y oe	word
+ae oe y ae	word
+ae oe y y	word
+ae oe y e	word
+ae oe y i	word
+ae oe y ih	nonword
+ae oe y uh	nonword
+ae oe y o	nonword
+ae oe y a	nonword
+ae oe y u	nonword
+ae oe e oe	word
+ae oe e ae	word
+ae oe e y	word
+ae oe e e	word
+ae oe e i	word
+ae oe e ih	nonword
+ae oe e uh	nonword
+ae oe e o	nonword
+ae oe e a	nonword
+ae oe e u	nonword
+ae oe i oe	word
+ae oe i ae	word
+ae oe i y	word
+ae oe i e	word
+ae oe i i	word
+ae oe i ih	nonword
+ae oe i uh	nonword
+ae oe i o	nonword
+ae oe i a	nonword
+ae oe i u	nonword
+ae oe ih oe	nonword
+ae oe ih ae	nonword
+ae oe ih y	nonword
+ae oe ih e	nonword
+ae oe ih i	nonword
+ae oe ih ih	nonword
+ae oe ih uh	nonword
+ae oe ih o	nonword
+ae oe ih a	nonword
+ae oe ih u	nonword
+ae oe uh oe	nonword
+ae oe uh ae	nonword
+ae oe uh y	nonword
+ae oe uh e	nonword
+ae oe uh i	nonword
+ae oe uh ih	nonword
+ae oe uh uh	nonword
+ae oe uh o	nonword
+ae oe uh a	nonword
+ae oe uh u	nonword
+ae oe o oe	nonword
+ae oe o ae	nonword
+ae oe o y	nonword
+ae oe o e	nonword
+ae oe o i	nonword
+ae oe o ih	nonword
+ae oe o uh	nonword
+ae oe o o	nonword
+ae oe o a	nonword
+ae oe o u	nonword
+ae oe a oe	nonword
+ae oe a ae	nonword
+ae oe a y	nonword
+ae oe a e	nonword
+ae oe a i	nonword
+ae oe a ih	nonword
+ae oe a uh	nonword
+ae oe a o	nonword
+ae oe a a	nonword
+ae oe a u	nonword
+ae oe u oe	nonword
+ae oe u ae	nonword
+ae oe u y	nonword
+ae oe u e	nonword
+ae oe u i	nonword
+ae oe u ih	nonword
+ae oe u uh	nonword
+ae oe u o	nonword
+ae oe u a	nonword
+ae oe u u	nonword
+ae ae oe oe	word
+ae ae oe ae	word
+ae ae oe y	word
+ae ae oe e	word
+ae ae oe i	word
+ae ae oe ih	nonword
+ae ae oe uh	nonword
+ae ae oe o	nonword
+ae ae oe a	nonword
+ae ae oe u	nonword
+ae ae ae oe	word
+ae ae ae ae	word
+ae ae ae y	word
+ae ae ae e	word
+ae ae ae i	word
+ae ae ae ih	nonword
+ae ae ae uh	nonword
+ae ae ae o	nonword
+ae ae ae a	nonword
+ae ae ae u	nonword
+ae ae y oe	word
+ae ae y ae	word
+ae ae y y	word
+ae ae y e	word
+ae ae y i	word
+ae ae y ih	nonword
+ae ae y uh	nonword
+ae ae y o	nonword
+ae ae y a	nonword
+ae ae y u	nonword
+ae ae e oe	word
+ae ae e ae	word
+ae ae e y	word
+ae ae e e	word
+ae ae e i	word
+ae ae e ih	nonword
+ae ae e uh	nonword
+ae ae e o	nonword
+ae ae e a	nonword
+ae ae e u	nonword
+ae ae i oe	word
+ae ae i ae	word
+ae ae i y	word
+ae ae i e	word
+ae ae i i	word
+ae ae i ih	nonword
+ae ae i uh	nonword
+ae ae i o	nonword
+ae ae i a	nonword
+ae ae i u	nonword
+ae ae ih oe	nonword
+ae ae ih ae	nonword
+ae ae ih y	nonword
+ae ae ih e	nonword
+ae ae ih i	nonword
+ae ae ih ih	nonword
+ae ae ih uh	nonword
+ae ae ih o	nonword
+ae ae ih a	nonword
+ae ae ih u	nonword
+ae ae uh oe	nonword
+ae ae uh ae	nonword
+ae ae uh y	nonword
+ae ae uh e	nonword
+ae ae uh i	nonword
+ae ae uh ih	nonword
+ae ae uh uh	nonword
+ae ae uh o	nonword
+ae ae uh a	nonword
+ae ae uh u	nonword
+ae ae o oe	nonword
+ae ae o ae	nonword
+ae ae o y	nonword
+ae ae o e	nonword
+ae ae o i	nonword
+ae ae o ih	nonword
+ae ae o uh	nonword
+ae ae o o	nonword
+ae ae o a	nonword
+ae ae o u	nonword
+ae ae a oe	nonword
+ae ae a ae	nonword
+ae ae a y	nonword
+ae ae a e	nonword
+ae ae a i	nonword
+ae ae a ih	nonword
+ae ae a uh	nonword
+ae ae a o	nonword
+ae ae a a	nonword
+ae ae a u	nonword
+ae ae u oe	nonword
+ae ae u ae	nonword
+ae ae u y	nonword
+ae ae u e	nonword
+ae ae u i	nonword
+ae ae u ih	nonword
+ae ae u uh	nonword
+ae ae u o	nonword
+ae ae u a	nonword
+ae ae u u	nonword
+ae y oe oe	word
+ae y oe ae	word
+ae y oe y	word
+ae y oe e	word
+ae y oe i	word
+ae y oe ih	nonword
+ae y oe uh	nonword
+ae y oe o	nonword
+ae y oe a	nonword
+ae y oe u	nonword
+ae y ae oe	word
+ae y ae ae	word
+ae y ae y	word
+ae y ae e	word
+ae y ae i	word
+ae y ae ih	nonword
+ae y ae uh	nonword
+ae y ae o	nonword
+ae y ae a	nonword
+ae y ae u	nonword
+ae y y oe	word
+ae y y ae	word
+ae y y y	word
+ae y y e	word
+ae y y i	word
+ae y y ih	nonword
+ae y y uh	nonword
+ae y y o	nonword
+ae y y a	nonword
+ae y y u	nonword
+ae y e oe	word
+ae y e ae	word
+ae y e y	word
+ae y e e	word
+ae y e i	word
+ae y e ih	nonword
+ae y e uh	nonword
+ae y e o	nonword
+ae y e a	nonword
+ae y e u	nonword
+ae y i oe	word
+ae y i ae	word
+ae y i y	word
+ae y i e	word
+ae y i i	word
+ae y i ih	nonword
+ae y i uh	nonword
+ae y i o	nonword
+ae y i a	nonword
+ae y i u	nonword
+ae y ih oe	nonword
+ae y ih ae	nonword
+ae y ih y	nonword
+ae y ih e	nonword
+ae y ih i	nonword
+ae y ih ih	nonword
+ae y ih uh	nonword
+ae y ih o	nonword
+ae y ih a	nonword
+ae y ih u	nonword
+ae y uh oe	nonword
+ae y uh ae	nonword
+ae y uh y	nonword
+ae y uh e	nonword
+ae y uh i	nonword
+ae y uh ih	nonword
+ae y uh uh	nonword
+ae y uh o	nonword
+ae y uh a	nonword
+ae y uh u	nonword
+ae y o oe	nonword
+ae y o ae	nonword
+ae y o y	nonword
+ae y o e	nonword
+ae y o i	nonword
+ae y o ih	nonword
+ae y o uh	nonword
+ae y o o	nonword
+ae y o a	nonword
+ae y o u	nonword
+ae y a oe	nonword
+ae y a ae	nonword
+ae y a y	nonword
+ae y a e	nonword
+ae y a i	nonword
+ae y a ih	nonword
+ae y a uh	nonword
+ae y a o	nonword
+ae y a a	nonword
+ae y a u	nonword
+ae y u oe	nonword
+ae y u ae	nonword
+ae y u y	nonword
+ae y u e	nonword
+ae y u i	nonword
+ae y u ih	nonword
+ae y u uh	nonword
+ae y u o	nonword
+ae y u a	nonword
+ae y u u	nonword
+ae e oe oe	word
+ae e oe ae	word
+ae e oe y	word
+ae e oe e	word
+ae e oe i	word
+ae e oe ih	nonword
+ae e oe uh	nonword
+ae e oe o	nonword
+ae e oe a	nonword
+ae e oe u	nonword
+ae e ae oe	word
+ae e ae ae	word
+ae e ae y	word
+ae e ae e	word
+ae e ae i	word
+ae e ae ih	nonword
+ae e ae uh	nonword
+ae e ae o	nonword
+ae e ae a	nonword
+ae e ae u	nonword
+ae e y oe	word
+ae e y ae	word
+ae e y y	word
+ae e y e	word
+ae e y i	word
+ae e y ih	nonword
+ae e y uh	nonword
+ae e y o	nonword
+ae e y a	nonword
+ae e y u	nonword
+ae e e oe	word
+ae e e ae	word
+ae e e y	word
+ae e e e	word
+ae e e i	word
+ae e e ih	nonword
+ae e e uh	nonword
+ae e e o	nonword
+ae e e a	nonword
+ae e e u	nonword
+ae e i oe	word
+ae e i ae	word
+ae e i y	word
+ae e i e	word
+ae e i i	word
+ae e i ih	nonword
+ae e i uh	nonword
+ae e i o	nonword
+ae e i a	nonword
+ae e i u	nonword
+ae e ih oe	nonword
+ae e ih ae	nonword
+ae e ih y	nonword
+ae e ih e	nonword
+ae e ih i	nonword
+ae e ih ih	nonword
+ae e ih uh	nonword
+ae e ih o	nonword
+ae e ih a	nonword
+ae e ih u	nonword
+ae e uh oe	nonword
+ae e uh ae	nonword
+ae e uh y	nonword
+ae e uh e	nonword
+ae e uh i	nonword
+ae e uh ih	nonword
+ae e uh uh	nonword
+ae e uh o	nonword
+ae e uh a	nonword
+ae e uh u	nonword
+ae e o oe	nonword
+ae e o ae	nonword
+ae e o y	nonword
+ae e o e	nonword
+ae e o i	nonword
+ae e o ih	nonword
+ae e o uh	nonword
+ae e o o	nonword
+ae e o a	nonword
+ae e o u	nonword
+ae e a oe	nonword
+ae e a ae	nonword
+ae e a y	nonword
+ae e a e	nonword
+ae e a i	nonword
+ae e a ih	nonword
+ae e a uh	nonword
+ae e a o	nonword
+ae e a a	nonword
+ae e a u	nonword
+ae e u oe	nonword
+ae e u ae	nonword
+ae e u y	nonword
+ae e u e	nonword
+ae e u i	nonword
+ae e u ih	nonword
+ae e u uh	nonword
+ae e u o	nonword
+ae e u a	nonword
+ae e u u	nonword
+ae i oe oe	word
+ae i oe ae	word
+ae i oe y	word
+ae i oe e	word
+ae i oe i	word
+ae i oe ih	nonword
+ae i oe uh	nonword
+ae i oe o	nonword
+ae i oe a	nonword
+ae i oe u	nonword
+ae i ae oe	word
+ae i ae ae	word
+ae i ae y	word
+ae i ae e	word
+ae i ae i	word
+ae i ae ih	nonword
+ae i ae uh	nonword
+ae i ae o	nonword
+ae i ae a	nonword
+ae i ae u	nonword
+ae i y oe	word
+ae i y ae	word
+ae i y y	word
+ae i y e	word
+ae i y i	word
+ae i y ih	nonword
+ae i y uh	nonword
+ae i y o	nonword
+ae i y a	nonword
+ae i y u	nonword
+ae i e oe	word
+ae i e ae	word
+ae i e y	word
+ae i e e	word
+ae i e i	word
+ae i e ih	nonword
+ae i e uh	nonword
+ae i e o	nonword
+ae i e a	nonword
+ae i e u	nonword
+ae i i oe	word
+ae i i ae	word
+ae i i y	word
+ae i i e	word
+ae i i i	word
+ae i i ih	nonword
+ae i i uh	nonword
+ae i i o	nonword
+ae i i a	nonword
+ae i i u	nonword
+ae i ih oe	nonword
+ae i ih ae	nonword
+ae i ih y	nonword
+ae i ih e	nonword
+ae i ih i	nonword
+ae i ih ih	nonword
+ae i ih uh	nonword
+ae i ih o	nonword
+ae i ih a	nonword
+ae i ih u	nonword
+ae i uh oe	nonword
+ae i uh ae	nonword
+ae i uh y	nonword
+ae i uh e	nonword
+ae i uh i	nonword
+ae i uh ih	nonword
+ae i uh uh	nonword
+ae i uh o	nonword
+ae i uh a	nonword
+ae i uh u	nonword
+ae i o oe	nonword
+ae i o ae	nonword
+ae i o y	nonword
+ae i o e	nonword
+ae i o i	nonword
+ae i o ih	nonword
+ae i o uh	nonword
+ae i o o	nonword
+ae i o a	nonword
+ae i o u	nonword
+ae i a oe	nonword
+ae i a ae	nonword
+ae i a y	nonword
+ae i a e	nonword
+ae i a i	nonword
+ae i a ih	nonword
+ae i a uh	nonword
+ae i a o	nonword
+ae i a a	nonword
+ae i a u	nonword
+ae i u oe	nonword
+ae i u ae	nonword
+ae i u y	nonword
+ae i u e	nonword
+ae i u i	nonword
+ae i u ih	nonword
+ae i u uh	nonword
+ae i u o	nonword
+ae i u a	nonword
+ae i u u	nonword
+ae ih oe oe	nonword
+ae ih oe ae	nonword
+ae ih oe y	nonword
+ae ih oe e	nonword
+ae ih oe i	nonword
+ae ih oe ih	nonword
+ae ih oe uh	nonword
+ae ih oe o	nonword
+ae ih oe a	nonword
+ae ih oe u	nonword
+ae ih ae oe	nonword
+ae ih ae ae	nonword
+ae ih ae y	nonword
+ae ih ae e	nonword
+ae ih ae i	nonword
+ae ih ae ih	nonword
+ae ih ae uh	nonword
+ae ih ae o	nonword
+ae ih ae a	nonword
+ae ih ae u	nonword
+ae ih y oe	nonword
+ae ih y ae	nonword
+ae ih y y	nonword
+ae ih y e	nonword
+ae ih y i	nonword
+ae ih y ih	nonword
+ae ih y uh	nonword
+ae ih y o	nonword
+ae ih y a	nonword
+ae ih y u	nonword
+ae ih e oe	nonword
+ae ih e ae	nonword
+ae ih e y	nonword
+ae ih e e	nonword
+ae ih e i	nonword
+ae ih e ih	nonword
+ae ih e uh	nonword
+ae ih e o	nonword
+ae ih e a	nonword
+ae ih e u	nonword
+ae ih i oe	nonword
+ae ih i ae	nonword
+ae ih i y	nonword
+ae ih i e	nonword
+ae ih i i	nonword
+ae ih i ih	nonword
+ae ih i uh	nonword
+ae ih i o	nonword
+ae ih i a	nonword
+ae ih i u	nonword
+ae ih ih oe	nonword
+ae ih ih ae	nonword
+ae ih ih y	nonword
+ae ih ih e	nonword
+ae ih ih i	nonword
+ae ih ih ih	nonword
+ae ih ih uh	nonword
+ae ih ih o	nonword
+ae ih ih a	nonword
+ae ih ih u	nonword
+ae ih uh oe	nonword
+ae ih uh ae	nonword
+ae ih uh y	nonword
+ae ih uh e	nonword
+ae ih uh i	nonword
+ae ih uh ih	nonword
+ae ih uh uh	nonword
+ae ih uh o	nonword
+ae ih uh a	nonword
+ae ih uh u	nonword
+ae ih o oe	nonword
+ae ih o ae	nonword
+ae ih o y	nonword
+ae ih o e	nonword
+ae ih o i	nonword
+ae ih o ih	nonword
+ae ih o uh	nonword
+ae ih o o	nonword
+ae ih o a	nonword
+ae ih o u	nonword
+ae ih a oe	nonword
+ae ih a ae	nonword
+ae ih a y	nonword
+ae ih a e	nonword
+ae ih a i	nonword
+ae ih a ih	nonword
+ae ih a uh	nonword
+ae ih a o	nonword
+ae ih a a	nonword
+ae ih a u	nonword
+ae ih u oe	nonword
+ae ih u ae	nonword
+ae ih u y	nonword
+ae ih u e	nonword
+ae ih u i	nonword
+ae ih u ih	nonword
+ae ih u uh	nonword
+ae ih u o	nonword
+ae ih u a	nonword
+ae ih u u	nonword
+ae uh oe oe	nonword
+ae uh oe ae	nonword
+ae uh oe y	nonword
+ae uh oe e	nonword
+ae uh oe i	nonword
+ae uh oe ih	nonword
+ae uh oe uh	nonword
+ae uh oe o	nonword
+ae uh oe a	nonword
+ae uh oe u	nonword
+ae uh ae oe	nonword
+ae uh ae ae	nonword
+ae uh ae y	nonword
+ae uh ae e	nonword
+ae uh ae i	nonword
+ae uh ae ih	nonword
+ae uh ae uh	nonword
+ae uh ae o	nonword
+ae uh ae a	nonword
+ae uh ae u	nonword
+ae uh y oe	nonword
+ae uh y ae	nonword
+ae uh y y	nonword
+ae uh y e	nonword
+ae uh y i	nonword
+ae uh y ih	nonword
+ae uh y uh	nonword
+ae uh y o	nonword
+ae uh y a	nonword
+ae uh y u	nonword
+ae uh e oe	nonword
+ae uh e ae	nonword
+ae uh e y	nonword
+ae uh e e	nonword
+ae uh e i	nonword
+ae uh e ih	nonword
+ae uh e uh	nonword
+ae uh e o	nonword
+ae uh e a	nonword
+ae uh e u	nonword
+ae uh i oe	nonword
+ae uh i ae	nonword
+ae uh i y	nonword
+ae uh i e	nonword
+ae uh i i	nonword
+ae uh i ih	nonword
+ae uh i uh	nonword
+ae uh i o	nonword
+ae uh i a	nonword
+ae uh i u	nonword
+ae uh ih oe	nonword
+ae uh ih ae	nonword
+ae uh ih y	nonword
+ae uh ih e	nonword
+ae uh ih i	nonword
+ae uh ih ih	nonword
+ae uh ih uh	nonword
+ae uh ih o	nonword
+ae uh ih a	nonword
+ae uh ih u	nonword
+ae uh uh oe	nonword
+ae uh uh ae	nonword
+ae uh uh y	nonword
+ae uh uh e	nonword
+ae uh uh i	nonword
+ae uh uh ih	nonword
+ae uh uh uh	nonword
+ae uh uh o	nonword
+ae uh uh a	nonword
+ae uh uh u	nonword
+ae uh o oe	nonword
+ae uh o ae	nonword
+ae uh o y	nonword
+ae uh o e	nonword
+ae uh o i	nonword
+ae uh o ih	nonword
+ae uh o uh	nonword
+ae uh o o	nonword
+ae uh o a	nonword
+ae uh o u	nonword
+ae uh a oe	nonword
+ae uh a ae	nonword
+ae uh a y	nonword
+ae uh a e	nonword
+ae uh a i	nonword
+ae uh a ih	nonword
+ae uh a uh	nonword
+ae uh a o	nonword
+ae uh a a	nonword
+ae uh a u	nonword
+ae uh u oe	nonword
+ae uh u ae	nonword
+ae uh u y	nonword
+ae uh u e	nonword
+ae uh u i	nonword
+ae uh u ih	nonword
+ae uh u uh	nonword
+ae uh u o	nonword
+ae uh u a	nonword
+ae uh u u	nonword
+ae o oe oe	nonword
+ae o oe ae	nonword
+ae o oe y	nonword
+ae o oe e	nonword
+ae o oe i	nonword
+ae o oe ih	nonword
+ae o oe uh	nonword
+ae o oe o	nonword
+ae o oe a	nonword
+ae o oe u	nonword
+ae o ae oe	nonword
+ae o ae ae	nonword
+ae o ae y	nonword
+ae o ae e	nonword
+ae o ae i	nonword
+ae o ae ih	nonword
+ae o ae uh	nonword
+ae o ae o	nonword
+ae o ae a	nonword
+ae o ae u	nonword
+ae o y oe	nonword
+ae o y ae	nonword
+ae o y y	nonword
+ae o y e	nonword
+ae o y i	nonword
+ae o y ih	nonword
+ae o y uh	nonword
+ae o y o	nonword
+ae o y a	nonword
+ae o y u	nonword
+ae o e oe	nonword
+ae o e ae	nonword
+ae o e y	nonword
+ae o e e	nonword
+ae o e i	nonword
+ae o e ih	nonword
+ae o e uh	nonword
+ae o e o	nonword
+ae o e a	nonword
+ae o e u	nonword
+ae o i oe	nonword
+ae o i ae	nonword
+ae o i y	nonword
+ae o i e	nonword
+ae o i i	nonword
+ae o i ih	nonword
+ae o i uh	nonword
+ae o i o	nonword
+ae o i a	nonword
+ae o i u	nonword
+ae o ih oe	nonword
+ae o ih ae	nonword
+ae o ih y	nonword
+ae o ih e	nonword
+ae o ih i	nonword
+ae o ih ih	nonword
+ae o ih uh	nonword
+ae o ih o	nonword
+ae o ih a	nonword
+ae o ih u	nonword
+ae o uh oe	nonword
+ae o uh ae	nonword
+ae o uh y	nonword
+ae o uh e	nonword
+ae o uh i	nonword
+ae o uh ih	nonword
+ae o uh uh	nonword
+ae o uh o	nonword
+ae o uh a	nonword
+ae o uh u	nonword
+ae o o oe	nonword
+ae o o ae	nonword
+ae o o y	nonword
+ae o o e	nonword
+ae o o i	nonword
+ae o o ih	nonword
+ae o o uh	nonword
+ae o o o	nonword
+ae o o a	nonword
+ae o o u	nonword
+ae o a oe	nonword
+ae o a ae	nonword
+ae o a y	nonword
+ae o a e	nonword
+ae o a i	nonword
+ae o a ih	nonword
+ae o a uh	nonword
+ae o a o	nonword
+ae o a a	nonword
+ae o a u	nonword
+ae o u oe	nonword
+ae o u ae	nonword
+ae o u y	nonword
+ae o u e	nonword
+ae o u i	nonword
+ae o u ih	nonword
+ae o u uh	nonword
+ae o u o	nonword
+ae o u a	nonword
+ae o u u	nonword
+ae a oe oe	nonword
+ae a oe ae	nonword
+ae a oe y	nonword
+ae a oe e	nonword
+ae a oe i	nonword
+ae a oe ih	nonword
+ae a oe uh	nonword
+ae a oe o	nonword
+ae a oe a	nonword
+ae a oe u	nonword
+ae a ae oe	nonword
+ae a ae ae	nonword
+ae a ae y	nonword
+ae a ae e	nonword
+ae a ae i	nonword
+ae a ae ih	nonword
+ae a ae uh	nonword
+ae a ae o	nonword
+ae a ae a	nonword
+ae a ae u	nonword
+ae a y oe	nonword
+ae a y ae	nonword
+ae a y y	nonword
+ae a y e	nonword
+ae a y i	nonword
+ae a y ih	nonword
+ae a y uh	nonword
+ae a y o	nonword
+ae a y a	nonword
+ae a y u	nonword
+ae a e oe	nonword
+ae a e ae	nonword
+ae a e y	nonword
+ae a e e	nonword
+ae a e i	nonword
+ae a e ih	nonword
+ae a e uh	nonword
+ae a e o	nonword
+ae a e a	nonword
+ae a e u	nonword
+ae a i oe	nonword
+ae a i ae	nonword
+ae a i y	nonword
+ae a i e	nonword
+ae a i i	nonword
+ae a i ih	nonword
+ae a i uh	nonword
+ae a i o	nonword
+ae a i a	nonword
+ae a i u	nonword
+ae a ih oe	nonword
+ae a ih ae	nonword
+ae a ih y	nonword
+ae a ih e	nonword
+ae a ih i	nonword
+ae a ih ih	nonword
+ae a ih uh	nonword
+ae a ih o	nonword
+ae a ih a	nonword
+ae a ih u	nonword
+ae a uh oe	nonword
+ae a uh ae	nonword
+ae a uh y	nonword
+ae a uh e	nonword
+ae a uh i	nonword
+ae a uh ih	nonword
+ae a uh uh	nonword
+ae a uh o	nonword
+ae a uh a	nonword
+ae a uh u	nonword
+ae a o oe	nonword
+ae a o ae	nonword
+ae a o y	nonword
+ae a o e	nonword
+ae a o i	nonword
+ae a o ih	nonword
+ae a o uh	nonword
+ae a o o	nonword
+ae a o a	nonword
+ae a o u	nonword
+ae a a oe	nonword
+ae a a ae	nonword
+ae a a y	nonword
+ae a a e	nonword
+ae a a i	nonword
+ae a a ih	nonword
+ae a a uh	nonword
+ae a a o	nonword
+ae a a a	nonword
+ae a a u	nonword
+ae a u oe	nonword
+ae a u ae	nonword
+ae a u y	nonword
+ae a u e	nonword
+ae a u i	nonword
+ae a u ih	nonword
+ae a u uh	nonword
+ae a u o	nonword
+ae a u a	nonword
+ae a u u	nonword
+ae u oe oe	nonword
+ae u oe ae	nonword
+ae u oe y	nonword
+ae u oe e	nonword
+ae u oe i	nonword
+ae u oe ih	nonword
+ae u oe uh	nonword
+ae u oe o	nonword
+ae u oe a	nonword
+ae u oe u	nonword
+ae u ae oe	nonword
+ae u ae ae	nonword
+ae u ae y	nonword
+ae u ae e	nonword
+ae u ae i	nonword
+ae u ae ih	nonword
+ae u ae uh	nonword
+ae u ae o	nonword
+ae u ae a	nonword
+ae u ae u	nonword
+ae u y oe	nonword
+ae u y ae	nonword
+ae u y y	nonword
+ae u y e	nonword
+ae u y i	nonword
+ae u y ih	nonword
+ae u y uh	nonword
+ae u y o	nonword
+ae u y a	nonword
+ae u y u	nonword
+ae u e oe	nonword
+ae u e ae	nonword
+ae u e y	nonword
+ae u e e	nonword
+ae u e i	nonword
+ae u e ih	nonword
+ae u e uh	nonword
+ae u e o	nonword
+ae u e a	nonword
+ae u e u	nonword
+ae u i oe	nonword
+ae u i ae	nonword
+ae u i y	nonword
+ae u i e	nonword
+ae u i i	nonword
+ae u i ih	nonword
+ae u i uh	nonword
+ae u i o	nonword
+ae u i a	nonword
+ae u i u	nonword
+ae u ih oe	nonword
+ae u ih ae	nonword
+ae u ih y	nonword
+ae u ih e	nonword
+ae u ih i	nonword
+ae u ih ih	nonword
+ae u ih uh	nonword
+ae u ih o	nonword
+ae u ih a	nonword
+ae u ih u	nonword
+ae u uh oe	nonword
+ae u uh ae	nonword
+ae u uh y	nonword
+ae u uh e	nonword
+ae u uh i	nonword
+ae u uh ih	nonword
+ae u uh uh	nonword
+ae u uh o	nonword
+ae u uh a	nonword
+ae u uh u	nonword
+ae u o oe	nonword
+ae u o ae	nonword
+ae u o y	nonword
+ae u o e	nonword
+ae u o i	nonword
+ae u o ih	nonword
+ae u o uh	nonword
+ae u o o	nonword
+ae u o a	nonword
+ae u o u	nonword
+ae u a oe	nonword
+ae u a ae	nonword
+ae u a y	nonword
+ae u a e	nonword
+ae u a i	nonword
+ae u a ih	nonword
+ae u a uh	nonword
+ae u a o	nonword
+ae u a a	nonword
+ae u a u	nonword
+ae u u oe	nonword
+ae u u ae	nonword
+ae u u y	nonword
+ae u u e	nonword
+ae u u i	nonword
+ae u u ih	nonword
+ae u u uh	nonword
+ae u u o	nonword
+ae u u a	nonword
+ae u u u	nonword
+y oe oe oe	word
+y oe oe ae	word
+y oe oe y	word
+y oe oe e	word
+y oe oe i	word
+y oe oe ih	nonword
+y oe oe uh	nonword
+y oe oe o	nonword
+y oe oe a	nonword
+y oe oe u	nonword
+y oe ae oe	word
+y oe ae ae	word
+y oe ae y	word
+y oe ae e	word
+y oe ae i	word
+y oe ae ih	nonword
+y oe ae uh	nonword
+y oe ae o	nonword
+y oe ae a	nonword
+y oe ae u	nonword
+y oe y oe	word
+y oe y ae	word
+y oe y y	word
+y oe y e	word
+y oe y i	word
+y oe y ih	nonword
+y oe y uh	nonword
+y oe y o	nonword
+y oe y a	nonword
+y oe y u	nonword
+y oe e oe	word
+y oe e ae	word
+y oe e y	word
+y oe e e	word
+y oe e i	word
+y oe e ih	nonword
+y oe e uh	nonword
+y oe e o	nonword
+y oe e a	nonword
+y oe e u	nonword
+y oe i oe	word
+y oe i ae	word
+y oe i y	word
+y oe i e	word
+y oe i i	word
+y oe i ih	nonword
+y oe i uh	nonword
+y oe i o	nonword
+y oe i a	nonword
+y oe i u	nonword
+y oe ih oe	nonword
+y oe ih ae	nonword
+y oe ih y	nonword
+y oe ih e	nonword
+y oe ih i	nonword
+y oe ih ih	nonword
+y oe ih uh	nonword
+y oe ih o	nonword
+y oe ih a	nonword
+y oe ih u	nonword
+y oe uh oe	nonword
+y oe uh ae	nonword
+y oe uh y	nonword
+y oe uh e	nonword
+y oe uh i	nonword
+y oe uh ih	nonword
+y oe uh uh	nonword
+y oe uh o	nonword
+y oe uh a	nonword
+y oe uh u	nonword
+y oe o oe	nonword
+y oe o ae	nonword
+y oe o y	nonword
+y oe o e	nonword
+y oe o i	nonword
+y oe o ih	nonword
+y oe o uh	nonword
+y oe o o	nonword
+y oe o a	nonword
+y oe o u	nonword
+y oe a oe	nonword
+y oe a ae	nonword
+y oe a y	nonword
+y oe a e	nonword
+y oe a i	nonword
+y oe a ih	nonword
+y oe a uh	nonword
+y oe a o	nonword
+y oe a a	nonword
+y oe a u	nonword
+y oe u oe	nonword
+y oe u ae	nonword
+y oe u y	nonword
+y oe u e	nonword
+y oe u i	nonword
+y oe u ih	nonword
+y oe u uh	nonword
+y oe u o	nonword
+y oe u a	nonword
+y oe u u	nonword
+y ae oe oe	word
+y ae oe ae	word
+y ae oe y	word
+y ae oe e	word
+y ae oe i	word
+y ae oe ih	nonword
+y ae oe uh	nonword
+y ae oe o	nonword
+y ae oe a	nonword
+y ae oe u	nonword
+y ae ae oe	word
+y ae ae ae	word
+y ae ae y	word
+y ae ae e	word
+y ae ae i	word
+y ae ae ih	nonword
+y ae ae uh	nonword
+y ae ae o	nonword
+y ae ae a	nonword
+y ae ae u	nonword
+y ae y oe	word
+y ae y ae	word
+y ae y y	word
+y ae y e	word
+y ae y i	word
+y ae y ih	nonword
+y ae y uh	nonword
+y ae y o	nonword
+y ae y a	nonword
+y ae y u	nonword
+y ae e oe	word
+y ae e ae	word
+y ae e y	word
+y ae e e	word
+y ae e i	word
+y ae e ih	nonword
+y ae e uh	nonword
+y ae e o	nonword
+y ae e a	nonword
+y ae e u	nonword
+y ae i oe	word
+y ae i ae	word
+y ae i y	word
+y ae i e	word
+y ae i i	word
+y ae i ih	nonword
+y ae i uh	nonword
+y ae i o	nonword
+y ae i a	nonword
+y ae i u	nonword
+y ae ih oe	nonword
+y ae ih ae	nonword
+y ae ih y	nonword
+y ae ih e	nonword
+y ae ih i	nonword
+y ae ih ih	nonword
+y ae ih uh	nonword
+y ae ih o	nonword
+y ae ih a	nonword
+y ae ih u	nonword
+y ae uh oe	nonword
+y ae uh ae	nonword
+y ae uh y	nonword
+y ae uh e	nonword
+y ae uh i	nonword
+y ae uh ih	nonword
+y ae uh uh	nonword
+y ae uh o	nonword
+y ae uh a	nonword
+y ae uh u	nonword
+y ae o oe	nonword
+y ae o ae	nonword
+y ae o y	nonword
+y ae o e	nonword
+y ae o i	nonword
+y ae o ih	nonword
+y ae o uh	nonword
+y ae o o	nonword
+y ae o a	nonword
+y ae o u	nonword
+y ae a oe	nonword
+y ae a ae	nonword
+y ae a y	nonword
+y ae a e	nonword
+y ae a i	nonword
+y ae a ih	nonword
+y ae a uh	nonword
+y ae a o	nonword
+y ae a a	nonword
+y ae a u	nonword
+y ae u oe	nonword
+y ae u ae	nonword
+y ae u y	nonword
+y ae u e	nonword
+y ae u i	nonword
+y ae u ih	nonword
+y ae u uh	nonword
+y ae u o	nonword
+y ae u a	nonword
+y ae u u	nonword
+y y oe oe	word
+y y oe ae	word
+y y oe y	word
+y y oe e	word
+y y oe i	word
+y y oe ih	nonword
+y y oe uh	nonword
+y y oe o	nonword
+y y oe a	nonword
+y y oe u	nonword
+y y ae oe	word
+y y ae ae	word
+y y ae y	word
+y y ae e	word
+y y ae i	word
+y y ae ih	nonword
+y y ae uh	nonword
+y y ae o	nonword
+y y ae a	nonword
+y y ae u	nonword
+y y y oe	word
+y y y ae	word
+y y y y	word
+y y y e	word
+y y y i	word
+y y y ih	nonword
+y y y uh	nonword
+y y y o	nonword
+y y y a	nonword
+y y y u	nonword
+y y e oe	word
+y y e ae	word
+y y e y	word
+y y e e	word
+y y e i	word
+y y e ih	nonword
+y y e uh	nonword
+y y e o	nonword
+y y e a	nonword
+y y e u	nonword
+y y i oe	word
+y y i ae	word
+y y i y	word
+y y i e	word
+y y i i	word
+y y i ih	nonword
+y y i uh	nonword
+y y i o	nonword
+y y i a	nonword
+y y i u	nonword
+y y ih oe	nonword
+y y ih ae	nonword
+y y ih y	nonword
+y y ih e	nonword
+y y ih i	nonword
+y y ih ih	nonword
+y y ih uh	nonword
+y y ih o	nonword
+y y ih a	nonword
+y y ih u	nonword
+y y uh oe	nonword
+y y uh ae	nonword
+y y uh y	nonword
+y y uh e	nonword
+y y uh i	nonword
+y y uh ih	nonword
+y y uh uh	nonword
+y y uh o	nonword
+y y uh a	nonword
+y y uh u	nonword
+y y o oe	nonword
+y y o ae	nonword
+y y o y	nonword
+y y o e	nonword
+y y o i	nonword
+y y o ih	nonword
+y y o uh	nonword
+y y o o	nonword
+y y o a	nonword
+y y o u	nonword
+y y a oe	nonword
+y y a ae	nonword
+y y a y	nonword
+y y a e	nonword
+y y a i	nonword
+y y a ih	nonword
+y y a uh	nonword
+y y a o	nonword
+y y a a	nonword
+y y a u	nonword
+y y u oe	nonword
+y y u ae	nonword
+y y u y	nonword
+y y u e	nonword
+y y u i	nonword
+y y u ih	nonword
+y y u uh	nonword
+y y u o	nonword
+y y u a	nonword
+y y u u	nonword
+y e oe oe	word
+y e oe ae	word
+y e oe y	word
+y e oe e	word
+y e oe i	word
+y e oe ih	nonword
+y e oe uh	nonword
+y e oe o	nonword
+y e oe a	nonword
+y e oe u	nonword
+y e ae oe	word
+y e ae ae	word
+y e ae y	word
+y e ae e	word
+y e ae i	word
+y e ae ih	nonword
+y e ae uh	nonword
+y e ae o	nonword
+y e ae a	nonword
+y e ae u	nonword
+y e y oe	word
+y e y ae	word
+y e y y	word
+y e y e	word
+y e y i	word
+y e y ih	nonword
+y e y uh	nonword
+y e y o	nonword
+y e y a	nonword
+y e y u	nonword
+y e e oe	word
+y e e ae	word
+y e e y	word
+y e e e	word
+y e e i	word
+y e e ih	nonword
+y e e uh	nonword
+y e e o	nonword
+y e e a	nonword
+y e e u	nonword
+y e i oe	word
+y e i ae	word
+y e i y	word
+y e i e	word
+y e i i	word
+y e i ih	nonword
+y e i uh	nonword
+y e i o	nonword
+y e i a	nonword
+y e i u	nonword
+y e ih oe	nonword
+y e ih ae	nonword
+y e ih y	nonword
+y e ih e	nonword
+y e ih i	nonword
+y e ih ih	nonword
+y e ih uh	nonword
+y e ih o	nonword
+y e ih a	nonword
+y e ih u	nonword
+y e uh oe	nonword
+y e uh ae	nonword
+y e uh y	nonword
+y e uh e	nonword
+y e uh i	nonword
+y e uh ih	nonword
+y e uh uh	nonword
+y e uh o	nonword
+y e uh a	nonword
+y e uh u	nonword
+y e o oe	nonword
+y e o ae	nonword
+y e o y	nonword
+y e o e	nonword
+y e o i	nonword
+y e o ih	nonword
+y e o uh	nonword
+y e o o	nonword
+y e o a	nonword
+y e o u	nonword
+y e a oe	nonword
+y e a ae	nonword
+y e a y	nonword
+y e a e	nonword
+y e a i	nonword
+y e a ih	nonword
+y e a uh	nonword
+y e a o	nonword
+y e a a	nonword
+y e a u	nonword
+y e u oe	nonword
+y e u ae	nonword
+y e u y	nonword
+y e u e	nonword
+y e u i	nonword
+y e u ih	nonword
+y e u uh	nonword
+y e u o	nonword
+y e u a	nonword
+y e u u	nonword
+y i oe oe	word
+y i oe ae	word
+y i oe y	word
+y i oe e	word
+y i oe i	word
+y i oe ih	nonword
+y i oe uh	nonword
+y i oe o	nonword
+y i oe a	nonword
+y i oe u	nonword
+y i ae oe	word
+y i ae ae	word
+y i ae y	word
+y i ae e	word
+y i ae i	word
+y i ae ih	nonword
+y i ae uh	nonword
+y i ae o	nonword
+y i ae a	nonword
+y i ae u	nonword
+y i y oe	word
+y i y ae	word
+y i y y	word
+y i y e	word
+y i y i	word
+y i y ih	nonword
+y i y uh	nonword
+y i y o	nonword
+y i y a	nonword
+y i y u	nonword
+y i e oe	word
+y i e ae	word
+y i e y	word
+y i e e	word
+y i e i	word
+y i e ih	nonword
+y i e uh	nonword
+y i e o	nonword
+y i e a	nonword
+y i e u	nonword
+y i i oe	word
+y i i ae	word
+y i i y	word
+y i i e	word
+y i i i	word
+y i i ih	nonword
+y i i uh	nonword
+y i i o	nonword
+y i i a	nonword
+y i i u	nonword
+y i ih oe	nonword
+y i ih ae	nonword
+y i ih y	nonword
+y i ih e	nonword
+y i ih i	nonword
+y i ih ih	nonword
+y i ih uh	nonword
+y i ih o	nonword
+y i ih a	nonword
+y i ih u	nonword
+y i uh oe	nonword
+y i uh ae	nonword
+y i uh y	nonword
+y i uh e	nonword
+y i uh i	nonword
+y i uh ih	nonword
+y i uh uh	nonword
+y i uh o	nonword
+y i uh a	nonword
+y i uh u	nonword
+y i o oe	nonword
+y i o ae	nonword
+y i o y	nonword
+y i o e	nonword
+y i o i	nonword
+y i o ih	nonword
+y i o uh	nonword
+y i o o	nonword
+y i o a	nonword
+y i o u	nonword
+y i a oe	nonword
+y i a ae	nonword
+y i a y	nonword
+y i a e	nonword
+y i a i	nonword
+y i a ih	nonword
+y i a uh	nonword
+y i a o	nonword
+y i a a	nonword
+y i a u	nonword
+y i u oe	nonword
+y i u ae	nonword
+y i u y	nonword
+y i u e	nonword
+y i u i	nonword
+y i u ih	nonword
+y i u uh	nonword
+y i u o	nonword
+y i u a	nonword
+y i u u	nonword
+y ih oe oe	nonword
+y ih oe ae	nonword
+y ih oe y	nonword
+y ih oe e	nonword
+y ih oe i	nonword
+y ih oe ih	nonword
+y ih oe uh	nonword
+y ih oe o	nonword
+y ih oe a	nonword
+y ih oe u	nonword
+y ih ae oe	nonword
+y ih ae ae	nonword
+y ih ae y	nonword
+y ih ae e	nonword
+y ih ae i	nonword
+y ih ae ih	nonword
+y ih ae uh	nonword
+y ih ae o	nonword
+y ih ae a	nonword
+y ih ae u	nonword
+y ih y oe	nonword
+y ih y ae	nonword
+y ih y y	nonword
+y ih y e	nonword
+y ih y i	nonword
+y ih y ih	nonword
+y ih y uh	nonword
+y ih y o	nonword
+y ih y a	nonword
+y ih y u	nonword
+y ih e oe	nonword
+y ih e ae	nonword
+y ih e y	nonword
+y ih e e	nonword
+y ih e i	nonword
+y ih e ih	nonword
+y ih e uh	nonword
+y ih e o	nonword
+y ih e a	nonword
+y ih e u	nonword
+y ih i oe	nonword
+y ih i ae	nonword
+y ih i y	nonword
+y ih i e	nonword
+y ih i i	nonword
+y ih i ih	nonword
+y ih i uh	nonword
+y ih i o	nonword
+y ih i a	nonword
+y ih i u	nonword
+y ih ih oe	nonword
+y ih ih ae	nonword
+y ih ih y	nonword
+y ih ih e	nonword
+y ih ih i	nonword
+y ih ih ih	nonword
+y ih ih uh	nonword
+y ih ih o	nonword
+y ih ih a	nonword
+y ih ih u	nonword
+y ih uh oe	nonword
+y ih uh ae	nonword
+y ih uh y	nonword
+y ih uh e	nonword
+y ih uh i	nonword
+y ih uh ih	nonword
+y ih uh uh	nonword
+y ih uh o	nonword
+y ih uh a	nonword
+y ih uh u	nonword
+y ih o oe	nonword
+y ih o ae	nonword
+y ih o y	nonword
+y ih o e	nonword
+y ih o i	nonword
+y ih o ih	nonword
+y ih o uh	nonword
+y ih o o	nonword
+y ih o a	nonword
+y ih o u	nonword
+y ih a oe	nonword
+y ih a ae	nonword
+y ih a y	nonword
+y ih a e	nonword
+y ih a i	nonword
+y ih a ih	nonword
+y ih a uh	nonword
+y ih a o	nonword
+y ih a a	nonword
+y ih a u	nonword
+y ih u oe	nonword
+y ih u ae	nonword
+y ih u y	nonword
+y ih u e	nonword
+y ih u i	nonword
+y ih u ih	nonword
+y ih u uh	nonword
+y ih u o	nonword
+y ih u a	nonword
+y ih u u	nonword
+y uh oe oe	nonword
+y uh oe ae	nonword
+y uh oe y	nonword
+y uh oe e	nonword
+y uh oe i	nonword
+y uh oe ih	nonword
+y uh oe uh	nonword
+y uh oe o	nonword
+y uh oe a	nonword
+y uh oe u	nonword
+y uh ae oe	nonword
+y uh ae ae	nonword
+y uh ae y	nonword
+y uh ae e	nonword
+y uh ae i	nonword
+y uh ae ih	nonword
+y uh ae uh	nonword
+y uh ae o	nonword
+y uh ae a	nonword
+y uh ae u	nonword
+y uh y oe	nonword
+y uh y ae	nonword
+y uh y y	nonword
+y uh y e	nonword
+y uh y i	nonword
+y uh y ih	nonword
+y uh y uh	nonword
+y uh y o	nonword
+y uh y a	nonword
+y uh y u	nonword
+y uh e oe	nonword
+y uh e ae	nonword
+y uh e y	nonword
+y uh e e	nonword
+y uh e i	nonword
+y uh e ih	nonword
+y uh e uh	nonword
+y uh e o	nonword
+y uh e a	nonword
+y uh e u	nonword
+y uh i oe	nonword
+y uh i ae	nonword
+y uh i y	nonword
+y uh i e	nonword
+y uh i i	nonword
+y uh i ih	nonword
+y uh i uh	nonword
+y uh i o	nonword
+y uh i a	nonword
+y uh i u	nonword
+y uh ih oe	nonword
+y uh ih ae	nonword
+y uh ih y	nonword
+y uh ih e	nonword
+y uh ih i	nonword
+y uh ih ih	nonword
+y uh ih uh	nonword
+y uh ih o	nonword
+y uh ih a	nonword
+y uh ih u	nonword
+y uh uh oe	nonword
+y uh uh ae	nonword
+y uh uh y	nonword
+y uh uh e	nonword
+y uh uh i	nonword
+y uh uh ih	nonword
+y uh uh uh	nonword
+y uh uh o	nonword
+y uh uh a	nonword
+y uh uh u	nonword
+y uh o oe	nonword
+y uh o ae	nonword
+y uh o y	nonword
+y uh o e	nonword
+y uh o i	nonword
+y uh o ih	nonword
+y uh o uh	nonword
+y uh o o	nonword
+y uh o a	nonword
+y uh o u	nonword
+y uh a oe	nonword
+y uh a ae	nonword
+y uh a y	nonword
+y uh a e	nonword
+y uh a i	nonword
+y uh a ih	nonword
+y uh a uh	nonword
+y uh a o	nonword
+y uh a a	nonword
+y uh a u	nonword
+y uh u oe	nonword
+y uh u ae	nonword
+y uh u y	nonword
+y uh u e	nonword
+y uh u i	nonword
+y uh u ih	nonword
+y uh u uh	nonword
+y uh u o	nonword
+y uh u a	nonword
+y uh u u	nonword
+y o oe oe	nonword
+y o oe ae	nonword
+y o oe y	nonword
+y o oe e	nonword
+y o oe i	nonword
+y o oe ih	nonword
+y o oe uh	nonword
+y o oe o	nonword
+y o oe a	nonword
+y o oe u	nonword
+y o ae oe	nonword
+y o ae ae	nonword
+y o ae y	nonword
+y o ae e	nonword
+y o ae i	nonword
+y o ae ih	nonword
+y o ae uh	nonword
+y o ae o	nonword
+y o ae a	nonword
+y o ae u	nonword
+y o y oe	nonword
+y o y ae	nonword
+y o y y	nonword
+y o y e	nonword
+y o y i	nonword
+y o y ih	nonword
+y o y uh	nonword
+y o y o	nonword
+y o y a	nonword
+y o y u	nonword
+y o e oe	nonword
+y o e ae	nonword
+y o e y	nonword
+y o e e	nonword
+y o e i	nonword
+y o e ih	nonword
+y o e uh	nonword
+y o e o	nonword
+y o e a	nonword
+y o e u	nonword
+y o i oe	nonword
+y o i ae	nonword
+y o i y	nonword
+y o i e	nonword
+y o i i	nonword
+y o i ih	nonword
+y o i uh	nonword
+y o i o	nonword
+y o i a	nonword
+y o i u	nonword
+y o ih oe	nonword
+y o ih ae	nonword
+y o ih y	nonword
+y o ih e	nonword
+y o ih i	nonword
+y o ih ih	nonword
+y o ih uh	nonword
+y o ih o	nonword
+y o ih a	nonword
+y o ih u	nonword
+y o uh oe	nonword
+y o uh ae	nonword
+y o uh y	nonword
+y o uh e	nonword
+y o uh i	nonword
+y o uh ih	nonword
+y o uh uh	nonword
+y o uh o	nonword
+y o uh a	nonword
+y o uh u	nonword
+y o o oe	nonword
+y o o ae	nonword
+y o o y	nonword
+y o o e	nonword
+y o o i	nonword
+y o o ih	nonword
+y o o uh	nonword
+y o o o	nonword
+y o o a	nonword
+y o o u	nonword
+y o a oe	nonword
+y o a ae	nonword
+y o a y	nonword
+y o a e	nonword
+y o a i	nonword
+y o a ih	nonword
+y o a uh	nonword
+y o a o	nonword
+y o a a	nonword
+y o a u	nonword
+y o u oe	nonword
+y o u ae	nonword
+y o u y	nonword
+y o u e	nonword
+y o u i	nonword
+y o u ih	nonword
+y o u uh	nonword
+y o u o	nonword
+y o u a	nonword
+y o u u	nonword
+y a oe oe	nonword
+y a oe ae	nonword
+y a oe y	nonword
+y a oe e	nonword
+y a oe i	nonword
+y a oe ih	nonword
+y a oe uh	nonword
+y a oe o	nonword
+y a oe a	nonword
+y a oe u	nonword
+y a ae oe	nonword
+y a ae ae	nonword
+y a ae y	nonword
+y a ae e	nonword
+y a ae i	nonword
+y a ae ih	nonword
+y a ae uh	nonword
+y a ae o	nonword
+y a ae a	nonword
+y a ae u	nonword
+y a y oe	nonword
+y a y ae	nonword
+y a y y	nonword
+y a y e	nonword
+y a y i	nonword
+y a y ih	nonword
+y a y uh	nonword
+y a y o	nonword
+y a y a	nonword
+y a y u	nonword
+y a e oe	nonword
+y a e ae	nonword
+y a e y	nonword
+y a e e	nonword
+y a e i	nonword
+y a e ih	nonword
+y a e uh	nonword
+y a e o	nonword
+y a e a	nonword
+y a e u	nonword
+y a i oe	nonword
+y a i ae	nonword
+y a i y	nonword
+y a i e	nonword
+y a i i	nonword
+y a i ih	nonword
+y a i uh	nonword
+y a i o	nonword
+y a i a	nonword
+y a i u	nonword
+y a ih oe	nonword
+y a ih ae	nonword
+y a ih y	nonword
+y a ih e	nonword
+y a ih i	nonword
+y a ih ih	nonword
+y a ih uh	nonword
+y a ih o	nonword
+y a ih a	nonword
+y a ih u	nonword
+y a uh oe	nonword
+y a uh ae	nonword
+y a uh y	nonword
+y a uh e	nonword
+y a uh i	nonword
+y a uh ih	nonword
+y a uh uh	nonword
+y a uh o	nonword
+y a uh a	nonword
+y a uh u	nonword
+y a o oe	nonword
+y a o ae	nonword
+y a o y	nonword
+y a o e	nonword
+y a o i	nonword
+y a o ih	nonword
+y a o uh	nonword
+y a o o	nonword
+y a o a	nonword
+y a o u	nonword
+y a a oe	nonword
+y a a ae	nonword
+y a a y	nonword
+y a a e	nonword
+y a a i	nonword
+y a a ih	nonword
+y a a uh	nonword
+y a a o	nonword
+y a a a	nonword
+y a a u	nonword
+y a u oe	nonword
+y a u ae	nonword
+y a u y	nonword
+y a u e	nonword
+y a u i	nonword
+y a u ih	nonword
+y a u uh	nonword
+y a u o	nonword
+y a u a	nonword
+y a u u	nonword
+y u oe oe	nonword
+y u oe ae	nonword
+y u oe y	nonword
+y u oe e	nonword
+y u oe i	nonword
+y u oe ih	nonword
+y u oe uh	nonword
+y u oe o	nonword
+y u oe a	nonword
+y u oe u	nonword
+y u ae oe	nonword
+y u ae ae	nonword
+y u ae y	nonword
+y u ae e	nonword
+y u ae i	nonword
+y u ae ih	nonword
+y u ae uh	nonword
+y u ae o	nonword
+y u ae a	nonword
+y u ae u	nonword
+y u y oe	nonword
+y u y ae	nonword
+y u y y	nonword
+y u y e	nonword
+y u y i	nonword
+y u y ih	nonword
+y u y uh	nonword
+y u y o	nonword
+y u y a	nonword
+y u y u	nonword
+y u e oe	nonword
+y u e ae	nonword
+y u e y	nonword
+y u e e	nonword
+y u e i	nonword
+y u e ih	nonword
+y u e uh	nonword
+y u e o	nonword
+y u e a	nonword
+y u e u	nonword
+y u i oe	nonword
+y u i ae	nonword
+y u i y	nonword
+y u i e	nonword
+y u i i	nonword
+y u i ih	nonword
+y u i uh	nonword
+y u i o	nonword
+y u i a	nonword
+y u i u	nonword
+y u ih oe	nonword
+y u ih ae	nonword
+y u ih y	nonword
+y u ih e	nonword
+y u ih i	nonword
+y u ih ih	nonword
+y u ih uh	nonword
+y u ih o	nonword
+y u ih a	nonword
+y u ih u	nonword
+y u uh oe	nonword
+y u uh ae	nonword
+y u uh y	nonword
+y u uh e	nonword
+y u uh i	nonword
+y u uh ih	nonword
+y u uh uh	nonword
+y u uh o	nonword
+y u uh a	nonword
+y u uh u	nonword
+y u o oe	nonword
+y u o ae	nonword
+y u o y	nonword
+y u o e	nonword
+y u o i	nonword
+y u o ih	nonword
+y u o uh	nonword
+y u o o	nonword
+y u o a	nonword
+y u o u	nonword
+y u a oe	nonword
+y u a ae	nonword
+y u a y	nonword
+y u a e	nonword
+y u a i	nonword
+y u a ih	nonword
+y u a uh	nonword
+y u a o	nonword
+y u a a	nonword
+y u a u	nonword
+y u u oe	nonword
+y u u ae	nonword
+y u u y	nonword
+y u u e	nonword
+y u u i	nonword
+y u u ih	nonword
+y u u uh	nonword
+y u u o	nonword
+y u u a	nonword
+y u u u	nonword
+e oe oe oe	word
+e oe oe ae	word
+e oe oe y	word
+e oe oe e	word
+e oe oe i	word
+e oe oe ih	nonword
+e oe oe uh	nonword
+e oe oe o	nonword
+e oe oe a	nonword
+e oe oe u	nonword
+e oe ae oe	word
+e oe ae ae	word
+e oe ae y	word
+e oe ae e	word
+e oe ae i	word
+e oe ae ih	nonword
+e oe ae uh	nonword
+e oe ae o	nonword
+e oe ae a	nonword
+e oe ae u	nonword
+e oe y oe	word
+e oe y ae	word
+e oe y y	word
+e oe y e	word
+e oe y i	word
+e oe y ih	nonword
+e oe y uh	nonword
+e oe y o	nonword
+e oe y a	nonword
+e oe y u	nonword
+e oe e oe	word
+e oe e ae	word
+e oe e y	word
+e oe e e	word
+e oe e i	word
+e oe e ih	nonword
+e oe e uh	nonword
+e oe e o	nonword
+e oe e a	nonword
+e oe e u	nonword
+e oe i oe	word
+e oe i ae	word
+e oe i y	word
+e oe i e	word
+e oe i i	word
+e oe i ih	nonword
+e oe i uh	nonword
+e oe i o	nonword
+e oe i a	nonword
+e oe i u	nonword
+e oe ih oe	nonword
+e oe ih ae	nonword
+e oe ih y	nonword
+e oe ih e	nonword
+e oe ih i	nonword
+e oe ih ih	nonword
+e oe ih uh	nonword
+e oe ih o	nonword
+e oe ih a	nonword
+e oe ih u	nonword
+e oe uh oe	nonword
+e oe uh ae	nonword
+e oe uh y	nonword
+e oe uh e	nonword
+e oe uh i	nonword
+e oe uh ih	nonword
+e oe uh uh	nonword
+e oe uh o	nonword
+e oe uh a	nonword
+e oe uh u	nonword
+e oe o oe	nonword
+e oe o ae	nonword
+e oe o y	nonword
+e oe o e	nonword
+e oe o i	nonword
+e oe o ih	nonword
+e oe o uh	nonword
+e oe o o	nonword
+e oe o a	nonword
+e oe o u	nonword
+e oe a oe	nonword
+e oe a ae	nonword
+e oe a y	nonword
+e oe a e	nonword
+e oe a i	nonword
+e oe a ih	nonword
+e oe a uh	nonword
+e oe a o	nonword
+e oe a a	nonword
+e oe a u	nonword
+e oe u oe	nonword
+e oe u ae	nonword
+e oe u y	nonword
+e oe u e	nonword
+e oe u i	nonword
+e oe u ih	nonword
+e oe u uh	nonword
+e oe u o	nonword
+e oe u a	nonword
+e oe u u	nonword
+e ae oe oe	word
+e ae oe ae	word
+e ae oe y	word
+e ae oe e	word
+e ae oe i	word
+e ae oe ih	nonword
+e ae oe uh	nonword
+e ae oe o	nonword
+e ae oe a	nonword
+e ae oe u	nonword
+e ae ae oe	word
+e ae ae ae	word
+e ae ae y	word
+e ae ae e	word
+e ae ae i	word
+e ae ae ih	nonword
+e ae ae uh	nonword
+e ae ae o	nonword
+e ae ae a	nonword
+e ae ae u	nonword
+e ae y oe	word
+e ae y ae	word
+e ae y y	word
+e ae y e	word
+e ae y i	word
+e ae y ih	nonword
+e ae y uh	nonword
+e ae y o	nonword
+e ae y a	nonword
+e ae y u	nonword
+e ae e oe	word
+e ae e ae	word
+e ae e y	word
+e ae e e	word
+e ae e i	word
+e ae e ih	nonword
+e ae e uh	nonword
+e ae e o	nonword
+e ae e a	nonword
+e ae e u	nonword
+e ae i oe	word
+e ae i ae	word
+e ae i y	word
+e ae i e	word
+e ae i i	word
+e ae i ih	nonword
+e ae i uh	nonword
+e ae i o	nonword
+e ae i a	nonword
+e ae i u	nonword
+e ae ih oe	nonword
+e ae ih ae	nonword
+e ae ih y	nonword
+e ae ih e	nonword
+e ae ih i	nonword
+e ae ih ih	nonword
+e ae ih uh	nonword
+e ae ih o	nonword
+e ae ih a	nonword
+e ae ih u	nonword
+e ae uh oe	nonword
+e ae uh ae	nonword
+e ae uh y	nonword
+e ae uh e	nonword
+e ae uh i	nonword
+e ae uh ih	nonword
+e ae uh uh	nonword
+e ae uh o	nonword
+e ae uh a	nonword
+e ae uh u	nonword
+e ae o oe	nonword
+e ae o ae	nonword
+e ae o y	nonword
+e ae o e	nonword
+e ae o i	nonword
+e ae o ih	nonword
+e ae o uh	nonword
+e ae o o	nonword
+e ae o a	nonword
+e ae o u	nonword
+e ae a oe	nonword
+e ae a ae	nonword
+e ae a y	nonword
+e ae a e	nonword
+e ae a i	nonword
+e ae a ih	nonword
+e ae a uh	nonword
+e ae a o	nonword
+e ae a a	nonword
+e ae a u	nonword
+e ae u oe	nonword
+e ae u ae	nonword
+e ae u y	nonword
+e ae u e	nonword
+e ae u i	nonword
+e ae u ih	nonword
+e ae u uh	nonword
+e ae u o	nonword
+e ae u a	nonword
+e ae u u	nonword
+e y oe oe	word
+e y oe ae	word
+e y oe y	word
+e y oe e	word
+e y oe i	word
+e y oe ih	nonword
+e y oe uh	nonword
+e y oe o	nonword
+e y oe a	nonword
+e y oe u	nonword
+e y ae oe	word
+e y ae ae	word
+e y ae y	word
+e y ae e	word
+e y ae i	word
+e y ae ih	nonword
+e y ae uh	nonword
+e y ae o	nonword
+e y ae a	nonword
+e y ae u	nonword
+e y y oe	word
+e y y ae	word
+e y y y	word
+e y y e	word
+e y y i	word
+e y y ih	nonword
+e y y uh	nonword
+e y y o	nonword
+e y y a	nonword
+e y y u	nonword
+e y e oe	word
+e y e ae	word
+e y e y	word
+e y e e	word
+e y e i	word
+e y e ih	nonword
+e y e uh	nonword
+e y e o	nonword
+e y e a	nonword
+e y e u	nonword
+e y i oe	word
+e y i ae	word
+e y i y	word
+e y i e	word
+e y i i	word
+e y i ih	nonword
+e y i uh	nonword
+e y i o	nonword
+e y i a	nonword
+e y i u	nonword
+e y ih oe	nonword
+e y ih ae	nonword
+e y ih y	nonword
+e y ih e	nonword
+e y ih i	nonword
+e y ih ih	nonword
+e y ih uh	nonword
+e y ih o	nonword
+e y ih a	nonword
+e y ih u	nonword
+e y uh oe	nonword
+e y uh ae	nonword
+e y uh y	nonword
+e y uh e	nonword
+e y uh i	nonword
+e y uh ih	nonword
+e y uh uh	nonword
+e y uh o	nonword
+e y uh a	nonword
+e y uh u	nonword
+e y o oe	nonword
+e y o ae	nonword
+e y o y	nonword
+e y o e	nonword
+e y o i	nonword
+e y o ih	nonword
+e y o uh	nonword
+e y o o	nonword
+e y o a	nonword
+e y o u	nonword
+e y a oe	nonword
+e y a ae	nonword
+e y a y	nonword
+e y a e	nonword
+e y a i	nonword
+e y a ih	nonword
+e y a uh	nonword
+e y a o	nonword
+e y a a	nonword
+e y a u	nonword
+e y u oe	nonword
+e y u ae	nonword
+e y u y	nonword
+e y u e	nonword
+e y u i	nonword
+e y u ih	nonword
+e y u uh	nonword
+e y u o	nonword
+e y u a	nonword
+e y u u	nonword
+e e oe oe	word
+e e oe ae	word
+e e oe y	word
+e e oe e	word
+e e oe i	word
+e e oe ih	nonword
+e e oe uh	nonword
+e e oe o	nonword
+e e oe a	nonword
+e e oe u	nonword
+e e ae oe	word
+e e ae ae	word
+e e ae y	word
+e e ae e	word
+e e ae i	word
+e e ae ih	nonword
+e e ae uh	nonword
+e e ae o	nonword
+e e ae a	nonword
+e e ae u	nonword
+e e y oe	word
+e e y ae	word
+e e y y	word
+e e y e	word
+e e y i	word
+e e y ih	nonword
+e e y uh	nonword
+e e y o	nonword
+e e y a	nonword
+e e y u	nonword
+e e e oe	word
+e e e ae	word
+e e e y	word
+e e e e	word
+e e e i	word
+e e e ih	nonword
+e e e uh	nonword
+e e e o	word
+e e e a	word
+e e e u	word
+e e i oe	word
+e e i ae	word
+e e i y	word
+e e i e	word
+e e i i	word
+e e i ih	nonword
+e e i uh	nonword
+e e i o	word
+e e i a	word
+e e i u	word
+e e ih oe	nonword
+e e ih ae	nonword
+e e ih y	nonword
+e e ih e	nonword
+e e ih i	nonword
+e e ih ih	nonword
+e e ih uh	nonword
+e e ih o	nonword
+e e ih a	nonword
+e e ih u	nonword
+e e uh oe	nonword
+e e uh ae	nonword
+e e uh y	nonword
+e e uh e	nonword
+e e uh i	nonword
+e e uh ih	nonword
+e e uh uh	nonword
+e e uh o	nonword
+e e uh a	nonword
+e e uh u	nonword
+e e o oe	nonword
+e e o ae	nonword
+e e o y	nonword
+e e o e	word
+e e o i	word
+e e o ih	nonword
+e e o uh	nonword
+e e o o	word
+e e o a	word
+e e o u	word
+e e a oe	nonword
+e e a ae	nonword
+e e a y	nonword
+e e a e	word
+e e a i	word
+e e a ih	nonword
+e e a uh	nonword
+e e a o	word
+e e a a	word
+e e a u	word
+e e u oe	nonword
+e e u ae	nonword
+e e u y	nonword
+e e u e	word
+e e u i	word
+e e u ih	nonword
+e e u uh	nonword
+e e u o	word
+e e u a	word
+e e u u	word
+e i oe oe	word
+e i oe ae	word
+e i oe y	word
+e i oe e	word
+e i oe i	word
+e i oe ih	nonword
+e i oe uh	nonword
+e i oe o	nonword
+e i oe a	nonword
+e i oe u	nonword
+e i ae oe	word
+e i ae ae	word
+e i ae y	word
+e i ae e	word
+e i ae i	word
+e i ae ih	nonword
+e i ae uh	nonword
+e i ae o	nonword
+e i ae a	nonword
+e i ae u	nonword
+e i y oe	word
+e i y ae	word
+e i y y	word
+e i y e	word
+e i y i	word
+e i y ih	nonword
+e i y uh	nonword
+e i y o	nonword
+e i y a	nonword
+e i y u	nonword
+e i e oe	word
+e i e ae	word
+e i e y	word
+e i e e	word
+e i e i	word
+e i e ih	nonword
+e i e uh	nonword
+e i e o	word
+e i e a	word
+e i e u	word
+e i i oe	word
+e i i ae	word
+e i i y	word
+e i i e	word
+e i i i	word
+e i i ih	nonword
+e i i uh	nonword
+e i i o	word
+e i i a	word
+e i i u	word
+e i ih oe	nonword
+e i ih ae	nonword
+e i ih y	nonword
+e i ih e	nonword
+e i ih i	nonword
+e i ih ih	nonword
+e i ih uh	nonword
+e i ih o	nonword
+e i ih a	nonword
+e i ih u	nonword
+e i uh oe	nonword
+e i uh ae	nonword
+e i uh y	nonword
+e i uh e	nonword
+e i uh i	nonword
+e i uh ih	nonword
+e i uh uh	nonword
+e i uh o	nonword
+e i uh a	nonword
+e i uh u	nonword
+e i o oe	nonword
+e i o ae	nonword
+e i o y	nonword
+e i o e	word
+e i o i	word
+e i o ih	nonword
+e i o uh	nonword
+e i o o	word
+e i o a	word
+e i o u	word
+e i a oe	nonword
+e i a ae	nonword
+e i a y	nonword
+e i a e	word
+e i a i	word
+e i a ih	nonword
+e i a uh	nonword
+e i a o	word
+e i a a	word
+e i a u	word
+e i u oe	nonword
+e i u ae	nonword
+e i u y	nonword
+e i u e	word
+e i u i	word
+e i u ih	nonword
+e i u uh	nonword
+e i u o	word
+e i u a	word
+e i u u	word
+e ih oe oe	nonword
+e ih oe ae	nonword
+e ih oe y	nonword
+e ih oe e	nonword
+e ih oe i	nonword
+e ih oe ih	nonword
+e ih oe uh	nonword
+e ih oe o	nonword
+e ih oe a	nonword
+e ih oe u	nonword
+e ih ae oe	nonword
+e ih ae ae	nonword
+e ih ae y	nonword
+e ih ae e	nonword
+e ih ae i	nonword
+e ih ae ih	nonword
+e ih ae uh	nonword
+e ih ae o	nonword
+e ih ae a	nonword
+e ih ae u	nonword
+e ih y oe	nonword
+e ih y ae	nonword
+e ih y y	nonword
+e ih y e	nonword
+e ih y i	nonword
+e ih y ih	nonword
+e ih y uh	nonword
+e ih y o	nonword
+e ih y a	nonword
+e ih y u	nonword
+e ih e oe	nonword
+e ih e ae	nonword
+e ih e y	nonword
+e ih e e	nonword
+e ih e i	nonword
+e ih e ih	nonword
+e ih e uh	nonword
+e ih e o	nonword
+e ih e a	nonword
+e ih e u	nonword
+e ih i oe	nonword
+e ih i ae	nonword
+e ih i y	nonword
+e ih i e	nonword
+e ih i i	nonword
+e ih i ih	nonword
+e ih i uh	nonword
+e ih i o	nonword
+e ih i a	nonword
+e ih i u	nonword
+e ih ih oe	nonword
+e ih ih ae	nonword
+e ih ih y	nonword
+e ih ih e	nonword
+e ih ih i	nonword
+e ih ih ih	nonword
+e ih ih uh	nonword
+e ih ih o	nonword
+e ih ih a	nonword
+e ih ih u	nonword
+e ih uh oe	nonword
+e ih uh ae	nonword
+e ih uh y	nonword
+e ih uh e	nonword
+e ih uh i	nonword
+e ih uh ih	nonword
+e ih uh uh	nonword
+e ih uh o	nonword
+e ih uh a	nonword
+e ih uh u	nonword
+e ih o oe	nonword
+e ih o ae	nonword
+e ih o y	nonword
+e ih o e	nonword
+e ih o i	nonword
+e ih o ih	nonword
+e ih o uh	nonword
+e ih o o	nonword
+e ih o a	nonword
+e ih o u	nonword
+e ih a oe	nonword
+e ih a ae	nonword
+e ih a y	nonword
+e ih a e	nonword
+e ih a i	nonword
+e ih a ih	nonword
+e ih a uh	nonword
+e ih a o	nonword
+e ih a a	nonword
+e ih a u	nonword
+e ih u oe	nonword
+e ih u ae	nonword
+e ih u y	nonword
+e ih u e	nonword
+e ih u i	nonword
+e ih u ih	nonword
+e ih u uh	nonword
+e ih u o	nonword
+e ih u a	nonword
+e ih u u	nonword
+e uh oe oe	nonword
+e uh oe ae	nonword
+e uh oe y	nonword
+e uh oe e	nonword
+e uh oe i	nonword
+e uh oe ih	nonword
+e uh oe uh	nonword
+e uh oe o	nonword
+e uh oe a	nonword
+e uh oe u	nonword
+e uh ae oe	nonword
+e uh ae ae	nonword
+e uh ae y	nonword
+e uh ae e	nonword
+e uh ae i	nonword
+e uh ae ih	nonword
+e uh ae uh	nonword
+e uh ae o	nonword
+e uh ae a	nonword
+e uh ae u	nonword
+e uh y oe	nonword
+e uh y ae	nonword
+e uh y y	nonword
+e uh y e	nonword
+e uh y i	nonword
+e uh y ih	nonword
+e uh y uh	nonword
+e uh y o	nonword
+e uh y a	nonword
+e uh y u	nonword
+e uh e oe	nonword
+e uh e ae	nonword
+e uh e y	nonword
+e uh e e	nonword
+e uh e i	nonword
+e uh e ih	nonword
+e uh e uh	nonword
+e uh e o	nonword
+e uh e a	nonword
+e uh e u	nonword
+e uh i oe	nonword
+e uh i ae	nonword
+e uh i y	nonword
+e uh i e	nonword
+e uh i i	nonword
+e uh i ih	nonword
+e uh i uh	nonword
+e uh i o	nonword
+e uh i a	nonword
+e uh i u	nonword
+e uh ih oe	nonword
+e uh ih ae	nonword
+e uh ih y	nonword
+e uh ih e	nonword
+e uh ih i	nonword
+e uh ih ih	nonword
+e uh ih uh	nonword
+e uh ih o	nonword
+e uh ih a	nonword
+e uh ih u	nonword
+e uh uh oe	nonword
+e uh uh ae	nonword
+e uh uh y	nonword
+e uh uh e	nonword
+e uh uh i	nonword
+e uh uh ih	nonword
+e uh uh uh	nonword
+e uh uh o	nonword
+e uh uh a	nonword
+e uh uh u	nonword
+e uh o oe	nonword
+e uh o ae	nonword
+e uh o y	nonword
+e uh o e	nonword
+e uh o i	nonword
+e uh o ih	nonword
+e uh o uh	nonword
+e uh o o	nonword
+e uh o a	nonword
+e uh o u	nonword
+e uh a oe	nonword
+e uh a ae	nonword
+e uh a y	nonword
+e uh a e	nonword
+e uh a i	nonword
+e uh a ih	nonword
+e uh a uh	nonword
+e uh a o	nonword
+e uh a a	nonword
+e uh a u	nonword
+e uh u oe	nonword
+e uh u ae	nonword
+e uh u y	nonword
+e uh u e	nonword
+e uh u i	nonword
+e uh u ih	nonword
+e uh u uh	nonword
+e uh u o	nonword
+e uh u a	nonword
+e uh u u	nonword
+e o oe oe	nonword
+e o oe ae	nonword
+e o oe y	nonword
+e o oe e	nonword
+e o oe i	nonword
+e o oe ih	nonword
+e o oe uh	nonword
+e o oe o	nonword
+e o oe a	nonword
+e o oe u	nonword
+e o ae oe	nonword
+e o ae ae	nonword
+e o ae y	nonword
+e o ae e	nonword
+e o ae i	nonword
+e o ae ih	nonword
+e o ae uh	nonword
+e o ae o	nonword
+e o ae a	nonword
+e o ae u	nonword
+e o y oe	nonword
+e o y ae	nonword
+e o y y	nonword
+e o y e	nonword
+e o y i	nonword
+e o y ih	nonword
+e o y uh	nonword
+e o y o	nonword
+e o y a	nonword
+e o y u	nonword
+e o e oe	nonword
+e o e ae	nonword
+e o e y	nonword
+e o e e	word
+e o e i	word
+e o e ih	nonword
+e o e uh	nonword
+e o e o	word
+e o e a	word
+e o e u	word
+e o i oe	nonword
+e o i ae	nonword
+e o i y	nonword
+e o i e	word
+e o i i	word
+e o i ih	nonword
+e o i uh	nonword
+e o i o	word
+e o i a	word
+e o i u	word
+e o ih oe	nonword
+e o ih ae	nonword
+e o ih y	nonword
+e o ih e	nonword
+e o ih i	nonword
+e o ih ih	nonword
+e o ih uh	nonword
+e o ih o	nonword
+e o ih a	nonword
+e o ih u	nonword
+e o uh oe	nonword
+e o uh ae	nonword
+e o uh y	nonword
+e o uh e	nonword
+e o uh i	nonword
+e o uh ih	nonword
+e o uh uh	nonword
+e o uh o	nonword
+e o uh a	nonword
+e o uh u	nonword
+e o o oe	nonword
+e o o ae	nonword
+e o o y	nonword
+e o o e	word
+e o o i	word
+e o o ih	nonword
+e o o uh	nonword
+e o o o	word
+e o o a	word
+e o o u	word
+e o a oe	nonword
+e o a ae	nonword
+e o a y	nonword
+e o a e	word
+e o a i	word
+e o a ih	nonword
+e o a uh	nonword
+e o a o	word
+e o a a	word
+e o a u	word
+e o u oe	nonword
+e o u ae	nonword
+e o u y	nonword
+e o u e	word
+e o u i	word
+e o u ih	nonword
+e o u uh	nonword
+e o u o	word
+e o u a	word
+e o u u	word
+e a oe oe	nonword
+e a oe ae	nonword
+e a oe y	nonword
+e a oe e	nonword
+e a oe i	nonword
+e a oe ih	nonword
+e a oe uh	nonword
+e a oe o	nonword
+e a oe a	nonword
+e a oe u	nonword
+e a ae oe	nonword
+e a ae ae	nonword
+e a ae y	nonword
+e a ae e	nonword
+e a ae i	nonword
+e a ae ih	nonword
+e a ae uh	nonword
+e a ae o	nonword
+e a ae a	nonword
+e a ae u	nonword
+e a y oe	nonword
+e a y ae	nonword
+e a y y	nonword
+e a y e	nonword
+e a y i	nonword
+e a y ih	nonword
+e a y uh	nonword
+e a y o	nonword
+e a y a	nonword
+e a y u	nonword
+e a e oe	nonword
+e a e ae	nonword
+e a e y	nonword
+e a e e	word
+e a e i	word
+e a e ih	nonword
+e a e uh	nonword
+e a e o	word
+e a e a	word
+e a e u	word
+e a i oe	nonword
+e a i ae	nonword
+e a i y	nonword
+e a i e	word
+e a i i	word
+e a i ih	nonword
+e a i uh	nonword
+e a i o	word
+e a i a	word
+e a i u	word
+e a ih oe	nonword
+e a ih ae	nonword
+e a ih y	nonword
+e a ih e	nonword
+e a ih i	nonword
+e a ih ih	nonword
+e a ih uh	nonword
+e a ih o	nonword
+e a ih a	nonword
+e a ih u	nonword
+e a uh oe	nonword
+e a uh ae	nonword
+e a uh y	nonword
+e a uh e	nonword
+e a uh i	nonword
+e a uh ih	nonword
+e a uh uh	nonword
+e a uh o	nonword
+e a uh a	nonword
+e a uh u	nonword
+e a o oe	nonword
+e a o ae	nonword
+e a o y	nonword
+e a o e	word
+e a o i	word
+e a o ih	nonword
+e a o uh	nonword
+e a o o	word
+e a o a	word
+e a o u	word
+e a a oe	nonword
+e a a ae	nonword
+e a a y	nonword
+e a a e	word
+e a a i	word
+e a a ih	nonword
+e a a uh	nonword
+e a a o	word
+e a a a	word
+e a a u	word
+e a u oe	nonword
+e a u ae	nonword
+e a u y	nonword
+e a u e	word
+e a u i	word
+e a u ih	nonword
+e a u uh	nonword
+e a u o	word
+e a u a	word
+e a u u	word
+e u oe oe	nonword
+e u oe ae	nonword
+e u oe y	nonword
+e u oe e	nonword
+e u oe i	nonword
+e u oe ih	nonword
+e u oe uh	nonword
+e u oe o	nonword
+e u oe a	nonword
+e u oe u	nonword
+e u ae oe	nonword
+e u ae ae	nonword
+e u ae y	nonword
+e u ae e	nonword
+e u ae i	nonword
+e u ae ih	nonword
+e u ae uh	nonword
+e u ae o	nonword
+e u ae a	nonword
+e u ae u	nonword
+e u y oe	nonword
+e u y ae	nonword
+e u y y	nonword
+e u y e	nonword
+e u y i	nonword
+e u y ih	nonword
+e u y uh	nonword
+e u y o	nonword
+e u y a	nonword
+e u y u	nonword
+e u e oe	nonword
+e u e ae	nonword
+e u e y	nonword
+e u e e	word
+e u e i	word
+e u e ih	nonword
+e u e uh	nonword
+e u e o	word
+e u e a	word
+e u e u	word
+e u i oe	nonword
+e u i ae	nonword
+e u i y	nonword
+e u i e	word
+e u i i	word
+e u i ih	nonword
+e u i uh	nonword
+e u i o	word
+e u i a	word
+e u i u	word
+e u ih oe	nonword
+e u ih ae	nonword
+e u ih y	nonword
+e u ih e	nonword
+e u ih i	nonword
+e u ih ih	nonword
+e u ih uh	nonword
+e u ih o	nonword
+e u ih a	nonword
+e u ih u	nonword
+e u uh oe	nonword
+e u uh ae	nonword
+e u uh y	nonword
+e u uh e	nonword
+e u uh i	nonword
+e u uh ih	nonword
+e u uh uh	nonword
+e u uh o	nonword
+e u uh a	nonword
+e u uh u	nonword
+e u o oe	nonword
+e u o ae	nonword
+e u o y	nonword
+e u o e	word
+e u o i	word
+e u o ih	nonword
+e u o uh	nonword
+e u o o	word
+e u o a	word
+e u o u	word
+e u a oe	nonword
+e u a ae	nonword
+e u a y	nonword
+e u a e	word
+e u a i	word
+e u a ih	nonword
+e u a uh	nonword
+e u a o	word
+e u a a	word
+e u a u	word
+e u u oe	nonword
+e u u ae	nonword
+e u u y	nonword
+e u u e	word
+e u u i	word
+e u u ih	nonword
+e u u uh	nonword
+e u u o	word
+e u u a	word
+e u u u	word
+i oe oe oe	word
+i oe oe ae	word
+i oe oe y	word
+i oe oe e	word
+i oe oe i	word
+i oe oe ih	nonword
+i oe oe uh	nonword
+i oe oe o	nonword
+i oe oe a	nonword
+i oe oe u	nonword
+i oe ae oe	word
+i oe ae ae	word
+i oe ae y	word
+i oe ae e	word
+i oe ae i	word
+i oe ae ih	nonword
+i oe ae uh	nonword
+i oe ae o	nonword
+i oe ae a	nonword
+i oe ae u	nonword
+i oe y oe	word
+i oe y ae	word
+i oe y y	word
+i oe y e	word
+i oe y i	word
+i oe y ih	nonword
+i oe y uh	nonword
+i oe y o	nonword
+i oe y a	nonword
+i oe y u	nonword
+i oe e oe	word
+i oe e ae	word
+i oe e y	word
+i oe e e	word
+i oe e i	word
+i oe e ih	nonword
+i oe e uh	nonword
+i oe e o	nonword
+i oe e a	nonword
+i oe e u	nonword
+i oe i oe	word
+i oe i ae	word
+i oe i y	word
+i oe i e	word
+i oe i i	word
+i oe i ih	nonword
+i oe i uh	nonword
+i oe i o	nonword
+i oe i a	nonword
+i oe i u	nonword
+i oe ih oe	nonword
+i oe ih ae	nonword
+i oe ih y	nonword
+i oe ih e	nonword
+i oe ih i	nonword
+i oe ih ih	nonword
+i oe ih uh	nonword
+i oe ih o	nonword
+i oe ih a	nonword
+i oe ih u	nonword
+i oe uh oe	nonword
+i oe uh ae	nonword
+i oe uh y	nonword
+i oe uh e	nonword
+i oe uh i	nonword
+i oe uh ih	nonword
+i oe uh uh	nonword
+i oe uh o	nonword
+i oe uh a	nonword
+i oe uh u	nonword
+i oe o oe	nonword
+i oe o ae	nonword
+i oe o y	nonword
+i oe o e	nonword
+i oe o i	nonword
+i oe o ih	nonword
+i oe o uh	nonword
+i oe o o	nonword
+i oe o a	nonword
+i oe o u	nonword
+i oe a oe	nonword
+i oe a ae	nonword
+i oe a y	nonword
+i oe a e	nonword
+i oe a i	nonword
+i oe a ih	nonword
+i oe a uh	nonword
+i oe a o	nonword
+i oe a a	nonword
+i oe a u	nonword
+i oe u oe	nonword
+i oe u ae	nonword
+i oe u y	nonword
+i oe u e	nonword
+i oe u i	nonword
+i oe u ih	nonword
+i oe u uh	nonword
+i oe u o	nonword
+i oe u a	nonword
+i oe u u	nonword
+i ae oe oe	word
+i ae oe ae	word
+i ae oe y	word
+i ae oe e	word
+i ae oe i	word
+i ae oe ih	nonword
+i ae oe uh	nonword
+i ae oe o	nonword
+i ae oe a	nonword
+i ae oe u	nonword
+i ae ae oe	word
+i ae ae ae	word
+i ae ae y	word
+i ae ae e	word
+i ae ae i	word
+i ae ae ih	nonword
+i ae ae uh	nonword
+i ae ae o	nonword
+i ae ae a	nonword
+i ae ae u	nonword
+i ae y oe	word
+i ae y ae	word
+i ae y y	word
+i ae y e	word
+i ae y i	word
+i ae y ih	nonword
+i ae y uh	nonword
+i ae y o	nonword
+i ae y a	nonword
+i ae y u	nonword
+i ae e oe	word
+i ae e ae	word
+i ae e y	word
+i ae e e	word
+i ae e i	word
+i ae e ih	nonword
+i ae e uh	nonword
+i ae e o	nonword
+i ae e a	nonword
+i ae e u	nonword
+i ae i oe	word
+i ae i ae	word
+i ae i y	word
+i ae i e	word
+i ae i i	word
+i ae i ih	nonword
+i ae i uh	nonword
+i ae i o	nonword
+i ae i a	nonword
+i ae i u	nonword
+i ae ih oe	nonword
+i ae ih ae	nonword
+i ae ih y	nonword
+i ae ih e	nonword
+i ae ih i	nonword
+i ae ih ih	nonword
+i ae ih uh	nonword
+i ae ih o	nonword
+i ae ih a	nonword
+i ae ih u	nonword
+i ae uh oe	nonword
+i ae uh ae	nonword
+i ae uh y	nonword
+i ae uh e	nonword
+i ae uh i	nonword
+i ae uh ih	nonword
+i ae uh uh	nonword
+i ae uh o	nonword
+i ae uh a	nonword
+i ae uh u	nonword
+i ae o oe	nonword
+i ae o ae	nonword
+i ae o y	nonword
+i ae o e	nonword
+i ae o i	nonword
+i ae o ih	nonword
+i ae o uh	nonword
+i ae o o	nonword
+i ae o a	nonword
+i ae o u	nonword
+i ae a oe	nonword
+i ae a ae	nonword
+i ae a y	nonword
+i ae a e	nonword
+i ae a i	nonword
+i ae a ih	nonword
+i ae a uh	nonword
+i ae a o	nonword
+i ae a a	nonword
+i ae a u	nonword
+i ae u oe	nonword
+i ae u ae	nonword
+i ae u y	nonword
+i ae u e	nonword
+i ae u i	nonword
+i ae u ih	nonword
+i ae u uh	nonword
+i ae u o	nonword
+i ae u a	nonword
+i ae u u	nonword
+i y oe oe	word
+i y oe ae	word
+i y oe y	word
+i y oe e	word
+i y oe i	word
+i y oe ih	nonword
+i y oe uh	nonword
+i y oe o	nonword
+i y oe a	nonword
+i y oe u	nonword
+i y ae oe	word
+i y ae ae	word
+i y ae y	word
+i y ae e	word
+i y ae i	word
+i y ae ih	nonword
+i y ae uh	nonword
+i y ae o	nonword
+i y ae a	nonword
+i y ae u	nonword
+i y y oe	word
+i y y ae	word
+i y y y	word
+i y y e	word
+i y y i	word
+i y y ih	nonword
+i y y uh	nonword
+i y y o	nonword
+i y y a	nonword
+i y y u	nonword
+i y e oe	word
+i y e ae	word
+i y e y	word
+i y e e	word
+i y e i	word
+i y e ih	nonword
+i y e uh	nonword
+i y e o	nonword
+i y e a	nonword
+i y e u	nonword
+i y i oe	word
+i y i ae	word
+i y i y	word
+i y i e	word
+i y i i	word
+i y i ih	nonword
+i y i uh	nonword
+i y i o	nonword
+i y i a	nonword
+i y i u	nonword
+i y ih oe	nonword
+i y ih ae	nonword
+i y ih y	nonword
+i y ih e	nonword
+i y ih i	nonword
+i y ih ih	nonword
+i y ih uh	nonword
+i y ih o	nonword
+i y ih a	nonword
+i y ih u	nonword
+i y uh oe	nonword
+i y uh ae	nonword
+i y uh y	nonword
+i y uh e	nonword
+i y uh i	nonword
+i y uh ih	nonword
+i y uh uh	nonword
+i y uh o	nonword
+i y uh a	nonword
+i y uh u	nonword
+i y o oe	nonword
+i y o ae	nonword
+i y o y	nonword
+i y o e	nonword
+i y o i	nonword
+i y o ih	nonword
+i y o uh	nonword
+i y o o	nonword
+i y o a	nonword
+i y o u	nonword
+i y a oe	nonword
+i y a ae	nonword
+i y a y	nonword
+i y a e	nonword
+i y a i	nonword
+i y a ih	nonword
+i y a uh	nonword
+i y a o	nonword
+i y a a	nonword
+i y a u	nonword
+i y u oe	nonword
+i y u ae	nonword
+i y u y	nonword
+i y u e	nonword
+i y u i	nonword
+i y u ih	nonword
+i y u uh	nonword
+i y u o	nonword
+i y u a	nonword
+i y u u	nonword
+i e oe oe	word
+i e oe ae	word
+i e oe y	word
+i e oe e	word
+i e oe i	word
+i e oe ih	nonword
+i e oe uh	nonword
+i e oe o	nonword
+i e oe a	nonword
+i e oe u	nonword
+i e ae oe	word
+i e ae ae	word
+i e ae y	word
+i e ae e	word
+i e ae i	word
+i e ae ih	nonword
+i e ae uh	nonword
+i e ae o	nonword
+i e ae a	nonword
+i e ae u	nonword
+i e y oe	word
+i e y ae	word
+i e y y	word
+i e y e	word
+i e y i	word
+i e y ih	nonword
+i e y uh	nonword
+i e y o	nonword
+i e y a	nonword
+i e y u	nonword
+i e e oe	word
+i e e ae	word
+i e e y	word
+i e e e	word
+i e e i	word
+i e e ih	nonword
+i e e uh	nonword
+i e e o	word
+i e e a	word
+i e e u	word
+i e i oe	word
+i e i ae	word
+i e i y	word
+i e i e	word
+i e i i	word
+i e i ih	nonword
+i e i uh	nonword
+i e i o	word
+i e i a	word
+i e i u	word
+i e ih oe	nonword
+i e ih ae	nonword
+i e ih y	nonword
+i e ih e	nonword
+i e ih i	nonword
+i e ih ih	nonword
+i e ih uh	nonword
+i e ih o	nonword
+i e ih a	nonword
+i e ih u	nonword
+i e uh oe	nonword
+i e uh ae	nonword
+i e uh y	nonword
+i e uh e	nonword
+i e uh i	nonword
+i e uh ih	nonword
+i e uh uh	nonword
+i e uh o	nonword
+i e uh a	nonword
+i e uh u	nonword
+i e o oe	nonword
+i e o ae	nonword
+i e o y	nonword
+i e o e	word
+i e o i	word
+i e o ih	nonword
+i e o uh	nonword
+i e o o	word
+i e o a	word
+i e o u	word
+i e a oe	nonword
+i e a ae	nonword
+i e a y	nonword
+i e a e	word
+i e a i	word
+i e a ih	nonword
+i e a uh	nonword
+i e a o	word
+i e a a	word
+i e a u	word
+i e u oe	nonword
+i e u ae	nonword
+i e u y	nonword
+i e u e	word
+i e u i	word
+i e u ih	nonword
+i e u uh	nonword
+i e u o	word
+i e u a	word
+i e u u	word
+i i oe oe	word
+i i oe ae	word
+i i oe y	word
+i i oe e	word
+i i oe i	word
+i i oe ih	nonword
+i i oe uh	nonword
+i i oe o	nonword
+i i oe a	nonword
+i i oe u	nonword
+i i ae oe	word
+i i ae ae	word
+i i ae y	word
+i i ae e	word
+i i ae i	word
+i i ae ih	nonword
+i i ae uh	nonword
+i i ae o	nonword
+i i ae a	nonword
+i i ae u	nonword
+i i y oe	word
+i i y ae	word
+i i y y	word
+i i y e	word
+i i y i	word
+i i y ih	nonword
+i i y uh	nonword
+i i y o	nonword
+i i y a	nonword
+i i y u	nonword
+i i e oe	word
+i i e ae	word
+i i e y	word
+i i e e	word
+i i e i	word
+i i e ih	nonword
+i i e uh	nonword
+i i e o	word
+i i e a	word
+i i e u	word
+i i i oe	word
+i i i ae	word
+i i i y	word
+i i i e	word
+i i i i	word
+i i i ih	nonword
+i i i uh	nonword
+i i i o	word
+i i i a	word
+i i i u	word
+i i ih oe	nonword
+i i ih ae	nonword
+i i ih y	nonword
+i i ih e	nonword
+i i ih i	nonword
+i i ih ih	nonword
+i i ih uh	nonword
+i i ih o	nonword
+i i ih a	nonword
+i i ih u	nonword
+i i uh oe	nonword
+i i uh ae	nonword
+i i uh y	nonword
+i i uh e	nonword
+i i uh i	nonword
+i i uh ih	nonword
+i i uh uh	nonword
+i i uh o	nonword
+i i uh a	nonword
+i i uh u	nonword
+i i o oe	nonword
+i i o ae	nonword
+i i o y	nonword
+i i o e	word
+i i o i	word
+i i o ih	nonword
+i i o uh	nonword
+i i o o	word
+i i o a	word
+i i o u	word
+i i a oe	nonword
+i i a ae	nonword
+i i a y	nonword
+i i a e	word
+i i a i	word
+i i a ih	nonword
+i i a uh	nonword
+i i a o	word
+i i a a	word
+i i a u	word
+i i u oe	nonword
+i i u ae	nonword
+i i u y	nonword
+i i u e	word
+i i u i	word
+i i u ih	nonword
+i i u uh	nonword
+i i u o	word
+i i u a	word
+i i u u	word
+i ih oe oe	nonword
+i ih oe ae	nonword
+i ih oe y	nonword
+i ih oe e	nonword
+i ih oe i	nonword
+i ih oe ih	nonword
+i ih oe uh	nonword
+i ih oe o	nonword
+i ih oe a	nonword
+i ih oe u	nonword
+i ih ae oe	nonword
+i ih ae ae	nonword
+i ih ae y	nonword
+i ih ae e	nonword
+i ih ae i	nonword
+i ih ae ih	nonword
+i ih ae uh	nonword
+i ih ae o	nonword
+i ih ae a	nonword
+i ih ae u	nonword
+i ih y oe	nonword
+i ih y ae	nonword
+i ih y y	nonword
+i ih y e	nonword
+i ih y i	nonword
+i ih y ih	nonword
+i ih y uh	nonword
+i ih y o	nonword
+i ih y a	nonword
+i ih y u	nonword
+i ih e oe	nonword
+i ih e ae	nonword
+i ih e y	nonword
+i ih e e	nonword
+i ih e i	nonword
+i ih e ih	nonword
+i ih e uh	nonword
+i ih e o	nonword
+i ih e a	nonword
+i ih e u	nonword
+i ih i oe	nonword
+i ih i ae	nonword
+i ih i y	nonword
+i ih i e	nonword
+i ih i i	nonword
+i ih i ih	nonword
+i ih i uh	nonword
+i ih i o	nonword
+i ih i a	nonword
+i ih i u	nonword
+i ih ih oe	nonword
+i ih ih ae	nonword
+i ih ih y	nonword
+i ih ih e	nonword
+i ih ih i	nonword
+i ih ih ih	nonword
+i ih ih uh	nonword
+i ih ih o	nonword
+i ih ih a	nonword
+i ih ih u	nonword
+i ih uh oe	nonword
+i ih uh ae	nonword
+i ih uh y	nonword
+i ih uh e	nonword
+i ih uh i	nonword
+i ih uh ih	nonword
+i ih uh uh	nonword
+i ih uh o	nonword
+i ih uh a	nonword
+i ih uh u	nonword
+i ih o oe	nonword
+i ih o ae	nonword
+i ih o y	nonword
+i ih o e	nonword
+i ih o i	nonword
+i ih o ih	nonword
+i ih o uh	nonword
+i ih o o	nonword
+i ih o a	nonword
+i ih o u	nonword
+i ih a oe	nonword
+i ih a ae	nonword
+i ih a y	nonword
+i ih a e	nonword
+i ih a i	nonword
+i ih a ih	nonword
+i ih a uh	nonword
+i ih a o	nonword
+i ih a a	nonword
+i ih a u	nonword
+i ih u oe	nonword
+i ih u ae	nonword
+i ih u y	nonword
+i ih u e	nonword
+i ih u i	nonword
+i ih u ih	nonword
+i ih u uh	nonword
+i ih u o	nonword
+i ih u a	nonword
+i ih u u	nonword
+i uh oe oe	nonword
+i uh oe ae	nonword
+i uh oe y	nonword
+i uh oe e	nonword
+i uh oe i	nonword
+i uh oe ih	nonword
+i uh oe uh	nonword
+i uh oe o	nonword
+i uh oe a	nonword
+i uh oe u	nonword
+i uh ae oe	nonword
+i uh ae ae	nonword
+i uh ae y	nonword
+i uh ae e	nonword
+i uh ae i	nonword
+i uh ae ih	nonword
+i uh ae uh	nonword
+i uh ae o	nonword
+i uh ae a	nonword
+i uh ae u	nonword
+i uh y oe	nonword
+i uh y ae	nonword
+i uh y y	nonword
+i uh y e	nonword
+i uh y i	nonword
+i uh y ih	nonword
+i uh y uh	nonword
+i uh y o	nonword
+i uh y a	nonword
+i uh y u	nonword
+i uh e oe	nonword
+i uh e ae	nonword
+i uh e y	nonword
+i uh e e	nonword
+i uh e i	nonword
+i uh e ih	nonword
+i uh e uh	nonword
+i uh e o	nonword
+i uh e a	nonword
+i uh e u	nonword
+i uh i oe	nonword
+i uh i ae	nonword
+i uh i y	nonword
+i uh i e	nonword
+i uh i i	nonword
+i uh i ih	nonword
+i uh i uh	nonword
+i uh i o	nonword
+i uh i a	nonword
+i uh i u	nonword
+i uh ih oe	nonword
+i uh ih ae	nonword
+i uh ih y	nonword
+i uh ih e	nonword
+i uh ih i	nonword
+i uh ih ih	nonword
+i uh ih uh	nonword
+i uh ih o	nonword
+i uh ih a	nonword
+i uh ih u	nonword
+i uh uh oe	nonword
+i uh uh ae	nonword
+i uh uh y	nonword
+i uh uh e	nonword
+i uh uh i	nonword
+i uh uh ih	nonword
+i uh uh uh	nonword
+i uh uh o	nonword
+i uh uh a	nonword
+i uh uh u	nonword
+i uh o oe	nonword
+i uh o ae	nonword
+i uh o y	nonword
+i uh o e	nonword
+i uh o i	nonword
+i uh o ih	nonword
+i uh o uh	nonword
+i uh o o	nonword
+i uh o a	nonword
+i uh o u	nonword
+i uh a oe	nonword
+i uh a ae	nonword
+i uh a y	nonword
+i uh a e	nonword
+i uh a i	nonword
+i uh a ih	nonword
+i uh a uh	nonword
+i uh a o	nonword
+i uh a a	nonword
+i uh a u	nonword
+i uh u oe	nonword
+i uh u ae	nonword
+i uh u y	nonword
+i uh u e	nonword
+i uh u i	nonword
+i uh u ih	nonword
+i uh u uh	nonword
+i uh u o	nonword
+i uh u a	nonword
+i uh u u	nonword
+i o oe oe	nonword
+i o oe ae	nonword
+i o oe y	nonword
+i o oe e	nonword
+i o oe i	nonword
+i o oe ih	nonword
+i o oe uh	nonword
+i o oe o	nonword
+i o oe a	nonword
+i o oe u	nonword
+i o ae oe	nonword
+i o ae ae	nonword
+i o ae y	nonword
+i o ae e	nonword
+i o ae i	nonword
+i o ae ih	nonword
+i o ae uh	nonword
+i o ae o	nonword
+i o ae a	nonword
+i o ae u	nonword
+i o y oe	nonword
+i o y ae	nonword
+i o y y	nonword
+i o y e	nonword
+i o y i	nonword
+i o y ih	nonword
+i o y uh	nonword
+i o y o	nonword
+i o y a	nonword
+i o y u	nonword
+i o e oe	nonword
+i o e ae	nonword
+i o e y	nonword
+i o e e	word
+i o e i	word
+i o e ih	nonword
+i o e uh	nonword
+i o e o	word
+i o e a	word
+i o e u	word
+i o i oe	nonword
+i o i ae	nonword
+i o i y	nonword
+i o i e	word
+i o i i	word
+i o i ih	nonword
+i o i uh	nonword
+i o i o	word
+i o i a	word
+i o i u	word
+i o ih oe	nonword
+i o ih ae	nonword
+i o ih y	nonword
+i o ih e	nonword
+i o ih i	nonword
+i o ih ih	nonword
+i o ih uh	nonword
+i o ih o	nonword
+i o ih a	nonword
+i o ih u	nonword
+i o uh oe	nonword
+i o uh ae	nonword
+i o uh y	nonword
+i o uh e	nonword
+i o uh i	nonword
+i o uh ih	nonword
+i o uh uh	nonword
+i o uh o	nonword
+i o uh a	nonword
+i o uh u	nonword
+i o o oe	nonword
+i o o ae	nonword
+i o o y	nonword
+i o o e	word
+i o o i	word
+i o o ih	nonword
+i o o uh	nonword
+i o o o	word
+i o o a	word
+i o o u	word
+i o a oe	nonword
+i o a ae	nonword
+i o a y	nonword
+i o a e	word
+i o a i	word
+i o a ih	nonword
+i o a uh	nonword
+i o a o	word
+i o a a	word
+i o a u	word
+i o u oe	nonword
+i o u ae	nonword
+i o u y	nonword
+i o u e	word
+i o u i	word
+i o u ih	nonword
+i o u uh	nonword
+i o u o	word
+i o u a	word
+i o u u	word
+i a oe oe	nonword
+i a oe ae	nonword
+i a oe y	nonword
+i a oe e	nonword
+i a oe i	nonword
+i a oe ih	nonword
+i a oe uh	nonword
+i a oe o	nonword
+i a oe a	nonword
+i a oe u	nonword
+i a ae oe	nonword
+i a ae ae	nonword
+i a ae y	nonword
+i a ae e	nonword
+i a ae i	nonword
+i a ae ih	nonword
+i a ae uh	nonword
+i a ae o	nonword
+i a ae a	nonword
+i a ae u	nonword
+i a y oe	nonword
+i a y ae	nonword
+i a y y	nonword
+i a y e	nonword
+i a y i	nonword
+i a y ih	nonword
+i a y uh	nonword
+i a y o	nonword
+i a y a	nonword
+i a y u	nonword
+i a e oe	nonword
+i a e ae	nonword
+i a e y	nonword
+i a e e	word
+i a e i	word
+i a e ih	nonword
+i a e uh	nonword
+i a e o	word
+i a e a	word
+i a e u	word
+i a i oe	nonword
+i a i ae	nonword
+i a i y	nonword
+i a i e	word
+i a i i	word
+i a i ih	nonword
+i a i uh	nonword
+i a i o	word
+i a i a	word
+i a i u	word
+i a ih oe	nonword
+i a ih ae	nonword
+i a ih y	nonword
+i a ih e	nonword
+i a ih i	nonword
+i a ih ih	nonword
+i a ih uh	nonword
+i a ih o	nonword
+i a ih a	nonword
+i a ih u	nonword
+i a uh oe	nonword
+i a uh ae	nonword
+i a uh y	nonword
+i a uh e	nonword
+i a uh i	nonword
+i a uh ih	nonword
+i a uh uh	nonword
+i a uh o	nonword
+i a uh a	nonword
+i a uh u	nonword
+i a o oe	nonword
+i a o ae	nonword
+i a o y	nonword
+i a o e	word
+i a o i	word
+i a o ih	nonword
+i a o uh	nonword
+i a o o	word
+i a o a	word
+i a o u	word
+i a a oe	nonword
+i a a ae	nonword
+i a a y	nonword
+i a a e	word
+i a a i	word
+i a a ih	nonword
+i a a uh	nonword
+i a a o	word
+i a a a	word
+i a a u	word
+i a u oe	nonword
+i a u ae	nonword
+i a u y	nonword
+i a u e	word
+i a u i	word
+i a u ih	nonword
+i a u uh	nonword
+i a u o	word
+i a u a	word
+i a u u	word
+i u oe oe	nonword
+i u oe ae	nonword
+i u oe y	nonword
+i u oe e	nonword
+i u oe i	nonword
+i u oe ih	nonword
+i u oe uh	nonword
+i u oe o	nonword
+i u oe a	nonword
+i u oe u	nonword
+i u ae oe	nonword
+i u ae ae	nonword
+i u ae y	nonword
+i u ae e	nonword
+i u ae i	nonword
+i u ae ih	nonword
+i u ae uh	nonword
+i u ae o	nonword
+i u ae a	nonword
+i u ae u	nonword
+i u y oe	nonword
+i u y ae	nonword
+i u y y	nonword
+i u y e	nonword
+i u y i	nonword
+i u y ih	nonword
+i u y uh	nonword
+i u y o	nonword
+i u y a	nonword
+i u y u	nonword
+i u e oe	nonword
+i u e ae	nonword
+i u e y	nonword
+i u e e	word
+i u e i	word
+i u e ih	nonword
+i u e uh	nonword
+i u e o	word
+i u e a	word
+i u e u	word
+i u i oe	nonword
+i u i ae	nonword
+i u i y	nonword
+i u i e	word
+i u i i	word
+i u i ih	nonword
+i u i uh	nonword
+i u i o	word
+i u i a	word
+i u i u	word
+i u ih oe	nonword
+i u ih ae	nonword
+i u ih y	nonword
+i u ih e	nonword
+i u ih i	nonword
+i u ih ih	nonword
+i u ih uh	nonword
+i u ih o	nonword
+i u ih a	nonword
+i u ih u	nonword
+i u uh oe	nonword
+i u uh ae	nonword
+i u uh y	nonword
+i u uh e	nonword
+i u uh i	nonword
+i u uh ih	nonword
+i u uh uh	nonword
+i u uh o	nonword
+i u uh a	nonword
+i u uh u	nonword
+i u o oe	nonword
+i u o ae	nonword
+i u o y	nonword
+i u o e	word
+i u o i	word
+i u o ih	nonword
+i u o uh	nonword
+i u o o	word
+i u o a	word
+i u o u	word
+i u a oe	nonword
+i u a ae	nonword
+i u a y	nonword
+i u a e	word
+i u a i	word
+i u a ih	nonword
+i u a uh	nonword
+i u a o	word
+i u a a	word
+i u a u	word
+i u u oe	nonword
+i u u ae	nonword
+i u u y	nonword
+i u u e	word
+i u u i	word
+i u u ih	nonword
+i u u uh	nonword
+i u u o	word
+i u u a	word
+i u u u	word
+ih oe oe oe	nonword
+ih oe oe ae	nonword
+ih oe oe y	nonword
+ih oe oe e	nonword
+ih oe oe i	nonword
+ih oe oe ih	nonword
+ih oe oe uh	nonword
+ih oe oe o	nonword
+ih oe oe a	nonword
+ih oe oe u	nonword
+ih oe ae oe	nonword
+ih oe ae ae	nonword
+ih oe ae y	nonword
+ih oe ae e	nonword
+ih oe ae i	nonword
+ih oe ae ih	nonword
+ih oe ae uh	nonword
+ih oe ae o	nonword
+ih oe ae a	nonword
+ih oe ae u	nonword
+ih oe y oe	nonword
+ih oe y ae	nonword
+ih oe y y	nonword
+ih oe y e	nonword
+ih oe y i	nonword
+ih oe y ih	nonword
+ih oe y uh	nonword
+ih oe y o	nonword
+ih oe y a	nonword
+ih oe y u	nonword
+ih oe e oe	nonword
+ih oe e ae	nonword
+ih oe e y	nonword
+ih oe e e	nonword
+ih oe e i	nonword
+ih oe e ih	nonword
+ih oe e uh	nonword
+ih oe e o	nonword
+ih oe e a	nonword
+ih oe e u	nonword
+ih oe i oe	nonword
+ih oe i ae	nonword
+ih oe i y	nonword
+ih oe i e	nonword
+ih oe i i	nonword
+ih oe i ih	nonword
+ih oe i uh	nonword
+ih oe i o	nonword
+ih oe i a	nonword
+ih oe i u	nonword
+ih oe ih oe	nonword
+ih oe ih ae	nonword
+ih oe ih y	nonword
+ih oe ih e	nonword
+ih oe ih i	nonword
+ih oe ih ih	nonword
+ih oe ih uh	nonword
+ih oe ih o	nonword
+ih oe ih a	nonword
+ih oe ih u	nonword
+ih oe uh oe	nonword
+ih oe uh ae	nonword
+ih oe uh y	nonword
+ih oe uh e	nonword
+ih oe uh i	nonword
+ih oe uh ih	nonword
+ih oe uh uh	nonword
+ih oe uh o	nonword
+ih oe uh a	nonword
+ih oe uh u	nonword
+ih oe o oe	nonword
+ih oe o ae	nonword
+ih oe o y	nonword
+ih oe o e	nonword
+ih oe o i	nonword
+ih oe o ih	nonword
+ih oe o uh	nonword
+ih oe o o	nonword
+ih oe o a	nonword
+ih oe o u	nonword
+ih oe a oe	nonword
+ih oe a ae	nonword
+ih oe a y	nonword
+ih oe a e	nonword
+ih oe a i	nonword
+ih oe a ih	nonword
+ih oe a uh	nonword
+ih oe a o	nonword
+ih oe a a	nonword
+ih oe a u	nonword
+ih oe u oe	nonword
+ih oe u ae	nonword
+ih oe u y	nonword
+ih oe u e	nonword
+ih oe u i	nonword
+ih oe u ih	nonword
+ih oe u uh	nonword
+ih oe u o	nonword
+ih oe u a	nonword
+ih oe u u	nonword
+ih ae oe oe	nonword
+ih ae oe ae	nonword
+ih ae oe y	nonword
+ih ae oe e	nonword
+ih ae oe i	nonword
+ih ae oe ih	nonword
+ih ae oe uh	nonword
+ih ae oe o	nonword
+ih ae oe a	nonword
+ih ae oe u	nonword
+ih ae ae oe	nonword
+ih ae ae ae	nonword
+ih ae ae y	nonword
+ih ae ae e	nonword
+ih ae ae i	nonword
+ih ae ae ih	nonword
+ih ae ae uh	nonword
+ih ae ae o	nonword
+ih ae ae a	nonword
+ih ae ae u	nonword
+ih ae y oe	nonword
+ih ae y ae	nonword
+ih ae y y	nonword
+ih ae y e	nonword
+ih ae y i	nonword
+ih ae y ih	nonword
+ih ae y uh	nonword
+ih ae y o	nonword
+ih ae y a	nonword
+ih ae y u	nonword
+ih ae e oe	nonword
+ih ae e ae	nonword
+ih ae e y	nonword
+ih ae e e	nonword
+ih ae e i	nonword
+ih ae e ih	nonword
+ih ae e uh	nonword
+ih ae e o	nonword
+ih ae e a	nonword
+ih ae e u	nonword
+ih ae i oe	nonword
+ih ae i ae	nonword
+ih ae i y	nonword
+ih ae i e	nonword
+ih ae i i	nonword
+ih ae i ih	nonword
+ih ae i uh	nonword
+ih ae i o	nonword
+ih ae i a	nonword
+ih ae i u	nonword
+ih ae ih oe	nonword
+ih ae ih ae	nonword
+ih ae ih y	nonword
+ih ae ih e	nonword
+ih ae ih i	nonword
+ih ae ih ih	nonword
+ih ae ih uh	nonword
+ih ae ih o	nonword
+ih ae ih a	nonword
+ih ae ih u	nonword
+ih ae uh oe	nonword
+ih ae uh ae	nonword
+ih ae uh y	nonword
+ih ae uh e	nonword
+ih ae uh i	nonword
+ih ae uh ih	nonword
+ih ae uh uh	nonword
+ih ae uh o	nonword
+ih ae uh a	nonword
+ih ae uh u	nonword
+ih ae o oe	nonword
+ih ae o ae	nonword
+ih ae o y	nonword
+ih ae o e	nonword
+ih ae o i	nonword
+ih ae o ih	nonword
+ih ae o uh	nonword
+ih ae o o	nonword
+ih ae o a	nonword
+ih ae o u	nonword
+ih ae a oe	nonword
+ih ae a ae	nonword
+ih ae a y	nonword
+ih ae a e	nonword
+ih ae a i	nonword
+ih ae a ih	nonword
+ih ae a uh	nonword
+ih ae a o	nonword
+ih ae a a	nonword
+ih ae a u	nonword
+ih ae u oe	nonword
+ih ae u ae	nonword
+ih ae u y	nonword
+ih ae u e	nonword
+ih ae u i	nonword
+ih ae u ih	nonword
+ih ae u uh	nonword
+ih ae u o	nonword
+ih ae u a	nonword
+ih ae u u	nonword
+ih y oe oe	nonword
+ih y oe ae	nonword
+ih y oe y	nonword
+ih y oe e	nonword
+ih y oe i	nonword
+ih y oe ih	nonword
+ih y oe uh	nonword
+ih y oe o	nonword
+ih y oe a	nonword
+ih y oe u	nonword
+ih y ae oe	nonword
+ih y ae ae	nonword
+ih y ae y	nonword
+ih y ae e	nonword
+ih y ae i	nonword
+ih y ae ih	nonword
+ih y ae uh	nonword
+ih y ae o	nonword
+ih y ae a	nonword
+ih y ae u	nonword
+ih y y oe	nonword
+ih y y ae	nonword
+ih y y y	nonword
+ih y y e	nonword
+ih y y i	nonword
+ih y y ih	nonword
+ih y y uh	nonword
+ih y y o	nonword
+ih y y a	nonword
+ih y y u	nonword
+ih y e oe	nonword
+ih y e ae	nonword
+ih y e y	nonword
+ih y e e	nonword
+ih y e i	nonword
+ih y e ih	nonword
+ih y e uh	nonword
+ih y e o	nonword
+ih y e a	nonword
+ih y e u	nonword
+ih y i oe	nonword
+ih y i ae	nonword
+ih y i y	nonword
+ih y i e	nonword
+ih y i i	nonword
+ih y i ih	nonword
+ih y i uh	nonword
+ih y i o	nonword
+ih y i a	nonword
+ih y i u	nonword
+ih y ih oe	nonword
+ih y ih ae	nonword
+ih y ih y	nonword
+ih y ih e	nonword
+ih y ih i	nonword
+ih y ih ih	nonword
+ih y ih uh	nonword
+ih y ih o	nonword
+ih y ih a	nonword
+ih y ih u	nonword
+ih y uh oe	nonword
+ih y uh ae	nonword
+ih y uh y	nonword
+ih y uh e	nonword
+ih y uh i	nonword
+ih y uh ih	nonword
+ih y uh uh	nonword
+ih y uh o	nonword
+ih y uh a	nonword
+ih y uh u	nonword
+ih y o oe	nonword
+ih y o ae	nonword
+ih y o y	nonword
+ih y o e	nonword
+ih y o i	nonword
+ih y o ih	nonword
+ih y o uh	nonword
+ih y o o	nonword
+ih y o a	nonword
+ih y o u	nonword
+ih y a oe	nonword
+ih y a ae	nonword
+ih y a y	nonword
+ih y a e	nonword
+ih y a i	nonword
+ih y a ih	nonword
+ih y a uh	nonword
+ih y a o	nonword
+ih y a a	nonword
+ih y a u	nonword
+ih y u oe	nonword
+ih y u ae	nonword
+ih y u y	nonword
+ih y u e	nonword
+ih y u i	nonword
+ih y u ih	nonword
+ih y u uh	nonword
+ih y u o	nonword
+ih y u a	nonword
+ih y u u	nonword
+ih e oe oe	nonword
+ih e oe ae	nonword
+ih e oe y	nonword
+ih e oe e	nonword
+ih e oe i	nonword
+ih e oe ih	nonword
+ih e oe uh	nonword
+ih e oe o	nonword
+ih e oe a	nonword
+ih e oe u	nonword
+ih e ae oe	nonword
+ih e ae ae	nonword
+ih e ae y	nonword
+ih e ae e	nonword
+ih e ae i	nonword
+ih e ae ih	nonword
+ih e ae uh	nonword
+ih e ae o	nonword
+ih e ae a	nonword
+ih e ae u	nonword
+ih e y oe	nonword
+ih e y ae	nonword
+ih e y y	nonword
+ih e y e	nonword
+ih e y i	nonword
+ih e y ih	nonword
+ih e y uh	nonword
+ih e y o	nonword
+ih e y a	nonword
+ih e y u	nonword
+ih e e oe	nonword
+ih e e ae	nonword
+ih e e y	nonword
+ih e e e	nonword
+ih e e i	nonword
+ih e e ih	nonword
+ih e e uh	nonword
+ih e e o	nonword
+ih e e a	nonword
+ih e e u	nonword
+ih e i oe	nonword
+ih e i ae	nonword
+ih e i y	nonword
+ih e i e	nonword
+ih e i i	nonword
+ih e i ih	nonword
+ih e i uh	nonword
+ih e i o	nonword
+ih e i a	nonword
+ih e i u	nonword
+ih e ih oe	nonword
+ih e ih ae	nonword
+ih e ih y	nonword
+ih e ih e	nonword
+ih e ih i	nonword
+ih e ih ih	nonword
+ih e ih uh	nonword
+ih e ih o	nonword
+ih e ih a	nonword
+ih e ih u	nonword
+ih e uh oe	nonword
+ih e uh ae	nonword
+ih e uh y	nonword
+ih e uh e	nonword
+ih e uh i	nonword
+ih e uh ih	nonword
+ih e uh uh	nonword
+ih e uh o	nonword
+ih e uh a	nonword
+ih e uh u	nonword
+ih e o oe	nonword
+ih e o ae	nonword
+ih e o y	nonword
+ih e o e	nonword
+ih e o i	nonword
+ih e o ih	nonword
+ih e o uh	nonword
+ih e o o	nonword
+ih e o a	nonword
+ih e o u	nonword
+ih e a oe	nonword
+ih e a ae	nonword
+ih e a y	nonword
+ih e a e	nonword
+ih e a i	nonword
+ih e a ih	nonword
+ih e a uh	nonword
+ih e a o	nonword
+ih e a a	nonword
+ih e a u	nonword
+ih e u oe	nonword
+ih e u ae	nonword
+ih e u y	nonword
+ih e u e	nonword
+ih e u i	nonword
+ih e u ih	nonword
+ih e u uh	nonword
+ih e u o	nonword
+ih e u a	nonword
+ih e u u	nonword
+ih i oe oe	nonword
+ih i oe ae	nonword
+ih i oe y	nonword
+ih i oe e	nonword
+ih i oe i	nonword
+ih i oe ih	nonword
+ih i oe uh	nonword
+ih i oe o	nonword
+ih i oe a	nonword
+ih i oe u	nonword
+ih i ae oe	nonword
+ih i ae ae	nonword
+ih i ae y	nonword
+ih i ae e	nonword
+ih i ae i	nonword
+ih i ae ih	nonword
+ih i ae uh	nonword
+ih i ae o	nonword
+ih i ae a	nonword
+ih i ae u	nonword
+ih i y oe	nonword
+ih i y ae	nonword
+ih i y y	nonword
+ih i y e	nonword
+ih i y i	nonword
+ih i y ih	nonword
+ih i y uh	nonword
+ih i y o	nonword
+ih i y a	nonword
+ih i y u	nonword
+ih i e oe	nonword
+ih i e ae	nonword
+ih i e y	nonword
+ih i e e	nonword
+ih i e i	nonword
+ih i e ih	nonword
+ih i e uh	nonword
+ih i e o	nonword
+ih i e a	nonword
+ih i e u	nonword
+ih i i oe	nonword
+ih i i ae	nonword
+ih i i y	nonword
+ih i i e	nonword
+ih i i i	nonword
+ih i i ih	nonword
+ih i i uh	nonword
+ih i i o	nonword
+ih i i a	nonword
+ih i i u	nonword
+ih i ih oe	nonword
+ih i ih ae	nonword
+ih i ih y	nonword
+ih i ih e	nonword
+ih i ih i	nonword
+ih i ih ih	nonword
+ih i ih uh	nonword
+ih i ih o	nonword
+ih i ih a	nonword
+ih i ih u	nonword
+ih i uh oe	nonword
+ih i uh ae	nonword
+ih i uh y	nonword
+ih i uh e	nonword
+ih i uh i	nonword
+ih i uh ih	nonword
+ih i uh uh	nonword
+ih i uh o	nonword
+ih i uh a	nonword
+ih i uh u	nonword
+ih i o oe	nonword
+ih i o ae	nonword
+ih i o y	nonword
+ih i o e	nonword
+ih i o i	nonword
+ih i o ih	nonword
+ih i o uh	nonword
+ih i o o	nonword
+ih i o a	nonword
+ih i o u	nonword
+ih i a oe	nonword
+ih i a ae	nonword
+ih i a y	nonword
+ih i a e	nonword
+ih i a i	nonword
+ih i a ih	nonword
+ih i a uh	nonword
+ih i a o	nonword
+ih i a a	nonword
+ih i a u	nonword
+ih i u oe	nonword
+ih i u ae	nonword
+ih i u y	nonword
+ih i u e	nonword
+ih i u i	nonword
+ih i u ih	nonword
+ih i u uh	nonword
+ih i u o	nonword
+ih i u a	nonword
+ih i u u	nonword
+ih ih oe oe	nonword
+ih ih oe ae	nonword
+ih ih oe y	nonword
+ih ih oe e	nonword
+ih ih oe i	nonword
+ih ih oe ih	nonword
+ih ih oe uh	nonword
+ih ih oe o	nonword
+ih ih oe a	nonword
+ih ih oe u	nonword
+ih ih ae oe	nonword
+ih ih ae ae	nonword
+ih ih ae y	nonword
+ih ih ae e	nonword
+ih ih ae i	nonword
+ih ih ae ih	nonword
+ih ih ae uh	nonword
+ih ih ae o	nonword
+ih ih ae a	nonword
+ih ih ae u	nonword
+ih ih y oe	nonword
+ih ih y ae	nonword
+ih ih y y	nonword
+ih ih y e	nonword
+ih ih y i	nonword
+ih ih y ih	nonword
+ih ih y uh	nonword
+ih ih y o	nonword
+ih ih y a	nonword
+ih ih y u	nonword
+ih ih e oe	nonword
+ih ih e ae	nonword
+ih ih e y	nonword
+ih ih e e	nonword
+ih ih e i	nonword
+ih ih e ih	nonword
+ih ih e uh	nonword
+ih ih e o	nonword
+ih ih e a	nonword
+ih ih e u	nonword
+ih ih i oe	nonword
+ih ih i ae	nonword
+ih ih i y	nonword
+ih ih i e	nonword
+ih ih i i	nonword
+ih ih i ih	nonword
+ih ih i uh	nonword
+ih ih i o	nonword
+ih ih i a	nonword
+ih ih i u	nonword
+ih ih ih oe	nonword
+ih ih ih ae	nonword
+ih ih ih y	nonword
+ih ih ih e	nonword
+ih ih ih i	nonword
+ih ih ih ih	nonword
+ih ih ih uh	nonword
+ih ih ih o	nonword
+ih ih ih a	nonword
+ih ih ih u	nonword
+ih ih uh oe	nonword
+ih ih uh ae	nonword
+ih ih uh y	nonword
+ih ih uh e	nonword
+ih ih uh i	nonword
+ih ih uh ih	nonword
+ih ih uh uh	nonword
+ih ih uh o	nonword
+ih ih uh a	nonword
+ih ih uh u	nonword
+ih ih o oe	nonword
+ih ih o ae	nonword
+ih ih o y	nonword
+ih ih o e	nonword
+ih ih o i	nonword
+ih ih o ih	nonword
+ih ih o uh	nonword
+ih ih o o	nonword
+ih ih o a	nonword
+ih ih o u	nonword
+ih ih a oe	nonword
+ih ih a ae	nonword
+ih ih a y	nonword
+ih ih a e	nonword
+ih ih a i	nonword
+ih ih a ih	nonword
+ih ih a uh	nonword
+ih ih a o	nonword
+ih ih a a	nonword
+ih ih a u	nonword
+ih ih u oe	nonword
+ih ih u ae	nonword
+ih ih u y	nonword
+ih ih u e	nonword
+ih ih u i	nonword
+ih ih u ih	nonword
+ih ih u uh	nonword
+ih ih u o	nonword
+ih ih u a	nonword
+ih ih u u	nonword
+ih uh oe oe	nonword
+ih uh oe ae	nonword
+ih uh oe y	nonword
+ih uh oe e	nonword
+ih uh oe i	nonword
+ih uh oe ih	nonword
+ih uh oe uh	nonword
+ih uh oe o	nonword
+ih uh oe a	nonword
+ih uh oe u	nonword
+ih uh ae oe	nonword
+ih uh ae ae	nonword
+ih uh ae y	nonword
+ih uh ae e	nonword
+ih uh ae i	nonword
+ih uh ae ih	nonword
+ih uh ae uh	nonword
+ih uh ae o	nonword
+ih uh ae a	nonword
+ih uh ae u	nonword
+ih uh y oe	nonword
+ih uh y ae	nonword
+ih uh y y	nonword
+ih uh y e	nonword
+ih uh y i	nonword
+ih uh y ih	nonword
+ih uh y uh	nonword
+ih uh y o	nonword
+ih uh y a	nonword
+ih uh y u	nonword
+ih uh e oe	nonword
+ih uh e ae	nonword
+ih uh e y	nonword
+ih uh e e	nonword
+ih uh e i	nonword
+ih uh e ih	nonword
+ih uh e uh	nonword
+ih uh e o	nonword
+ih uh e a	nonword
+ih uh e u	nonword
+ih uh i oe	nonword
+ih uh i ae	nonword
+ih uh i y	nonword
+ih uh i e	nonword
+ih uh i i	nonword
+ih uh i ih	nonword
+ih uh i uh	nonword
+ih uh i o	nonword
+ih uh i a	nonword
+ih uh i u	nonword
+ih uh ih oe	nonword
+ih uh ih ae	nonword
+ih uh ih y	nonword
+ih uh ih e	nonword
+ih uh ih i	nonword
+ih uh ih ih	nonword
+ih uh ih uh	nonword
+ih uh ih o	nonword
+ih uh ih a	nonword
+ih uh ih u	nonword
+ih uh uh oe	nonword
+ih uh uh ae	nonword
+ih uh uh y	nonword
+ih uh uh e	nonword
+ih uh uh i	nonword
+ih uh uh ih	nonword
+ih uh uh uh	nonword
+ih uh uh o	nonword
+ih uh uh a	nonword
+ih uh uh u	nonword
+ih uh o oe	nonword
+ih uh o ae	nonword
+ih uh o y	nonword
+ih uh o e	nonword
+ih uh o i	nonword
+ih uh o ih	nonword
+ih uh o uh	nonword
+ih uh o o	nonword
+ih uh o a	nonword
+ih uh o u	nonword
+ih uh a oe	nonword
+ih uh a ae	nonword
+ih uh a y	nonword
+ih uh a e	nonword
+ih uh a i	nonword
+ih uh a ih	nonword
+ih uh a uh	nonword
+ih uh a o	nonword
+ih uh a a	nonword
+ih uh a u	nonword
+ih uh u oe	nonword
+ih uh u ae	nonword
+ih uh u y	nonword
+ih uh u e	nonword
+ih uh u i	nonword
+ih uh u ih	nonword
+ih uh u uh	nonword
+ih uh u o	nonword
+ih uh u a	nonword
+ih uh u u	nonword
+ih o oe oe	nonword
+ih o oe ae	nonword
+ih o oe y	nonword
+ih o oe e	nonword
+ih o oe i	nonword
+ih o oe ih	nonword
+ih o oe uh	nonword
+ih o oe o	nonword
+ih o oe a	nonword
+ih o oe u	nonword
+ih o ae oe	nonword
+ih o ae ae	nonword
+ih o ae y	nonword
+ih o ae e	nonword
+ih o ae i	nonword
+ih o ae ih	nonword
+ih o ae uh	nonword
+ih o ae o	nonword
+ih o ae a	nonword
+ih o ae u	nonword
+ih o y oe	nonword
+ih o y ae	nonword
+ih o y y	nonword
+ih o y e	nonword
+ih o y i	nonword
+ih o y ih	nonword
+ih o y uh	nonword
+ih o y o	nonword
+ih o y a	nonword
+ih o y u	nonword
+ih o e oe	nonword
+ih o e ae	nonword
+ih o e y	nonword
+ih o e e	nonword
+ih o e i	nonword
+ih o e ih	nonword
+ih o e uh	nonword
+ih o e o	nonword
+ih o e a	nonword
+ih o e u	nonword
+ih o i oe	nonword
+ih o i ae	nonword
+ih o i y	nonword
+ih o i e	nonword
+ih o i i	nonword
+ih o i ih	nonword
+ih o i uh	nonword
+ih o i o	nonword
+ih o i a	nonword
+ih o i u	nonword
+ih o ih oe	nonword
+ih o ih ae	nonword
+ih o ih y	nonword
+ih o ih e	nonword
+ih o ih i	nonword
+ih o ih ih	nonword
+ih o ih uh	nonword
+ih o ih o	nonword
+ih o ih a	nonword
+ih o ih u	nonword
+ih o uh oe	nonword
+ih o uh ae	nonword
+ih o uh y	nonword
+ih o uh e	nonword
+ih o uh i	nonword
+ih o uh ih	nonword
+ih o uh uh	nonword
+ih o uh o	nonword
+ih o uh a	nonword
+ih o uh u	nonword
+ih o o oe	nonword
+ih o o ae	nonword
+ih o o y	nonword
+ih o o e	nonword
+ih o o i	nonword
+ih o o ih	nonword
+ih o o uh	nonword
+ih o o o	nonword
+ih o o a	nonword
+ih o o u	nonword
+ih o a oe	nonword
+ih o a ae	nonword
+ih o a y	nonword
+ih o a e	nonword
+ih o a i	nonword
+ih o a ih	nonword
+ih o a uh	nonword
+ih o a o	nonword
+ih o a a	nonword
+ih o a u	nonword
+ih o u oe	nonword
+ih o u ae	nonword
+ih o u y	nonword
+ih o u e	nonword
+ih o u i	nonword
+ih o u ih	nonword
+ih o u uh	nonword
+ih o u o	nonword
+ih o u a	nonword
+ih o u u	nonword
+ih a oe oe	nonword
+ih a oe ae	nonword
+ih a oe y	nonword
+ih a oe e	nonword
+ih a oe i	nonword
+ih a oe ih	nonword
+ih a oe uh	nonword
+ih a oe o	nonword
+ih a oe a	nonword
+ih a oe u	nonword
+ih a ae oe	nonword
+ih a ae ae	nonword
+ih a ae y	nonword
+ih a ae e	nonword
+ih a ae i	nonword
+ih a ae ih	nonword
+ih a ae uh	nonword
+ih a ae o	nonword
+ih a ae a	nonword
+ih a ae u	nonword
+ih a y oe	nonword
+ih a y ae	nonword
+ih a y y	nonword
+ih a y e	nonword
+ih a y i	nonword
+ih a y ih	nonword
+ih a y uh	nonword
+ih a y o	nonword
+ih a y a	nonword
+ih a y u	nonword
+ih a e oe	nonword
+ih a e ae	nonword
+ih a e y	nonword
+ih a e e	nonword
+ih a e i	nonword
+ih a e ih	nonword
+ih a e uh	nonword
+ih a e o	nonword
+ih a e a	nonword
+ih a e u	nonword
+ih a i oe	nonword
+ih a i ae	nonword
+ih a i y	nonword
+ih a i e	nonword
+ih a i i	nonword
+ih a i ih	nonword
+ih a i uh	nonword
+ih a i o	nonword
+ih a i a	nonword
+ih a i u	nonword
+ih a ih oe	nonword
+ih a ih ae	nonword
+ih a ih y	nonword
+ih a ih e	nonword
+ih a ih i	nonword
+ih a ih ih	nonword
+ih a ih uh	nonword
+ih a ih o	nonword
+ih a ih a	nonword
+ih a ih u	nonword
+ih a uh oe	nonword
+ih a uh ae	nonword
+ih a uh y	nonword
+ih a uh e	nonword
+ih a uh i	nonword
+ih a uh ih	nonword
+ih a uh uh	nonword
+ih a uh o	nonword
+ih a uh a	nonword
+ih a uh u	nonword
+ih a o oe	nonword
+ih a o ae	nonword
+ih a o y	nonword
+ih a o e	nonword
+ih a o i	nonword
+ih a o ih	nonword
+ih a o uh	nonword
+ih a o o	nonword
+ih a o a	nonword
+ih a o u	nonword
+ih a a oe	nonword
+ih a a ae	nonword
+ih a a y	nonword
+ih a a e	nonword
+ih a a i	nonword
+ih a a ih	nonword
+ih a a uh	nonword
+ih a a o	nonword
+ih a a a	nonword
+ih a a u	nonword
+ih a u oe	nonword
+ih a u ae	nonword
+ih a u y	nonword
+ih a u e	nonword
+ih a u i	nonword
+ih a u ih	nonword
+ih a u uh	nonword
+ih a u o	nonword
+ih a u a	nonword
+ih a u u	nonword
+ih u oe oe	nonword
+ih u oe ae	nonword
+ih u oe y	nonword
+ih u oe e	nonword
+ih u oe i	nonword
+ih u oe ih	nonword
+ih u oe uh	nonword
+ih u oe o	nonword
+ih u oe a	nonword
+ih u oe u	nonword
+ih u ae oe	nonword
+ih u ae ae	nonword
+ih u ae y	nonword
+ih u ae e	nonword
+ih u ae i	nonword
+ih u ae ih	nonword
+ih u ae uh	nonword
+ih u ae o	nonword
+ih u ae a	nonword
+ih u ae u	nonword
+ih u y oe	nonword
+ih u y ae	nonword
+ih u y y	nonword
+ih u y e	nonword
+ih u y i	nonword
+ih u y ih	nonword
+ih u y uh	nonword
+ih u y o	nonword
+ih u y a	nonword
+ih u y u	nonword
+ih u e oe	nonword
+ih u e ae	nonword
+ih u e y	nonword
+ih u e e	nonword
+ih u e i	nonword
+ih u e ih	nonword
+ih u e uh	nonword
+ih u e o	nonword
+ih u e a	nonword
+ih u e u	nonword
+ih u i oe	nonword
+ih u i ae	nonword
+ih u i y	nonword
+ih u i e	nonword
+ih u i i	nonword
+ih u i ih	nonword
+ih u i uh	nonword
+ih u i o	nonword
+ih u i a	nonword
+ih u i u	nonword
+ih u ih oe	nonword
+ih u ih ae	nonword
+ih u ih y	nonword
+ih u ih e	nonword
+ih u ih i	nonword
+ih u ih ih	nonword
+ih u ih uh	nonword
+ih u ih o	nonword
+ih u ih a	nonword
+ih u ih u	nonword
+ih u uh oe	nonword
+ih u uh ae	nonword
+ih u uh y	nonword
+ih u uh e	nonword
+ih u uh i	nonword
+ih u uh ih	nonword
+ih u uh uh	nonword
+ih u uh o	nonword
+ih u uh a	nonword
+ih u uh u	nonword
+ih u o oe	nonword
+ih u o ae	nonword
+ih u o y	nonword
+ih u o e	nonword
+ih u o i	nonword
+ih u o ih	nonword
+ih u o uh	nonword
+ih u o o	nonword
+ih u o a	nonword
+ih u o u	nonword
+ih u a oe	nonword
+ih u a ae	nonword
+ih u a y	nonword
+ih u a e	nonword
+ih u a i	nonword
+ih u a ih	nonword
+ih u a uh	nonword
+ih u a o	nonword
+ih u a a	nonword
+ih u a u	nonword
+ih u u oe	nonword
+ih u u ae	nonword
+ih u u y	nonword
+ih u u e	nonword
+ih u u i	nonword
+ih u u ih	nonword
+ih u u uh	nonword
+ih u u o	nonword
+ih u u a	nonword
+ih u u u	nonword
+uh oe oe oe	nonword
+uh oe oe ae	nonword
+uh oe oe y	nonword
+uh oe oe e	nonword
+uh oe oe i	nonword
+uh oe oe ih	nonword
+uh oe oe uh	nonword
+uh oe oe o	nonword
+uh oe oe a	nonword
+uh oe oe u	nonword
+uh oe ae oe	nonword
+uh oe ae ae	nonword
+uh oe ae y	nonword
+uh oe ae e	nonword
+uh oe ae i	nonword
+uh oe ae ih	nonword
+uh oe ae uh	nonword
+uh oe ae o	nonword
+uh oe ae a	nonword
+uh oe ae u	nonword
+uh oe y oe	nonword
+uh oe y ae	nonword
+uh oe y y	nonword
+uh oe y e	nonword
+uh oe y i	nonword
+uh oe y ih	nonword
+uh oe y uh	nonword
+uh oe y o	nonword
+uh oe y a	nonword
+uh oe y u	nonword
+uh oe e oe	nonword
+uh oe e ae	nonword
+uh oe e y	nonword
+uh oe e e	nonword
+uh oe e i	nonword
+uh oe e ih	nonword
+uh oe e uh	nonword
+uh oe e o	nonword
+uh oe e a	nonword
+uh oe e u	nonword
+uh oe i oe	nonword
+uh oe i ae	nonword
+uh oe i y	nonword
+uh oe i e	nonword
+uh oe i i	nonword
+uh oe i ih	nonword
+uh oe i uh	nonword
+uh oe i o	nonword
+uh oe i a	nonword
+uh oe i u	nonword
+uh oe ih oe	nonword
+uh oe ih ae	nonword
+uh oe ih y	nonword
+uh oe ih e	nonword
+uh oe ih i	nonword
+uh oe ih ih	nonword
+uh oe ih uh	nonword
+uh oe ih o	nonword
+uh oe ih a	nonword
+uh oe ih u	nonword
+uh oe uh oe	nonword
+uh oe uh ae	nonword
+uh oe uh y	nonword
+uh oe uh e	nonword
+uh oe uh i	nonword
+uh oe uh ih	nonword
+uh oe uh uh	nonword
+uh oe uh o	nonword
+uh oe uh a	nonword
+uh oe uh u	nonword
+uh oe o oe	nonword
+uh oe o ae	nonword
+uh oe o y	nonword
+uh oe o e	nonword
+uh oe o i	nonword
+uh oe o ih	nonword
+uh oe o uh	nonword
+uh oe o o	nonword
+uh oe o a	nonword
+uh oe o u	nonword
+uh oe a oe	nonword
+uh oe a ae	nonword
+uh oe a y	nonword
+uh oe a e	nonword
+uh oe a i	nonword
+uh oe a ih	nonword
+uh oe a uh	nonword
+uh oe a o	nonword
+uh oe a a	nonword
+uh oe a u	nonword
+uh oe u oe	nonword
+uh oe u ae	nonword
+uh oe u y	nonword
+uh oe u e	nonword
+uh oe u i	nonword
+uh oe u ih	nonword
+uh oe u uh	nonword
+uh oe u o	nonword
+uh oe u a	nonword
+uh oe u u	nonword
+uh ae oe oe	nonword
+uh ae oe ae	nonword
+uh ae oe y	nonword
+uh ae oe e	nonword
+uh ae oe i	nonword
+uh ae oe ih	nonword
+uh ae oe uh	nonword
+uh ae oe o	nonword
+uh ae oe a	nonword
+uh ae oe u	nonword
+uh ae ae oe	nonword
+uh ae ae ae	nonword
+uh ae ae y	nonword
+uh ae ae e	nonword
+uh ae ae i	nonword
+uh ae ae ih	nonword
+uh ae ae uh	nonword
+uh ae ae o	nonword
+uh ae ae a	nonword
+uh ae ae u	nonword
+uh ae y oe	nonword
+uh ae y ae	nonword
+uh ae y y	nonword
+uh ae y e	nonword
+uh ae y i	nonword
+uh ae y ih	nonword
+uh ae y uh	nonword
+uh ae y o	nonword
+uh ae y a	nonword
+uh ae y u	nonword
+uh ae e oe	nonword
+uh ae e ae	nonword
+uh ae e y	nonword
+uh ae e e	nonword
+uh ae e i	nonword
+uh ae e ih	nonword
+uh ae e uh	nonword
+uh ae e o	nonword
+uh ae e a	nonword
+uh ae e u	nonword
+uh ae i oe	nonword
+uh ae i ae	nonword
+uh ae i y	nonword
+uh ae i e	nonword
+uh ae i i	nonword
+uh ae i ih	nonword
+uh ae i uh	nonword
+uh ae i o	nonword
+uh ae i a	nonword
+uh ae i u	nonword
+uh ae ih oe	nonword
+uh ae ih ae	nonword
+uh ae ih y	nonword
+uh ae ih e	nonword
+uh ae ih i	nonword
+uh ae ih ih	nonword
+uh ae ih uh	nonword
+uh ae ih o	nonword
+uh ae ih a	nonword
+uh ae ih u	nonword
+uh ae uh oe	nonword
+uh ae uh ae	nonword
+uh ae uh y	nonword
+uh ae uh e	nonword
+uh ae uh i	nonword
+uh ae uh ih	nonword
+uh ae uh uh	nonword
+uh ae uh o	nonword
+uh ae uh a	nonword
+uh ae uh u	nonword
+uh ae o oe	nonword
+uh ae o ae	nonword
+uh ae o y	nonword
+uh ae o e	nonword
+uh ae o i	nonword
+uh ae o ih	nonword
+uh ae o uh	nonword
+uh ae o o	nonword
+uh ae o a	nonword
+uh ae o u	nonword
+uh ae a oe	nonword
+uh ae a ae	nonword
+uh ae a y	nonword
+uh ae a e	nonword
+uh ae a i	nonword
+uh ae a ih	nonword
+uh ae a uh	nonword
+uh ae a o	nonword
+uh ae a a	nonword
+uh ae a u	nonword
+uh ae u oe	nonword
+uh ae u ae	nonword
+uh ae u y	nonword
+uh ae u e	nonword
+uh ae u i	nonword
+uh ae u ih	nonword
+uh ae u uh	nonword
+uh ae u o	nonword
+uh ae u a	nonword
+uh ae u u	nonword
+uh y oe oe	nonword
+uh y oe ae	nonword
+uh y oe y	nonword
+uh y oe e	nonword
+uh y oe i	nonword
+uh y oe ih	nonword
+uh y oe uh	nonword
+uh y oe o	nonword
+uh y oe a	nonword
+uh y oe u	nonword
+uh y ae oe	nonword
+uh y ae ae	nonword
+uh y ae y	nonword
+uh y ae e	nonword
+uh y ae i	nonword
+uh y ae ih	nonword
+uh y ae uh	nonword
+uh y ae o	nonword
+uh y ae a	nonword
+uh y ae u	nonword
+uh y y oe	nonword
+uh y y ae	nonword
+uh y y y	nonword
+uh y y e	nonword
+uh y y i	nonword
+uh y y ih	nonword
+uh y y uh	nonword
+uh y y o	nonword
+uh y y a	nonword
+uh y y u	nonword
+uh y e oe	nonword
+uh y e ae	nonword
+uh y e y	nonword
+uh y e e	nonword
+uh y e i	nonword
+uh y e ih	nonword
+uh y e uh	nonword
+uh y e o	nonword
+uh y e a	nonword
+uh y e u	nonword
+uh y i oe	nonword
+uh y i ae	nonword
+uh y i y	nonword
+uh y i e	nonword
+uh y i i	nonword
+uh y i ih	nonword
+uh y i uh	nonword
+uh y i o	nonword
+uh y i a	nonword
+uh y i u	nonword
+uh y ih oe	nonword
+uh y ih ae	nonword
+uh y ih y	nonword
+uh y ih e	nonword
+uh y ih i	nonword
+uh y ih ih	nonword
+uh y ih uh	nonword
+uh y ih o	nonword
+uh y ih a	nonword
+uh y ih u	nonword
+uh y uh oe	nonword
+uh y uh ae	nonword
+uh y uh y	nonword
+uh y uh e	nonword
+uh y uh i	nonword
+uh y uh ih	nonword
+uh y uh uh	nonword
+uh y uh o	nonword
+uh y uh a	nonword
+uh y uh u	nonword
+uh y o oe	nonword
+uh y o ae	nonword
+uh y o y	nonword
+uh y o e	nonword
+uh y o i	nonword
+uh y o ih	nonword
+uh y o uh	nonword
+uh y o o	nonword
+uh y o a	nonword
+uh y o u	nonword
+uh y a oe	nonword
+uh y a ae	nonword
+uh y a y	nonword
+uh y a e	nonword
+uh y a i	nonword
+uh y a ih	nonword
+uh y a uh	nonword
+uh y a o	nonword
+uh y a a	nonword
+uh y a u	nonword
+uh y u oe	nonword
+uh y u ae	nonword
+uh y u y	nonword
+uh y u e	nonword
+uh y u i	nonword
+uh y u ih	nonword
+uh y u uh	nonword
+uh y u o	nonword
+uh y u a	nonword
+uh y u u	nonword
+uh e oe oe	nonword
+uh e oe ae	nonword
+uh e oe y	nonword
+uh e oe e	nonword
+uh e oe i	nonword
+uh e oe ih	nonword
+uh e oe uh	nonword
+uh e oe o	nonword
+uh e oe a	nonword
+uh e oe u	nonword
+uh e ae oe	nonword
+uh e ae ae	nonword
+uh e ae y	nonword
+uh e ae e	nonword
+uh e ae i	nonword
+uh e ae ih	nonword
+uh e ae uh	nonword
+uh e ae o	nonword
+uh e ae a	nonword
+uh e ae u	nonword
+uh e y oe	nonword
+uh e y ae	nonword
+uh e y y	nonword
+uh e y e	nonword
+uh e y i	nonword
+uh e y ih	nonword
+uh e y uh	nonword
+uh e y o	nonword
+uh e y a	nonword
+uh e y u	nonword
+uh e e oe	nonword
+uh e e ae	nonword
+uh e e y	nonword
+uh e e e	nonword
+uh e e i	nonword
+uh e e ih	nonword
+uh e e uh	nonword
+uh e e o	nonword
+uh e e a	nonword
+uh e e u	nonword
+uh e i oe	nonword
+uh e i ae	nonword
+uh e i y	nonword
+uh e i e	nonword
+uh e i i	nonword
+uh e i ih	nonword
+uh e i uh	nonword
+uh e i o	nonword
+uh e i a	nonword
+uh e i u	nonword
+uh e ih oe	nonword
+uh e ih ae	nonword
+uh e ih y	nonword
+uh e ih e	nonword
+uh e ih i	nonword
+uh e ih ih	nonword
+uh e ih uh	nonword
+uh e ih o	nonword
+uh e ih a	nonword
+uh e ih u	nonword
+uh e uh oe	nonword
+uh e uh ae	nonword
+uh e uh y	nonword
+uh e uh e	nonword
+uh e uh i	nonword
+uh e uh ih	nonword
+uh e uh uh	nonword
+uh e uh o	nonword
+uh e uh a	nonword
+uh e uh u	nonword
+uh e o oe	nonword
+uh e o ae	nonword
+uh e o y	nonword
+uh e o e	nonword
+uh e o i	nonword
+uh e o ih	nonword
+uh e o uh	nonword
+uh e o o	nonword
+uh e o a	nonword
+uh e o u	nonword
+uh e a oe	nonword
+uh e a ae	nonword
+uh e a y	nonword
+uh e a e	nonword
+uh e a i	nonword
+uh e a ih	nonword
+uh e a uh	nonword
+uh e a o	nonword
+uh e a a	nonword
+uh e a u	nonword
+uh e u oe	nonword
+uh e u ae	nonword
+uh e u y	nonword
+uh e u e	nonword
+uh e u i	nonword
+uh e u ih	nonword
+uh e u uh	nonword
+uh e u o	nonword
+uh e u a	nonword
+uh e u u	nonword
+uh i oe oe	nonword
+uh i oe ae	nonword
+uh i oe y	nonword
+uh i oe e	nonword
+uh i oe i	nonword
+uh i oe ih	nonword
+uh i oe uh	nonword
+uh i oe o	nonword
+uh i oe a	nonword
+uh i oe u	nonword
+uh i ae oe	nonword
+uh i ae ae	nonword
+uh i ae y	nonword
+uh i ae e	nonword
+uh i ae i	nonword
+uh i ae ih	nonword
+uh i ae uh	nonword
+uh i ae o	nonword
+uh i ae a	nonword
+uh i ae u	nonword
+uh i y oe	nonword
+uh i y ae	nonword
+uh i y y	nonword
+uh i y e	nonword
+uh i y i	nonword
+uh i y ih	nonword
+uh i y uh	nonword
+uh i y o	nonword
+uh i y a	nonword
+uh i y u	nonword
+uh i e oe	nonword
+uh i e ae	nonword
+uh i e y	nonword
+uh i e e	nonword
+uh i e i	nonword
+uh i e ih	nonword
+uh i e uh	nonword
+uh i e o	nonword
+uh i e a	nonword
+uh i e u	nonword
+uh i i oe	nonword
+uh i i ae	nonword
+uh i i y	nonword
+uh i i e	nonword
+uh i i i	nonword
+uh i i ih	nonword
+uh i i uh	nonword
+uh i i o	nonword
+uh i i a	nonword
+uh i i u	nonword
+uh i ih oe	nonword
+uh i ih ae	nonword
+uh i ih y	nonword
+uh i ih e	nonword
+uh i ih i	nonword
+uh i ih ih	nonword
+uh i ih uh	nonword
+uh i ih o	nonword
+uh i ih a	nonword
+uh i ih u	nonword
+uh i uh oe	nonword
+uh i uh ae	nonword
+uh i uh y	nonword
+uh i uh e	nonword
+uh i uh i	nonword
+uh i uh ih	nonword
+uh i uh uh	nonword
+uh i uh o	nonword
+uh i uh a	nonword
+uh i uh u	nonword
+uh i o oe	nonword
+uh i o ae	nonword
+uh i o y	nonword
+uh i o e	nonword
+uh i o i	nonword
+uh i o ih	nonword
+uh i o uh	nonword
+uh i o o	nonword
+uh i o a	nonword
+uh i o u	nonword
+uh i a oe	nonword
+uh i a ae	nonword
+uh i a y	nonword
+uh i a e	nonword
+uh i a i	nonword
+uh i a ih	nonword
+uh i a uh	nonword
+uh i a o	nonword
+uh i a a	nonword
+uh i a u	nonword
+uh i u oe	nonword
+uh i u ae	nonword
+uh i u y	nonword
+uh i u e	nonword
+uh i u i	nonword
+uh i u ih	nonword
+uh i u uh	nonword
+uh i u o	nonword
+uh i u a	nonword
+uh i u u	nonword
+uh ih oe oe	nonword
+uh ih oe ae	nonword
+uh ih oe y	nonword
+uh ih oe e	nonword
+uh ih oe i	nonword
+uh ih oe ih	nonword
+uh ih oe uh	nonword
+uh ih oe o	nonword
+uh ih oe a	nonword
+uh ih oe u	nonword
+uh ih ae oe	nonword
+uh ih ae ae	nonword
+uh ih ae y	nonword
+uh ih ae e	nonword
+uh ih ae i	nonword
+uh ih ae ih	nonword
+uh ih ae uh	nonword
+uh ih ae o	nonword
+uh ih ae a	nonword
+uh ih ae u	nonword
+uh ih y oe	nonword
+uh ih y ae	nonword
+uh ih y y	nonword
+uh ih y e	nonword
+uh ih y i	nonword
+uh ih y ih	nonword
+uh ih y uh	nonword
+uh ih y o	nonword
+uh ih y a	nonword
+uh ih y u	nonword
+uh ih e oe	nonword
+uh ih e ae	nonword
+uh ih e y	nonword
+uh ih e e	nonword
+uh ih e i	nonword
+uh ih e ih	nonword
+uh ih e uh	nonword
+uh ih e o	nonword
+uh ih e a	nonword
+uh ih e u	nonword
+uh ih i oe	nonword
+uh ih i ae	nonword
+uh ih i y	nonword
+uh ih i e	nonword
+uh ih i i	nonword
+uh ih i ih	nonword
+uh ih i uh	nonword
+uh ih i o	nonword
+uh ih i a	nonword
+uh ih i u	nonword
+uh ih ih oe	nonword
+uh ih ih ae	nonword
+uh ih ih y	nonword
+uh ih ih e	nonword
+uh ih ih i	nonword
+uh ih ih ih	nonword
+uh ih ih uh	nonword
+uh ih ih o	nonword
+uh ih ih a	nonword
+uh ih ih u	nonword
+uh ih uh oe	nonword
+uh ih uh ae	nonword
+uh ih uh y	nonword
+uh ih uh e	nonword
+uh ih uh i	nonword
+uh ih uh ih	nonword
+uh ih uh uh	nonword
+uh ih uh o	nonword
+uh ih uh a	nonword
+uh ih uh u	nonword
+uh ih o oe	nonword
+uh ih o ae	nonword
+uh ih o y	nonword
+uh ih o e	nonword
+uh ih o i	nonword
+uh ih o ih	nonword
+uh ih o uh	nonword
+uh ih o o	nonword
+uh ih o a	nonword
+uh ih o u	nonword
+uh ih a oe	nonword
+uh ih a ae	nonword
+uh ih a y	nonword
+uh ih a e	nonword
+uh ih a i	nonword
+uh ih a ih	nonword
+uh ih a uh	nonword
+uh ih a o	nonword
+uh ih a a	nonword
+uh ih a u	nonword
+uh ih u oe	nonword
+uh ih u ae	nonword
+uh ih u y	nonword
+uh ih u e	nonword
+uh ih u i	nonword
+uh ih u ih	nonword
+uh ih u uh	nonword
+uh ih u o	nonword
+uh ih u a	nonword
+uh ih u u	nonword
+uh uh oe oe	nonword
+uh uh oe ae	nonword
+uh uh oe y	nonword
+uh uh oe e	nonword
+uh uh oe i	nonword
+uh uh oe ih	nonword
+uh uh oe uh	nonword
+uh uh oe o	nonword
+uh uh oe a	nonword
+uh uh oe u	nonword
+uh uh ae oe	nonword
+uh uh ae ae	nonword
+uh uh ae y	nonword
+uh uh ae e	nonword
+uh uh ae i	nonword
+uh uh ae ih	nonword
+uh uh ae uh	nonword
+uh uh ae o	nonword
+uh uh ae a	nonword
+uh uh ae u	nonword
+uh uh y oe	nonword
+uh uh y ae	nonword
+uh uh y y	nonword
+uh uh y e	nonword
+uh uh y i	nonword
+uh uh y ih	nonword
+uh uh y uh	nonword
+uh uh y o	nonword
+uh uh y a	nonword
+uh uh y u	nonword
+uh uh e oe	nonword
+uh uh e ae	nonword
+uh uh e y	nonword
+uh uh e e	nonword
+uh uh e i	nonword
+uh uh e ih	nonword
+uh uh e uh	nonword
+uh uh e o	nonword
+uh uh e a	nonword
+uh uh e u	nonword
+uh uh i oe	nonword
+uh uh i ae	nonword
+uh uh i y	nonword
+uh uh i e	nonword
+uh uh i i	nonword
+uh uh i ih	nonword
+uh uh i uh	nonword
+uh uh i o	nonword
+uh uh i a	nonword
+uh uh i u	nonword
+uh uh ih oe	nonword
+uh uh ih ae	nonword
+uh uh ih y	nonword
+uh uh ih e	nonword
+uh uh ih i	nonword
+uh uh ih ih	nonword
+uh uh ih uh	nonword
+uh uh ih o	nonword
+uh uh ih a	nonword
+uh uh ih u	nonword
+uh uh uh oe	nonword
+uh uh uh ae	nonword
+uh uh uh y	nonword
+uh uh uh e	nonword
+uh uh uh i	nonword
+uh uh uh ih	nonword
+uh uh uh uh	nonword
+uh uh uh o	nonword
+uh uh uh a	nonword
+uh uh uh u	nonword
+uh uh o oe	nonword
+uh uh o ae	nonword
+uh uh o y	nonword
+uh uh o e	nonword
+uh uh o i	nonword
+uh uh o ih	nonword
+uh uh o uh	nonword
+uh uh o o	nonword
+uh uh o a	nonword
+uh uh o u	nonword
+uh uh a oe	nonword
+uh uh a ae	nonword
+uh uh a y	nonword
+uh uh a e	nonword
+uh uh a i	nonword
+uh uh a ih	nonword
+uh uh a uh	nonword
+uh uh a o	nonword
+uh uh a a	nonword
+uh uh a u	nonword
+uh uh u oe	nonword
+uh uh u ae	nonword
+uh uh u y	nonword
+uh uh u e	nonword
+uh uh u i	nonword
+uh uh u ih	nonword
+uh uh u uh	nonword
+uh uh u o	nonword
+uh uh u a	nonword
+uh uh u u	nonword
+uh o oe oe	nonword
+uh o oe ae	nonword
+uh o oe y	nonword
+uh o oe e	nonword
+uh o oe i	nonword
+uh o oe ih	nonword
+uh o oe uh	nonword
+uh o oe o	nonword
+uh o oe a	nonword
+uh o oe u	nonword
+uh o ae oe	nonword
+uh o ae ae	nonword
+uh o ae y	nonword
+uh o ae e	nonword
+uh o ae i	nonword
+uh o ae ih	nonword
+uh o ae uh	nonword
+uh o ae o	nonword
+uh o ae a	nonword
+uh o ae u	nonword
+uh o y oe	nonword
+uh o y ae	nonword
+uh o y y	nonword
+uh o y e	nonword
+uh o y i	nonword
+uh o y ih	nonword
+uh o y uh	nonword
+uh o y o	nonword
+uh o y a	nonword
+uh o y u	nonword
+uh o e oe	nonword
+uh o e ae	nonword
+uh o e y	nonword
+uh o e e	nonword
+uh o e i	nonword
+uh o e ih	nonword
+uh o e uh	nonword
+uh o e o	nonword
+uh o e a	nonword
+uh o e u	nonword
+uh o i oe	nonword
+uh o i ae	nonword
+uh o i y	nonword
+uh o i e	nonword
+uh o i i	nonword
+uh o i ih	nonword
+uh o i uh	nonword
+uh o i o	nonword
+uh o i a	nonword
+uh o i u	nonword
+uh o ih oe	nonword
+uh o ih ae	nonword
+uh o ih y	nonword
+uh o ih e	nonword
+uh o ih i	nonword
+uh o ih ih	nonword
+uh o ih uh	nonword
+uh o ih o	nonword
+uh o ih a	nonword
+uh o ih u	nonword
+uh o uh oe	nonword
+uh o uh ae	nonword
+uh o uh y	nonword
+uh o uh e	nonword
+uh o uh i	nonword
+uh o uh ih	nonword
+uh o uh uh	nonword
+uh o uh o	nonword
+uh o uh a	nonword
+uh o uh u	nonword
+uh o o oe	nonword
+uh o o ae	nonword
+uh o o y	nonword
+uh o o e	nonword
+uh o o i	nonword
+uh o o ih	nonword
+uh o o uh	nonword
+uh o o o	nonword
+uh o o a	nonword
+uh o o u	nonword
+uh o a oe	nonword
+uh o a ae	nonword
+uh o a y	nonword
+uh o a e	nonword
+uh o a i	nonword
+uh o a ih	nonword
+uh o a uh	nonword
+uh o a o	nonword
+uh o a a	nonword
+uh o a u	nonword
+uh o u oe	nonword
+uh o u ae	nonword
+uh o u y	nonword
+uh o u e	nonword
+uh o u i	nonword
+uh o u ih	nonword
+uh o u uh	nonword
+uh o u o	nonword
+uh o u a	nonword
+uh o u u	nonword
+uh a oe oe	nonword
+uh a oe ae	nonword
+uh a oe y	nonword
+uh a oe e	nonword
+uh a oe i	nonword
+uh a oe ih	nonword
+uh a oe uh	nonword
+uh a oe o	nonword
+uh a oe a	nonword
+uh a oe u	nonword
+uh a ae oe	nonword
+uh a ae ae	nonword
+uh a ae y	nonword
+uh a ae e	nonword
+uh a ae i	nonword
+uh a ae ih	nonword
+uh a ae uh	nonword
+uh a ae o	nonword
+uh a ae a	nonword
+uh a ae u	nonword
+uh a y oe	nonword
+uh a y ae	nonword
+uh a y y	nonword
+uh a y e	nonword
+uh a y i	nonword
+uh a y ih	nonword
+uh a y uh	nonword
+uh a y o	nonword
+uh a y a	nonword
+uh a y u	nonword
+uh a e oe	nonword
+uh a e ae	nonword
+uh a e y	nonword
+uh a e e	nonword
+uh a e i	nonword
+uh a e ih	nonword
+uh a e uh	nonword
+uh a e o	nonword
+uh a e a	nonword
+uh a e u	nonword
+uh a i oe	nonword
+uh a i ae	nonword
+uh a i y	nonword
+uh a i e	nonword
+uh a i i	nonword
+uh a i ih	nonword
+uh a i uh	nonword
+uh a i o	nonword
+uh a i a	nonword
+uh a i u	nonword
+uh a ih oe	nonword
+uh a ih ae	nonword
+uh a ih y	nonword
+uh a ih e	nonword
+uh a ih i	nonword
+uh a ih ih	nonword
+uh a ih uh	nonword
+uh a ih o	nonword
+uh a ih a	nonword
+uh a ih u	nonword
+uh a uh oe	nonword
+uh a uh ae	nonword
+uh a uh y	nonword
+uh a uh e	nonword
+uh a uh i	nonword
+uh a uh ih	nonword
+uh a uh uh	nonword
+uh a uh o	nonword
+uh a uh a	nonword
+uh a uh u	nonword
+uh a o oe	nonword
+uh a o ae	nonword
+uh a o y	nonword
+uh a o e	nonword
+uh a o i	nonword
+uh a o ih	nonword
+uh a o uh	nonword
+uh a o o	nonword
+uh a o a	nonword
+uh a o u	nonword
+uh a a oe	nonword
+uh a a ae	nonword
+uh a a y	nonword
+uh a a e	nonword
+uh a a i	nonword
+uh a a ih	nonword
+uh a a uh	nonword
+uh a a o	nonword
+uh a a a	nonword
+uh a a u	nonword
+uh a u oe	nonword
+uh a u ae	nonword
+uh a u y	nonword
+uh a u e	nonword
+uh a u i	nonword
+uh a u ih	nonword
+uh a u uh	nonword
+uh a u o	nonword
+uh a u a	nonword
+uh a u u	nonword
+uh u oe oe	nonword
+uh u oe ae	nonword
+uh u oe y	nonword
+uh u oe e	nonword
+uh u oe i	nonword
+uh u oe ih	nonword
+uh u oe uh	nonword
+uh u oe o	nonword
+uh u oe a	nonword
+uh u oe u	nonword
+uh u ae oe	nonword
+uh u ae ae	nonword
+uh u ae y	nonword
+uh u ae e	nonword
+uh u ae i	nonword
+uh u ae ih	nonword
+uh u ae uh	nonword
+uh u ae o	nonword
+uh u ae a	nonword
+uh u ae u	nonword
+uh u y oe	nonword
+uh u y ae	nonword
+uh u y y	nonword
+uh u y e	nonword
+uh u y i	nonword
+uh u y ih	nonword
+uh u y uh	nonword
+uh u y o	nonword
+uh u y a	nonword
+uh u y u	nonword
+uh u e oe	nonword
+uh u e ae	nonword
+uh u e y	nonword
+uh u e e	nonword
+uh u e i	nonword
+uh u e ih	nonword
+uh u e uh	nonword
+uh u e o	nonword
+uh u e a	nonword
+uh u e u	nonword
+uh u i oe	nonword
+uh u i ae	nonword
+uh u i y	nonword
+uh u i e	nonword
+uh u i i	nonword
+uh u i ih	nonword
+uh u i uh	nonword
+uh u i o	nonword
+uh u i a	nonword
+uh u i u	nonword
+uh u ih oe	nonword
+uh u ih ae	nonword
+uh u ih y	nonword
+uh u ih e	nonword
+uh u ih i	nonword
+uh u ih ih	nonword
+uh u ih uh	nonword
+uh u ih o	nonword
+uh u ih a	nonword
+uh u ih u	nonword
+uh u uh oe	nonword
+uh u uh ae	nonword
+uh u uh y	nonword
+uh u uh e	nonword
+uh u uh i	nonword
+uh u uh ih	nonword
+uh u uh uh	nonword
+uh u uh o	nonword
+uh u uh a	nonword
+uh u uh u	nonword
+uh u o oe	nonword
+uh u o ae	nonword
+uh u o y	nonword
+uh u o e	nonword
+uh u o i	nonword
+uh u o ih	nonword
+uh u o uh	nonword
+uh u o o	nonword
+uh u o a	nonword
+uh u o u	nonword
+uh u a oe	nonword
+uh u a ae	nonword
+uh u a y	nonword
+uh u a e	nonword
+uh u a i	nonword
+uh u a ih	nonword
+uh u a uh	nonword
+uh u a o	nonword
+uh u a a	nonword
+uh u a u	nonword
+uh u u oe	nonword
+uh u u ae	nonword
+uh u u y	nonword
+uh u u e	nonword
+uh u u i	nonword
+uh u u ih	nonword
+uh u u uh	nonword
+uh u u o	nonword
+uh u u a	nonword
+uh u u u	nonword
+o oe oe oe	nonword
+o oe oe ae	nonword
+o oe oe y	nonword
+o oe oe e	nonword
+o oe oe i	nonword
+o oe oe ih	nonword
+o oe oe uh	nonword
+o oe oe o	nonword
+o oe oe a	nonword
+o oe oe u	nonword
+o oe ae oe	nonword
+o oe ae ae	nonword
+o oe ae y	nonword
+o oe ae e	nonword
+o oe ae i	nonword
+o oe ae ih	nonword
+o oe ae uh	nonword
+o oe ae o	nonword
+o oe ae a	nonword
+o oe ae u	nonword
+o oe y oe	nonword
+o oe y ae	nonword
+o oe y y	nonword
+o oe y e	nonword
+o oe y i	nonword
+o oe y ih	nonword
+o oe y uh	nonword
+o oe y o	nonword
+o oe y a	nonword
+o oe y u	nonword
+o oe e oe	nonword
+o oe e ae	nonword
+o oe e y	nonword
+o oe e e	nonword
+o oe e i	nonword
+o oe e ih	nonword
+o oe e uh	nonword
+o oe e o	nonword
+o oe e a	nonword
+o oe e u	nonword
+o oe i oe	nonword
+o oe i ae	nonword
+o oe i y	nonword
+o oe i e	nonword
+o oe i i	nonword
+o oe i ih	nonword
+o oe i uh	nonword
+o oe i o	nonword
+o oe i a	nonword
+o oe i u	nonword
+o oe ih oe	nonword
+o oe ih ae	nonword
+o oe ih y	nonword
+o oe ih e	nonword
+o oe ih i	nonword
+o oe ih ih	nonword
+o oe ih uh	nonword
+o oe ih o	nonword
+o oe ih a	nonword
+o oe ih u	nonword
+o oe uh oe	nonword
+o oe uh ae	nonword
+o oe uh y	nonword
+o oe uh e	nonword
+o oe uh i	nonword
+o oe uh ih	nonword
+o oe uh uh	nonword
+o oe uh o	nonword
+o oe uh a	nonword
+o oe uh u	nonword
+o oe o oe	nonword
+o oe o ae	nonword
+o oe o y	nonword
+o oe o e	nonword
+o oe o i	nonword
+o oe o ih	nonword
+o oe o uh	nonword
+o oe o o	nonword
+o oe o a	nonword
+o oe o u	nonword
+o oe a oe	nonword
+o oe a ae	nonword
+o oe a y	nonword
+o oe a e	nonword
+o oe a i	nonword
+o oe a ih	nonword
+o oe a uh	nonword
+o oe a o	nonword
+o oe a a	nonword
+o oe a u	nonword
+o oe u oe	nonword
+o oe u ae	nonword
+o oe u y	nonword
+o oe u e	nonword
+o oe u i	nonword
+o oe u ih	nonword
+o oe u uh	nonword
+o oe u o	nonword
+o oe u a	nonword
+o oe u u	nonword
+o ae oe oe	nonword
+o ae oe ae	nonword
+o ae oe y	nonword
+o ae oe e	nonword
+o ae oe i	nonword
+o ae oe ih	nonword
+o ae oe uh	nonword
+o ae oe o	nonword
+o ae oe a	nonword
+o ae oe u	nonword
+o ae ae oe	nonword
+o ae ae ae	nonword
+o ae ae y	nonword
+o ae ae e	nonword
+o ae ae i	nonword
+o ae ae ih	nonword
+o ae ae uh	nonword
+o ae ae o	nonword
+o ae ae a	nonword
+o ae ae u	nonword
+o ae y oe	nonword
+o ae y ae	nonword
+o ae y y	nonword
+o ae y e	nonword
+o ae y i	nonword
+o ae y ih	nonword
+o ae y uh	nonword
+o ae y o	nonword
+o ae y a	nonword
+o ae y u	nonword
+o ae e oe	nonword
+o ae e ae	nonword
+o ae e y	nonword
+o ae e e	nonword
+o ae e i	nonword
+o ae e ih	nonword
+o ae e uh	nonword
+o ae e o	nonword
+o ae e a	nonword
+o ae e u	nonword
+o ae i oe	nonword
+o ae i ae	nonword
+o ae i y	nonword
+o ae i e	nonword
+o ae i i	nonword
+o ae i ih	nonword
+o ae i uh	nonword
+o ae i o	nonword
+o ae i a	nonword
+o ae i u	nonword
+o ae ih oe	nonword
+o ae ih ae	nonword
+o ae ih y	nonword
+o ae ih e	nonword
+o ae ih i	nonword
+o ae ih ih	nonword
+o ae ih uh	nonword
+o ae ih o	nonword
+o ae ih a	nonword
+o ae ih u	nonword
+o ae uh oe	nonword
+o ae uh ae	nonword
+o ae uh y	nonword
+o ae uh e	nonword
+o ae uh i	nonword
+o ae uh ih	nonword
+o ae uh uh	nonword
+o ae uh o	nonword
+o ae uh a	nonword
+o ae uh u	nonword
+o ae o oe	nonword
+o ae o ae	nonword
+o ae o y	nonword
+o ae o e	nonword
+o ae o i	nonword
+o ae o ih	nonword
+o ae o uh	nonword
+o ae o o	nonword
+o ae o a	nonword
+o ae o u	nonword
+o ae a oe	nonword
+o ae a ae	nonword
+o ae a y	nonword
+o ae a e	nonword
+o ae a i	nonword
+o ae a ih	nonword
+o ae a uh	nonword
+o ae a o	nonword
+o ae a a	nonword
+o ae a u	nonword
+o ae u oe	nonword
+o ae u ae	nonword
+o ae u y	nonword
+o ae u e	nonword
+o ae u i	nonword
+o ae u ih	nonword
+o ae u uh	nonword
+o ae u o	nonword
+o ae u a	nonword
+o ae u u	nonword
+o y oe oe	nonword
+o y oe ae	nonword
+o y oe y	nonword
+o y oe e	nonword
+o y oe i	nonword
+o y oe ih	nonword
+o y oe uh	nonword
+o y oe o	nonword
+o y oe a	nonword
+o y oe u	nonword
+o y ae oe	nonword
+o y ae ae	nonword
+o y ae y	nonword
+o y ae e	nonword
+o y ae i	nonword
+o y ae ih	nonword
+o y ae uh	nonword
+o y ae o	nonword
+o y ae a	nonword
+o y ae u	nonword
+o y y oe	nonword
+o y y ae	nonword
+o y y y	nonword
+o y y e	nonword
+o y y i	nonword
+o y y ih	nonword
+o y y uh	nonword
+o y y o	nonword
+o y y a	nonword
+o y y u	nonword
+o y e oe	nonword
+o y e ae	nonword
+o y e y	nonword
+o y e e	nonword
+o y e i	nonword
+o y e ih	nonword
+o y e uh	nonword
+o y e o	nonword
+o y e a	nonword
+o y e u	nonword
+o y i oe	nonword
+o y i ae	nonword
+o y i y	nonword
+o y i e	nonword
+o y i i	nonword
+o y i ih	nonword
+o y i uh	nonword
+o y i o	nonword
+o y i a	nonword
+o y i u	nonword
+o y ih oe	nonword
+o y ih ae	nonword
+o y ih y	nonword
+o y ih e	nonword
+o y ih i	nonword
+o y ih ih	nonword
+o y ih uh	nonword
+o y ih o	nonword
+o y ih a	nonword
+o y ih u	nonword
+o y uh oe	nonword
+o y uh ae	nonword
+o y uh y	nonword
+o y uh e	nonword
+o y uh i	nonword
+o y uh ih	nonword
+o y uh uh	nonword
+o y uh o	nonword
+o y uh a	nonword
+o y uh u	nonword
+o y o oe	nonword
+o y o ae	nonword
+o y o y	nonword
+o y o e	nonword
+o y o i	nonword
+o y o ih	nonword
+o y o uh	nonword
+o y o o	nonword
+o y o a	nonword
+o y o u	nonword
+o y a oe	nonword
+o y a ae	nonword
+o y a y	nonword
+o y a e	nonword
+o y a i	nonword
+o y a ih	nonword
+o y a uh	nonword
+o y a o	nonword
+o y a a	nonword
+o y a u	nonword
+o y u oe	nonword
+o y u ae	nonword
+o y u y	nonword
+o y u e	nonword
+o y u i	nonword
+o y u ih	nonword
+o y u uh	nonword
+o y u o	nonword
+o y u a	nonword
+o y u u	nonword
+o e oe oe	nonword
+o e oe ae	nonword
+o e oe y	nonword
+o e oe e	nonword
+o e oe i	nonword
+o e oe ih	nonword
+o e oe uh	nonword
+o e oe o	nonword
+o e oe a	nonword
+o e oe u	nonword
+o e ae oe	nonword
+o e ae ae	nonword
+o e ae y	nonword
+o e ae e	nonword
+o e ae i	nonword
+o e ae ih	nonword
+o e ae uh	nonword
+o e ae o	nonword
+o e ae a	nonword
+o e ae u	nonword
+o e y oe	nonword
+o e y ae	nonword
+o e y y	nonword
+o e y e	nonword
+o e y i	nonword
+o e y ih	nonword
+o e y uh	nonword
+o e y o	nonword
+o e y a	nonword
+o e y u	nonword
+o e e oe	nonword
+o e e ae	nonword
+o e e y	nonword
+o e e e	word
+o e e i	word
+o e e ih	nonword
+o e e uh	nonword
+o e e o	word
+o e e a	word
+o e e u	word
+o e i oe	nonword
+o e i ae	nonword
+o e i y	nonword
+o e i e	word
+o e i i	word
+o e i ih	nonword
+o e i uh	nonword
+o e i o	word
+o e i a	word
+o e i u	word
+o e ih oe	nonword
+o e ih ae	nonword
+o e ih y	nonword
+o e ih e	nonword
+o e ih i	nonword
+o e ih ih	nonword
+o e ih uh	nonword
+o e ih o	nonword
+o e ih a	nonword
+o e ih u	nonword
+o e uh oe	nonword
+o e uh ae	nonword
+o e uh y	nonword
+o e uh e	nonword
+o e uh i	nonword
+o e uh ih	nonword
+o e uh uh	nonword
+o e uh o	nonword
+o e uh a	nonword
+o e uh u	nonword
+o e o oe	nonword
+o e o ae	nonword
+o e o y	nonword
+o e o e	word
+o e o i	word
+o e o ih	nonword
+o e o uh	nonword
+o e o o	word
+o e o a	word
+o e o u	word
+o e a oe	nonword
+o e a ae	nonword
+o e a y	nonword
+o e a e	word
+o e a i	word
+o e a ih	nonword
+o e a uh	nonword
+o e a o	word
+o e a a	word
+o e a u	word
+o e u oe	nonword
+o e u ae	nonword
+o e u y	nonword
+o e u e	word
+o e u i	word
+o e u ih	nonword
+o e u uh	nonword
+o e u o	word
+o e u a	word
+o e u u	word
+o i oe oe	nonword
+o i oe ae	nonword
+o i oe y	nonword
+o i oe e	nonword
+o i oe i	nonword
+o i oe ih	nonword
+o i oe uh	nonword
+o i oe o	nonword
+o i oe a	nonword
+o i oe u	nonword
+o i ae oe	nonword
+o i ae ae	nonword
+o i ae y	nonword
+o i ae e	nonword
+o i ae i	nonword
+o i ae ih	nonword
+o i ae uh	nonword
+o i ae o	nonword
+o i ae a	nonword
+o i ae u	nonword
+o i y oe	nonword
+o i y ae	nonword
+o i y y	nonword
+o i y e	nonword
+o i y i	nonword
+o i y ih	nonword
+o i y uh	nonword
+o i y o	nonword
+o i y a	nonword
+o i y u	nonword
+o i e oe	nonword
+o i e ae	nonword
+o i e y	nonword
+o i e e	word
+o i e i	word
+o i e ih	nonword
+o i e uh	nonword
+o i e o	word
+o i e a	word
+o i e u	word
+o i i oe	nonword
+o i i ae	nonword
+o i i y	nonword
+o i i e	word
+o i i i	word
+o i i ih	nonword
+o i i uh	nonword
+o i i o	word
+o i i a	word
+o i i u	word
+o i ih oe	nonword
+o i ih ae	nonword
+o i ih y	nonword
+o i ih e	nonword
+o i ih i	nonword
+o i ih ih	nonword
+o i ih uh	nonword
+o i ih o	nonword
+o i ih a	nonword
+o i ih u	nonword
+o i uh oe	nonword
+o i uh ae	nonword
+o i uh y	nonword
+o i uh e	nonword
+o i uh i	nonword
+o i uh ih	nonword
+o i uh uh	nonword
+o i uh o	nonword
+o i uh a	nonword
+o i uh u	nonword
+o i o oe	nonword
+o i o ae	nonword
+o i o y	nonword
+o i o e	word
+o i o i	word
+o i o ih	nonword
+o i o uh	nonword
+o i o o	word
+o i o a	word
+o i o u	word
+o i a oe	nonword
+o i a ae	nonword
+o i a y	nonword
+o i a e	word
+o i a i	word
+o i a ih	nonword
+o i a uh	nonword
+o i a o	word
+o i a a	word
+o i a u	word
+o i u oe	nonword
+o i u ae	nonword
+o i u y	nonword
+o i u e	word
+o i u i	word
+o i u ih	nonword
+o i u uh	nonword
+o i u o	word
+o i u a	word
+o i u u	word
+o ih oe oe	nonword
+o ih oe ae	nonword
+o ih oe y	nonword
+o ih oe e	nonword
+o ih oe i	nonword
+o ih oe ih	nonword
+o ih oe uh	nonword
+o ih oe o	nonword
+o ih oe a	nonword
+o ih oe u	nonword
+o ih ae oe	nonword
+o ih ae ae	nonword
+o ih ae y	nonword
+o ih ae e	nonword
+o ih ae i	nonword
+o ih ae ih	nonword
+o ih ae uh	nonword
+o ih ae o	nonword
+o ih ae a	nonword
+o ih ae u	nonword
+o ih y oe	nonword
+o ih y ae	nonword
+o ih y y	nonword
+o ih y e	nonword
+o ih y i	nonword
+o ih y ih	nonword
+o ih y uh	nonword
+o ih y o	nonword
+o ih y a	nonword
+o ih y u	nonword
+o ih e oe	nonword
+o ih e ae	nonword
+o ih e y	nonword
+o ih e e	nonword
+o ih e i	nonword
+o ih e ih	nonword
+o ih e uh	nonword
+o ih e o	nonword
+o ih e a	nonword
+o ih e u	nonword
+o ih i oe	nonword
+o ih i ae	nonword
+o ih i y	nonword
+o ih i e	nonword
+o ih i i	nonword
+o ih i ih	nonword
+o ih i uh	nonword
+o ih i o	nonword
+o ih i a	nonword
+o ih i u	nonword
+o ih ih oe	nonword
+o ih ih ae	nonword
+o ih ih y	nonword
+o ih ih e	nonword
+o ih ih i	nonword
+o ih ih ih	nonword
+o ih ih uh	nonword
+o ih ih o	nonword
+o ih ih a	nonword
+o ih ih u	nonword
+o ih uh oe	nonword
+o ih uh ae	nonword
+o ih uh y	nonword
+o ih uh e	nonword
+o ih uh i	nonword
+o ih uh ih	nonword
+o ih uh uh	nonword
+o ih uh o	nonword
+o ih uh a	nonword
+o ih uh u	nonword
+o ih o oe	nonword
+o ih o ae	nonword
+o ih o y	nonword
+o ih o e	nonword
+o ih o i	nonword
+o ih o ih	nonword
+o ih o uh	nonword
+o ih o o	nonword
+o ih o a	nonword
+o ih o u	nonword
+o ih a oe	nonword
+o ih a ae	nonword
+o ih a y	nonword
+o ih a e	nonword
+o ih a i	nonword
+o ih a ih	nonword
+o ih a uh	nonword
+o ih a o	nonword
+o ih a a	nonword
+o ih a u	nonword
+o ih u oe	nonword
+o ih u ae	nonword
+o ih u y	nonword
+o ih u e	nonword
+o ih u i	nonword
+o ih u ih	nonword
+o ih u uh	nonword
+o ih u o	nonword
+o ih u a	nonword
+o ih u u	nonword
+o uh oe oe	nonword
+o uh oe ae	nonword
+o uh oe y	nonword
+o uh oe e	nonword
+o uh oe i	nonword
+o uh oe ih	nonword
+o uh oe uh	nonword
+o uh oe o	nonword
+o uh oe a	nonword
+o uh oe u	nonword
+o uh ae oe	nonword
+o uh ae ae	nonword
+o uh ae y	nonword
+o uh ae e	nonword
+o uh ae i	nonword
+o uh ae ih	nonword
+o uh ae uh	nonword
+o uh ae o	nonword
+o uh ae a	nonword
+o uh ae u	nonword
+o uh y oe	nonword
+o uh y ae	nonword
+o uh y y	nonword
+o uh y e	nonword
+o uh y i	nonword
+o uh y ih	nonword
+o uh y uh	nonword
+o uh y o	nonword
+o uh y a	nonword
+o uh y u	nonword
+o uh e oe	nonword
+o uh e ae	nonword
+o uh e y	nonword
+o uh e e	nonword
+o uh e i	nonword
+o uh e ih	nonword
+o uh e uh	nonword
+o uh e o	nonword
+o uh e a	nonword
+o uh e u	nonword
+o uh i oe	nonword
+o uh i ae	nonword
+o uh i y	nonword
+o uh i e	nonword
+o uh i i	nonword
+o uh i ih	nonword
+o uh i uh	nonword
+o uh i o	nonword
+o uh i a	nonword
+o uh i u	nonword
+o uh ih oe	nonword
+o uh ih ae	nonword
+o uh ih y	nonword
+o uh ih e	nonword
+o uh ih i	nonword
+o uh ih ih	nonword
+o uh ih uh	nonword
+o uh ih o	nonword
+o uh ih a	nonword
+o uh ih u	nonword
+o uh uh oe	nonword
+o uh uh ae	nonword
+o uh uh y	nonword
+o uh uh e	nonword
+o uh uh i	nonword
+o uh uh ih	nonword
+o uh uh uh	nonword
+o uh uh o	nonword
+o uh uh a	nonword
+o uh uh u	nonword
+o uh o oe	nonword
+o uh o ae	nonword
+o uh o y	nonword
+o uh o e	nonword
+o uh o i	nonword
+o uh o ih	nonword
+o uh o uh	nonword
+o uh o o	nonword
+o uh o a	nonword
+o uh o u	nonword
+o uh a oe	nonword
+o uh a ae	nonword
+o uh a y	nonword
+o uh a e	nonword
+o uh a i	nonword
+o uh a ih	nonword
+o uh a uh	nonword
+o uh a o	nonword
+o uh a a	nonword
+o uh a u	nonword
+o uh u oe	nonword
+o uh u ae	nonword
+o uh u y	nonword
+o uh u e	nonword
+o uh u i	nonword
+o uh u ih	nonword
+o uh u uh	nonword
+o uh u o	nonword
+o uh u a	nonword
+o uh u u	nonword
+o o oe oe	nonword
+o o oe ae	nonword
+o o oe y	nonword
+o o oe e	nonword
+o o oe i	nonword
+o o oe ih	nonword
+o o oe uh	nonword
+o o oe o	nonword
+o o oe a	nonword
+o o oe u	nonword
+o o ae oe	nonword
+o o ae ae	nonword
+o o ae y	nonword
+o o ae e	nonword
+o o ae i	nonword
+o o ae ih	nonword
+o o ae uh	nonword
+o o ae o	nonword
+o o ae a	nonword
+o o ae u	nonword
+o o y oe	nonword
+o o y ae	nonword
+o o y y	nonword
+o o y e	nonword
+o o y i	nonword
+o o y ih	nonword
+o o y uh	nonword
+o o y o	nonword
+o o y a	nonword
+o o y u	nonword
+o o e oe	nonword
+o o e ae	nonword
+o o e y	nonword
+o o e e	word
+o o e i	word
+o o e ih	nonword
+o o e uh	nonword
+o o e o	word
+o o e a	word
+o o e u	word
+o o i oe	nonword
+o o i ae	nonword
+o o i y	nonword
+o o i e	word
+o o i i	word
+o o i ih	nonword
+o o i uh	nonword
+o o i o	word
+o o i a	word
+o o i u	word
+o o ih oe	nonword
+o o ih ae	nonword
+o o ih y	nonword
+o o ih e	nonword
+o o ih i	nonword
+o o ih ih	nonword
+o o ih uh	nonword
+o o ih o	nonword
+o o ih a	nonword
+o o ih u	nonword
+o o uh oe	nonword
+o o uh ae	nonword
+o o uh y	nonword
+o o uh e	nonword
+o o uh i	nonword
+o o uh ih	nonword
+o o uh uh	nonword
+o o uh o	nonword
+o o uh a	nonword
+o o uh u	nonword
+o o o oe	nonword
+o o o ae	nonword
+o o o y	nonword
+o o o e	word
+o o o i	word
+o o o ih	nonword
+o o o uh	nonword
+o o o o	word
+o o o a	word
+o o o u	word
+o o a oe	nonword
+o o a ae	nonword
+o o a y	nonword
+o o a e	word
+o o a i	word
+o o a ih	nonword
+o o a uh	nonword
+o o a o	word
+o o a a	word
+o o a u	word
+o o u oe	nonword
+o o u ae	nonword
+o o u y	nonword
+o o u e	word
+o o u i	word
+o o u ih	nonword
+o o u uh	nonword
+o o u o	word
+o o u a	word
+o o u u	word
+o a oe oe	nonword
+o a oe ae	nonword
+o a oe y	nonword
+o a oe e	nonword
+o a oe i	nonword
+o a oe ih	nonword
+o a oe uh	nonword
+o a oe o	nonword
+o a oe a	nonword
+o a oe u	nonword
+o a ae oe	nonword
+o a ae ae	nonword
+o a ae y	nonword
+o a ae e	nonword
+o a ae i	nonword
+o a ae ih	nonword
+o a ae uh	nonword
+o a ae o	nonword
+o a ae a	nonword
+o a ae u	nonword
+o a y oe	nonword
+o a y ae	nonword
+o a y y	nonword
+o a y e	nonword
+o a y i	nonword
+o a y ih	nonword
+o a y uh	nonword
+o a y o	nonword
+o a y a	nonword
+o a y u	nonword
+o a e oe	nonword
+o a e ae	nonword
+o a e y	nonword
+o a e e	word
+o a e i	word
+o a e ih	nonword
+o a e uh	nonword
+o a e o	word
+o a e a	word
+o a e u	word
+o a i oe	nonword
+o a i ae	nonword
+o a i y	nonword
+o a i e	word
+o a i i	word
+o a i ih	nonword
+o a i uh	nonword
+o a i o	word
+o a i a	word
+o a i u	word
+o a ih oe	nonword
+o a ih ae	nonword
+o a ih y	nonword
+o a ih e	nonword
+o a ih i	nonword
+o a ih ih	nonword
+o a ih uh	nonword
+o a ih o	nonword
+o a ih a	nonword
+o a ih u	nonword
+o a uh oe	nonword
+o a uh ae	nonword
+o a uh y	nonword
+o a uh e	nonword
+o a uh i	nonword
+o a uh ih	nonword
+o a uh uh	nonword
+o a uh o	nonword
+o a uh a	nonword
+o a uh u	nonword
+o a o oe	nonword
+o a o ae	nonword
+o a o y	nonword
+o a o e	word
+o a o i	word
+o a o ih	nonword
+o a o uh	nonword
+o a o o	word
+o a o a	word
+o a o u	word
+o a a oe	nonword
+o a a ae	nonword
+o a a y	nonword
+o a a e	word
+o a a i	word
+o a a ih	nonword
+o a a uh	nonword
+o a a o	word
+o a a a	word
+o a a u	word
+o a u oe	nonword
+o a u ae	nonword
+o a u y	nonword
+o a u e	word
+o a u i	word
+o a u ih	nonword
+o a u uh	nonword
+o a u o	word
+o a u a	word
+o a u u	word
+o u oe oe	nonword
+o u oe ae	nonword
+o u oe y	nonword
+o u oe e	nonword
+o u oe i	nonword
+o u oe ih	nonword
+o u oe uh	nonword
+o u oe o	nonword
+o u oe a	nonword
+o u oe u	nonword
+o u ae oe	nonword
+o u ae ae	nonword
+o u ae y	nonword
+o u ae e	nonword
+o u ae i	nonword
+o u ae ih	nonword
+o u ae uh	nonword
+o u ae o	nonword
+o u ae a	nonword
+o u ae u	nonword
+o u y oe	nonword
+o u y ae	nonword
+o u y y	nonword
+o u y e	nonword
+o u y i	nonword
+o u y ih	nonword
+o u y uh	nonword
+o u y o	nonword
+o u y a	nonword
+o u y u	nonword
+o u e oe	nonword
+o u e ae	nonword
+o u e y	nonword
+o u e e	word
+o u e i	word
+o u e ih	nonword
+o u e uh	nonword
+o u e o	word
+o u e a	word
+o u e u	word
+o u i oe	nonword
+o u i ae	nonword
+o u i y	nonword
+o u i e	word
+o u i i	word
+o u i ih	nonword
+o u i uh	nonword
+o u i o	word
+o u i a	word
+o u i u	word
+o u ih oe	nonword
+o u ih ae	nonword
+o u ih y	nonword
+o u ih e	nonword
+o u ih i	nonword
+o u ih ih	nonword
+o u ih uh	nonword
+o u ih o	nonword
+o u ih a	nonword
+o u ih u	nonword
+o u uh oe	nonword
+o u uh ae	nonword
+o u uh y	nonword
+o u uh e	nonword
+o u uh i	nonword
+o u uh ih	nonword
+o u uh uh	nonword
+o u uh o	nonword
+o u uh a	nonword
+o u uh u	nonword
+o u o oe	nonword
+o u o ae	nonword
+o u o y	nonword
+o u o e	word
+o u o i	word
+o u o ih	nonword
+o u o uh	nonword
+o u o o	word
+o u o a	word
+o u o u	word
+o u a oe	nonword
+o u a ae	nonword
+o u a y	nonword
+o u a e	word
+o u a i	word
+o u a ih	nonword
+o u a uh	nonword
+o u a o	word
+o u a a	word
+o u a u	word
+o u u oe	nonword
+o u u ae	nonword
+o u u y	nonword
+o u u e	word
+o u u i	word
+o u u ih	nonword
+o u u uh	nonword
+o u u o	word
+o u u a	word
+o u u u	word
+a oe oe oe	nonword
+a oe oe ae	nonword
+a oe oe y	nonword
+a oe oe e	nonword
+a oe oe i	nonword
+a oe oe ih	nonword
+a oe oe uh	nonword
+a oe oe o	nonword
+a oe oe a	nonword
+a oe oe u	nonword
+a oe ae oe	nonword
+a oe ae ae	nonword
+a oe ae y	nonword
+a oe ae e	nonword
+a oe ae i	nonword
+a oe ae ih	nonword
+a oe ae uh	nonword
+a oe ae o	nonword
+a oe ae a	nonword
+a oe ae u	nonword
+a oe y oe	nonword
+a oe y ae	nonword
+a oe y y	nonword
+a oe y e	nonword
+a oe y i	nonword
+a oe y ih	nonword
+a oe y uh	nonword
+a oe y o	nonword
+a oe y a	nonword
+a oe y u	nonword
+a oe e oe	nonword
+a oe e ae	nonword
+a oe e y	nonword
+a oe e e	nonword
+a oe e i	nonword
+a oe e ih	nonword
+a oe e uh	nonword
+a oe e o	nonword
+a oe e a	nonword
+a oe e u	nonword
+a oe i oe	nonword
+a oe i ae	nonword
+a oe i y	nonword
+a oe i e	nonword
+a oe i i	nonword
+a oe i ih	nonword
+a oe i uh	nonword
+a oe i o	nonword
+a oe i a	nonword
+a oe i u	nonword
+a oe ih oe	nonword
+a oe ih ae	nonword
+a oe ih y	nonword
+a oe ih e	nonword
+a oe ih i	nonword
+a oe ih ih	nonword
+a oe ih uh	nonword
+a oe ih o	nonword
+a oe ih a	nonword
+a oe ih u	nonword
+a oe uh oe	nonword
+a oe uh ae	nonword
+a oe uh y	nonword
+a oe uh e	nonword
+a oe uh i	nonword
+a oe uh ih	nonword
+a oe uh uh	nonword
+a oe uh o	nonword
+a oe uh a	nonword
+a oe uh u	nonword
+a oe o oe	nonword
+a oe o ae	nonword
+a oe o y	nonword
+a oe o e	nonword
+a oe o i	nonword
+a oe o ih	nonword
+a oe o uh	nonword
+a oe o o	nonword
+a oe o a	nonword
+a oe o u	nonword
+a oe a oe	nonword
+a oe a ae	nonword
+a oe a y	nonword
+a oe a e	nonword
+a oe a i	nonword
+a oe a ih	nonword
+a oe a uh	nonword
+a oe a o	nonword
+a oe a a	nonword
+a oe a u	nonword
+a oe u oe	nonword
+a oe u ae	nonword
+a oe u y	nonword
+a oe u e	nonword
+a oe u i	nonword
+a oe u ih	nonword
+a oe u uh	nonword
+a oe u o	nonword
+a oe u a	nonword
+a oe u u	nonword
+a ae oe oe	nonword
+a ae oe ae	nonword
+a ae oe y	nonword
+a ae oe e	nonword
+a ae oe i	nonword
+a ae oe ih	nonword
+a ae oe uh	nonword
+a ae oe o	nonword
+a ae oe a	nonword
+a ae oe u	nonword
+a ae ae oe	nonword
+a ae ae ae	nonword
+a ae ae y	nonword
+a ae ae e	nonword
+a ae ae i	nonword
+a ae ae ih	nonword
+a ae ae uh	nonword
+a ae ae o	nonword
+a ae ae a	nonword
+a ae ae u	nonword
+a ae y oe	nonword
+a ae y ae	nonword
+a ae y y	nonword
+a ae y e	nonword
+a ae y i	nonword
+a ae y ih	nonword
+a ae y uh	nonword
+a ae y o	nonword
+a ae y a	nonword
+a ae y u	nonword
+a ae e oe	nonword
+a ae e ae	nonword
+a ae e y	nonword
+a ae e e	nonword
+a ae e i	nonword
+a ae e ih	nonword
+a ae e uh	nonword
+a ae e o	nonword
+a ae e a	nonword
+a ae e u	nonword
+a ae i oe	nonword
+a ae i ae	nonword
+a ae i y	nonword
+a ae i e	nonword
+a ae i i	nonword
+a ae i ih	nonword
+a ae i uh	nonword
+a ae i o	nonword
+a ae i a	nonword
+a ae i u	nonword
+a ae ih oe	nonword
+a ae ih ae	nonword
+a ae ih y	nonword
+a ae ih e	nonword
+a ae ih i	nonword
+a ae ih ih	nonword
+a ae ih uh	nonword
+a ae ih o	nonword
+a ae ih a	nonword
+a ae ih u	nonword
+a ae uh oe	nonword
+a ae uh ae	nonword
+a ae uh y	nonword
+a ae uh e	nonword
+a ae uh i	nonword
+a ae uh ih	nonword
+a ae uh uh	nonword
+a ae uh o	nonword
+a ae uh a	nonword
+a ae uh u	nonword
+a ae o oe	nonword
+a ae o ae	nonword
+a ae o y	nonword
+a ae o e	nonword
+a ae o i	nonword
+a ae o ih	nonword
+a ae o uh	nonword
+a ae o o	nonword
+a ae o a	nonword
+a ae o u	nonword
+a ae a oe	nonword
+a ae a ae	nonword
+a ae a y	nonword
+a ae a e	nonword
+a ae a i	nonword
+a ae a ih	nonword
+a ae a uh	nonword
+a ae a o	nonword
+a ae a a	nonword
+a ae a u	nonword
+a ae u oe	nonword
+a ae u ae	nonword
+a ae u y	nonword
+a ae u e	nonword
+a ae u i	nonword
+a ae u ih	nonword
+a ae u uh	nonword
+a ae u o	nonword
+a ae u a	nonword
+a ae u u	nonword
+a y oe oe	nonword
+a y oe ae	nonword
+a y oe y	nonword
+a y oe e	nonword
+a y oe i	nonword
+a y oe ih	nonword
+a y oe uh	nonword
+a y oe o	nonword
+a y oe a	nonword
+a y oe u	nonword
+a y ae oe	nonword
+a y ae ae	nonword
+a y ae y	nonword
+a y ae e	nonword
+a y ae i	nonword
+a y ae ih	nonword
+a y ae uh	nonword
+a y ae o	nonword
+a y ae a	nonword
+a y ae u	nonword
+a y y oe	nonword
+a y y ae	nonword
+a y y y	nonword
+a y y e	nonword
+a y y i	nonword
+a y y ih	nonword
+a y y uh	nonword
+a y y o	nonword
+a y y a	nonword
+a y y u	nonword
+a y e oe	nonword
+a y e ae	nonword
+a y e y	nonword
+a y e e	nonword
+a y e i	nonword
+a y e ih	nonword
+a y e uh	nonword
+a y e o	nonword
+a y e a	nonword
+a y e u	nonword
+a y i oe	nonword
+a y i ae	nonword
+a y i y	nonword
+a y i e	nonword
+a y i i	nonword
+a y i ih	nonword
+a y i uh	nonword
+a y i o	nonword
+a y i a	nonword
+a y i u	nonword
+a y ih oe	nonword
+a y ih ae	nonword
+a y ih y	nonword
+a y ih e	nonword
+a y ih i	nonword
+a y ih ih	nonword
+a y ih uh	nonword
+a y ih o	nonword
+a y ih a	nonword
+a y ih u	nonword
+a y uh oe	nonword
+a y uh ae	nonword
+a y uh y	nonword
+a y uh e	nonword
+a y uh i	nonword
+a y uh ih	nonword
+a y uh uh	nonword
+a y uh o	nonword
+a y uh a	nonword
+a y uh u	nonword
+a y o oe	nonword
+a y o ae	nonword
+a y o y	nonword
+a y o e	nonword
+a y o i	nonword
+a y o ih	nonword
+a y o uh	nonword
+a y o o	nonword
+a y o a	nonword
+a y o u	nonword
+a y a oe	nonword
+a y a ae	nonword
+a y a y	nonword
+a y a e	nonword
+a y a i	nonword
+a y a ih	nonword
+a y a uh	nonword
+a y a o	nonword
+a y a a	nonword
+a y a u	nonword
+a y u oe	nonword
+a y u ae	nonword
+a y u y	nonword
+a y u e	nonword
+a y u i	nonword
+a y u ih	nonword
+a y u uh	nonword
+a y u o	nonword
+a y u a	nonword
+a y u u	nonword
+a e oe oe	nonword
+a e oe ae	nonword
+a e oe y	nonword
+a e oe e	nonword
+a e oe i	nonword
+a e oe ih	nonword
+a e oe uh	nonword
+a e oe o	nonword
+a e oe a	nonword
+a e oe u	nonword
+a e ae oe	nonword
+a e ae ae	nonword
+a e ae y	nonword
+a e ae e	nonword
+a e ae i	nonword
+a e ae ih	nonword
+a e ae uh	nonword
+a e ae o	nonword
+a e ae a	nonword
+a e ae u	nonword
+a e y oe	nonword
+a e y ae	nonword
+a e y y	nonword
+a e y e	nonword
+a e y i	nonword
+a e y ih	nonword
+a e y uh	nonword
+a e y o	nonword
+a e y a	nonword
+a e y u	nonword
+a e e oe	nonword
+a e e ae	nonword
+a e e y	nonword
+a e e e	word
+a e e i	word
+a e e ih	nonword
+a e e uh	nonword
+a e e o	word
+a e e a	word
+a e e u	word
+a e i oe	nonword
+a e i ae	nonword
+a e i y	nonword
+a e i e	word
+a e i i	word
+a e i ih	nonword
+a e i uh	nonword
+a e i o	word
+a e i a	word
+a e i u	word
+a e ih oe	nonword
+a e ih ae	nonword
+a e ih y	nonword
+a e ih e	nonword
+a e ih i	nonword
+a e ih ih	nonword
+a e ih uh	nonword
+a e ih o	nonword
+a e ih a	nonword
+a e ih u	nonword
+a e uh oe	nonword
+a e uh ae	nonword
+a e uh y	nonword
+a e uh e	nonword
+a e uh i	nonword
+a e uh ih	nonword
+a e uh uh	nonword
+a e uh o	nonword
+a e uh a	nonword
+a e uh u	nonword
+a e o oe	nonword
+a e o ae	nonword
+a e o y	nonword
+a e o e	word
+a e o i	word
+a e o ih	nonword
+a e o uh	nonword
+a e o o	word
+a e o a	word
+a e o u	word
+a e a oe	nonword
+a e a ae	nonword
+a e a y	nonword
+a e a e	word
+a e a i	word
+a e a ih	nonword
+a e a uh	nonword
+a e a o	word
+a e a a	word
+a e a u	word
+a e u oe	nonword
+a e u ae	nonword
+a e u y	nonword
+a e u e	word
+a e u i	word
+a e u ih	nonword
+a e u uh	nonword
+a e u o	word
+a e u a	word
+a e u u	word
+a i oe oe	nonword
+a i oe ae	nonword
+a i oe y	nonword
+a i oe e	nonword
+a i oe i	nonword
+a i oe ih	nonword
+a i oe uh	nonword
+a i oe o	nonword
+a i oe a	nonword
+a i oe u	nonword
+a i ae oe	nonword
+a i ae ae	nonword
+a i ae y	nonword
+a i ae e	nonword
+a i ae i	nonword
+a i ae ih	nonword
+a i ae uh	nonword
+a i ae o	nonword
+a i ae a	nonword
+a i ae u	nonword
+a i y oe	nonword
+a i y ae	nonword
+a i y y	nonword
+a i y e	nonword
+a i y i	nonword
+a i y ih	nonword
+a i y uh	nonword
+a i y o	nonword
+a i y a	nonword
+a i y u	nonword
+a i e oe	nonword
+a i e ae	nonword
+a i e y	nonword
+a i e e	word
+a i e i	word
+a i e ih	nonword
+a i e uh	nonword
+a i e o	word
+a i e a	word
+a i e u	word
+a i i oe	nonword
+a i i ae	nonword
+a i i y	nonword
+a i i e	word
+a i i i	word
+a i i ih	nonword
+a i i uh	nonword
+a i i o	word
+a i i a	word
+a i i u	word
+a i ih oe	nonword
+a i ih ae	nonword
+a i ih y	nonword
+a i ih e	nonword
+a i ih i	nonword
+a i ih ih	nonword
+a i ih uh	nonword
+a i ih o	nonword
+a i ih a	nonword
+a i ih u	nonword
+a i uh oe	nonword
+a i uh ae	nonword
+a i uh y	nonword
+a i uh e	nonword
+a i uh i	nonword
+a i uh ih	nonword
+a i uh uh	nonword
+a i uh o	nonword
+a i uh a	nonword
+a i uh u	nonword
+a i o oe	nonword
+a i o ae	nonword
+a i o y	nonword
+a i o e	word
+a i o i	word
+a i o ih	nonword
+a i o uh	nonword
+a i o o	word
+a i o a	word
+a i o u	word
+a i a oe	nonword
+a i a ae	nonword
+a i a y	nonword
+a i a e	word
+a i a i	word
+a i a ih	nonword
+a i a uh	nonword
+a i a o	word
+a i a a	word
+a i a u	word
+a i u oe	nonword
+a i u ae	nonword
+a i u y	nonword
+a i u e	word
+a i u i	word
+a i u ih	nonword
+a i u uh	nonword
+a i u o	word
+a i u a	word
+a i u u	word
+a ih oe oe	nonword
+a ih oe ae	nonword
+a ih oe y	nonword
+a ih oe e	nonword
+a ih oe i	nonword
+a ih oe ih	nonword
+a ih oe uh	nonword
+a ih oe o	nonword
+a ih oe a	nonword
+a ih oe u	nonword
+a ih ae oe	nonword
+a ih ae ae	nonword
+a ih ae y	nonword
+a ih ae e	nonword
+a ih ae i	nonword
+a ih ae ih	nonword
+a ih ae uh	nonword
+a ih ae o	nonword
+a ih ae a	nonword
+a ih ae u	nonword
+a ih y oe	nonword
+a ih y ae	nonword
+a ih y y	nonword
+a ih y e	nonword
+a ih y i	nonword
+a ih y ih	nonword
+a ih y uh	nonword
+a ih y o	nonword
+a ih y a	nonword
+a ih y u	nonword
+a ih e oe	nonword
+a ih e ae	nonword
+a ih e y	nonword
+a ih e e	nonword
+a ih e i	nonword
+a ih e ih	nonword
+a ih e uh	nonword
+a ih e o	nonword
+a ih e a	nonword
+a ih e u	nonword
+a ih i oe	nonword
+a ih i ae	nonword
+a ih i y	nonword
+a ih i e	nonword
+a ih i i	nonword
+a ih i ih	nonword
+a ih i uh	nonword
+a ih i o	nonword
+a ih i a	nonword
+a ih i u	nonword
+a ih ih oe	nonword
+a ih ih ae	nonword
+a ih ih y	nonword
+a ih ih e	nonword
+a ih ih i	nonword
+a ih ih ih	nonword
+a ih ih uh	nonword
+a ih ih o	nonword
+a ih ih a	nonword
+a ih ih u	nonword
+a ih uh oe	nonword
+a ih uh ae	nonword
+a ih uh y	nonword
+a ih uh e	nonword
+a ih uh i	nonword
+a ih uh ih	nonword
+a ih uh uh	nonword
+a ih uh o	nonword
+a ih uh a	nonword
+a ih uh u	nonword
+a ih o oe	nonword
+a ih o ae	nonword
+a ih o y	nonword
+a ih o e	nonword
+a ih o i	nonword
+a ih o ih	nonword
+a ih o uh	nonword
+a ih o o	nonword
+a ih o a	nonword
+a ih o u	nonword
+a ih a oe	nonword
+a ih a ae	nonword
+a ih a y	nonword
+a ih a e	nonword
+a ih a i	nonword
+a ih a ih	nonword
+a ih a uh	nonword
+a ih a o	nonword
+a ih a a	nonword
+a ih a u	nonword
+a ih u oe	nonword
+a ih u ae	nonword
+a ih u y	nonword
+a ih u e	nonword
+a ih u i	nonword
+a ih u ih	nonword
+a ih u uh	nonword
+a ih u o	nonword
+a ih u a	nonword
+a ih u u	nonword
+a uh oe oe	nonword
+a uh oe ae	nonword
+a uh oe y	nonword
+a uh oe e	nonword
+a uh oe i	nonword
+a uh oe ih	nonword
+a uh oe uh	nonword
+a uh oe o	nonword
+a uh oe a	nonword
+a uh oe u	nonword
+a uh ae oe	nonword
+a uh ae ae	nonword
+a uh ae y	nonword
+a uh ae e	nonword
+a uh ae i	nonword
+a uh ae ih	nonword
+a uh ae uh	nonword
+a uh ae o	nonword
+a uh ae a	nonword
+a uh ae u	nonword
+a uh y oe	nonword
+a uh y ae	nonword
+a uh y y	nonword
+a uh y e	nonword
+a uh y i	nonword
+a uh y ih	nonword
+a uh y uh	nonword
+a uh y o	nonword
+a uh y a	nonword
+a uh y u	nonword
+a uh e oe	nonword
+a uh e ae	nonword
+a uh e y	nonword
+a uh e e	nonword
+a uh e i	nonword
+a uh e ih	nonword
+a uh e uh	nonword
+a uh e o	nonword
+a uh e a	nonword
+a uh e u	nonword
+a uh i oe	nonword
+a uh i ae	nonword
+a uh i y	nonword
+a uh i e	nonword
+a uh i i	nonword
+a uh i ih	nonword
+a uh i uh	nonword
+a uh i o	nonword
+a uh i a	nonword
+a uh i u	nonword
+a uh ih oe	nonword
+a uh ih ae	nonword
+a uh ih y	nonword
+a uh ih e	nonword
+a uh ih i	nonword
+a uh ih ih	nonword
+a uh ih uh	nonword
+a uh ih o	nonword
+a uh ih a	nonword
+a uh ih u	nonword
+a uh uh oe	nonword
+a uh uh ae	nonword
+a uh uh y	nonword
+a uh uh e	nonword
+a uh uh i	nonword
+a uh uh ih	nonword
+a uh uh uh	nonword
+a uh uh o	nonword
+a uh uh a	nonword
+a uh uh u	nonword
+a uh o oe	nonword
+a uh o ae	nonword
+a uh o y	nonword
+a uh o e	nonword
+a uh o i	nonword
+a uh o ih	nonword
+a uh o uh	nonword
+a uh o o	nonword
+a uh o a	nonword
+a uh o u	nonword
+a uh a oe	nonword
+a uh a ae	nonword
+a uh a y	nonword
+a uh a e	nonword
+a uh a i	nonword
+a uh a ih	nonword
+a uh a uh	nonword
+a uh a o	nonword
+a uh a a	nonword
+a uh a u	nonword
+a uh u oe	nonword
+a uh u ae	nonword
+a uh u y	nonword
+a uh u e	nonword
+a uh u i	nonword
+a uh u ih	nonword
+a uh u uh	nonword
+a uh u o	nonword
+a uh u a	nonword
+a uh u u	nonword
+a o oe oe	nonword
+a o oe ae	nonword
+a o oe y	nonword
+a o oe e	nonword
+a o oe i	nonword
+a o oe ih	nonword
+a o oe uh	nonword
+a o oe o	nonword
+a o oe a	nonword
+a o oe u	nonword
+a o ae oe	nonword
+a o ae ae	nonword
+a o ae y	nonword
+a o ae e	nonword
+a o ae i	nonword
+a o ae ih	nonword
+a o ae uh	nonword
+a o ae o	nonword
+a o ae a	nonword
+a o ae u	nonword
+a o y oe	nonword
+a o y ae	nonword
+a o y y	nonword
+a o y e	nonword
+a o y i	nonword
+a o y ih	nonword
+a o y uh	nonword
+a o y o	nonword
+a o y a	nonword
+a o y u	nonword
+a o e oe	nonword
+a o e ae	nonword
+a o e y	nonword
+a o e e	word
+a o e i	word
+a o e ih	nonword
+a o e uh	nonword
+a o e o	word
+a o e a	word
+a o e u	word
+a o i oe	nonword
+a o i ae	nonword
+a o i y	nonword
+a o i e	word
+a o i i	word
+a o i ih	nonword
+a o i uh	nonword
+a o i o	word
+a o i a	word
+a o i u	word
+a o ih oe	nonword
+a o ih ae	nonword
+a o ih y	nonword
+a o ih e	nonword
+a o ih i	nonword
+a o ih ih	nonword
+a o ih uh	nonword
+a o ih o	nonword
+a o ih a	nonword
+a o ih u	nonword
+a o uh oe	nonword
+a o uh ae	nonword
+a o uh y	nonword
+a o uh e	nonword
+a o uh i	nonword
+a o uh ih	nonword
+a o uh uh	nonword
+a o uh o	nonword
+a o uh a	nonword
+a o uh u	nonword
+a o o oe	nonword
+a o o ae	nonword
+a o o y	nonword
+a o o e	word
+a o o i	word
+a o o ih	nonword
+a o o uh	nonword
+a o o o	word
+a o o a	word
+a o o u	word
+a o a oe	nonword
+a o a ae	nonword
+a o a y	nonword
+a o a e	word
+a o a i	word
+a o a ih	nonword
+a o a uh	nonword
+a o a o	word
+a o a a	word
+a o a u	word
+a o u oe	nonword
+a o u ae	nonword
+a o u y	nonword
+a o u e	word
+a o u i	word
+a o u ih	nonword
+a o u uh	nonword
+a o u o	word
+a o u a	word
+a o u u	word
+a a oe oe	nonword
+a a oe ae	nonword
+a a oe y	nonword
+a a oe e	nonword
+a a oe i	nonword
+a a oe ih	nonword
+a a oe uh	nonword
+a a oe o	nonword
+a a oe a	nonword
+a a oe u	nonword
+a a ae oe	nonword
+a a ae ae	nonword
+a a ae y	nonword
+a a ae e	nonword
+a a ae i	nonword
+a a ae ih	nonword
+a a ae uh	nonword
+a a ae o	nonword
+a a ae a	nonword
+a a ae u	nonword
+a a y oe	nonword
+a a y ae	nonword
+a a y y	nonword
+a a y e	nonword
+a a y i	nonword
+a a y ih	nonword
+a a y uh	nonword
+a a y o	nonword
+a a y a	nonword
+a a y u	nonword
+a a e oe	nonword
+a a e ae	nonword
+a a e y	nonword
+a a e e	word
+a a e i	word
+a a e ih	nonword
+a a e uh	nonword
+a a e o	word
+a a e a	word
+a a e u	word
+a a i oe	nonword
+a a i ae	nonword
+a a i y	nonword
+a a i e	word
+a a i i	word
+a a i ih	nonword
+a a i uh	nonword
+a a i o	word
+a a i a	word
+a a i u	word
+a a ih oe	nonword
+a a ih ae	nonword
+a a ih y	nonword
+a a ih e	nonword
+a a ih i	nonword
+a a ih ih	nonword
+a a ih uh	nonword
+a a ih o	nonword
+a a ih a	nonword
+a a ih u	nonword
+a a uh oe	nonword
+a a uh ae	nonword
+a a uh y	nonword
+a a uh e	nonword
+a a uh i	nonword
+a a uh ih	nonword
+a a uh uh	nonword
+a a uh o	nonword
+a a uh a	nonword
+a a uh u	nonword
+a a o oe	nonword
+a a o ae	nonword
+a a o y	nonword
+a a o e	word
+a a o i	word
+a a o ih	nonword
+a a o uh	nonword
+a a o o	word
+a a o a	word
+a a o u	word
+a a a oe	nonword
+a a a ae	nonword
+a a a y	nonword
+a a a e	word
+a a a i	word
+a a a ih	nonword
+a a a uh	nonword
+a a a o	word
+a a a a	word
+a a a u	word
+a a u oe	nonword
+a a u ae	nonword
+a a u y	nonword
+a a u e	word
+a a u i	word
+a a u ih	nonword
+a a u uh	nonword
+a a u o	word
+a a u a	word
+a a u u	word
+a u oe oe	nonword
+a u oe ae	nonword
+a u oe y	nonword
+a u oe e	nonword
+a u oe i	nonword
+a u oe ih	nonword
+a u oe uh	nonword
+a u oe o	nonword
+a u oe a	nonword
+a u oe u	nonword
+a u ae oe	nonword
+a u ae ae	nonword
+a u ae y	nonword
+a u ae e	nonword
+a u ae i	nonword
+a u ae ih	nonword
+a u ae uh	nonword
+a u ae o	nonword
+a u ae a	nonword
+a u ae u	nonword
+a u y oe	nonword
+a u y ae	nonword
+a u y y	nonword
+a u y e	nonword
+a u y i	nonword
+a u y ih	nonword
+a u y uh	nonword
+a u y o	nonword
+a u y a	nonword
+a u y u	nonword
+a u e oe	nonword
+a u e ae	nonword
+a u e y	nonword
+a u e e	word
+a u e i	word
+a u e ih	nonword
+a u e uh	nonword
+a u e o	word
+a u e a	word
+a u e u	word
+a u i oe	nonword
+a u i ae	nonword
+a u i y	nonword
+a u i e	word
+a u i i	word
+a u i ih	nonword
+a u i uh	nonword
+a u i o	word
+a u i a	word
+a u i u	word
+a u ih oe	nonword
+a u ih ae	nonword
+a u ih y	nonword
+a u ih e	nonword
+a u ih i	nonword
+a u ih ih	nonword
+a u ih uh	nonword
+a u ih o	nonword
+a u ih a	nonword
+a u ih u	nonword
+a u uh oe	nonword
+a u uh ae	nonword
+a u uh y	nonword
+a u uh e	nonword
+a u uh i	nonword
+a u uh ih	nonword
+a u uh uh	nonword
+a u uh o	nonword
+a u uh a	nonword
+a u uh u	nonword
+a u o oe	nonword
+a u o ae	nonword
+a u o y	nonword
+a u o e	word
+a u o i	word
+a u o ih	nonword
+a u o uh	nonword
+a u o o	word
+a u o a	word
+a u o u	word
+a u a oe	nonword
+a u a ae	nonword
+a u a y	nonword
+a u a e	word
+a u a i	word
+a u a ih	nonword
+a u a uh	nonword
+a u a o	word
+a u a a	word
+a u a u	word
+a u u oe	nonword
+a u u ae	nonword
+a u u y	nonword
+a u u e	word
+a u u i	word
+a u u ih	nonword
+a u u uh	nonword
+a u u o	word
+a u u a	word
+a u u u	word
+u oe oe oe	nonword
+u oe oe ae	nonword
+u oe oe y	nonword
+u oe oe e	nonword
+u oe oe i	nonword
+u oe oe ih	nonword
+u oe oe uh	nonword
+u oe oe o	nonword
+u oe oe a	nonword
+u oe oe u	nonword
+u oe ae oe	nonword
+u oe ae ae	nonword
+u oe ae y	nonword
+u oe ae e	nonword
+u oe ae i	nonword
+u oe ae ih	nonword
+u oe ae uh	nonword
+u oe ae o	nonword
+u oe ae a	nonword
+u oe ae u	nonword
+u oe y oe	nonword
+u oe y ae	nonword
+u oe y y	nonword
+u oe y e	nonword
+u oe y i	nonword
+u oe y ih	nonword
+u oe y uh	nonword
+u oe y o	nonword
+u oe y a	nonword
+u oe y u	nonword
+u oe e oe	nonword
+u oe e ae	nonword
+u oe e y	nonword
+u oe e e	nonword
+u oe e i	nonword
+u oe e ih	nonword
+u oe e uh	nonword
+u oe e o	nonword
+u oe e a	nonword
+u oe e u	nonword
+u oe i oe	nonword
+u oe i ae	nonword
+u oe i y	nonword
+u oe i e	nonword
+u oe i i	nonword
+u oe i ih	nonword
+u oe i uh	nonword
+u oe i o	nonword
+u oe i a	nonword
+u oe i u	nonword
+u oe ih oe	nonword
+u oe ih ae	nonword
+u oe ih y	nonword
+u oe ih e	nonword
+u oe ih i	nonword
+u oe ih ih	nonword
+u oe ih uh	nonword
+u oe ih o	nonword
+u oe ih a	nonword
+u oe ih u	nonword
+u oe uh oe	nonword
+u oe uh ae	nonword
+u oe uh y	nonword
+u oe uh e	nonword
+u oe uh i	nonword
+u oe uh ih	nonword
+u oe uh uh	nonword
+u oe uh o	nonword
+u oe uh a	nonword
+u oe uh u	nonword
+u oe o oe	nonword
+u oe o ae	nonword
+u oe o y	nonword
+u oe o e	nonword
+u oe o i	nonword
+u oe o ih	nonword
+u oe o uh	nonword
+u oe o o	nonword
+u oe o a	nonword
+u oe o u	nonword
+u oe a oe	nonword
+u oe a ae	nonword
+u oe a y	nonword
+u oe a e	nonword
+u oe a i	nonword
+u oe a ih	nonword
+u oe a uh	nonword
+u oe a o	nonword
+u oe a a	nonword
+u oe a u	nonword
+u oe u oe	nonword
+u oe u ae	nonword
+u oe u y	nonword
+u oe u e	nonword
+u oe u i	nonword
+u oe u ih	nonword
+u oe u uh	nonword
+u oe u o	nonword
+u oe u a	nonword
+u oe u u	nonword
+u ae oe oe	nonword
+u ae oe ae	nonword
+u ae oe y	nonword
+u ae oe e	nonword
+u ae oe i	nonword
+u ae oe ih	nonword
+u ae oe uh	nonword
+u ae oe o	nonword
+u ae oe a	nonword
+u ae oe u	nonword
+u ae ae oe	nonword
+u ae ae ae	nonword
+u ae ae y	nonword
+u ae ae e	nonword
+u ae ae i	nonword
+u ae ae ih	nonword
+u ae ae uh	nonword
+u ae ae o	nonword
+u ae ae a	nonword
+u ae ae u	nonword
+u ae y oe	nonword
+u ae y ae	nonword
+u ae y y	nonword
+u ae y e	nonword
+u ae y i	nonword
+u ae y ih	nonword
+u ae y uh	nonword
+u ae y o	nonword
+u ae y a	nonword
+u ae y u	nonword
+u ae e oe	nonword
+u ae e ae	nonword
+u ae e y	nonword
+u ae e e	nonword
+u ae e i	nonword
+u ae e ih	nonword
+u ae e uh	nonword
+u ae e o	nonword
+u ae e a	nonword
+u ae e u	nonword
+u ae i oe	nonword
+u ae i ae	nonword
+u ae i y	nonword
+u ae i e	nonword
+u ae i i	nonword
+u ae i ih	nonword
+u ae i uh	nonword
+u ae i o	nonword
+u ae i a	nonword
+u ae i u	nonword
+u ae ih oe	nonword
+u ae ih ae	nonword
+u ae ih y	nonword
+u ae ih e	nonword
+u ae ih i	nonword
+u ae ih ih	nonword
+u ae ih uh	nonword
+u ae ih o	nonword
+u ae ih a	nonword
+u ae ih u	nonword
+u ae uh oe	nonword
+u ae uh ae	nonword
+u ae uh y	nonword
+u ae uh e	nonword
+u ae uh i	nonword
+u ae uh ih	nonword
+u ae uh uh	nonword
+u ae uh o	nonword
+u ae uh a	nonword
+u ae uh u	nonword
+u ae o oe	nonword
+u ae o ae	nonword
+u ae o y	nonword
+u ae o e	nonword
+u ae o i	nonword
+u ae o ih	nonword
+u ae o uh	nonword
+u ae o o	nonword
+u ae o a	nonword
+u ae o u	nonword
+u ae a oe	nonword
+u ae a ae	nonword
+u ae a y	nonword
+u ae a e	nonword
+u ae a i	nonword
+u ae a ih	nonword
+u ae a uh	nonword
+u ae a o	nonword
+u ae a a	nonword
+u ae a u	nonword
+u ae u oe	nonword
+u ae u ae	nonword
+u ae u y	nonword
+u ae u e	nonword
+u ae u i	nonword
+u ae u ih	nonword
+u ae u uh	nonword
+u ae u o	nonword
+u ae u a	nonword
+u ae u u	nonword
+u y oe oe	nonword
+u y oe ae	nonword
+u y oe y	nonword
+u y oe e	nonword
+u y oe i	nonword
+u y oe ih	nonword
+u y oe uh	nonword
+u y oe o	nonword
+u y oe a	nonword
+u y oe u	nonword
+u y ae oe	nonword
+u y ae ae	nonword
+u y ae y	nonword
+u y ae e	nonword
+u y ae i	nonword
+u y ae ih	nonword
+u y ae uh	nonword
+u y ae o	nonword
+u y ae a	nonword
+u y ae u	nonword
+u y y oe	nonword
+u y y ae	nonword
+u y y y	nonword
+u y y e	nonword
+u y y i	nonword
+u y y ih	nonword
+u y y uh	nonword
+u y y o	nonword
+u y y a	nonword
+u y y u	nonword
+u y e oe	nonword
+u y e ae	nonword
+u y e y	nonword
+u y e e	nonword
+u y e i	nonword
+u y e ih	nonword
+u y e uh	nonword
+u y e o	nonword
+u y e a	nonword
+u y e u	nonword
+u y i oe	nonword
+u y i ae	nonword
+u y i y	nonword
+u y i e	nonword
+u y i i	nonword
+u y i ih	nonword
+u y i uh	nonword
+u y i o	nonword
+u y i a	nonword
+u y i u	nonword
+u y ih oe	nonword
+u y ih ae	nonword
+u y ih y	nonword
+u y ih e	nonword
+u y ih i	nonword
+u y ih ih	nonword
+u y ih uh	nonword
+u y ih o	nonword
+u y ih a	nonword
+u y ih u	nonword
+u y uh oe	nonword
+u y uh ae	nonword
+u y uh y	nonword
+u y uh e	nonword
+u y uh i	nonword
+u y uh ih	nonword
+u y uh uh	nonword
+u y uh o	nonword
+u y uh a	nonword
+u y uh u	nonword
+u y o oe	nonword
+u y o ae	nonword
+u y o y	nonword
+u y o e	nonword
+u y o i	nonword
+u y o ih	nonword
+u y o uh	nonword
+u y o o	nonword
+u y o a	nonword
+u y o u	nonword
+u y a oe	nonword
+u y a ae	nonword
+u y a y	nonword
+u y a e	nonword
+u y a i	nonword
+u y a ih	nonword
+u y a uh	nonword
+u y a o	nonword
+u y a a	nonword
+u y a u	nonword
+u y u oe	nonword
+u y u ae	nonword
+u y u y	nonword
+u y u e	nonword
+u y u i	nonword
+u y u ih	nonword
+u y u uh	nonword
+u y u o	nonword
+u y u a	nonword
+u y u u	nonword
+u e oe oe	nonword
+u e oe ae	nonword
+u e oe y	nonword
+u e oe e	nonword
+u e oe i	nonword
+u e oe ih	nonword
+u e oe uh	nonword
+u e oe o	nonword
+u e oe a	nonword
+u e oe u	nonword
+u e ae oe	nonword
+u e ae ae	nonword
+u e ae y	nonword
+u e ae e	nonword
+u e ae i	nonword
+u e ae ih	nonword
+u e ae uh	nonword
+u e ae o	nonword
+u e ae a	nonword
+u e ae u	nonword
+u e y oe	nonword
+u e y ae	nonword
+u e y y	nonword
+u e y e	nonword
+u e y i	nonword
+u e y ih	nonword
+u e y uh	nonword
+u e y o	nonword
+u e y a	nonword
+u e y u	nonword
+u e e oe	nonword
+u e e ae	nonword
+u e e y	nonword
+u e e e	word
+u e e i	word
+u e e ih	nonword
+u e e uh	nonword
+u e e o	word
+u e e a	word
+u e e u	word
+u e i oe	nonword
+u e i ae	nonword
+u e i y	nonword
+u e i e	word
+u e i i	word
+u e i ih	nonword
+u e i uh	nonword
+u e i o	word
+u e i a	word
+u e i u	word
+u e ih oe	nonword
+u e ih ae	nonword
+u e ih y	nonword
+u e ih e	nonword
+u e ih i	nonword
+u e ih ih	nonword
+u e ih uh	nonword
+u e ih o	nonword
+u e ih a	nonword
+u e ih u	nonword
+u e uh oe	nonword
+u e uh ae	nonword
+u e uh y	nonword
+u e uh e	nonword
+u e uh i	nonword
+u e uh ih	nonword
+u e uh uh	nonword
+u e uh o	nonword
+u e uh a	nonword
+u e uh u	nonword
+u e o oe	nonword
+u e o ae	nonword
+u e o y	nonword
+u e o e	word
+u e o i	word
+u e o ih	nonword
+u e o uh	nonword
+u e o o	word
+u e o a	word
+u e o u	word
+u e a oe	nonword
+u e a ae	nonword
+u e a y	nonword
+u e a e	word
+u e a i	word
+u e a ih	nonword
+u e a uh	nonword
+u e a o	word
+u e a a	word
+u e a u	word
+u e u oe	nonword
+u e u ae	nonword
+u e u y	nonword
+u e u e	word
+u e u i	word
+u e u ih	nonword
+u e u uh	nonword
+u e u o	word
+u e u a	word
+u e u u	word
+u i oe oe	nonword
+u i oe ae	nonword
+u i oe y	nonword
+u i oe e	nonword
+u i oe i	nonword
+u i oe ih	nonword
+u i oe uh	nonword
+u i oe o	nonword
+u i oe a	nonword
+u i oe u	nonword
+u i ae oe	nonword
+u i ae ae	nonword
+u i ae y	nonword
+u i ae e	nonword
+u i ae i	nonword
+u i ae ih	nonword
+u i ae uh	nonword
+u i ae o	nonword
+u i ae a	nonword
+u i ae u	nonword
+u i y oe	nonword
+u i y ae	nonword
+u i y y	nonword
+u i y e	nonword
+u i y i	nonword
+u i y ih	nonword
+u i y uh	nonword
+u i y o	nonword
+u i y a	nonword
+u i y u	nonword
+u i e oe	nonword
+u i e ae	nonword
+u i e y	nonword
+u i e e	word
+u i e i	word
+u i e ih	nonword
+u i e uh	nonword
+u i e o	word
+u i e a	word
+u i e u	word
+u i i oe	nonword
+u i i ae	nonword
+u i i y	nonword
+u i i e	word
+u i i i	word
+u i i ih	nonword
+u i i uh	nonword
+u i i o	word
+u i i a	word
+u i i u	word
+u i ih oe	nonword
+u i ih ae	nonword
+u i ih y	nonword
+u i ih e	nonword
+u i ih i	nonword
+u i ih ih	nonword
+u i ih uh	nonword
+u i ih o	nonword
+u i ih a	nonword
+u i ih u	nonword
+u i uh oe	nonword
+u i uh ae	nonword
+u i uh y	nonword
+u i uh e	nonword
+u i uh i	nonword
+u i uh ih	nonword
+u i uh uh	nonword
+u i uh o	nonword
+u i uh a	nonword
+u i uh u	nonword
+u i o oe	nonword
+u i o ae	nonword
+u i o y	nonword
+u i o e	word
+u i o i	word
+u i o ih	nonword
+u i o uh	nonword
+u i o o	word
+u i o a	word
+u i o u	word
+u i a oe	nonword
+u i a ae	nonword
+u i a y	nonword
+u i a e	word
+u i a i	word
+u i a ih	nonword
+u i a uh	nonword
+u i a o	word
+u i a a	word
+u i a u	word
+u i u oe	nonword
+u i u ae	nonword
+u i u y	nonword
+u i u e	word
+u i u i	word
+u i u ih	nonword
+u i u uh	nonword
+u i u o	word
+u i u a	word
+u i u u	word
+u ih oe oe	nonword
+u ih oe ae	nonword
+u ih oe y	nonword
+u ih oe e	nonword
+u ih oe i	nonword
+u ih oe ih	nonword
+u ih oe uh	nonword
+u ih oe o	nonword
+u ih oe a	nonword
+u ih oe u	nonword
+u ih ae oe	nonword
+u ih ae ae	nonword
+u ih ae y	nonword
+u ih ae e	nonword
+u ih ae i	nonword
+u ih ae ih	nonword
+u ih ae uh	nonword
+u ih ae o	nonword
+u ih ae a	nonword
+u ih ae u	nonword
+u ih y oe	nonword
+u ih y ae	nonword
+u ih y y	nonword
+u ih y e	nonword
+u ih y i	nonword
+u ih y ih	nonword
+u ih y uh	nonword
+u ih y o	nonword
+u ih y a	nonword
+u ih y u	nonword
+u ih e oe	nonword
+u ih e ae	nonword
+u ih e y	nonword
+u ih e e	nonword
+u ih e i	nonword
+u ih e ih	nonword
+u ih e uh	nonword
+u ih e o	nonword
+u ih e a	nonword
+u ih e u	nonword
+u ih i oe	nonword
+u ih i ae	nonword
+u ih i y	nonword
+u ih i e	nonword
+u ih i i	nonword
+u ih i ih	nonword
+u ih i uh	nonword
+u ih i o	nonword
+u ih i a	nonword
+u ih i u	nonword
+u ih ih oe	nonword
+u ih ih ae	nonword
+u ih ih y	nonword
+u ih ih e	nonword
+u ih ih i	nonword
+u ih ih ih	nonword
+u ih ih uh	nonword
+u ih ih o	nonword
+u ih ih a	nonword
+u ih ih u	nonword
+u ih uh oe	nonword
+u ih uh ae	nonword
+u ih uh y	nonword
+u ih uh e	nonword
+u ih uh i	nonword
+u ih uh ih	nonword
+u ih uh uh	nonword
+u ih uh o	nonword
+u ih uh a	nonword
+u ih uh u	nonword
+u ih o oe	nonword
+u ih o ae	nonword
+u ih o y	nonword
+u ih o e	nonword
+u ih o i	nonword
+u ih o ih	nonword
+u ih o uh	nonword
+u ih o o	nonword
+u ih o a	nonword
+u ih o u	nonword
+u ih a oe	nonword
+u ih a ae	nonword
+u ih a y	nonword
+u ih a e	nonword
+u ih a i	nonword
+u ih a ih	nonword
+u ih a uh	nonword
+u ih a o	nonword
+u ih a a	nonword
+u ih a u	nonword
+u ih u oe	nonword
+u ih u ae	nonword
+u ih u y	nonword
+u ih u e	nonword
+u ih u i	nonword
+u ih u ih	nonword
+u ih u uh	nonword
+u ih u o	nonword
+u ih u a	nonword
+u ih u u	nonword
+u uh oe oe	nonword
+u uh oe ae	nonword
+u uh oe y	nonword
+u uh oe e	nonword
+u uh oe i	nonword
+u uh oe ih	nonword
+u uh oe uh	nonword
+u uh oe o	nonword
+u uh oe a	nonword
+u uh oe u	nonword
+u uh ae oe	nonword
+u uh ae ae	nonword
+u uh ae y	nonword
+u uh ae e	nonword
+u uh ae i	nonword
+u uh ae ih	nonword
+u uh ae uh	nonword
+u uh ae o	nonword
+u uh ae a	nonword
+u uh ae u	nonword
+u uh y oe	nonword
+u uh y ae	nonword
+u uh y y	nonword
+u uh y e	nonword
+u uh y i	nonword
+u uh y ih	nonword
+u uh y uh	nonword
+u uh y o	nonword
+u uh y a	nonword
+u uh y u	nonword
+u uh e oe	nonword
+u uh e ae	nonword
+u uh e y	nonword
+u uh e e	nonword
+u uh e i	nonword
+u uh e ih	nonword
+u uh e uh	nonword
+u uh e o	nonword
+u uh e a	nonword
+u uh e u	nonword
+u uh i oe	nonword
+u uh i ae	nonword
+u uh i y	nonword
+u uh i e	nonword
+u uh i i	nonword
+u uh i ih	nonword
+u uh i uh	nonword
+u uh i o	nonword
+u uh i a	nonword
+u uh i u	nonword
+u uh ih oe	nonword
+u uh ih ae	nonword
+u uh ih y	nonword
+u uh ih e	nonword
+u uh ih i	nonword
+u uh ih ih	nonword
+u uh ih uh	nonword
+u uh ih o	nonword
+u uh ih a	nonword
+u uh ih u	nonword
+u uh uh oe	nonword
+u uh uh ae	nonword
+u uh uh y	nonword
+u uh uh e	nonword
+u uh uh i	nonword
+u uh uh ih	nonword
+u uh uh uh	nonword
+u uh uh o	nonword
+u uh uh a	nonword
+u uh uh u	nonword
+u uh o oe	nonword
+u uh o ae	nonword
+u uh o y	nonword
+u uh o e	nonword
+u uh o i	nonword
+u uh o ih	nonword
+u uh o uh	nonword
+u uh o o	nonword
+u uh o a	nonword
+u uh o u	nonword
+u uh a oe	nonword
+u uh a ae	nonword
+u uh a y	nonword
+u uh a e	nonword
+u uh a i	nonword
+u uh a ih	nonword
+u uh a uh	nonword
+u uh a o	nonword
+u uh a a	nonword
+u uh a u	nonword
+u uh u oe	nonword
+u uh u ae	nonword
+u uh u y	nonword
+u uh u e	nonword
+u uh u i	nonword
+u uh u ih	nonword
+u uh u uh	nonword
+u uh u o	nonword
+u uh u a	nonword
+u uh u u	nonword
+u o oe oe	nonword
+u o oe ae	nonword
+u o oe y	nonword
+u o oe e	nonword
+u o oe i	nonword
+u o oe ih	nonword
+u o oe uh	nonword
+u o oe o	nonword
+u o oe a	nonword
+u o oe u	nonword
+u o ae oe	nonword
+u o ae ae	nonword
+u o ae y	nonword
+u o ae e	nonword
+u o ae i	nonword
+u o ae ih	nonword
+u o ae uh	nonword
+u o ae o	nonword
+u o ae a	nonword
+u o ae u	nonword
+u o y oe	nonword
+u o y ae	nonword
+u o y y	nonword
+u o y e	nonword
+u o y i	nonword
+u o y ih	nonword
+u o y uh	nonword
+u o y o	nonword
+u o y a	nonword
+u o y u	nonword
+u o e oe	nonword
+u o e ae	nonword
+u o e y	nonword
+u o e e	word
+u o e i	word
+u o e ih	nonword
+u o e uh	nonword
+u o e o	word
+u o e a	word
+u o e u	word
+u o i oe	nonword
+u o i ae	nonword
+u o i y	nonword
+u o i e	word
+u o i i	word
+u o i ih	nonword
+u o i uh	nonword
+u o i o	word
+u o i a	word
+u o i u	word
+u o ih oe	nonword
+u o ih ae	nonword
+u o ih y	nonword
+u o ih e	nonword
+u o ih i	nonword
+u o ih ih	nonword
+u o ih uh	nonword
+u o ih o	nonword
+u o ih a	nonword
+u o ih u	nonword
+u o uh oe	nonword
+u o uh ae	nonword
+u o uh y	nonword
+u o uh e	nonword
+u o uh i	nonword
+u o uh ih	nonword
+u o uh uh	nonword
+u o uh o	nonword
+u o uh a	nonword
+u o uh u	nonword
+u o o oe	nonword
+u o o ae	nonword
+u o o y	nonword
+u o o e	word
+u o o i	word
+u o o ih	nonword
+u o o uh	nonword
+u o o o	word
+u o o a	word
+u o o u	word
+u o a oe	nonword
+u o a ae	nonword
+u o a y	nonword
+u o a e	word
+u o a i	word
+u o a ih	nonword
+u o a uh	nonword
+u o a o	word
+u o a a	word
+u o a u	word
+u o u oe	nonword
+u o u ae	nonword
+u o u y	nonword
+u o u e	word
+u o u i	word
+u o u ih	nonword
+u o u uh	nonword
+u o u o	word
+u o u a	word
+u o u u	word
+u a oe oe	nonword
+u a oe ae	nonword
+u a oe y	nonword
+u a oe e	nonword
+u a oe i	nonword
+u a oe ih	nonword
+u a oe uh	nonword
+u a oe o	nonword
+u a oe a	nonword
+u a oe u	nonword
+u a ae oe	nonword
+u a ae ae	nonword
+u a ae y	nonword
+u a ae e	nonword
+u a ae i	nonword
+u a ae ih	nonword
+u a ae uh	nonword
+u a ae o	nonword
+u a ae a	nonword
+u a ae u	nonword
+u a y oe	nonword
+u a y ae	nonword
+u a y y	nonword
+u a y e	nonword
+u a y i	nonword
+u a y ih	nonword
+u a y uh	nonword
+u a y o	nonword
+u a y a	nonword
+u a y u	nonword
+u a e oe	nonword
+u a e ae	nonword
+u a e y	nonword
+u a e e	word
+u a e i	word
+u a e ih	nonword
+u a e uh	nonword
+u a e o	word
+u a e a	word
+u a e u	word
+u a i oe	nonword
+u a i ae	nonword
+u a i y	nonword
+u a i e	word
+u a i i	word
+u a i ih	nonword
+u a i uh	nonword
+u a i o	word
+u a i a	word
+u a i u	word
+u a ih oe	nonword
+u a ih ae	nonword
+u a ih y	nonword
+u a ih e	nonword
+u a ih i	nonword
+u a ih ih	nonword
+u a ih uh	nonword
+u a ih o	nonword
+u a ih a	nonword
+u a ih u	nonword
+u a uh oe	nonword
+u a uh ae	nonword
+u a uh y	nonword
+u a uh e	nonword
+u a uh i	nonword
+u a uh ih	nonword
+u a uh uh	nonword
+u a uh o	nonword
+u a uh a	nonword
+u a uh u	nonword
+u a o oe	nonword
+u a o ae	nonword
+u a o y	nonword
+u a o e	word
+u a o i	word
+u a o ih	nonword
+u a o uh	nonword
+u a o o	word
+u a o a	word
+u a o u	word
+u a a oe	nonword
+u a a ae	nonword
+u a a y	nonword
+u a a e	word
+u a a i	word
+u a a ih	nonword
+u a a uh	nonword
+u a a o	word
+u a a a	word
+u a a u	word
+u a u oe	nonword
+u a u ae	nonword
+u a u y	nonword
+u a u e	word
+u a u i	word
+u a u ih	nonword
+u a u uh	nonword
+u a u o	word
+u a u a	word
+u a u u	word
+u u oe oe	nonword
+u u oe ae	nonword
+u u oe y	nonword
+u u oe e	nonword
+u u oe i	nonword
+u u oe ih	nonword
+u u oe uh	nonword
+u u oe o	nonword
+u u oe a	nonword
+u u oe u	nonword
+u u ae oe	nonword
+u u ae ae	nonword
+u u ae y	nonword
+u u ae e	nonword
+u u ae i	nonword
+u u ae ih	nonword
+u u ae uh	nonword
+u u ae o	nonword
+u u ae a	nonword
+u u ae u	nonword
+u u y oe	nonword
+u u y ae	nonword
+u u y y	nonword
+u u y e	nonword
+u u y i	nonword
+u u y ih	nonword
+u u y uh	nonword
+u u y o	nonword
+u u y a	nonword
+u u y u	nonword
+u u e oe	nonword
+u u e ae	nonword
+u u e y	nonword
+u u e e	word
+u u e i	word
+u u e ih	nonword
+u u e uh	nonword
+u u e o	word
+u u e a	word
+u u e u	word
+u u i oe	nonword
+u u i ae	nonword
+u u i y	nonword
+u u i e	word
+u u i i	word
+u u i ih	nonword
+u u i uh	nonword
+u u i o	word
+u u i a	word
+u u i u	word
+u u ih oe	nonword
+u u ih ae	nonword
+u u ih y	nonword
+u u ih e	nonword
+u u ih i	nonword
+u u ih ih	nonword
+u u ih uh	nonword
+u u ih o	nonword
+u u ih a	nonword
+u u ih u	nonword
+u u uh oe	nonword
+u u uh ae	nonword
+u u uh y	nonword
+u u uh e	nonword
+u u uh i	nonword
+u u uh ih	nonword
+u u uh uh	nonword
+u u uh o	nonword
+u u uh a	nonword
+u u uh u	nonword
+u u o oe	nonword
+u u o ae	nonword
+u u o y	nonword
+u u o e	word
+u u o i	word
+u u o ih	nonword
+u u o uh	nonword
+u u o o	word
+u u o a	word
+u u o u	word
+u u a oe	nonword
+u u a ae	nonword
+u u a y	nonword
+u u a e	word
+u u a i	word
+u u a ih	nonword
+u u a uh	nonword
+u u a o	word
+u u a a	word
+u u a u	word
+u u u oe	nonword
+u u u ae	nonword
+u u u y	nonword
+u u u e	word
+u u u i	word
+u u u ih	nonword
+u u u uh	nonword
+u u u o	word
+u u u a	word
+u u u u	word

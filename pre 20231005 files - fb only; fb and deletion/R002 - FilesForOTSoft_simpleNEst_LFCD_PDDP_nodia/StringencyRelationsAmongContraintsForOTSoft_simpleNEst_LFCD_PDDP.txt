@@ -1,0 +1,40 @@
+The following constraints show a stringency relationship -- not necessarily a logical one, but in the data given.
+
+Id(Bk)Syl1	 has a strict subset of the violations of 	Id(Bk)
+*B1	 has a strict subset of the violations of 	Id(Bk)
+*F3_B1	 has a strict subset of the violations of 	Id(Bk)
+*F3..._B1	 has a strict subset of the violations of 	Id(Bk)
+*F3_B2	 has a strict subset of the violations of 	Id(Bk)
+*F3..._B2	 has a strict subset of the violations of 	Id(Bk)
+*_B1F3	 has a strict subset of the violations of 	Id(Bk)
+*_B1...F3	 has a strict subset of the violations of 	Id(Bk)
+*_B2F3	 has a strict subset of the violations of 	Id(Bk)
+*_B2...F3	 has a strict subset of the violations of 	Id(Bk)
+*F3_B1	 has a strict subset of the violations of 	*F3
+*F3_B2	 has a strict subset of the violations of 	*F3
+*_B1F3	 has a strict subset of the violations of 	*F3
+*_B2F3	 has a strict subset of the violations of 	*F3
+*B1	 has a strict subset of the violations of 	*B2
+*F3_B1	 has a strict subset of the violations of 	*B1
+*F3..._B1	 has a strict subset of the violations of 	*B1
+*_B1F3	 has a strict subset of the violations of 	*B1
+*_B1...F3	 has a strict subset of the violations of 	*B1
+*F3_B1	 has a strict subset of the violations of 	*B2
+*F3..._B1	 has a strict subset of the violations of 	*B2
+*F3_B2	 has a strict subset of the violations of 	*B2
+*F3..._B2	 has a strict subset of the violations of 	*B2
+*_B1F3	 has a strict subset of the violations of 	*B2
+*_B1...F3	 has a strict subset of the violations of 	*B2
+*_B2F3	 has a strict subset of the violations of 	*B2
+*_B2...F3	 has a strict subset of the violations of 	*B2
+*F3_B1	 has a strict subset of the violations of 	*F3..._B1
+*F3_B1	 has a strict subset of the violations of 	*F3_B2
+*F3_B1	 has a strict subset of the violations of 	*F3..._B2
+*F3..._B1	 has a strict subset of the violations of 	*F3..._B2
+*F3_B2	 has a strict subset of the violations of 	*F3..._B2
+*_B1F3	 has a strict subset of the violations of 	*_B1...F3
+*_B1F3	 has a strict subset of the violations of 	*_B2F3
+*_B1F3	 has a strict subset of the violations of 	*_B2...F3
+*_B1...F3	 has a strict subset of the violations of 	*_B2...F3
+*_B2F3	 has a strict subset of the violations of 	*_B2...F3
+

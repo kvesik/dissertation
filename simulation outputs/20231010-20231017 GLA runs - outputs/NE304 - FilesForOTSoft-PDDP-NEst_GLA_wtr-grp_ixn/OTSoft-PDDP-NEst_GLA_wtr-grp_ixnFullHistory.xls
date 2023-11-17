@@ -1,0 +1,967 @@
+Generated	Heard	Adj. Num	Id(Bk)Syl1	now	Id(Bk)	now	Id(HiLoRd)Syl1	now	Id(HiLoRd)	now	*F1	now	*F3	now	*F4	now	*F5	now	*B1	now	*B2	now	*B3	now	*B5	now	*F1_B1	now	*F1..._B1	now	*F1_B2	now	*F1..._B2	now	*F1_B3	now	*F1..._B3	now	*F1_B5	now	*F1..._B5	now	*F3_B1	now	*F3..._B1	now	*F3_B2	now	*F3..._B2	now	*F3_B3	now	*F3..._B3	now	*F3_B5	now	*F3..._B5	now	*F4_B1	now	*F4..._B1	now	*F4_B2	now	*F4..._B2	now	*F4_B3	now	*F4..._B3	now	*F4_B5	now	*F4..._B5	now	*F5_B1	now	*F5..._B1	now	*F5_B2	now	*F5..._B2	now	*F5_B3	now	*F5..._B3	now	*F5_B5	now	*F5..._B5	now	*_B1F1	now	*_B1...F1	now	*_B1F3	now	*_B1...F3	now	*_B1F4	now	*_B1...F4	now	*_B1F5	now	*_B1...F5	now	*_B2F1	now	*_B2...F1	now	*_B2F3	now	*_B2...F3	now	*_B2F4	now	*_B2...F4	now	*_B2F5	now	*_B2...F5	now	*_B3F1	now	*_B3...F1	now	*_B3F3	now	*_B3...F3	now	*_B3F4	now	*_B3...F4	now	*_B3F5	now	*_B3...F5	now	*_B5F1	now	*_B5...F1	now	*_B5F3	now	*_B5...F3	now	*_B5F4	now	*_B5...F4	now	*_B5F5	now	*_B5...F5	now	
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 20 	 20 																																																																																																																																																						
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 20 	 20 																																																																																																																																																		
+(Initial)			 20 		 0 		 20 		 0 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 	
+ii	oiii	oi	 2 	 22 																																																																																																																																																						
+ii	oi			 2 	 2 																																																																																																																																																				
+ii	oi					 2 	 22 																																																																																																																																																		
+ii	oi							 2 	 2 																																																																																																																																																
+ii	oi															 2 	 102 																																																																																																																																								
+ii	oi																					-2 	 98 																																																																																																																																		
+ii	oi																							-2 	 98 																																																																																																																																
+ii	oi																																																																																																																																					-2 	 98 																		
+ii	oi																																																																																																																																							-2 	 98 																
+ii	oi																																																																																																																																																					-2 	 98 		
+ii	oi																																																																																																																																																							-2 	 98 
+Eau	eauEau	eau	 2 	 24 																																																																																																																																																						
+Eau	eau			 2 	 4 																																																																																																																																																				
+Eau	eau													-2 	 98 																																																																																																																																										
+Eau	eau															-2 	 100 																																																																																																																																								
+Eau	eau																			 2 	 102 																																																																																																																																				
+Eau	eau																					 2 	 100 																																																																																																																																		
+Eau	eau																							 2 	 100 																																																																																																																																
+Eau	eau																																																																					-2 	 98 																																																																																		
+Eau	eau																																																																							-2 	 98 																																																																																
+Eau	eau																																																																																					-2 	 98 																																																																		
+Eau	eau																																																																																							-2 	 98 																																																																
+ii	Aoii	Ao			 2 	 6 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 26 																																																																																																																																																						
+ii	Ao					 2 	 24 																																																																																																																																																		
+ii	Ao							 2 	 4 																																																																																																																																																
+ii	Ao											-2 	 98 																																																																																																																																												
+ii	Ao													-2 	 96 																																																																																																																																										
+ii	Ao															 2 	 102 																																																																																																																																								
+ii	Ao																					-2 	 98 																																																																																																																																		
+ii	Ao																							-2 	 98 																																																																																																																																
+ii	Ao																																																	-2 	 98 																																																																																																						
+ii	Ao																																																			-2 	 98 																																																																																																				
+ii	Ao																																																					-2 	 98 																																																																																																		
+ii	Ao																																																							-2 	 98 																																																																																																
+ii	Ao																																																																	-2 	 98 																																																																																						
+ii	Ao																																																																			-2 	 98 																																																																																				
+ii	Ao																																																																					-2 	 96 																																																																																		
+ii	Ao																																																																							-2 	 96 																																																																																
+ii	Ao																																																																																	-2 	 98 																																																																						
+ii	Ao																																																																																			-2 	 98 																																																																				
+ii	Ao																																																																																					-2 	 96 																																																																		
+ii	Ao																																																																																							-2 	 96 																																																																
+aou	Aouaou	Aou	 2 	 28 																																																																																																																																																						
+aou	Aou			 2 	 8 																																																																																																																																																				
+aou	Aou											-2 	 96 																																																																																																																																												
+aou	Aou													-2 	 94 																																																																																																																																										
+aou	Aou															-2 	 100 																																																																																																																																								
+aou	Aou																							 2 	 100 																																																																																																																																
+aou	Aou																																																	-2 	 96 																																																																																																						
+aou	Aou																																																			-2 	 96 																																																																																																				
+aou	Aou																																																					-2 	 96 																																																																																																		
+aou	Aou																																																							-2 	 96 																																																																																																
+aou	Aou																																																																	-2 	 96 																																																																																						
+aou	Aou																																																																			-2 	 96 																																																																																				
+aou	Aou																																																																					-2 	 94 																																																																																		
+aou	Aou																																																																							-2 	 94 																																																																																
+aou	Aou																																																																																	-2 	 96 																																																																						
+aou	Aou																																																																																			-2 	 96 																																																																				
+aou	Aou																																																																																					-2 	 94 																																																																		
+aou	Aou																																																																																							-2 	 94 																																																																
+iii	euoiii	euo			 2 	 10 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 30 																																																																																																																																																						
+iii	euo					 2 	 26 																																																																																																																																																		
+iii	euo							 2 	 6 																																																																																																																																																
+iii	euo													-2 	 92 																																																																																																																																										
+iii	euo															 2 	 102 																																																																																																																																								
+iii	euo																					-2 	 96 																																																																																																																																		
+iii	euo																							-2 	 98 																																																																																																																																
+iii	euo																																																																			-2 	 94 																																																																																				
+iii	euo																																																																					-2 	 92 																																																																																		
+iii	euo																																																																							-2 	 92 																																																																																
+iii	euo																																																																																			-2 	 94 																																																																				
+iii	euo																																																																																					-2 	 92 																																																																		
+iii	euo																																																																																							-2 	 92 																																																																
+iii	eeeiii	eee					 2 	 28 																																																																																																																																																		
+iii	eee							 2 	 8 																																																																																																																																																
+iii	eee													-2 	 90 																																																																																																																																										
+IIo	iioIIo	iio	 2 	 32 																																																																																																																																																						
+IIo	iio			 2 	 12 																																																																																																																																																				
+IIo	iio															-2 	 100 																																																																																																																																								
+IIo	iio																	 2 	 102 																																																																																																																																						
+IIo	iio																			 2 	 104 																																																																																																																																				
+IIo	iio																					 2 	 98 																																																																																																																																		
+IIo	iio																							 2 	 100 																																																																																																																																
+IIo	iio																																																																																	-2 	 94 																																																																						
+IIo	iio																																																																																			-2 	 92 																																																																				
+IIo	iio																																																																																					-2 	 90 																																																																		
+IIo	iio																																																																																							-2 	 90 																																																																
+EE	eeEE	ee	 2 	 34 																																																																																																																																																						
+EE	ee			 2 	 14 																																																																																																																																																				
+EE	ee													-2 	 88 																																																																																																																																										
+EE	ee															-2 	 98 																																																																																																																																								
+EE	ee																			 2 	 106 																																																																																																																																				
+EE	ee																					 2 	 100 																																																																																																																																		
+EE	ee																							 2 	 102 																																																																																																																																
+aou	Aouaou	Aou	 2 	 36 																																																																																																																																																						
+aou	Aou			 2 	 16 																																																																																																																																																				
+aou	Aou											-2 	 94 																																																																																																																																												
+aou	Aou													-2 	 86 																																																																																																																																										
+aou	Aou															-2 	 96 																																																																																																																																								
+aou	Aou																							 2 	 104 																																																																																																																																
+aou	Aou																																																	-2 	 94 																																																																																																						
+aou	Aou																																																			-2 	 94 																																																																																																				
+aou	Aou																																																					-2 	 94 																																																																																																		
+aou	Aou																																																							-2 	 94 																																																																																																
+aou	Aou																																																																	-2 	 94 																																																																																						
+aou	Aou																																																																			-2 	 92 																																																																																				
+aou	Aou																																																																					-2 	 90 																																																																																		
+aou	Aou																																																																							-2 	 90 																																																																																
+aou	Aou																																																																																	-2 	 92 																																																																						
+aou	Aou																																																																																			-2 	 90 																																																																				
+aou	Aou																																																																																					-2 	 88 																																																																		
+aou	Aou																																																																																							-2 	 88 																																																																
+iii	oieiii	oie	 2 	 38 																																																																																																																																																						
+iii	oie			 2 	 18 																																																																																																																																																				
+iii	oie					 2 	 30 																																																																																																																																																		
+iii	oie							 2 	 10 																																																																																																																																																
+iii	oie													-2 	 84 																																																																																																																																										
+iii	oie															 2 	 98 																																																																																																																																								
+iii	oie																					-2 	 98 																																																																																																																																		
+iii	oie																							-2 	 102 																																																																																																																																
+iii	oie																																																																																																																																			-2 	 98 																				
+iii	oie																																																																																																																																					-2 	 96 																		
+iii	oie																																																																																																																																							-2 	 96 																
+iii	oie																																																																																																																																																			-2 	 98 				
+iii	oie																																																																																																																																																					-2 	 96 		
+iii	oie																																																																																																																																																							-2 	 96 
+ii	yiii	yi					 2 	 32 																																																																																																																																																		
+ii	yi							 2 	 12 																																																																																																																																																
+ii	yi											-2 	 92 																																																																																																																																												
+ii	yi													-2 	 82 																																																																																																																																										
+iii	Oouiii	Oou			 2 	 20 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 40 																																																																																																																																																						
+iii	Oou					 2 	 34 																																																																																																																																																		
+iii	Oou							 2 	 14 																																																																																																																																																
+iii	Oou									-2 	 98 																																																																																																																																														
+iii	Oou											-2 	 90 																																																																																																																																												
+iii	Oou													-2 	 80 																																																																																																																																										
+iii	Oou															 2 	 100 																																																																																																																																								
+iii	Oou																					-2 	 96 																																																																																																																																		
+iii	Oou																							-2 	 100 																																																																																																																																
+iii	Oou																																	-2 	 98 																																																																																																																						
+iii	Oou																																			-2 	 98 																																																																																																																				
+iii	Oou																																					-2 	 98 																																																																																																																		
+iii	Oou																																							-2 	 98 																																																																																																																
+iii	Oou																																																	-2 	 92 																																																																																																						
+iii	Oou																																																			-2 	 92 																																																																																																				
+iii	Oou																																																					-2 	 92 																																																																																																		
+iii	Oou																																																							-2 	 92 																																																																																																
+iii	Oou																																																																	-2 	 92 																																																																																						
+iii	Oou																																																																			-2 	 90 																																																																																				
+iii	Oou																																																																					-2 	 88 																																																																																		
+iii	Oou																																																																							-2 	 88 																																																																																
+iii	Oou																																																																																	-2 	 90 																																																																						
+iii	Oou																																																																																			-2 	 88 																																																																				
+iii	Oou																																																																																					-2 	 86 																																																																		
+iii	Oou																																																																																							-2 	 86 																																																																
+oii	oeeoii	oee							 2 	 16 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 36 																																																																																																																																																		
+oii	oee													-2 	 78 																																																																																																																																										
+oii	oee																																																																																																																																	-2 	 98 																						
+oii	oee																																																																																																																																			-2 	 96 																				
+oii	oee																																																																																																																																																	-2 	 98 						
+oii	oee																																																																																																																																																			-2 	 96 				
+iii	uioiii	uio	 2 	 42 																																																																																																																																																						
+iii	uio			 2 	 22 																																																																																																																																																				
+iii	uio					 2 	 38 																																																																																																																																																		
+iii	uio							 2 	 18 																																																																																																																																																
+iii	uio															 2 	 102 																																																																																																																																								
+iii	uio																					-2 	 94 																																																																																																																																		
+iii	uio																							-2 	 98 																																																																																																																																
+iii	uio																																																																																	-2 	 88 																																																																						
+iii	uio																																																																																			-2 	 86 																																																																				
+iii	uio																																																																																					-2 	 84 																																																																		
+iii	uio																																																																																							-2 	 84 																																																																
+iii	uio																																																																																																																																																					-2 	 94 		
+iii	uio																																																																																																																																																							-2 	 94 
+aio	Aeoaio	Aeo	 2 	 44 																																																																																																																																																						
+aio	Aeo			 2 	 24 																																																																																																																																																				
+aio	Aeo							 2 	 20 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 40 																																																																																																																																																		
+aio	Aeo											-2 	 88 																																																																																																																																												
+aio	Aeo													-2 	 76 																																																																																																																																										
+aio	Aeo															-2 	 100 																																																																																																																																								
+aio	Aeo																							 2 	 100 																																																																																																																																
+aio	Aeo																																																			-2 	 90 																																																																																																				
+aio	Aeo																																																							-2 	 90 																																																																																																
+aio	Aeo																																																																	-2 	 90 																																																																																						
+aio	Aeo																																																																			-2 	 88 																																																																																				
+aio	Aeo																																																																					-2 	 86 																																																																																		
+aio	Aeo																																																																							-2 	 86 																																																																																
+aio	Aeo																																																																																																																																																					 2 	 96 		
+aio	Aeo																																																																																																																																																							 2 	 96 
+iai	Eaeiai	Eae	 2 	 46 																																																																																																																																																						
+iai	Eae			 2 	 26 																																																																																																																																																				
+iai	Eae					 2 	 42 																																																																																																																																																		
+iai	Eae							 2 	 22 																																																																																																																																																
+iai	Eae													-2 	 74 																																																																																																																																										
+iai	Eae															 2 	 102 																																																																																																																																								
+iai	Eae																			-2 	 104 																																																																																																																																				
+iai	Eae																					-2 	 92 																																																																																																																																		
+iai	Eae																							-2 	 98 																																																																																																																																
+iai	Eae																																																																																					 2 	 86 																																																																		
+iai	Eae																																																																																							 2 	 86 																																																																
+iai	Eae																																																																																																																			-2 	 98 																																				
+iai	Eae																																																																																																																							-2 	 98 																																
+iai	Eae																																																																																																																																			-2 	 94 																				
+iai	Eae																																																																																																																																							-2 	 94 																
+iai	Eae																																																																																																																																																	-2 	 96 						
+iai	Eae																																																																																																																																																			-2 	 94 				
+iai	Eae																																																																																																																																																							-2 	 94 
+iio	Eeoiio	Eeo	 2 	 48 																																																																																																																																																						
+iio	Eeo			 2 	 28 																																																																																																																																																				
+iio	Eeo					 2 	 44 																																																																																																																																																		
+iio	Eeo							 2 	 24 																																																																																																																																																
+iio	Eeo													-2 	 72 																																																																																																																																										
+iio	Eeo															 2 	 104 																																																																																																																																								
+iio	Eeo																			-2 	 102 																																																																																																																																				
+iio	Eeo																					-2 	 90 																																																																																																																																		
+iio	Eeo																							-2 	 96 																																																																																																																																
+iio	Eeo																																																																	-2 	 88 																																																																																						
+iio	Eeo																																																																			-2 	 86 																																																																																				
+iio	Eeo																																																																					-2 	 84 																																																																																		
+iio	Eeo																																																																							-2 	 84 																																																																																
+iio	Eeo																																																																																																																	-2 	 98 																																						
+iio	Eeo																																																																																																																			-2 	 96 																																				
+iio	Eeo																																																																																																																					-2 	 98 																																		
+iio	Eeo																																																																																																																							-2 	 96 																																
+iio	Eeo																																																																																																																																	-2 	 96 																						
+iio	Eeo																																																																																																																																			-2 	 92 																				
+iio	Eeo																																																																																																																																					-2 	 94 																		
+iio	Eeo																																																																																																																																							-2 	 92 																
+iio	Eeo																																																																																																																																																	-2 	 94 						
+iio	Eeo																																																																																																																																																			-2 	 92 				
+iio	Eeo																																																																																																																																																					-2 	 94 		
+iio	Eeo																																																																																																																																																							-2 	 92 
+oo	Oooo	Oo	 2 	 50 																																																																																																																																																						
+oo	Oo			 2 	 30 																																																																																																																																																				
+oo	Oo									-2 	 96 																																																																																																																																														
+oo	Oo											-2 	 86 																																																																																																																																												
+oo	Oo													-2 	 70 																																																																																																																																										
+oo	Oo															-2 	 102 																																																																																																																																								
+oo	Oo																					 2 	 92 																																																																																																																																		
+oo	Oo																							 2 	 98 																																																																																																																																
+oo	Oo																																	-2 	 96 																																																																																																																						
+oo	Oo																																			-2 	 96 																																																																																																																				
+oo	Oo																																					-2 	 96 																																																																																																																		
+oo	Oo																																							-2 	 96 																																																																																																																
+oo	Oo																																																	-2 	 90 																																																																																																						
+oo	Oo																																																			-2 	 88 																																																																																																				
+oo	Oo																																																					-2 	 90 																																																																																																		
+oo	Oo																																																							-2 	 88 																																																																																																
+oo	Oo																																																																	-2 	 86 																																																																																						
+oo	Oo																																																																			-2 	 84 																																																																																				
+oo	Oo																																																																					-2 	 82 																																																																																		
+oo	Oo																																																																							-2 	 82 																																																																																
+oo	Oo																																																																																	-2 	 86 																																																																						
+oo	Oo																																																																																			-2 	 84 																																																																				
+oo	Oo																																																																																					-2 	 84 																																																																		
+oo	Oo																																																																																							-2 	 84 																																																																
+iui	Euiiui	Eui	 2 	 52 																																																																																																																																																						
+iui	Eui			 2 	 32 																																																																																																																																																				
+iui	Eui					 2 	 46 																																																																																																																																																		
+iui	Eui							 2 	 26 																																																																																																																																																
+iui	Eui															 2 	 104 																																																																																																																																								
+iui	Eui																			-2 	 100 																																																																																																																																				
+iui	Eui																					-2 	 90 																																																																																																																																		
+iui	Eui																							-2 	 96 																																																																																																																																
+iui	Eui																																																																																					 2 	 86 																																																																		
+iui	Eui																																																																																							 2 	 86 																																																																
+iui	Eui																																																																																																																							-2 	 94 																																
+iui	Eui																																																																																																																																							-2 	 90 																
+iui	Eui																																																																																																																																																							-2 	 90 
+ooi	Ooiooi	Ooi	 2 	 54 																																																																																																																																																						
+ooi	Ooi			 2 	 34 																																																																																																																																																				
+ooi	Ooi									-2 	 94 																																																																																																																																														
+ooi	Ooi											-2 	 84 																																																																																																																																												
+ooi	Ooi													-2 	 68 																																																																																																																																										
+ooi	Ooi															-2 	 102 																																																																																																																																								
+ooi	Ooi																					 2 	 92 																																																																																																																																		
+ooi	Ooi																							 2 	 98 																																																																																																																																
+ooi	Ooi																																	-2 	 94 																																																																																																																						
+ooi	Ooi																																			-2 	 94 																																																																																																																				
+ooi	Ooi																																					-2 	 94 																																																																																																																		
+ooi	Ooi																																							-2 	 94 																																																																																																																
+ooi	Ooi																																																	-2 	 88 																																																																																																						
+ooi	Ooi																																																			-2 	 86 																																																																																																				
+ooi	Ooi																																																					-2 	 88 																																																																																																		
+ooi	Ooi																																																							-2 	 86 																																																																																																
+ooi	Ooi																																																																	-2 	 84 																																																																																						
+ooi	Ooi																																																																			-2 	 82 																																																																																				
+ooi	Ooi																																																																					-2 	 80 																																																																																		
+ooi	Ooi																																																																							-2 	 80 																																																																																
+ooi	Ooi																																																																																	-2 	 84 																																																																						
+ooi	Ooi																																																																																			-2 	 82 																																																																				
+ooi	Ooi																																																																																					-2 	 84 																																																																		
+ooi	Ooi																																																																																							-2 	 84 																																																																
+ooi	Ooi																																																																																																																																							 2 	 92 																
+ooi	Ooi																																																																																																																																																							 2 	 92 
+iii	iuaiii	iua			 2 	 36 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 56 																																																																																																																																																						
+iii	iua							 2 	 28 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 48 																																																																																																																																																		
+iii	iua															 2 	 104 																																																																																																																																								
+iii	iua																							-2 	 96 																																																																																																																																
+iii	iua																																																																																					-2 	 82 																																																																		
+iii	iua																																																																																							-2 	 82 																																																																
+oI	OioI	Oi	 2 	 58 																																																																																																																																																						
+oI	Oi			 2 	 38 																																																																																																																																																				
+oI	Oi									-2 	 92 																																																																																																																																														
+oI	Oi											-2 	 82 																																																																																																																																												
+oI	Oi													-2 	 66 																																																																																																																																										
+oI	Oi															-2 	 102 																																																																																																																																								
+oI	Oi																	 2 	 104 																																																																																																																																						
+oI	Oi																			 2 	 102 																																																																																																																																				
+oI	Oi																					 2 	 94 																																																																																																																																		
+oI	Oi																							 2 	 98 																																																																																																																																
+oEE	OeeoEE	Oee	 2 	 60 																																																																																																																																																						
+oEE	Oee			 2 	 40 																																																																																																																																																				
+oEE	Oee									-2 	 90 																																																																																																																																														
+oEE	Oee											-2 	 80 																																																																																																																																												
+oEE	Oee													-2 	 64 																																																																																																																																										
+oEE	Oee															-2 	 100 																																																																																																																																								
+oEE	Oee																			 2 	 104 																																																																																																																																				
+oEE	Oee																					 2 	 96 																																																																																																																																		
+oEE	Oee																							 2 	 100 																																																																																																																																
+aiu	Aiuaiu	Aiu	 2 	 62 																																																																																																																																																						
+aiu	Aiu			 2 	 42 																																																																																																																																																				
+aiu	Aiu											-2 	 78 																																																																																																																																												
+aiu	Aiu													-2 	 62 																																																																																																																																										
+aiu	Aiu															-2 	 98 																																																																																																																																								
+aiu	Aiu																							 2 	 102 																																																																																																																																
+aiu	Aiu																																																							-2 	 84 																																																																																																
+aiu	Aiu																																																																							-2 	 78 																																																																																
+aiu	Aiu																																																																																																																																																					 2 	 96 		
+aiu	Aiu																																																																																																																																																							 2 	 94 
+iii	oeaiii	oea	 2 	 64 																																																																																																																																																						
+iii	oea			 2 	 44 																																																																																																																																																				
+iii	oea					 2 	 50 																																																																																																																																																		
+iii	oea							 2 	 30 																																																																																																																																																
+iii	oea													-2 	 60 																																																																																																																																										
+iii	oea															 2 	 100 																																																																																																																																								
+iii	oea																					-2 	 94 																																																																																																																																		
+iii	oea																							-2 	 100 																																																																																																																																
+iii	oea																																																																					-2 	 78 																																																																																		
+iii	oea																																																																							-2 	 76 																																																																																
+iii	oea																																																																																					-2 	 80 																																																																		
+iii	oea																																																																																							-2 	 80 																																																																
+iii	oea																																																																																																																																	-2 	 94 																						
+iii	oea																																																																																																																																			-2 	 90 																				
+iii	oea																																																																																																																																					-2 	 92 																		
+iii	oea																																																																																																																																							-2 	 90 																
+iii	oea																																																																																																																																																	-2 	 92 						
+iii	oea																																																																																																																																																			-2 	 90 				
+iii	oea																																																																																																																																																					-2 	 94 		
+iii	oea																																																																																																																																																							-2 	 92 
+ii	Euii	Eu	 2 	 66 																																																																																																																																																						
+ii	Eu			 2 	 46 																																																																																																																																																				
+ii	Eu					 2 	 52 																																																																																																																																																		
+ii	Eu							 2 	 32 																																																																																																																																																
+ii	Eu															 2 	 102 																																																																																																																																								
+ii	Eu																			-2 	 102 																																																																																																																																				
+ii	Eu																					-2 	 92 																																																																																																																																		
+ii	Eu																							-2 	 98 																																																																																																																																
+oEu	oeuoEu	oeu			 2 	 48 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 68 																																																																																																																																																						
+oEu	oeu													-2 	 58 																																																																																																																																										
+oEu	oeu															-2 	 100 																																																																																																																																								
+oEu	oeu																			 2 	 104 																																																																																																																																				
+oEu	oeu																					 2 	 94 																																																																																																																																		
+oEu	oeu																							 2 	 100 																																																																																																																																
+oEu	oeu																																																																					-2 	 76 																																																																																		
+oEu	oeu																																																																							-2 	 74 																																																																																
+oEu	oeu																																																																																					-2 	 78 																																																																		
+oEu	oeu																																																																																							-2 	 78 																																																																
+oEu	oeu																																																																																																																																	-2 	 92 																						
+oEu	oeu																																																																																																																																			-2 	 88 																				
+oEu	oeu																																																																																																																																					-2 	 90 																		
+oEu	oeu																																																																																																																																							-2 	 88 																
+oEu	oeu																																																																																																																																																	-2 	 90 						
+oEu	oeu																																																																																																																																																			-2 	 88 				
+oEu	oeu																																																																																																																																																					-2 	 92 		
+oEu	oeu																																																																																																																																																							-2 	 90 
+iou	Eouiou	Eou	 2 	 70 																																																																																																																																																						
+iou	Eou			 2 	 50 																																																																																																																																																				
+iou	Eou					 2 	 54 																																																																																																																																																		
+iou	Eou							 2 	 34 																																																																																																																																																
+iou	Eou															 2 	 102 																																																																																																																																								
+iou	Eou																			-2 	 102 																																																																																																																																				
+iou	Eou																					-2 	 92 																																																																																																																																		
+iou	Eou																							-2 	 98 																																																																																																																																
+iou	Eou																																																																																	 2 	 86 																																																																						
+iou	Eou																																																																																			 2 	 84 																																																																				
+iou	Eou																																																																																					 2 	 80 																																																																		
+iou	Eou																																																																																							 2 	 80 																																																																
+iii	ieoiii	ieo			 2 	 52 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 72 																																																																																																																																																						
+iii	ieo							 2 	 36 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 56 																																																																																																																																																		
+iii	ieo													-2 	 56 																																																																																																																																										
+iii	ieo															 2 	 104 																																																																																																																																								
+iii	ieo																					-2 	 90 																																																																																																																																		
+iii	ieo																							-2 	 96 																																																																																																																																
+iii	ieo																																																																	-2 	 82 																																																																																						
+iii	ieo																																																																			-2 	 80 																																																																																				
+iii	ieo																																																																					-2 	 74 																																																																																		
+iii	ieo																																																																							-2 	 72 																																																																																
+iii	ieo																																																																																	-2 	 84 																																																																						
+iii	ieo																																																																																			-2 	 82 																																																																				
+iii	ieo																																																																																					-2 	 78 																																																																		
+iii	ieo																																																																																							-2 	 78 																																																																
+EEE	EeeEEE	Eee			 2 	 54 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 74 																																																																																																																																																						
+EEE	Eee													-2 	 54 																																																																																																																																										
+EEE	Eee															-2 	 102 																																																																																																																																								
+EEE	Eee																			 2 	 104 																																																																																																																																				
+EEE	Eee																					 2 	 92 																																																																																																																																		
+EEE	Eee																							 2 	 98 																																																																																																																																
+EEE	Eee																																																																																																																	-2 	 96 																																						
+EEE	Eee																																																																																																																			-2 	 94 																																				
+EEE	Eee																																																																																																																					-2 	 96 																																		
+EEE	Eee																																																																																																																							-2 	 92 																																
+EEE	Eee																																																																																																																																	-2 	 90 																						
+EEE	Eee																																																																																																																																			-2 	 86 																				
+EEE	Eee																																																																																																																																					-2 	 88 																		
+EEE	Eee																																																																																																																																							-2 	 86 																
+EEE	Eee																																																																																																																																																	-2 	 88 						
+EEE	Eee																																																																																																																																																			-2 	 86 				
+EEE	Eee																																																																																																																																																					-2 	 90 		
+EEE	Eee																																																																																																																																																							-2 	 88 
+ioi	ioeioi	ioe							 2 	 38 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 58 																																																																																																																																																		
+ioi	ioe													-2 	 52 																																																																																																																																										
+ioi	ioe																																																																																																																																	-2 	 88 																						
+ioi	ioe																																																																																																																																			-2 	 84 																				
+ioi	ioe																																																																																																																																																	-2 	 86 						
+ioi	ioe																																																																																																																																																			-2 	 84 				
+aii	Aieaii	Aie	 2 	 76 																																																																																																																																																						
+aii	Aie			 2 	 56 																																																																																																																																																				
+aii	Aie							 2 	 40 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 60 																																																																																																																																																		
+aii	Aie											-2 	 76 																																																																																																																																												
+aii	Aie													-2 	 50 																																																																																																																																										
+aii	Aie															-2 	 100 																																																																																																																																								
+aii	Aie																							 2 	 100 																																																																																																																																
+aii	Aie																																																																																																																																																					 2 	 92 		
+aii	Aie																																																																																																																																																							 2 	 90 
+oEI	oeioEI	oei			 2 	 58 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 78 																																																																																																																																																						
+oEI	oei													-2 	 48 																																																																																																																																										
+oEI	oei															-2 	 98 																																																																																																																																								
+oEI	oei																	 2 	 106 																																																																																																																																						
+oEI	oei																			 2 	 106 																																																																																																																																				
+oEI	oei																					 2 	 94 																																																																																																																																		
+oEI	oei																							 2 	 102 																																																																																																																																
+oEI	oei																																																																																																																																	-2 	 86 																						
+oEI	oei																																																																																																																																			-2 	 82 																				
+oEI	oei																																																																																																																																					-2 	 86 																		
+oEI	oei																																																																																																																																							-2 	 84 																
+oEI	oei																																																																																																																																																	-2 	 84 						
+oEI	oei																																																																																																																																																			-2 	 82 				
+oEI	oei																																																																																																																																																					-2 	 90 		
+oEI	oei																																																																																																																																																							-2 	 88 
+iii	aaiiii	aai	 2 	 80 																																																																																																																																																						
+iii	aai			 2 	 60 																																																																																																																																																				
+iii	aai					 2 	 62 																																																																																																																																																		
+iii	aai							 2 	 42 																																																																																																																																																
+iii	aai															 2 	 100 																																																																																																																																								
+iii	aai																							-2 	 100 																																																																																																																																
+iii	aai																																																																																																																																																					-2 	 88 		
+iii	aai																																																																																																																																																							-2 	 86 
+aia	Aiaaia	Aia	 2 	 82 																																																																																																																																																						
+aia	Aia			 2 	 62 																																																																																																																																																				
+aia	Aia											-2 	 74 																																																																																																																																												
+aia	Aia													-2 	 46 																																																																																																																																										
+aia	Aia															-2 	 98 																																																																																																																																								
+aia	Aia																							 2 	 102 																																																																																																																																
+aia	Aia																																																							-2 	 82 																																																																																																
+aia	Aia																																																																							-2 	 70 																																																																																
+aia	Aia																																																																																																																																																					 2 	 90 		
+aia	Aia																																																																																																																																																							 2 	 88 
+ee	Eeee	Ee	 2 	 84 																																																																																																																																																						
+ee	Ee			 2 	 64 																																																																																																																																																				
+ee	Ee													 2 	 48 																																																																																																																																										
+ee	Ee															 2 	 100 																																																																																																																																								
+ee	Ee																			-2 	 104 																																																																																																																																				
+ee	Ee																					-2 	 92 																																																																																																																																		
+ee	Ee																							-2 	 100 																																																																																																																																
+ee	Ee																																																																																																																	-2 	 94 																																						
+ee	Ee																																																																																																																			-2 	 92 																																				
+ee	Ee																																																																																																																					-2 	 94 																																		
+ee	Ee																																																																																																																							-2 	 90 																																
+ee	Ee																																																																																																																																	-2 	 84 																						
+ee	Ee																																																																																																																																			-2 	 80 																				
+ee	Ee																																																																																																																																					-2 	 84 																		
+ee	Ee																																																																																																																																							-2 	 82 																
+ee	Ee																																																																																																																																																	-2 	 82 						
+ee	Ee																																																																																																																																																			-2 	 80 				
+ee	Ee																																																																																																																																																					-2 	 88 		
+ee	Ee																																																																																																																																																							-2 	 86 
+uEu	yeuuEu	yeu	 2 	 86 																																																																																																																																																						
+uEu	yeu			 2 	 66 																																																																																																																																																				
+uEu	yeu											-2 	 72 																																																																																																																																												
+uEu	yeu													-2 	 46 																																																																																																																																										
+uEu	yeu															-2 	 98 																																																																																																																																								
+uEu	yeu																			 2 	 106 																																																																																																																																				
+uEu	yeu																					 2 	 94 																																																																																																																																		
+uEu	yeu																							 2 	 102 																																																																																																																																
+uEu	yeu																																																							-2 	 80 																																																																																																
+uEu	yeu																																																																					-2 	 72 																																																																																		
+uEu	yeu																																																																							-2 	 68 																																																																																
+uEu	yeu																																																																																					-2 	 76 																																																																		
+uEu	yeu																																																																																							-2 	 76 																																																																
+ii	yeii	ye					 2 	 64 																																																																																																																																																		
+ii	ye							 2 	 44 																																																																																																																																																
+ii	ye											-2 	 70 																																																																																																																																												
+ii	ye													-2 	 44 																																																																																																																																										
+iii	Oiaiii	Oia			 2 	 68 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 88 																																																																																																																																																						
+iii	Oia					 2 	 66 																																																																																																																																																		
+iii	Oia							 2 	 46 																																																																																																																																																
+iii	Oia									-2 	 88 																																																																																																																																														
+iii	Oia											-2 	 68 																																																																																																																																												
+iii	Oia													-2 	 42 																																																																																																																																										
+iii	Oia															 2 	 100 																																																																																																																																								
+iii	Oia																							-2 	 100 																																																																																																																																
+iii	Oia																																							-2 	 92 																																																																																																																
+iii	Oia																																																							-2 	 78 																																																																																																
+iii	Oia																																																																							-2 	 66 																																																																																
+iii	Oia																																																																																					-2 	 74 																																																																		
+iii	Oia																																																																																							-2 	 74 																																																																
+iii	uuiiii	uui	 2 	 90 																																																																																																																																																						
+iii	uui			 2 	 70 																																																																																																																																																				
+iii	uui					 2 	 68 																																																																																																																																																		
+iii	uui							 2 	 48 																																																																																																																																																
+iii	uui															 2 	 102 																																																																																																																																								
+iii	uui																							-2 	 98 																																																																																																																																
+iii	uui																																																																																																																																																					-2 	 86 		
+iii	uui																																																																																																																																																							-2 	 84 
+eii	Eoieii	Eoi	 2 	 92 																																																																																																																																																						
+eii	Eoi			 2 	 72 																																																																																																																																																				
+eii	Eoi							 2 	 50 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 70 																																																																																																																																																		
+eii	Eoi													 2 	 44 																																																																																																																																										
+eii	Eoi															 2 	 104 																																																																																																																																								
+eii	Eoi																			-2 	 104 																																																																																																																																				
+eii	Eoi																					-2 	 92 																																																																																																																																		
+eii	Eoi																							-2 	 96 																																																																																																																																
+eii	Eoi																																																																																																																							-2 	 88 																																
+eii	Eoi																																																																																																																																					-2 	 82 																		
+eii	Eoi																																																																																																																																							-2 	 80 																
+eii	Eoi																																																																																																																																																					-2 	 84 		
+eii	Eoi																																																																																																																																																							-2 	 82 
+Iua	iuaIua	iua	 2 	 94 																																																																																																																																																						
+Iua	iua			 2 	 74 																																																																																																																																																				
+Iua	iua															-2 	 102 																																																																																																																																								
+Iua	iua																	 2 	 108 																																																																																																																																						
+Iua	iua																			 2 	 106 																																																																																																																																				
+Iua	iua																					 2 	 94 																																																																																																																																		
+Iua	iua																							 2 	 98 																																																																																																																																
+Iua	iua																																																																																					-2 	 72 																																																																		
+Iua	iua																																																																																							-2 	 72 																																																																
+ioo	Eooioo	Eoo	 2 	 96 																																																																																																																																																						
+ioo	Eoo			 2 	 76 																																																																																																																																																				
+ioo	Eoo					 2 	 72 																																																																																																																																																		
+ioo	Eoo							 2 	 52 																																																																																																																																																
+ioo	Eoo															 2 	 104 																																																																																																																																								
+ioo	Eoo																			-2 	 104 																																																																																																																																				
+ioo	Eoo																					-2 	 92 																																																																																																																																		
+ioo	Eoo																							-2 	 96 																																																																																																																																
+ioo	Eoo																																																																																	 2 	 86 																																																																						
+ioo	Eoo																																																																																			 2 	 84 																																																																				
+ioo	Eoo																																																																																					 2 	 74 																																																																		
+ioo	Eoo																																																																																							 2 	 74 																																																																
+IIE	iieIIE	iie	 2 	 98 																																																																																																																																																						
+IIE	iie			 2 	 78 																																																																																																																																																				
+IIE	iie													-2 	 42 																																																																																																																																										
+IIE	iie															-2 	 102 																																																																																																																																								
+IIE	iie																	 2 	 110 																																																																																																																																						
+IIE	iie																			 2 	 106 																																																																																																																																				
+IIE	iie																					 2 	 94 																																																																																																																																		
+IIE	iie																							 2 	 98 																																																																																																																																
+uua	yuauua	yua	 2 	 100 																																																																																																																																																						
+uua	yua			 2 	 80 																																																																																																																																																				
+uua	yua											-2 	 66 																																																																																																																																												
+uua	yua													-2 	 40 																																																																																																																																										
+uua	yua															-2 	 100 																																																																																																																																								
+uua	yua																							 2 	 100 																																																																																																																																
+uua	yua																																																					-2 	 86 																																																																																																		
+uua	yua																																																							-2 	 76 																																																																																																
+uua	yua																																																																					-2 	 70 																																																																																		
+uua	yua																																																																							-2 	 64 																																																																																
+uua	yua																																																																																					-2 	 72 																																																																		
+uua	yua																																																																																							-2 	 72 																																																																
+aoi	aoeaoi	aoe							 2 	 54 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 74 																																																																																																																																																		
+aoi	aoe													-2 	 38 																																																																																																																																										
+aoi	aoe																																																																																																																																	-2 	 82 																						
+aoi	aoe																																																																																																																																			-2 	 78 																				
+aoi	aoe																																																																																																																																																	-2 	 80 						
+aoi	aoe																																																																																																																																																			-2 	 78 				
+iii	Oioiii	Oio			 2 	 82 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 102 																																																																																																																																																						
+iii	Oio					 2 	 76 																																																																																																																																																		
+iii	Oio							 2 	 56 																																																																																																																																																
+iii	Oio									-2 	 86 																																																																																																																																														
+iii	Oio											-2 	 64 																																																																																																																																												
+iii	Oio													-2 	 36 																																																																																																																																										
+iii	Oio															 2 	 102 																																																																																																																																								
+iii	Oio																					-2 	 92 																																																																																																																																		
+iii	Oio																							-2 	 98 																																																																																																																																
+iii	Oio																																			-2 	 92 																																																																																																																				
+iii	Oio																																							-2 	 90 																																																																																																																
+iii	Oio																																																			-2 	 84 																																																																																																				
+iii	Oio																																																							-2 	 74 																																																																																																
+iii	Oio																																																																			-2 	 78 																																																																																				
+iii	Oio																																																																							-2 	 62 																																																																																
+iii	Oio																																																																																	-2 	 84 																																																																						
+iii	Oio																																																																																			-2 	 82 																																																																				
+iii	Oio																																																																																					-2 	 70 																																																																		
+iii	Oio																																																																																							-2 	 70 																																																																
+uii	yiiuii	yii	 2 	 104 																																																																																																																																																						
+uii	yii			 2 	 84 																																																																																																																																																				
+uii	yii											-2 	 62 																																																																																																																																												
+uii	yii													-2 	 34 																																																																																																																																										
+uii	yii															-2 	 100 																																																																																																																																								
+uii	yii																							 2 	 100 																																																																																																																																
+uii	yii																																																																																																																																																					 2 	 86 		
+uii	yii																																																																																																																																																							 2 	 84 
+Eui	EueEui	Eue							 2 	 58 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 78 																																																																																																																																																		
+Eui	Eue													-2 	 32 																																																																																																																																										
+Eui	Eue																																																																																																																			-2 	 90 																																				
+Eui	Eue																																																																																																																																			-2 	 76 																				
+Eui	Eue																																																																																																																																																	-2 	 78 						
+Eui	Eue																																																																																																																																																			-2 	 76 				
+oii	oeaoii	oea			 2 	 86 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 106 																																																																																																																																																						
+oii	oea							 2 	 60 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 80 																																																																																																																																																		
+oii	oea													-2 	 30 																																																																																																																																										
+oii	oea															 2 	 102 																																																																																																																																								
+oii	oea																							-2 	 98 																																																																																																																																
+oii	oea																																																																					-2 	 68 																																																																																		
+oii	oea																																																																							-2 	 60 																																																																																
+oii	oea																																																																																					-2 	 68 																																																																		
+oii	oea																																																																																							-2 	 68 																																																																
+oii	oea																																																																																																																																	-2 	 80 																						
+oii	oea																																																																																																																																			-2 	 74 																				
+oii	oea																																																																																																																																																	-2 	 76 						
+oii	oea																																																																																																																																																			-2 	 74 				
+iao	Aaoiao	Aao					 2 	 82 																																																																																																																																																		
+iao	Aao							 2 	 62 																																																																																																																																																
+iao	Aao											-2 	 60 																																																																																																																																												
+iao	Aao													-2 	 28 																																																																																																																																										
+iao	Aao																																																			-2 	 82 																																																																																																				
+iao	Aao																																																					-2 	 84 																																																																																																		
+iao	Aao																																																							-2 	 72 																																																																																																
+iao	Aao																																																																			-2 	 76 																																																																																				
+iao	Aao																																																																					-2 	 66 																																																																																		
+iao	Aao																																																																							-2 	 58 																																																																																
+ia	yaia	ya					 2 	 84 																																																																																																																																																		
+ia	ya							 2 	 64 																																																																																																																																																
+ia	ya											-2 	 58 																																																																																																																																												
+ia	ya													-2 	 26 																																																																																																																																										
+ia	ya																																																					-2 	 82 																																																																																																		
+ia	ya																																																							-2 	 70 																																																																																																
+ia	ya																																																																					-2 	 64 																																																																																		
+ia	ya																																																																							-2 	 56 																																																																																
+ioa	yoaioa	yoa					 2 	 86 																																																																																																																																																		
+ioa	yoa							 2 	 66 																																																																																																																																																
+ioa	yoa											-2 	 56 																																																																																																																																												
+ioa	yoa													-2 	 24 																																																																																																																																										
+ioa	yoa																																																	-2 	 86 																																																																																																						
+ioa	yoa																																																			-2 	 80 																																																																																																				
+ioa	yoa																																																					-2 	 80 																																																																																																		
+ioa	yoa																																																							-2 	 68 																																																																																																
+ioa	yoa																																																																	-2 	 80 																																																																																						
+ioa	yoa																																																																			-2 	 74 																																																																																				
+ioa	yoa																																																																					-2 	 62 																																																																																		
+ioa	yoa																																																																							-2 	 54 																																																																																
+iAi	OaiiAi	Oai			 2 	 88 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 108 																																																																																																																																																						
+iAi	Oai					 2 	 88 																																																																																																																																																		
+iAi	Oai							 2 	 68 																																																																																																																																																
+iAi	Oai									-2 	 84 																																																																																																																																														
+iAi	Oai															 2 	 104 																																																																																																																																								
+iAi	Oai																							-2 	 96 																																																																																																																																
+iAi	Oai																																					-2 	 92 																																																																																																																		
+iAi	Oai																																							-2 	 88 																																																																																																																
+iAi	Oai																																																					-2 	 78 																																																																																																		
+iAi	Oai																																																							-2 	 66 																																																																																																
+iAi	Oai																																																																					-2 	 60 																																																																																		
+iAi	Oai																																																																							-2 	 52 																																																																																
+iAi	Oai																																																																																					-2 	 66 																																																																		
+iAi	Oai																																																																																							-2 	 66 																																																																
+iAi	Oai																																																																																																																																																					-2 	 84 		
+iAi	Oai																																																																																																																																																							-2 	 82 
+iia	Oiaiia	Oia					 2 	 90 																																																																																																																																																		
+iia	Oia							 2 	 70 																																																																																																																																																
+iia	Oia									-2 	 82 																																																																																																																																														
+iia	Oia											-2 	 54 																																																																																																																																												
+iia	Oia													-2 	 22 																																																																																																																																										
+iia	Oia																																							-2 	 86 																																																																																																																
+iia	Oia																																																							-2 	 64 																																																																																																
+iia	Oia																																																																							-2 	 50 																																																																																
+ioa	Aoaioa	Aoa					 2 	 92 																																																																																																																																																		
+ioa	Aoa							 2 	 72 																																																																																																																																																
+ioa	Aoa											-2 	 52 																																																																																																																																												
+ioa	Aoa													-2 	 20 																																																																																																																																										
+ioa	Aoa																																																	-2 	 84 																																																																																																						
+ioa	Aoa																																																			-2 	 78 																																																																																																				
+ioa	Aoa																																																					-2 	 76 																																																																																																		
+ioa	Aoa																																																							-2 	 62 																																																																																																
+ioa	Aoa																																																																	-2 	 78 																																																																																						
+ioa	Aoa																																																																			-2 	 72 																																																																																				
+ioa	Aoa																																																																					-2 	 58 																																																																																		
+ioa	Aoa																																																																							-2 	 48 																																																																																
+Eiu	EeuEiu	Eeu							 2 	 74 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 94 																																																																																																																																																		
+Eiu	Eeu													-2 	 18 																																																																																																																																										
+Eiu	Eeu																																																																					-2 	 56 																																																																																		
+Eiu	Eeu																																																																							-2 	 46 																																																																																
+Eiu	Eeu																																																																																																																	-2 	 92 																																						
+Eiu	Eeu																																																																																																																			-2 	 88 																																				
+Eiu	Eeu																																																																																																																																	-2 	 78 																						
+Eiu	Eeu																																																																																																																																			-2 	 72 																				
+Eiu	Eeu																																																																																																																																																	-2 	 74 						
+Eiu	Eeu																																																																																																																																																			-2 	 72 				
+ioE	ioeioE	ioe			 2 	 90 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 110 																																																																																																																																																						
+ioE	ioe													-2 	 16 																																																																																																																																										
+ioE	ioe															-2 	 102 																																																																																																																																								
+ioE	ioe																			 2 	 108 																																																																																																																																				
+ioE	ioe																					 2 	 94 																																																																																																																																		
+ioE	ioe																							 2 	 98 																																																																																																																																
+ioE	ioe																																																																															 2 	 102 																																																																								
+ioE	ioe																																																																																			 2 	 84 																																																																				
+ioE	ioe																																																																																							 2 	 68 																																																																
+ioE	ioe																																																																																																																																	-2 	 76 																						
+ioE	ioe																																																																																																																																			-2 	 70 																				
+ioE	ioe																																																																																																																																					-2 	 80 																		
+ioE	ioe																																																																																																																																							-2 	 78 																
+ioE	ioe																																																																																																																																																	-2 	 72 						
+ioE	ioe																																																																																																																																																			-2 	 70 				
+ioE	ioe																																																																																																																																																					-2 	 82 		
+ioE	ioe																																																																																																																																																							-2 	 80 
+oai	oaeoai	oae							 2 	 76 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 96 																																																																																																																																																		
+oai	oae													-2 	 14 																																																																																																																																										
+oai	oae																																																																																																																																			-2 	 68 																				
+oai	oae																																																																																																																																																	-2 	 70 						
+oai	oae																																																																																																																																																			-2 	 68 				
+eiy	eiueiy	eiu			 2 	 92 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 112 																																																																																																																																																						
+eiy	eiu											 2 	 54 																																																																																																																																												
+eiy	eiu													 2 	 16 																																																																																																																																										
+eiy	eiu															 2 	 104 																																																																																																																																								
+eiy	eiu																							-2 	 96 																																																																																																																																
+eiy	eiu																																																																							-2 	 44 																																																																																
+eiy	eiu																																																																																					-2 	 64 																																																																		
+eiy	eiu																																																																																							-2 	 66 																																																																
+iEu	ieuiEu	ieu			 2 	 94 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 114 																																																																																																																																																						
+iEu	ieu													-2 	 14 																																																																																																																																										
+iEu	ieu															-2 	 102 																																																																																																																																								
+iEu	ieu																			 2 	 110 																																																																																																																																				
+iEu	ieu																					 2 	 96 																																																																																																																																		
+iEu	ieu																							 2 	 98 																																																																																																																																
+iEu	ieu																																																																					-2 	 54 																																																																																		
+iEu	ieu																																																																							-2 	 42 																																																																																
+iEu	ieu																																																																													 2 	 102 																																																																										
+iEu	ieu																																																																															 2 	 104 																																																																								
+iEu	ieu																																																																																	 2 	 86 																																																																						
+iEu	ieu																																																																																			 2 	 86 																																																																				
+iEu	ieu																																																																																							 2 	 68 																																																																
+yio	yeoyio	yeo							 2 	 78 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 98 																																																																																																																																																		
+yio	yeo													-2 	 12 																																																																																																																																										
+yio	yeo																																																																	-2 	 76 																																																																																						
+yio	yeo																																																																					-2 	 52 																																																																																		
+aie	aoeaie	aoe			 2 	 96 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 116 																																																																																																																																																						
+aie	aoe							 2 	 80 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 100 																																																																																																																																																		
+aie	aoe															 2 	 104 																																																																																																																																								
+aie	aoe																					-2 	 94 																																																																																																																																		
+aie	aoe																							-2 	 96 																																																																																																																																
+aie	aoe																																																																																																																																	-2 	 74 																						
+aie	aoe																																																																																																																																			-2 	 66 																				
+aie	aoe																																																																																																																																					-2 	 78 																		
+aie	aoe																																																																																																																																							-2 	 76 																
+aie	aoe																																																																																																																																																	-2 	 68 						
+aie	aoe																																																																																																																																																			-2 	 66 				
+aie	aoe																																																																																																																																																							-2 	 78 
+Ei	EeEi	Ee							 2 	 82 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 102 																																																																																																																																																		
+Ei	Ee													-2 	 10 																																																																																																																																										
+Ei	Ee																																																																																																																	-2 	 90 																																						
+Ei	Ee																																																																																																																			-2 	 86 																																				
+Ei	Ee																																																																																																																																	-2 	 72 																						
+Ei	Ee																																																																																																																																			-2 	 64 																				
+Ei	Ee																																																																																																																																																	-2 	 66 						
+Ei	Ee																																																																																																																																																			-2 	 64 				
+Eia	EeaEia	Eea							 2 	 84 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 104 																																																																																																																																																		
+Eia	Eea													-2 	 8 																																																																																																																																										
+Eia	Eea																																																																					-2 	 50 																																																																																		
+Eia	Eea																																																																							-2 	 40 																																																																																
+Eia	Eea																																																																																																																	-2 	 88 																																						
+Eia	Eea																																																																																																																			-2 	 84 																																				
+Eia	Eea																																																																																																																																	-2 	 70 																						
+Eia	Eea																																																																																																																																			-2 	 62 																				
+Eia	Eea																																																																																																																																																	-2 	 64 						
+Eia	Eea																																																																																																																																																			-2 	 62 				
+Eai	EaeEai	Eae							 2 	 86 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 106 																																																																																																																																																		
+Eai	Eae													-2 	 6 																																																																																																																																										
+Eai	Eae																																																																																																																			-2 	 82 																																				
+Eai	Eae																																																																																																																																			-2 	 60 																				
+Eai	Eae																																																																																																																																																	-2 	 62 						
+Eai	Eae																																																																																																																																																			-2 	 60 				
+eoe	Eoeeoe	Eoe	 2 	 118 																																																																																																																																																						
+eoe	Eoe			 2 	 98 																																																																																																																																																				
+eoe	Eoe													 2 	 8 																																																																																																																																										
+eoe	Eoe															 2 	 106 																																																																																																																																								
+eoe	Eoe																			-2 	 108 																																																																																																																																				
+eoe	Eoe																					-2 	 92 																																																																																																																																		
+eoe	Eoe																							-2 	 94 																																																																																																																																
+eoe	Eoe																																																																	 2 	 78 																																																																																						
+eoe	Eoe																																																																			 2 	 74 																																																																																				
+eoe	Eoe																																																																					 2 	 52 																																																																																		
+eoe	Eoe																																																																							 2 	 42 																																																																																
+eoe	Eoe																																																																																	 2 	 88 																																																																						
+eoe	Eoe																																																																																			 2 	 88 																																																																				
+eoe	Eoe																																																																																					 2 	 66 																																																																		
+eoe	Eoe																																																																																							 2 	 70 																																																																
+eoe	Eoe																																																																																																																			-2 	 80 																																				
+eoe	Eoe																																																																																																																							-2 	 86 																																
+eoe	Eoe																																																																																																																																			-2 	 58 																				
+eoe	Eoe																																																																																																																																							-2 	 74 																
+eoe	Eoe																																																																																																																																																			-2 	 58 				
+eoe	Eoe																																																																																																																																																							-2 	 76 
+Eie	EeeEie	Eee							 2 	 88 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 108 																																																																																																																																																		
+Eie	Eee													-2 	 6 																																																																																																																																										
+Eie	Eee																																																																																																																	-2 	 86 																																						
+Eie	Eee																																																																																																																																	-2 	 68 																						
+Eie	Eee																																																																																																																																																	-2 	 60 						
+AEI	AeiAEI	Aei			 2 	 100 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 120 																																																																																																																																																						
+AEI	Aei													-2 	 4 																																																																																																																																										
+AEI	Aei															-2 	 104 																																																																																																																																								
+AEI	Aei																	 2 	 112 																																																																																																																																						
+AEI	Aei																			 2 	 110 																																																																																																																																				
+AEI	Aei																					 2 	 94 																																																																																																																																		
+AEI	Aei																							 2 	 96 																																																																																																																																
+AEI	Aei																																											 2 	 102 																																																																																																												
+AEI	Aei																																													 2 	 102 																																																																																																										
+AEI	Aei																																															 2 	 102 																																																																																																								
+AEI	Aei																																																	 2 	 86 																																																																																																						
+AEI	Aei																																																			 2 	 80 																																																																																																				
+AEI	Aei																																																					 2 	 78 																																																																																																		
+AEI	Aei																																																							 2 	 64 																																																																																																
+AEI	Aei																																																											 2 	 102 																																																																																												
+AEI	Aei																																																													 2 	 102 																																																																																										
+AEI	Aei																																																															 2 	 102 																																																																																								
+AEI	Aei																																																																	 2 	 80 																																																																																						
+AEI	Aei																																																																			 2 	 76 																																																																																				
+AEI	Aei																																																																					 2 	 54 																																																																																		
+AEI	Aei																																																																							 2 	 44 																																																																																
+AEI	Aei																																																																											 2 	 102 																																																																												
+AEI	Aei																																																																													 2 	 104 																																																																										
+AEI	Aei																																																																															 2 	 106 																																																																								
+AEI	Aei																																																																																	 2 	 90 																																																																						
+AEI	Aei																																																																																			 2 	 90 																																																																				
+AEI	Aei																																																																																					 2 	 68 																																																																		
+AEI	Aei																																																																																							 2 	 72 																																																																
+aoE	aoeaoE	aoe			 2 	 102 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 122 																																																																																																																																																						
+aoE	aoe													-2 	 2 																																																																																																																																										
+aoE	aoe															-2 	 102 																																																																																																																																								
+aoE	aoe																			 2 	 112 																																																																																																																																				
+aoE	aoe																					 2 	 96 																																																																																																																																		
+aoE	aoe																							 2 	 98 																																																																																																																																
+aoE	aoe																																																																																																																																	-2 	 66 																						
+aoE	aoe																																																																																																																																			-2 	 56 																				
+aoE	aoe																																																																																																																																					-2 	 76 																		
+aoE	aoe																																																																																																																																							-2 	 72 																
+aoE	aoe																																																																																																																																																	-2 	 58 						
+aoE	aoe																																																																																																																																																			-2 	 56 				
+aoE	aoe																																																																																																																																																					-2 	 80 		
+aoE	aoe																																																																																																																																																							-2 	 74 
+uei	ueuuei	ueu			 2 	 104 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 124 																																																																																																																																																						
+uei	ueu							 2 	 90 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 110 																																																																																																																																																		
+uei	ueu															 2 	 104 																																																																																																																																								
+uei	ueu																							-2 	 96 																																																																																																																																
+uei	ueu																																																																					-2 	 52 																																																																																		
+uei	ueu																																																																							-2 	 42 																																																																																
+uei	ueu																																																																																					-2 	 66 																																																																		
+uei	ueu																																																																																							-2 	 70 																																																																
+Eio	EeoEio	Eeo							 2 	 92 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 112 																																																																																																																																																		
+Eio	Eeo													-2 	 0 																																																																																																																																										
+Eio	Eeo																																																																	-2 	 78 																																																																																						
+Eio	Eeo																																																																			-2 	 74 																																																																																				
+Eio	Eeo																																																																					-2 	 50 																																																																																		
+Eio	Eeo																																																																							-2 	 40 																																																																																
+Eio	Eeo																																																																																																																	-2 	 84 																																						
+Eio	Eeo																																																																																																																			-2 	 78 																																				
+Eio	Eeo																																																																																																																																	-2 	 64 																						
+Eio	Eeo																																																																																																																																			-2 	 54 																				
+Eio	Eeo																																																																																																																																																	-2 	 56 						
+Eio	Eeo																																																																																																																																																			-2 	 54 				
+AuE	AueAuE	Aue			 2 	 106 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 126 																																																																																																																																																						
+AuE	Aue													-2 	-2 																																																																																																																																										
+AuE	Aue															-2 	 102 																																																																																																																																								
+AuE	Aue																			 2 	 114 																																																																																																																																				
+AuE	Aue																					 2 	 98 																																																																																																																																		
+AuE	Aue																							 2 	 98 																																																																																																																																
+AuE	Aue																																															 2 	 104 																																																																																																								
+AuE	Aue																																																			 2 	 82 																																																																																																				
+AuE	Aue																																																							 2 	 66 																																																																																																
+AuE	Aue																																																															 2 	 104 																																																																																								
+AuE	Aue																																																																			 2 	 76 																																																																																				
+AuE	Aue																																																																							 2 	 42 																																																																																
+AuE	Aue																																																																															 2 	 108 																																																																								
+AuE	Aue																																																																																			 2 	 92 																																																																				
+AuE	Aue																																																																																							 2 	 72 																																																																
+AuE	Aue																																																																																																																																																	-2 	 54 						
+AuE	Aue																																																																																																																																																			-2 	 52 				
+AuE	Aue																																																																																																																																																					-2 	 78 		
+AuE	Aue																																																																																																																																																							-2 	 72 
+uii	uiouii	uio			 2 	 108 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 2 	 128 																																																																																																																																																						
+uii	uio							 2 	 94 																																																																																																																																																
+Apriori	Id(HiLoRd)Syl1 >> Id(HiLoRd)						 2 	 114 																																																																																																																																																		
+uii	uio															 2 	 104 																																																																																																																																								
+uii	uio																					-2 	 96 																																																																																																																																		
+uii	uio																							-2 	 96 																																																																																																																																
+uii	uio																																																																																	-2 	 88 																																																																						
+uii	uio																																																																																			-2 	 90 																																																																				
+uii	uio																																																																																					-2 	 64 																																																																		
+uii	uio																																																																																							-2 	 70 																																																																
+iEa	ieaiEa	iea			 0.02 	 108.02 																																																																																																																																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.019999999999996 	 128.02 																																																																																																																																																						
+iEa	iea													-0.02 	-2.02 																																																																																																																																										
+Apriori	Id(Bk)Syl1 >> Id(Bk)				0.000	108.020																																																																																																																																																				
+iEa	iea															-0.02 	 103.98 																																																																																																																																								
+iEa	iea																			 0.02 	 114.02 																																																																																																																																				
+iEa	iea																					 0.02 	 96.02 																																																																																																																																		
+iEa	iea																							 0.02 	 96.02 																																																																																																																																
+iEa	iea																																																																					-0.02 	 49.98 																																																																																		
+iEa	iea																																																																							-0.02 	 41.98 																																																																																
+iEa	iea																																																																													 0.02 	 104.02 																																																																										
+iEa	iea																																																																															 0.02 	 108.02 																																																																								
+iEa	iea																																																																																	 0.02 	 88.02 																																																																						
+iEa	iea																																																																																			 0.02 	 90.02 																																																																				
+iEa	iea																																																																																							 0.02 	 70.02 																																																																

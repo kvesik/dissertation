@@ -1,0 +1,225 @@
+******Application of Low Faithfulness Constraint Demotion******
+
+Input file:  C:\Users\kvesik\Documents\School\dialect learning\OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleFin_LFCD_PDDP_nodia.txt
+
+
+******Now doing Stratum #1******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oo] for /OO/.
+  *F5 is excluded from stratum; prefers loser *[Oo] for /OO/.
+  *B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *F5_B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *_B5F5 is excluded from stratum; prefers loser *[oE] for /oe/.
+  *_B5...F5 is excluded from stratum; prefers loser *[oE] for /oe/.
+
+Favor Markedness:
+  *B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2...F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (newly ranked):    *B2
+                               *F3_B2
+                               *F3..._B2
+                               *F3_B5
+                               *F3..._B5
+                               *F5_B2
+                               *F5..._B2
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F5
+                               *_B2...F5
+                               *_B5F3
+                               *_B5...F3
+
+  Markedness constraints still unranked:
+    *F3
+    *F5
+    *B5
+    *F5_B5
+    *F5..._B5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)Syl1
+    Id(Bk)
+
+******Now doing Stratum #2******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[oo] for /OO/.
+  *F5 is excluded from stratum; prefers loser *[oo] for /OO/.
+  *B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *F5_B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *_B5F5 is excluded from stratum; prefers loser *[Oe] for /oe/.
+  *_B5...F5 is excluded from stratum; prefers loser *[Oe] for /oe/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk)Syl1 is shown to be active by ruling out *[oo] for /OO/.
+  Id(Bk) is shown to be active by ruling out *[oo] for /OO/.
+  All unranked Faithfulness constraints are active.
+
+Favor Specificity:
+  Id(Bk) is excluded from stratum because Id(Bk)Syl1 is more specific.
+
+Favor Autonomy:
+  Id(Bk)Syl1 is assigned 1 helper, based on /OO/ -/-> *[oo].  The helper is:
+    *B5
+
+  Lowest number of helpers:   1 
+  Constraint Id(Bk)Syl1 joins the current stratum, having 1 helpers.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *B2
+                               *F3_B2
+                               *F3..._B2
+                               *F3_B5
+                               *F3..._B5
+                               *F5_B2
+                               *F5..._B2
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F5
+                               *_B2...F5
+                               *_B5F3
+                               *_B5...F3
+  Stratum 2 (newly ranked):    Id(Bk)Syl1
+
+  Markedness constraints still unranked:
+    *F3
+    *F5
+    *B5
+    *F5_B5
+    *F5..._B5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #3******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[eo] for /eO/.
+  *F5 is excluded from stratum; prefers loser *[eo] for /eO/.
+  *B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *F5_B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[eO] for /eo/.
+  *_B5F5 is excluded from stratum; prefers loser *[eOe] for /eoe/.
+  *_B5...F5 is excluded from stratum; prefers loser *[eOe] for /eoe/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk) is shown to be active by ruling out *[eo] for /eO/.
+  Id(Bk)Syl1 is excluded from stratum because it is inactive.
+
+Favor Specificity:
+  (no cases found)
+
+Favor Autonomy:
+  Id(Bk) is assigned 3 helpers, based on /eO/ -/-> *[eo].  The helpers are:
+    *B5
+    *F5_B5
+    *F5..._B5
+  Id(Bk) is assigned 2 helpers, based on /eo/ -/-> *[eO].  The helpers are:
+    *F3
+    *F5
+
+  Lowest number of helpers:   2 
+  Constraint Id(Bk) joins the current stratum, having 2 helpers.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *B2
+                               *F3_B2
+                               *F3..._B2
+                               *F3_B5
+                               *F3..._B5
+                               *F5_B2
+                               *F5..._B2
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F5
+                               *_B2...F5
+                               *_B5F3
+                               *_B5...F3
+  Stratum 2 (already ranked):  Id(Bk)Syl1
+  Stratum 3 (newly ranked):    Id(Bk)
+
+  Markedness constraints still unranked:
+    *F3
+    *F5
+    *B5
+    *F5_B5
+    *F5..._B5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    (none)
+
+******Now doing Stratum #4******
+
+Avoid Preference For Losers:
+  Search found no unranked constraints that prefer losers.
+
+Favor Markedness:
+  *F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F5 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *B2
+                               *F3_B2
+                               *F3..._B2
+                               *F3_B5
+                               *F3..._B5
+                               *F5_B2
+                               *F5..._B2
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F5
+                               *_B2...F5
+                               *_B5F3
+                               *_B5...F3
+  Stratum 2 (already ranked):  Id(Bk)Syl1
+  Stratum 3 (already ranked):  Id(Bk)
+  Stratum 4 (newly ranked):    *F3
+                               *F5
+                               *B5
+                               *F5_B5
+                               *F5..._B5
+                               *_B5F5
+                               *_B5...F5
+
+  Markedness constraints still unranked:
+    (none)
+  Faithfulness constraints still unranked:
+    (none)
+
+Ranking is complete and yields successful grammar.

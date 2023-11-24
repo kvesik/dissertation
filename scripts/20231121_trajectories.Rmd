@@ -112,8 +112,8 @@ prepare_data <- function(filename) {
   # fill in missing data and adjust trial number for initial state
   df <- 
     df %>%
-    fill(coltitlestoselect) %>%
-    fill(coltitlestoselect, .direction = "up")
+    fill(all_of(coltitlestoselect)) %>%
+    fill(all_of(coltitlestoselect), .direction = "up")
   df$trialnum[1] <- 0
 
   
@@ -140,7 +140,7 @@ prepare_data <- function(filename) {
     round(digits=2)
   
   constraint_levels <- coltitlestoselect
-  cosntraint_labels <- constraint_levels # for now...
+  constraint_labels <- constraint_levels # TODO for now...
   # constraint_labels <- c("*F", "*ɤ", "*e", "Id-Syl1(Bk)", "Id(Bk)", "Agr(Bk)", "GMH(F)", "GMH(ɤ)", "GMH(e)")
   
   constraint_labelswithvalues <- paste(constraint_labels, "→", finalvalues)
@@ -153,7 +153,7 @@ plot_trajectories <- function(df, lang, trialsperbatch, experimentnum) {
 
   trajectoryplot <-
     ggplot(data=df, mapping=aes(x=trialnum, y=value)) +
-    geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), size=0.6, show.legend=TRUE) +  # can replace all the fct business with just "constraint"
+    geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), size=0.6, show.legend=FALSE) +  # can replace all the fct business with just "constraint"
     ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", experimentnum, ")")) +
     theme(axis.text=element_text(size=11, colour="black"),
         plot.title = element_text(hjust = 0.5),
@@ -188,13 +188,16 @@ extract_langtrialsexpnum <- function(filename) {
     expnumstring <- substr(filename_only, 3, 5)
   }
   trialsstring <- switch(
-    strtoi(expnumstring[3]),
+    strtoi(substr(expnumstring, 3, 3)),
     "100",
     "500",
     "1000",
     "5000",
     "10000"
   )
+  print(langstring)
+  print(trialsstring)
+  print(expnumstring)
   return(c(langstring, trialsstring, expnumstring))
 }
 
@@ -203,21 +206,26 @@ makeplot <- function(filename) {
   lang <- info[1]
   trials <- info[2]
   expnum <- info[3]
+  print(lang)
+  print(trials)
+  print(expnum)
   df <- prepare_data(filename)
   plot_trajectories(df, lang, trials, expnum)
 }
 
 historyfiles <- c(
-  "TODO",
-  "K413p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
-  "K414p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
-  "K415p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
-  "K416p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
-  "S413p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
-  "S414p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
-  "S415p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
-  "S416p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
-  "S315p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt"
+  # "TODO",
+  # "K413p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
+  # "K414p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
+  # "K415p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
+  # "K416p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
+  # "S413p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
+  # "S414p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
+  # "S415p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
+  # "S416p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
+  # "S315p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt"
+  "20231107_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
+  "20231107_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt"
 )
 
 for (hfile in historyfiles) {

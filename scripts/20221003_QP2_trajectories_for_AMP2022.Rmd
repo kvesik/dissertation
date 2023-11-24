@@ -1,0 +1,268 @@
+---
+title: 'QP2 - learning Estonian dialects'
+author: "Kaili Vesik"
+date: '2021-12-01'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+# don't show this output
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+We begin by setting options (output not shown) and loading the appropriate libraries.
+
+
+```{r load}
+# for data wrangling
+library(tidyverse)
+# for plotting
+library(ggplot2)
+library(ggbeeswarm)
+library(vipor)
+library(viridis)
+library(ggstance)
+library(ggrepel)
+library(scales)
+```
+
+
+## Data
+
+We load the data from file, and omit columns irrelevant to this analysis.
+
+```{r data}
+coltitles_starB <- c("trialnum","generated","heard","star_F_change","star_F","star_B_change","star_B","star_7_change","star_7","star_e_change","star_e","IdBkSyl1_change","IdBkSyl1","IdBk_change","IdBk","AgrBk_change","AgrBk","GMHF_change","GMHF","GMHB_change","GMHB","GMH7_change","GMH7","GMHe_change","GMHe")
+coltitles_nostarB <- c("trialnum","generated","heard","star_F_change","star_F","star_7_change","star_7","star_e_change","star_e","IdBkSyl1_change","IdBkSyl1","IdBk_change","IdBk","AgrBk_change","AgrBk","GMHF_change","GMHF","GMH7_change","GMH7","GMHe_change","GMHe")
+# coltitles_starB_noAgr <- c("trialnum","generated","heard","star_F_change","star_F","star_B_change","star_B","star_7_change","star_7","star_e_change","star_e","IdBkSyl1_change","IdBkSyl1","IdBk_change","IdBk","AgrBk_change","AgrBk","GMHF_change","GMHF","GMH7_change","GMH7","GMHe_change","GMHe")
+
+prepare_data <- function(filename, hasstarB) {  #}, showAgr) {
+  # load data from file, name columns, remove unwanted columns
+  df <- read_tsv(paste0("C:\\Program Files\\OTSoft2.6old\\",filename), 
+                 col_types = list(
+                   trialnum = col_integer(),
+                   generated = col_character(),
+                   heard = col_character(),
+                   .default = col_double()))
+  # if (hasstarB && showAgr) {
+  #   colnames(df) <- coltitles_starB
+  #   df <- 
+  #     df %>%
+  #     select(trialnum,star_F,star_B,star_7,star_e,IdBkSyl1,IdBk,AgrBk,GMHF,GMHB,GMH7,GMHe)
+  #   
+  #   # fill in missing data and adjust trial number for initial state
+  #   df <- 
+  #     df %>%
+  #     fill(trialnum,star_F,star_B,star_7,star_e,IdBkSyl1,IdBk,AgrBk,GMHF,GMHB,GMH7,GMHe) %>%
+  #     fill(trialnum,star_F,star_B,star_7,star_e,IdBkSyl1,IdBk,AgrBk,GMHF,GMHB,GMH7,GMHe, .direction = "up")
+  #   df$trialnum[1] <- 0
+  #   
+  # } else if (hasstarB && ! showAgr) {
+  if (hasstarB) {  # and we don't want to show Agree(Bk)
+    colnames(df) <- coltitles_starB
+    df <-
+      df %>%
+      ### select(trialnum, star_F, star_B, star_7, star_e, IdBkSyl1, IdBk, GMHF, GMHB, GMH7, GMHe)
+      ### select(trialnum, IdBkSyl1, star_F, star_B, IdBk, star_7, star_e, GMHF, GMHB, GMH7, GMHe) # %>%
+      select(trialnum, IdBkSyl1, star_e, star_F, star_7, star_B, GMHe, GMHF, GMH7, GMHB, IdBk)
+      # filter(trialnum < 50000)
+    
+    # fill in missing data and adjust trial number for initial state
+    df <- 
+      df %>% 
+      ### fill(trialnum,star_F,star_B,star_7,star_e,IdBkSyl1,IdBk,GMHF,GMHB,GMH7,GMHe) %>%
+      ### fill(trialnum,IdBkSyl1,star_F,star_B,IdBk,star_7,star_e,GMHF,GMHB,GMH7,GMHe) %>%
+      ### fill(trialnum,IdBkSyl1,star_F,star_B,IdBk,star_7,star_e,GMHF,GMHB,GMH7,GMHe, .direction = "up")
+      fill(trialnum,IdBkSyl1, star_e, star_F, star_7, star_B, GMHe, GMHF, GMH7, GMHB, IdBk) %>%
+      fill(trialnum,IdBkSyl1, star_e, star_F, star_7, star_B, GMHe, GMHF, GMH7, GMHB, IdBk, .direction = "up")
+    df$trialnum[1] <- 0
+  
+  }
+  # } else if (showAgr && ! hasstarB) {
+  #   colnames(df) <- coltitles_nostarB
+  #   df <- 
+  #     df %>%
+  #     select(trialnum,star_F,star_7,star_e,IdBkSyl1,IdBk,AgrBk,GMHF,GMH7,GMHe)
+  #   
+  #   # fill in missing data and adjust trial number for initial state
+  #   df <- 
+  #     df %>%
+  #     fill(trialnum,star_F,star_7,star_e,IdBkSyl1,IdBk,AgrBk,GMHF,GMH7,GMHe) %>%
+  #     fill(trialnum,star_F,star_7,star_e,IdBkSyl1,IdBk,AgrBk,GMHF,GMH7,GMHe, .direction = "up")
+  #   df$trialnum[1] <- 0
+  # }
+  
+  
+  # just keep the last entry for each trial number 
+  # (so, after both the learning adjustment and a possible a priori ranking adjustment)
+  df <-
+    df %>%
+    arrange(trialnum) %>%
+    group_by(trialnum) %>% 
+    summarise_all(last) %>%
+    ungroup() %>%
+    arrange(trialnum)
+  
+  # pivot from wide to long, so we don't have a separate column for each constraint
+  df <-
+    df %>% 
+    pivot_longer(!trialnum, names_to="constraint", values_to="value")
+  
+  finalvalues <- df %>% 
+    group_by(constraint) %>% 
+    top_n(1, trialnum) %>%
+    pull(value) %>%
+    round(digits=2)
+  
+  # if (hasstarB && showAgr) {
+  #   constraint_levels <- c("star_F", "star_B", "star_7", "star_e", "IdBkSyl1", "IdBk", "AgrBk", "GMHF", "GMHB", "GMH7", "GMHe")
+  #   constraint_labels <- c("*F", "*B", "*ɤ", "*e", "Id-Syl1(Bk)", "Id(Bk)", "Agr(Bk)", "GMH(F)", "GMH(B)", "GMH(ɤ)", "GMH(e)")
+  #   
+  # } else if (hasstarB && ! showAgr) {
+  if (hasstarB) {  # and we don't want to show Agree(Bk)
+    # constraint_levels <- c("star_F", "star_B", "star_7", "star_e", "IdBkSyl1", "IdBk", "GMHF", "GMHB", "GMH7", "GMHe")
+    # constraint_labels <- c("*F", "*B", "*ɤ", "*e", "Id-Syl1(Bk)", "Id(Bk)", "VH(F)", "VH(B)", "VH(ɤ)", "VH(e)")
+    # constraint_levels <- c("star_F","star_B","star_7","star_e","IdBkSyl1","IdBk","GMHF","GMHB","GMH7","GMHe")
+    # constraint_labels <- c("*F","*B","*ɤ","*e","Id-Syl1(Bk)","Id(Bk)","VH(F)","VH(B)","VH(ɤ)","VH(e)")
+    # constraint_levels <- c("IdBkSyl1","star_F","star_B","IdBk","star_7","star_e","GMHF","GMHB","GMH7","GMHe")
+    # constraint_labels <- c("Id-Syl1(Bk)","*F","*B","Id(Bk)","*ɤ","*e","VH(F)","VH(B)","VH(ɤ)","VH(e)")
+    constraint_levels <- c("IdBkSyl1","star_e","star_F","star_7","star_B","GMHe","GMHF","GMH7","GMHB","IdBk")
+    # constraint_labels <- c("Id-Syl1(Bk)","*e","*æ,*ø,*y","*ɤ","*ɑ,*o,*u","VH(e)","VH(æ,ø,y)","VH(ɤ)","VH(ɑ,o,u)", "Id(Bk)")
+    constraint_labels <- c("Id-Syl1(Bk)","*e","*F","*ɤ","*B","VH(e)","VH(F)","VH(ɤ)","VH(B)", "Id(Bk)")
+    # constraint_labels_parsed <- parse(text=constraint_labels)
+  }
+    
+  # } else if (showAgr && ! hasstarB) {
+  #   constraint_levels <- c("star_F", "star_7", "star_e", "IdBkSyl1", "IdBk", "AgrBk", "GMHF", "GMH7", "GMHe")
+  #   constraint_labels <- c("*F", "*ɤ", "*e", "Id-Syl1(Bk)", "Id(Bk)", "Agr(Bk)", "GMH(F)", "GMH(ɤ)", "GMH(e)")
+  #   
+  # }
+  
+  constraint_labelswithvalues <- paste(constraint_labels, "→", finalvalues)
+  df$constraint <- factor(df$constraint, levels=constraint_levels, labels=constraint_labelswithvalues)
+   
+  return(df)
+}
+
+plot_trajectories <- function(df, lang, trialsperbatch, experimentnum) {
+  
+  upperlimit <- if (str_detect(experimentnum, "without")) 140 else 110
+
+  trajectoryplot <-
+    ggplot(data=df, mapping=aes(x=trialnum, y=value)) +
+    # geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), size=0.6, show.legend=TRUE) +  # can replace all the fct business with just "constraint"
+    geom_line(aes(color=constraint, size=constraint), show.legend=TRUE) + # size=0.6, 
+    scale_size_manual( values = c(1.1, 0.4, 0.4, 0.4, 0.4, 1.1, 1.1, 0.4, 0.4, 1.1) ) +
+    ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (", experimentnum, ")")) +
+    theme(axis.text=element_text(size=11, colour="black"),
+        plot.title = element_text(hjust = 0.5),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank(),
+        # panel.grid.major.y = element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+    labs(y= "Constraint value", x = "Learning trial #") +
+    scale_color_viridis_d(name = "constraint") +
+    scale_x_continuous(trans="log10", labels=comma_format(accuracy=1)) +
+    scale_y_continuous(limits=c(upperlimit-60,upperlimit), breaks=seq(from=0, to=upperlimit, by=10))
+    # scale_y_continuous(sec.axis = sec_axis(~ ., breaks = data_ends2)) +
+  # geom_text_repel(
+  #   aes(label = constraint), data = data_ends, 
+  #   size = 3
+  #   )
+    
+  print(trajectoryplot)
+}
+
+extract_langtrialsexpnum <- function(filename) {
+  langindex <- str_locate(filename, "Soft_")[2] + 1
+  trialsindexstart <- str_locate(filename, "HISTORY")[2] + 1
+  trialsindexend <- str_locate(filename, "_forR.txt")[1] - 1
+  expnumindexend <- str_locate(filename, "_OT")[1] - 1
+  langstring <- substr(filename, langindex, langindex+1)
+  trialsstring <- substr(filename, trialsindexstart, trialsindexend)
+  expnumstring <- substr(filename, 1, expnumindexend)
+  if (expnumstring == "K407p") {
+    expnumwords <- "without CEDRA" # MCRR"
+  } else {
+    expnumwords <- "with CEDRA" # MCRR"
+  }
+  hasstarB <- substr(expnumstring, 2, 2) == "4"
+  return(c(langstring, trialsstring, expnumwords, hasstarB))
+}
+
+makeplot <- function(filename) {
+  info <- extract_langtrialsexpnum(filename)
+  lang <- info[1]
+  trials <- info[2]
+  expnumwds <- info[3]
+  hasstarB <- info[4]
+  # showAgr <- FALSE
+  df <- prepare_data(filename, hasstarB)  #, showAgr)
+  plot_trajectories(df, lang, trials, expnumwds)
+}
+
+historyfiles <- c(
+  # "K313p_OT_Soft_KE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY1000_forR.txt",
+  # "K314p_OT_Soft_KE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY5000_forR.txt",
+  # "K315p_OT_Soft_KE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt",
+  # "K316p_OT_Soft_KE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY500000_forR.txt",
+  # "S313p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY1000_forR.txt",
+  # "S314p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY5000_forR.txt",
+  # "S315p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt",
+  # "S316p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY500000_forR.txt",
+  # "S_30bias_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt"
+  # "K413p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
+  # "K414p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
+  "K415p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
+  "K407p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt"
+  # "K416p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
+  # "S413p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
+  # "S414p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
+  # "S415p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
+  # "S416p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
+  # "S315p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt"
+)
+
+for (hfile in historyfiles) {
+  makeplot(hfile)
+}
+
+
+
+```
+
+```{r}
+numsamples <- 100000
+
+for (dif in 1:20) {
+  if (dif == 1) {
+    print(numsamples)
+  }
+  # make a distribution with mean 0 and SD 2
+  # make another one with mean dif and SD 2
+  # take a bunch of samples from each
+  # dif <- 2
+  lowersamples <- rnorm(numsamples, mean=0, sd=2)
+  uppersamples1 <- rnorm(numsamples, mean=dif, sd=2)
+  uppersamples2 <- rnorm(numsamples, mean=dif, sd=2)
+  # print(mean(lowersamples))
+  # print(mean(uppersamples))
+  
+  # for each pair of samples, determine which distribution has the higher value
+  # determine whether at least one of the upper samples flipped with lowersamples
+  didtheyflip <- (lowersamples > uppersamples1) | (lowersamples > uppersamples2)
+  meanflips <- mean(didtheyflip)
+  # print(meanflips)
+  
+  # calculate the probability of the distr with the lower mean ending up with the higher value
+  print(sprintf("%s %i %s %f", "for a difference of", dif, "the chance of flipping order is", meanflips))
+  
+}
+
+```
+

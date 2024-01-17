@@ -1,0 +1,1092 @@
+Generated	Heard	Id(Bk)Syl1	now	Id(Bk)	now	Id(Hi)Syl1	now	Id(Hi)	now	Id(Lo)Syl1	now	Id(Lo)	now	Id(Rd)Syl1	now	Id(Rd)	now	*F1	now	*F3	now	*F4	now	*F5	now	*B1	now	*B2	now	*B3	now	*B5	now	*F1_B1	now	*F1..._B1	now	*F1_B2	now	*F1..._B2	now	*F1_B3	now	*F1..._B3	now	*F1_B5	now	*F1..._B5	now	*F3_B1	now	*F3..._B1	now	*F3_B2	now	*F3..._B2	now	*F3_B3	now	*F3..._B3	now	*F3_B5	now	*F3..._B5	now	*F4_B1	now	*F4..._B1	now	*F4_B2	now	*F4..._B2	now	*F4_B3	now	*F4..._B3	now	*F4_B5	now	*F4..._B5	now	*F5_B1	now	*F5..._B1	now	*F5_B2	now	*F5..._B2	now	*F5_B3	now	*F5..._B3	now	*F5_B5	now	*F5..._B5	now	*_B1F1	now	*_B1...F1	now	*_B1F3	now	*_B1...F3	now	*_B1F4	now	*_B1...F4	now	*_B1F5	now	*_B1...F5	now	*_B2F1	now	*_B2...F1	now	*_B2F3	now	*_B2...F3	now	*_B2F4	now	*_B2...F4	now	*_B2F5	now	*_B2...F5	now	*_B3F1	now	*_B3...F1	now	*_B3F3	now	*_B3...F3	now	*_B3F4	now	*_B3...F4	now	*_B3F5	now	*_B3...F5	now	*_B5F1	now	*_B5...F1	now	*_B5F3	now	*_B5...F3	now	*_B5F4	now	*_B5...F4	now	*_B5F5	now	*_B5...F5	now	
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 20 	 20 																																																																																																																																																															
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 20 	 20 																																																																																																																																																											
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 20 	 20 																																																																																																																																																							
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 20 	 20 																																																																																																																																																			
+(Initial)			 20 		 0 		 20 		 0 		 20 		 0 		 20 		 0 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 	
+iii	OOy					 2 	 22 																																																																																																																																																											
+iii	OOy							 2 	 2 																																																																																																																																																									
+iii	OOy													 2 	 22 																																																																																																																																																			
+iii	OOy															 2 	 2 																																																																																																																																																	
+iii	OOy																	-2 	 98 																																																																																																																																															
+iii	OOy																			-2 	 98 																																																																																																																																													
+iii	OOy																					-2 	 98 																																																																																																																																											
+aa	AA	 2 	 22 																																																																																																																																																															
+aa	AA			 2 	 2 																																																																																																																																																													
+aa	AA																			-2 	 96 																																																																																																																																													
+aa	AA																					-2 	 96 																																																																																																																																											
+aa	AA																							-2 	 98 																																																																																																																																									
+aa	AA																															 2 	 102 																																																																																																																																	
+iii	Oee					 2 	 24 																																																																																																																																																											
+iii	Oee							 2 	 4 																																																																																																																																																									
+iii	Oee													 2 	 24 																																																																																																																																																			
+iii	Oee															 2 	 4 																																																																																																																																																	
+iii	Oee																	-2 	 96 																																																																																																																																															
+iii	Oee																			-2 	 94 																																																																																																																																													
+iii	Oee																					-2 	 94 																																																																																																																																											
+iii	aia	 2 	 24 																																																																																																																																																															
+iii	aia			 2 	 4 																																																																																																																																																													
+iii	aia					 2 	 26 																																																																																																																																																											
+iii	aia							 2 	 6 																																																																																																																																																									
+iii	aia									 2 	 22 																																																																																																																																																							
+iii	aia											 2 	 2 																																																																																																																																																					
+iii	aia																							 2 	 100 																																																																																																																																									
+iii	aia																															-2 	 100 																																																																																																																																	
+iii	aia																																																																																													-2 	 98 																																																																			
+iii	aia																																																																																															-2 	 98 																																																																	
+iii	aia																																																																																																																																																													-2 	 98 			
+iii	aia																																																																																																																																																															-2 		 98 
+auI	Ayi	 2 	 26 																																																																																																																																																															
+auI	Ayi			 2 	 6 																																																																																																																																																													
+auI	Ayi																			-2 	 92 																																																																																																																																													
+auI	Ayi																					-2 	 92 																																																																																																																																											
+auI	Ayi																							-2 	 98 																																																																																																																																									
+auI	Ayi																									 2 	 102 																																																																																																																																							
+auI	Ayi																											 2 	 102 																																																																																																																																					
+auI	Ayi																													 2 	 102 																																																																																																																																			
+auI	Ayi																															 2 	 102 																																																																																																																																	
+ii	yy													 2 	 26 																																																																																																																																																			
+ii	yy															 2 	 6 																																																																																																																																																	
+ii	yy																			-2 	 90 																																																																																																																																													
+ii	yy																					-2 	 90 																																																																																																																																											
+iii	uue	 2 	 28 																																																																																																																																																															
+iii	uue			 2 	 8 																																																																																																																																																													
+iii	uue							 2 	 8 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 28 																																																																																																																																																											
+iii	uue													 2 	 28 																																																																																																																																																			
+iii	uue															 2 	 8 																																																																																																																																																	
+iii	uue																					-2 	 88 																																																																																																																																											
+iii	uue																							 2 	 100 																																																																																																																																									
+iii	uue																															-2 	 100 																																																																																																																																	
+iii	uue																																																																																																																																																									-2 	 98 							
+iii	uue																																																																																																																																																											-2 	 98 					
+iii	uue																																																																																																																																																													-2 	 96 			
+iii	uue																																																																																																																																																															-2 		 96 
+iii	ooe	 2 	 30 																																																																																																																																																															
+iii	ooe			 2 	 10 																																																																																																																																																													
+iii	ooe					 2 	 30 																																																																																																																																																											
+iii	ooe							 2 	 10 																																																																																																																																																									
+iii	ooe													 2 	 30 																																																																																																																																																			
+iii	ooe															 2 	 10 																																																																																																																																																	
+iii	ooe																					-2 	 86 																																																																																																																																											
+iii	ooe																							 2 	 102 																																																																																																																																									
+iii	ooe																													-2 	 100 																																																																																																																																			
+iii	ooe																															-2 	 98 																																																																																																																																	
+iii	ooe																																																																																																																																									-2 	 98 																							
+iii	ooe																																																																																																																																											-2 	 98 																					
+iii	ooe																																																																																																																																													-2 	 98 																			
+iii	ooe																																																																																																																																															-2 	 98 																	
+iii	ooe																																																																																																																																																									-2 	 96 							
+iii	ooe																																																																																																																																																											-2 	 96 					
+iii	ooe																																																																																																																																																													-2 	 94 			
+iii	ooe																																																																																																																																																															-2 		 94 
+iii	eou			 2 	 12 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 32 																																																																																																																																																															
+iii	eou					 2 	 32 																																																																																																																																																											
+iii	eou							 2 	 12 																																																																																																																																																									
+iii	eou															 2 	 12 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 32 																																																																																																																																																			
+iii	eou																					-2 	 84 																																																																																																																																											
+iii	eou																							 2 	 104 																																																																																																																																									
+iii	eou																													-2 	 98 																																																																																																																																			
+iii	eou																															-2 	 96 																																																																																																																																	
+iii	eou																																																																									-2 	 98 																																																																																							
+iii	eou																																																																											-2 	 98 																																																																																					
+iii	eou																																																																													-2 	 98 																																																																																			
+iii	eou																																																																															-2 	 98 																																																																																	
+iii	eou																																																																																									-2 	 98 																																																																							
+iii	eou																																																																																											-2 	 98 																																																																					
+iii	eou																																																																																													-2 	 96 																																																																			
+iii	eou																																																																																															-2 	 96 																																																																	
+uu	yy	 2 	 34 																																																																																																																																																															
+uu	yy			 2 	 14 																																																																																																																																																													
+uu	yy																			-2 	 88 																																																																																																																																													
+uu	yy																					-2 	 82 																																																																																																																																											
+uu	yy																							-2 	 102 																																																																																																																																									
+uu	yy																															 2 	 98 																																																																																																																																	
+iau	iAy			 2 	 16 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 36 																																																																																																																																																															
+iau	iAy																			-2 	 86 																																																																																																																																													
+iau	iAy																					-2 	 80 																																																																																																																																											
+iau	iAy																							-2 	 100 																																																																																																																																									
+iau	iAy																															 2 	 100 																																																																																																																																	
+iau	iAy																																																																																													 2 	 98 																																																																			
+iau	iAy																																																																																															 2 	 98 																																																																	
+iii	eua			 2 	 18 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 38 																																																																																																																																																															
+iii	eua					 2 	 34 																																																																																																																																																											
+iii	eua							 2 	 14 																																																																																																																																																									
+iii	eua											 2 	 4 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 24 																																																																																																																																																							
+iii	eua															 2 	 14 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 34 																																																																																																																																																			
+iii	eua																					-2 	 78 																																																																																																																																											
+iii	eua																							 2 	 102 																																																																																																																																									
+iii	eua																															-2 	 98 																																																																																																																																	
+iii	eua																																																																													-2 	 96 																																																																																			
+iii	eua																																																																															-2 	 96 																																																																																	
+iii	eua																																																																																													-2 	 96 																																																																			
+iii	eua																																																																																															-2 	 96 																																																																	
+iiu	eiu					 2 	 36 																																																																																																																																																											
+iiu	eiu							 2 	 16 																																																																																																																																																									
+iiu	eiu																					-2 	 76 																																																																																																																																											
+iiu	eiu																																																																															-2 	 94 																																																																																	
+iui	iye			 2 	 20 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 40 																																																																																																																																																															
+iui	iye							 2 	 18 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 38 																																																																																																																																																											
+iui	iye																			-2 	 84 																																																																																																																																													
+iui	iye																					-2 	 74 																																																																																																																																											
+iui	iye																							-2 	 100 																																																																																																																																									
+iui	iye																															 2 	 100 																																																																																																																																	
+iui	iye																																																																																													 2 	 98 																																																																			
+iui	iye																																																																																															 2 	 98 																																																																	
+iui	iye																																																																																																																																																													 2 	 96 			
+iui	iye																																																																																																																																																															 2 		 96 
+ii	Ai					 2 	 40 																																																																																																																																																											
+ii	Ai							 2 	 20 																																																																																																																																																									
+ii	Ai									 2 	 26 																																																																																																																																																							
+ii	Ai											 2 	 6 																																																																																																																																																					
+ii	Ai																			-2 	 82 																																																																																																																																													
+ii	Ai																					-2 	 72 																																																																																																																																											
+iii	eoe			 2 	 22 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 42 																																																																																																																																																															
+iii	eoe					 2 	 42 																																																																																																																																																											
+iii	eoe							 2 	 22 																																																																																																																																																									
+iii	eoe															 2 	 16 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 36 																																																																																																																																																			
+iii	eoe																					-2 	 70 																																																																																																																																											
+iii	eoe																							 2 	 102 																																																																																																																																									
+iii	eoe																													-2 	 96 																																																																																																																																			
+iii	eoe																															-2 	 98 																																																																																																																																	
+iii	eoe																																																																									-2 	 96 																																																																																							
+iii	eoe																																																																											-2 	 96 																																																																																					
+iii	eoe																																																																													-2 	 94 																																																																																			
+iii	eoe																																																																															-2 	 92 																																																																																	
+iii	eoe																																																																																									-2 	 96 																																																																							
+iii	eoe																																																																																											-2 	 96 																																																																					
+iii	eoe																																																																																													-2 	 96 																																																																			
+iii	eoe																																																																																															-2 	 96 																																																																	
+iii	eoe																																																																																																																																									-2 	 96 																							
+iii	eoe																																																																																																																																											-2 	 96 																					
+iii	eoe																																																																																																																																													-2 	 96 																			
+iii	eoe																																																																																																																																															-2 	 96 																	
+iii	eoe																																																																																																																																																									-2 	 94 							
+iii	eoe																																																																																																																																																											-2 	 94 					
+iii	eoe																																																																																																																																																													-2 	 94 			
+iii	eoe																																																																																																																																																															-2 		 94 
+IaI	iAi	 2 	 44 																																																																																																																																																															
+IaI	iAi			 2 	 24 																																																																																																																																																													
+IaI	iAi																			-2 	 80 																																																																																																																																													
+IaI	iAi																					-2 	 68 																																																																																																																																											
+IaI	iAi																							-2 	 100 																																																																																																																																									
+IaI	iAi																									 2 	 104 																																																																																																																																							
+IaI	iAi																											 2 	 104 																																																																																																																																					
+IaI	iAi																													 2 	 98 																																																																																																																																			
+IaI	iAi																															 2 	 100 																																																																																																																																	
+ii	aa	 2 	 46 																																																																																																																																																															
+ii	aa			 2 	 26 																																																																																																																																																													
+ii	aa					 2 	 44 																																																																																																																																																											
+ii	aa							 2 	 24 																																																																																																																																																									
+ii	aa									 2 	 28 																																																																																																																																																							
+ii	aa											 2 	 8 																																																																																																																																																					
+ii	aa																							 2 	 102 																																																																																																																																									
+ii	aa																															-2 	 98 																																																																																																																																	
+iui	iyi			 2 	 28 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 48 																																																																																																																																																															
+iui	iyi																			-2 	 78 																																																																																																																																													
+iui	iyi																					-2 	 66 																																																																																																																																											
+iui	iyi																							-2 	 100 																																																																																																																																									
+iui	iyi																															 2 	 100 																																																																																																																																	
+iui	iyi																																																																																													 2 	 98 																																																																			
+iui	iyi																																																																																															 2 	 98 																																																																	
+iui	iyi																																																																																																																																																													 2 	 96 			
+iui	iyi																																																																																																																																																															 2 		 96 
+iii	yee							 2 	 26 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 46 																																																																																																																																																											
+iii	yee													 2 	 38 																																																																																																																																																			
+iii	yee															 2 	 18 																																																																																																																																																	
+iii	yee																			-2 	 76 																																																																																																																																													
+iii	yee																					-2 	 64 																																																																																																																																											
+iuo	iyO			 2 	 30 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 50 																																																																																																																																																															
+iuo	iyO																	-2 	 94 																																																																																																																																															
+iuo	iyO																			-2 	 74 																																																																																																																																													
+iuo	iyO																					-2 	 62 																																																																																																																																											
+iuo	iyO																							-2 	 98 																																																																																																																																									
+iuo	iyO																													 2 	 100 																																																																																																																																			
+iuo	iyO																															 2 	 102 																																																																																																																																	
+iuo	iyO																																																																																											 2 	 98 																																																																					
+iuo	iyO																																																																																													 2 	 100 																																																																			
+iuo	iyO																																																																																															 2 	 100 																																																																	
+aoo	AOO	 2 	 52 																																																																																																																																																															
+aoo	AOO			 2 	 32 																																																																																																																																																													
+aoo	AOO																	-2 	 92 																																																																																																																																															
+aoo	AOO																			-2 	 72 																																																																																																																																													
+aoo	AOO																					-2 	 60 																																																																																																																																											
+aoo	AOO																							-2 	 96 																																																																																																																																									
+aoo	AOO																													 2 	 102 																																																																																																																																			
+aoo	AOO																															 2 	 104 																																																																																																																																	
+iii	oae	 2 	 54 																																																																																																																																																															
+iii	oae			 2 	 34 																																																																																																																																																													
+iii	oae					 2 	 48 																																																																																																																																																											
+iii	oae							 2 	 28 																																																																																																																																																									
+iii	oae											 2 	 10 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 30 																																																																																																																																																							
+iii	oae													 2 	 40 																																																																																																																																																			
+iii	oae															 2 	 20 																																																																																																																																																	
+iii	oae																					-2 	 58 																																																																																																																																											
+iii	oae																							 2 	 98 																																																																																																																																									
+iii	oae																													-2 	 100 																																																																																																																																			
+iii	oae																															-2 	 102 																																																																																																																																	
+iii	oae																																																																																																																																											-2 	 94 																					
+iii	oae																																																																																																																																															-2 	 94 																	
+iii	oae																																																																																																																																																									-2 	 92 							
+iii	oae																																																																																																																																																											-2 	 92 					
+iii	oae																																																																																																																																																													-2 	 94 			
+iii	oae																																																																																																																																																															-2 		 94 
+iii	iuu			 2 	 36 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 56 																																																																																																																																																															
+iii	iuu															 2 	 22 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 42 																																																																																																																																																			
+iii	iuu																							 2 	 100 																																																																																																																																									
+iii	iuu																															-2 	 100 																																																																																																																																	
+iii	iuu																																																																																													-2 	 98 																																																																			
+iii	iuu																																																																																															-2 	 98 																																																																	
+iii	oui	 2 	 58 																																																																																																																																																															
+iii	oui			 2 	 38 																																																																																																																																																													
+iii	oui					 2 	 50 																																																																																																																																																											
+iii	oui							 2 	 30 																																																																																																																																																									
+iii	oui													 2 	 44 																																																																																																																																																			
+iii	oui															 2 	 24 																																																																																																																																																	
+iii	oui																							 2 	 102 																																																																																																																																									
+iii	oui																													-2 	 98 																																																																																																																																			
+iii	oui																															-2 	 98 																																																																																																																																	
+iii	oui																																																																																																																																															-2 	 92 																	
+iii	oui																																																																																																																																																													-2 	 92 			
+iii	oui																																																																																																																																																															-2 		 92 
+aoa	AOA	 2 	 60 																																																																																																																																																															
+aoa	AOA			 2 	 40 																																																																																																																																																													
+aoa	AOA																	-2 	 90 																																																																																																																																															
+aoa	AOA																			-2 	 70 																																																																																																																																													
+aoa	AOA																					-2 	 56 																																																																																																																																											
+aoa	AOA																							-2 	 100 																																																																																																																																									
+aoa	AOA																													 2 	 100 																																																																																																																																			
+aoa	AOA																															 2 	 100 																																																																																																																																	
+iii	iyi															 2 	 26 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 46 																																																																																																																																																			
+iii	iyi																			-2 	 68 																																																																																																																																													
+iii	iyi																					-2 	 54 																																																																																																																																											
+iii	oeu	 2 	 62 																																																																																																																																																															
+iii	oeu			 2 	 42 																																																																																																																																																													
+iii	oeu					 2 	 52 																																																																																																																																																											
+iii	oeu							 2 	 32 																																																																																																																																																									
+iii	oeu													 2 	 48 																																																																																																																																																			
+iii	oeu															 2 	 28 																																																																																																																																																	
+iii	oeu																					-2 	 52 																																																																																																																																											
+iii	oeu																							 2 	 102 																																																																																																																																									
+iii	oeu																													-2 	 98 																																																																																																																																			
+iii	oeu																															-2 	 98 																																																																																																																																	
+iii	oeu																																																																													-2 	 92 																																																																																			
+iii	oeu																																																																															-2 	 90 																																																																																	
+iii	oeu																																																																																													-2 	 96 																																																																			
+iii	oeu																																																																																															-2 	 96 																																																																	
+iii	oeu																																																																																																																																									-2 	 94 																							
+iii	oeu																																																																																																																																											-2 	 92 																					
+iii	oeu																																																																																																																																													-2 	 94 																			
+iii	oeu																																																																																																																																															-2 	 90 																	
+iii	oeu																																																																																																																																																									-2 	 90 							
+iii	oeu																																																																																																																																																											-2 	 90 					
+iii	oeu																																																																																																																																																													-2 	 90 			
+iii	oeu																																																																																																																																																															-2 		 90 
+aui	Ayi	 2 	 64 																																																																																																																																																															
+aui	Ayi			 2 	 44 																																																																																																																																																													
+aui	Ayi																			-2 	 66 																																																																																																																																													
+aui	Ayi																					-2 	 50 																																																																																																																																											
+aui	Ayi																							-2 	 100 																																																																																																																																									
+aui	Ayi																															 2 	 100 																																																																																																																																	
+aui	Ayi																																																																																																																																																													 2 	 92 			
+aui	Ayi																																																																																																																																																															 2 		 92 
+ei	AA							 2 	 34 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 54 																																																																																																																																																											
+ei	AA									 2 	 32 																																																																																																																																																							
+ei	AA											 2 	 12 																																																																																																																																																					
+ei	AA																			-2 	 64 																																																																																																																																													
+ei	AA																					-2 	 48 																																																																																																																																											
+eii	OAA							 2 	 36 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 56 																																																																																																																																																											
+eii	OAA											 2 	 14 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 34 																																																																																																																																																							
+eii	OAA													 2 	 50 																																																																																																																																																			
+eii	OAA															 2 	 30 																																																																																																																																																	
+eii	OAA																	-2 	 88 																																																																																																																																															
+eii	OAA																			-2 	 62 																																																																																																																																													
+eii	OAA																					-2 	 46 																																																																																																																																											
+iii	iee							 2 	 38 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 58 																																																																																																																																																											
+iii	iee																					-2 	 44 																																																																																																																																											
+aui	aue							 2 	 40 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 60 																																																																																																																																																											
+aui	aue																					-2 	 42 																																																																																																																																											
+aui	aue																																																																																																																																																									-2 	 88 							
+aui	aue																																																																																																																																																											-2 	 88 					
+ua	yA	 2 	 66 																																																																																																																																																															
+ua	yA			 2 	 46 																																																																																																																																																													
+ua	yA																			-2 	 60 																																																																																																																																													
+ua	yA																					-2 	 40 																																																																																																																																											
+ua	yA																							-2 	 98 																																																																																																																																									
+ua	yA																															 2 	 102 																																																																																																																																	
+eii	aao	 2 	 68 																																																																																																																																																															
+eii	aao			 2 	 48 																																																																																																																																																													
+eii	aao							 2 	 42 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 62 																																																																																																																																																											
+eii	aao									 2 	 36 																																																																																																																																																							
+eii	aao											 2 	 16 																																																																																																																																																					
+eii	aao															 2 	 32 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 52 																																																																																																																																																			
+eii	aao																					 2 	 42 																																																																																																																																											
+eii	aao																							 2 	 100 																																																																																																																																									
+eii	aao																													-2 	 96 																																																																																																																																			
+eii	aao																															-2 	 100 																																																																																																																																	
+iee	yAe											 2 	 18 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 38 																																																																																																																																																							
+iee	yAe													 2 	 54 																																																																																																																																																			
+iee	yAe															 2 	 34 																																																																																																																																																	
+iee	yAe																			-2 	 58 																																																																																																																																													
+iee	yAe																					-2 	 40 																																																																																																																																											
+iia	eiA			 2 	 50 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 70 																																																																																																																																																															
+iia	eiA					 2 	 64 																																																																																																																																																											
+iia	eiA							 2 	 44 																																																																																																																																																									
+iia	eiA																			-2 	 56 																																																																																																																																													
+iia	eiA																					-2 	 38 																																																																																																																																											
+iia	eiA																							-2 	 98 																																																																																																																																									
+iia	eiA																															 2 	 102 																																																																																																																																	
+iia	eiA																																																																																													 2 	 98 																																																																			
+iia	eiA																																																																																															 2 	 98 																																																																	
+eii	Oiy													 2 	 56 																																																																																																																																																			
+eii	Oiy															 2 	 36 																																																																																																																																																	
+eii	Oiy																	-2 	 86 																																																																																																																																															
+eii	Oiy																			-2 	 54 																																																																																																																																													
+eii	Oiy																					-2 	 36 																																																																																																																																											
+ie	io			 2 	 52 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 72 																																																																																																																																																															
+ie	io															 2 	 38 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 58 																																																																																																																																																			
+ie	io																					 2 	 38 																																																																																																																																											
+ie	io																							 2 	 100 																																																																																																																																									
+ie	io																													-2 	 94 																																																																																																																																			
+ie	io																															-2 	 100 																																																																																																																																	
+ie	io																																																																																									-2 	 94 																																																																							
+ie	io																																																																																											-2 	 96 																																																																					
+ie	io																																																																																													-2 	 96 																																																																			
+ie	io																																																																																															-2 	 96 																																																																	
+yie	yyA											 2 	 20 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 40 																																																																																																																																																							
+yie	yyA															 2 	 40 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 60 																																																																																																																																																			
+yie	yyA																			-2 	 52 																																																																																																																																													
+yie	yyA																					-2 	 36 																																																																																																																																											
+Eua	eyA	 2 	 74 																																																																																																																																																															
+Eua	eyA			 2 	 54 																																																																																																																																																													
+Eua	eyA																			-2 	 50 																																																																																																																																													
+Eua	eyA																					-2 	 34 																																																																																																																																											
+Eua	eyA																							-2 	 98 																																																																																																																																									
+Eua	eyA																											 2 	 106 																																																																																																																																					
+Eua	eyA																													 2 	 96 																																																																																																																																			
+Eua	eyA																															 2 	 102 																																																																																																																																	
+ei	ey															 2 	 42 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 62 																																																																																																																																																			
+ei	ey																			-2 	 48 																																																																																																																																													
+ei	ey																					-2 	 32 																																																																																																																																											
+yee	uaa	 2 	 76 																																																																																																																																																															
+yee	uaa			 2 	 56 																																																																																																																																																													
+yee	uaa											 2 	 22 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 42 																																																																																																																																																							
+yee	uaa																			 2 	 50 																																																																																																																																													
+yee	uaa																					 2 	 34 																																																																																																																																											
+yee	uaa																							 2 	 100 																																																																																																																																									
+yee	uaa																															-2 	 100 																																																																																																																																	
+iiu	iey			 2 	 58 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 78 																																																																																																																																																															
+iiu	iey							 2 	 46 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 66 																																																																																																																																																											
+iiu	iey																			-2 	 48 																																																																																																																																													
+iiu	iey																					-2 	 32 																																																																																																																																											
+iiu	iey																							-2 	 98 																																																																																																																																									
+iiu	iey																															 2 	 102 																																																																																																																																	
+iiu	iey																																																																																													 2 	 98 																																																																			
+iiu	iey																																																																																															 2 	 98 																																																																	
+eie	eua			 2 	 60 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 80 																																																																																																																																																															
+eie	eua											 2 	 24 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 44 																																																																																																																																																							
+eie	eua															 2 	 44 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 64 																																																																																																																																																			
+eie	eua																					 2 	 34 																																																																																																																																											
+eie	eua																							 2 	 100 																																																																																																																																									
+eie	eua																															-2 	 100 																																																																																																																																	
+eie	eua																																																																													-2 	 90 																																																																																			
+eie	eua																																																																															-2 	 88 																																																																																	
+eie	eua																																																																																													-2 	 96 																																																																			
+eie	eua																																																																																															-2 	 96 																																																																	
+eie	euo			 2 	 62 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 82 																																																																																																																																																															
+eie	euo															 2 	 46 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 66 																																																																																																																																																			
+eie	euo																					 2 	 36 																																																																																																																																											
+eie	euo																							 2 	 102 																																																																																																																																									
+eie	euo																													-2 	 94 																																																																																																																																			
+eie	euo																															-2 	 98 																																																																																																																																	
+eie	euo																																																																											-2 	 94 																																																																																					
+eie	euo																																																																													-2 	 88 																																																																																			
+eie	euo																																																																															-2 	 86 																																																																																	
+eie	euo																																																																																											-2 	 94 																																																																					
+eie	euo																																																																																													-2 	 94 																																																																			
+eie	euo																																																																																															-2 	 94 																																																																	
+aia	aea							 2 	 48 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 68 																																																																																																																																																											
+aia	aea																					-2 	 34 																																																																																																																																											
+aia	aea																																																																													-2 	 86 																																																																																			
+aia	aea																																																																															-2 	 84 																																																																																	
+aia	aea																																																																																																																																																									-2 	 86 							
+aia	aea																																																																																																																																																											-2 	 86 					
+iuo	eyO			 2 	 64 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 84 																																																																																																																																																															
+iuo	eyO					 2 	 70 																																																																																																																																																											
+iuo	eyO							 2 	 50 																																																																																																																																																									
+iuo	eyO																	-2 	 84 																																																																																																																																															
+iuo	eyO																			-2 	 46 																																																																																																																																													
+iuo	eyO																					-2 	 32 																																																																																																																																											
+iuo	eyO																							-2 	 100 																																																																																																																																									
+iuo	eyO																													 2 	 96 																																																																																																																																			
+iuo	eyO																															 2 	 100 																																																																																																																																	
+iuo	eyO																																																																																											 2 	 96 																																																																					
+iuo	eyO																																																																																													 2 	 96 																																																																			
+iuo	eyO																																																																																															 2 	 96 																																																																	
+eey	aau	 2 	 86 																																																																																																																																																															
+eey	aau			 2 	 66 																																																																																																																																																													
+eey	aau									 2 	 46 																																																																																																																																																							
+eey	aau											 2 	 26 																																																																																																																																																					
+eey	aau																			 2 	 48 																																																																																																																																													
+eey	aau																					 2 	 34 																																																																																																																																											
+eey	aau																							 2 	 102 																																																																																																																																									
+eey	aau																															-2 	 98 																																																																																																																																	
+ooi	OOe	 2 	 88 																																																																																																																																																															
+ooi	OOe			 2 	 68 																																																																																																																																																													
+ooi	OOe							 2 	 52 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 72 																																																																																																																																																											
+ooi	OOe																	-2 	 82 																																																																																																																																															
+ooi	OOe																			-2 	 46 																																																																																																																																													
+ooi	OOe																					-2 	 32 																																																																																																																																											
+ooi	OOe																							-2 	 100 																																																																																																																																									
+ooi	OOe																													 2 	 98 																																																																																																																																			
+ooi	OOe																															 2 	 100 																																																																																																																																	
+ooi	OOe																																																																																																																																													 2 	 96 																			
+ooi	OOe																																																																																																																																															 2 	 92 																	
+ooi	OOe																																																																																																																																																													 2 	 94 			
+ooi	OOe																																																																																																																																																															 2 		 94 
+eee	AAO									 2 	 48 																																																																																																																																																							
+eee	AAO											 2 	 28 																																																																																																																																																					
+eee	AAO															 2 	 48 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 68 																																																																																																																																																			
+eee	AAO																	-2 	 80 																																																																																																																																															
+eee	AAO																			-2 	 44 																																																																																																																																													
+aui	aue							 2 	 54 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 74 																																																																																																																																																											
+aui	aue																					-2 	 30 																																																																																																																																											
+aui	aue																																																																																																																																																									-2 	 84 							
+aui	aue																																																																																																																																																											-2 	 84 					
+iey	iou			 2 	 70 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 90 																																																																																																																																																															
+iey	iou															 2 	 50 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 70 																																																																																																																																																			
+iey	iou																			 2 	 46 																																																																																																																																													
+iey	iou																					 2 	 32 																																																																																																																																											
+iey	iou																							 2 	 102 																																																																																																																																									
+iey	iou																													-2 	 96 																																																																																																																																			
+iey	iou																															-2 	 98 																																																																																																																																	
+iey	iou																																																																																									-2 	 92 																																																																							
+iey	iou																																																																																											-2 	 94 																																																																					
+iey	iou																																																																																													-2 	 94 																																																																			
+iey	iou																																																																																															-2 	 94 																																																																	
+oui	oue							 2 	 56 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 76 																																																																																																																																																											
+oui	oue																					-2 	 30 																																																																																																																																											
+oui	oue																																																																																																																																											-2 	 90 																					
+oui	oue																																																																																																																																																									-2 	 82 							
+oui	oue																																																																																																																																																											-2 	 82 					
+ioi	eOi			 2 	 72 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 92 																																																																																																																																																															
+ioi	eOi					 2 	 78 																																																																																																																																																											
+ioi	eOi							 2 	 58 																																																																																																																																																									
+ioi	eOi																	-2 	 78 																																																																																																																																															
+ioi	eOi																			-2 	 44 																																																																																																																																													
+ioi	eOi																					-2 	 28 																																																																																																																																											
+ioi	eOi																							-2 	 100 																																																																																																																																									
+ioi	eOi																													 2 	 98 																																																																																																																																			
+ioi	eOi																															 2 	 100 																																																																																																																																	
+ioi	eOi																																																																																									 2 	 94 																																																																							
+ioi	eOi																																																																																											 2 	 96 																																																																					
+ioi	eOi																																																																																													 2 	 96 																																																																			
+ioi	eOi																																																																																															 2 	 96 																																																																	
+ioi	eOi																																																																																																																																													 2 	 98 																			
+ioi	eOi																																																																																																																																															 2 	 94 																	
+ioi	eOi																																																																																																																																																													 2 	 96 			
+ioi	eOi																																																																																																																																																															 2 		 96 
+eei	eAi											 2 	 30 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 50 																																																																																																																																																							
+eei	eAi																			-2 	 42 																																																																																																																																													
+eee	eeA											 2 	 32 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 52 																																																																																																																																																							
+eee	eeA																			-2 	 40 																																																																																																																																													
+auu	Ayy	 2 	 94 																																																																																																																																																															
+auu	Ayy			 2 	 74 																																																																																																																																																													
+auu	Ayy																			-2 	 38 																																																																																																																																													
+auu	Ayy																					-2 	 26 																																																																																																																																											
+auu	Ayy																							-2 	 98 																																																																																																																																									
+auu	Ayy																															 2 	 102 																																																																																																																																	
+Aee	aao	 2 	 96 																																																																																																																																																															
+Aee	aao			 2 	 76 																																																																																																																																																													
+Aee	aao											 2 	 34 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 54 																																																																																																																																																							
+Aee	aao															 2 	 52 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 72 																																																																																																																																																			
+Aee	aao																			 2 	 40 																																																																																																																																													
+Aee	aao																					 2 	 28 																																																																																																																																											
+Aee	aao																							 2 	 100 																																																																																																																																									
+Aee	aao																													-2 	 96 																																																																																																																																			
+Aee	aao																															-2 	 100 																																																																																																																																	
+iie	iio			 2 	 78 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 98 																																																																																																																																																															
+iie	iio															 2 	 54 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 74 																																																																																																																																																			
+iie	iio																					 2 	 30 																																																																																																																																											
+iie	iio																							 2 	 102 																																																																																																																																									
+iie	iio																													-2 	 94 																																																																																																																																			
+iie	iio																															-2 	 98 																																																																																																																																	
+iie	iio																																																																																									-2 	 92 																																																																							
+iie	iio																																																																																											-2 	 94 																																																																					
+iie	iio																																																																																													-2 	 94 																																																																			
+iie	iio																																																																																															-2 	 94 																																																																	
+oii	Oie	 2 	 100 																																																																																																																																																															
+oii	Oie			 2 	 80 																																																																																																																																																													
+oii	Oie							 2 	 60 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 80 																																																																																																																																																											
+oii	Oie																	-2 	 76 																																																																																																																																															
+oii	Oie																			-2 	 38 																																																																																																																																													
+oii	Oie																					-2 	 28 																																																																																																																																											
+oii	Oie																							-2 	 100 																																																																																																																																									
+oii	Oie																													 2 	 96 																																																																																																																																			
+oii	Oie																															 2 	 100 																																																																																																																																	
+oii	Oie																																																																																																																																													 2 	 100 																			
+oii	Oie																																																																																																																																															 2 	 96 																	
+oii	Oie																																																																																																																																																													 2 	 98 			
+oii	Oie																																																																																																																																																															 2 		 98 
+iee	ieA											 2 	 36 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 56 																																																																																																																																																							
+iee	ieA																			-2 	 36 																																																																																																																																													
+ioo	eoo					 2 	 82 																																																																																																																																																											
+ioo	eoo							 2 	 62 																																																																																																																																																									
+ioo	eoo																					-2 	 26 																																																																																																																																											
+ioo	eoo																																																																									-2 	 94 																																																																																							
+ioo	eoo																																																																											-2 	 92 																																																																																					
+ioo	eoo																																																																													-2 	 84 																																																																																			
+ioo	eoo																																																																															-2 	 82 																																																																																	
+uuu	yyy	 2 	 102 																																																																																																																																																															
+uuu	yyy			 2 	 82 																																																																																																																																																													
+uuu	yyy																			-2 	 34 																																																																																																																																													
+uuu	yyy																					-2 	 24 																																																																																																																																											
+uuu	yyy																							-2 	 98 																																																																																																																																									
+uuu	yyy																															 2 	 102 																																																																																																																																	
+Ayi	aui	 2 	 104 																																																																																																																																																															
+Ayi	aui			 2 	 84 																																																																																																																																																													
+Ayi	aui																			 2 	 36 																																																																																																																																													
+Ayi	aui																					 2 	 26 																																																																																																																																											
+Ayi	aui																							 2 	 100 																																																																																																																																									
+Ayi	aui																															-2 	 100 																																																																																																																																	
+Ayi	aui																																																																																																																																																													-2 	 96 			
+Ayi	aui																																																																																																																																																															-2 		 96 
+iou	yOy			 2 	 86 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 106 																																																																																																																																																															
+iou	yOy													 2 	 76 																																																																																																																																																			
+iou	yOy															 2 	 56 																																																																																																																																																	
+iou	yOy																	-2 	 74 																																																																																																																																															
+iou	yOy																			-2 	 34 																																																																																																																																													
+iou	yOy																					-2 	 24 																																																																																																																																											
+iou	yOy																							-2 	 98 																																																																																																																																									
+iou	yOy																													 2 	 98 																																																																																																																																			
+iou	yOy																															 2 	 102 																																																																																																																																	
+iou	yOy																																																																																									 2 	 94 																																																																							
+iou	yOy																																																																																											 2 	 96 																																																																					
+iou	yOy																																																																																													 2 	 96 																																																																			
+iou	yOy																																																																																															 2 	 96 																																																																	
+aii	aui			 2 	 88 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 108 																																																																																																																																																															
+aii	aui															 2 	 58 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 78 																																																																																																																																																			
+aii	aui																							 2 	 100 																																																																																																																																									
+aii	aui																															-2 	 100 																																																																																																																																	
+aii	aui																																																																																																																																																															-2 		 94 
+Aee	AOO															 2 	 60 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 80 																																																																																																																																																			
+Aee	AOO																	-2 	 72 																																																																																																																																															
+Aee	AOO																			-2 	 32 																																																																																																																																													
+iio	AiO			 2 	 90 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 110 																																																																																																																																																															
+iio	AiO					 2 	 84 																																																																																																																																																											
+iio	AiO							 2 	 64 																																																																																																																																																									
+iio	AiO									 2 	 58 																																																																																																																																																							
+iio	AiO											 2 	 38 																																																																																																																																																					
+iio	AiO																	-2 	 70 																																																																																																																																															
+iio	AiO																			-2 	 30 																																																																																																																																													
+iio	AiO																					-2 	 22 																																																																																																																																											
+iio	AiO																							-2 	 98 																																																																																																																																									
+iio	AiO																													 2 	 100 																																																																																																																																			
+iio	AiO																															 2 	 102 																																																																																																																																	
+iio	AiO																																																																																									 2 	 96 																																																																							
+iio	AiO																																																																																											 2 	 98 																																																																					
+iio	AiO																																																																																													 2 	 98 																																																																			
+iio	AiO																																																																																															 2 	 98 																																																																	
+oii	oaa			 2 	 92 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 112 																																																																																																																																																															
+oii	oaa							 2 	 66 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 86 																																																																																																																																																											
+oii	oaa											 2 	 40 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 2 	 60 																																																																																																																																																							
+oii	oaa																							 2 	 100 																																																																																																																																									
+oii	oaa																															-2 	 100 																																																																																																																																	
+oii	oaa																																																																																																																																													 2 	 102 																			
+oii	oaa																																																																																																																																															 2 	 98 																	
+oii	oaa																																																																																																																																																													 2 	 98 			
+oii	oaa																																																																																																																																																															 2 		 96 
+uii	uuu			 2 	 94 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 114 																																																																																																																																																															
+uii	uuu															 2 	 62 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 82 																																																																																																																																																			
+uii	uuu																							 2 	 102 																																																																																																																																									
+uii	uuu																															-2 	 98 																																																																																																																																	
+uii	uuu																																																																																																																																																													 2 	 100 			
+uii	uuu																																																																																																																																																															 2 		 98 
+ioa	OOA			 2 	 96 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 116 																																																																																																																																																															
+ioa	OOA					 2 	 88 																																																																																																																																																											
+ioa	OOA							 2 	 68 																																																																																																																																																									
+ioa	OOA													 2 	 84 																																																																																																																																																			
+ioa	OOA															 2 	 64 																																																																																																																																																	
+ioa	OOA																	-2 	 68 																																																																																																																																															
+ioa	OOA																			-2 	 28 																																																																																																																																													
+ioa	OOA																					-2 	 20 																																																																																																																																											
+ioa	OOA																							-2 	 100 																																																																																																																																									
+ioa	OOA																													 2 	 102 																																																																																																																																			
+ioa	OOA																															 2 	 100 																																																																																																																																	
+ioa	OOA																																																																																									 2 	 98 																																																																							
+ioa	OOA																																																																																											 2 	 100 																																																																					
+ioa	OOA																																																																																													 2 	 100 																																																																			
+ioa	OOA																																																																																															 2 	 100 																																																																	
+OAe	OAO															 2 	 66 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 86 																																																																																																																																																			
+OAe	OAO																	-2 	 66 																																																																																																																																															
+OAe	OAO																			-2 	 26 																																																																																																																																													
+iee	ioe			 2 	 98 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 118 																																																																																																																																																															
+iee	ioe															 2 	 68 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 88 																																																																																																																																																			
+iee	ioe																					 2 	 22 																																																																																																																																											
+iee	ioe																							 2 	 102 																																																																																																																																									
+iee	ioe																													-2 	 100 																																																																																																																																			
+iee	ioe																															-2 	 98 																																																																																																																																	
+iee	ioe																																																																																									-2 	 96 																																																																							
+iee	ioe																																																																																											-2 	 98 																																																																					
+iee	ioe																																																																																													-2 	 98 																																																																			
+iee	ioe																																																																																															-2 	 98 																																																																	
+iee	ioe																																																																																																																																									-2 	 92 																							
+iee	ioe																																																																																																																																											-2 	 88 																					
+iee	ioe																																																																																																																																													-2 	 100 																			
+iee	ioe																																																																																																																																															-2 	 96 																	
+iee	ioe																																																																																																																																																									-2 	 80 							
+iee	ioe																																																																																																																																																											-2 	 80 					
+iee	ioe																																																																																																																																																													-2 	 98 			
+iee	ioe																																																																																																																																																															-2 		 96 
+iai	iao			 2 	 100 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 120 																																																																																																																																																															
+iai	iao							 2 	 70 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 90 																																																																																																																																																											
+iai	iao															 2 	 70 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 2 	 90 																																																																																																																																																			
+iai	iao																							 2 	 104 																																																																																																																																									
+iai	iao																													-2 	 98 																																																																																																																																			
+iai	iao																															-2 	 96 																																																																																																																																	
+iai	iao																																																																																											-2 	 96 																																																																					
+iai	iao																																																																																															-2 	 96 																																																																	
+iai	iao																																																																																																																																																													 2 	 100 			
+iai	iao																																																																																																																																																															 2 		 98 
+iu	iy			 2 	 102 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 122 																																																																																																																																																															
+iu	iy																			-2 	 24 																																																																																																																																													
+iu	iy																					-2 	 20 																																																																																																																																											
+iu	iy																							-2 	 102 																																																																																																																																									
+iu	iy																															 2 	 98 																																																																																																																																	
+iu	iy																																																																																													 2 	 100 																																																																			
+iu	iy																																																																																															 2 	 98 																																																																	
+eau	AAy			 2 	 104 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 124 																																																																																																																																																															
+eau	AAy									 2 	 62 																																																																																																																																																							
+eau	AAy											 2 	 42 																																																																																																																																																					
+eau	AAy																			-2 	 22 																																																																																																																																													
+eau	AAy																					-2 	 18 																																																																																																																																											
+eau	AAy																							-2 	 100 																																																																																																																																									
+eau	AAy																															 2 	 100 																																																																																																																																	
+eau	AAy																																																																													 2 	 86 																																																																																			
+eau	AAy																																																																															 2 	 84 																																																																																	
+eau	AAy																																																																																													 2 	 102 																																																																			
+eau	AAy																																																																																															 2 	 100 																																																																	
+aio	aeo							 2 	 72 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 2 	 92 																																																																																																																																																											
+aio	aeo																					-2 	 16 																																																																																																																																											
+aio	aeo																																																																									-2 	 92 																																																																																							
+aio	aeo																																																																											-2 	 90 																																																																																					
+aio	aeo																																																																													-2 	 84 																																																																																			
+aio	aeo																																																																															-2 	 82 																																																																																	
+aio	aeo																																																																																																																																																									-2 	 78 							
+aio	aeo																																																																																																																																																											-2 	 78 					
+ioo	eOO			 2 	 106 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 2 	 126 																																																																																																																																																															
+ioo	eOO					 2 	 94 																																																																																																																																																											
+ioo	eOO							 2 	 74 																																																																																																																																																									
+ioo	eOO																	-2 	 64 																																																																																																																																															
+ioo	eOO																			-2 	 20 																																																																																																																																													
+ioo	eOO																					-2 	 14 																																																																																																																																											
+ioo	eOO																							-2 	 98 																																																																																																																																									
+ioo	eOO																													 2 	 100 																																																																																																																																			
+ioo	eOO																															 2 	 102 																																																																																																																																	
+ioo	eOO																																																																																									 2 	 98 																																																																							
+ioo	eOO																																																																																											 2 	 98 																																																																					
+ioo	eOO																																																																																													 2 	 104 																																																																			
+ioo	eOO																																																																																															 2 	 102 																																																																	
+uoi	uoe							 0.2 	 74.2 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 94.2 																																																																																																																																																											
+uoi	uoe																					-0.2 	 13.8 																																																																																																																																											
+uoi	uoe																																																																																																																																									-0.2 	 91.8 																							
+uoi	uoe																																																																																																																																											-0.2 	 87.8 																					
+uoi	uoe																																																																																																																																																									-0.2 	 77.8 							
+uoi	uoe																																																																																																																																																											-0.2 	 77.8 					
+eiu	eeu							 0.2 	 74.4 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 94.4 																																																																																																																																																											
+eiu	eeu																					-0.2 	 13.6 																																																																																																																																											
+eiu	eeu																																																																													-0.2 	 83.8 																																																																																			
+ai	au			 0.2 	 106.2 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 126.2 																																																																																																																																																															
+ai	au															 0.2 	 70.2 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 0.200000000000003 	 90.2 																																																																																																																																																			
+ai	au																							 0.2 	 98.2 																																																																																																																																									
+ai	au																															-0.2 	 101.8 																																																																																																																																	
+ai	au																																																																																																																																																													 0.2 	 100.2 			
+ai	au																																																																																																																																																															 0.2 		 98.2 
+iyi	iui			 0.2 	 106.4 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 126.4 																																																																																																																																																															
+iyi	iui																			 0.2 	 20.2 																																																																																																																																													
+iyi	iui																					 0.2 	 13.8 																																																																																																																																											
+iyi	iui																							 0.2 	 98.4 																																																																																																																																									
+iyi	iui																															-0.2 	 101.6 																																																																																																																																	
+iyi	iui																																																																																													-0.2 	 103.8 																																																																			
+iyi	iui																																																																																															-0.2 	 101.8 																																																																	
+iyi	iui																																																																																																																																																													-0.2 	 100 			
+iyi	iui																																																																																																																																																															-0.2 		 98 
+eAe	eae			 0.2 	 106.6 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 126.6 																																																																																																																																																															
+eAe	eae																			 0.2 	 20.4 																																																																																																																																													
+eAe	eae																					 0.2 	 14 																																																																																																																																											
+eAe	eae																							 0.2 	 98.6 																																																																																																																																									
+eAe	eae																															-0.2 	 101.4 																																																																																																																																	
+eAe	eae																																																																													-0.2 	 83.6 																																																																																			
+eAe	eae																																																																															-0.2 	 81.8 																																																																																	
+eAe	eae																																																																																													-0.2 	 103.6 																																																																			
+eAe	eae																																																																																															-0.2 	 101.6 																																																																	
+eAe	eae																																																																																																																																																									-0.2 	 77.6 							
+eAe	eae																																																																																																																																																											-0.2 	 77.6 					
+eAe	eae																																																																																																																																																													-0.2 	 99.8 			
+eAe	eae																																																																																																																																																															-0.2 		 97.8 
+oii	oua			 0.2 	 106.8 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 126.8 																																																																																																																																																															
+oii	oua							 0.2 	 74.6 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 94.6 																																																																																																																																																											
+oii	oua											 0.2 	 42.2 																																																																																																																																																					
+Apriori	Id(Lo)Syl1 >> Id(Lo)									 0.200000000000003 	 62.2 																																																																																																																																																							
+oii	oua															 0.2 	 70.4 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 0.200000000000003 	 90.4 																																																																																																																																																			
+oii	oua																							 0.2 	 98.8 																																																																																																																																									
+oii	oua																															-0.2 	 101.2 																																																																																																																																	
+oii	oua																																																																																																																																													 0.2 	 100.2 																			
+oii	oua																																																																																																																																															 0.2 	 96.2 																	
+oii	oua																																																																																																																																																													 0.2 	 100 			
+oii	oua																																																																																																																																																															 0.2 		 98 
+aia	aea							 0.2 	 74.8 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 94.8 																																																																																																																																																											
+aia	aea																					-0.2 	 13.8 																																																																																																																																											
+aia	aea																																																																													-0.2 	 83.4 																																																																																			
+aia	aea																																																																															-0.2 	 81.6 																																																																																	
+aia	aea																																																																																																																																																									-0.2 	 77.4 							
+aia	aea																																																																																																																																																											-0.2 	 77.4 					
+uia	uea							 0.2 	 75 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 95 																																																																																																																																																											
+uia	uea																					-0.2 	 13.6 																																																																																																																																											
+uia	uea																																																																													-0.2 	 83.2 																																																																																			
+uia	uea																																																																															-0.2 	 81.4 																																																																																	
+uia	uea																																																																																																																																																									-0.2 	 77.2 							
+uia	uea																																																																																																																																																											-0.2 	 77.2 					
+iai	iae							 0.2 	 75.2 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 95.2 																																																																																																																																																											
+iai	iae																					-0.2 	 13.4 																																																																																																																																											
+iai	iae																																																																																																																																																									-0.2 	 77 							
+iai	iae																																																																																																																																																											-0.2 	 77 					
+aii	aee							 0.2 	 75.4 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 95.4 																																																																																																																																																											
+aii	aee																					-0.2 	 13.2 																																																																																																																																											
+aii	aee																																																																																																																																																									-0.2 	 76.8 							
+aii	aee																																																																																																																																																											-0.2 	 76.8 					
+iia	iea							 0.2 	 75.6 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 95.6 																																																																																																																																																											
+iia	iea																					-0.2 	 13 																																																																																																																																											
+iia	iea																																																																													-0.2 	 83 																																																																																			
+iia	iea																																																																															-0.2 	 81.2 																																																																																	
+iey	ieu			 0.2 	 107 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 127 																																																																																																																																																															
+iey	ieu																			 0.2 	 20.6 																																																																																																																																													
+iey	ieu																					 0.2 	 13.2 																																																																																																																																											
+iey	ieu																							 0.2 	 99 																																																																																																																																									
+iey	ieu																															-0.2 	 101 																																																																																																																																	
+iey	ieu																																																																													-0.2 	 82.8 																																																																																			
+iey	ieu																																																																															-0.2 	 81 																																																																																	
+iey	ieu																																																																																													-0.2 	 103.4 																																																																			
+iey	ieu																																																																																															-0.2 	 101.4 																																																																	
+iO	io			 0.2 	 107.2 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 127.2 																																																																																																																																																															
+iO	io																	 0.2 	 64.2 																																																																																																																																															
+iO	io																			 0.2 	 20.8 																																																																																																																																													
+iO	io																					 0.2 	 13.4 																																																																																																																																											
+iO	io																							 0.2 	 99.2 																																																																																																																																									
+iO	io																													-0.2 	 99.8 																																																																																																																																			
+iO	io																															-0.2 	 100.8 																																																																																																																																	
+iO	io																																																																																									-0.2 	 97.8 																																																																							
+iO	io																																																																																											-0.2 	 97.8 																																																																					
+iO	io																																																																																													-0.2 	 103.2 																																																																			
+iO	io																																																																																															-0.2 	 101.2 																																																																	
+eAi	eai			 0.2 	 107.4 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 127.4 																																																																																																																																																															
+eAi	eai																			 0.2 	 21 																																																																																																																																													
+eAi	eai																					 0.2 	 13.6 																																																																																																																																											
+eAi	eai																							 0.2 	 99.4 																																																																																																																																									
+eAi	eai																															-0.2 	 100.6 																																																																																																																																	
+eAi	eai																																																																													-0.2 	 82.6 																																																																																			
+eAi	eai																																																																															-0.2 	 80.8 																																																																																	
+eAi	eai																																																																																													-0.2 	 103 																																																																			
+eAi	eai																																																																																															-0.2 	 101 																																																																	
+eAi	eai																																																																																																																																																													-0.2 	 99.8 			
+eAi	eai																																																																																																																																																															-0.2 		 97.8 
+aio	aeo							 0.2 	 75.8 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 95.8 																																																																																																																																																											
+aio	aeo																					-0.2 	 13.4 																																																																																																																																											
+aio	aeo																																																																									-0.2 	 91.8 																																																																																							
+aio	aeo																																																																											-0.2 	 89.8 																																																																																					
+aio	aeo																																																																													-0.2 	 82.4 																																																																																			
+aio	aeo																																																																															-0.2 	 80.6 																																																																																	
+aio	aeo																																																																																																																																																									-0.2 	 76.6 							
+aio	aeo																																																																																																																																																											-0.2 	 76.6 					
+aio	aeo							 0.2 	 76 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 96 																																																																																																																																																											
+aio	aeo																					-0.2 	 13.2 																																																																																																																																											
+aio	aeo																																																																									-0.2 	 91.6 																																																																																							
+aio	aeo																																																																											-0.2 	 89.6 																																																																																					
+aio	aeo																																																																													-0.2 	 82.2 																																																																																			
+aio	aeo																																																																															-0.2 	 80.4 																																																																																	
+aio	aeo																																																																																																																																																									-0.2 	 76.4 							
+aio	aeo																																																																																																																																																											-0.2 	 76.4 					
+eAe	eae			 0.2 	 107.6 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.200000000000003 	 127.6 																																																																																																																																																															
+eAe	eae																			 0.2 	 21.2 																																																																																																																																													
+eAe	eae																					 0.2 	 13.4 																																																																																																																																											
+eAe	eae																							 0.2 	 99.6 																																																																																																																																									
+eAe	eae																															-0.2 	 100.4 																																																																																																																																	
+eAe	eae																																																																													-0.2 	 82 																																																																																			
+eAe	eae																																																																															-0.2 	 80.2 																																																																																	
+eAe	eae																																																																																													-0.2 	 102.8 																																																																			
+eAe	eae																																																																																															-0.2 	 100.8 																																																																	
+eAe	eae																																																																																																																																																									-0.2 	 76.2 							
+eAe	eae																																																																																																																																																											-0.2 	 76.2 					
+eAe	eae																																																																																																																																																													-0.2 	 99.6 			
+eAe	eae																																																																																																																																																															-0.2 		 97.6 
+iui	iue							 0.2 	 76.2 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 96.2 																																																																																																																																																											
+iui	iue																					-0.2 	 13.2 																																																																																																																																											
+iui	iue																																																																																																																																																									-0.2 	 76 							
+iui	iue																																																																																																																																																											-0.2 	 76 					
+aii	aei							 0.2 	 76.4 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 96.4 																																																																																																																																																											
+aii	aei																					-0.2 	 13 																																																																																																																																											
+aii	aei																																																																																																																																																									-0.2 	 75.8 							
+aii	aei																																																																																																																																																											-0.2 	 75.8 					
+aoi	aoe							 0.2 	 76.6 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.200000000000003 	 96.6 																																																																																																																																																											
+aoi	aoe																					-0.2 	 12.8 																																																																																																																																											
+aoi	aoe																																																																																																																																									-0.2 	 91.6 																							
+aoi	aoe																																																																																																																																											-0.2 	 87.6 																					
+aoi	aoe																																																																																																																																																									-0.2 	 75.6 							
+aoi	aoe																																																																																																																																																											-0.2 	 75.6 					
+oii	oee							 0.02 	 76.62 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.62 																																																																																																																																																											
+oii	oee																					-0.02 	 12.78 																																																																																																																																											
+oii	oee																																																																																																																																									-0.02 	 91.58 																							
+oii	oee																																																																																																																																											-0.02 	 87.58 																					
+oii	oee																																																																																																																																																									-0.02 	 75.58 							
+oii	oee																																																																																																																																																											-0.02 	 75.58 					
+uia	uea							 0.02 	 76.64 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.64 																																																																																																																																																											
+uia	uea																					-0.02 	 12.76 																																																																																																																																											
+uia	uea																																																																													-0.02 	 81.98 																																																																																			
+uia	uea																																																																															-0.02 	 80.18 																																																																																	
+uia	uea																																																																																																																																																									-0.02 	 75.56 							
+uia	uea																																																																																																																																																											-0.02 	 75.56 					
+eai	eae							 0.02 	 76.66 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.66 																																																																																																																																																											
+eai	eae																					-0.02 	 12.74 																																																																																																																																											
+eai	eae																																																																																																																																																									-0.02 	 75.54 							
+eai	eae																																																																																																																																																											-0.02 	 75.54 					
+eui	eue							 0.02 	 76.68 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.68 																																																																																																																																																											
+eui	eue																					-0.02 	 12.72 																																																																																																																																											
+eui	eue																																																																																																																																																									-0.02 	 75.52 							
+eui	eue																																																																																																																																																											-0.02 	 75.52 					
+eia	eea							 0.02 	 76.7 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.7 																																																																																																																																																											
+eia	eea																					-0.02 	 12.7 																																																																																																																																											
+eia	eea																																																																													-0.02 	 81.96 																																																																																			
+eie	eiO															 0.02 	 70.42 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 0.019999999999996 	 90.42 																																																																																																																																																			
+eie	eiO																	-0.02 	 64.18 																																																																																																																																															
+eie	eiO																			-0.02 	 21.18 																																																																																																																																													
+oui	oue							 0.02 	 76.72 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.72 																																																																																																																																																											
+oui	oue																					-0.02 	 12.68 																																																																																																																																											
+oui	oue																																																																																																																																											-0.02 	 87.56 																					
+oui	oue																																																																																																																																																									-0.02 	 75.5 							
+oui	oue																																																																																																																																																											-0.02 	 75.5 					
+eA	ea			 0.02 	 107.62 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.019999999999996 	 127.62 																																																																																																																																																															
+eA	ea																			 0.02 	 21.2 																																																																																																																																													
+eA	ea																					 0.02 	 12.7 																																																																																																																																											
+eA	ea																							 0.02 	 99.62 																																																																																																																																									
+eA	ea																															-0.02 	 100.38 																																																																																																																																	
+eA	ea																																																																													-0.02 	 81.94 																																																																																			
+eA	ea																																																																															-0.02 	 80.16 																																																																																	
+eA	ea																																																																																													-0.02 	 102.78 																																																																			
+eA	ea																																																																																															-0.02 	 100.78 																																																																	
+eiu	eeu							 0.02 	 76.74 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.74 																																																																																																																																																											
+eiu	eeu																					-0.02 	 12.68 																																																																																																																																											
+eiu	eeu																																																																													-0.02 	 81.92 																																																																																			
+eia	eea							 0.02 	 76.76 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.76 																																																																																																																																																											
+eia	eea																					-0.02 	 12.66 																																																																																																																																											
+eia	eea																																																																													-0.02 	 81.9 																																																																																			
+aii	aui			 0.02 	 107.64 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 0.019999999999996 	 127.64 																																																																																																																																																															
+aii	aui															 0.02 	 70.44 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 0.019999999999996 	 90.44 																																																																																																																																																			
+aii	aui																							 0.02 	 99.64 																																																																																																																																									
+aii	aui																															-0.02 	 100.36 																																																																																																																																	
+aii	aui																																																																																																																																																															-0.02 		 97.58 
+ai	ae							 0.02 	 76.78 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 0.019999999999996 	 96.78 																																																																																																																																																											
+ai	ae																					-0.02 	 12.64 																																																																																																																																											
+ai	ae																																																																																																																																																									-0.02 	 75.48 							
+ai	ae																																																																																																																																																											-0.02 	 75.48 					
+aio	aeo							 0.002 	 76.782 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.782 																																																																																																																																																											
+aio	aeo																					-0.002 	 12.638 																																																																																																																																											
+aio	aeo																																																																									-0.002 	 91.598 																																																																																							
+aio	aeo																																																																											-0.002 	 89.598 																																																																																					
+aio	aeo																																																																													-0.002 	 81.898 																																																																																			
+aio	aeo																																																																															-0.002 	 80.158 																																																																																	
+aio	aeo																																																																																																																																																									-0.002 	 75.478 							
+aio	aeo																																																																																																																																																											-0.002 	 75.478 					
+uii	uiu			 0.002 	 107.642 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 1.99999999999534E-03 	 127.642 																																																																																																																																																															
+uii	uiu															 0.002 	 70.442 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 1.99999999999534E-03 	 90.442 																																																																																																																																																			
+uii	uiu																							 0.002 	 99.642 																																																																																																																																									
+uii	uiu																															-0.002 	 100.358 																																																																																																																																	
+uii	uiu																																																																																													-0.002 	 102.778 																																																																			
+uii	uiu																																																																																															-0.002 	 100.778 																																																																	
+aoi	aoe							 0.002 	 76.784 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.784 																																																																																																																																																											
+aoi	aoe																					-0.002 	 12.636 																																																																																																																																											
+aoi	aoe																																																																																																																																									-0.002 	 91.578 																							
+aoi	aoe																																																																																																																																											-0.002 	 87.558 																					
+aoi	aoe																																																																																																																																																									-0.002 	 75.476 							
+aoi	aoe																																																																																																																																																											-0.002 	 75.476 					
+oii	oee							 0.002 	 76.786 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.786 																																																																																																																																																											
+oii	oee																					-0.002 	 12.634 																																																																																																																																											
+oii	oee																																																																																																																																									-0.002 	 91.576 																							
+oii	oee																																																																																																																																											-0.002 	 87.556 																					
+oii	oee																																																																																																																																																									-0.002 	 75.474 							
+oii	oee																																																																																																																																																											-0.002 	 75.474 					
+ui	ue							 0.002 	 76.788 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.788 																																																																																																																																																											
+ui	ue																					-0.002 	 12.632 																																																																																																																																											
+ui	ue																																																																																																																																																									-0.002 	 75.472 							
+ui	ue																																																																																																																																																											-0.002 	 75.472 					
+oii	oee							 0.002 	 76.79 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.79 																																																																																																																																																											
+oii	oee																					-0.002 	 12.63 																																																																																																																																											
+oii	oee																																																																																																																																									-0.002 	 91.574 																							
+oii	oee																																																																																																																																											-0.002 	 87.554 																					
+oii	oee																																																																																																																																																									-0.002 	 75.47 							
+oii	oee																																																																																																																																																											-0.002 	 75.47 					
+aii	aoe			 0.002 	 107.644 																																																																																																																																																													
+Apriori	Id(Bk)Syl1 >> Id(Bk)	 1.99999999999534E-03 	 127.644 																																																																																																																																																															
+aii	aoe							 0.002 	 76.792 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.792 																																																																																																																																																											
+aii	aoe															 0.002 	 70.444 																																																																																																																																																	
+Apriori	Id(Rd)Syl1 >> Id(Rd)													 1.99999999999534E-03 	 90.444 																																																																																																																																																			
+aii	aoe																					-0.002 	 12.628 																																																																																																																																											
+aii	aoe																							 0.002 	 99.644 																																																																																																																																									
+aii	aoe																													-0.002 	 99.798 																																																																																																																																			
+aii	aoe																															-0.002 	 100.356 																																																																																																																																	
+aii	aoe																																																																																																																																									-0.002 	 91.572 																							
+aii	aoe																																																																																																																																											-0.002 	 87.552 																					
+aii	aoe																																																																																																																																													-0.002 	 100.198 																			
+aii	aoe																																																																																																																																															-0.002 	 96.198 																	
+aii	aoe																																																																																																																																																									-0.002 	 75.468 							
+aii	aoe																																																																																																																																																											-0.002 	 75.468 					
+aii	aoe																																																																																																																																																															-0.002 		 97.578 
+eoi	eoe							 0.002 	 76.794 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.794 																																																																																																																																																											
+eoi	eoe																					-0.002 	 12.626 																																																																																																																																											
+eoi	eoe																																																																																																																																									-0.002 	 91.57 																							
+eoi	eoe																																																																																																																																											-0.002 	 87.55 																					
+eoi	eoe																																																																																																																																																									-0.002 	 75.466 							
+eoi	eoe																																																																																																																																																											-0.002 	 75.466 					
+oii	oei							 0.002 	 76.796 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.796 																																																																																																																																																											
+oii	oei																					-0.002 	 12.624 																																																																																																																																											
+oii	oei																																																																																																																																									-0.002 	 91.568 																							
+oii	oei																																																																																																																																											-0.002 	 87.548 																					
+oii	oei																																																																																																																																																									-0.002 	 75.464 							
+oii	oei																																																																																																																																																											-0.002 	 75.464 					
+oai	oae							 0.002 	 76.798 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.798 																																																																																																																																																											
+oai	oae																					-0.002 	 12.622 																																																																																																																																											
+oai	oae																																																																																																																																											-0.002 	 87.546 																					
+oai	oae																																																																																																																																																									-0.002 	 75.462 							
+oai	oae																																																																																																																																																											-0.002 	 75.462 					
+oia	oea							 0.002 	 76.8 																																																																																																																																																									
+Apriori	Id(Hi)Syl1 >> Id(Hi)					 1.99999999999534E-03 	 96.8 																																																																																																																																																											
+oia	oea																					-0.002 	 12.62 																																																																																																																																											
+oia	oea																																																																													-0.002 	 81.896 																																																																																			
+oia	oea																																																																															-0.002 	 80.156 																																																																																	
+oia	oea																																																																																																																																									-0.002 	 91.566 																							
+oia	oea																																																																																																																																											-0.002 	 87.544 																					
+oia	oea																																																																																																																																																									-0.002 	 75.46 							
+oia	oea																																																																																																																																																											-0.002 	 75.46 					

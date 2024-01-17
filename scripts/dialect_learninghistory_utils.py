@@ -7,15 +7,15 @@ from itertools import product
 
 HISTORYFILES = [
     # "K407p - OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000.txt",
-    "simulation_outputs/20231107_Magri_outputs/Fi153_python_OTSoft-PDDP-Fin_GLA/Fi153 - OTSoft-PDDP-Fin_GLA_HISTORY1000.txt",
-    "simulation_outputs/20231107_Magri_outputs/NE153_python_OTSoft-PDDP-NEst_GLA/NE153 - OTSoft-PDDP-NEst_GLA_HISTORY1000.txt"
+    "simulation_outputs/20240104_Magri_outputs/Fi153_python_OTSoft-PDDP-Fin_GLA/Fi153 - OTSoft-PDDP-Fin_GLA_HISTORY1000.txt",
+    "simulation_outputs/20240104_Magri_outputs/NE153_python_OTSoft-PDDP-NEst_GLA/NE153 - OTSoft-PDDP-NEst_GLA_HISTORY1000.txt"
 ]
 
 
 def convert_historyfile(sourcepath, destpath):
     replacementpairs = {
-        "õ":"7",
-        "trial num":"trialnum",
+        # "õ":"7",
+        # "trial num":"trialnum",
         "*":"star_",
         "(":"",
         ")":""

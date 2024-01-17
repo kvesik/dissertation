@@ -1,0 +1,5 @@
+Trials	PlastMark	PlastFaith	NoiseMark	NoiseFaith
+1000	2	2	2	2
+1000	0.2	0.2	2	2
+1000	0.02	0.02	2	2
+1000	0.002	0.002	2	2

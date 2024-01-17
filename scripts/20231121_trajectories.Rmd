@@ -22,11 +22,12 @@ We begin by setting options (output not shown) and loading the appropriate libra
 library(tidyverse)
 # for plotting
 library(ggplot2)
-library(ggbeeswarm)
-library(vipor)
-library(viridis)
-library(ggstance)
-library(ggrepel)
+library(cowplot)
+# library(ggbeeswarm)
+# library(vipor)
+# library(viridis)
+# library(ggstance)
+# library(ggrepel)
 library(scales)
 ```
 
@@ -57,13 +58,13 @@ starbackfronts <- paste("star", starbackfronts, sep="")
 ```
 
 
-## Data
+## Column titles
 
-We load the data from file, and omit columns irrelevant to this analysis.
+Generate options for column title vectors, according to experiment type.
 
-```{r data}
+```{r coltitles}
 
-numoutin <- c("trialnum", "generated", "heard")
+num_out_in <- c("trialnum", "generated", "heard")
 
 identconswchanges <- paste0(rep(identcons, each=2), c("_change", ""))
 maxconswchanges <- paste0(rep(maxcons, each=2), c("_change", ""))
@@ -74,21 +75,28 @@ starfrontbackswchanges <- paste0(rep(starfrontbacks, each=2), c("_change", ""))
 starbackfrontswchanges <- paste0(rep(starbackfronts, each=2), c("_change", ""))
 
 # append different combinations of column titles for different types of simulations
-coltitlesall_max0nonempty0 <- c(numoutin, identconswchanges, starfrontswchanges, starbackswchanges, starfrontbackswchanges, starbackfrontswchanges)
-coltitlesall_max1nonempty0 <- c(numoutin, identconswchanges, maxconswchanges, starfrontswchanges, starbackswchanges, starfrontbackswchanges, starbackfrontswchanges)
-coltitlesall_max1nonempty1 <- c(numoutin, identconswchanges, maxconswchanges, nonemptywchanges, starfrontswchanges, starbackswchanges, starfrontbackswchanges, starbackfrontswchanges)
+coltitlesall_max0nonempty0 <- c(num_out_in, identconswchanges, starfrontswchanges, starbackswchanges, starfrontbackswchanges, starbackfrontswchanges)
+coltitlesall_max1nonempty0 <- c(num_out_in, identconswchanges, maxconswchanges, starfrontswchanges, starbackswchanges, starfrontbackswchanges, starbackfrontswchanges)
+coltitlesall_max1nonempty1 <- c(num_out_in, identconswchanges, maxconswchanges, nonemptywchanges, starfrontswchanges, starbackswchanges, starfrontbackswchanges, starbackfrontswchanges)
 
 # select different combinations of columns for different types of simulations
 coltitlestoselect_max0nonempty0 <- c("trialnum", identcons, starfronts, starbacks, starfrontbacks, starbackfronts)
 coltitlestoselect_max1nonempty0 <- c("trialnum", identcons, maxcons, starfronts, starbacks, starfrontbacks, starbackfronts)
 coltitlestoselect_max1nonempty1 <- c("trialnum", identcons, maxcons, nonempty, starfronts, starbacks, starfrontbacks, starbackfronts)
 
+```
 
+
+## Data
+
+Load the data from file, and omit columns irrelevant to this analysis.
+
+```{r data}
 prepare_data <- function(filename) {
   if (!grepl("wdel", filename)) {
     coltitlesall <- coltitlesall_max0nonempty0
     coltitlestoselect <- coltitlestoselect_max0nonempty0
-  } else if (grepl("prs", filename)) {
+  } else if (grepl("-ne", filename)) {
     coltitlesall <- coltitlesall_max1nonempty1
     coltitlestoselect <- coltitlestoselect_max1nonempty1
   } else {
@@ -98,24 +106,26 @@ prepare_data <- function(filename) {
   
   # load data from file, name columns, remove unwanted columns
   df <- read_tsv(paste0("..\\simulation_outputs\\",filename), 
+                 # https://stackoverflow.com/questions/20641222/reading-csv-using-r-where-header-is-on-the-second-line
+                 skip = 1,
+                 # https://readr.tidyverse.org/reference/read_delim.html
+                 col_names = coltitlesall,
                  col_types = list(
                    trialnum = col_integer(),
                    generated = col_character(),
                    heard = col_character(),
                    .default = col_double()))
 
-  colnames(df) <- coltitlesall
   df <- 
     df %>%
     select(all_of(coltitlestoselect))
   
   # fill in missing data and adjust trial number for initial state
+  df$trialnum[1] <- 0  # initial values
   df <- 
     df %>%
     fill(all_of(coltitlestoselect)) %>%
     fill(all_of(coltitlestoselect), .direction = "up")
-  df$trialnum[1] <- 0
-
   
   
   # just keep the last entry for each trial number 
@@ -133,14 +143,18 @@ prepare_data <- function(filename) {
     df %>% 
     pivot_longer(!trialnum, names_to="constraint", values_to="value")
   
+  # grab the last value (ie, the one in the highest trialnum) of each constraint
   finalvalues <- df %>% 
     group_by(constraint) %>% 
     top_n(1, trialnum) %>%
     pull(value) %>%
     round(digits=2)
   
-  constraint_levels <- coltitlestoselect
+  constraint_levels <- coltitlestoselect[-1]  # not including trialnum
   constraint_labels <- constraint_levels # TODO for now...
+  constraint_labels <- str_replace(constraint_labels, "star", "*")
+  constraint_labels <- str_replace(constraint_labels, "_", "...")
+  constraint_labels <- str_replace(constraint_labels, "Bk", "(Bk)")
   # constraint_labels <- c("*F", "*ɤ", "*e", "Id-Syl1(Bk)", "Id(Bk)", "Agr(Bk)", "GMH(F)", "GMH(ɤ)", "GMH(e)")
   
   constraint_labelswithvalues <- paste(constraint_labels, "→", finalvalues)
@@ -148,21 +162,96 @@ prepare_data <- function(filename) {
    
   return(df)
 }
+```
+## Plots
 
-plot_trajectories <- function(df, lang, trialsperbatch, experimentnum) {
+Prepare and plot the trajectories. 
+
+```{r plots}
+
+removeconvalue <- function(labels) {
+  cons <- rep("", each=length(labels))
+  for (i in 1:length(labels)) {
+    cons[i] <- strsplit(labels[i], split = " ")[[1]][1]
+  }
+  return(cons)
+}
+
+map_colours <- function(lang, cons, labels) {
+  # set up the constraint / colour map in its default form (common across languages)
+  colourmap <- rep("darkgrey", each=length(cons))
+  names(colourmap) <- cons
+  colourmap["Id(Bk)Syl1"] <- "cyan"
+  if ("Max" %in% names(colourmap)) {
+    colourmap[c("Max", "MaxSyl1")] <- "cyan"
+  }
+  colourmap["Id(Bk)"] <- "yellow"
+  
+  # per-language colour codings
+  if (tolower(lang) == 'ne') {
+    # full bans
+    colourmap[c("*B1")] <- "cyan"
+    # vowel harmony
+    # n/a 
+    # positional restrictions
+    colourmap[c("*B2", "*F3")] <- "green"
+    # must be inactive (outranked by Id(Bk))
+    colourmap[c("*B3", "*B5", "*F4", "*F5")] <- "orange"
+    colourmap[c("*F1B3", "*F1...B3", "*F1B5", "*F1...B5", "*F3B3", "*F3...B3", "*F3B5", "*F3...B5", "*F4B5", "*F4...B5", "*F5B3", "*F5...B3", "*F5B5", "*F5...B5", "*B2F4", "*B2...F4", "*B2F5", "*B2...F5", "*B3F4", "*B3...F4", "*B3F5", "*B3...F5", "*B5F4", "*B5...F4", "*B5F5", "*B5...F5")] <- "orange"
+  } else if (tolower(lang) == 'fi') {
+    # full bans
+    colourmap[c("*B2")] <- "cyan"
+    # vowel harmony
+    colourmap[c("*F1B5", "*F1...B5", "*F3B5", "*F3...B5", "*B3F3", "*B3...F3", "*B5F3", "*B5...F3")] <- "cyan"
+    # positional restrictions
+    # n/a
+    # must be inactive (outranked by Id(Bk))
+    colourmap[c("*B3", "*B5", "*F1", "*F3", "*F4", "*F5")] <- "orange"
+    colourmap[c("*F4B3", "*F4...B3", "*F4B5", "*F4...B5", "*F5B3", "*F5...B3", "*F5B5", "*F5...B5", "*B3F4", "*B3...F4", "*B3F5", "*B3...F5", "*B5F4", "*B5...F4", "*B5F5", "*B5...F5")] <- "orange"
+  } else if (tolower(lang) == 'ns') {
+    # full bans
+    # n/a
+    # vowel harmony
+    colourmap[c("*F1B5", "*F1...B5", "*F3B5", "*F3...B5", "*F4B5", "*F4...B5", "*B1F4", "*B1...F4", "*B2F4", "*B2...F4", "*B3F4", "*B3...F4", "*B5F4", "*B5...F4")] <- "cyan"
+    # positional restrictions
+    colourmap[c("*B1")] <- "green"
+    # must be inactive (outranked by Id(Bk))
+    colourmap[c("*B2", "*B3", "*B5", "*F1", "*F3", "*F4", "*F5")] <- "orange"
+    colourmap[c("*F5B2", "*F5...B2", "*F5B3", "*F5...B3", "*F5B5", "*F5...B5", "*B2F5", "*B2...F5", "*B3F5", "*B3...F5", "*B5F5", "*B5...F5")] <- "orange"
+  } else if (tolower(lang) == 'ss') {
+    # full bans
+    # n/a
+    # vowel harmony
+    colourmap[c("*F1B2", "*F3B2", "*B1F1", "*B1...F1", "*B1F3", "*B1...F3", "*B1F4", "*B1...F4", "*B2F1", "*B2...F1", "*B2F3", "*B2...F3", "*B2F4", "*B2...F4", "*B3F1", "*B3...F1", "*B3F3", "*B3...F3", "*B3F4", "*B3...F4", "*B5F1", "*B5...F1", "*B5F3", "*B5...F3", "*B5F4", "*B5...F4")] <- "cyan"
+    # positional restrictions
+    colourmap[c("*B1", "*F1")] <- "green"
+    # must be inactive (outranked by Id(Bk))
+    colourmap[c("*B2", "*B3", "*B5", "*F1", "*F3", "*F4", "*F5")] <- "orange"
+    colourmap[c("*F5B2", "*F5...B2", "*F5B3", "*F5...B3", "*F5B5", "*F5...B5", "*B2F5", "*B2...F5", "*B3F5", "*B3...F5", "*B5F5", "*B5...F5")] <- "orange"
+  }
+  # get the arrows and the ending values in there, since that's the format that ggplot will recognize
+  names(colourmap) <- labels
+  return(colourmap)
+}
+
+plot_trajectories <- function(df, colourmap, lang, trialsperbatch, experimentnum) {
 
   trajectoryplot <-
-    ggplot(data=df, mapping=aes(x=trialnum, y=value)) +
-    geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), size=0.6, show.legend=FALSE) +  # can replace all the fct business with just "constraint"
-    ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", experimentnum, ")")) +
+    ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
+    geom_line(linewidth=0.6, show.legend=FALSE) +
+    # geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), linewidth=0.6, show.legend=FALSE) +  # can replace all the fct business with just "constraint"
+    ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", lang, experimentnum, ")")) +
     theme(axis.text=element_text(size=11, colour="black"),
         plot.title = element_text(hjust = 0.5),
         panel.grid.minor.x = element_blank(),
         panel.grid.minor.y = element_blank()) +
     labs(y= "Constraint value", x = "Learning trial #") +
-    scale_color_viridis_d(name = "constraint") +
+    # https://tidyverse.github.io/ggplot2-docs/reference/scale_manual.html
+    scale_colour_manual(values=colourmap, aesthetics="colour", na.value="red") +
+    # scale_color_viridis_d(name = "constraint") +
     scale_x_continuous(trans="log10", labels=comma_format(accuracy=1)) +
-    scale_y_continuous(limits=c(0,115), breaks=seq(from=0, to=110, by=10))
+    # TODO maybe specify limits dependent on actual range of ending values?
+    scale_y_continuous(limits=c(50,150), breaks=seq(from=50, to=150, by=10))
     # scale_y_continuous(sec.axis = sec_axis(~ ., breaks = data_ends2)) +
   # geom_text_repel(
   #   aes(label = constraint), data = data_ends, 
@@ -172,13 +261,51 @@ plot_trajectories <- function(df, lang, trialsperbatch, experimentnum) {
   print(trajectoryplot)
 }
 
+plot_legends <- function(df, colourmap, lang, trialsperbatch, experimentnum) {
+
+  legendplot <-
+    ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
+    # https://stackoverflow.com/questions/54536094/ggplot-order-legend-using-last-values-on-x-axis
+    geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), linewidth=0.6, show.legend=TRUE) +
+    # ggplot(data=df, mapping=aes(x=trialnum, y=value)) +
+    # geom_line(aes(color=colourmap), linewidth=0.6, show.legend=TRUE) + 
+    # geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), linewidth=0.6, show.legend=TRUE) +  # can replace all the fct business with just "constraint"
+    ggtitle(paste0(lang, experimentnum)) +
+    theme(axis.text=element_text(size=11, colour="black"),
+        plot.title = element_text(hjust = 0.5),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.minor.y = element_blank()) +
+    labs(y= "Constraint value", x = "Learning trial #") +
+    scale_colour_manual(values=colourmap, aesthetics="colour", na.value="red") +
+    # scale_color_viridis_d(name = "constraint") +
+    scale_x_continuous(trans="log10", labels=comma_format(accuracy=1)) +
+    scale_y_continuous(limits=c(50,150), breaks=seq(from=50, to=150, by=10))
+    # scale_y_continuous(sec.axis = sec_axis(~ ., breaks = data_ends2)) +
+  # geom_text_repel(
+  #   aes(label = constraint), data = data_ends, 
+  #   size = 3
+  #   )
+  # https://stackoverflow.com/questions/12041042/how-to-plot-just-the-legends-in-ggplot2
+  leg <- get_legend(legendplot)
+  legendonly <- ggdraw(plot_grid(NULL, leg, ncol=1))
+    
+  # print(legendplot)
+  print(legendonly)
+}
+```
+## Metadata
+
+Loop through the specified history files and collect/organize metadata. 
+
+```{r metadata}
+
 extract_langtrialsexpnum <- function(filename) {
   filename_levels <- str_split_1(filename, "\\\\")
   num_levels <- length(filename_levels)
   filename_only <- filename_levels[num_levels]
   containing_folder <- filename_levels[num_levels-1]
   
-  if (grepl("FullHistory_fixed", filename_only)) {
+  if (grepl("FullHistory", filename_only)) {
     # output is from OTSoft
     langstring <- substr(containing_folder, 1, 2)
     expnumstring <- substr(containing_folder, 3, 5)
@@ -195,9 +322,6 @@ extract_langtrialsexpnum <- function(filename) {
     "5000",
     "10000"
   )
-  print(langstring)
-  print(trialsstring)
-  print(expnumstring)
   return(c(langstring, trialsstring, expnumstring))
 }
 
@@ -206,63 +330,28 @@ makeplot <- function(filename) {
   lang <- info[1]
   trials <- info[2]
   expnum <- info[3]
-  print(lang)
-  print(trials)
-  print(expnum)
   df <- prepare_data(filename)
-  plot_trajectories(df, lang, trials, expnum)
+  labels <- levels(df$constraint)
+  cons <- removeconvalue(labels)
+  colourmap <- map_colours(lang, cons, labels)
+  plot_trajectories(df, colourmap, lang, trials, expnum)
+  plot_legends(df, colourmap, lang, trials, expnum)
 }
 
 historyfiles <- c(
   # "TODO",
-  # "K413p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
-  # "K414p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
-  # "K415p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
-  # "K416p_OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
-  # "S413p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY1000_forR.txt",
-  # "S414p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY5000_forR.txt",
-  # "S415p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000_forR.txt",
-  # "S416p_OT_Soft_SE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY500000_forR.txt",
-  # "S315p_OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts_HISTORY50000_forR.txt"
-  "20231107_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
-  "20231107_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt"
+  "20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
+  "20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
+  "20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
 )
 
 for (hfile in historyfiles) {
-  makeplot(hfile)
+  suppressWarnings(makeplot(hfile))
 }
 
 
 
 ```
 
-```{r}
-numsamples <- 100000
 
-for (dif in 1:20) {
-  if (dif == 1) {
-    print(numsamples)
-  }
-  # make a distribution with mean 0 and SD 2
-  # make another one with mean dif and SD 2
-  # take a bunch of samples from each
-  # dif <- 2
-  lowersamples <- rnorm(numsamples, mean=0, sd=2)
-  uppersamples1 <- rnorm(numsamples, mean=dif, sd=2)
-  uppersamples2 <- rnorm(numsamples, mean=dif, sd=2)
-  # print(mean(lowersamples))
-  # print(mean(uppersamples))
-  
-  # for each pair of samples, determine which distribution has the higher value
-  # determine whether at least one of the upper samples flipped with lowersamples
-  didtheyflip <- (lowersamples > uppersamples1) | (lowersamples > uppersamples2)
-  meanflips <- mean(didtheyflip)
-  # print(meanflips)
-  
-  # calculate the probability of the distr with the lower mean ending up with the higher value
-  print(sprintf("%s %i %s %f", "for a difference of", dif, "the chance of flipping order is", meanflips))
-  
-}
-
-```
 

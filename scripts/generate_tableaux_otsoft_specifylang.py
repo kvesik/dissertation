@@ -293,7 +293,7 @@ MaxIOFSyl1 = "MaxIO(Fr)Syl1"
 MaxIOBSyl1 = "MaxIO(Bk)Syl1"
 MaxIOF = "MaxIO(Fr)"
 MaxIOB = "MaxIO(Bk)"
-NonEmpty = "NonEmpty"
+star_empty = "NonEmpty"
 IdHLRSyl1 = "Id(HiLoRd)Syl1"
 IdHLR = "Id(HiLoRd)"
 IdHiSyl1 = "Id(Hi)Syl1"
@@ -353,7 +353,7 @@ class OTSoftTableauxGenerator:
             else:
                 self.allcons += [MaxIOSyl1, MaxIO]
             if self.withnonempty:
-                self.allcons += [NonEmpty]
+                self.allcons += [star_empty]
         if self.withtranspn:
             if self.groupfeatures:
                 self.allcons += [IdHLRSyl1, IdHLR]
@@ -403,6 +403,13 @@ class OTSoftTableauxGenerator:
         numviolations = sum(violns)
         return numviolations
 
+    def get_numgenidentviolations(self, inputform, candidate):
+        genidentcons = [ic for ic in ident_cons_general if ic in self.allcons]
+        numviolns = 0
+        for ic in genidentcons:
+            numviolns += self.get_numviolations(inputform, candidate, ic)
+        return numviolns
+
     def get_numviolations(self, inputform, candidate, constraint):
         if constraint in self.segM_connames.values():
             return self.segmentalM_violations(constraint, candidate)
@@ -446,7 +453,7 @@ class OTSoftTableauxGenerator:
         #     return candidate.count("_") if inputform[0] in frontsegments else 0
         # elif constraint == MaxIOB:
         #     return candidate.count("_") if inputform[0] in backsegments else 0
-        elif constraint == NonEmpty:
+        elif constraint == star_empty:
             hascontent = len(candidate.replace("_", "")) > 0
             return int(not hascontent)
         else:
@@ -573,6 +580,7 @@ class OTSoftTableauxGenerator:
                                 outstring += "\t"
                             outstring += "\t".join(violns)
                             onetableau += outstring + "\n"
+                    # onetableau = self.discardlessfaithfulwinners(onetableau)
                     # print(onetableau.strip())
                     if relativefrequencies is not None and wd in relativefrequencies.keys():
                         for numcopies in range(relativefrequencies[wd]):
@@ -603,6 +611,33 @@ class OTSoftTableauxGenerator:
         print("\n" + typeofinputfile + " (" + self.lang + ") - number of words used: " + str(
             self.generate_tableaux(candidates, foldername=foldername, customizations=customizations)) + " of " + str(
             len(candidates)) + "\n\n")
+
+    def discardlessfaithfulwinners(self, tableaustring):
+        tableaumatrix = tomatrix(tableaustring)
+        inputform = tableaumatrix[0][0]
+        rowlabeledaswinner = [r[2] == '1' for r in tableaumatrix]
+        if sum(rowlabeledaswinner) > 1:
+            num_genidentviolns = []
+            for idx, r in enumerate(tableaumatrix):
+                violns = 0 if not rowlabeledaswinner[idx] else self.get_numgenidentviolations(inputform, r[1])
+                num_genidentviolns.append(violns)
+
+            minviolns = min([nv for nv in num_genidentviolns if nv > 0])
+            for idx, r in enumerate(tableaumatrix):
+                if num_genidentviolns[idx] != minviolns:
+                    r[2] = ""
+
+        rowstrings = ["\t".join(r) + "\n" for r in tableaumatrix]
+        return "".join(rowstrings)
+
+
+def tomatrix(tableaustring):
+    tableaumatrix = []
+    tableaurows = tableaustring.strip().split("\n")
+    for r in tableaurows:
+        cells = r.split("\t")
+        tableaumatrix.append(cells)
+    return tableaumatrix
 
 
 # inverse of nodis_conelements
@@ -903,8 +938,33 @@ def isintendedwinner(inputform, candidate, lang):
     elif not iswordinlang(candidate, lang):
         return False
 
+    # elif iswordinlang and isintendedwinner(*removeinitialtransparentV(inputform, candidate, lang)):
+    #     # this word is grammatical, but it's not the best choice (because after an initial transparent vowel,
+    #     #   there's another vowel that's unfaithful and doesn't need to be)
+    #     return False
+
     else:
         return True
+
+
+# def removeinitialtransparentV(inputform, candidate, lang):
+#     return inputform, candidate, lang
+#
+#     if lang == NEst:
+#         # harmony / transparency are not applicable
+#         return inputform, candidate, lang
+#     if istransparent(candidate[0], lang)(lang == Fin and candidate[0] in [i, e]:
+#         return inputform[1:], candidate[1:], lang
+#     elif lang == NEst and candidate[0] in [i]:
+#         return
+#
+#
+# def istransparent(segment, lang):
+#
+#     return ((lang == Fin and segment in [i, e]) or
+#             (lang == NSeto and segment in [i]) or
+#             (lang == SSeto and segment in [i]))
+
 
     # elif lang == NEst:
     #     # check first-syllable faithfulness
@@ -1110,13 +1170,13 @@ def main_helper(SIMPin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXN
         customizations = ""
         customizations += "_simp" if SIMPin else ""
         if DELin:
-            customizations += "_wdel" + ("-wft" if DELFTin else "-gen") + ("-prs" if NEMPin else "")
+            customizations += "_wdel" + ("-wft" if DELFTin else "-gen") + ("-ne" if NEMPin else "")
         # customizations += "_wdel" if DELin else ""
         if TRANSPin:
             customizations += "_wtr" + (("-grp" + ("-int" if GRPINTin else "-tf")) if FTGRPin else "-ind")
         customizations += "_ixn" if IXNin else ""
         customizations += "_test" if TESTin else ""
-        foldername = datetime.now().strftime('%Y%m%d.%H%M%S') + '-OTSoft-files'
+        foldername = datetime.now().strftime('%Y%m%d.%H%M%S') + '_forOTS'  # '-OTSoft-files'
         os.mkdir(foldername+customizations)
         for langname in langnames:
             tableaux_generator = OTSoftTableauxGenerator(langname, simple=SIMPin, bfocus=True, withdeletions=DELin,
@@ -1153,15 +1213,17 @@ if __name__ == "__main__":
                         main_helper(SIMP, DEL, IXN, TEST)
 
     # generate inputs for all languages, under all combinations of arguments as of 20231005
-    elif False:
+    elif True:
         counter = 1
-        for DEL in [True]:  # ft:
-            for DELFT in [True]:  # ft:
-                includenonemptyMconstraint = [False]
-                if DEL:
-                    includenonemptyMconstraint += [True]
+        for DEL in ft:
+            deletebyfeature = [False]
+            includenonemptyMconstraint = [False]
+            if DEL:
+                deletebyfeature += [True]
+                includenonemptyMconstraint += [True]
+            for DELFT in deletebyfeature:
                 for NONEMPTY in includenonemptyMconstraint:
-                    for TRANSP in ft:
+                    for TRANSP in [False]:  # ft:
                         groupfeaturesoptions = [False]
                         if TRANSP:
                             groupfeaturesoptions += [True]
@@ -1175,12 +1237,12 @@ if __name__ == "__main__":
                                     interactionoptions = [True]  # += [True]
                                 for IXN in interactionoptions:
                                     for TEST in ft:
-                                        print("iteration", counter, "of 46")
+                                        print("iteration", counter)
                                         counter += 1
                                         # if TRANSP and FTGRP: ###############################
                                         main_helper(SIMPin=False, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
 
-    elif True:
+    elif False:
         counter = 1
         DEL = True
         DELFT = False
@@ -1196,5 +1258,5 @@ if __name__ == "__main__":
 
     # generate inputs for all languages but for only one specific combination of arguments
     else:
-        main_helper(SIMPin=False, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=True, FTGRPin=True, GRPINTin=True, IXNin=True, TESTin=True)
+        main_helper(SIMPin=False, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, TESTin=True)
 

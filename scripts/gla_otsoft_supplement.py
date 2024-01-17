@@ -47,8 +47,8 @@ INIT_M = 100
 #     "OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleSSeto_GLA_PDDP_nodia.txt",
 #     "OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleNSeto_GLA_PDDP_nodia.txt",
 # ]
-WORKING_DIR = "OTSoft2.6old"
-DATA_DIR = WORKING_DIR + "/20231107MagriRuns"
+WORKING_DIR = "../simulation_inputs/20231005 onward - OTSoft inputs (max len 3)"  # "OTSoft2.6old"
+DATA_DIR = WORKING_DIR + "/20231005_forOTS"  # "/20231107MagriRuns"
 
 # FILES_EXPS = [
 #     ("OTSoft-PDDP-NEst_GLA_wdel_wtr-grp_ixn.txt", ""),
@@ -241,7 +241,7 @@ class Learner:
     def train(self):
         # put headers into history file
         # headertowrite = "lap num" + "\t" + "generated" + "\t" + "heard"
-        headertowrite = "trial num" + "\t" + "generated" + "\t" + "heard"
+        headertowrite = "trialnum" + "\t" + "Generated" + "\t" + "Heard"
         startvalstowrite = "" + "\t" + "" + "\t" + ""
         headertowrite += "".join(["\t" + c + "\tnow" for c in self.constraints]) + "\n"
         startvalstowrite += "".join(["\t\t" + str(self.weights[c]) for c in self.constraints]) + "\n"
@@ -257,11 +257,10 @@ class Learner:
             # do any necessary shuffling re a priori rankings right away
             for speccon, gencon in [pairofcons for pairofcons in SPECGENCONS if pairofcons[0] in self.weights.keys() and pairofcons[1] in self.weights.keys()]:  # SPECGENCONS:
                 if self.specgenbias > 0 and round(self.weights[speccon], 10) < round(self.weights[gencon] + self.specgenbias, 10):
-                    # print("updating a priori-- syl1 weight ", self.weights[IdBkSyl1], "; rt weight ", self.weights[IdBkRt], "; sum ", self.weights[IdBkRt] + self.specgenbias)
                     apriori_adjust = self.weights[gencon] + self.specgenbias - self.weights[speccon]
                     self.weights[speccon] = self.weights[gencon] + self.specgenbias
 
-                    linetowrite = "" + "\t" + "a priori" + "\t" + speccon + ">>" + gencon + "\t"
+                    linetowrite = "0" + "\t" + "Apriori" + "\t" + speccon + ">>" + gencon + "\t"
                     for con in self.constraints:
                         if con != speccon or self.specgenbias == 0:
                             linetowrite += "\t\t"
@@ -269,6 +268,9 @@ class Learner:
                             linetowrite += str(apriori_adjust) + "\t" + str(self.weights[speccon])
                     linetowrite += "\n"
                     history.write(linetowrite)
+            linetowrite = "0" + "\t\t"
+            for con in self.constraints:
+                linetowrite += "\t\t" + str(self.weights[con])
 
             learningtrial = 0  # lap_count = 0
             for batchnum in range(len(self.learning_trials)):
@@ -326,7 +328,7 @@ class Learner:
             evalweights[con] = np.random.normal(loc=self.weights[con], scale=noise)
         return evalweights
 
-    def updateweights(self, tableau_df, intendedwinner, generatedoutput, cur_R_F, cur_R_M, lap_count, historystream):
+    def updateweights(self, tableau_df, intendedwinner, generatedoutput, cur_R_F, cur_R_M, learningtrial_num, historystream):
         winner_df = tableau_df[tableau_df[tableau_df.columns[0]] == intendedwinner]
         optimal_df = tableau_df[tableau_df[tableau_df.columns[0]] == generatedoutput]
 
@@ -371,7 +373,7 @@ class Learner:
                 print(winner_df)
                 print(optimal_df)
 
-        linetowrite = str(lap_count) + "\t" + generatedoutput + "\t" + intendedwinner
+        linetowrite = str(learningtrial_num) + "\t" + generatedoutput + "\t" + intendedwinner
         for con in self.constraints:
             if con in adjustments.keys():
                 adjustment_amount = adjustments[con]
@@ -389,11 +391,13 @@ class Learner:
 
         for speccon, gencon in [pairofcons for pairofcons in SPECGENCONS if pairofcons[0] in self.weights.keys() and pairofcons[1] in self.weights.keys()]:  # SPECGENCONS:
             if self.specgenbias > 0 and round(self.weights[speccon], 10) < round(self.weights[gencon] + self.specgenbias, 10):
-                # print("updating a priori-- syl1 weight ", self.weights[IdBkSyl1], "; rt weight ", self.weights[IdBkRt], "; sum ", self.weights[IdBkRt] + self.specgenbias)
+                # # did the lower one come up too high, or did the upper one come down too low?
+                # specconadjustment = adjustments[speccon] if speccon in adjustments.keys() else 0
+                # genconadjustment = adjustments[gencon] if gencon in adjustments.keys() else 0
                 apriori_adjust = self.weights[gencon] + self.specgenbias - self.weights[speccon]
                 self.weights[speccon] = self.weights[gencon] + self.specgenbias
 
-                linetowrite = "" + "\t" + "a priori" + "\t" + speccon + ">>" + gencon + "\t"
+                linetowrite = str(learningtrial_num) + "\t" + "Apriori" + "\t" + speccon + ">>" + gencon + "\t"
                 for con in self.constraints:
                     if con != speccon or self.specgenbias == 0:
                         linetowrite += "\t\t"
@@ -402,7 +406,7 @@ class Learner:
                 linetowrite += "\n"
                 historystream.write(linetowrite)
 
-    def learn(self, tableau_df, cur_R_F, cur_R_M, cur_noise_F, cur_noise_M, lap_count, historystream):
+    def learn(self, tableau_df, cur_R_F, cur_R_M, cur_noise_F, cur_noise_M, learningtrial_num, historystream):
         # select a learning datum from distribution (which could just be all one form)
         ur = tableau_df.columns[0]
         datum = ""
@@ -427,7 +431,7 @@ class Learner:
 
         # if the optimal candidate does not match the intended winner, update the weights
         if datum != optimal_cand:
-            self.updateweights(tableau_df, datum, optimal_cand, cur_R_F, cur_R_M, lap_count, historystream)
+            self.updateweights(tableau_df, datum, optimal_cand, cur_R_F, cur_R_M, learningtrial_num, historystream)
 
     def testgrammar(self, numtimes):
         forms = {}  # ur --> dict of [ candidate --> frequency ]
@@ -568,7 +572,7 @@ def evaluate_one(tableau_df, evalweights):
 
 def sort_files_exps_list(files_exps):
     new_files_exps = []
-    # for now, I want to sort by ones place, then hundreds, then language
+    # for now, I want to sort by ones place (# trials/batch), then hundreds (which constraint set), then language
     for ones_digit in range(1, 6):
         for hundreds_digit in range(1, 7):
             for lang_code in ["NE", "Fi", "NS", "SS"]:
@@ -628,7 +632,7 @@ def main():
     for fname, expnum in files_exps:
         # DATA_DIR  # firstdir = fname[:fname.index("\\")]
         # fname   # datafilename = fname[fname.index("\\")+1:]
-        resultsdir = expnum + " - python - " + fname.replace(".txt", "")
+        resultsdir = expnum + "_python_" + fname.replace(".txt", "")
 
         print("running " + expnum + " simulation for file", fname)
         resultsdirpath = WORKING_DIR + "/" + resultsdir

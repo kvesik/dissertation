@@ -340,9 +340,9 @@ makeplot <- function(filename) {
 
 historyfiles <- c(
   # "TODO",
-  "20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
-  "20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
-  "20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
+  "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
+  "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
+  "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
 )
 
 for (hfile in historyfiles) {

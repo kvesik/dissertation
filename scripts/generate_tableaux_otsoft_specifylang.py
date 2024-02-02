@@ -321,8 +321,13 @@ identconstraint_relevantfeature = {
 
 class OTSoftTableauxGenerator:
 
-    def __init__(self, lang, simple=False, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, fortesting=False):
-        self.simple = simple
+    # special
+    #   = 0 means no special case (previously simple=False)
+    #   = 1 means use simplified stringency sets (previously simple=True)
+    #   = 2 means use targeted negative evidence for SSeto opacity
+    #       (so, eg, the alg knows that Aa->AA, rather than Aa->Aa with a acting as opaque)
+    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, fortesting=False):
+        self.special = special
         self.bfocus = bfocus
         self.lang = lang
         self.withdeletions = withdeletions
@@ -334,10 +339,10 @@ class OTSoftTableauxGenerator:
         self.countgroupasint = countgroupasint
         self.fortesting = fortesting
 
-        self.stringencysets = sets_dict[lang] if simple else sets_dict[fullset]
+        self.stringencysets = sets_dict[lang] if special == 1 else sets_dict[fullset]
         self.segM_connames = {setname: "*" + setname for setname in self.stringencysets.keys()}
-        self.frontsets = frontsets_dict[lang] if simple else frontsets_dict[fullset]
-        self.backsets = backsets_dict[lang] if simple else backsets_dict[fullset]
+        self.frontsets = frontsets_dict[lang] if special == 1 else frontsets_dict[fullset]
+        self.backsets = backsets_dict[lang] if special == 1 else backsets_dict[fullset]
 
         self.nodis_connames = [
             nodis_conname(name1, name2, islocal, back if self.bfocus else front)
@@ -523,6 +528,13 @@ class OTSoftTableauxGenerator:
                 fLFCD.write("\t\t\t" + "\t".join(self.allcons) + "\n")
                 ct = 0
                 for wd in inputs:
+                    # just in case we want to include some targeted negative evidence of non-opacity as input for SSeto
+                    usenegativeevidenceforopacity = False
+                    if self.special == 2 and self.lang == SSeto:
+                        for bigram in [wd[j]+wd[j+1] for j in range(len(wd)-1)]:
+                            if bigram in ["Oa", "Ou", "Aa", "Au", "ya", "yu", "ea", "eu"] and not (wd.startswith(e) or wd.startswith(i)):
+                                usenegativeevidenceforopacity = True
+
                     # fb_cands_only = get_frontback_candidates(wd)
                     fb_cands_only = get_modifiedcandidates_wd("fb", wd)
 
@@ -571,8 +583,9 @@ class OTSoftTableauxGenerator:
                                 outstring += "1\t"
                                 ct += 1
                                 hasfaithfulwinner = True
-                            elif iswinner and self.fortesting:
-                                # unfaithful winner; use only in testing data
+                            elif iswinner and (self.fortesting or usenegativeevidenceforopacity):
+                                # unfaithful winner; use only in testing data or
+                                # if generating some targeted negative inputs for SSeto opacity
                                 outstring += "1\t"
                                 ct += 1
                             else:
@@ -591,7 +604,7 @@ class OTSoftTableauxGenerator:
                         # elif wd not in relativefrequencies.keys():
                         #     print("wd " + wd + " not in relfreqs keys")
                         fGLA.write(onetableau)
-                    if hasfaithfulwinner or self.fortesting:
+                    if hasfaithfulwinner or self.fortesting or usenegativeevidenceforopacity:
                         fLFCD.write(onetableau)
                     for idx1, vp1 in enumerate(violationprofiles):
                         for idx2, vp2 in enumerate(violationprofiles[idx1+1:]):
@@ -1155,7 +1168,12 @@ class UCLAPLGenerator:
 #                                  ]
 
 
-def main_helper(SIMPin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, TESTin):
+# SPECIALin
+#   = 0 means no special case (previously SIMPin=False)
+#   = 1 means use simplified stringency sets (previously SIMPin=True)
+#   = 2 means use targeted negative evidence for SSeto opacity
+#       (so, eg, the alg knows that Aa->AA, rather than Aa->Aa with a acting as opaque)
+def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, TESTin):
 
     uclayes_otsoftno = False  # True for generating UCLA-PL input files; False for OTSoft
 
@@ -1168,7 +1186,7 @@ def main_helper(SIMPin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXN
 
     if not uclayes_otsoftno:  # OTSoft
         customizations = ""
-        customizations += "_simp" if SIMPin else ""
+        customizations += "_simp" if SPECIALin == 1 else ("_neg" if SPECIALin == 2 else "")
         if DELin:
             customizations += "_wdel" + ("-wft" if DELFTin else "-gen") + ("-ne" if NEMPin else "")
         # customizations += "_wdel" if DELin else ""
@@ -1178,8 +1196,8 @@ def main_helper(SIMPin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXN
         customizations += "_test" if TESTin else ""
         foldername = datetime.now().strftime('%Y%m%d.%H%M%S') + '_forOTS'  # '-OTSoft-files'
         os.mkdir(foldername+customizations)
-        for langname in langnames:
-            tableaux_generator = OTSoftTableauxGenerator(langname, simple=SIMPin, bfocus=True, withdeletions=DELin,
+        for langname in [SSeto, NEst]:  # langnames:
+            tableaux_generator = OTSoftTableauxGenerator(langname, special=SPECIALin, bfocus=True, withdeletions=DELin,
                                                          deletionbyfeature=DELFTin, withnonempty=NEMPin,
                                                          withtranspn=TRANSPin, groupfeatures=FTGRPin, countgroupasint=GRPINTin,
                                                          withinteractions=IXNin, fortesting=TESTin)
@@ -1201,19 +1219,8 @@ def main_helper(SIMPin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXN
 if __name__ == "__main__":
     ft = [False, True]
 
-    # generate inputs for all languages, under all combinations of original collection of arguments (pre 20231005)
-    if False:
-        counter = 1
-        for SIMP in ft:
-            for DEL in ft:
-                for IXN in ft:
-                    for TEST in ft:
-                        print("iteration", counter, "of 16")
-                        counter += 1
-                        main_helper(SIMP, DEL, IXN, TEST)
-
     # generate inputs for all languages, under all combinations of arguments as of 20231005
-    elif True:
+    if True:
         counter = 1
         for DEL in ft:
             deletebyfeature = [False]
@@ -1240,7 +1247,7 @@ if __name__ == "__main__":
                                         print("iteration", counter)
                                         counter += 1
                                         # if TRANSP and FTGRP: ###############################
-                                        main_helper(SIMPin=False, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
+                                        main_helper(SPECIALin=2, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
 
     elif False:
         counter = 1
@@ -1254,9 +1261,9 @@ if __name__ == "__main__":
         for TEST in ft:
             print("iteration", counter, "of 2")
             counter += 1
-            main_helper(SIMPin=False, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
+            main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
 
     # generate inputs for all languages but for only one specific combination of arguments
     else:
-        main_helper(SIMPin=False, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, TESTin=True)
+        main_helper(SPECIALin=0, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, TESTin=True)
 

@@ -7,3 +7,7 @@ balto-finnic dictionaries and corpora/vepkardb-20230201/vepkardb-20230201
 ResultsForOTSoft*.htm
 *wdel_wtr*ixnDraftOutput.txt
 
+*.pyc
+.idea/*
+simulation_outputs/*/*/StringencyRelationsAmongContraints*.txt
+simulation_outputs/*/*/*/StringencyRelationsAmongContraints*.txt

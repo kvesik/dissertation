@@ -8,55 +8,13 @@ from datetime import datetime
 from generate_tableaux_otsoft_specifylang import langnames
 
 
-# star_F = "*F"
-# star_7 = "*õ"
-# IdBkSyl1 = "Id(Bk)Syl1"
-# IdBkRt = "Id(Bk)"
-# AgrBk = "Agr(Bk)"
-# # CMHF = "CMHF"
-# GMHF = "GMHF"
-# # GMHF_wd = "GMHF(wd)"
-# # GMHF_subwd = "GMHF(subwd)"
-# star_e = "*e"
-# # CMHe = "CMHe"
-# GMHe = "GMHe"
-# # GMHe_wd = "GMHe(wd)"
-# # GMHe_subwd = "GMHe(subwd)"
-# # CMH7 = "CMHõ"
-# GMH7 = "GMHõ"
-# # GMH7_wd = "GMHõ(wd)"
-# # GMH7_subwd = "GMHõ(subwd)"
-
-
 INIT_WEIGHTS = {}
 INIT_F = 0
 INIT_M = 100
 
-# FILE = "C:\Program Files\OTSoft2.6\KE_iFBfb_posonly_negtest_cat_KPplus_wd_noC.txt"
-# FILE = "C:\Program Files\OTSoft2.6\KE_iFBfb_posonly_negtest_var_KPplus_wd_noC.txt"
-# FILE = "C:\Program Files\OTSoft2.6\SE_iFBfb_posonly_negtest_KPplus_wd_noC.txt"
-# FILE = "C:\Program Files\OTSoft2.6old\OTSoft_KE_iFBfb_forGLA_cat_QP2cons.txt"
-# FILE = "C:\Program Files\OTSoft2.6old\OTSoft_SE_iFBfb_forGLA_cat_QP2cons_flat.txt"
-# FILE = "C:\Program Files\OTSoft2.6old\OT_Soft_SE_iFBfb_forGLA_cat_QP2cons_no2xcounts.txt"
-# FILE = "C:\Program Files\OTSoft2.6old\OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts.txt"
-# FILE = "C:\Program Files\OTSoft2.6old\OTSoft_SE_iFBfb_forLFCD_cat_removeGMHQP2cons_no2xcounts.txt"
-# FILE = "C:\Program Files\OTSoft2.6old\OTSoft_SE_GLA_stringencycons3.txt"
-# FILES = [
-#     "OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleFin_GLA_PDDP_nodia.txt",
-#     "OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleNEst_GLA_PDDP_nodia.txt",
-#     "OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleSSeto_GLA_PDDP_nodia.txt",
-#     "OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files\OTSoft_simpleNSeto_GLA_PDDP_nodia.txt",
-# ]
-WORKING_DIR = "../simulation_inputs/20231005 onward - OTSoft inputs (max len 3)"  # "OTSoft2.6old"
-DATA_DIR = WORKING_DIR + "/20231005_forOTS"  # "/20231107MagriRuns"
+WORKING_DIR = "../simulation_inputs/20240117 onward - OTSoft inputs (max len 3)"  # "OTSoft2.6old"
+DATA_DIR = WORKING_DIR + "/20240117_forOTS"  # "/20231107MagriRuns"
 
-# FILES_EXPS = [
-#     ("OTSoft-PDDP-NEst_GLA_wdel_wtr-grp_ixn.txt", ""),
-#     ("OTSoft_Fin_GLA_PDDP_nodia.txt", "Fi153"),
-#     ("OTSoft_NEst_GLA_PDDP_nodia.txt", "NE153"),
-#     ("OTSoft_NSeto_GLA_PDDP_nodia.txt", "NS153"),
-#     ("OTSoft_SSeto_GLA_PDDP_nodia.txt", "SS153"),
-# ]
 MAGRI = True
 # magritype =
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
@@ -64,7 +22,6 @@ MAGRI = True
     #   3 if numdemotions / (numdemotions + numpromotions)
 MAGRITYPE = 1
 SPECGENBIAS = 20
-# SPECGENCONS = [("Id(Bk)Syl1", "Id(Bk)")]
 SPECGENCONS = [
     ("Id(Bk)Syl1", "Id(Bk)"),
     ("MaxIOSyl1", "MaxIO"),
@@ -83,27 +40,10 @@ LEARNING_TRIALS_DICT = {
     5: [10000, 10000, 10000, 10000]
 }
 
-# SPECCON = "Id(Bk)Syl1"
-# GENCON = "Id(Bk)"
-# LEARNING_TRIALS = [10,10,10,10]  #, 100, 100, 100]
-# LEARNING_TRIALS = [1000, 1000, 1000, 1000]  # [5000, 5000, 5000, 5000]
-# EXPNUM = "R003"
-# LEARNING_R_F = [2, 2, 2, 2]  # 0.2, 0.02, 0.002]
-# LEARNING_R_M = [2, 2, 2, 2]  # 0.2, 0.02, 0.002]
-# LEARNING_R_F = [1, 0.215, 0.046, 0.010]  # [2, 0.2, 0.02, 0.002]
-# LEARNING_R_M = [1, 0.215, 0.046, 0.010]  # [2, 0.2, 0.02, 0.002]
 LEARNING_R_F = [2, 0.2, 0.02, 0.002]
 LEARNING_R_M = [2, 0.2, 0.02, 0.002]
-# LEARNING_R_F = [3, 0.3, 0.03, 0.003]
-# LEARNING_R_M = [0.2, 0.02, 0.002, 0.0002]
-# LEARNING_R_F = [0.2, 0.02, 0.002, 0.0002]
-# LEARNING_R_M = [3, 0.3, 0.03, 0.003]
-# LEARNING_R_F = [1, 0.1, 0.01, 0.001]
-# LEARNING_R_M = [1, 0.1, 0.01, 0.001]
-# LEARNING_R_F = [0.2,0.2,0.2,0.2]
-# LEARNING_R_M = [2,2,2,2]
-LEARNING_NOISE_F = [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]  # [2, 2, 2, 2]
-LEARNING_NOISE_M = [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]  # [2, 2, 2, 2]
+LEARNING_NOISE_F = [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
+LEARNING_NOISE_M = [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
 
 m = "markedness"
 f = "faithfulness"
@@ -124,8 +64,6 @@ class Learner:
         self.file = srcfilepath
         srcfilename = srcfilepath[srcfilepath.rfind("/") + 1:]
         destfiletemplate = destdir + "/" + expnum + " - " + srcfilename
-        # self.historyfile = destfiletemplate.replace(".txt", "_HISTORY" + str(LEARNING_TRIALS[0]) + ".txt")
-        # self.resultsfile = destfiletemplate.replace(".txt", "_RESULTS" + str(LEARNING_TRIALS[0]) + ".txt")
         self.historyfile = destfiletemplate.replace(".txt", "_HISTORY" + str(self.learning_trials[0]) + ".txt")
         self.resultsfile = destfiletemplate.replace(".txt", "_RESULTS" + str(self.learning_trials[0]) + ".txt")
 
@@ -149,14 +87,12 @@ class Learner:
     def read_input(self):
         with io.open(self.file, "r") as infile:
             df = pd.read_csv(infile, sep="\t", header=1, keep_default_na=False)
-            # print(df.columns)
             df.rename(
                 columns=({'Unnamed: 0': 'input', 'Unnamed: 1': 'candidate', 'Unnamed: 2': 'frequency'}),
                 inplace=True,
             )
 
             rules = {}
-            # print(df.columns)
             for colname in df.columns[3:]:
                 contents = list(df[colname].values)
 
@@ -201,13 +137,6 @@ class Learner:
                     cur_frequency = 0
                 else:
                     cur_frequency = float(cur_frequency)
-                # if row["input"] != "" and len(cur_tableau.keys()) > 0:
-                #     # save previous input's tableau
-                #     tableaux[cur_input] = cur_tableau
-                #
-                #     # # start a new tableau
-                #     # cur_input = row["input"]
-                #     # cur_tableau = {}
 
                 cur_violations = getviolations(cur_input, cur_candidate, list(df.columns[3:]), row[3:], rules)
                 cur_tableau[cur_candidate] = {}
@@ -245,11 +174,6 @@ class Learner:
         startvalstowrite = "" + "\t" + "" + "\t" + ""
         headertowrite += "".join(["\t" + c + "\tnow" for c in self.constraints]) + "\n"
         startvalstowrite += "".join(["\t\t" + str(self.weights[c]) for c in self.constraints]) + "\n"
-        # for c in self.constraints:
-        #     headertowrite += "\t" + c + "\t" + "now"
-        #     startvalstowrite += "\t" + "\t" + str(self.weights[c])
-        # headertowrite += "\n"
-        # startvalstowrite += "\n"
         with io.open(self.historyfile, "w") as history:
             history.write(headertowrite)
             history.write(startvalstowrite)
@@ -348,13 +272,9 @@ class Learner:
                 w -= overlap
                 o -= overlap
             if w > 0:
-                # if self.magri:
-                #     numdemoted += 1
                 numdemoted += 1  # for Magri update
                 adjustments[c] = -1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
             elif o > 0:
-                # if self.magri:
-                #     numpromoted += 1
                 numpromoted += 1  # for Magri update
                 adjustments[c] = 1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
         if self.magri:
@@ -369,9 +289,9 @@ class Learner:
             elif self.magritype == 3:
                 promotion_ratio = numdemoted / (numdemoted + numpromoted)
             if numdemoted == 0:
-                # print("numdemoted == 0. intended winner is ", intendedwinner, " and optimal loser is ", generatedoutput, "adjustments are ", adjustments)
-                print(winner_df)
-                print(optimal_df)
+                pass
+                # print(winner_df)
+                # print(optimal_df)
 
         linetowrite = str(learningtrial_num) + "\t" + generatedoutput + "\t" + intendedwinner
         for con in self.constraints:
@@ -386,7 +306,6 @@ class Learner:
                 linetowrite += "\t\t"
         linetowrite += "\n"
 
-        # with io.open(self.historyfile, "a") as history:
         historystream.write(linetowrite)
 
         for speccon, gencon in [pairofcons for pairofcons in SPECGENCONS if pairofcons[0] in self.weights.keys() and pairofcons[1] in self.weights.keys()]:  # SPECGENCONS:
@@ -463,7 +382,6 @@ class Learner:
             results_t = t.copy()
             results_t.insert(2, "outputfrequency", forms_normalized[t.columns[0]])
             results_tableaux_list.append(results_t)
-            # print(results_t)
 
         return results_tableaux_list
 
@@ -475,7 +393,6 @@ def getviolations(ur, candidate, cons, cellvalues, rules):
     violations = []
     for idx, cell in enumerate(cellvalues):
         numviolations = 0
-        # print(cell)
         if re.match("\d+", str(cell)):
             # number of violations was explicitly assigned
             numviolations = int(cell)
@@ -520,7 +437,6 @@ def get_tableaux(tableaux, constraints):
 
 # tableau = dictionary of candidate --> list of violations
 def get_tableau(ur, tableau, constraints):
-    # df = make_tableau_df(tableau)
     df_lists = []
     for cand in tableau.keys():
         df_lists.append([cand]+[tableau[cand]["frequency"]]+tableau[cand]["violations"])
@@ -550,16 +466,13 @@ def evaluate_one(tableau_df, evalweights):
                 violns[viol] = []
             violns[viol].append(row[ur])
 
-        # print(c, violns)
         violations_category = 0
         existing_violn_numbers = sorted(list(violns.keys()))
-        # print("existing violn #s", existing_violn_numbers)
         reduced = False
         while violations_category <= max(existing_violn_numbers) and winner == "" and not reduced:
             if violations_category in existing_violn_numbers:
                 successful_cands = violns[violations_category]
                 reduced_contenders = [c for c in candidate_contenders if c in successful_cands]
-                # print("reduced contenders", reduced_contenders)
                 if len(reduced_contenders) > 0:
                     candidate_contenders = reduced_contenders
                     reduced = True
@@ -646,10 +559,8 @@ def main():
 def onesimulation(srcfilepath, destdir, expnum):
     starttime = datetime.now()
     learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS)
-    # learner = Learner(FILE, magri=MAGRI, specgenbias=SPECGENBIAS)
     tableaux = learner.read_input()
     learner.set_tableaux(get_tableaux(tableaux, learner.constraints))
-    # print("learner's tableaux list", learner.tableaux_list)
 
     # testweights = {}
     # for c in constraints:
@@ -685,7 +596,6 @@ def onesimulation(srcfilepath, destdir, expnum):
         finalweights.sort(key=lambda x: x[1], reverse=True)
         cons, weights = zip(*finalweights)
         for idx, con in enumerate(cons):
-            # print(con + "\t" + str(weights[idx]))  # takes up space/time on command line
             rf.write(con + "\t" + str(weights[idx]) + "\n")
         print("\nrounded:")
         rf.write("\nrounded:\n")
@@ -699,12 +609,9 @@ def onesimulation(srcfilepath, destdir, expnum):
         rf.write("\n--------------- BEGIN TEST ---------------------\n\n")
         testresults = learner.testgrammar(100)
         for results_t in testresults:
-            # print([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons))
             ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons), axis=1)
-            # print(ordered_t)  # takes up space/time on command line
             rf.write(ordered_t.to_string(index=False) + "\n\n")
 
-        # print(learner.weights)
         endtime = datetime.now()
         print("time elapsed", endtime-starttime)
         rf.write("time elapsed: " + str(endtime-starttime))

@@ -1,0 +1,1132 @@
+******Application of Low Faithfulness Constraint Demotion******
+
+Input file:  C:\Users\kvesik\Documents\School\dialect-learning\OTSoft2.6old\OTSoft-PDDP-SSeto_LFCD_wdel-gen_ixn.txt
+
+
+******Now doing Stratum #1******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F4 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F5 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F1 is excluded from stratum; prefers loser *[oA] for /OA/.
+  *B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *_B1F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B1...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *B1 is excluded from stratum; prefers loser *[ii] for /Ii/.
+  *F1..._B2 is excluded from stratum; prefers loser *[Ooe] for /OoE/.
+  *F3..._B2 is excluded from stratum; prefers loser *[Ooe] for /OoE/.
+
+Favor Markedness:
+  *F1_B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F1..._B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F1_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4_B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4..._B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5_B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5..._B1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1...F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1...F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2...F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2...F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3...F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3...F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F4 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (newly ranked):    *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+
+  Markedness constraints still unranked:
+    *F1
+    *F3
+    *F4
+    *F5
+    *B1
+    *B2
+    *B3
+    *B5
+    *F1..._B2
+    *F1_B3
+    *F1..._B3
+    *F1_B5
+    *F1..._B5
+    *F3..._B2
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B1F5
+    *_B1...F5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)Syl1
+    Id(Bk)
+    MaxIOSyl1
+    MaxIO
+
+******Now doing Stratum #2******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F4 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F5 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F1 is excluded from stratum; prefers loser *[oa] for /OA/.
+  *B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *_B1F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B1...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *B1 is excluded from stratum; prefers loser *[ii] for /Ii/.
+  *F1..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+  *F3..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk)Syl1 is shown to be active by ruling out *[oa] for /OA/.
+  Id(Bk) is shown to be active by ruling out *[Oa] for /OA/.
+  MaxIOSyl1 is shown to be active by ruling out *[_A] for /OA/.
+  MaxIO is shown to be active by ruling out *[O_] for /OA/.
+  All unranked Faithfulness constraints are active.
+
+Favor Specificity:
+  Id(Bk) is excluded from stratum because Id(Bk)Syl1 is more specific.
+  MaxIO is excluded from stratum because MaxIOSyl1 is more specific.
+
+Favor Autonomy:
+  Id(Bk)Syl1 is assigned 2 helpers, based on /OA/ -/-> *[oa].  The helpers are:
+    *B3
+    *B5
+  MaxIOSyl1 is assigned 0 helpers, based on /OA/ -/-> *[_A].
+  Id(Bk)Syl1 is assigned 1 helper, based on /Oo/ -/-> *[o_].  The helper is:
+    MaxIO
+
+  Lowest number of helpers:   0 
+  Constraint MaxIOSyl1 joins the current stratum, having 0 helpers.
+  Constraint Id(Bk)Syl1 is excluded from stratum because it has 1 helper.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (newly ranked):    MaxIOSyl1
+
+  Markedness constraints still unranked:
+    *F1
+    *F3
+    *F4
+    *F5
+    *B1
+    *B2
+    *B3
+    *B5
+    *F1..._B2
+    *F1_B3
+    *F1..._B3
+    *F1_B5
+    *F1..._B5
+    *F3..._B2
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B1F5
+    *_B1...F5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)Syl1
+    Id(Bk)
+    MaxIO
+
+******Now doing Stratum #3******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F4 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F5 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F1 is excluded from stratum; prefers loser *[oa] for /OA/.
+  *B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *_B1F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B1...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *B1 is excluded from stratum; prefers loser *[ii] for /Ii/.
+  *F1..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+  *F3..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk)Syl1 is shown to be active by ruling out *[oa] for /OA/.
+  Id(Bk) is shown to be active by ruling out *[Oa] for /OA/.
+  MaxIO is shown to be active by ruling out *[O_] for /OA/.
+  MaxIOSyl1 is excluded from stratum because it is inactive.
+
+Favor Specificity:
+  Id(Bk) is excluded from stratum because Id(Bk)Syl1 is more specific.
+
+Favor Autonomy:
+  Id(Bk)Syl1 is assigned 2 helpers, based on /OA/ -/-> *[oa].  The helpers are:
+    *B3
+    *B5
+  MaxIO is assigned 0 helpers, based on /OA/ -/-> *[O_].
+  Id(Bk)Syl1 is assigned 1 helper, based on /Oo/ -/-> *[o_].  The helper is:
+    MaxIO
+
+  Lowest number of helpers:   0 
+  Constraint MaxIO joins the current stratum, having 0 helpers.
+  Constraint Id(Bk)Syl1 is excluded from stratum because it has 1 helper.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  MaxIOSyl1
+  Stratum 3 (newly ranked):    MaxIO
+
+  Markedness constraints still unranked:
+    *F1
+    *F3
+    *F4
+    *F5
+    *B1
+    *B2
+    *B3
+    *B5
+    *F1..._B2
+    *F1_B3
+    *F1..._B3
+    *F1_B5
+    *F1..._B5
+    *F3..._B2
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B1F5
+    *_B1...F5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)Syl1
+    Id(Bk)
+
+******Now doing Stratum #4******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F4 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F5 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F1 is excluded from stratum; prefers loser *[oa] for /OA/.
+  *B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *_B1F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B1...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *B1 is excluded from stratum; prefers loser *[ii] for /Ii/.
+  *F1..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+  *F3..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk)Syl1 is shown to be active by ruling out *[oa] for /OA/.
+  Id(Bk) is shown to be active by ruling out *[Oa] for /OA/.
+  MaxIOSyl1 is excluded from stratum because it is inactive.
+  MaxIO is excluded from stratum because it is inactive.
+
+Favor Specificity:
+  Id(Bk) is excluded from stratum because Id(Bk)Syl1 is more specific.
+
+Favor Autonomy:
+  Id(Bk)Syl1 is assigned 2 helpers, based on /OA/ -/-> *[oa].  The helpers are:
+    *B3
+    *B5
+  Id(Bk)Syl1 is assigned 1 helper, based on /AA/ -/-> *[aa].  The helper is:
+    *B5
+
+  Lowest number of helpers:   1 
+  Constraint Id(Bk)Syl1 joins the current stratum, having 1 helpers.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  MaxIOSyl1
+  Stratum 3 (already ranked):  MaxIO
+  Stratum 4 (newly ranked):    Id(Bk)Syl1
+
+  Markedness constraints still unranked:
+    *F1
+    *F3
+    *F4
+    *F5
+    *B1
+    *B2
+    *B3
+    *B5
+    *F1..._B2
+    *F1_B3
+    *F1..._B3
+    *F1_B5
+    *F1..._B5
+    *F3..._B2
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B1F5
+    *_B1...F5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #5******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F4 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F5 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F1..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B3 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F5..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *_B1F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B1...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B2...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B3...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *_B5...F5 is excluded from stratum; prefers loser *[II] for /Ii/.
+  *F1..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+  *F3..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+
+Favor Markedness:
+  *F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *B1 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  MaxIOSyl1
+  Stratum 3 (already ranked):  MaxIO
+  Stratum 4 (already ranked):  Id(Bk)Syl1
+  Stratum 5 (newly ranked):    *F1
+                               *B1
+
+  Markedness constraints still unranked:
+    *F3
+    *F4
+    *F5
+    *B2
+    *B3
+    *B5
+    *F1..._B2
+    *F1_B3
+    *F1..._B3
+    *F1_B5
+    *F1..._B5
+    *F3..._B2
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B1F5
+    *_B1...F5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #6******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F4 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *F5 is excluded from stratum; prefers loser *[Oa] for /OA/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F3_B3 is excluded from stratum; prefers loser *[Oao] for /OAo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[eao] for /eAo/.
+  *F3_B5 is excluded from stratum; prefers loser *[eao] for /eAo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[eao] for /eAo/.
+  *_B2F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B2...F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B3F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B3...F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B5F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B5...F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+
+Favor Markedness:
+  *F1..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F1_B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F1..._B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F1_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F1..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B1...F5 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  MaxIOSyl1
+  Stratum 3 (already ranked):  MaxIO
+  Stratum 4 (already ranked):  Id(Bk)Syl1
+  Stratum 5 (already ranked):  *F1
+                               *B1
+  Stratum 6 (newly ranked):    *F1..._B2
+                               *F1_B3
+                               *F1..._B3
+                               *F1_B5
+                               *F1..._B5
+                               *F3..._B2
+                               *_B1F5
+                               *_B1...F5
+
+  Markedness constraints still unranked:
+    *F3
+    *F4
+    *F5
+    *B2
+    *B3
+    *B5
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #7******
+
+Avoid Preference For Losers:
+  *F3 is excluded from stratum; prefers loser *[Aa] for /AA/.
+  *F4 is excluded from stratum; prefers loser *[Aa] for /AA/.
+  *F5 is excluded from stratum; prefers loser *[Aa] for /AA/.
+  *B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4_B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B2 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B3 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5_B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F5..._B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F3_B3 is excluded from stratum; prefers loser *[Aao] for /AAo/.
+  *F3..._B3 is excluded from stratum; prefers loser *[eao] for /eAo/.
+  *F3_B5 is excluded from stratum; prefers loser *[eao] for /eAo/.
+  *F3..._B5 is excluded from stratum; prefers loser *[eao] for /eAo/.
+  *_B2F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B2...F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B3F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B3...F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B5F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+  *_B5...F5 is excluded from stratum; prefers loser *[eei] for /eEi/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk) is shown to be active by ruling out *[Aa] for /AA/.
+  Id(Bk)Syl1 is excluded from stratum because it is inactive.
+  MaxIOSyl1 is excluded from stratum because it is inactive.
+  MaxIO is excluded from stratum because it is inactive.
+
+Favor Specificity:
+  (no cases found)
+
+Favor Autonomy:
+  Id(Bk) is assigned 7 helpers, based on /AA/ -/-> *[Aa].  The helpers are:
+    *B5
+    *F3_B5
+    *F3..._B5
+    *F4_B5
+    *F4..._B5
+    *F5_B5
+    *F5..._B5
+  Id(Bk) is assigned 5 helpers, based on /eA/ -/-> *[ea].  The helpers are:
+    *B5
+    *F4_B5
+    *F4..._B5
+    *F5_B5
+    *F5..._B5
+  Id(Bk) is assigned 2 helpers, based on /eE/ -/-> *[ee].  The helpers are:
+    *F4
+    *F5
+
+  Lowest number of helpers:   2 
+  Constraint Id(Bk) joins the current stratum, having 2 helpers.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  MaxIOSyl1
+  Stratum 3 (already ranked):  MaxIO
+  Stratum 4 (already ranked):  Id(Bk)Syl1
+  Stratum 5 (already ranked):  *F1
+                               *B1
+  Stratum 6 (already ranked):  *F1..._B2
+                               *F1_B3
+                               *F1..._B3
+                               *F1_B5
+                               *F1..._B5
+                               *F3..._B2
+                               *_B1F5
+                               *_B1...F5
+  Stratum 7 (newly ranked):    Id(Bk)
+
+  Markedness constraints still unranked:
+    *F3
+    *F4
+    *F5
+    *B2
+    *B3
+    *B5
+    *F3_B3
+    *F3..._B3
+    *F3_B5
+    *F3..._B5
+    *F4_B2
+    *F4..._B2
+    *F4_B3
+    *F4..._B3
+    *F4_B5
+    *F4..._B5
+    *F5_B2
+    *F5..._B2
+    *F5_B3
+    *F5..._B3
+    *F5_B5
+    *F5..._B5
+    *_B2F5
+    *_B2...F5
+    *_B3F5
+    *_B3...F5
+    *_B5F5
+    *_B5...F5
+  Faithfulness constraints still unranked:
+    (none)
+
+******Now doing Stratum #8******
+
+Avoid Preference For Losers:
+  Search found no unranked constraints that prefer losers.
+
+Favor Markedness:
+  *F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4_B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4..._B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5_B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5..._B3 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F5..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B2...F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B3...F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F5 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F1_B1
+                               *F1..._B1
+                               *F1_B2
+                               *F3_B1
+                               *F3..._B1
+                               *F3_B2
+                               *F4_B1
+                               *F4..._B1
+                               *F5_B1
+                               *F5..._B1
+                               *_B1F1
+                               *_B1...F1
+                               *_B1F3
+                               *_B1...F3
+                               *_B1F4
+                               *_B1...F4
+                               *_B2F1
+                               *_B2...F1
+                               *_B2F3
+                               *_B2...F3
+                               *_B2F4
+                               *_B2...F4
+                               *_B3F1
+                               *_B3...F1
+                               *_B3F3
+                               *_B3...F3
+                               *_B3F4
+                               *_B3...F4
+                               *_B5F1
+                               *_B5...F1
+                               *_B5F3
+                               *_B5...F3
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  MaxIOSyl1
+  Stratum 3 (already ranked):  MaxIO
+  Stratum 4 (already ranked):  Id(Bk)Syl1
+  Stratum 5 (already ranked):  *F1
+                               *B1
+  Stratum 6 (already ranked):  *F1..._B2
+                               *F1_B3
+                               *F1..._B3
+                               *F1_B5
+                               *F1..._B5
+                               *F3..._B2
+                               *_B1F5
+                               *_B1...F5
+  Stratum 7 (already ranked):  Id(Bk)
+  Stratum 8 (newly ranked):    *F3
+                               *F4
+                               *F5
+                               *B2
+                               *B3
+                               *B5
+                               *F3_B3
+                               *F3..._B3
+                               *F3_B5
+                               *F3..._B5
+                               *F4_B2
+                               *F4..._B2
+                               *F4_B3
+                               *F4..._B3
+                               *F4_B5
+                               *F4..._B5
+                               *F5_B2
+                               *F5..._B2
+                               *F5_B3
+                               *F5..._B3
+                               *F5_B5
+                               *F5..._B5
+                               *_B2F5
+                               *_B2...F5
+                               *_B3F5
+                               *_B3...F5
+                               *_B5F5
+                               *_B5...F5
+
+  Markedness constraints still unranked:
+    (none)
+  Faithfulness constraints still unranked:
+    (none)
+
+Ranking is complete and yields successful grammar.

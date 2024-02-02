@@ -37,18 +37,6 @@ star_e = "*e"  # unmarked nonhigh front
 GMHe = "GMHe"
 star_7e = "*õ*e"  # mid unrounded - in hierarchy A & B
 GMH7e = "GMHõe"
-star_7e2o = "*e*F*õ*B"  # "*e*ö*õ*o"  # mid - in hierarchy A & C
-GMH7e2o = "GMHeFõB"  # "GMHeöõo"
-star_e2 = "*e*F"  # "*e*ö"  # mid front - in hierarchy C & D
-GMHe2 = "GMHeF"  # "GMHeö"
-star_e47a = "*e*ä*õ*a"  # nonhigh unrounded - in hierarchy B & F
-GMHe47a = "GMHeäõa"
-star_e4 = "*e*ä"  # front nonhigh unrounded - in hierarchy E & F
-GMHe4 = "GMHeä"
-star_e42 = "*e*ä*ö"  # front nonhigh - in hierarchy D & E
-GMHe42 = "GMHeäö"
-star_e27o4a = "*e*ä*õ*a*ö*o"  # nonghigh - in hierarchy A & B & C & D & E & F
-GMHe27o4a = "GMHeäõaö"
 
 
 finalQP2constraints = [star_F, star_7, star_e, IdBkSyl1, IdBk, AgrBk, GMHF, GMH7, GMHe]
@@ -56,10 +44,6 @@ adaptedQP2constraints = [star_F, star_7, star_7e, IdBkSyl1, IdBk, AgrBk, GMHF, G
 starBQP2constraints = [star_F, star_B, star_7, star_e, IdBkSyl1, IdBk, AgrBk, GMHF, GMHB, GMH7, GMHe]
 removeGMHcons = [star_F, star_B, star_7, star_e, IdBkSyl1, IdBk, AgrBk, GMHF, GMHe]
 stringencycons1 = [star_7, star_7e, star_F, star_FB, IdBkSyl1, IdBk, AgrBk, GMH7, GMH7e, GMHF, GMHFB]
-stringencycons2 = [star_7, star_F, star_e2, star_7e2o, IdBkSyl1, IdBk, AgrBk, GMH7, GMHF, GMHe2, GMH7e2o]
-stringencycons3 = [star_7, star_7e, star_F, star_e2, star_7e2o, IdBkSyl1, IdBk, AgrBk, GMH7e, GMH7, GMHF, GMHe2, GMH7e2o]
-# finalQP2constraints = [star_F, star_7, star_e, IdBkSyl1, IdBk, AgrBk, GMHF, GMHe]
-# finalQP2constraints = [star_F, star_7, star_e, IdBkSyl1, IdBkFt1, IdBk, AgrBk, GMHF, GMH7, GMHe]
 
 KE = "KE"
 SE = "SE"
@@ -135,18 +119,6 @@ def numviolations(inputform, candidate, constraint):
     elif constraint.startswith("GMH"):
         segments = constraint[3:]
         return gmhset_wd_violations(segments, candidate)
-    # elif constraint == GMHF:
-    #     return gmh_wd_violations("F", candidate)
-    # elif constraint == GMHB:
-    #     return gmh_wd_violations("B", candidate)
-    # elif constraint == GMHFB:
-    #     return gmhset_wd_violations(["F", "B"], candidate)
-    # elif constraint == GMH7:
-    #     return gmh_wd_violations("õ", candidate)
-    # elif constraint == GMHe:
-    #     return gmh_wd_violations("e", candidate)
-    # elif constraint == GMH7e:
-    #     return gmhset_wd_violations(["õ", "e"], candidate)
     else:
         print("constraint not recognized: " + constraint)
         return -1
@@ -179,10 +151,8 @@ def getviolations(inputform, candidate, constraintset):
 
 
 def generate_tableaux(inputs, constraintset, lang, relativefrequencies=None):
-    # with io.open("OTSoft_"+lang+"_iFBfb_forGLA_cat_removeGMHQP2cons_no2xcounts.txt", "w", encoding='ANSI') as fGLA:
-    #     with io.open("OTSoft_"+lang+"_iFBfb_forLFCD_cat_removeGMHQP2cons_no2xcounts.txt", "w", encoding='ANSI') as fLFCD:
-    with io.open("OTSoft_"+lang+"_GLA_stringencycons3.txt", "w", encoding='ANSI') as fGLA:
-        with io.open("OTSoft_"+lang+"_LFCD_stringencycons3.txt", "w", encoding='ANSI') as fLFCD:
+    with io.open("OTSoft_"+lang+"_GLA_removeGMHcons.txt", "w", encoding='ANSI') as fGLA:
+        with io.open("OTSoft_"+lang+"_LFCD_removeGMHcons.txt", "w", encoding='ANSI') as fLFCD:
             print("\t\t\t" + "\t".join(constraintset))
             print("\t\t\t" + "\t".join(constraintset))
             fGLA.write("\t\t\t" + "\t".join(constraintset) + "\n")
@@ -242,14 +212,8 @@ def generatetext(candidates, constraintset, lang):
 length2words = makeinputstrings([allsegs, allsegs])
 length3words = makeinputstrings([allsegs, allsegs, allsegs])
 somelongerwords = ["iieB", "iiFõ", "iiiBe", "iiiiõF", "iiiiõ"]
-# generatetext(length2words+length3words+somelongerwords, removeGMHcons, KE)
-# generatetext(length2words+length3words+somelongerwords, removeGMHcons, SE)
-# generatetext(length2words+length3words+somelongerwords, stringencycons1, KE)
-# generatetext(length2words+length3words+somelongerwords, stringencycons1, SE)
-# generatetext(length2words+length3words+somelongerwords, stringencycons2, KE)
-# generatetext(length2words+length3words+somelongerwords, stringencycons2, SE)
-generatetext(length2words+length3words+somelongerwords, stringencycons3, KE)
-generatetext(length2words+length3words+somelongerwords, stringencycons3, SE)
+generatetext(length2words+length3words+somelongerwords, removeGMHcons, KE)
+generatetext(length2words+length3words+somelongerwords, removeGMHcons, SE)
 
 # words_from_OTSoft_experiments = ["iõ", "ie", "iB", "iF", "õi", "ei", "Bi", "Fi", "BB", "BF", "FB", "FF",
 #                                  "FBB", "õõ", "õe", "eõ", "ee", "eõõ", "Bõ", "Be", "Fõ", "Fe", "FBõ", "Fõõ",

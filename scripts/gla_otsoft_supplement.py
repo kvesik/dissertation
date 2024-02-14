@@ -13,15 +13,16 @@ INIT_F = 0
 INIT_M = 100
 
 WORKING_DIR = "../simulation_inputs/20240117 onward - OTSoft inputs (max len 3)"  # "OTSoft2.6old"
-DATA_DIR = WORKING_DIR + "/20240117_forOTS"  # "/20231107MagriRuns"
+DATA_DIR = WORKING_DIR + "/20240117_forOTS"  # + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
-MAGRI = True
+MAGRI = False
 # magritype =
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
 MAGRITYPE = 1
-SPECGENBIAS = 20
+SPECGENBIAS = 0  # 20  # 20 is OTSoft default; -1 means don't bother; 0 means spec must be >= gen
+GRAVITY = True
 SPECGENCONS = [
     ("Id(Bk)Syl1", "Id(Bk)"),
     ("MaxIOSyl1", "MaxIO"),
@@ -58,7 +59,7 @@ class Learner:
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
-    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0):
+    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0, gravity=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -78,6 +79,8 @@ class Learner:
         self.tableaux_list = []
         self.training_tableaux_list = []
         self.specgenbias = specgenbias
+        self.gravity = gravity
+        self.errorcounter = 0
 
     def set_tableaux(self, tableaux_list):
         self.tableaux_list = tableaux_list
@@ -180,15 +183,15 @@ class Learner:
 
             # do any necessary shuffling re a priori rankings right away
             for speccon, gencon in [pairofcons for pairofcons in SPECGENCONS if pairofcons[0] in self.weights.keys() and pairofcons[1] in self.weights.keys()]:  # SPECGENCONS:
-                if self.specgenbias > 0 and round(self.weights[speccon], 10) < round(self.weights[gencon] + self.specgenbias, 10):
+                if self.specgenbias >= 0 and round(self.weights[speccon], 10) < round(self.weights[gencon] + self.specgenbias, 10):
                     apriori_adjust = self.weights[gencon] + self.specgenbias - self.weights[speccon]
                     self.weights[speccon] = self.weights[gencon] + self.specgenbias
 
                     linetowrite = "0" + "\t" + "Apriori" + "\t" + speccon + ">>" + gencon + "\t"
                     for con in self.constraints:
-                        if con != speccon or self.specgenbias == 0:
+                        if con != speccon or self.specgenbias == -1:
                             linetowrite += "\t\t"
-                        else:  # SPEC_GEN_BIAS != 0
+                        else:  # SPEC_GEN_BIAS != -1
                             linetowrite += str(apriori_adjust) + "\t" + str(self.weights[speccon])
                     linetowrite += "\n"
                     history.write(linetowrite)
@@ -309,7 +312,8 @@ class Learner:
         historystream.write(linetowrite)
 
         for speccon, gencon in [pairofcons for pairofcons in SPECGENCONS if pairofcons[0] in self.weights.keys() and pairofcons[1] in self.weights.keys()]:  # SPECGENCONS:
-            if self.specgenbias > 0 and round(self.weights[speccon], 10) < round(self.weights[gencon] + self.specgenbias, 10):
+
+            if self.specgenbias >= 0 and round(self.weights[speccon], 10) < round(self.weights[gencon] + self.specgenbias, 10):
                 # # did the lower one come up too high, or did the upper one come down too low?
                 # specconadjustment = adjustments[speccon] if speccon in adjustments.keys() else 0
                 # genconadjustment = adjustments[gencon] if gencon in adjustments.keys() else 0
@@ -318,12 +322,36 @@ class Learner:
 
                 linetowrite = str(learningtrial_num) + "\t" + "Apriori" + "\t" + speccon + ">>" + gencon + "\t"
                 for con in self.constraints:
-                    if con != speccon or self.specgenbias == 0:
+                    if con != speccon or self.specgenbias == -1:
                         linetowrite += "\t\t"
-                    else:  # SPEC_GEN_BIAS != 0
-                        linetowrite += str(apriori_adjust) + "\t" + str(self.weights[speccon])
+                    else:  # SPEC_GEN_BIAS != -1
+                        linetowrite += str(apriori_adjust) + "\t" + str(self.weights[speccon]) + "\t"
                 linetowrite += "\n"
                 historystream.write(linetowrite)
+
+            themagicalconstant = 2
+            if self.gravity:  #  and self.errorcounter % themagicalconstant == 0:  # completely arbitrarily, apply gravitational drift every 5 errors
+                specvioln = optimal_df[speccon].values[0]
+                genvioln = optimal_df[gencon].values[0]
+                # confirm that this kind of faithfulness constraint was involved in the current error
+                # if not, they should not be adjusted
+                if specvioln > 0:
+                    # spec_proportion = specvioln / (genvioln * themagicalconstant)  #  * themagicalconstant))
+                    spec_adjust = 0  # - (spec_proportion * cur_R_F)
+                    gen_adjust = -cur_R_F
+                    self.weights[speccon] += spec_adjust
+                    self.weights[gencon] += gen_adjust
+
+                    linetowrite = str(learningtrial_num) + "\t" + "Gravity" + "\t" + gencon + "\t"  # speccon + "&" + gencon + "\t"
+                    for con in self.constraints:
+                        if con == speccon:
+                            linetowrite += str(spec_adjust) + "\t" + str(self.weights[speccon]) + "\t"
+                        elif con == gencon:
+                            linetowrite += str(gen_adjust) + "\t" + str(self.weights[gencon]) + "\t"
+                        else:  # it's not a (paired) faith constraint
+                            linetowrite += "\t\t"
+                    linetowrite += "\n"
+                    historystream.write(linetowrite)
 
     def learn(self, tableau_df, cur_R_F, cur_R_M, cur_noise_F, cur_noise_M, learningtrial_num, historystream):
         # select a learning datum from distribution (which could just be all one form)
@@ -350,6 +378,7 @@ class Learner:
 
         # if the optimal candidate does not match the intended winner, update the weights
         if datum != optimal_cand:
+            self.errorcounter += 1
             self.updateweights(tableau_df, datum, optimal_cand, cur_R_F, cur_R_M, learningtrial_num, historystream)
 
     def testgrammar(self, numtimes):
@@ -536,8 +565,9 @@ def main():
     # files_exps = make_files_exps_list()
     # files_exps = sort_files_exps_list(files_exps)
     files_exps = [
-        ('OTSoft-PDDP-NEst_GLA.txt', 'NE153'),
-        ('OTSoft-PDDP-Fin_GLA.txt', 'Fi153')
+        # ('OTSoft-PDDP-NEst_GLA.txt', 'NE153'),
+        ('OTSoft-PDDP-Fin_GLA.txt', 'Fi183'),
+        # ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi993')
     ]
     for fe in files_exps:
         print(fe)
@@ -553,12 +583,17 @@ def main():
             print("results folder for " + expnum + " already exists; skipping!")
         else:
             os.mkdir(resultsdirpath)
+            # DATA_DIR = WORKING_DIR + "/20240117_forOTS"  # + "_wdel-gen-ne_ixn"
             onesimulation(srcfilepath=DATA_DIR + "/" + fname, destdir=resultsdirpath, expnum=expnum)
+
+
+        # DATA_DIR = WORKING_DIR + "/20240117_forOTS" + ("_wdel-gen-ne_ixn" if "ixn" in resultsdirpath else "")
+        # onesimulation(srcfilepath=DATA_DIR + "/" + fname, destdir=resultsdirpath, expnum=expnum)
 
 
 def onesimulation(srcfilepath, destdir, expnum):
     starttime = datetime.now()
-    learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS)
+    learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY)
     tableaux = learner.read_input()
     learner.set_tableaux(get_tableaux(tableaux, learner.constraints))
 
@@ -578,7 +613,8 @@ def onesimulation(srcfilepath, destdir, expnum):
 
         rf.write("\n--------------- PARAMETERS ---------------------\n")
         rf.write("Magri update used: " + ("yes" if MAGRI else "no") + "\n")
-        rf.write("specific > general bias: " + (str(SPECGENBIAS) if SPECGENBIAS > 0 else "no") + "\n")
+        rf.write("Gravity used: " + ("yes" if GRAVITY else "no") + "\n")
+        rf.write("specific > general bias: " + (str(SPECGENBIAS) if SPECGENBIAS >= 0 else "no") + "\n")
         rf.write("learning trials, listed by batch: " + str(learner.learning_trials) + "\n")
         rf.write("markedness plasticity, listed by batch: " + str(LEARNING_R_M) + "\n")
         rf.write("markedness noise, listed by batch: " + str(LEARNING_NOISE_M) + "\n")
@@ -607,7 +643,7 @@ def onesimulation(srcfilepath, destdir, expnum):
 
         print("\n--------------- BEGIN TEST ---------------------\n")
         rf.write("\n--------------- BEGIN TEST ---------------------\n\n")
-        testresults = learner.testgrammar(100)
+        testresults = learner.testgrammar(100)  # 100
         for results_t in testresults:
             ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons), axis=1)
             rf.write(ordered_t.to_string(index=False) + "\n\n")

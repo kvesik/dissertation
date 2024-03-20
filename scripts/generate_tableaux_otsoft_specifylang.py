@@ -110,53 +110,53 @@ vowels_features = {
     },
 }
 
-# back; high; low; round
-features_vowels = {
-    True: {
-        True: {
-            True: {
-                True: None,
-                False: None
-            },
-            False: {
-                True: u,
-                False: I
-            }
-        },
-        False: {
-            True: {
-                True: None,
-                False: a
-            },
-            False: {
-                True: o,
-                False: E
-            }
-        }
-    },
-    False: {
-        True: {
-            True: {
-                True: None,
-                False: None
-            },
-            False: {
-                True: y,
-                False: i
-            }
-        },
-        False: {
-            True: {
-                True: None,
-                False: A
-            },
-            False: {
-                True: O,
-                False: e
-            }
-        }
-    }
-}
+# # back; high; low; round
+# features_vowels = {
+#     True: {
+#         True: {
+#             True: {
+#                 True: None,
+#                 False: None
+#             },
+#             False: {
+#                 True: u,
+#                 False: I
+#             }
+#         },
+#         False: {
+#             True: {
+#                 True: None,
+#                 False: a
+#             },
+#             False: {
+#                 True: o,
+#                 False: E
+#             }
+#         }
+#     },
+#     False: {
+#         True: {
+#             True: {
+#                 True: None,
+#                 False: None
+#             },
+#             False: {
+#                 True: y,
+#                 False: i
+#             }
+#         },
+#         False: {
+#             True: {
+#                 True: None,
+#                 False: A
+#             },
+#             False: {
+#                 True: O,
+#                 False: e
+#             }
+#         }
+#     }
+# }
 
 fbcorrespondents = {
     i: I,
@@ -285,7 +285,7 @@ fbsegments = {
 
 IdBkSyl1 = "Id(Bk)Syl1"
 IdBk = "Id(Bk)"
-# IdBkFt1 = "Id(Bk)Ft1"
+IdBkFt1 = "Id(Bk)Ft1"
 # AgrBk = "Agr(Bk)"
 MaxIOSyl1 = "MaxIOSyl1"
 MaxIO = "MaxIO"
@@ -304,11 +304,13 @@ IdRdSyl1 = "Id(Rd)Syl1"
 IdRd = "Id(Rd)"
 
 ident_cons_general = [IdBk, IdHi, IdLo, IdRd]
+ident_cons_ft1 = [IdBkFt1]  # []
 ident_cons_syl1 = [IdBkSyl1, IdHiSyl1, IdLoSyl1, IdRdSyl1]
-ident_cons_all = ident_cons_syl1 + ident_cons_general
+ident_cons_all = ident_cons_syl1 + ident_cons_general + ident_cons_ft1
 
 identconstraint_relevantfeature = {
     IdBk: back,
+    IdBkFt1: back,
     IdBkSyl1: back,
     IdHi: high,
     IdHiSyl1: high,
@@ -326,7 +328,10 @@ class OTSoftTableauxGenerator:
     #   = 1 means use simplified stringency sets (previously simple=True)
     #   = 2 means use targeted negative evidence for SSeto opacity
     #       (so, eg, the alg knows that Aa->AA, rather than Aa->Aa with a acting as opaque)
-    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, fortesting=False):
+    #   = 3 means /e/ is always harmonic in SSeto-- no first-syllable transparency as per literature (cf Finnish, eg)
+    #   = 4
+    #   = 5 means both 2 and 3
+    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, withidentfoot=False, fortesting=False, inittransp_inputs=True):
         self.special = special
         self.bfocus = bfocus
         self.lang = lang
@@ -337,7 +342,9 @@ class OTSoftTableauxGenerator:
         self.withtranspn = withtranspn
         self.groupfeatures = groupfeatures
         self.countgroupasint = countgroupasint
+        self.withidentfoot = withidentfoot
         self.fortesting = fortesting
+        self.inititransp_inputs = inittransp_inputs
 
         self.stringencysets = sets_dict[lang] if special == 1 else sets_dict[fullset]
         self.segM_connames = {setname: "*" + setname for setname in self.stringencysets.keys()}
@@ -351,7 +358,7 @@ class OTSoftTableauxGenerator:
             if name1[0] != name2[0]
         ]
 
-        self.allcons = [IdBkSyl1, IdBk]
+        self.allcons = [IdBkSyl1] + ([IdBkFt1] if self.withidentfoot else []) + [IdBk]
         if self.withdeletions:
             if self.deletionbyfeature:
                 self.allcons += [MaxIOFSyl1, MaxIOF, MaxIOBSyl1, MaxIOB]
@@ -425,9 +432,9 @@ class OTSoftTableauxGenerator:
         elif constraint in self.nodis_connames:
             return self.nodis_violations(constraint, candidate)
         elif constraint in ident_cons_all:
-            # compare values of relevant feature for first vowel or all vowels in input form vs candidate
+            # compare values of relevant feature for first vowel or first foot or all vowels in input form vs candidate
             feature = identconstraint_relevantfeature[constraint]
-            indices = [0] if constraint in ident_cons_syl1 else []
+            indices = [0] if constraint in ident_cons_syl1 else ([0, 1] if constraint in ident_cons_ft1 else [])
             return self.get_identviolations(indices, feature, inputform, candidate)
         elif constraint in [IdHLRSyl1, IdHLR]:
             # compare values of each feature for relevant vowel(s) in input form vs candidate
@@ -496,6 +503,15 @@ class OTSoftTableauxGenerator:
     def get_allviolations(self, inputform, candidate, constraintset):
         return [self.get_numviolations(inputform, candidate, con) for con in constraintset]
 
+    def initialtransparent(self, wd):
+        if self.lang in [Fin, SSeto]:
+            return wd[0] in [i, e]
+        elif self.lang == NSeto:
+            return wd[0] == i
+        else:  # including for NEst
+            return False
+
+
     def generate_tableaux(self, inputs, relativefrequencies=None, foldername=None, customizations=""):
         # with io.open("OTSoft_"+lang+"_GLA_PDDP_nodiacritics.txt", "w", encoding='utf-8') as fGLA:
         #     with io.open("OTSoft_"+lang+"_LFCD_PDDP_nodiacritics.txt", "w", encoding='utf-8') as fLFCD:
@@ -530,7 +546,7 @@ class OTSoftTableauxGenerator:
                 for wd in inputs:
                     # just in case we want to include some targeted negative evidence of non-opacity as input for SSeto
                     usenegativeevidenceforopacity = False
-                    if self.special == 2 and self.lang == SSeto:
+                    if self.special in [2, 5] and self.lang == SSeto:
                         for bigram in [wd[j]+wd[j+1] for j in range(len(wd)-1)]:
                             if bigram in ["Oa", "Ou", "Aa", "Au", "ya", "yu", "ea", "eu"] and not (wd.startswith(e) or wd.startswith(i)):
                                 usenegativeevidenceforopacity = True
@@ -577,8 +593,8 @@ class OTSoftTableauxGenerator:
                             violationprofiles.append(violns)
                             outstring = wd if idx == 0 else ""
                             outstring += "\t" + cand + "\t"
-                            iswinner = isintendedwinner(wd, cand, self.lang)
-                            if iswinner and wd == cand:
+                            iswinner = isintendedwinner(wd, cand, self.lang, self.special)
+                            if iswinner and wd == cand and (self.inititransp_inputs or not self.initialtransparent(wd)) :
                                 # faithful winner; use in learning (and testing) data
                                 outstring += "1\t"
                                 ct += 1
@@ -848,7 +864,7 @@ def checksetsinpositions(vowelset, position, candidate):
 #         sys.exit(1)
 
 
-def iswordinlang(wd, lang):
+def iswordinlang(wd, lang, special=0):
 
     # In case we're looking at a substring of a word in SSeto that either started with /e/ or contained an /o/
     if len(wd) == 0:
@@ -893,14 +909,15 @@ def iswordinlang(wd, lang):
         # check positional restrictions
         if checksetsinpositions(b1+f1, noninitial, wd):
             return False
-        # if input begins with /e/, ignore it and just check VH for the remainder of the word
-        elif wd[0] == e:
-            return iswordinlang(wd[1:], lang)
+        # if input begins with /e/ and we're considering first-syllable w-transparency, ignore it and just
+        #   check VH for the remainder of the word
+        elif special not in [3, 5] and wd[0] == e:
+            return iswordinlang(wd[1:], lang, special)
         # if input contains an (opaque) /o/ somewhere noninitially, ensure the candidate does too
         #   and that VH works both before the /o/ and including/after it
         elif o in wd[1:]:
             o_idx = wd.index(o, 1)
-            return iswordinlang(wd[:o_idx], lang) and iswordinlang(wd[o_idx:], lang)
+            return iswordinlang(wd[:o_idx], lang, special) and iswordinlang(wd[o_idx:], lang, special)
         # otherwise just make sure there's no nonneutral fronts and backs in the same word
         elif checksetsinpositions(b5, anywhere, wd) and checksetsinpositions(f4, anywhere, wd):
             return False
@@ -908,13 +925,13 @@ def iswordinlang(wd, lang):
             return True
 
 
-def isintendedwinner(inputform, candidate, lang):
+def isintendedwinner(inputform, candidate, lang, special=0):
     if lang not in langnames:
         print("language " + lang + " not recognized; sorry")
         sys.exit(1)
 
     # If the input was grammatical to begin with, then the matching candidate should be the winner.
-    if iswordinlang(inputform, lang):
+    if iswordinlang(inputform, lang, special):
         return inputform == candidate
 
     # If not, however, then it should be the one where:
@@ -948,7 +965,7 @@ def isintendedwinner(inputform, candidate, lang):
         return False
 
     # check inventory, positional restrictions, and/or harmony
-    elif not iswordinlang(candidate, lang):
+    elif not iswordinlang(candidate, lang, special):
         return False
 
     # elif iswordinlang and isintendedwinner(*removeinitialtransparentV(inputform, candidate, lang)):
@@ -1173,7 +1190,10 @@ class UCLAPLGenerator:
 #   = 1 means use simplified stringency sets (previously SIMPin=True)
 #   = 2 means use targeted negative evidence for SSeto opacity
 #       (so, eg, the alg knows that Aa->AA, rather than Aa->Aa with a acting as opaque)
-def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, TESTin):
+#   = 3 means /e/ is always harmonic in SSeto-- no first-syllable transparency as per literature (cf Finnish, eg)
+#   = 4
+#   = 5 means both 2 and 3
+def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, IDFTin, TESTin, ITRANSPin):
 
     uclayes_otsoftno = False  # True for generating UCLA-PL input files; False for OTSoft
 
@@ -1186,21 +1206,25 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
 
     if not uclayes_otsoftno:  # OTSoft
         customizations = ""
-        customizations += "_simp" if SPECIALin == 1 else ("_neg" if SPECIALin == 2 else "")
+        customizations += "_simp" if SPECIALin == 1 else ("_neg" if SPECIALin == 2 else ("_noe" if SPECIALin == 3 else ("_noeneg" if SPECIALin == 5 else "")))
+        if IDFTin:
+            customizations += "_widft"
         if DELin:
             customizations += "_wdel" + ("-wft" if DELFTin else "-gen") + ("-ne" if NEMPin else "")
         # customizations += "_wdel" if DELin else ""
         if TRANSPin:
             customizations += "_wtr" + (("-grp" + ("-int" if GRPINTin else "-tf")) if FTGRPin else "-ind")
         customizations += "_ixn" if IXNin else ""
+        customizations += "_itra" if ITRANSPin else ""
         customizations += "_test" if TESTin else ""
-        foldername = datetime.now().strftime('%Y%m%d.%H%M%S') + '_forOTS'  # '-OTSoft-files'
+        foldername = datetime.now().strftime('%Y%m%d') + '_forOTS'  # '-OTSoft-files'  # .%H%M%S
         os.mkdir(foldername+customizations)
-        for langname in [SSeto, NEst]:  # langnames:
+        for langname in langnames:  #  [SSeto]:  # langnames:
             tableaux_generator = OTSoftTableauxGenerator(langname, special=SPECIALin, bfocus=True, withdeletions=DELin,
                                                          deletionbyfeature=DELFTin, withnonempty=NEMPin,
-                                                         withtranspn=TRANSPin, groupfeatures=FTGRPin, countgroupasint=GRPINTin,
-                                                         withinteractions=IXNin, fortesting=TESTin)
+                                                         withtranspn=TRANSPin, groupfeatures=FTGRPin,
+                                                         countgroupasint=GRPINTin, withinteractions=IXNin,
+                                                         withidentfoot=IDFTin, fortesting=TESTin, inittransp_inputs=ITRANSPin)
             tableaux_generator.generatetext(length2words + length3words, foldername=foldername, customizations=customizations)
 
     if uclayes_otsoftno:  # UCLA
@@ -1211,8 +1235,8 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
             lengthupto = 5
             wordlists = [length1words, length2words, length3words, length4words, length5words]
             allwords = []
-            for i in range(lengthupto):
-                allwords.extend(wordlists[i])
+            for wdlen in range(lengthupto):
+                allwords.extend(wordlists[wdlen])
             inputandtest_generator.generate_inputsandtests(allwords, lengthupto, foldername=foldername)
 
 
@@ -1243,11 +1267,13 @@ if __name__ == "__main__":
                                 if DEL or TRANSP:
                                     interactionoptions = [True]  # += [True]
                                 for IXN in interactionoptions:
-                                    for TEST in ft:
-                                        print("iteration", counter)
-                                        counter += 1
-                                        # if TRANSP and FTGRP: ###############################
-                                        main_helper(SPECIALin=2, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
+                                    for IDFT in [False]:  # ft:
+                                        for TEST in ft:
+                                            for ITRANSP in ft:
+                                                print("iteration", counter)
+                                                counter += 1
+                                                # if TRANSP and FTGRP: ###############################
+                                                main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST, ITRANSPin=ITRANSP)
 
     elif False:
         counter = 1
@@ -1258,12 +1284,13 @@ if __name__ == "__main__":
         FTGRP = False
         GRPINT = False
         IXN = True
+        IDFT = False
         for TEST in ft:
             print("iteration", counter, "of 2")
             counter += 1
-            main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, TESTin=TEST)
+            main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST)
 
     # generate inputs for all languages but for only one specific combination of arguments
     else:
-        main_helper(SPECIALin=0, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, TESTin=True)
+        main_helper(SPECIALin=0, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, IDFTin=False, TESTin=True)
 

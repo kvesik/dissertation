@@ -12,19 +12,23 @@ INIT_WEIGHTS = {}
 INIT_F = 0
 INIT_M = 100
 
-WORKING_DIR = "../simulation_inputs/20240117 onward - OTSoft inputs (max len 3)"  # "OTSoft2.6old"
-DATA_DIR = WORKING_DIR + "/20240117_forOTS"  # + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
+WORKING_DIR = "../simulation_inputs/20240117 on - OTSoft inputs"  # "OTSoft2.6old"
+DATA_DIR = WORKING_DIR + "/20240307_forOTS" + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
-MAGRI = False
+MAGRI = True
 # magritype =
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
-MAGRITYPE = 1
+MAGRITYPE = 3
 SPECGENBIAS = 0  # 20  # 20 is OTSoft default; -1 means don't bother; 0 means spec must be >= gen
-GRAVITY = True
+EXPANDINGBIAS = True
+EXPANDSLOWLY = True
+GRAVITY = False
+PREFERSPECIFICITY = True
 SPECGENCONS = [
     ("Id(Bk)Syl1", "Id(Bk)"),
+    # ("Id(Bk)Ft1", "Id(Bk)"), TODO
     ("MaxIOSyl1", "MaxIO"),
     ("Id(Hi,Lo,Rd)Syl1", "Id(Hi,Lo,Rd)"),
     ("Id(Hi)Syl1", "Id(Hi)"),
@@ -59,7 +63,7 @@ class Learner:
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
-    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0, gravity=False):
+    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0, gravity=False, preferspecificity=False, expandingbias=False, expandslowly=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -79,7 +83,10 @@ class Learner:
         self.tableaux_list = []
         self.training_tableaux_list = []
         self.specgenbias = specgenbias
+        self.expandingbias = expandingbias
+        self.expandslowly = expandslowly
         self.gravity = gravity
+        self.preferspecificity = preferspecificity
         self.errorcounter = 0
 
     def set_tableaux(self, tableaux_list):
@@ -280,6 +287,17 @@ class Learner:
             elif o > 0:
                 numpromoted += 1  # for Magri update
                 adjustments[c] = 1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+        # if we're doing "prefer specificity," make sure that if a specific faithfulness constraint is getting promoted,
+        # its general counterpart stays where it is
+        if self.preferspecificity:
+            for speccon, gencon in [pairofcons for pairofcons in SPECGENCONS]:
+                if speccon in self.constraints and speccon in adjustments.keys():
+                    specadjustment = adjustments[speccon]
+                    adjustments[gencon] = 0
+                    if specadjustment > 0:
+                        numpromoted -= 1
+                    elif specadjustment < 0:
+                        numdemoted -= 1
         if self.magri:
             # magritype =
             #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
@@ -335,7 +353,7 @@ class Learner:
                 genvioln = optimal_df[gencon].values[0]
                 # confirm that this kind of faithfulness constraint was involved in the current error
                 # if not, they should not be adjusted
-                if specvioln > 0:
+                if genvioln > 0:
                     # spec_proportion = specvioln / (genvioln * themagicalconstant)  #  * themagicalconstant))
                     spec_adjust = 0  # - (spec_proportion * cur_R_F)
                     gen_adjust = -cur_R_F
@@ -352,6 +370,15 @@ class Learner:
                             linetowrite += "\t\t"
                     linetowrite += "\n"
                     historystream.write(linetowrite)
+
+            # if applying the expanding-bias bias, check now (after all other adjustments) if there is more space than before
+            if self.expandingbias:
+                currentdiff = self.weights[speccon] - self.weights[gencon]
+                if currentdiff > self.specgenbias:
+                    if self.expandslowly:
+                        self.specgenbias = (self.specgenbias + currentdiff) / 2  # halfway only
+                    else:
+                        self.specgenbias = currentdiff
 
     def learn(self, tableau_df, cur_R_F, cur_R_M, cur_noise_F, cur_noise_M, learningtrial_num, historystream):
         # select a learning datum from distribution (which could just be all one form)
@@ -528,46 +555,49 @@ def make_files_exps_list():
         for TRANSP in ft:
             for FTGRP in ft:
                 for IXN in ft:
-                    customizations = ""
-                    customizations += "_wdel" if DEL else ""
-                    if TRANSP:
-                        customizations += "_wtr" + ("-grp" if FTGRP else "-ind")
-                    customizations += "_ixn" if IXN else ""
+                    for IDFT in ft:
+                        customizations = ""
+                        customizations += "_widft" if IDFT else ""
+                        customizations += "_wdel" if DEL else ""
+                        if TRANSP:
+                            customizations += "_wtr" + ("-grp" if FTGRP else "-ind")
+                        customizations += "_ixn" if IXN else ""
 
-                    for numtrials_id in LEARNING_TRIALS_DICT.keys():
-                        ones_place = str(numtrials_id)
+                        for numtrials_id in LEARNING_TRIALS_DICT.keys():
+                            ones_place = str(numtrials_id)
 
-                        hundreds_place = "x"
-                        if not DEL and not TRANSP and not FTGRP and not IXN:
-                            hundreds_place = "1"
-                        elif DEL and not TRANSP and not FTGRP and IXN:
-                            hundreds_place = "2"
-                        elif not DEL and TRANSP and FTGRP and IXN:
-                            hundreds_place = "3"
-                        elif not DEL and TRANSP and not FTGRP and IXN:
-                            hundreds_place = "4"
-                        elif DEL and TRANSP and FTGRP and IXN:
-                            hundreds_place = "5"
-                        elif DEL and TRANSP and not FTGRP and IXN:
-                            hundreds_place = "6"
-                        if hundreds_place != "x":
-                            tens_place = "0"
+                            hundreds_place = "x"
+                            if not DEL and not TRANSP and not FTGRP and not IXN:
+                                hundreds_place = "1"
+                            elif DEL and not TRANSP and not FTGRP and IXN:
+                                hundreds_place = "2"
+                            elif not DEL and TRANSP and FTGRP and IXN:
+                                hundreds_place = "3"
+                            elif not DEL and TRANSP and not FTGRP and IXN:
+                                hundreds_place = "4"
+                            elif DEL and TRANSP and FTGRP and IXN:
+                                hundreds_place = "5"
+                            elif DEL and TRANSP and not FTGRP and IXN:
+                                hundreds_place = "6"
+                            if hundreds_place != "x":
+                                tens_place = "0"
 
-                            for lang in langnames:
-                                lang_code = lang[:2]
+                                for lang in langnames:
+                                    lang_code = lang[:2]
 
-                                filename = "OTSoft-PDDP-" + lang + "_GLA" + customizations + ".txt"
-                                files_exps.append((filename, lang_code+hundreds_place+tens_place+ones_place))
+                                    filename = "OTSoft-PDDP-" + lang + "_GLA" + customizations + ".txt"
+                                    files_exps.append((filename, lang_code+hundreds_place+tens_place+ones_place))
     return files_exps
 
 
-def main():
+def main(prefix="", argstuple=None):
     # files_exps = make_files_exps_list()
     # files_exps = sort_files_exps_list(files_exps)
     files_exps = [
         # ('OTSoft-PDDP-NEst_GLA.txt', 'NE153'),
-        ('OTSoft-PDDP-Fin_GLA.txt', 'Fi183'),
-        # ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi993')
+        # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi183'),
+        ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi993'),
+        ('OTSoft-PDDP-SSeto_GLA_wdel-gen-ne_ixn.txt', 'SS993')
     ]
     for fe in files_exps:
         print(fe)
@@ -575,7 +605,7 @@ def main():
     for fname, expnum in files_exps:
         # DATA_DIR  # firstdir = fname[:fname.index("\\")]
         # fname   # datafilename = fname[fname.index("\\")+1:]
-        resultsdir = expnum + "_python_" + fname.replace(".txt", "")
+        resultsdir = prefix + expnum + "_python_" + fname.replace(".txt", "")
 
         print("running " + expnum + " simulation for file", fname)
         resultsdirpath = WORKING_DIR + "/" + resultsdir
@@ -584,16 +614,19 @@ def main():
         else:
             os.mkdir(resultsdirpath)
             # DATA_DIR = WORKING_DIR + "/20240117_forOTS"  # + "_wdel-gen-ne_ixn"
-            onesimulation(srcfilepath=DATA_DIR + "/" + fname, destdir=resultsdirpath, expnum=expnum)
-
+            onesimulation(srcfilepath=DATA_DIR + "/" + fname, destdir=resultsdirpath, expnum=expnum, argstuple=argstuple)
 
         # DATA_DIR = WORKING_DIR + "/20240117_forOTS" + ("_wdel-gen-ne_ixn" if "ixn" in resultsdirpath else "")
         # onesimulation(srcfilepath=DATA_DIR + "/" + fname, destdir=resultsdirpath, expnum=expnum)
 
 
-def onesimulation(srcfilepath, destdir, expnum):
+def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
     starttime = datetime.now()
-    learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY)
+    if argstuple is None:
+        learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY)
+    else:
+        learner = Learner(srcfilepath, destdir, expnum, *argstuple)
+
     tableaux = learner.read_input()
     learner.set_tableaux(get_tableaux(tableaux, learner.constraints))
 
@@ -614,7 +647,9 @@ def onesimulation(srcfilepath, destdir, expnum):
         rf.write("\n--------------- PARAMETERS ---------------------\n")
         rf.write("Magri update used: " + ("yes" if MAGRI else "no") + "\n")
         rf.write("Gravity used: " + ("yes" if GRAVITY else "no") + "\n")
+        rf.write("Prefer specificity: " + ("yes" if PREFERSPECIFICITY else "no") + "\n")
         rf.write("specific > general bias: " + (str(SPECGENBIAS) if SPECGENBIAS >= 0 else "no") + "\n")
+        rf.write("*expanding* specific > general bias: " + (("yes (" + ("slowly" if EXPANDSLOWLY else "regular speed") + ")") if EXPANDINGBIAS else "no") + "\n")
         rf.write("learning trials, listed by batch: " + str(learner.learning_trials) + "\n")
         rf.write("markedness plasticity, listed by batch: " + str(LEARNING_R_M) + "\n")
         rf.write("markedness noise, listed by batch: " + str(LEARNING_NOISE_M) + "\n")
@@ -641,17 +676,39 @@ def onesimulation(srcfilepath, destdir, expnum):
             rf.write(con + "\t" + roundedstring + "\n")
 
 
-        print("\n--------------- BEGIN TEST ---------------------\n")
-        rf.write("\n--------------- BEGIN TEST ---------------------\n\n")
-        testresults = learner.testgrammar(100)  # 100
-        for results_t in testresults:
-            ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons), axis=1)
-            rf.write(ordered_t.to_string(index=False) + "\n\n")
+        # print("\n--------------- BEGIN TEST ---------------------\n")
+        # rf.write("\n--------------- BEGIN TEST ---------------------\n\n")
+        # testresults = learner.testgrammar(10)  # 100
+        # for results_t in testresults:
+        #     ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons), axis=1)
+        #     rf.write(ordered_t.to_string(index=False) + "\n\n")
 
         endtime = datetime.now()
         print("time elapsed", endtime-starttime)
         rf.write("time elapsed: " + str(endtime-starttime))
 
 
+def feb2024combinations():
+    for magri in [False, True]:
+        for magritype in [1, 3] if magri else [0]:  # [1, 2, 3]
+            for gravity in [False]:  # , True]:
+                for preferspecificity in [False, True]:
+                    for specgenbias in [-1, 0, 20, 30]:
+                        for expandingbias in [False, True] if specgenbias >= 0 else [False]:
+                            for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
+                                abbrevstr = "NIT_"
+                                abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                abbrevstr += "gr_" if gravity else ""
+                                abbrevstr += "fs_" if preferspecificity else ""
+                                if specgenbias >= 0:
+                                    abbrevstr += "sg" + str(specgenbias) + "_"
+                                    if expandingbias:
+                                        abbrevstr += "ex" + ("-s" if expandingslowly else "-r") + "_"
+                                print(abbrevstr)
+                                # fs_sg20_ex - r
+                                main(prefix=abbrevstr, argstuple=(magri, magritype, specgenbias, gravity, preferspecificity, expandingbias, expandingslowly))
+
+
 if __name__ == "__main__":
-    main()
+    # main()
+    feb2024combinations()

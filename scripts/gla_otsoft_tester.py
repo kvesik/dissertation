@@ -321,7 +321,7 @@ def main(relfilepath=None):
     endofcustomizationstring = grammarfilename.index("DraftOutput")
     customizationstring = grammarfilename[begofcustomizationstring:endofcustomizationstring]
 
-    testfileparentparentdir = os.path.join("..", "simulation_inputs", "20240117 onward - OTSoft inputs (max len 3)")
+    testfileparentparentdir = os.path.join("..", "sim_ins", "20240117 onward - OTSoft inputs (max len 3)")
     testtableauxfilepath = ""
     testfileparentdirs = [os.path.join(testfileparentparentdir, fn) for fn in os.listdir(testfileparentparentdir) if fn.endswith(("forOTS_" + customizationstring + "_test").replace("__", "_"))]
     for tfpdir in [fn for fn in testfileparentdirs if os.path.isdir(fn)]:
@@ -403,7 +403,7 @@ def getmatchtype(inputfrequencies, outputfrequencies):
 
 if __name__ == "__main__":
     filesdone = []
-    firstfolder = "../simulation_outputs/20240117_LFCD_outputs"
+    firstfolder = "../sim_outs/20240117_LFCD_outputs"
     folderswithLFCDfiles = [fn for fn in os.listdir(firstfolder) if "FilesForOTSoft" in fn and "LFCD" in fn]
     for secondfolder in folderswithLFCDfiles:
         DraftOutputfiles = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if fn.endswith("DraftOutput.txt")]

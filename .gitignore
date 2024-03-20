@@ -9,5 +9,5 @@ ResultsForOTSoft*.htm
 
 *.pyc
 .idea/*
-simulation_outputs/*/*/StringencyRelationsAmongContraints*.txt
-simulation_outputs/*/*/*/StringencyRelationsAmongContraints*.txt
+sim_outs/*/*/StringencyRelationsAmongContraints*.txt
+sim_outs/*/*/*/StringencyRelationsAmongContraints*.txt

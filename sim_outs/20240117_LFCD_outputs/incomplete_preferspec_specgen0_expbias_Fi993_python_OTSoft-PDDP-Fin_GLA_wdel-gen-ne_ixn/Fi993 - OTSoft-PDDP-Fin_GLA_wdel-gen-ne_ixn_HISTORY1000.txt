@@ -1,0 +1,265 @@
+trialnum	Generated	Heard	Id(Bk)Syl1	now	Id(Bk)	now	MaxIOSyl1	now	MaxIO	now	NonEmpty	now	*F1	now	*F3	now	*F4	now	*F5	now	*B1	now	*B2	now	*B3	now	*B5	now	*F1_B1	now	*F1..._B1	now	*F1_B2	now	*F1..._B2	now	*F1_B3	now	*F1..._B3	now	*F1_B5	now	*F1..._B5	now	*F3_B1	now	*F3..._B1	now	*F3_B2	now	*F3..._B2	now	*F3_B3	now	*F3..._B3	now	*F3_B5	now	*F3..._B5	now	*F4_B1	now	*F4..._B1	now	*F4_B2	now	*F4..._B2	now	*F4_B3	now	*F4..._B3	now	*F4_B5	now	*F4..._B5	now	*F5_B1	now	*F5..._B1	now	*F5_B2	now	*F5..._B2	now	*F5_B3	now	*F5..._B3	now	*F5_B5	now	*F5..._B5	now	*_B1F1	now	*_B1...F1	now	*_B1F3	now	*_B1...F3	now	*_B1F4	now	*_B1...F4	now	*_B1F5	now	*_B1...F5	now	*_B2F1	now	*_B2...F1	now	*_B2F3	now	*_B2...F3	now	*_B2F4	now	*_B2...F4	now	*_B2F5	now	*_B2...F5	now	*_B3F1	now	*_B3...F1	now	*_B3F3	now	*_B3...F3	now	*_B3F4	now	*_B3...F4	now	*_B3F5	now	*_B3...F5	now	*_B5F1	now	*_B5...F1	now	*_B5F3	now	*_B5...F3	now	*_B5F4	now	*_B5...F4	now	*_B5F5	now	*_B5...F5	now
+				0		0		0		0		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100
+1	___	iua					2	2	0	0	2	102							-2	98							-2	98																																																													-2	98	-2	98																																																																
+2	a_	au							2	2																	-2	96																																																																																																																																
+2	Apriori	Id(Bk)Syl1>>Id(Bk)	2	2																																																																																																																																																									
+2	Apriori	MaxIOSyl1>>MaxIO					2	4																																																																																																																																																					
+3	__a	eyA			2	2	2	6	0	2					-2	98	-2	98	-2	96							2	98																																																																																																																																
+3	Apriori	Id(Bk)Syl1>>Id(Bk)	2	4																																																																																																																																																									
+4	i__	iea							2	4							-2	96	-2	94							-2	96																																													-2	98	-2	98													-2	96	-2	96																																																																
+4	Apriori	Id(Bk)Syl1>>Id(Bk)	2	6																																																																																																																																																									
+4	Apriori	MaxIOSyl1>>MaxIO					2	8																																																																																																																																																					
+5	u_	yA	2	8	0	2			2	6					-2	96	-2	94	-2	92							2	98																																																																																																																																
+5	Apriori	MaxIOSyl1>>MaxIO					4	12																																																																																																																																																					
+6	A__	Ayy							2	8					-2	94	-2	92	-2	90																																																																																																																																								
+6	Apriori	MaxIOSyl1>>MaxIO					2	14																																																																																																																																																					
+7	_e_	Aee					2	16	0	8					-2	92	-2	90	-2	88																																																																																																																																								
+8	_i_	AiO					2	18	0	8			-2	98	-2	90	-2	88	-2	86																																																																																																																																								
+8	Apriori	Id(Bk)Syl1>>Id(Bk)	2	10																																																																																																																																																									
+9	i_	iO							2	10			-2	96	-2	88	-2	86	-2	84																																																																																																																																								
+9	Apriori	Id(Bk)Syl1>>Id(Bk)	2	12																																																																																																																																																									
+9	Apriori	MaxIOSyl1>>MaxIO					2	20																																																																																																																																																					
+10	_y_	OyO					2	22	0	10			-2	94	-2	86	-2	84	-2	82																																																																																																																																								
+11	__i	eAi					2	24	0	10					-2	84	-2	82	-2	80																																																																																																																																								
+11	Apriori	Id(Bk)Syl1>>Id(Bk)	2	14																																																																																																																																																									
+12	e__	eOO							2	12			-2	92	-2	82	-2	80	-2	78																																																																																																																																								
+12	Apriori	Id(Bk)Syl1>>Id(Bk)	2	16																																																																																																																																																									
+12	Apriori	MaxIOSyl1>>MaxIO					2	26																																																																																																																																																					
+13	__e	aue					2	28	0	12																	-2	96																																																																																																																									-2	98	-2	98	-2	98	-2	98
+14	e__	eue							2	14							-2	78	-2	76							-2	94																																													-2	96	-2	96													-2	94	-2	94																																																									-2	96	-2	96	-2	96	-2	96
+14	Apriori	Id(Bk)Syl1>>Id(Bk)	2	18																																																																																																																																																									
+14	Apriori	MaxIOSyl1>>MaxIO					2	30																																																																																																																																																					
+15	i__	iui							2	16									-2	74							-2	92																																																													-2	92	-2	92																																																													-2	94	-2	94
+15	Apriori	MaxIOSyl1>>MaxIO					2	32																																																																																																																																																					
+16	O_	oo	2	20	0	2			2	18			2	94	2	84	2	80	2	76					-2	98	-2	90																																																																																																																																
+16	Apriori	MaxIOSyl1>>MaxIO					4	36																																																																																																																																																					
+17	_i_	oie					2	38	0	18							-2	78	-2	74					-2	96	-2	88																																																																																																											-2	98	-2	98	-2	98											-2	94	-2	92	-2	92
+18	_i_	Aie					2	40	0	18					-2	82	-2	76	-2	72																																																																																																																																								
+18	Apriori	Id(Bk)Syl1>>Id(Bk)	2	22																																																																																																																																																									
+19	y__	yOO							2	20			-2	92	-2	80	-2	74	-2	70																																																																																																																																								
+19	Apriori	Id(Bk)Syl1>>Id(Bk)	2	24																																																																																																																																																									
+19	Apriori	MaxIOSyl1>>MaxIO					2	42																																																																																																																																																					
+20	i__	iAO							2	22			-2	90	-2	78	-2	72	-2	68																																																																																																																																								
+20	Apriori	MaxIOSyl1>>MaxIO					2	44																																																																																																																																																					
+21	_e	ye					2	46	0	22					-2	76	-2	70	-2	66																																																																																																																																								
+22	_i_	eia					2	48	0	22							-2	68	-2	64							-2	86																																															-2	94													-2	90	-2	90																																																																
+22	Apriori	Id(Bk)Syl1>>Id(Bk)	2	26																																																																																																																																																									
+23	e__	euu							2	24																	-2	84																																													-2	94	-2	92													-2	88	-2	88																																																																
+23	Apriori	Id(Bk)Syl1>>Id(Bk)	2	28																																																																																																																																																									
+23	Apriori	MaxIOSyl1>>MaxIO					2	50																																																																																																																																																					
+24	e__	eOO							2	26			-2	88	-2	74	-2	66	-2	62																																																																																																																																								
+24	Apriori	MaxIOSyl1>>MaxIO					2	52																																																																																																																																																					
+25	i_	iA							2	28					-2	72	-2	64	-2	60																																																																																																																																								
+25	Apriori	MaxIOSyl1>>MaxIO					2	54																																																																																																																																																					
+26	y__	uua	2	30	0	2			2	30					2	74	2	66	2	62							-2	82																																																																																																																																
+26	Apriori	MaxIOSyl1>>MaxIO					4	58																																																																																																																																																					
+27	__i	eai					2	60	0	30							-2	64	-2	60							-2	80																																													-2	92	-2	90													-2	86	-2	86																																																													-2	90	-2	90
+28	_e_	uee					2	62	0	30							-2	62	-2	58							-2	78																																																																																																																									-2	94	-2	92	-2	88	-2	88
+28	Apriori	Id(Bk)Syl1>>Id(Bk)	2	32																																																																																																																																																									
+29	_y_	Oyy					2	64	0	30			-2	86	-2	72	-2	60	-2	56																																																																																																																																								
+29	Apriori	Id(Bk)Syl1>>Id(Bk)	2	34																																																																																																																																																									
+30	e__	eyy							2	32					-2	70	-2	58	-2	54																																																																																																																																								
+30	Apriori	Id(Bk)Syl1>>Id(Bk)	2	36																																																																																																																																																									
+30	Apriori	MaxIOSyl1>>MaxIO					2	66																																																																																																																																																					
+31	y_	ua	2	38	0	2			2	34					2	72	2	60	2	56							-2	76																																																																																																																																
+31	Apriori	MaxIOSyl1>>MaxIO					4	70																																																																																																																																																					
+32	y__	yOA							2	36			-2	84	-2	70	-2	58	-2	54																																																																																																																																								
+32	Apriori	MaxIOSyl1>>MaxIO					2	72																																																																																																																																																					
+33	_i	Oi					2	74	0	36			-2	82	-2	68	-2	56	-2	52																																																																																																																																								
+34	e__	eei							2	38							-2	54	-2	50																																																																																																																																								
+34	Apriori	Id(Bk)Syl1>>Id(Bk)	2	40																																																																																																																																																									
+34	Apriori	MaxIOSyl1>>MaxIO					2	76																																																																																																																																																					
+35	y_	ua	2	42	0	2			2	40					2	70	2	56	2	52							-2	74																																																																																																																																
+35	Apriori	MaxIOSyl1>>MaxIO					4	80																																																																																																																																																					
+36	i__	iyi							2	42					-2	68	-2	54	-2	50																																																																																																																																								
+36	Apriori	MaxIOSyl1>>MaxIO					2	82																																																																																																																																																					
+37	O__	oiu	2	44	0	2			2	44			2	84	2	70	2	56							-2	94	-2	72																																																													-2	84	-2	84																																													-2	96	-2	96													-2	86	-2	86
+37	Apriori	MaxIOSyl1>>MaxIO					4	86																																																																																																																																																					
+38	y_	ye							2	46							-2	54	-2	48																																																																																																																																								
+38	Apriori	MaxIOSyl1>>MaxIO					2	88																																																																																																																																																					
+39	e__	eyA							2	48					-2	68	-2	52	-2	46																																																																																																																																								
+39	Apriori	MaxIOSyl1>>MaxIO					2	90																																																																																																																																																					
+40	Ae_	aeu	2	46	0	2			2	50					2	70	2	54	2	48							-2	70																																													-2	90	-2	88													-2	82	-2	82																																																									-2	92	-2	90	-2	84	-2	84
+40	Apriori	MaxIOSyl1>>MaxIO					4	94																																																																																																																																																					
+41	a__	Aiy	2	48	0	2			2	52					-2	68	-2	52	-2	46							2	72																																																																																																																																
+41	Apriori	MaxIOSyl1>>MaxIO					4	98																																																																																																																																																					
+42	O__	OOy							2	54			-2	82	-2	66	-2	50	-2	44																																																																																																																																								
+42	Apriori	MaxIOSyl1>>MaxIO					2	100																																																																																																																																																					
+43	ee_	eea							2	56																	-2	70																																													-2	88	-2	86													-2	80	-2	80																																																																
+43	Apriori	MaxIOSyl1>>MaxIO					2	102																																																																																																																																																					
+44	Oi_	oiu	2	50	0	2			2	58			2	84	2	68	2	52	2	46					-2	92	-2	68																																																													-2	78	-2	78																																													-2	94	-2	94													-2	82	-2	82
+44	Apriori	MaxIOSyl1>>MaxIO					4	106																																																																																																																																																					
+45	ei_	eiA							2	60					-2	66	-2	50	-2	44																																																																																																																																								
+45	Apriori	MaxIOSyl1>>MaxIO					2	108																																																																																																																																																					
+46	A__	aua	2	52	0	2			2	62					2	68	2	52	2	46							-2	66																																																																																																																																
+46	Apriori	MaxIOSyl1>>MaxIO					4	112																																																																																																																																																					
+47	i__	ioo							2	64															-2	90	-2	64																																																									-2	98	-2	98	-2	76	-2	76																																																																
+47	Apriori	MaxIOSyl1>>MaxIO					2	114																																																																																																																																																					
+48	i__	iau							2	66																	-2	62																																																													-2	74	-2	74																																																																
+48	Apriori	MaxIOSyl1>>MaxIO					2	116																																																																																																																																																					
+49	a_u	aeu							2	68							-2	50	-2	44																																																					-2	86	-2	84													-2	72	-2	72																																																									-2	90	-2	88	-2	80	-2	80
+49	Apriori	MaxIOSyl1>>MaxIO					2	118																																																																																																																																																					
+50	uua	yyA	2	54	0	2									-2	66	-2	48	-2	42							2	64																																																																																																																																
+50	Apriori	MaxIOSyl1>>MaxIO					2	120																																																																																																																																																					
+51	ei_	eiO							2	70			-2	82	-2	64	-2	46	-2	40																																																																																																																																								
+51	Apriori	MaxIOSyl1>>MaxIO					2	122																																																																																																																																																					
+52	Oe_	oeo	2	56	0	2			2	72			2	84	2	66	2	48	2	42					-2	88	-2	62																																									-2	98	-2	98	-2	84	-2	82									-2	96	-2	96	-2	70	-2	70																																									-2	98	-2	96	-2	92	-2	92									-2	88	-2	86	-2	78	-2	78
+52	Apriori	MaxIOSyl1>>MaxIO					4	126																																																																																																																																																					
+53	Oyy	ouu	2	58	0	2							2	86	2	68	2	50	2	44					-2	86	-2	60																																																																																																																																
+53	Apriori	MaxIOSyl1>>MaxIO					2	128																																																																																																																																																					
+54	ua_	uao							2	74															-2	84	-2	58																																																																																																																																
+54	Apriori	MaxIOSyl1>>MaxIO					2	130																																																																																																																																																					
+55	Oi	oi	2	60	0	2							2	88	2	70	2	52	2	46					-2	82	-2	56																																																																																																													-2	90	-2	90													-2	76	-2	76
+55	Apriori	MaxIOSyl1>>MaxIO					2	132																																																																																																																																																					
+56	ee_	eeA							2	76					-2	68	-2	50	-2	44																																																																																																																																								
+56	Apriori	MaxIOSyl1>>MaxIO					2	134																																																																																																																																																					
+57	u_u	uou							2	78															-2	80	-2	54																																																																																																																																
+57	Apriori	MaxIOSyl1>>MaxIO					2	136																																																																																																																																																					
+58	Ai	ai	2	62	0	2									2	70	2	52	2	46							-2	52																																																																																																																													-2	74	-2	74
+58	Apriori	MaxIOSyl1>>MaxIO					2	138																																																																																																																																																					
+59	a_a	aoa							2	80															-2	78	-2	50																																																																																																																																
+59	Apriori	MaxIOSyl1>>MaxIO					2	140																																																																																																																																																					
+60	Ae_	AeO							2	82			-2	86	-2	68	-2	50	-2	44																																																																																																																																								
+60	Apriori	MaxIOSyl1>>MaxIO					2	142																																																																																																																																																					
+62	e_A	eOA							2	84			-2	84	-2	66	-2	48	-2	42																																																																																																																																								
+62	Apriori	MaxIOSyl1>>MaxIO					2	144																																																																																																																																																					
+63	yi	ui	2	64	0	2									2	68	2	50	2	44							-2	48																																																																																																																													-2	72	-2	72
+63	Apriori	MaxIOSyl1>>MaxIO					2	146																																																																																																																																																					
+66	Oiy	oiu	2	66	0	2							2	86	2	70	2	52	2	46					-2	76	-2	46																																																													-2	68	-2	68																																													-2	88	-2	88													-2	70	-2	70
+66	Apriori	MaxIOSyl1>>MaxIO					2	148																																																																																																																																																					
+67	OiA	oia	2	68	0	2							2	88	2	72	2	54	2	48					-2	74	-2	44																																																													-2	66	-2	66																																													-2	86	-2	86													-2	68	-2	68
+67	Apriori	MaxIOSyl1>>MaxIO					2	150																																																																																																																																																					
+68	oai	OAi	2	70	0	2							-2	86	-2	70	-2	52	-2	46					2	76	2	46																																																																																																															2	88													2	70	2	70
+68	Apriori	MaxIOSyl1>>MaxIO					2	152																																																																																																																																																					
+70	eeA	eea			2	4									2	72	2	54	2	48							-2	44																																													-2	82	-2	80													-2	64	-2	64																																																																
+70	Apriori	Id(Bk)Syl1>>Id(Bk)	2	72																																																																																																																																																									
+76	e_	eO							2	86			-2	84	-2	70	-2	52	-2	46																																																																																																																																								
+76	Apriori	MaxIOSyl1>>MaxIO					2	154																																																																																																																																																					
+77	uo	yO	2	74	0	4							-2	82	-2	68	-2	50	-2	44					2	78	2	46																																																																																																																																
+77	Apriori	MaxIOSyl1>>MaxIO					2	156																																																																																																																																																					
+83	ooo	OOO	2	76	0	4							-2	80	-2	66	-2	48	-2	42					2	80	2	48																																																																																																																																
+83	Apriori	MaxIOSyl1>>MaxIO					2	158																																																																																																																																																					
+85	Aei	aei	2	78	0	4									2	68	2	50	2	44							-2	46																																																																																																																									-2	86	-2	84	-2	68	-2	68
+85	Apriori	MaxIOSyl1>>MaxIO					2	160																																																																																																																																																					
+86	OAe	oae	2	80	0	4							2	82	2	70	2	52	2	46					-2	78	-2	44																																																																																																											-2	94			-2	86									-2	84	-2	82	-2	66	-2	66
+86	Apriori	MaxIOSyl1>>MaxIO					2	162																																																																																																																																																					
+87	ey_	euo			2	6			2	88					2	72	2	54	2	48					-2	76	-2	42																																											-2	96	-2	80	-2	78											-2	94	-2	62	-2	62																																																																
+87	Apriori	Id(Bk)Syl1>>Id(Bk)	2	82																																																																																																																																																									
+87	Apriori	MaxIOSyl1>>MaxIO					2	164																																																																																																																																																					
+90	OAi	oai	2	84	0	6							2	84	2	74	2	56	2	50					-2	74	-2	40																																																																																																															-2	84													-2	64	-2	64
+90	Apriori	MaxIOSyl1>>MaxIO					2	166																																																																																																																																																					
+91	u_i	uei							2	90							-2	54	-2	48																																																																																																																																	-2	82	-2	80				
+91	Apriori	MaxIOSyl1>>MaxIO					2	168																																																																																																																																																					
+106	eye	eue			2	8									2	76	2	56	2	50							-2	38																																													-2	78	-2	76													-2	60	-2	60																																																									-2	80	-2	78	-2	62	-2	62
+106	Apriori	Id(Bk)Syl1>>Id(Bk)	2	86																																																																																																																																																									
+112	OiA	oia	2	88	0	8							2	86	2	78	2	58	2	52					-2	72	-2	36																																																													-2	58	-2	58																																													-2	84	-2	82													-2	60	-2	60
+112	Apriori	MaxIOSyl1>>MaxIO					2	170																																																																																																																																																					
+114	Oe	oe	2	90	0	8							2	88	2	80	2	60	2	54					-2	70	-2	34																																																																																																									-2	96	-2	92	-2	82	-2	80									-2	78	-2	76	-2	58	-2	58
+114	Apriori	MaxIOSyl1>>MaxIO					2	172																																																																																																																																																					
+115	iue	iye			2	10									-2	78	-2	58	-2	52							2	36																																																													2	60	2	60																																																									2	80	2	78	2	60	2	60
+115	Apriori	Id(Bk)Syl1>>Id(Bk)	2	92																																																																																																																																																									
+118	ao_	aoe							2	92							-2	56	-2	50																																																																																																																	-2	94	-2	90	-2	80	-2	78									-2	78	-2	76	-2	58	-2	58
+118	Apriori	MaxIOSyl1>>MaxIO					2	174																																																																																																																																																					
+124	eau	eAy			2	12									-2	76	-2	54	-2	48							2	38																																													2	80	2	78													2	62	2	62																																																																
+124	Apriori	Id(Bk)Syl1>>Id(Bk)	2	94																																																																																																																																																									
+133	iiO	iio			2	14							2	90	2	78	2	56	2	50					-2	68	-2	36																																																									-2	94	-2	92	-2	60	-2	60																																																																
+133	Apriori	Id(Bk)Syl1>>Id(Bk)	2	96																																																																																																																																																									
+155	iOO	ioo			2	16							2	92	2	80	2	58	2	52					-2	66	-2	34																																																									-2	92	-2	90	-2	58	-2	58																																																																
+155	Apriori	Id(Bk)Syl1>>Id(Bk)	2	98																																																																																																																																																									
+157	iuu	iyy			2	18									-2	78	-2	56	-2	50							2	36																																																													2	60	2	60																																																																
+157	Apriori	Id(Bk)Syl1>>Id(Bk)	2	100																																																																																																																																																									
+160	ey	eu			2	20									2	80	2	58	2	52							-2	34																																													-2	78	-2	76													-2	58	-2	58																																																																
+160	Apriori	Id(Bk)Syl1>>Id(Bk)	2	102																																																																																																																																																									
+164	eOy	eou			2	22							2	94	2	82	2	60	2	54					-2	64	-2	32																																									-2	96	-2	94	-2	76	-2	74									-2	90	-2	88	-2	56	-2	56																																																																
+164	Apriori	Id(Bk)Syl1>>Id(Bk)	2	104																																																																																																																																																									
+165	eea	eeA			2	24									-2	80	-2	58	-2	52							2	34																																													2	78	2	76													2	58	2	58																																																																
+165	Apriori	Id(Bk)Syl1>>Id(Bk)	2	106																																																																																																																																																									
+166	o_o	oeo							2	94							-2	56	-2	50																																																	-2	94	-2	92	-2	76	-2	74									-2	88	-2	86	-2	56	-2	56																																									-2	92	-2	88	-2	78	-2	76									-2	76	-2	74	-2	56	-2	56
+166	Apriori	MaxIOSyl1>>MaxIO					2	176																																																																																																																																																					
+168	ee_	eeo							2	96															-2	62	-2	32																																									-2	92	-2	90	-2	74	-2	72									-2	86	-2	84	-2	54	-2	54																																																																
+168	Apriori	MaxIOSyl1>>MaxIO					2	178																																																																																																																																																					
+175	iuu	iyy			2	26									-2	78	-2	54	-2	48							2	34																																																													2	56	2	56																																																																
+175	Apriori	Id(Bk)Syl1>>Id(Bk)	2	108																																																																																																																																																									
+189	iia	iiA			2	28									-2	76	-2	52	-2	46							2	36																																																													2	58	2	58																																																																
+189	Apriori	Id(Bk)Syl1>>Id(Bk)	2	110																																																																																																																																																									
+190	eau	eAy			2	30									-2	74	-2	50	-2	44							2	38																																													2	76	2	74													2	60	2	60																																																																
+190	Apriori	Id(Bk)Syl1>>Id(Bk)	2	112																																																																																																																																																									
+195	iia	iiA			2	32									-2	72	-2	48	-2	42							2	40																																																													2	62	2	62																																																																
+195	Apriori	Id(Bk)Syl1>>Id(Bk)	2	114																																																																																																																																																									
+198	eAe	eae			2	34									2	74	2	50	2	44							-2	38																																													-2	74	-2	72													-2	60	-2	60																																																									-2	74	-2	72	-2	54	-2	54
+198	Apriori	Id(Bk)Syl1>>Id(Bk)	2	116																																																																																																																																																									
+205	eeA	eea			2	36									2	76	2	52	2	46							-2	36																																													-2	72	-2	70													-2	58	-2	58																																																																
+205	Apriori	Id(Bk)Syl1>>Id(Bk)	2	118																																																																																																																																																									
+212	ia	iA			2	38									-2	74	-2	50	-2	44							2	38																																																													2	60	2	60																																																																
+212	Apriori	Id(Bk)Syl1>>Id(Bk)	2	120																																																																																																																																																									
+217	eao	eAO			2	40							-2	92	-2	72	-2	48	-2	42					2	64	2	40																																											2	92	2	74	2	72											2	86	2	62	2	62																																																																
+217	Apriori	Id(Bk)Syl1>>Id(Bk)	2	122																																																																																																																																																									
+218	iui	iyi			2	42									-2	70	-2	46	-2	40							2	42																																																													2	64	2	64																																																													2	56	2	56
+218	Apriori	Id(Bk)Syl1>>Id(Bk)	2	124																																																																																																																																																									
+220	eA_	eAO							2	98			-2	90	-2	68	-2	44	-2	38																																																																																																																																								
+220	Apriori	MaxIOSyl1>>MaxIO					2	180																																																																																																																																																					
+221	iOO	ioo			2	44							2	92	2	70	2	46	2	40					-2	62	-2	40																																																									-2	84	-2	84	-2	62	-2	62																																																																
+221	Apriori	Id(Bk)Syl1>>Id(Bk)	2	126																																																																																																																																																									
+222	eAA	eaa			2	46									2	72	2	48	2	42							-2	38																																													-2	72	-2	70													-2	60	-2	60																																																																
+222	Apriori	Id(Bk)Syl1>>Id(Bk)	2	128																																																																																																																																																									
+226	eiA	eia			2	48									2	74	2	50	2	44							-2	36																																															-2	68													-2	58	-2	58																																																																
+226	Apriori	Id(Bk)Syl1>>Id(Bk)	2	130																																																																																																																																																									
+229	euo	eyO			2	50							-2	90	-2	72	-2	48	-2	42					2	64	2	38																																											2	94	2	74	2	70											2	86	2	60	2	60																																																																
+229	Apriori	Id(Bk)Syl1>>Id(Bk)	2	132																																																																																																																																																									
+234	eau	eAy			2	52									-2	70	-2	46	-2	40							2	40																																													2	76	2	72													2	62	2	62																																																																
+234	Apriori	Id(Bk)Syl1>>Id(Bk)	2	134																																																																																																																																																									
+236	iye	iue			2	54									2	72	2	48	2	42							-2	38																																																													-2	60	-2	60																																																									-2	72	-2	70	-2	54	-2	54
+236	Apriori	Id(Bk)Syl1>>Id(Bk)	2	136																																																																																																																																																									
+237	iu	iy			2	56									-2	70	-2	46	-2	40							2	40																																																													2	62	2	62																																																																
+237	Apriori	Id(Bk)Syl1>>Id(Bk)	2	138																																																																																																																																																									
+238	iuu	iyy			2	58									-2	68	-2	44	-2	38							2	42																																																													2	64	2	64																																																																
+238	Apriori	Id(Bk)Syl1>>Id(Bk)	2	140																																																																																																																																																									
+259	eAO	eao			2	60							2	92	2	70	2	46	2	40					-2	62	-2	40																																											-2	92	-2	74	-2	70											-2	84	-2	62	-2	62																																																																
+259	Apriori	Id(Bk)Syl1>>Id(Bk)	2	142																																																																																																																																																									
+260	iia	iiA			2	62									-2	68	-2	44	-2	38							2	42																																																													2	64	2	64																																																																
+260	Apriori	Id(Bk)Syl1>>Id(Bk)	2	144																																																																																																																																																									
+264	ieA	iea			2	64									2	70	2	46	2	40							-2	40																																													-2	72	-2	68													-2	62	-2	62																																																																
+264	Apriori	Id(Bk)Syl1>>Id(Bk)	2	146																																																																																																																																																									
+265	ieo	ieO			2	66							-2	90	-2	68	-2	44	-2	38					2	64	2	42																																									2	94	2	94	2	74	2	70									2	86	2	86	2	64	2	64																																																																
+265	Apriori	Id(Bk)Syl1>>Id(Bk)	2	148																																																																																																																																																									
+278	iau	iAy			2	68									-2	66	-2	42	-2	36							2	44																																																													2	66	2	66																																																																
+278	Apriori	Id(Bk)Syl1>>Id(Bk)	2	150																																																																																																																																																									
+289	iAe	iae			2	70									2	68	2	44	2	38							-2	42																																																													-2	64	-2	64																																																									-2	70	-2	68	-2	52	-2	52
+289	Apriori	Id(Bk)Syl1>>Id(Bk)	2	152																																																																																																																																																									
+297	ey	eu			2	72									2	70	2	46	2	40							-2	40																																													-2	72	-2	68													-2	62	-2	62																																																																
+297	Apriori	Id(Bk)Syl1>>Id(Bk)	2	154																																																																																																																																																									
+307	iio	iiO			2	74							-2	88	-2	68	-2	44	-2	38					2	66	2	42																																																									2	88	2	88	2	64	2	64																																																																
+307	Apriori	Id(Bk)Syl1>>Id(Bk)	2	156																																																																																																																																																									
+320	iye	iue			2	76									2	70	2	46	2	40							-2	40																																																													-2	62	-2	62																																																									-2	68	-2	66	-2	50	-2	50
+320	Apriori	Id(Bk)Syl1>>Id(Bk)	2	158																																																																																																																																																									
+331	iOy	iou			2	78							2	90	2	72	2	48	2	42					-2	64	-2	38																																																									-2	86	-2	86	-2	60	-2	60																																																																
+331	Apriori	Id(Bk)Syl1>>Id(Bk)	2	160																																																																																																																																																									
+344	eyO	euo			2	80							2	92	2	74	2	50	2	44					-2	62	-2	36																																											-2	92	-2	70	-2	66											-2	84	-2	58	-2	58																																																																
+344	Apriori	Id(Bk)Syl1>>Id(Bk)	2	162																																																																																																																																																									
+345	ioo	iOO			2	82							-2	90	-2	72	-2	48	-2	42					2	64	2	38																																																									2	88	2	86	2	60	2	60																																																																
+345	Apriori	Id(Bk)Syl1>>Id(Bk)	2	164																																																																																																																																																									
+354	ieO	ieo			2	84							2	92	2	74	2	50	2	44					-2	62	-2	36																																									-2	92	-2	90	-2	68	-2	64									-2	86	-2	84	-2	58	-2	58																																																																
+354	Apriori	Id(Bk)Syl1>>Id(Bk)	2	166																																																																																																																																																									
+368	iio	iiO			2	86							-2	90	-2	72	-2	48	-2	42					2	64	2	38																																																									2	88	2	86	2	60	2	60																																																																
+368	Apriori	Id(Bk)Syl1>>Id(Bk)	2	168																																																																																																																																																									
+373	iOO	ioo			2	88							2	92	2	74	2	50	2	44					-2	62	-2	36																																																									-2	86	-2	84	-2	58	-2	58																																																																
+373	Apriori	Id(Bk)Syl1>>Id(Bk)	2	170																																																																																																																																																									
+378	eo	eO			2	90							-2	90	-2	72	-2	48	-2	42					2	64	2	38																																									2	94	2	92	2	70	2	66									2	88	2	86	2	60	2	60																																																																
+378	Apriori	Id(Bk)Syl1>>Id(Bk)	2	172																																																																																																																																																									
+384	eOA	eoa			2	92							2	92	2	74	2	50	2	44					-2	62	-2	36																																									-2	92	-2	90	-2	68	-2	64									-2	86	-2	84	-2	58	-2	58																																																																
+384	Apriori	Id(Bk)Syl1>>Id(Bk)	2	174																																																																																																																																																									
+454	eio	eiO			2	94							-2	90	-2	72	-2	48	-2	42					2	64	2	38																																											2	92			2	66									2	88	2	86	2	60	2	60																																																																
+454	Apriori	Id(Bk)Syl1>>Id(Bk)	2	176																																																																																																																																																									
+479	eyO	euo			2	96							2	92	2	74	2	50	2	44					-2	62	-2	36																																											-2	90	-2	66	-2	64											-2	84	-2	58	-2	58																																																																
+479	Apriori	Id(Bk)Syl1>>Id(Bk)	2	178																																																																																																																																																									
+513	o_u	oeu							2	100							-2	48	-2	42																																																					-2	64	-2	62													-2	56	-2	56																																									-2	90	-2	86	-2	76	-2	74									-2	66	-2	64	-2	48	-2	48
+513	Apriori	MaxIOSyl1>>MaxIO					2	182																																																																																																																																																					
+566	eao	eAO			2	98							-2	90	-2	72	-2	46	-2	40					2	64	2	38																																											2	92	2	66	2	64											2	86	2	58	2	58																																																																
+566	Apriori	Id(Bk)Syl1>>Id(Bk)	2	180																																																																																																																																																									
+3203	eiO	eio			0.002	98.002							0.002	90.002	0.002	72.002	0.002	46.002	0.002	40.002					-0.002	63.998	-0.002	37.998																																											-0.002	91.998			-0.002	63.998									-0.002	87.998	-0.002	85.998	-0.002	57.998	-0.002	57.998																																																																
+3203	Apriori	Id(Bk)Syl1>>Id(Bk)	0.0020000000000095497	180.002																																																																																																																																																									
+3411	eO	eo			0.002	98.00399999999999							0.002	90.00399999999999	0.002	72.00399999999999	0.002	46.004000000000005	0.002	40.004000000000005					-0.002	63.995999999999995	-0.002	37.995999999999995																																									-0.002	91.998	-0.002	91.99600000000001	-0.002	65.998	-0.002	63.995999999999995									-0.002	87.99600000000001	-0.002	85.99600000000001	-0.002	57.995999999999995	-0.002	57.995999999999995																																																																
+3411	Apriori	Id(Bk)Syl1>>Id(Bk)	0.0020000000000095497	180.00400000000002																																																																																																																																																									
+3744	eoa	eOA			0.002	98.00599999999999							-0.002	90.002	-0.002	72.002	-0.002	46.002	-0.002	40.002					0.002	63.998	0.002	37.998																																									0.002	92.0	0.002	91.998	0.002	66.0	0.002	63.998									0.002	87.998	0.002	85.998	0.002	57.998	0.002	57.998																																																																
+3744	Apriori	Id(Bk)Syl1>>Id(Bk)	0.0020000000000095497	180.00600000000003																																																																																																																																																									
+TOTAL				180.00600000000003		98.00599999999999		182		100		102		90.002		72.002		46.002		40.002		100		100		63.998		37.998		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		92.0		91.998		66.0		63.998		100		100		100		100		87.998		85.998		57.998		57.998		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		100		90		86		76		74		100		100		100		100		66		64		48		48

@@ -12,7 +12,7 @@ INIT_WEIGHTS = {}
 INIT_F = 0
 INIT_M = 100
 
-WORKING_DIR = "../simulation_inputs/20240117 on - OTSoft inputs"  # "OTSoft2.6old"
+WORKING_DIR = "../sim_ins/20240117 on - OTSoft inputs"  # "OTSoft2.6old"
 DATA_DIR = WORKING_DIR + "/20240307_forOTS" + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
 MAGRI = True

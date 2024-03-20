@@ -1,0 +1,6517 @@
+\ti\ftResults of Applying Low Faithfulness Constraint Demotion to OTSoft-PDDP-SSeto_LFCD_noeneg_wdel-gen_ixn.txt
+
+\hrRankings for OTSoft-PDDP-SSeto_LFCD_noeneg_wdel-gen_ixn.txt	2-16-2024	\pn
+
+\cn2-16-2024, 2:09 p.m.
+
+\cnOTSoft 2.5
+\cnRelease date 1/17/2017
+
+
+\h1Result
+There is no ranking of the proposed constraints which yields the correct outputs.  You can learn more about why the constraints fail by selecting Show How Ranking Was Done from the View menu.
+
+\h1Diagnostic Tableaux
+The following tables are provided for diagnosis.  They omit all constraints that were ranked before the algorithm crashed, and all data that are explained by rankable constraints.  They also exclude all constraints that prefer neither winners nor losers in the remaining data.
+
+\h1Tableaux
+\ts3\ks
+/AA/	\wsF\weAA	Aa
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Ay/	\wsF\weAy	Au
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Aa/	\wsF\weAA	Aa
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Au/	\wsF\weAy	Au
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yA/	\wsF\weyA	ya
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yy/	\wsF\weyy	yu
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/ya/	\wsF\weyA	ya
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yu/	\wsF\weyy	yu
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/eA/	\wsF\weeA	ea
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/ey/	\wsF\weey	eu
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iA/	\wsF\weiA	ia
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iy/	\wsF\weiy	iu
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/ie/	\wsF\weie	iE
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4	*
+	
+\hd*F5	**
+	*
+
+\hd*B2		*
+
+\hd*B3		*
+
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		*
+
+\hd*F5..._B2		*
+
+\hd*F5_B3		*
+
+\hd*F5..._B3		*
+
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iE/	\wsF\weiE	ie
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4		*
+
+\hd*F5	*
+	**
+
+\hd*B2	*
+	
+\hd*B3	*
+	
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2	*
+	
+\hd*F5..._B2	*
+	
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/ia/	\wsF\weia	iA
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	*
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iu/	\wsF\weiu	iy
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	*
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/AAA/	\wsF\weAAA	AAa	Aaa
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/AAy/	\wsF\weAAy	AAu	Aau
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/AAi/	\wsF\weAAi	Aai
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/AAo/	\wsF\weAAo	Aao
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/AAa/	\wsF\weAAA	AAa	Aaa
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/AAu/	\wsF\weAAy	AAu	Aau
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/AyA/	\wsF\weAyA	Aya	Aua
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/Ayy/	\wsF\weAyy	Ayu	Auu
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/Ayi/	\wsF\weAyi	Aui
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/Ayo/	\wsF\weAyo	Auo
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/Aya/	\wsF\weAyA	Aya	Aua
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/Ayu/	\wsF\weAyy	Ayu	Auu
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/AeA/	\wsF\weAeA	Aea
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Aey/	\wsF\weAey	Aeu
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Aea/	\wsF\weAeA	Aea
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Aeu/	\wsF\weAey	Aeu
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/AiA/	\wsF\weAiA	Aia
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/Aiy/	\wsF\weAiy	Aiu
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/AaO/	\wsF\weAAo	Aao
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/AaA/	\wsF\weAAA	Aaa	AAa
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/Aay/	\wsF\weAAy	Aau	AAu
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/Aai/	\wsF\weAAi	Aai
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/AaI/	\wsF\weAAi	Aai
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/Aao/	\wsF\weAAo	Aao
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/Aaa/	\wsF\weAAA	Aaa	AAa
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/Aau/	\wsF\weAAy	Aau	AAu
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/AuO/	\wsF\weAyo	Auo
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/AuA/	\wsF\weAyA	Aua	Aya
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/Auy/	\wsF\weAyy	Auu	Ayu
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/Aui/	\wsF\weAyi	Aui
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/AuI/	\wsF\weAyi	Aui
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/Auo/	\wsF\weAyo	Auo
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/Aua/	\wsF\weAyA	Aua	Aya
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/Auu/	\wsF\weAyy	Auu	Ayu
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yAA/	\wsF\weyAA	yAa	yaa
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yAy/	\wsF\weyAy	yAu	yau
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/yAi/	\wsF\weyAi	yai
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/yAo/	\wsF\weyAo	yao
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/yAa/	\wsF\weyAA	yAa	yaa
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yAu/	\wsF\weyAy	yAu	yau
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yyA/	\wsF\weyyA	yya	yua
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yyy/	\wsF\weyyy	yyu	yuu
+Id(Bk)		* 
+	* *
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/yyi/	\wsF\weyyi	yui
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/yyo/	\wsF\weyyo	yuo
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/yya/	\wsF\weyyA	yya	yua
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yyu/	\wsF\weyyy	yyu	yuu
+Id(Bk)	*
+		*
+
+\hd*F3	***
+	**
+	*
+
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* 
+	* *
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		*
+	**
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/yeA/	\wsF\weyeA	yea
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yey/	\wsF\weyey	yeu
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yea/	\wsF\weyeA	yea
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yeu/	\wsF\weyey	yeu
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yiA/	\wsF\weyiA	yia
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yiy/	\wsF\weyiy	yiu
+Id(Bk)		* 
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/yaO/	\wsF\weyAo	yao
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/yaA/	\wsF\weyAA	yaa	yAa
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yay/	\wsF\weyAy	yau	yAu
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/yai/	\wsF\weyAi	yai
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/yaI/	\wsF\weyAi	yai
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/yao/	\wsF\weyAo	yao
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/yaa/	\wsF\weyAA	yaa	yAa
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yau/	\wsF\weyAy	yau	yAu
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/yuO/	\wsF\weyyo	yuo
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/yuA/	\wsF\weyyA	yua	yya
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yuy/	\wsF\weyyy	yuu	yyu
+Id(Bk)	*
+	*
+	** 
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	*
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/yui/	\wsF\weyyi	yui
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/yuI/	\wsF\weyyi	yui
+Id(Bk)	**
+	*
+
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		* 
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/yuo/	\wsF\weyyo	yuo
+Id(Bk)	*
+	
+\hd*F3	**
+	*
+
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	** 
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	*
+
+\hd*F3_B5	*
+	*
+
+\hd*F3..._B5	*
+	**
+
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/yua/	\wsF\weyyA	yua	yya
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/yuu/	\wsF\weyyy	yuu	yyu
+Id(Bk)	**
+		*
+
+\hd*F3	***
+	*
+	**
+
+\hd*F4	***
+	*
+	**
+
+\hd*F5	***
+	*
+	**
+
+\hd*B2			
+\hd*B3			
+\hd*B5		* *
+	* 
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	*
+
+\hd*F3..._B5		**
+	*
+
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		**
+	*
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		**
+	*
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/eAA/	\wsF\weeAA	eAa	eaa
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/eAy/	\wsF\weeAy	eAu	eau
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/eAi/	\wsF\weeAi	eai
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/eAo/	\wsF\weeAo	eao
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	
+\hd*F3_B5	*
+	
+\hd*F3..._B5	*
+	
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/eyA/	\wsF\weeyA	eya	eua
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/eyy/	\wsF\weeyy	eyu	euu
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	***
+	**
+	*
+
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	*
+
+\hd*F4..._B5		*
+	**
+
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/eyi/	\wsF\weeyi	eui
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/eyo/	\wsF\weeyo	euo
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	
+\hd*F3_B5	*
+	
+\hd*F3..._B5	*
+	
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	*
+
+\hd*F4_B5	*
+	*
+
+\hd*F4..._B5	*
+	**
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/eeA/	\wsF\weeeA	eea
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/eey/	\wsF\weeey	eeu
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	***
+	**
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/eiA/	\wsF\weeiA	eia
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/eiy/	\wsF\weeiy	eiu
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	**
+	*
+
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/iAA/	\wsF\weiAA	iAa	iaa
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	**
+	*
+	
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/iAy/	\wsF\weiAy	iAu	iau
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	**
+	*
+	
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/iAe/	\wsF\weiAe	iaE
+Id(Bk)		* *
+
+\hd*F3	*
+	
+\hd*F4	**
+	
+\hd*F5	***
+	*
+
+\hd*B2		*
+
+\hd*B3		*
+
+\hd*B5		**
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		*
+
+\hd*F5_B3		
+\hd*F5..._B3		*
+
+\hd*F5_B5		*
+
+\hd*F5..._B5		**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iAi/	\wsF\weiAi	iai
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/iAo/	\wsF\weiAo	iao
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	
+\hd*F3_B5	*
+	
+\hd*F3..._B5	*
+	
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	
+\hd*F4_B5	*
+	
+\hd*F4..._B5	*
+	
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/iyA/	\wsF\weiyA	iya	iua
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	**
+	*
+	
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/iyy/	\wsF\weiyy	iyu	iuu
+Id(Bk)		* 
+	* *
+
+\hd*F3	**
+	*
+	
+\hd*F4	**
+	*
+	
+\hd*F5	***
+	**
+	*
+
+\hd*B2			
+\hd*B3			
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/iye/	\wsF\weiye	iuE
+Id(Bk)		* *
+
+\hd*F3	*
+	
+\hd*F4	**
+	
+\hd*F5	***
+	*
+
+\hd*B2		*
+
+\hd*B3		*
+
+\hd*B5		**
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		*
+
+\hd*F5_B3		
+\hd*F5..._B3		*
+
+\hd*F5_B5		*
+
+\hd*F5..._B5		**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iyi/	\wsF\weiyi	iui
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/iyo/	\wsF\weiyo	iuo
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	**
+	*
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	*
+	**
+
+\hd*F3_B3	*
+	
+\hd*F3..._B3	*
+	
+\hd*F3_B5	*
+	
+\hd*F3..._B5	*
+	
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	
+\hd*F4_B5	*
+	
+\hd*F4..._B5	*
+	
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/ieA/	\wsF\weieA	iea	iEa
+Id(Bk)		* 
+	* *
+
+\hd*F3	*
+		
+\hd*F4	**
+	*
+	
+\hd*F5	***
+	**
+	*
+
+\hd*B2			*
+
+\hd*B3			*
+
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5			
+\hd*F3..._B5			
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			*
+
+\hd*F5..._B2			*
+
+\hd*F5_B3			*
+
+\hd*F5..._B3			*
+
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/iey/	\wsF\weiey	ieu	iEu
+Id(Bk)		* 
+	* *
+
+\hd*F3	*
+		
+\hd*F4	**
+	*
+	
+\hd*F5	***
+	**
+	*
+
+\hd*B2			*
+
+\hd*B3			*
+
+\hd*B5		*
+	**
+
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5			
+\hd*F3..._B5			
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			*
+
+\hd*F5..._B2			*
+
+\hd*F5_B3			*
+
+\hd*F5..._B3			*
+
+\hd*F5_B5		*
+	*
+
+\hd*F5..._B5		*
+	**
+
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/iee/	\wsF\weiee	iEE
+Id(Bk)		* *
+
+\hd*F3		
+\hd*F4	**
+	
+\hd*F5	***
+	*
+
+\hd*B2		**
+
+\hd*B3		**
+
+\hd*B5		**
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		*
+
+\hd*F5..._B2		**
+
+\hd*F5_B3		*
+
+\hd*F5..._B3		**
+
+\hd*F5_B5		*
+
+\hd*F5..._B5		**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iei/	\wsF\weiei	iEi
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4	*
+	
+\hd*F5	***
+	**
+
+\hd*B2		*
+
+\hd*B3		*
+
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		*
+
+\hd*F5..._B2		*
+
+\hd*F5_B3		*
+
+\hd*F5..._B3		*
+
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		*
+
+\hd*_B2...F5		*
+
+\hd*_B3F5		*
+
+\hd*_B3...F5		*
+
+\hd*_B5F5		*
+
+\hd*_B5...F5		*
+
+\ke\te
+\ts3\ks
+/ieo/	\wsF\weieo	iEo
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4	*
+	
+\hd*F5	**
+	*
+
+\hd*B2		*
+
+\hd*B3	*
+	**
+
+\hd*B5	*
+	**
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3	*
+	
+\hd*F4..._B3	*
+	
+\hd*F4_B5	*
+	
+\hd*F4..._B5	*
+	
+\hd*F5_B2		*
+
+\hd*F5..._B2		*
+
+\hd*F5_B3	*
+	*
+
+\hd*F5..._B3	*
+	**
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	*
+	**
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iiA/	\wsF\weiiA	iia
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iiy/	\wsF\weiiy	iiu
+Id(Bk)		* 
+
+\hd*F3	*
+	
+\hd*F4	*
+	
+\hd*F5	***
+	**
+
+\hd*B2		
+\hd*B3		
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iie/	\wsF\weiie	iiE
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4	*
+	
+\hd*F5	***
+	**
+
+\hd*B2		*
+
+\hd*B3		*
+
+\hd*B5		*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		*
+
+\hd*F5..._B2		*
+
+\hd*F5_B3		*
+
+\hd*F5..._B3		*
+
+\hd*F5_B5		*
+
+\hd*F5..._B5		*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iiE/	\wsF\weiiE	iie
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4		*
+
+\hd*F5	**
+	***
+
+\hd*B2	*
+	
+\hd*B3	*
+	
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2	*
+	
+\hd*F5..._B2	*
+	
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iia/	\wsF\weiia	iiA
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	**
+	***
+
+\hd*B2		
+\hd*B3		
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iiu/	\wsF\weiiu	iiy
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	**
+	***
+
+\hd*B2		
+\hd*B3		
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iEi/	\wsF\weiEi	iei
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4		*
+
+\hd*F5	**
+	***
+
+\hd*B2	*
+	
+\hd*B3	*
+	
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2	*
+	
+\hd*F5..._B2	*
+	
+\hd*F5_B3	*
+	
+\hd*F5..._B3	*
+	
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5	*
+	
+\hd*_B2...F5	*
+	
+\hd*_B3F5	*
+	
+\hd*_B3...F5	*
+	
+\hd*_B5F5	*
+	
+\hd*_B5...F5	*
+	
+\ke\te
+\ts3\ks
+/iEE/	\wsF\weiEE	iee
+Id(Bk)		* *
+
+\hd*F3		
+\hd*F4		**
+
+\hd*F5	*
+	***
+
+\hd*B2	**
+	
+\hd*B3	**
+	
+\hd*B5	**
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2	*
+	
+\hd*F5..._B2	**
+	
+\hd*F5_B3	*
+	
+\hd*F5..._B3	**
+	
+\hd*F5_B5	*
+	
+\hd*F5..._B5	**
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iEo/	\wsF\weiEo	ieo
+Id(Bk)		* 
+
+\hd*F3		
+\hd*F4		*
+
+\hd*F5	*
+	**
+
+\hd*B2	*
+	
+\hd*B3	**
+	*
+
+\hd*B5	**
+	*
+
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		*
+
+\hd*F4..._B3		*
+
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2	*
+	
+\hd*F5..._B2	*
+	
+\hd*F5_B3	*
+	*
+
+\hd*F5..._B3	**
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	**
+	*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/iEa/	\wsF\weiEa	iea	ieA
+Id(Bk)		* 
+	* *
+
+\hd*F3			*
+
+\hd*F4		*
+	**
+
+\hd*F5	*
+	**
+	***
+
+\hd*B2	*
+		
+\hd*B3	*
+		
+\hd*B5	**
+	*
+	
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5			
+\hd*F3..._B5			
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2	*
+		
+\hd*F5..._B2	*
+		
+\hd*F5_B3	*
+		
+\hd*F5..._B3	*
+		
+\hd*F5_B5	*
+	*
+	
+\hd*F5..._B5	**
+	*
+	
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/iEu/	\wsF\weiEu	ieu	iey
+Id(Bk)		* 
+	* *
+
+\hd*F3			*
+
+\hd*F4		*
+	**
+
+\hd*F5	*
+	**
+	***
+
+\hd*B2	*
+		
+\hd*B3	*
+		
+\hd*B5	**
+	*
+	
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5			
+\hd*F3..._B5			
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2	*
+		
+\hd*F5..._B2	*
+		
+\hd*F5_B3	*
+		
+\hd*F5..._B3	*
+		
+\hd*F5_B5	*
+	*
+	
+\hd*F5..._B5	**
+	*
+	
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/iai/	\wsF\weiai	iAi
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	**
+	***
+
+\hd*B2		
+\hd*B3		
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5	*
+	
+\hd*_B5...F5	*
+	
+\ke\te
+\ts3\ks
+/iaE/	\wsF\weiaE	iAe
+Id(Bk)		* *
+
+\hd*F3		*
+
+\hd*F4		**
+
+\hd*F5	*
+	***
+
+\hd*B2	*
+	
+\hd*B3	*
+	
+\hd*B5	**
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2	*
+	
+\hd*F5_B3		
+\hd*F5..._B3	*
+	
+\hd*F5_B5	*
+	
+\hd*F5..._B5	**
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iao/	\wsF\weiao	iAo
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	*
+	**
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	**
+	*
+
+\hd*F3_B3		*
+
+\hd*F3..._B3		*
+
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		*
+
+\hd*F4..._B3		*
+
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		*
+
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	**
+	*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/iaa/	\wsF\weiaa	iAa	iAA
+Id(Bk)		* 
+	* *
+
+\hd*F3		*
+	**
+
+\hd*F4		*
+	**
+
+\hd*F5	*
+	**
+	***
+
+\hd*B2			
+\hd*B3			
+\hd*B5	**
+	*
+	
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5	*
+	*
+	
+\hd*F5..._B5	**
+	*
+	
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/iau/	\wsF\weiau	iAu	iAy
+Id(Bk)		* 
+	* *
+
+\hd*F3		*
+	**
+
+\hd*F4		*
+	**
+
+\hd*F5	*
+	**
+	***
+
+\hd*B2			
+\hd*B3			
+\hd*B5	**
+	*
+	
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5	*
+	*
+	
+\hd*F5..._B5	**
+	*
+	
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts3\ks
+/iui/	\wsF\weiui	iyi
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	**
+	***
+
+\hd*B2		
+\hd*B3		
+\hd*B5	*
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		
+\hd*F5..._B3		
+\hd*F5_B5	*
+	
+\hd*F5..._B5	*
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5	*
+	
+\hd*_B5...F5	*
+	
+\ke\te
+\ts3\ks
+/iuE/	\wsF\weiuE	iye
+Id(Bk)		* *
+
+\hd*F3		*
+
+\hd*F4		**
+
+\hd*F5	*
+	***
+
+\hd*B2	*
+	
+\hd*B3	*
+	
+\hd*B5	**
+	
+\hd*F3_B3		
+\hd*F3..._B3		
+\hd*F3_B5		
+\hd*F3..._B5		
+\hd*F4_B3		
+\hd*F4..._B3		
+\hd*F4_B5		
+\hd*F4..._B5		
+\hd*F5_B2		
+\hd*F5..._B2	*
+	
+\hd*F5_B3		
+\hd*F5..._B3	*
+	
+\hd*F5_B5	*
+	
+\hd*F5..._B5	**
+	
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts3\ks
+/iuo/	\wsF\weiuo	iyo
+Id(Bk)		* 
+
+\hd*F3		*
+
+\hd*F4		*
+
+\hd*F5	*
+	**
+
+\hd*B2		
+\hd*B3	*
+	*
+
+\hd*B5	**
+	*
+
+\hd*F3_B3		*
+
+\hd*F3..._B3		*
+
+\hd*F3_B5		*
+
+\hd*F3..._B5		*
+
+\hd*F4_B3		*
+
+\hd*F4..._B3		*
+
+\hd*F4_B5		*
+
+\hd*F4..._B5		*
+
+\hd*F5_B2		
+\hd*F5..._B2		
+\hd*F5_B3		*
+
+\hd*F5..._B3	*
+	*
+
+\hd*F5_B5	*
+	*
+
+\hd*F5..._B5	**
+	*
+
+\hd*_B2F5		
+\hd*_B2...F5		
+\hd*_B3F5		
+\hd*_B3...F5		
+\hd*_B5F5		
+\hd*_B5...F5		
+\ke\te
+\ts4\ks
+/iua/	\wsF\weiua	iya	iyA
+Id(Bk)		* 
+	* *
+
+\hd*F3		*
+	**
+
+\hd*F4		*
+	**
+
+\hd*F5	*
+	**
+	***
+
+\hd*B2			
+\hd*B3			
+\hd*B5	**
+	*
+	
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5	*
+	*
+	
+\hd*F5..._B5	**
+	*
+	
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te
+\ts4\ks
+/iuu/	\wsF\weiuu	iyu	iyy
+Id(Bk)		* 
+	* *
+
+\hd*F3		*
+	**
+
+\hd*F4		*
+	**
+
+\hd*F5	*
+	**
+	***
+
+\hd*B2			
+\hd*B3			
+\hd*B5	**
+	*
+	
+\hd*F3_B3			
+\hd*F3..._B3			
+\hd*F3_B5		*
+	
+\hd*F3..._B5		*
+	
+\hd*F4_B3			
+\hd*F4..._B3			
+\hd*F4_B5		*
+	
+\hd*F4..._B5		*
+	
+\hd*F5_B2			
+\hd*F5..._B2			
+\hd*F5_B3			
+\hd*F5..._B3			
+\hd*F5_B5	*
+	*
+	
+\hd*F5..._B5	**
+	*
+	
+\hd*_B2F5			
+\hd*_B2...F5			
+\hd*_B3F5			
+\hd*_B3...F5			
+\hd*_B5F5			
+\hd*_B5...F5			
+\ke\te

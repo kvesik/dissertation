@@ -327,7 +327,7 @@ def main(relfilepath=None):
     endofcustomizationstring = grammarfilename.index("DraftOutput")
     customizationstring = grammarfilename[begofcustomizationstring:endofcustomizationstring]
 
-    testfileparentparentdir = os.path.join("..", "simulation_inputs", "20240301 all inputs with IdFt1")  # "20240221 SSeto inputs without any first-syl transparency")  # "20240216 SSeto inputs without first-syl e-transparency")  # "20240117 onward - OTSoft inputs (max len 3)")  # "20240216 SSeto inputs without first-syl e-transparency")
+    testfileparentparentdir = os.path.join("..", "sim_ins", "20240301 all inputs with IdFt1")  # "20240221 SSeto inputs without any first-syl transparency")  # "20240216 SSeto inputs without first-syl e-transparency")  # "20240117 onward - OTSoft inputs (max len 3)")  # "20240216 SSeto inputs without first-syl e-transparency")
     testtableauxfilepath = ""
     testfileparentdirs = [os.path.join(testfileparentparentdir, fn) for fn in os.listdir(testfileparentparentdir) if fn.endswith(("forOTS_" + customizationstring + "_test").replace("__", "_"))]
     for tfpdir in [fn for fn in testfileparentdirs if os.path.isdir(fn)]:
@@ -420,7 +420,7 @@ def getmatchtype(inputfrequencies, outputfrequencies):
 
 if __name__ == "__main__":
     filesdone = []
-    firstfolder = "../simulation_outputs/20240117_LFCD_outputs"
+    firstfolder = "../sim_outs/20240117_LFCD_outputs"
     folderswithLFCDfiles = [fn for fn in os.listdir(firstfolder) if "FilesForOTSoft" in fn and "LFCD" in fn]  #  and "nos1tr" in fn]
     for secondfolder in folderswithLFCDfiles:
         DraftOutputfiles = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if fn.endswith("DraftOutput_strata.txt")]

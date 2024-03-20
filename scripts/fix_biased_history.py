@@ -61,7 +61,7 @@ def main(relfilepath=None):
 
 
 if __name__ == "__main__":
-    firstfolder = "../simulation_outputs/20231010-20231017_GLA_outputs"  # /ins and outs for LFCD runs 20231005"
+    firstfolder = "../sim_outs/20231010-20231017_GLA_outputs"  # /ins and outs for LFCD runs 20231005"
     for fname1 in os.listdir(firstfolder):
         if os.path.isdir(firstfolder + "/" + fname1) and "FilesForOTSoft" in fname1 and "GLA" in fname1:
             secondfolder = fname1

@@ -28,7 +28,7 @@ def main(relfilepath=None):
 
 
 if __name__ == "__main__":
-    firstfolder = os.path.join("..", "simulation_outputs", "20240117_LFCD_outputs")
+    firstfolder = os.path.join("..", "sim_outs", "20240117_LFCD_outputs")
     for fname1 in os.listdir(firstfolder):
         if os.path.isdir(os.path.join(firstfolder, fname1)) and "FilesForOTSoft" in fname1 and "LFCD" in fname1:
             secondfolder = fname1

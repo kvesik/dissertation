@@ -25,6 +25,7 @@ SPECGENBIAS = 0  # 20  # 20 is OTSoft default; -1 means don't bother; 0 means sp
 EXPANDINGBIAS = True
 EXPANDSLOWLY = True
 GRAVITY = False
+GRAVITYCONST = 2
 PREFERSPECIFICITY = True
 SPECGENCONS = [
     ("Id(Bk)Syl1", "Id(Bk)"),
@@ -63,7 +64,7 @@ class Learner:
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
-    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0, gravity=False, preferspecificity=False, expandingbias=False, expandslowly=False):
+    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -86,6 +87,7 @@ class Learner:
         self.expandingbias = expandingbias
         self.expandslowly = expandslowly
         self.gravity = gravity
+        self.gravityconst = gravityconst
         self.preferspecificity = preferspecificity
         self.errorcounter = 0
 
@@ -347,8 +349,8 @@ class Learner:
                 linetowrite += "\n"
                 historystream.write(linetowrite)
 
-            themagicalconstant = 2
-            if self.gravity:  #  and self.errorcounter % themagicalconstant == 0:  # completely arbitrarily, apply gravitational drift every 5 errors
+            # themagicalconstant = 2
+            if self.gravity and self.errorcounter % self.gravityconst == 0:  # completely arbitrarily, apply gravitational drift every k errors
                 specvioln = optimal_df[speccon].values[0]
                 genvioln = optimal_df[gencon].values[0]
                 # confirm that this kind of faithfulness constraint was involved in the current error
@@ -596,8 +598,10 @@ def main(prefix="", argstuple=None):
     files_exps = [
         # ('OTSoft-PDDP-NEst_GLA.txt', 'NE153'),
         # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi183'),
-        ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi993'),
-        ('OTSoft-PDDP-SSeto_GLA_wdel-gen-ne_ixn.txt', 'SS993')
+        # ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi993'),
+        ('OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn.txt', 'NE993'),
+        ('OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn.txt', 'NS993'),
+        # ('OTSoft-PDDP-SSeto_GLA_wdel-gen-ne_ixn.txt', 'SS993')
     ]
     for fe in files_exps:
         print(fe)
@@ -623,7 +627,7 @@ def main(prefix="", argstuple=None):
 def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
     starttime = datetime.now()
     if argstuple is None:
-        learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY)
+        learner = Learner(srcfilepath, destdir, expnum, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, gravityconst=GRAVITYCONST, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY)
     else:
         learner = Learner(srcfilepath, destdir, expnum, *argstuple)
 
@@ -645,11 +649,11 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         rf.write(datestring + "\n")
 
         rf.write("\n--------------- PARAMETERS ---------------------\n")
-        rf.write("Magri update used: " + ("yes" if MAGRI else "no") + "\n")
-        rf.write("Gravity used: " + ("yes" if GRAVITY else "no") + "\n")
-        rf.write("Prefer specificity: " + ("yes" if PREFERSPECIFICITY else "no") + "\n")
-        rf.write("specific > general bias: " + (str(SPECGENBIAS) if SPECGENBIAS >= 0 else "no") + "\n")
-        rf.write("*expanding* specific > general bias: " + (("yes (" + ("slowly" if EXPANDSLOWLY else "regular speed") + ")") if EXPANDINGBIAS else "no") + "\n")
+        rf.write("Magri update used: " + (("yes (type " + str(learner.magritype) + ")") if learner.magri else "no") + "\n")
+        rf.write("Gravity used: " + (("yes (every " + str(learner.gravityconst) + " errors)") if learner.gravity else "no") + "\n")
+        rf.write("Prefer specificity: " + ("yes" if learner.preferspecificity else "no") + "\n")
+        rf.write("specific > general bias: " + (str(learner.specgenbias) if learner.specgenbias >= 0 else "no") + "\n")
+        rf.write("*expanding* specific > general bias: " + (("yes (" + ("slowly" if learner.expandslowly else "regular speed") + ")") if learner.expandingbias else "no") + "\n")
         rf.write("learning trials, listed by batch: " + str(learner.learning_trials) + "\n")
         rf.write("markedness plasticity, listed by batch: " + str(LEARNING_R_M) + "\n")
         rf.write("markedness noise, listed by batch: " + str(LEARNING_NOISE_M) + "\n")
@@ -682,31 +686,32 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         # for results_t in testresults:
         #     ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons), axis=1)
         #     rf.write(ordered_t.to_string(index=False) + "\n\n")
-
-        endtime = datetime.now()
-        print("time elapsed", endtime-starttime)
-        rf.write("time elapsed: " + str(endtime-starttime))
+        #
+        # endtime = datetime.now()
+        # print("time elapsed", endtime-starttime)
+        # rf.write("time elapsed: " + str(endtime-starttime))
 
 
 def feb2024combinations():
     for magri in [False, True]:
         for magritype in [1, 3] if magri else [0]:  # [1, 2, 3]
-            for gravity in [False]:  # , True]:
-                for preferspecificity in [False, True]:
-                    for specgenbias in [-1, 0, 20, 30]:
-                        for expandingbias in [False, True] if specgenbias >= 0 else [False]:
-                            for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
-                                abbrevstr = "NIT_"
-                                abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
-                                abbrevstr += "gr_" if gravity else ""
-                                abbrevstr += "fs_" if preferspecificity else ""
-                                if specgenbias >= 0:
-                                    abbrevstr += "sg" + str(specgenbias) + "_"
-                                    if expandingbias:
-                                        abbrevstr += "ex" + ("-s" if expandingslowly else "-r") + "_"
-                                print(abbrevstr)
-                                # fs_sg20_ex - r
-                                main(prefix=abbrevstr, argstuple=(magri, magritype, specgenbias, gravity, preferspecificity, expandingbias, expandingslowly))
+            for gravity in [True]:  # , False]:
+                for gravityconst in [2] if gravity else [0]:
+                    for preferspecificity in [False]:  # , True]:
+                        for specgenbias in [20]:  # -1, 0, 20, 30]:
+                            for expandingbias in [False]:  # , True] if specgenbias >= 0 else [False]:
+                                for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
+                                    abbrevstr = "NT"  # "NIT_"
+                                    abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                    abbrevstr += "gr_" if gravity else ""
+                                    abbrevstr += "fs_" if preferspecificity else ""
+                                    if specgenbias >= 0:
+                                        abbrevstr += "sg" + str(specgenbias) + "_"
+                                        if expandingbias:
+                                            abbrevstr += "ex" + ("-s" if expandingslowly else "-r") + "_"
+                                    print(abbrevstr)
+                                    # fs_sg20_ex - r
+                                    main(prefix=abbrevstr, argstuple=(magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly))
 
 
 if __name__ == "__main__":

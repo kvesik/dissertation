@@ -234,13 +234,14 @@ map_colours <- function(lang, cons, labels) {
   return(colourmap)
 }
 
-plot_trajectories <- function(df, colourmap, lang, trialsperbatch, experimentnum) {
+plot_trajectories <- function(df, colourmap, lang, trialsperbatch, experimentnum, foldername) {
 
   trajectoryplot <-
     ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
     geom_line(linewidth=0.6, show.legend=FALSE) +
     # geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), linewidth=0.6, show.legend=FALSE) +  # can replace all the fct business with just "constraint"
-    ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", lang, experimentnum, ")")) +
+    # ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", lang, experimentnum, ": ", foldername, ")")) +
+    ggtitle(paste0("4x", trialsperbatch, " trials (", foldername, ")")) +
     theme(axis.text=element_text(size=11, colour="black"),
         plot.title = element_text(hjust = 0.5),
         panel.grid.minor.x = element_blank(),
@@ -261,7 +262,7 @@ plot_trajectories <- function(df, colourmap, lang, trialsperbatch, experimentnum
   print(trajectoryplot)
 }
 
-plot_legends <- function(df, colourmap, lang, trialsperbatch, experimentnum) {
+plot_legends <- function(df, colourmap, lang, trialsperbatch, experimentnum, foldername) {
 
   legendplot <-
     ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
@@ -274,7 +275,8 @@ plot_legends <- function(df, colourmap, lang, trialsperbatch, experimentnum) {
     theme(axis.text=element_text(size=11, colour="black"),
         plot.title = element_text(hjust = 0.5),
         panel.grid.minor.x = element_blank(),
-        panel.grid.minor.y = element_blank()) +
+        panel.grid.minor.y = element_blank(),
+        legend.text=element_text(size=8)) + 
     labs(y= "Constraint value", x = "Learning trial #") +
     scale_colour_manual(values=colourmap, aesthetics="colour", na.value="red") +
     # scale_color_viridis_d(name = "constraint") +
@@ -322,7 +324,7 @@ extract_langtrialsexpnum <- function(filename) {
     "5000",
     "10000"
   )
-  return(c(langstring, trialsstring, expnumstring))
+  return(c(langstring, trialsstring, expnumstring, containing_folder))
 }
 
 makeplot <- function(filename) {
@@ -330,19 +332,29 @@ makeplot <- function(filename) {
   lang <- info[1]
   trials <- info[2]
   expnum <- info[3]
+  foldername <- info[4]
   df <- prepare_data(filename)
   labels <- levels(df$constraint)
   cons <- removeconvalue(labels)
   colourmap <- map_colours(lang, cons, labels)
-  plot_trajectories(df, colourmap, lang, trials, expnum)
-  plot_legends(df, colourmap, lang, trials, expnum)
+  plot_trajectories(df, colourmap, lang, trials, expnum, foldername)
+  plot_legends(df, colourmap, lang, trials, expnum, foldername)
 }
 
 historyfiles <- c(
   # "TODO",
-  "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
-  "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
-  "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
+    "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt"
+  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
+  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
+  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
 )
 
 for (hfile in historyfiles) {

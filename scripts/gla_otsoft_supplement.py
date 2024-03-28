@@ -598,9 +598,9 @@ def main(prefix="", argstuple=None):
     files_exps = [
         # ('OTSoft-PDDP-NEst_GLA.txt', 'NE153'),
         # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi183'),
-        # ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi993'),
-        ('OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn.txt', 'NE993'),
-        ('OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn.txt', 'NS993'),
+        ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi994'),
+        # ('OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn.txt', 'NE993'),
+        # ('OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn.txt', 'NS993'),
         # ('OTSoft-PDDP-SSeto_GLA_wdel-gen-ne_ixn.txt', 'SS993')
     ]
     for fe in files_exps:

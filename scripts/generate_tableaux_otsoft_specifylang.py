@@ -331,7 +331,7 @@ class OTSoftTableauxGenerator:
     #   = 3 means /e/ is always harmonic in SSeto-- no first-syllable transparency as per literature (cf Finnish, eg)
     #   = 4
     #   = 5 means both 2 and 3
-    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, withidentfoot=False, fortesting=False, inittransp_inputs=True):
+    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, withidentfoot=False, fortesting=False, inittransp_inputs=True, reducedcons=False):
         self.special = special
         self.bfocus = bfocus
         self.lang = lang
@@ -345,13 +345,14 @@ class OTSoftTableauxGenerator:
         self.withidentfoot = withidentfoot
         self.fortesting = fortesting
         self.inititransp_inputs = inittransp_inputs
+        self.reducedcons = reducedcons
 
-        self.stringencysets = sets_dict[lang] if special == 1 else sets_dict[fullset]
+        self.stringencysets = sets_dict[self.lang] if self.special == 1 else (self.reduced_setsdict() if self.reducedcons else sets_dict[fullset])
         self.segM_connames = {setname: "*" + setname for setname in self.stringencysets.keys()}
-        self.frontsets = frontsets_dict[lang] if special == 1 else frontsets_dict[fullset]
-        self.backsets = backsets_dict[lang] if special == 1 else backsets_dict[fullset]
+        self.frontsets = frontsets_dict[self.lang] if self.special == 1 else frontsets_dict[fullset]
+        self.backsets = backsets_dict[self.lang] if self.special == 1 else backsets_dict[fullset]
 
-        self.nodis_connames = [
+        self.nodis_connames = self.reduced_nodis_constraints() if self.reducedcons else [
             nodis_conname(name1, name2, islocal, back if self.bfocus else front)
             for (name1, name2, islocal)
             in product(self.stringencysets.keys(), self.stringencysets.keys(), [True, False])
@@ -374,10 +375,44 @@ class OTSoftTableauxGenerator:
         self.allcons += list(self.segM_connames.values())
         self.allcons += self.nodis_connames
 
+    def reduced_setsdict(self):
+        if self.lang == Fin:
+            return {
+                "B2": b2
+            }
+        elif self.lang == SSeto:
+            return {
+                "F1": f1,
+                "B1": b1
+            }
+        elif self.lang == NSeto:
+            return {
+                "B1": b1
+            }
+        elif self.lang == NEst:
+            return {
+                "F3": f3,
+                "B1": b1,
+                "B2": b2
+            }
+
+    def reduced_nodis_constraints(self):  # *F1..._B5
+        nodiscons_reduced = []
+        if self.lang == Fin:
+            nodiscons_reduced = ["F3_B5", "F3..._B5", "_B5F3", "_B5...F3"]
+        elif self.lang == NEst:
+            nodiscons_reduced = []
+        elif self.lang == NSeto:
+            nodiscons_reduced = ["F4_B5", "F4..._B5", "_B5F4", "_B5...F4"]
+        elif self.lang == SSeto:
+            nodiscons_reduced = ["F4_B5", "F4..._B5", "F3_B5", "F3..._B5", "F3_B2", "F3..._B2", "_B5F4", "_B5...F4"]
+        nodiscons_reduced = ["*" + setcombo for setcombo in nodiscons_reduced]
+        return nodiscons_reduced
+
     def nodis_violations(self, constraintname, candidate):
         firstsetname, secondsetname, islocal, underlinedvalue = nodis_conelements(constraintname)
-        firstset = self.stringencysets[firstsetname]
-        secondset = self.stringencysets[secondsetname]
+        firstset = sets_dict[fullset][firstsetname]  # self.stringencysets[firstsetname]
+        secondset = sets_dict[fullset][secondsetname]  # self.stringencysets[secondsetname]
         numviolations = 0
         candidate = candidate.replace("_", "")  # harmony constraints don't care about deleted segments
 
@@ -1193,7 +1228,7 @@ class UCLAPLGenerator:
 #   = 3 means /e/ is always harmonic in SSeto-- no first-syllable transparency as per literature (cf Finnish, eg)
 #   = 4
 #   = 5 means both 2 and 3
-def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, IDFTin, TESTin, ITRANSPin):
+def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, IDFTin, TESTin, ITRANSPin, REDUCEDin):
 
     uclayes_otsoftno = False  # True for generating UCLA-PL input files; False for OTSoft
 
@@ -1207,6 +1242,7 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
     if not uclayes_otsoftno:  # OTSoft
         customizations = ""
         customizations += "_simp" if SPECIALin == 1 else ("_neg" if SPECIALin == 2 else ("_noe" if SPECIALin == 3 else ("_noeneg" if SPECIALin == 5 else "")))
+        customizations += "_red" if REDUCEDin else ""
         if IDFTin:
             customizations += "_widft"
         if DELin:
@@ -1224,7 +1260,8 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
                                                          deletionbyfeature=DELFTin, withnonempty=NEMPin,
                                                          withtranspn=TRANSPin, groupfeatures=FTGRPin,
                                                          countgroupasint=GRPINTin, withinteractions=IXNin,
-                                                         withidentfoot=IDFTin, fortesting=TESTin, inittransp_inputs=ITRANSPin)
+                                                         withidentfoot=IDFTin, fortesting=TESTin,
+                                                         inittransp_inputs=ITRANSPin, reducedcons=REDUCEDin)
             tableaux_generator.generatetext(length2words + length3words, foldername=foldername, customizations=customizations)
 
     if uclayes_otsoftno:  # UCLA
@@ -1270,10 +1307,11 @@ if __name__ == "__main__":
                                     for IDFT in [False]:  # ft:
                                         for TEST in ft:
                                             for ITRANSP in ft:
-                                                print("iteration", counter)
-                                                counter += 1
-                                                # if TRANSP and FTGRP: ###############################
-                                                main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST, ITRANSPin=ITRANSP)
+                                                for REDUCED in [True]:  # ft:
+                                                    print("iteration", counter)
+                                                    counter += 1
+                                                    # if TRANSP and FTGRP: ###############################
+                                                    main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST, ITRANSPin=ITRANSP, REDUCEDin=REDUCED)
 
     elif False:
         counter = 1

@@ -1,0 +1,11 @@
+Stratum #1
+*F4_B5
+*F4..._B5
+*_B5F4
+*_B5...F4
+Stratum #2
+Id(Bk)Syl1
+Stratum #3
+*B1
+Stratum #4
+Id(Bk)

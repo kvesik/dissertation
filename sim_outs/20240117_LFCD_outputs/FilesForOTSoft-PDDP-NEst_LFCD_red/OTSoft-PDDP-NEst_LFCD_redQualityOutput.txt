@@ -1,0 +1,2626 @@
+\ti\ftResults of Applying Low Faithfulness Constraint Demotion to OTSoft-PDDP-NEst_LFCD_red.txt
+
+\hrRankings for OTSoft-PDDP-NEst_LFCD_red.txt	3-28-2024	\pn
+
+\cn3-28-2024, 10:21 a.m.
+
+\cnOTSoft 2.6
+\cnRelease date 4/11/2021
+
+
+\h1Result
+A ranking was found that generates the correct outputs.
+\ks
+\ts3
+\ntStratum	Constraint Name	Abbreviation
+Stratum #1	*B1	*B1
+Stratum #2	Id(Bk)Syl1	Id(Bk)Syl1
+Stratum #3	*F3	*F3
+	*B2	*B2
+Stratum #4	Id(Bk)	Id(Bk)
+\te\ke
+
+\h1Tableaux
+\ts6\ks
+/Oe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oe			*		\sh
+OE			*	*!	*\sh
+oe		*!	\sh	\sh	*\sh
+oE		*!	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Oi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oi			*\sh	\sh	\sh
+oi		*!	\sh	\sh	*\sh
+OI	*!	\sh	*\sh	*\sh	*\sh
+oI	*!	*\sh	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Oo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oo			*	\sh	\sh
+OO			**!	\sh	*\sh
+oo		*!	\sh	\sh	*\sh
+oO		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Oa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oa			*	\sh	\sh
+OA			**!	\sh	*\sh
+oa		*!	\sh	\sh	*\sh
+oA		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Ou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ou			*	\sh	\sh
+Oy			**!	\sh	*\sh
+ou		*!	\sh	\sh	*\sh
+oy		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Ae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ae			*		\sh
+AE			*	*!	*\sh
+ae		*!	\sh	\sh	*\sh
+aE		*!	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Ai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ai			*\sh	\sh	\sh
+ai		*!	\sh	\sh	*\sh
+AI	*!	\sh	*\sh	*\sh	*\sh
+aI	*!	*\sh	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Ao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ao			*	\sh	\sh
+AO			**!	\sh	*\sh
+ao		*!	\sh	\sh	*\sh
+aO		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Aa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aa			*	\sh	\sh
+AA			**!	\sh	*\sh
+aa		*!	\sh	\sh	*\sh
+aA		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Au/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Au			*	\sh	\sh
+Ay			**!	\sh	*\sh
+au		*!	\sh	\sh	*\sh
+ay		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ye/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ye			*		\sh
+yE			*	*!	*\sh
+ue		*!	\sh	\sh	*\sh
+uE		*!	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/yi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yi			*\sh	\sh	\sh
+ui		*!	\sh	\sh	*\sh
+yI	*!	\sh	*\sh	*\sh	*\sh
+uI	*!	*\sh	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/yo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yo			*	\sh	\sh
+yO			**!	\sh	*\sh
+uo		*!	\sh	\sh	*\sh
+uO		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ya/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ya			*	\sh	\sh
+yA			**!	\sh	*\sh
+ua		*!	\sh	\sh	*\sh
+uA		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/yu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yu			*	\sh	\sh
+yy			**!	\sh	*\sh
+uu		*!	\sh	\sh	*\sh
+uy		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ee					\sh
+eE				*!	*\sh
+Ee		*!	\sh	*\sh	*\sh
+EE		*!	\sh	**\sh	**\sh
+\te\ke
+\ts6\ks
+/ei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ei			\sh	\sh	\sh
+Ei		*!	\sh	*\sh	*\sh
+eI	*!	\sh	\sh	*\sh	*\sh
+EI	*!	*\sh	\sh	**\sh	**\sh
+\te\ke
+\ts6\ks
+/eo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eo				\sh	\sh
+eO			*!	\sh	*\sh
+Eo		*!	\sh	*\sh	*\sh
+EO		*!	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/ea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ea				\sh	\sh
+eA			*!	\sh	*\sh
+Ea		*!	\sh	*\sh	*\sh
+EA		*!	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/eu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eu				\sh	\sh
+ey			*!	\sh	*\sh
+Eu		*!	\sh	*\sh	*\sh
+Ey		*!	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/ie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ie					\sh
+iE				*!	*\sh
+Ie	*!	*\sh	\sh	*\sh	*\sh
+IE	*!	*\sh	\sh	**\sh	**\sh
+\te\ke
+\ts6\ks
+/ii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ii		\sh	\sh	\sh	\sh
+iI	*!	\sh	\sh	*\sh	*\sh
+Ii	*!	*\sh	\sh	*\sh	*\sh
+II	*!*	*\sh	\sh	**\sh	**\sh
+\te\ke
+\ts6\ks
+/io/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we io				\sh	\sh
+iO			*!	\sh	*\sh
+Io	*!	*\sh	\sh	*\sh	*\sh
+IO	*!	*\sh	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/ia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ia				\sh	\sh
+iA			*!	\sh	*\sh
+Ia	*!	*\sh	\sh	*\sh	*\sh
+IA	*!	*\sh	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/iu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iu				\sh	\sh
+iy			*!	\sh	*\sh
+Iu	*!	*\sh	\sh	*\sh	*\sh
+Iy	*!	*\sh	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Ee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ee				*	\sh
+EE				**!	*\sh
+ee		*!	\sh	\sh	*\sh
+eE		*!	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Ei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ei			\sh	*\sh	\sh
+ei		*!	\sh	\sh	*\sh
+EI	*!	\sh	\sh	**\sh	*\sh
+eI	*!	*\sh	\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/Eo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eo				*\sh	\sh
+EO			*!	*\sh	*\sh
+eo		*!	\sh	\sh	*\sh
+eO		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Ea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ea				*\sh	\sh
+EA			*!	*\sh	*\sh
+ea		*!	\sh	\sh	*\sh
+eA		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Eu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eu				*\sh	\sh
+Ey			*!	*\sh	*\sh
+eu		*!	\sh	\sh	*\sh
+ey		*!	*\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/oe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oe					\sh
+oE				*!	*\sh
+Oe		*!	*\sh	\sh	*\sh
+OE		*!	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/oi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oi			\sh	\sh	\sh
+Oi		*!	*\sh	\sh	*\sh
+oI	*!	\sh	\sh	*\sh	*\sh
+OI	*!	*\sh	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/oo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oo				\sh	\sh
+oO			*!	\sh	*\sh
+Oo		*!	*\sh	\sh	*\sh
+OO		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/oa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oa				\sh	\sh
+oA			*!	\sh	*\sh
+Oa		*!	*\sh	\sh	*\sh
+OA		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ou				\sh	\sh
+oy			*!	\sh	*\sh
+Ou		*!	*\sh	\sh	*\sh
+Oy		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ae					\sh
+aE				*!	*\sh
+Ae		*!	*\sh	\sh	*\sh
+AE		*!	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/ai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ai			\sh	\sh	\sh
+Ai		*!	*\sh	\sh	*\sh
+aI	*!	\sh	\sh	*\sh	*\sh
+AI	*!	*\sh	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/ao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ao				\sh	\sh
+aO			*!	\sh	*\sh
+Ao		*!	*\sh	\sh	*\sh
+AO		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/aa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aa				\sh	\sh
+aA			*!	\sh	*\sh
+Aa		*!	*\sh	\sh	*\sh
+AA		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/au/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we au				\sh	\sh
+ay			*!	\sh	*\sh
+Au		*!	*\sh	\sh	*\sh
+Ay		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ue					\sh
+uE				*!	*\sh
+ye		*!	*\sh	\sh	*\sh
+yE		*!	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/ui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ui			\sh	\sh	\sh
+yi		*!	*\sh	\sh	*\sh
+uI	*!	\sh	\sh	*\sh	*\sh
+yI	*!	*\sh	*\sh	*\sh	**\sh
+\te\ke
+\ts6\ks
+/uo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uo				\sh	\sh
+uO			*!	\sh	*\sh
+yo		*!	*\sh	\sh	*\sh
+yO		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/ua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ua				\sh	\sh
+uA			*!	\sh	*\sh
+ya		*!	*\sh	\sh	*\sh
+yA		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/uu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uu				\sh	\sh
+uy			*!	\sh	*\sh
+yu		*!	*\sh	\sh	*\sh
+yy		*!	**\sh	\sh	**\sh
+\te\ke
+\ts6\ks
+/Oee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oee			*		\sh
+OeE			*	*!	*\sh
+OEE			*	*!*	**\sh
+oee		*!	\sh	\sh	*\sh
+oeE		*!	\sh	*\sh	**\sh
+oEE		*!	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Oei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oei			*		\sh
+OEi			*	*!	*\sh
+oei		*!	\sh	\sh	*\sh
+oEi		*!	\sh	*\sh	**\sh
+OeI	*!	\sh	*\sh	*\sh	*\sh
+OEI	*!	\sh	*\sh	**\sh	**\sh
+oeI	*!	*\sh	\sh	*\sh	**\sh
+oEI	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Oeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oeo			*		\sh
+OEo			*	*!	*\sh
+OeO			**!	\sh	*\sh
+OEO			**!	*\sh	**\sh
+oeo		*!	\sh	\sh	*\sh
+oEo		*!	\sh	*\sh	**\sh
+oeO		*!	*\sh	\sh	**\sh
+oEO		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oea			*		\sh
+OEa			*	*!	*\sh
+OeA			**!	\sh	*\sh
+OEA			**!	*\sh	**\sh
+oea		*!	\sh	\sh	*\sh
+oEa		*!	\sh	*\sh	**\sh
+oeA		*!	*\sh	\sh	**\sh
+oEA		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oeu			*		\sh
+OEu			*	*!	*\sh
+Oey			**!	\sh	*\sh
+OEy			**!	*\sh	**\sh
+oeu		*!	\sh	\sh	*\sh
+oEu		*!	\sh	*\sh	**\sh
+oey		*!	*\sh	\sh	**\sh
+oEy		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oie			*		\sh
+OiE			*	*!	*\sh
+oie		*!	\sh	\sh	*\sh
+oiE		*!	\sh	*\sh	**\sh
+OIe	*!	\sh	*\sh	*\sh	*\sh
+OIE	*!	\sh	*\sh	**\sh	**\sh
+oIe	*!	*\sh	\sh	*\sh	**\sh
+oIE	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Oii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oii			*\sh	\sh	\sh
+oii		*!	\sh	\sh	*\sh
+OiI	*!	\sh	*\sh	*\sh	*\sh
+oiI	*!	*\sh	\sh	*\sh	**\sh
+OII	*!*	\sh	*\sh	**\sh	**\sh
+oII	*!*	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Oio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oio			*	\sh	\sh
+OiO			**!	\sh	*\sh
+oio		*!	\sh	\sh	*\sh
+oiO		*!	*\sh	\sh	**\sh
+OIo	*!	\sh	*\sh	*\sh	*\sh
+OIO	*!	\sh	**\sh	*\sh	**\sh
+oIo	*!	*\sh	\sh	*\sh	**\sh
+oIO	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oia			*	\sh	\sh
+OiA			**!	\sh	*\sh
+oia		*!	\sh	\sh	*\sh
+oiA		*!	*\sh	\sh	**\sh
+OIa	*!	\sh	*\sh	*\sh	*\sh
+OIA	*!	\sh	**\sh	*\sh	**\sh
+oIa	*!	*\sh	\sh	*\sh	**\sh
+oIA	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oiu			*	\sh	\sh
+Oiy			**!	\sh	*\sh
+oiu		*!	\sh	\sh	*\sh
+oiy		*!	*\sh	\sh	**\sh
+OIu	*!	\sh	*\sh	*\sh	*\sh
+OIy	*!	\sh	**\sh	*\sh	**\sh
+oIu	*!	*\sh	\sh	*\sh	**\sh
+oIy	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Ooe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ooe			*		\sh
+OoE			*	*!	*\sh
+OOe			**!	\sh	*\sh
+OOE			**!	*\sh	**\sh
+ooe		*!	\sh	\sh	*\sh
+ooE		*!	\sh	*\sh	**\sh
+oOe		*!	*\sh	\sh	**\sh
+oOE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Ooi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ooi			*	\sh	\sh
+OOi			**!	\sh	*\sh
+ooi		*!	\sh	\sh	*\sh
+oOi		*!	*\sh	\sh	**\sh
+OoI	*!	\sh	*\sh	*\sh	*\sh
+OOI	*!	\sh	**\sh	*\sh	**\sh
+ooI	*!	*\sh	\sh	*\sh	**\sh
+oOI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Ooo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ooo			*	\sh	\sh
+OoO			**!	\sh	*\sh
+OOO			**!*	\sh	**\sh
+ooo		*!	\sh	\sh	*\sh
+ooO		*!	*\sh	\sh	**\sh
+oOO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Ooa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ooa			*	\sh	\sh
+OoA			**!	\sh	*\sh
+OOA			**!*	\sh	**\sh
+ooa		*!	\sh	\sh	*\sh
+ooA		*!	*\sh	\sh	**\sh
+oOA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Oou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oou			*	\sh	\sh
+Ooy			**!	\sh	*\sh
+OOy			**!*	\sh	**\sh
+oou		*!	\sh	\sh	*\sh
+ooy		*!	*\sh	\sh	**\sh
+oOy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Oae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oae			*		\sh
+OaE			*	*!	*\sh
+OAe			**!	\sh	*\sh
+OAE			**!	*\sh	**\sh
+oae		*!	\sh	\sh	*\sh
+oaE		*!	\sh	*\sh	**\sh
+oAe		*!	*\sh	\sh	**\sh
+oAE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oai			*	\sh	\sh
+OAi			**!	\sh	*\sh
+oai		*!	\sh	\sh	*\sh
+oAi		*!	*\sh	\sh	**\sh
+OaI	*!	\sh	*\sh	*\sh	*\sh
+OAI	*!	\sh	**\sh	*\sh	**\sh
+oaI	*!	*\sh	\sh	*\sh	**\sh
+oAI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oao			*	\sh	\sh
+OaO			**!	\sh	*\sh
+OAO			**!*	\sh	**\sh
+oao		*!	\sh	\sh	*\sh
+oaO		*!	*\sh	\sh	**\sh
+oAO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Oaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oaa			*	\sh	\sh
+OaA			**!	\sh	*\sh
+OAA			**!*	\sh	**\sh
+oaa		*!	\sh	\sh	*\sh
+oaA		*!	*\sh	\sh	**\sh
+oAA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Oau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oau			*	\sh	\sh
+Oay			**!	\sh	*\sh
+OAy			**!*	\sh	**\sh
+oau		*!	\sh	\sh	*\sh
+oay		*!	*\sh	\sh	**\sh
+oAy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Oue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oue			*		\sh
+OuE			*	*!	*\sh
+Oye			**!	\sh	*\sh
+OyE			**!	*\sh	**\sh
+oue		*!	\sh	\sh	*\sh
+ouE		*!	\sh	*\sh	**\sh
+oye		*!	*\sh	\sh	**\sh
+oyE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Oui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oui			*	\sh	\sh
+Oyi			**!	\sh	*\sh
+oui		*!	\sh	\sh	*\sh
+oyi		*!	*\sh	\sh	**\sh
+OuI	*!	\sh	*\sh	*\sh	*\sh
+OyI	*!	\sh	**\sh	*\sh	**\sh
+ouI	*!	*\sh	\sh	*\sh	**\sh
+oyI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Ouo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ouo			*	\sh	\sh
+OuO			**!	\sh	*\sh
+OyO			**!*	\sh	**\sh
+ouo		*!	\sh	\sh	*\sh
+ouO		*!	*\sh	\sh	**\sh
+oyO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Oua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Oua			*	\sh	\sh
+OuA			**!	\sh	*\sh
+OyA			**!*	\sh	**\sh
+oua		*!	\sh	\sh	*\sh
+ouA		*!	*\sh	\sh	**\sh
+oyA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Ouu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Ouu			*	\sh	\sh
+Ouy			**!	\sh	*\sh
+Oyy			**!*	\sh	**\sh
+ouu		*!	\sh	\sh	*\sh
+ouy		*!	*\sh	\sh	**\sh
+oyy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aee			*		\sh
+AeE			*	*!	*\sh
+AEE			*	*!*	**\sh
+aee		*!	\sh	\sh	*\sh
+aeE		*!	\sh	*\sh	**\sh
+aEE		*!	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Aei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aei			*		\sh
+AEi			*	*!	*\sh
+aei		*!	\sh	\sh	*\sh
+aEi		*!	\sh	*\sh	**\sh
+AeI	*!	\sh	*\sh	*\sh	*\sh
+AEI	*!	\sh	*\sh	**\sh	**\sh
+aeI	*!	*\sh	\sh	*\sh	**\sh
+aEI	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Aeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aeo			*		\sh
+AEo			*	*!	*\sh
+AeO			**!	\sh	*\sh
+AEO			**!	*\sh	**\sh
+aeo		*!	\sh	\sh	*\sh
+aEo		*!	\sh	*\sh	**\sh
+aeO		*!	*\sh	\sh	**\sh
+aEO		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aea			*		\sh
+AEa			*	*!	*\sh
+AeA			**!	\sh	*\sh
+AEA			**!	*\sh	**\sh
+aea		*!	\sh	\sh	*\sh
+aEa		*!	\sh	*\sh	**\sh
+aeA		*!	*\sh	\sh	**\sh
+aEA		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aeu			*		\sh
+AEu			*	*!	*\sh
+Aey			**!	\sh	*\sh
+AEy			**!	*\sh	**\sh
+aeu		*!	\sh	\sh	*\sh
+aEu		*!	\sh	*\sh	**\sh
+aey		*!	*\sh	\sh	**\sh
+aEy		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aie			*		\sh
+AiE			*	*!	*\sh
+aie		*!	\sh	\sh	*\sh
+aiE		*!	\sh	*\sh	**\sh
+AIe	*!	\sh	*\sh	*\sh	*\sh
+AIE	*!	\sh	*\sh	**\sh	**\sh
+aIe	*!	*\sh	\sh	*\sh	**\sh
+aIE	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Aii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aii			*\sh	\sh	\sh
+aii		*!	\sh	\sh	*\sh
+AiI	*!	\sh	*\sh	*\sh	*\sh
+aiI	*!	*\sh	\sh	*\sh	**\sh
+AII	*!*	\sh	*\sh	**\sh	**\sh
+aII	*!*	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Aio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aio			*	\sh	\sh
+AiO			**!	\sh	*\sh
+aio		*!	\sh	\sh	*\sh
+aiO		*!	*\sh	\sh	**\sh
+AIo	*!	\sh	*\sh	*\sh	*\sh
+AIO	*!	\sh	**\sh	*\sh	**\sh
+aIo	*!	*\sh	\sh	*\sh	**\sh
+aIO	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aia			*	\sh	\sh
+AiA			**!	\sh	*\sh
+aia		*!	\sh	\sh	*\sh
+aiA		*!	*\sh	\sh	**\sh
+AIa	*!	\sh	*\sh	*\sh	*\sh
+AIA	*!	\sh	**\sh	*\sh	**\sh
+aIa	*!	*\sh	\sh	*\sh	**\sh
+aIA	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aiu			*	\sh	\sh
+Aiy			**!	\sh	*\sh
+aiu		*!	\sh	\sh	*\sh
+aiy		*!	*\sh	\sh	**\sh
+AIu	*!	\sh	*\sh	*\sh	*\sh
+AIy	*!	\sh	**\sh	*\sh	**\sh
+aIu	*!	*\sh	\sh	*\sh	**\sh
+aIy	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aoe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aoe			*		\sh
+AoE			*	*!	*\sh
+AOe			**!	\sh	*\sh
+AOE			**!	*\sh	**\sh
+aoe		*!	\sh	\sh	*\sh
+aoE		*!	\sh	*\sh	**\sh
+aOe		*!	*\sh	\sh	**\sh
+aOE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aoi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aoi			*	\sh	\sh
+AOi			**!	\sh	*\sh
+aoi		*!	\sh	\sh	*\sh
+aOi		*!	*\sh	\sh	**\sh
+AoI	*!	\sh	*\sh	*\sh	*\sh
+AOI	*!	\sh	**\sh	*\sh	**\sh
+aoI	*!	*\sh	\sh	*\sh	**\sh
+aOI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aoo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aoo			*	\sh	\sh
+AoO			**!	\sh	*\sh
+AOO			**!*	\sh	**\sh
+aoo		*!	\sh	\sh	*\sh
+aoO		*!	*\sh	\sh	**\sh
+aOO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aoa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aoa			*	\sh	\sh
+AoA			**!	\sh	*\sh
+AOA			**!*	\sh	**\sh
+aoa		*!	\sh	\sh	*\sh
+aoA		*!	*\sh	\sh	**\sh
+aOA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aou			*	\sh	\sh
+Aoy			**!	\sh	*\sh
+AOy			**!*	\sh	**\sh
+aou		*!	\sh	\sh	*\sh
+aoy		*!	*\sh	\sh	**\sh
+aOy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aae			*		\sh
+AaE			*	*!	*\sh
+AAe			**!	\sh	*\sh
+AAE			**!	*\sh	**\sh
+aae		*!	\sh	\sh	*\sh
+aaE		*!	\sh	*\sh	**\sh
+aAe		*!	*\sh	\sh	**\sh
+aAE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aai			*	\sh	\sh
+AAi			**!	\sh	*\sh
+aai		*!	\sh	\sh	*\sh
+aAi		*!	*\sh	\sh	**\sh
+AaI	*!	\sh	*\sh	*\sh	*\sh
+AAI	*!	\sh	**\sh	*\sh	**\sh
+aaI	*!	*\sh	\sh	*\sh	**\sh
+aAI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aao			*	\sh	\sh
+AaO			**!	\sh	*\sh
+AAO			**!*	\sh	**\sh
+aao		*!	\sh	\sh	*\sh
+aaO		*!	*\sh	\sh	**\sh
+aAO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aaa			*	\sh	\sh
+AaA			**!	\sh	*\sh
+AAA			**!*	\sh	**\sh
+aaa		*!	\sh	\sh	*\sh
+aaA		*!	*\sh	\sh	**\sh
+aAA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aau			*	\sh	\sh
+Aay			**!	\sh	*\sh
+AAy			**!*	\sh	**\sh
+aau		*!	\sh	\sh	*\sh
+aay		*!	*\sh	\sh	**\sh
+aAy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aue			*		\sh
+AuE			*	*!	*\sh
+Aye			**!	\sh	*\sh
+AyE			**!	*\sh	**\sh
+aue		*!	\sh	\sh	*\sh
+auE		*!	\sh	*\sh	**\sh
+aye		*!	*\sh	\sh	**\sh
+ayE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Aui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aui			*	\sh	\sh
+Ayi			**!	\sh	*\sh
+aui		*!	\sh	\sh	*\sh
+ayi		*!	*\sh	\sh	**\sh
+AuI	*!	\sh	*\sh	*\sh	*\sh
+AyI	*!	\sh	**\sh	*\sh	**\sh
+auI	*!	*\sh	\sh	*\sh	**\sh
+ayI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Auo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Auo			*	\sh	\sh
+AuO			**!	\sh	*\sh
+AyO			**!*	\sh	**\sh
+auo		*!	\sh	\sh	*\sh
+auO		*!	*\sh	\sh	**\sh
+ayO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Aua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Aua			*	\sh	\sh
+AuA			**!	\sh	*\sh
+AyA			**!*	\sh	**\sh
+aua		*!	\sh	\sh	*\sh
+auA		*!	*\sh	\sh	**\sh
+ayA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Auu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Auu			*	\sh	\sh
+Auy			**!	\sh	*\sh
+Ayy			**!*	\sh	**\sh
+auu		*!	\sh	\sh	*\sh
+auy		*!	*\sh	\sh	**\sh
+ayy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yee			*		\sh
+yeE			*	*!	*\sh
+yEE			*	*!*	**\sh
+uee		*!	\sh	\sh	*\sh
+ueE		*!	\sh	*\sh	**\sh
+uEE		*!	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/yei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yei			*		\sh
+yEi			*	*!	*\sh
+uei		*!	\sh	\sh	*\sh
+uEi		*!	\sh	*\sh	**\sh
+yeI	*!	\sh	*\sh	*\sh	*\sh
+yEI	*!	\sh	*\sh	**\sh	**\sh
+ueI	*!	*\sh	\sh	*\sh	**\sh
+uEI	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/yeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yeo			*		\sh
+yEo			*	*!	*\sh
+yeO			**!	\sh	*\sh
+yEO			**!	*\sh	**\sh
+ueo		*!	\sh	\sh	*\sh
+uEo		*!	\sh	*\sh	**\sh
+ueO		*!	*\sh	\sh	**\sh
+uEO		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yea			*		\sh
+yEa			*	*!	*\sh
+yeA			**!	\sh	*\sh
+yEA			**!	*\sh	**\sh
+uea		*!	\sh	\sh	*\sh
+uEa		*!	\sh	*\sh	**\sh
+ueA		*!	*\sh	\sh	**\sh
+uEA		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yeu			*		\sh
+yEu			*	*!	*\sh
+yey			**!	\sh	*\sh
+yEy			**!	*\sh	**\sh
+ueu		*!	\sh	\sh	*\sh
+uEu		*!	\sh	*\sh	**\sh
+uey		*!	*\sh	\sh	**\sh
+uEy		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yie			*		\sh
+yiE			*	*!	*\sh
+uie		*!	\sh	\sh	*\sh
+uiE		*!	\sh	*\sh	**\sh
+yIe	*!	\sh	*\sh	*\sh	*\sh
+yIE	*!	\sh	*\sh	**\sh	**\sh
+uIe	*!	*\sh	\sh	*\sh	**\sh
+uIE	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/yii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yii			*\sh	\sh	\sh
+uii		*!	\sh	\sh	*\sh
+yiI	*!	\sh	*\sh	*\sh	*\sh
+uiI	*!	*\sh	\sh	*\sh	**\sh
+yII	*!*	\sh	*\sh	**\sh	**\sh
+uII	*!*	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/yio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yio			*	\sh	\sh
+yiO			**!	\sh	*\sh
+uio		*!	\sh	\sh	*\sh
+uiO		*!	*\sh	\sh	**\sh
+yIo	*!	\sh	*\sh	*\sh	*\sh
+yIO	*!	\sh	**\sh	*\sh	**\sh
+uIo	*!	*\sh	\sh	*\sh	**\sh
+uIO	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yia			*	\sh	\sh
+yiA			**!	\sh	*\sh
+uia		*!	\sh	\sh	*\sh
+uiA		*!	*\sh	\sh	**\sh
+yIa	*!	\sh	*\sh	*\sh	*\sh
+yIA	*!	\sh	**\sh	*\sh	**\sh
+uIa	*!	*\sh	\sh	*\sh	**\sh
+uIA	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yiu			*	\sh	\sh
+yiy			**!	\sh	*\sh
+uiu		*!	\sh	\sh	*\sh
+uiy		*!	*\sh	\sh	**\sh
+yIu	*!	\sh	*\sh	*\sh	*\sh
+yIy	*!	\sh	**\sh	*\sh	**\sh
+uIu	*!	*\sh	\sh	*\sh	**\sh
+uIy	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yoe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yoe			*		\sh
+yoE			*	*!	*\sh
+yOe			**!	\sh	*\sh
+yOE			**!	*\sh	**\sh
+uoe		*!	\sh	\sh	*\sh
+uoE		*!	\sh	*\sh	**\sh
+uOe		*!	*\sh	\sh	**\sh
+uOE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yoi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yoi			*	\sh	\sh
+yOi			**!	\sh	*\sh
+uoi		*!	\sh	\sh	*\sh
+uOi		*!	*\sh	\sh	**\sh
+yoI	*!	\sh	*\sh	*\sh	*\sh
+yOI	*!	\sh	**\sh	*\sh	**\sh
+uoI	*!	*\sh	\sh	*\sh	**\sh
+uOI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yoo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yoo			*	\sh	\sh
+yoO			**!	\sh	*\sh
+yOO			**!*	\sh	**\sh
+uoo		*!	\sh	\sh	*\sh
+uoO		*!	*\sh	\sh	**\sh
+uOO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yoa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yoa			*	\sh	\sh
+yoA			**!	\sh	*\sh
+yOA			**!*	\sh	**\sh
+uoa		*!	\sh	\sh	*\sh
+uoA		*!	*\sh	\sh	**\sh
+uOA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/you/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we you			*	\sh	\sh
+yoy			**!	\sh	*\sh
+yOy			**!*	\sh	**\sh
+uou		*!	\sh	\sh	*\sh
+uoy		*!	*\sh	\sh	**\sh
+uOy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yae			*		\sh
+yaE			*	*!	*\sh
+yAe			**!	\sh	*\sh
+yAE			**!	*\sh	**\sh
+uae		*!	\sh	\sh	*\sh
+uaE		*!	\sh	*\sh	**\sh
+uAe		*!	*\sh	\sh	**\sh
+uAE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yai			*	\sh	\sh
+yAi			**!	\sh	*\sh
+uai		*!	\sh	\sh	*\sh
+uAi		*!	*\sh	\sh	**\sh
+yaI	*!	\sh	*\sh	*\sh	*\sh
+yAI	*!	\sh	**\sh	*\sh	**\sh
+uaI	*!	*\sh	\sh	*\sh	**\sh
+uAI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yao			*	\sh	\sh
+yaO			**!	\sh	*\sh
+yAO			**!*	\sh	**\sh
+uao		*!	\sh	\sh	*\sh
+uaO		*!	*\sh	\sh	**\sh
+uAO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yaa			*	\sh	\sh
+yaA			**!	\sh	*\sh
+yAA			**!*	\sh	**\sh
+uaa		*!	\sh	\sh	*\sh
+uaA		*!	*\sh	\sh	**\sh
+uAA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yau			*	\sh	\sh
+yay			**!	\sh	*\sh
+yAy			**!*	\sh	**\sh
+uau		*!	\sh	\sh	*\sh
+uay		*!	*\sh	\sh	**\sh
+uAy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yue			*		\sh
+yuE			*	*!	*\sh
+yye			**!	\sh	*\sh
+yyE			**!	*\sh	**\sh
+uue		*!	\sh	\sh	*\sh
+uuE		*!	\sh	*\sh	**\sh
+uye		*!	*\sh	\sh	**\sh
+uyE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yui			*	\sh	\sh
+yyi			**!	\sh	*\sh
+uui		*!	\sh	\sh	*\sh
+uyi		*!	*\sh	\sh	**\sh
+yuI	*!	\sh	*\sh	*\sh	*\sh
+yyI	*!	\sh	**\sh	*\sh	**\sh
+uuI	*!	*\sh	\sh	*\sh	**\sh
+uyI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/yuo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yuo			*	\sh	\sh
+yuO			**!	\sh	*\sh
+yyO			**!*	\sh	**\sh
+uuo		*!	\sh	\sh	*\sh
+uuO		*!	*\sh	\sh	**\sh
+uyO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yua			*	\sh	\sh
+yuA			**!	\sh	*\sh
+yyA			**!*	\sh	**\sh
+uua		*!	\sh	\sh	*\sh
+uuA		*!	*\sh	\sh	**\sh
+uyA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/yuu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we yuu			*	\sh	\sh
+yuy			**!	\sh	*\sh
+yyy			**!*	\sh	**\sh
+uuu		*!	\sh	\sh	*\sh
+uuy		*!	*\sh	\sh	**\sh
+uyy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/eee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eee					\sh
+eeE				*!	*\sh
+eEE				*!*	**\sh
+Eee		*!	\sh	*\sh	*\sh
+EeE		*!	\sh	**\sh	**\sh
+EEE		*!	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/eei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eei					\sh
+eEi				*!	*\sh
+Eei		*!	\sh	*\sh	*\sh
+EEi		*!	\sh	**\sh	**\sh
+eeI	*!	\sh	\sh	*\sh	*\sh
+eEI	*!	\sh	\sh	**\sh	**\sh
+EeI	*!	*\sh	\sh	**\sh	**\sh
+EEI	*!	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/eeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eeo					\sh
+eEo				*!	*\sh
+eeO			*!	\sh	*\sh
+eEO			*!	*\sh	**\sh
+Eeo		*!	\sh	*\sh	*\sh
+EEo		*!	\sh	**\sh	**\sh
+EeO		*!	*\sh	*\sh	**\sh
+EEO		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eea					\sh
+eEa				*!	*\sh
+eeA			*!	\sh	*\sh
+eEA			*!	*\sh	**\sh
+Eea		*!	\sh	*\sh	*\sh
+EEa		*!	\sh	**\sh	**\sh
+EeA		*!	*\sh	*\sh	**\sh
+EEA		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eeu					\sh
+eEu				*!	*\sh
+eey			*!	\sh	*\sh
+eEy			*!	*\sh	**\sh
+Eeu		*!	\sh	*\sh	*\sh
+EEu		*!	\sh	**\sh	**\sh
+Eey		*!	*\sh	*\sh	**\sh
+EEy		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eie					\sh
+eiE				*!	*\sh
+Eie		*!	\sh	*\sh	*\sh
+EiE		*!	\sh	**\sh	**\sh
+eIe	*!	\sh	\sh	*\sh	*\sh
+eIE	*!	\sh	\sh	**\sh	**\sh
+EIe	*!	*\sh	\sh	**\sh	**\sh
+EIE	*!	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/eii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eii			\sh	\sh	\sh
+Eii		*!	\sh	*\sh	*\sh
+eiI	*!	\sh	\sh	*\sh	*\sh
+EiI	*!	*\sh	\sh	**\sh	**\sh
+eII	*!*	\sh	\sh	**\sh	**\sh
+EII	*!*	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/eio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eio				\sh	\sh
+eiO			*!	\sh	*\sh
+Eio		*!	\sh	*\sh	*\sh
+EiO		*!	*\sh	*\sh	**\sh
+eIo	*!	\sh	\sh	*\sh	*\sh
+eIO	*!	\sh	*\sh	*\sh	**\sh
+EIo	*!	*\sh	\sh	**\sh	**\sh
+EIO	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eia				\sh	\sh
+eiA			*!	\sh	*\sh
+Eia		*!	\sh	*\sh	*\sh
+EiA		*!	*\sh	*\sh	**\sh
+eIa	*!	\sh	\sh	*\sh	*\sh
+eIA	*!	\sh	*\sh	*\sh	**\sh
+EIa	*!	*\sh	\sh	**\sh	**\sh
+EIA	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eiu				\sh	\sh
+eiy			*!	\sh	*\sh
+Eiu		*!	\sh	*\sh	*\sh
+Eiy		*!	*\sh	*\sh	**\sh
+eIu	*!	\sh	\sh	*\sh	*\sh
+eIy	*!	\sh	*\sh	*\sh	**\sh
+EIu	*!	*\sh	\sh	**\sh	**\sh
+EIy	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eoe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eoe					\sh
+eoE				*!	*\sh
+eOe			*!	\sh	*\sh
+eOE			*!	*\sh	**\sh
+Eoe		*!	\sh	*\sh	*\sh
+EoE		*!	\sh	**\sh	**\sh
+EOe		*!	*\sh	*\sh	**\sh
+EOE		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eoi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eoi				\sh	\sh
+eOi			*!	\sh	*\sh
+Eoi		*!	\sh	*\sh	*\sh
+EOi		*!	*\sh	*\sh	**\sh
+eoI	*!	\sh	\sh	*\sh	*\sh
+eOI	*!	\sh	*\sh	*\sh	**\sh
+EoI	*!	*\sh	\sh	**\sh	**\sh
+EOI	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eoo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eoo				\sh	\sh
+eoO			*!	\sh	*\sh
+eOO			*!*	\sh	**\sh
+Eoo		*!	\sh	*\sh	*\sh
+EoO		*!	*\sh	*\sh	**\sh
+EOO		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eoa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eoa				\sh	\sh
+eoA			*!	\sh	*\sh
+eOA			*!*	\sh	**\sh
+Eoa		*!	\sh	*\sh	*\sh
+EoA		*!	*\sh	*\sh	**\sh
+EOA		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eou				\sh	\sh
+eoy			*!	\sh	*\sh
+eOy			*!*	\sh	**\sh
+Eou		*!	\sh	*\sh	*\sh
+Eoy		*!	*\sh	*\sh	**\sh
+EOy		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eae					\sh
+eaE				*!	*\sh
+eAe			*!	\sh	*\sh
+eAE			*!	*\sh	**\sh
+Eae		*!	\sh	*\sh	*\sh
+EaE		*!	\sh	**\sh	**\sh
+EAe		*!	*\sh	*\sh	**\sh
+EAE		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eai				\sh	\sh
+eAi			*!	\sh	*\sh
+Eai		*!	\sh	*\sh	*\sh
+EAi		*!	*\sh	*\sh	**\sh
+eaI	*!	\sh	\sh	*\sh	*\sh
+eAI	*!	\sh	*\sh	*\sh	**\sh
+EaI	*!	*\sh	\sh	**\sh	**\sh
+EAI	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eao				\sh	\sh
+eaO			*!	\sh	*\sh
+eAO			*!*	\sh	**\sh
+Eao		*!	\sh	*\sh	*\sh
+EaO		*!	*\sh	*\sh	**\sh
+EAO		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eaa				\sh	\sh
+eaA			*!	\sh	*\sh
+eAA			*!*	\sh	**\sh
+Eaa		*!	\sh	*\sh	*\sh
+EaA		*!	*\sh	*\sh	**\sh
+EAA		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eau				\sh	\sh
+eay			*!	\sh	*\sh
+eAy			*!*	\sh	**\sh
+Eau		*!	\sh	*\sh	*\sh
+Eay		*!	*\sh	*\sh	**\sh
+EAy		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eue					\sh
+euE				*!	*\sh
+eye			*!	\sh	*\sh
+eyE			*!	*\sh	**\sh
+Eue		*!	\sh	*\sh	*\sh
+EuE		*!	\sh	**\sh	**\sh
+Eye		*!	*\sh	*\sh	**\sh
+EyE		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/eui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eui				\sh	\sh
+eyi			*!	\sh	*\sh
+Eui		*!	\sh	*\sh	*\sh
+Eyi		*!	*\sh	*\sh	**\sh
+euI	*!	\sh	\sh	*\sh	*\sh
+eyI	*!	\sh	*\sh	*\sh	**\sh
+EuI	*!	*\sh	\sh	**\sh	**\sh
+EyI	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/euo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we euo				\sh	\sh
+euO			*!	\sh	*\sh
+eyO			*!*	\sh	**\sh
+Euo		*!	\sh	*\sh	*\sh
+EuO		*!	*\sh	*\sh	**\sh
+EyO		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/eua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we eua				\sh	\sh
+euA			*!	\sh	*\sh
+eyA			*!*	\sh	**\sh
+Eua		*!	\sh	*\sh	*\sh
+EuA		*!	*\sh	*\sh	**\sh
+EyA		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/euu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we euu				\sh	\sh
+euy			*!	\sh	*\sh
+eyy			*!*	\sh	**\sh
+Euu		*!	\sh	*\sh	*\sh
+Euy		*!	*\sh	*\sh	**\sh
+Eyy		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iee					\sh
+ieE				*!	*\sh
+iEE				*!*	**\sh
+Iee	*!	*\sh	\sh	*\sh	*\sh
+IeE	*!	*\sh	\sh	**\sh	**\sh
+IEE	*!	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/iei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iei					\sh
+iEi				*!	*\sh
+ieI	*!	\sh	\sh	*\sh	*\sh
+iEI	*!	\sh	\sh	**\sh	**\sh
+Iei	*!	*\sh	\sh	*\sh	*\sh
+IEi	*!	*\sh	\sh	**\sh	**\sh
+IeI	*!*	*\sh	\sh	**\sh	**\sh
+IEI	*!*	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/ieo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ieo					\sh
+iEo				*!	*\sh
+ieO			*!	\sh	*\sh
+iEO			*!	*\sh	**\sh
+Ieo	*!	*\sh	\sh	*\sh	*\sh
+IEo	*!	*\sh	\sh	**\sh	**\sh
+IeO	*!	*\sh	*\sh	*\sh	**\sh
+IEO	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iea					\sh
+iEa				*!	*\sh
+ieA			*!	\sh	*\sh
+iEA			*!	*\sh	**\sh
+Iea	*!	*\sh	\sh	*\sh	*\sh
+IEa	*!	*\sh	\sh	**\sh	**\sh
+IeA	*!	*\sh	*\sh	*\sh	**\sh
+IEA	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/ieu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ieu					\sh
+iEu				*!	*\sh
+iey			*!	\sh	*\sh
+iEy			*!	*\sh	**\sh
+Ieu	*!	*\sh	\sh	*\sh	*\sh
+IEu	*!	*\sh	\sh	**\sh	**\sh
+Iey	*!	*\sh	*\sh	*\sh	**\sh
+IEy	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iie					\sh
+iiE				*!	*\sh
+iIe	*!	\sh	\sh	*\sh	*\sh
+iIE	*!	\sh	\sh	**\sh	**\sh
+Iie	*!	*\sh	\sh	*\sh	*\sh
+IiE	*!	*\sh	\sh	**\sh	**\sh
+IIe	*!*	*\sh	\sh	**\sh	**\sh
+IIE	*!*	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/iii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iii		\sh	\sh	\sh	\sh
+iiI	*!	\sh	\sh	*\sh	*\sh
+Iii	*!	*\sh	\sh	*\sh	*\sh
+iII	*!*	\sh	\sh	**\sh	**\sh
+IiI	*!*	*\sh	\sh	**\sh	**\sh
+III	*!**	*\sh	\sh	***\sh	***\sh
+\te\ke
+\ts6\ks
+/iio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iio				\sh	\sh
+iiO			*!	\sh	*\sh
+iIo	*!	\sh	\sh	*\sh	*\sh
+iIO	*!	\sh	*\sh	*\sh	**\sh
+Iio	*!	*\sh	\sh	*\sh	*\sh
+IiO	*!	*\sh	*\sh	*\sh	**\sh
+IIo	*!*	*\sh	\sh	**\sh	**\sh
+IIO	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iia				\sh	\sh
+iiA			*!	\sh	*\sh
+iIa	*!	\sh	\sh	*\sh	*\sh
+iIA	*!	\sh	*\sh	*\sh	**\sh
+Iia	*!	*\sh	\sh	*\sh	*\sh
+IiA	*!	*\sh	*\sh	*\sh	**\sh
+IIa	*!*	*\sh	\sh	**\sh	**\sh
+IIA	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iiu				\sh	\sh
+iiy			*!	\sh	*\sh
+iIu	*!	\sh	\sh	*\sh	*\sh
+iIy	*!	\sh	*\sh	*\sh	**\sh
+Iiu	*!	*\sh	\sh	*\sh	*\sh
+Iiy	*!	*\sh	*\sh	*\sh	**\sh
+IIu	*!*	*\sh	\sh	**\sh	**\sh
+IIy	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/ioe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ioe					\sh
+ioE				*!	*\sh
+iOe			*!	\sh	*\sh
+iOE			*!	*\sh	**\sh
+Ioe	*!	*\sh	\sh	*\sh	*\sh
+IoE	*!	*\sh	\sh	**\sh	**\sh
+IOe	*!	*\sh	*\sh	*\sh	**\sh
+IOE	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/ioi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ioi				\sh	\sh
+iOi			*!	\sh	*\sh
+ioI	*!	\sh	\sh	*\sh	*\sh
+iOI	*!	\sh	*\sh	*\sh	**\sh
+Ioi	*!	*\sh	\sh	*\sh	*\sh
+IOi	*!	*\sh	*\sh	*\sh	**\sh
+IoI	*!*	*\sh	\sh	**\sh	**\sh
+IOI	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/ioo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ioo				\sh	\sh
+ioO			*!	\sh	*\sh
+iOO			*!*	\sh	**\sh
+Ioo	*!	*\sh	\sh	*\sh	*\sh
+IoO	*!	*\sh	*\sh	*\sh	**\sh
+IOO	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/ioa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ioa				\sh	\sh
+ioA			*!	\sh	*\sh
+iOA			*!*	\sh	**\sh
+Ioa	*!	*\sh	\sh	*\sh	*\sh
+IoA	*!	*\sh	*\sh	*\sh	**\sh
+IOA	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iou				\sh	\sh
+ioy			*!	\sh	*\sh
+iOy			*!*	\sh	**\sh
+Iou	*!	*\sh	\sh	*\sh	*\sh
+Ioy	*!	*\sh	*\sh	*\sh	**\sh
+IOy	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iae					\sh
+iaE				*!	*\sh
+iAe			*!	\sh	*\sh
+iAE			*!	*\sh	**\sh
+Iae	*!	*\sh	\sh	*\sh	*\sh
+IaE	*!	*\sh	\sh	**\sh	**\sh
+IAe	*!	*\sh	*\sh	*\sh	**\sh
+IAE	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iai				\sh	\sh
+iAi			*!	\sh	*\sh
+iaI	*!	\sh	\sh	*\sh	*\sh
+iAI	*!	\sh	*\sh	*\sh	**\sh
+Iai	*!	*\sh	\sh	*\sh	*\sh
+IAi	*!	*\sh	*\sh	*\sh	**\sh
+IaI	*!*	*\sh	\sh	**\sh	**\sh
+IAI	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iao				\sh	\sh
+iaO			*!	\sh	*\sh
+iAO			*!*	\sh	**\sh
+Iao	*!	*\sh	\sh	*\sh	*\sh
+IaO	*!	*\sh	*\sh	*\sh	**\sh
+IAO	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iaa				\sh	\sh
+iaA			*!	\sh	*\sh
+iAA			*!*	\sh	**\sh
+Iaa	*!	*\sh	\sh	*\sh	*\sh
+IaA	*!	*\sh	*\sh	*\sh	**\sh
+IAA	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iau				\sh	\sh
+iay			*!	\sh	*\sh
+iAy			*!*	\sh	**\sh
+Iau	*!	*\sh	\sh	*\sh	*\sh
+Iay	*!	*\sh	*\sh	*\sh	**\sh
+IAy	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iue					\sh
+iuE				*!	*\sh
+iye			*!	\sh	*\sh
+iyE			*!	*\sh	**\sh
+Iue	*!	*\sh	\sh	*\sh	*\sh
+IuE	*!	*\sh	\sh	**\sh	**\sh
+Iye	*!	*\sh	*\sh	*\sh	**\sh
+IyE	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iui				\sh	\sh
+iyi			*!	\sh	*\sh
+iuI	*!	\sh	\sh	*\sh	*\sh
+iyI	*!	\sh	*\sh	*\sh	**\sh
+Iui	*!	*\sh	\sh	*\sh	*\sh
+Iyi	*!	*\sh	*\sh	*\sh	**\sh
+IuI	*!*	*\sh	\sh	**\sh	**\sh
+IyI	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/iuo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iuo				\sh	\sh
+iuO			*!	\sh	*\sh
+iyO			*!*	\sh	**\sh
+Iuo	*!	*\sh	\sh	*\sh	*\sh
+IuO	*!	*\sh	*\sh	*\sh	**\sh
+IyO	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iua				\sh	\sh
+iuA			*!	\sh	*\sh
+iyA			*!*	\sh	**\sh
+Iua	*!	*\sh	\sh	*\sh	*\sh
+IuA	*!	*\sh	*\sh	*\sh	**\sh
+IyA	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/iuu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we iuu				\sh	\sh
+iuy			*!	\sh	*\sh
+iyy			*!*	\sh	**\sh
+Iuu	*!	*\sh	\sh	*\sh	*\sh
+Iuy	*!	*\sh	*\sh	*\sh	**\sh
+Iyy	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eee				*	\sh
+EeE				**!	*\sh
+EEE				**!*	**\sh
+eee		*!	\sh	\sh	*\sh
+eeE		*!	\sh	*\sh	**\sh
+eEE		*!	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Eei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eei				*	\sh
+EEi				**!	*\sh
+eei		*!	\sh	\sh	*\sh
+eEi		*!	\sh	*\sh	**\sh
+EeI	*!	\sh	\sh	**\sh	*\sh
+EEI	*!	\sh	\sh	***\sh	**\sh
+eeI	*!	*\sh	\sh	*\sh	**\sh
+eEI	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Eeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eeo				*	\sh
+EEo				**!	*\sh
+EeO			*!	*\sh	*\sh
+EEO			*!	**\sh	**\sh
+eeo		*!	\sh	\sh	*\sh
+eEo		*!	\sh	*\sh	**\sh
+eeO		*!	*\sh	\sh	**\sh
+eEO		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eea				*	\sh
+EEa				**!	*\sh
+EeA			*!	*\sh	*\sh
+EEA			*!	**\sh	**\sh
+eea		*!	\sh	\sh	*\sh
+eEa		*!	\sh	*\sh	**\sh
+eeA		*!	*\sh	\sh	**\sh
+eEA		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eeu				*	\sh
+EEu				**!	*\sh
+Eey			*!	*\sh	*\sh
+EEy			*!	**\sh	**\sh
+eeu		*!	\sh	\sh	*\sh
+eEu		*!	\sh	*\sh	**\sh
+eey		*!	*\sh	\sh	**\sh
+eEy		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eie				*	\sh
+EiE				**!	*\sh
+eie		*!	\sh	\sh	*\sh
+eiE		*!	\sh	*\sh	**\sh
+EIe	*!	\sh	\sh	**\sh	*\sh
+EIE	*!	\sh	\sh	***\sh	**\sh
+eIe	*!	*\sh	\sh	*\sh	**\sh
+eIE	*!	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Eii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eii			\sh	*\sh	\sh
+eii		*!	\sh	\sh	*\sh
+EiI	*!	\sh	\sh	**\sh	*\sh
+eiI	*!	*\sh	\sh	*\sh	**\sh
+EII	*!*	\sh	\sh	***\sh	**\sh
+eII	*!*	*\sh	\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/Eio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eio				*\sh	\sh
+EiO			*!	*\sh	*\sh
+eio		*!	\sh	\sh	*\sh
+eiO		*!	*\sh	\sh	**\sh
+EIo	*!	\sh	\sh	**\sh	*\sh
+EIO	*!	\sh	*\sh	**\sh	**\sh
+eIo	*!	*\sh	\sh	*\sh	**\sh
+eIO	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eia				*\sh	\sh
+EiA			*!	*\sh	*\sh
+eia		*!	\sh	\sh	*\sh
+eiA		*!	*\sh	\sh	**\sh
+EIa	*!	\sh	\sh	**\sh	*\sh
+EIA	*!	\sh	*\sh	**\sh	**\sh
+eIa	*!	*\sh	\sh	*\sh	**\sh
+eIA	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eiu				*\sh	\sh
+Eiy			*!	*\sh	*\sh
+eiu		*!	\sh	\sh	*\sh
+eiy		*!	*\sh	\sh	**\sh
+EIu	*!	\sh	\sh	**\sh	*\sh
+EIy	*!	\sh	*\sh	**\sh	**\sh
+eIu	*!	*\sh	\sh	*\sh	**\sh
+eIy	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eoe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eoe				*	\sh
+EoE				**!	*\sh
+EOe			*!	*\sh	*\sh
+EOE			*!	**\sh	**\sh
+eoe		*!	\sh	\sh	*\sh
+eoE		*!	\sh	*\sh	**\sh
+eOe		*!	*\sh	\sh	**\sh
+eOE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eoi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eoi				*\sh	\sh
+EOi			*!	*\sh	*\sh
+eoi		*!	\sh	\sh	*\sh
+eOi		*!	*\sh	\sh	**\sh
+EoI	*!	\sh	\sh	**\sh	*\sh
+EOI	*!	\sh	*\sh	**\sh	**\sh
+eoI	*!	*\sh	\sh	*\sh	**\sh
+eOI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eoo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eoo				*\sh	\sh
+EoO			*!	*\sh	*\sh
+EOO			*!*	*\sh	**\sh
+eoo		*!	\sh	\sh	*\sh
+eoO		*!	*\sh	\sh	**\sh
+eOO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eoa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eoa				*\sh	\sh
+EoA			*!	*\sh	*\sh
+EOA			*!*	*\sh	**\sh
+eoa		*!	\sh	\sh	*\sh
+eoA		*!	*\sh	\sh	**\sh
+eOA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eou				*\sh	\sh
+Eoy			*!	*\sh	*\sh
+EOy			*!*	*\sh	**\sh
+eou		*!	\sh	\sh	*\sh
+eoy		*!	*\sh	\sh	**\sh
+eOy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eae				*	\sh
+EaE				**!	*\sh
+EAe			*!	*\sh	*\sh
+EAE			*!	**\sh	**\sh
+eae		*!	\sh	\sh	*\sh
+eaE		*!	\sh	*\sh	**\sh
+eAe		*!	*\sh	\sh	**\sh
+eAE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eai				*\sh	\sh
+EAi			*!	*\sh	*\sh
+eai		*!	\sh	\sh	*\sh
+eAi		*!	*\sh	\sh	**\sh
+EaI	*!	\sh	\sh	**\sh	*\sh
+EAI	*!	\sh	*\sh	**\sh	**\sh
+eaI	*!	*\sh	\sh	*\sh	**\sh
+eAI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eao				*\sh	\sh
+EaO			*!	*\sh	*\sh
+EAO			*!*	*\sh	**\sh
+eao		*!	\sh	\sh	*\sh
+eaO		*!	*\sh	\sh	**\sh
+eAO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eaa				*\sh	\sh
+EaA			*!	*\sh	*\sh
+EAA			*!*	*\sh	**\sh
+eaa		*!	\sh	\sh	*\sh
+eaA		*!	*\sh	\sh	**\sh
+eAA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eau				*\sh	\sh
+Eay			*!	*\sh	*\sh
+EAy			*!*	*\sh	**\sh
+eau		*!	\sh	\sh	*\sh
+eay		*!	*\sh	\sh	**\sh
+eAy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eue				*	\sh
+EuE				**!	*\sh
+Eye			*!	*\sh	*\sh
+EyE			*!	**\sh	**\sh
+eue		*!	\sh	\sh	*\sh
+euE		*!	\sh	*\sh	**\sh
+eye		*!	*\sh	\sh	**\sh
+eyE		*!	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Eui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eui				*\sh	\sh
+Eyi			*!	*\sh	*\sh
+eui		*!	\sh	\sh	*\sh
+eyi		*!	*\sh	\sh	**\sh
+EuI	*!	\sh	\sh	**\sh	*\sh
+EyI	*!	\sh	*\sh	**\sh	**\sh
+euI	*!	*\sh	\sh	*\sh	**\sh
+eyI	*!	*\sh	*\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/Euo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Euo				*\sh	\sh
+EuO			*!	*\sh	*\sh
+EyO			*!*	*\sh	**\sh
+euo		*!	\sh	\sh	*\sh
+euO		*!	*\sh	\sh	**\sh
+eyO		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Eua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Eua				*\sh	\sh
+EuA			*!	*\sh	*\sh
+EyA			*!*	*\sh	**\sh
+eua		*!	\sh	\sh	*\sh
+euA		*!	*\sh	\sh	**\sh
+eyA		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/Euu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we Euu				*\sh	\sh
+Euy			*!	*\sh	*\sh
+Eyy			*!*	*\sh	**\sh
+euu		*!	\sh	\sh	*\sh
+euy		*!	*\sh	\sh	**\sh
+eyy		*!	**\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oee					\sh
+oeE				*!	*\sh
+oEE				*!*	**\sh
+Oee		*!	*\sh	\sh	*\sh
+OeE		*!	*\sh	*\sh	**\sh
+OEE		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/oei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oei					\sh
+oEi				*!	*\sh
+Oei		*!	*\sh	\sh	*\sh
+OEi		*!	*\sh	*\sh	**\sh
+oeI	*!	\sh	\sh	*\sh	*\sh
+oEI	*!	\sh	\sh	**\sh	**\sh
+OeI	*!	*\sh	*\sh	*\sh	**\sh
+OEI	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/oeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oeo					\sh
+oEo				*!	*\sh
+oeO			*!	\sh	*\sh
+oEO			*!	*\sh	**\sh
+Oeo		*!	*\sh	\sh	*\sh
+OEo		*!	*\sh	*\sh	**\sh
+OeO		*!	**\sh	\sh	**\sh
+OEO		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oea					\sh
+oEa				*!	*\sh
+oeA			*!	\sh	*\sh
+oEA			*!	*\sh	**\sh
+Oea		*!	*\sh	\sh	*\sh
+OEa		*!	*\sh	*\sh	**\sh
+OeA		*!	**\sh	\sh	**\sh
+OEA		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oeu					\sh
+oEu				*!	*\sh
+oey			*!	\sh	*\sh
+oEy			*!	*\sh	**\sh
+Oeu		*!	*\sh	\sh	*\sh
+OEu		*!	*\sh	*\sh	**\sh
+Oey		*!	**\sh	\sh	**\sh
+OEy		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oie					\sh
+oiE				*!	*\sh
+Oie		*!	*\sh	\sh	*\sh
+OiE		*!	*\sh	*\sh	**\sh
+oIe	*!	\sh	\sh	*\sh	*\sh
+oIE	*!	\sh	\sh	**\sh	**\sh
+OIe	*!	*\sh	*\sh	*\sh	**\sh
+OIE	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/oii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oii			\sh	\sh	\sh
+Oii		*!	*\sh	\sh	*\sh
+oiI	*!	\sh	\sh	*\sh	*\sh
+OiI	*!	*\sh	*\sh	*\sh	**\sh
+oII	*!*	\sh	\sh	**\sh	**\sh
+OII	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/oio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oio				\sh	\sh
+oiO			*!	\sh	*\sh
+Oio		*!	*\sh	\sh	*\sh
+OiO		*!	**\sh	\sh	**\sh
+oIo	*!	\sh	\sh	*\sh	*\sh
+oIO	*!	\sh	*\sh	*\sh	**\sh
+OIo	*!	*\sh	*\sh	*\sh	**\sh
+OIO	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oia				\sh	\sh
+oiA			*!	\sh	*\sh
+Oia		*!	*\sh	\sh	*\sh
+OiA		*!	**\sh	\sh	**\sh
+oIa	*!	\sh	\sh	*\sh	*\sh
+oIA	*!	\sh	*\sh	*\sh	**\sh
+OIa	*!	*\sh	*\sh	*\sh	**\sh
+OIA	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oiu				\sh	\sh
+oiy			*!	\sh	*\sh
+Oiu		*!	*\sh	\sh	*\sh
+Oiy		*!	**\sh	\sh	**\sh
+oIu	*!	\sh	\sh	*\sh	*\sh
+oIy	*!	\sh	*\sh	*\sh	**\sh
+OIu	*!	*\sh	*\sh	*\sh	**\sh
+OIy	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/ooe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ooe					\sh
+ooE				*!	*\sh
+oOe			*!	\sh	*\sh
+oOE			*!	*\sh	**\sh
+Ooe		*!	*\sh	\sh	*\sh
+OoE		*!	*\sh	*\sh	**\sh
+OOe		*!	**\sh	\sh	**\sh
+OOE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/ooi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ooi				\sh	\sh
+oOi			*!	\sh	*\sh
+Ooi		*!	*\sh	\sh	*\sh
+OOi		*!	**\sh	\sh	**\sh
+ooI	*!	\sh	\sh	*\sh	*\sh
+oOI	*!	\sh	*\sh	*\sh	**\sh
+OoI	*!	*\sh	*\sh	*\sh	**\sh
+OOI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/ooo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ooo				\sh	\sh
+ooO			*!	\sh	*\sh
+oOO			*!*	\sh	**\sh
+Ooo		*!	*\sh	\sh	*\sh
+OoO		*!	**\sh	\sh	**\sh
+OOO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/ooa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ooa				\sh	\sh
+ooA			*!	\sh	*\sh
+oOA			*!*	\sh	**\sh
+Ooa		*!	*\sh	\sh	*\sh
+OoA		*!	**\sh	\sh	**\sh
+OOA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oou				\sh	\sh
+ooy			*!	\sh	*\sh
+oOy			*!*	\sh	**\sh
+Oou		*!	*\sh	\sh	*\sh
+Ooy		*!	**\sh	\sh	**\sh
+OOy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oae					\sh
+oaE				*!	*\sh
+oAe			*!	\sh	*\sh
+oAE			*!	*\sh	**\sh
+Oae		*!	*\sh	\sh	*\sh
+OaE		*!	*\sh	*\sh	**\sh
+OAe		*!	**\sh	\sh	**\sh
+OAE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oai				\sh	\sh
+oAi			*!	\sh	*\sh
+Oai		*!	*\sh	\sh	*\sh
+OAi		*!	**\sh	\sh	**\sh
+oaI	*!	\sh	\sh	*\sh	*\sh
+oAI	*!	\sh	*\sh	*\sh	**\sh
+OaI	*!	*\sh	*\sh	*\sh	**\sh
+OAI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oao				\sh	\sh
+oaO			*!	\sh	*\sh
+oAO			*!*	\sh	**\sh
+Oao		*!	*\sh	\sh	*\sh
+OaO		*!	**\sh	\sh	**\sh
+OAO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oaa				\sh	\sh
+oaA			*!	\sh	*\sh
+oAA			*!*	\sh	**\sh
+Oaa		*!	*\sh	\sh	*\sh
+OaA		*!	**\sh	\sh	**\sh
+OAA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oau				\sh	\sh
+oay			*!	\sh	*\sh
+oAy			*!*	\sh	**\sh
+Oau		*!	*\sh	\sh	*\sh
+Oay		*!	**\sh	\sh	**\sh
+OAy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oue					\sh
+ouE				*!	*\sh
+oye			*!	\sh	*\sh
+oyE			*!	*\sh	**\sh
+Oue		*!	*\sh	\sh	*\sh
+OuE		*!	*\sh	*\sh	**\sh
+Oye		*!	**\sh	\sh	**\sh
+OyE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/oui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oui				\sh	\sh
+oyi			*!	\sh	*\sh
+Oui		*!	*\sh	\sh	*\sh
+Oyi		*!	**\sh	\sh	**\sh
+ouI	*!	\sh	\sh	*\sh	*\sh
+oyI	*!	\sh	*\sh	*\sh	**\sh
+OuI	*!	*\sh	*\sh	*\sh	**\sh
+OyI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/ouo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ouo				\sh	\sh
+ouO			*!	\sh	*\sh
+oyO			*!*	\sh	**\sh
+Ouo		*!	*\sh	\sh	*\sh
+OuO		*!	**\sh	\sh	**\sh
+OyO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/oua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we oua				\sh	\sh
+ouA			*!	\sh	*\sh
+oyA			*!*	\sh	**\sh
+Oua		*!	*\sh	\sh	*\sh
+OuA		*!	**\sh	\sh	**\sh
+OyA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/ouu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ouu				\sh	\sh
+ouy			*!	\sh	*\sh
+oyy			*!*	\sh	**\sh
+Ouu		*!	*\sh	\sh	*\sh
+Ouy		*!	**\sh	\sh	**\sh
+Oyy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aee					\sh
+aeE				*!	*\sh
+aEE				*!*	**\sh
+Aee		*!	*\sh	\sh	*\sh
+AeE		*!	*\sh	*\sh	**\sh
+AEE		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/aei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aei					\sh
+aEi				*!	*\sh
+Aei		*!	*\sh	\sh	*\sh
+AEi		*!	*\sh	*\sh	**\sh
+aeI	*!	\sh	\sh	*\sh	*\sh
+aEI	*!	\sh	\sh	**\sh	**\sh
+AeI	*!	*\sh	*\sh	*\sh	**\sh
+AEI	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/aeo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aeo					\sh
+aEo				*!	*\sh
+aeO			*!	\sh	*\sh
+aEO			*!	*\sh	**\sh
+Aeo		*!	*\sh	\sh	*\sh
+AEo		*!	*\sh	*\sh	**\sh
+AeO		*!	**\sh	\sh	**\sh
+AEO		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aea					\sh
+aEa				*!	*\sh
+aeA			*!	\sh	*\sh
+aEA			*!	*\sh	**\sh
+Aea		*!	*\sh	\sh	*\sh
+AEa		*!	*\sh	*\sh	**\sh
+AeA		*!	**\sh	\sh	**\sh
+AEA		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aeu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aeu					\sh
+aEu				*!	*\sh
+aey			*!	\sh	*\sh
+aEy			*!	*\sh	**\sh
+Aeu		*!	*\sh	\sh	*\sh
+AEu		*!	*\sh	*\sh	**\sh
+Aey		*!	**\sh	\sh	**\sh
+AEy		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aie					\sh
+aiE				*!	*\sh
+Aie		*!	*\sh	\sh	*\sh
+AiE		*!	*\sh	*\sh	**\sh
+aIe	*!	\sh	\sh	*\sh	*\sh
+aIE	*!	\sh	\sh	**\sh	**\sh
+AIe	*!	*\sh	*\sh	*\sh	**\sh
+AIE	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/aii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aii			\sh	\sh	\sh
+Aii		*!	*\sh	\sh	*\sh
+aiI	*!	\sh	\sh	*\sh	*\sh
+AiI	*!	*\sh	*\sh	*\sh	**\sh
+aII	*!*	\sh	\sh	**\sh	**\sh
+AII	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/aio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aio				\sh	\sh
+aiO			*!	\sh	*\sh
+Aio		*!	*\sh	\sh	*\sh
+AiO		*!	**\sh	\sh	**\sh
+aIo	*!	\sh	\sh	*\sh	*\sh
+aIO	*!	\sh	*\sh	*\sh	**\sh
+AIo	*!	*\sh	*\sh	*\sh	**\sh
+AIO	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aia				\sh	\sh
+aiA			*!	\sh	*\sh
+Aia		*!	*\sh	\sh	*\sh
+AiA		*!	**\sh	\sh	**\sh
+aIa	*!	\sh	\sh	*\sh	*\sh
+aIA	*!	\sh	*\sh	*\sh	**\sh
+AIa	*!	*\sh	*\sh	*\sh	**\sh
+AIA	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aiu				\sh	\sh
+aiy			*!	\sh	*\sh
+Aiu		*!	*\sh	\sh	*\sh
+Aiy		*!	**\sh	\sh	**\sh
+aIu	*!	\sh	\sh	*\sh	*\sh
+aIy	*!	\sh	*\sh	*\sh	**\sh
+AIu	*!	*\sh	*\sh	*\sh	**\sh
+AIy	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aoe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aoe					\sh
+aoE				*!	*\sh
+aOe			*!	\sh	*\sh
+aOE			*!	*\sh	**\sh
+Aoe		*!	*\sh	\sh	*\sh
+AoE		*!	*\sh	*\sh	**\sh
+AOe		*!	**\sh	\sh	**\sh
+AOE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aoi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aoi				\sh	\sh
+aOi			*!	\sh	*\sh
+Aoi		*!	*\sh	\sh	*\sh
+AOi		*!	**\sh	\sh	**\sh
+aoI	*!	\sh	\sh	*\sh	*\sh
+aOI	*!	\sh	*\sh	*\sh	**\sh
+AoI	*!	*\sh	*\sh	*\sh	**\sh
+AOI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aoo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aoo				\sh	\sh
+aoO			*!	\sh	*\sh
+aOO			*!*	\sh	**\sh
+Aoo		*!	*\sh	\sh	*\sh
+AoO		*!	**\sh	\sh	**\sh
+AOO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aoa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aoa				\sh	\sh
+aoA			*!	\sh	*\sh
+aOA			*!*	\sh	**\sh
+Aoa		*!	*\sh	\sh	*\sh
+AoA		*!	**\sh	\sh	**\sh
+AOA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aou				\sh	\sh
+aoy			*!	\sh	*\sh
+aOy			*!*	\sh	**\sh
+Aou		*!	*\sh	\sh	*\sh
+Aoy		*!	**\sh	\sh	**\sh
+AOy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aae					\sh
+aaE				*!	*\sh
+aAe			*!	\sh	*\sh
+aAE			*!	*\sh	**\sh
+Aae		*!	*\sh	\sh	*\sh
+AaE		*!	*\sh	*\sh	**\sh
+AAe		*!	**\sh	\sh	**\sh
+AAE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aai				\sh	\sh
+aAi			*!	\sh	*\sh
+Aai		*!	*\sh	\sh	*\sh
+AAi		*!	**\sh	\sh	**\sh
+aaI	*!	\sh	\sh	*\sh	*\sh
+aAI	*!	\sh	*\sh	*\sh	**\sh
+AaI	*!	*\sh	*\sh	*\sh	**\sh
+AAI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aao				\sh	\sh
+aaO			*!	\sh	*\sh
+aAO			*!*	\sh	**\sh
+Aao		*!	*\sh	\sh	*\sh
+AaO		*!	**\sh	\sh	**\sh
+AAO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aaa				\sh	\sh
+aaA			*!	\sh	*\sh
+aAA			*!*	\sh	**\sh
+Aaa		*!	*\sh	\sh	*\sh
+AaA		*!	**\sh	\sh	**\sh
+AAA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aau				\sh	\sh
+aay			*!	\sh	*\sh
+aAy			*!*	\sh	**\sh
+Aau		*!	*\sh	\sh	*\sh
+Aay		*!	**\sh	\sh	**\sh
+AAy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aue					\sh
+auE				*!	*\sh
+aye			*!	\sh	*\sh
+ayE			*!	*\sh	**\sh
+Aue		*!	*\sh	\sh	*\sh
+AuE		*!	*\sh	*\sh	**\sh
+Aye		*!	**\sh	\sh	**\sh
+AyE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/aui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aui				\sh	\sh
+ayi			*!	\sh	*\sh
+Aui		*!	*\sh	\sh	*\sh
+Ayi		*!	**\sh	\sh	**\sh
+auI	*!	\sh	\sh	*\sh	*\sh
+ayI	*!	\sh	*\sh	*\sh	**\sh
+AuI	*!	*\sh	*\sh	*\sh	**\sh
+AyI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/auo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we auo				\sh	\sh
+auO			*!	\sh	*\sh
+ayO			*!*	\sh	**\sh
+Auo		*!	*\sh	\sh	*\sh
+AuO		*!	**\sh	\sh	**\sh
+AyO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/aua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we aua				\sh	\sh
+auA			*!	\sh	*\sh
+ayA			*!*	\sh	**\sh
+Aua		*!	*\sh	\sh	*\sh
+AuA		*!	**\sh	\sh	**\sh
+AyA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/auu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we auu				\sh	\sh
+auy			*!	\sh	*\sh
+ayy			*!*	\sh	**\sh
+Auu		*!	*\sh	\sh	*\sh
+Auy		*!	**\sh	\sh	**\sh
+Ayy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uee/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uee					\sh
+ueE				*!	*\sh
+uEE				*!*	**\sh
+yee		*!	*\sh	\sh	*\sh
+yeE		*!	*\sh	*\sh	**\sh
+yEE		*!	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/uei/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uei					\sh
+uEi				*!	*\sh
+yei		*!	*\sh	\sh	*\sh
+yEi		*!	*\sh	*\sh	**\sh
+ueI	*!	\sh	\sh	*\sh	*\sh
+uEI	*!	\sh	\sh	**\sh	**\sh
+yeI	*!	*\sh	*\sh	*\sh	**\sh
+yEI	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/ueo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ueo					\sh
+uEo				*!	*\sh
+ueO			*!	\sh	*\sh
+uEO			*!	*\sh	**\sh
+yeo		*!	*\sh	\sh	*\sh
+yEo		*!	*\sh	*\sh	**\sh
+yeO		*!	**\sh	\sh	**\sh
+yEO		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uea/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uea					\sh
+uEa				*!	*\sh
+ueA			*!	\sh	*\sh
+uEA			*!	*\sh	**\sh
+yea		*!	*\sh	\sh	*\sh
+yEa		*!	*\sh	*\sh	**\sh
+yeA		*!	**\sh	\sh	**\sh
+yEA		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/ueu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we ueu					\sh
+uEu				*!	*\sh
+uey			*!	\sh	*\sh
+uEy			*!	*\sh	**\sh
+yeu		*!	*\sh	\sh	*\sh
+yEu		*!	*\sh	*\sh	**\sh
+yey		*!	**\sh	\sh	**\sh
+yEy		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uie/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uie					\sh
+uiE				*!	*\sh
+yie		*!	*\sh	\sh	*\sh
+yiE		*!	*\sh	*\sh	**\sh
+uIe	*!	\sh	\sh	*\sh	*\sh
+uIE	*!	\sh	\sh	**\sh	**\sh
+yIe	*!	*\sh	*\sh	*\sh	**\sh
+yIE	*!	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/uii/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uii			\sh	\sh	\sh
+yii		*!	*\sh	\sh	*\sh
+uiI	*!	\sh	\sh	*\sh	*\sh
+yiI	*!	*\sh	*\sh	*\sh	**\sh
+uII	*!*	\sh	\sh	**\sh	**\sh
+yII	*!*	*\sh	*\sh	**\sh	***\sh
+\te\ke
+\ts6\ks
+/uio/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uio				\sh	\sh
+uiO			*!	\sh	*\sh
+yio		*!	*\sh	\sh	*\sh
+yiO		*!	**\sh	\sh	**\sh
+uIo	*!	\sh	\sh	*\sh	*\sh
+uIO	*!	\sh	*\sh	*\sh	**\sh
+yIo	*!	*\sh	*\sh	*\sh	**\sh
+yIO	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uia/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uia				\sh	\sh
+uiA			*!	\sh	*\sh
+yia		*!	*\sh	\sh	*\sh
+yiA		*!	**\sh	\sh	**\sh
+uIa	*!	\sh	\sh	*\sh	*\sh
+uIA	*!	\sh	*\sh	*\sh	**\sh
+yIa	*!	*\sh	*\sh	*\sh	**\sh
+yIA	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uiu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uiu				\sh	\sh
+uiy			*!	\sh	*\sh
+yiu		*!	*\sh	\sh	*\sh
+yiy		*!	**\sh	\sh	**\sh
+uIu	*!	\sh	\sh	*\sh	*\sh
+uIy	*!	\sh	*\sh	*\sh	**\sh
+yIu	*!	*\sh	*\sh	*\sh	**\sh
+yIy	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uoe/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uoe					\sh
+uoE				*!	*\sh
+uOe			*!	\sh	*\sh
+uOE			*!	*\sh	**\sh
+yoe		*!	*\sh	\sh	*\sh
+yoE		*!	*\sh	*\sh	**\sh
+yOe		*!	**\sh	\sh	**\sh
+yOE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uoi/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uoi				\sh	\sh
+uOi			*!	\sh	*\sh
+yoi		*!	*\sh	\sh	*\sh
+yOi		*!	**\sh	\sh	**\sh
+uoI	*!	\sh	\sh	*\sh	*\sh
+uOI	*!	\sh	*\sh	*\sh	**\sh
+yoI	*!	*\sh	*\sh	*\sh	**\sh
+yOI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uoo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uoo				\sh	\sh
+uoO			*!	\sh	*\sh
+uOO			*!*	\sh	**\sh
+yoo		*!	*\sh	\sh	*\sh
+yoO		*!	**\sh	\sh	**\sh
+yOO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uoa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uoa				\sh	\sh
+uoA			*!	\sh	*\sh
+uOA			*!*	\sh	**\sh
+yoa		*!	*\sh	\sh	*\sh
+yoA		*!	**\sh	\sh	**\sh
+yOA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uou/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uou				\sh	\sh
+uoy			*!	\sh	*\sh
+uOy			*!*	\sh	**\sh
+you		*!	*\sh	\sh	*\sh
+yoy		*!	**\sh	\sh	**\sh
+yOy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uae/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uae					\sh
+uaE				*!	*\sh
+uAe			*!	\sh	*\sh
+uAE			*!	*\sh	**\sh
+yae		*!	*\sh	\sh	*\sh
+yaE		*!	*\sh	*\sh	**\sh
+yAe		*!	**\sh	\sh	**\sh
+yAE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uai/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uai				\sh	\sh
+uAi			*!	\sh	*\sh
+yai		*!	*\sh	\sh	*\sh
+yAi		*!	**\sh	\sh	**\sh
+uaI	*!	\sh	\sh	*\sh	*\sh
+uAI	*!	\sh	*\sh	*\sh	**\sh
+yaI	*!	*\sh	*\sh	*\sh	**\sh
+yAI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uao/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uao				\sh	\sh
+uaO			*!	\sh	*\sh
+uAO			*!*	\sh	**\sh
+yao		*!	*\sh	\sh	*\sh
+yaO		*!	**\sh	\sh	**\sh
+yAO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uaa/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uaa				\sh	\sh
+uaA			*!	\sh	*\sh
+uAA			*!*	\sh	**\sh
+yaa		*!	*\sh	\sh	*\sh
+yaA		*!	**\sh	\sh	**\sh
+yAA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uau/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uau				\sh	\sh
+uay			*!	\sh	*\sh
+uAy			*!*	\sh	**\sh
+yau		*!	*\sh	\sh	*\sh
+yay		*!	**\sh	\sh	**\sh
+yAy		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uue/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uue					\sh
+uuE				*!	*\sh
+uye			*!	\sh	*\sh
+uyE			*!	*\sh	**\sh
+yue		*!	*\sh	\sh	*\sh
+yuE		*!	*\sh	*\sh	**\sh
+yye		*!	**\sh	\sh	**\sh
+yyE		*!	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uui/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uui				\sh	\sh
+uyi			*!	\sh	*\sh
+yui		*!	*\sh	\sh	*\sh
+yyi		*!	**\sh	\sh	**\sh
+uuI	*!	\sh	\sh	*\sh	*\sh
+uyI	*!	\sh	*\sh	*\sh	**\sh
+yuI	*!	*\sh	*\sh	*\sh	**\sh
+yyI	*!	*\sh	**\sh	*\sh	***\sh
+\te\ke
+\ts6\ks
+/uuo/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uuo				\sh	\sh
+uuO			*!	\sh	*\sh
+uyO			*!*	\sh	**\sh
+yuo		*!	*\sh	\sh	*\sh
+yuO		*!	**\sh	\sh	**\sh
+yyO		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uua/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uua				\sh	\sh
+uuA			*!	\sh	*\sh
+uyA			*!*	\sh	**\sh
+yua		*!	*\sh	\sh	*\sh
+yuA		*!	**\sh	\sh	**\sh
+yyA		*!	***\sh	\sh	***\sh
+\te\ke
+\ts6\ks
+/uuu/	*B1	Id(Bk)Syl1	*F3\dl	*B2	Id(Bk)
+\wsF\we uuu				\sh	\sh
+uuy			*!	\sh	*\sh
+uyy			*!*	\sh	**\sh
+yuu		*!	*\sh	\sh	*\sh
+yuy		*!	**\sh	\sh	**\sh
+yyy		*!	***\sh	\sh	***\sh
+\te\ke
+
+\h1Status of Proposed Constraints:  Necessary or Unnecessary
+\ts2
+\ntConstraint	Status
+Id(Bk)Syl1	Not necessary
+Id(Bk)	Not necessary
+*F3	Not necessary
+*B1	Not necessary
+*B2	Not necessary
+\te
+A check has determined that, although the grammar will still work with theremoval of ANY ONE of the constraints marked above as unnecessary, thegrammar will NOT work if they are removed en masse.

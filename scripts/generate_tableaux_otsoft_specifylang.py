@@ -344,7 +344,7 @@ class OTSoftTableauxGenerator:
         self.countgroupasint = countgroupasint
         self.withidentfoot = withidentfoot
         self.fortesting = fortesting
-        self.inititransp_inputs = inittransp_inputs
+        self.inittransp_inputs = inittransp_inputs
         self.reducedcons = reducedcons
 
         self.stringencysets = sets_dict[self.lang] if self.special == 1 else (self.reduced_setsdict() if self.reducedcons else sets_dict[fullset])
@@ -405,7 +405,7 @@ class OTSoftTableauxGenerator:
         elif self.lang == NSeto:
             nodiscons_reduced = ["F4_B5", "F4..._B5", "_B5F4", "_B5...F4"]
         elif self.lang == SSeto:
-            nodiscons_reduced = ["F4_B5", "F4..._B5", "F3_B5", "F3..._B5", "F3_B2", "F3..._B2", "_B5F4", "_B5...F4"]
+            nodiscons_reduced = ["F4_B5", "F4..._B5", "F3_B2", "F3..._B2", "_B5F4", "_B5...F4"]
         nodiscons_reduced = ["*" + setcombo for setcombo in nodiscons_reduced]
         return nodiscons_reduced
 
@@ -629,7 +629,7 @@ class OTSoftTableauxGenerator:
                             outstring = wd if idx == 0 else ""
                             outstring += "\t" + cand + "\t"
                             iswinner = isintendedwinner(wd, cand, self.lang, self.special)
-                            if iswinner and wd == cand and (self.inititransp_inputs or not self.initialtransparent(wd)) :
+                            if iswinner and wd == cand and (self.inittransp_inputs or not self.initialtransparent(wd)) :
                                 # faithful winner; use in learning (and testing) data
                                 outstring += "1\t"
                                 ct += 1

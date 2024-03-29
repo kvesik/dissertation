@@ -1,0 +1,2900 @@
+Results of Applying Low Faithfulness Constraint Demotion to OTSoft-PDDP-NEst_LFCD_red_itra.txt
+
+
+3-28-2024, 1:57 p.m.
+
+OTSoft 2.6, release date 4/11/2021
+
+
+1. Result
+
+A ranking was found that generates the correct outputs.
+
+   Stratum #1
+      *B1                                       *B1
+   Stratum #2
+      Id(Bk)Syl1                                Id(Bk)Syl1
+   Stratum #3
+      *F3                                       *F3
+      *B2                                       *B2
+   Stratum #4
+      Id(Bk)                                    Id(Bk)
+
+2. Tableaux
+
+
+/Oe/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oe    |          |1  ¦   |      
+ OE    |          |1  ¦1! |  1   
+ oe    |    1!    |   ¦   |  1   
+ oE    |    1!    |   ¦1  |  2   
+
+
+/Oi/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oi    |          |1  ¦   |      
+ oi    |    1!    |   ¦   |  1   
+ OI 1! |          |1  ¦1  |  1   
+ oI 1! |    1     |   ¦1  |  2   
+
+
+/Oo/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oo    |          |1  ¦   |      
+ OO    |          |2! ¦   |  1   
+ oo    |    1!    |   ¦   |  1   
+ oO    |    1!    |1  ¦   |  2   
+
+
+/Oa/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oa    |          |1  ¦   |      
+ OA    |          |2! ¦   |  1   
+ oa    |    1!    |   ¦   |  1   
+ oA    |    1!    |1  ¦   |  2   
+
+
+/Ou/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ou    |          |1  ¦   |      
+ Oy    |          |2! ¦   |  1   
+ ou    |    1!    |   ¦   |  1   
+ oy    |    1!    |1  ¦   |  2   
+
+
+/Ae/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ae    |          |1  ¦   |      
+ AE    |          |1  ¦1! |  1   
+ ae    |    1!    |   ¦   |  1   
+ aE    |    1!    |   ¦1  |  2   
+
+
+/Ai/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ai    |          |1  ¦   |      
+ ai    |    1!    |   ¦   |  1   
+ AI 1! |          |1  ¦1  |  1   
+ aI 1! |    1     |   ¦1  |  2   
+
+
+/Ao/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ao    |          |1  ¦   |      
+ AO    |          |2! ¦   |  1   
+ ao    |    1!    |   ¦   |  1   
+ aO    |    1!    |1  ¦   |  2   
+
+
+/Aa/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aa    |          |1  ¦   |      
+ AA    |          |2! ¦   |  1   
+ aa    |    1!    |   ¦   |  1   
+ aA    |    1!    |1  ¦   |  2   
+
+
+/Au/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Au    |          |1  ¦   |      
+ Ay    |          |2! ¦   |  1   
+ au    |    1!    |   ¦   |  1   
+ ay    |    1!    |1  ¦   |  2   
+
+
+/ye/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ye    |          |1  ¦   |      
+ yE    |          |1  ¦1! |  1   
+ ue    |    1!    |   ¦   |  1   
+ uE    |    1!    |   ¦1  |  2   
+
+
+/yi/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yi    |          |1  ¦   |      
+ ui    |    1!    |   ¦   |  1   
+ yI 1! |          |1  ¦1  |  1   
+ uI 1! |    1     |   ¦1  |  2   
+
+
+/yo/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yo    |          |1  ¦   |      
+ yO    |          |2! ¦   |  1   
+ uo    |    1!    |   ¦   |  1   
+ uO    |    1!    |1  ¦   |  2   
+
+
+/ya/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ya    |          |1  ¦   |      
+ yA    |          |2! ¦   |  1   
+ ua    |    1!    |   ¦   |  1   
+ uA    |    1!    |1  ¦   |  2   
+
+
+/yu/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yu    |          |1  ¦   |      
+ yy    |          |2! ¦   |  1   
+ uu    |    1!    |   ¦   |  1   
+ uy    |    1!    |1  ¦   |  2   
+
+
+/ee/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ee    |          |   ¦   |      
+ eE    |          |   ¦1! |  1   
+ Ee    |    1!    |   ¦1  |  1   
+ EE    |    1!    |   ¦2  |  2   
+
+
+/ei/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ei    |          |   ¦   |      
+ Ei    |    1!    |   ¦1  |  1   
+ eI 1! |          |   ¦1  |  1   
+ EI 1! |    1     |   ¦2  |  2   
+
+
+/eo/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eo    |          |   ¦   |      
+ eO    |          |1! ¦   |  1   
+ Eo    |    1!    |   ¦1  |  1   
+ EO    |    1!    |1  ¦1  |  2   
+
+
+/ea/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ea    |          |   ¦   |      
+ eA    |          |1! ¦   |  1   
+ Ea    |    1!    |   ¦1  |  1   
+ EA    |    1!    |1  ¦1  |  2   
+
+
+/eu/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eu    |          |   ¦   |      
+ ey    |          |1! ¦   |  1   
+ Eu    |    1!    |   ¦1  |  1   
+ Ey    |    1!    |1  ¦1  |  2   
+
+
+/ie/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ie    |          |   ¦   |      
+ iE    |          |   ¦1! |  1   
+ Ie 1! |    1     |   ¦1  |  1   
+ IE 1! |    1     |   ¦2  |  2   
+
+
+/ii/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ii    |          |   ¦   |      
+ iI 1! |          |   ¦1  |  1   
+ Ii 1! |    1     |   ¦1  |  1   
+ II 2! |    1     |   ¦2  |  2   
+
+
+/io/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>io    |          |   ¦   |      
+ iO    |          |1! ¦   |  1   
+ Io 1! |    1     |   ¦1  |  1   
+ IO 1! |    1     |1  ¦1  |  2   
+
+
+/ia/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ia    |          |   ¦   |      
+ iA    |          |1! ¦   |  1   
+ Ia 1! |    1     |   ¦1  |  1   
+ IA 1! |    1     |1  ¦1  |  2   
+
+
+/iu/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iu    |          |   ¦   |      
+ iy    |          |1! ¦   |  1   
+ Iu 1! |    1     |   ¦1  |  1   
+ Iy 1! |    1     |1  ¦1  |  2   
+
+
+/Ee/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ee    |          |   ¦1  |      
+ EE    |          |   ¦2! |  1   
+ ee    |    1!    |   ¦   |  1   
+ eE    |    1!    |   ¦1  |  2   
+
+
+/Ei/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ei    |          |   ¦1  |      
+ ei    |    1!    |   ¦   |  1   
+ EI 1! |          |   ¦2  |  1   
+ eI 1! |    1     |   ¦1  |  2   
+
+
+/Eo/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eo    |          |   ¦1  |      
+ EO    |          |1! ¦1  |  1   
+ eo    |    1!    |   ¦   |  1   
+ eO    |    1!    |1  ¦   |  2   
+
+
+/Ea/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ea    |          |   ¦1  |      
+ EA    |          |1! ¦1  |  1   
+ ea    |    1!    |   ¦   |  1   
+ eA    |    1!    |1  ¦   |  2   
+
+
+/Eu/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eu    |          |   ¦1  |      
+ Ey    |          |1! ¦1  |  1   
+ eu    |    1!    |   ¦   |  1   
+ ey    |    1!    |1  ¦   |  2   
+
+
+/oe/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oe    |          |   ¦   |      
+ oE    |          |   ¦1! |  1   
+ Oe    |    1!    |1  ¦   |  1   
+ OE    |    1!    |1  ¦1  |  2   
+
+
+/oi/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oi    |          |   ¦   |      
+ Oi    |    1!    |1  ¦   |  1   
+ oI 1! |          |   ¦1  |  1   
+ OI 1! |    1     |1  ¦1  |  2   
+
+
+/oo/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oo    |          |   ¦   |      
+ oO    |          |1! ¦   |  1   
+ Oo    |    1!    |1  ¦   |  1   
+ OO    |    1!    |2  ¦   |  2   
+
+
+/oa/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oa    |          |   ¦   |      
+ oA    |          |1! ¦   |  1   
+ Oa    |    1!    |1  ¦   |  1   
+ OA    |    1!    |2  ¦   |  2   
+
+
+/ou/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ou    |          |   ¦   |      
+ oy    |          |1! ¦   |  1   
+ Ou    |    1!    |1  ¦   |  1   
+ Oy    |    1!    |2  ¦   |  2   
+
+
+/ae/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ae    |          |   ¦   |      
+ aE    |          |   ¦1! |  1   
+ Ae    |    1!    |1  ¦   |  1   
+ AE    |    1!    |1  ¦1  |  2   
+
+
+/ai/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ai    |          |   ¦   |      
+ Ai    |    1!    |1  ¦   |  1   
+ aI 1! |          |   ¦1  |  1   
+ AI 1! |    1     |1  ¦1  |  2   
+
+
+/ao/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ao    |          |   ¦   |      
+ aO    |          |1! ¦   |  1   
+ Ao    |    1!    |1  ¦   |  1   
+ AO    |    1!    |2  ¦   |  2   
+
+
+/aa/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aa    |          |   ¦   |      
+ aA    |          |1! ¦   |  1   
+ Aa    |    1!    |1  ¦   |  1   
+ AA    |    1!    |2  ¦   |  2   
+
+
+/au/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>au    |          |   ¦   |      
+ ay    |          |1! ¦   |  1   
+ Au    |    1!    |1  ¦   |  1   
+ Ay    |    1!    |2  ¦   |  2   
+
+
+/ue/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ue    |          |   ¦   |      
+ uE    |          |   ¦1! |  1   
+ ye    |    1!    |1  ¦   |  1   
+ yE    |    1!    |1  ¦1  |  2   
+
+
+/ui/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ui    |          |   ¦   |      
+ yi    |    1!    |1  ¦   |  1   
+ uI 1! |          |   ¦1  |  1   
+ yI 1! |    1     |1  ¦1  |  2   
+
+
+/uo/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uo    |          |   ¦   |      
+ uO    |          |1! ¦   |  1   
+ yo    |    1!    |1  ¦   |  1   
+ yO    |    1!    |2  ¦   |  2   
+
+
+/ua/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ua    |          |   ¦   |      
+ uA    |          |1! ¦   |  1   
+ ya    |    1!    |1  ¦   |  1   
+ yA    |    1!    |2  ¦   |  2   
+
+
+/uu/: 
+    *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uu    |          |   ¦   |      
+ uy    |          |1! ¦   |  1   
+ yu    |    1!    |1  ¦   |  1   
+ yy    |    1!    |2  ¦   |  2   
+
+
+/Oee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oee    |          |1  ¦   |      
+ OeE    |          |1  ¦1! |  1   
+ OEE    |          |1  ¦2! |  2   
+ oee    |    1!    |   ¦   |  1   
+ oeE    |    1!    |   ¦1  |  2   
+ oEE    |    1!    |   ¦2  |  3   
+
+
+/Oei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oei    |          |1  ¦   |      
+ OEi    |          |1  ¦1! |  1   
+ oei    |    1!    |   ¦   |  1   
+ oEi    |    1!    |   ¦1  |  2   
+ OeI 1! |          |1  ¦1  |  1   
+ OEI 1! |          |1  ¦2  |  2   
+ oeI 1! |    1     |   ¦1  |  2   
+ oEI 1! |    1     |   ¦2  |  3   
+
+
+/Oeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oeo    |          |1  ¦   |      
+ OEo    |          |1  ¦1! |  1   
+ OeO    |          |2! ¦   |  1   
+ OEO    |          |2! ¦1  |  2   
+ oeo    |    1!    |   ¦   |  1   
+ oEo    |    1!    |   ¦1  |  2   
+ oeO    |    1!    |1  ¦   |  2   
+ oEO    |    1!    |1  ¦1  |  3   
+
+
+/Oea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oea    |          |1  ¦   |      
+ OEa    |          |1  ¦1! |  1   
+ OeA    |          |2! ¦   |  1   
+ OEA    |          |2! ¦1  |  2   
+ oea    |    1!    |   ¦   |  1   
+ oEa    |    1!    |   ¦1  |  2   
+ oeA    |    1!    |1  ¦   |  2   
+ oEA    |    1!    |1  ¦1  |  3   
+
+
+/Oeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oeu    |          |1  ¦   |      
+ OEu    |          |1  ¦1! |  1   
+ Oey    |          |2! ¦   |  1   
+ OEy    |          |2! ¦1  |  2   
+ oeu    |    1!    |   ¦   |  1   
+ oEu    |    1!    |   ¦1  |  2   
+ oey    |    1!    |1  ¦   |  2   
+ oEy    |    1!    |1  ¦1  |  3   
+
+
+/Oie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oie    |          |1  ¦   |      
+ OiE    |          |1  ¦1! |  1   
+ oie    |    1!    |   ¦   |  1   
+ oiE    |    1!    |   ¦1  |  2   
+ OIe 1! |          |1  ¦1  |  1   
+ OIE 1! |          |1  ¦2  |  2   
+ oIe 1! |    1     |   ¦1  |  2   
+ oIE 1! |    1     |   ¦2  |  3   
+
+
+/Oii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oii    |          |1  ¦   |      
+ oii    |    1!    |   ¦   |  1   
+ OiI 1! |          |1  ¦1  |  1   
+ oiI 1! |    1     |   ¦1  |  2   
+ OII 2! |          |1  ¦2  |  2   
+ oII 2! |    1     |   ¦2  |  3   
+
+
+/Oio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oio    |          |1  ¦   |      
+ OiO    |          |2! ¦   |  1   
+ oio    |    1!    |   ¦   |  1   
+ oiO    |    1!    |1  ¦   |  2   
+ OIo 1! |          |1  ¦1  |  1   
+ OIO 1! |          |2  ¦1  |  2   
+ oIo 1! |    1     |   ¦1  |  2   
+ oIO 1! |    1     |1  ¦1  |  3   
+
+
+/Oia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oia    |          |1  ¦   |      
+ OiA    |          |2! ¦   |  1   
+ oia    |    1!    |   ¦   |  1   
+ oiA    |    1!    |1  ¦   |  2   
+ OIa 1! |          |1  ¦1  |  1   
+ OIA 1! |          |2  ¦1  |  2   
+ oIa 1! |    1     |   ¦1  |  2   
+ oIA 1! |    1     |1  ¦1  |  3   
+
+
+/Oiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oiu    |          |1  ¦   |      
+ Oiy    |          |2! ¦   |  1   
+ oiu    |    1!    |   ¦   |  1   
+ oiy    |    1!    |1  ¦   |  2   
+ OIu 1! |          |1  ¦1  |  1   
+ OIy 1! |          |2  ¦1  |  2   
+ oIu 1! |    1     |   ¦1  |  2   
+ oIy 1! |    1     |1  ¦1  |  3   
+
+
+/Ooe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ooe    |          |1  ¦   |      
+ OoE    |          |1  ¦1! |  1   
+ OOe    |          |2! ¦   |  1   
+ OOE    |          |2! ¦1  |  2   
+ ooe    |    1!    |   ¦   |  1   
+ ooE    |    1!    |   ¦1  |  2   
+ oOe    |    1!    |1  ¦   |  2   
+ oOE    |    1!    |1  ¦1  |  3   
+
+
+/Ooi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ooi    |          |1  ¦   |      
+ OOi    |          |2! ¦   |  1   
+ ooi    |    1!    |   ¦   |  1   
+ oOi    |    1!    |1  ¦   |  2   
+ OoI 1! |          |1  ¦1  |  1   
+ OOI 1! |          |2  ¦1  |  2   
+ ooI 1! |    1     |   ¦1  |  2   
+ oOI 1! |    1     |1  ¦1  |  3   
+
+
+/Ooo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ooo    |          |1  ¦   |      
+ OoO    |          |2! ¦   |  1   
+ OOO    |          |3! ¦   |  2   
+ ooo    |    1!    |   ¦   |  1   
+ ooO    |    1!    |1  ¦   |  2   
+ oOO    |    1!    |2  ¦   |  3   
+
+
+/Ooa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ooa    |          |1  ¦   |      
+ OoA    |          |2! ¦   |  1   
+ OOA    |          |3! ¦   |  2   
+ ooa    |    1!    |   ¦   |  1   
+ ooA    |    1!    |1  ¦   |  2   
+ oOA    |    1!    |2  ¦   |  3   
+
+
+/Oou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oou    |          |1  ¦   |      
+ Ooy    |          |2! ¦   |  1   
+ OOy    |          |3! ¦   |  2   
+ oou    |    1!    |   ¦   |  1   
+ ooy    |    1!    |1  ¦   |  2   
+ oOy    |    1!    |2  ¦   |  3   
+
+
+/Oae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oae    |          |1  ¦   |      
+ OaE    |          |1  ¦1! |  1   
+ OAe    |          |2! ¦   |  1   
+ OAE    |          |2! ¦1  |  2   
+ oae    |    1!    |   ¦   |  1   
+ oaE    |    1!    |   ¦1  |  2   
+ oAe    |    1!    |1  ¦   |  2   
+ oAE    |    1!    |1  ¦1  |  3   
+
+
+/Oai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oai    |          |1  ¦   |      
+ OAi    |          |2! ¦   |  1   
+ oai    |    1!    |   ¦   |  1   
+ oAi    |    1!    |1  ¦   |  2   
+ OaI 1! |          |1  ¦1  |  1   
+ OAI 1! |          |2  ¦1  |  2   
+ oaI 1! |    1     |   ¦1  |  2   
+ oAI 1! |    1     |1  ¦1  |  3   
+
+
+/Oao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oao    |          |1  ¦   |      
+ OaO    |          |2! ¦   |  1   
+ OAO    |          |3! ¦   |  2   
+ oao    |    1!    |   ¦   |  1   
+ oaO    |    1!    |1  ¦   |  2   
+ oAO    |    1!    |2  ¦   |  3   
+
+
+/Oaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oaa    |          |1  ¦   |      
+ OaA    |          |2! ¦   |  1   
+ OAA    |          |3! ¦   |  2   
+ oaa    |    1!    |   ¦   |  1   
+ oaA    |    1!    |1  ¦   |  2   
+ oAA    |    1!    |2  ¦   |  3   
+
+
+/Oau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oau    |          |1  ¦   |      
+ Oay    |          |2! ¦   |  1   
+ OAy    |          |3! ¦   |  2   
+ oau    |    1!    |   ¦   |  1   
+ oay    |    1!    |1  ¦   |  2   
+ oAy    |    1!    |2  ¦   |  3   
+
+
+/Oue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oue    |          |1  ¦   |      
+ OuE    |          |1  ¦1! |  1   
+ Oye    |          |2! ¦   |  1   
+ OyE    |          |2! ¦1  |  2   
+ oue    |    1!    |   ¦   |  1   
+ ouE    |    1!    |   ¦1  |  2   
+ oye    |    1!    |1  ¦   |  2   
+ oyE    |    1!    |1  ¦1  |  3   
+
+
+/Oui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oui    |          |1  ¦   |      
+ Oyi    |          |2! ¦   |  1   
+ oui    |    1!    |   ¦   |  1   
+ oyi    |    1!    |1  ¦   |  2   
+ OuI 1! |          |1  ¦1  |  1   
+ OyI 1! |          |2  ¦1  |  2   
+ ouI 1! |    1     |   ¦1  |  2   
+ oyI 1! |    1     |1  ¦1  |  3   
+
+
+/Ouo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ouo    |          |1  ¦   |      
+ OuO    |          |2! ¦   |  1   
+ OyO    |          |3! ¦   |  2   
+ ouo    |    1!    |   ¦   |  1   
+ ouO    |    1!    |1  ¦   |  2   
+ oyO    |    1!    |2  ¦   |  3   
+
+
+/Oua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Oua    |          |1  ¦   |      
+ OuA    |          |2! ¦   |  1   
+ OyA    |          |3! ¦   |  2   
+ oua    |    1!    |   ¦   |  1   
+ ouA    |    1!    |1  ¦   |  2   
+ oyA    |    1!    |2  ¦   |  3   
+
+
+/Ouu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Ouu    |          |1  ¦   |      
+ Ouy    |          |2! ¦   |  1   
+ Oyy    |          |3! ¦   |  2   
+ ouu    |    1!    |   ¦   |  1   
+ ouy    |    1!    |1  ¦   |  2   
+ oyy    |    1!    |2  ¦   |  3   
+
+
+/Aee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aee    |          |1  ¦   |      
+ AeE    |          |1  ¦1! |  1   
+ AEE    |          |1  ¦2! |  2   
+ aee    |    1!    |   ¦   |  1   
+ aeE    |    1!    |   ¦1  |  2   
+ aEE    |    1!    |   ¦2  |  3   
+
+
+/Aei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aei    |          |1  ¦   |      
+ AEi    |          |1  ¦1! |  1   
+ aei    |    1!    |   ¦   |  1   
+ aEi    |    1!    |   ¦1  |  2   
+ AeI 1! |          |1  ¦1  |  1   
+ AEI 1! |          |1  ¦2  |  2   
+ aeI 1! |    1     |   ¦1  |  2   
+ aEI 1! |    1     |   ¦2  |  3   
+
+
+/Aeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aeo    |          |1  ¦   |      
+ AEo    |          |1  ¦1! |  1   
+ AeO    |          |2! ¦   |  1   
+ AEO    |          |2! ¦1  |  2   
+ aeo    |    1!    |   ¦   |  1   
+ aEo    |    1!    |   ¦1  |  2   
+ aeO    |    1!    |1  ¦   |  2   
+ aEO    |    1!    |1  ¦1  |  3   
+
+
+/Aea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aea    |          |1  ¦   |      
+ AEa    |          |1  ¦1! |  1   
+ AeA    |          |2! ¦   |  1   
+ AEA    |          |2! ¦1  |  2   
+ aea    |    1!    |   ¦   |  1   
+ aEa    |    1!    |   ¦1  |  2   
+ aeA    |    1!    |1  ¦   |  2   
+ aEA    |    1!    |1  ¦1  |  3   
+
+
+/Aeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aeu    |          |1  ¦   |      
+ AEu    |          |1  ¦1! |  1   
+ Aey    |          |2! ¦   |  1   
+ AEy    |          |2! ¦1  |  2   
+ aeu    |    1!    |   ¦   |  1   
+ aEu    |    1!    |   ¦1  |  2   
+ aey    |    1!    |1  ¦   |  2   
+ aEy    |    1!    |1  ¦1  |  3   
+
+
+/Aie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aie    |          |1  ¦   |      
+ AiE    |          |1  ¦1! |  1   
+ aie    |    1!    |   ¦   |  1   
+ aiE    |    1!    |   ¦1  |  2   
+ AIe 1! |          |1  ¦1  |  1   
+ AIE 1! |          |1  ¦2  |  2   
+ aIe 1! |    1     |   ¦1  |  2   
+ aIE 1! |    1     |   ¦2  |  3   
+
+
+/Aii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aii    |          |1  ¦   |      
+ aii    |    1!    |   ¦   |  1   
+ AiI 1! |          |1  ¦1  |  1   
+ aiI 1! |    1     |   ¦1  |  2   
+ AII 2! |          |1  ¦2  |  2   
+ aII 2! |    1     |   ¦2  |  3   
+
+
+/Aio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aio    |          |1  ¦   |      
+ AiO    |          |2! ¦   |  1   
+ aio    |    1!    |   ¦   |  1   
+ aiO    |    1!    |1  ¦   |  2   
+ AIo 1! |          |1  ¦1  |  1   
+ AIO 1! |          |2  ¦1  |  2   
+ aIo 1! |    1     |   ¦1  |  2   
+ aIO 1! |    1     |1  ¦1  |  3   
+
+
+/Aia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aia    |          |1  ¦   |      
+ AiA    |          |2! ¦   |  1   
+ aia    |    1!    |   ¦   |  1   
+ aiA    |    1!    |1  ¦   |  2   
+ AIa 1! |          |1  ¦1  |  1   
+ AIA 1! |          |2  ¦1  |  2   
+ aIa 1! |    1     |   ¦1  |  2   
+ aIA 1! |    1     |1  ¦1  |  3   
+
+
+/Aiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aiu    |          |1  ¦   |      
+ Aiy    |          |2! ¦   |  1   
+ aiu    |    1!    |   ¦   |  1   
+ aiy    |    1!    |1  ¦   |  2   
+ AIu 1! |          |1  ¦1  |  1   
+ AIy 1! |          |2  ¦1  |  2   
+ aIu 1! |    1     |   ¦1  |  2   
+ aIy 1! |    1     |1  ¦1  |  3   
+
+
+/Aoe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aoe    |          |1  ¦   |      
+ AoE    |          |1  ¦1! |  1   
+ AOe    |          |2! ¦   |  1   
+ AOE    |          |2! ¦1  |  2   
+ aoe    |    1!    |   ¦   |  1   
+ aoE    |    1!    |   ¦1  |  2   
+ aOe    |    1!    |1  ¦   |  2   
+ aOE    |    1!    |1  ¦1  |  3   
+
+
+/Aoi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aoi    |          |1  ¦   |      
+ AOi    |          |2! ¦   |  1   
+ aoi    |    1!    |   ¦   |  1   
+ aOi    |    1!    |1  ¦   |  2   
+ AoI 1! |          |1  ¦1  |  1   
+ AOI 1! |          |2  ¦1  |  2   
+ aoI 1! |    1     |   ¦1  |  2   
+ aOI 1! |    1     |1  ¦1  |  3   
+
+
+/Aoo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aoo    |          |1  ¦   |      
+ AoO    |          |2! ¦   |  1   
+ AOO    |          |3! ¦   |  2   
+ aoo    |    1!    |   ¦   |  1   
+ aoO    |    1!    |1  ¦   |  2   
+ aOO    |    1!    |2  ¦   |  3   
+
+
+/Aoa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aoa    |          |1  ¦   |      
+ AoA    |          |2! ¦   |  1   
+ AOA    |          |3! ¦   |  2   
+ aoa    |    1!    |   ¦   |  1   
+ aoA    |    1!    |1  ¦   |  2   
+ aOA    |    1!    |2  ¦   |  3   
+
+
+/Aou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aou    |          |1  ¦   |      
+ Aoy    |          |2! ¦   |  1   
+ AOy    |          |3! ¦   |  2   
+ aou    |    1!    |   ¦   |  1   
+ aoy    |    1!    |1  ¦   |  2   
+ aOy    |    1!    |2  ¦   |  3   
+
+
+/Aae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aae    |          |1  ¦   |      
+ AaE    |          |1  ¦1! |  1   
+ AAe    |          |2! ¦   |  1   
+ AAE    |          |2! ¦1  |  2   
+ aae    |    1!    |   ¦   |  1   
+ aaE    |    1!    |   ¦1  |  2   
+ aAe    |    1!    |1  ¦   |  2   
+ aAE    |    1!    |1  ¦1  |  3   
+
+
+/Aai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aai    |          |1  ¦   |      
+ AAi    |          |2! ¦   |  1   
+ aai    |    1!    |   ¦   |  1   
+ aAi    |    1!    |1  ¦   |  2   
+ AaI 1! |          |1  ¦1  |  1   
+ AAI 1! |          |2  ¦1  |  2   
+ aaI 1! |    1     |   ¦1  |  2   
+ aAI 1! |    1     |1  ¦1  |  3   
+
+
+/Aao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aao    |          |1  ¦   |      
+ AaO    |          |2! ¦   |  1   
+ AAO    |          |3! ¦   |  2   
+ aao    |    1!    |   ¦   |  1   
+ aaO    |    1!    |1  ¦   |  2   
+ aAO    |    1!    |2  ¦   |  3   
+
+
+/Aaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aaa    |          |1  ¦   |      
+ AaA    |          |2! ¦   |  1   
+ AAA    |          |3! ¦   |  2   
+ aaa    |    1!    |   ¦   |  1   
+ aaA    |    1!    |1  ¦   |  2   
+ aAA    |    1!    |2  ¦   |  3   
+
+
+/Aau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aau    |          |1  ¦   |      
+ Aay    |          |2! ¦   |  1   
+ AAy    |          |3! ¦   |  2   
+ aau    |    1!    |   ¦   |  1   
+ aay    |    1!    |1  ¦   |  2   
+ aAy    |    1!    |2  ¦   |  3   
+
+
+/Aue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aue    |          |1  ¦   |      
+ AuE    |          |1  ¦1! |  1   
+ Aye    |          |2! ¦   |  1   
+ AyE    |          |2! ¦1  |  2   
+ aue    |    1!    |   ¦   |  1   
+ auE    |    1!    |   ¦1  |  2   
+ aye    |    1!    |1  ¦   |  2   
+ ayE    |    1!    |1  ¦1  |  3   
+
+
+/Aui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aui    |          |1  ¦   |      
+ Ayi    |          |2! ¦   |  1   
+ aui    |    1!    |   ¦   |  1   
+ ayi    |    1!    |1  ¦   |  2   
+ AuI 1! |          |1  ¦1  |  1   
+ AyI 1! |          |2  ¦1  |  2   
+ auI 1! |    1     |   ¦1  |  2   
+ ayI 1! |    1     |1  ¦1  |  3   
+
+
+/Auo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Auo    |          |1  ¦   |      
+ AuO    |          |2! ¦   |  1   
+ AyO    |          |3! ¦   |  2   
+ auo    |    1!    |   ¦   |  1   
+ auO    |    1!    |1  ¦   |  2   
+ ayO    |    1!    |2  ¦   |  3   
+
+
+/Aua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Aua    |          |1  ¦   |      
+ AuA    |          |2! ¦   |  1   
+ AyA    |          |3! ¦   |  2   
+ aua    |    1!    |   ¦   |  1   
+ auA    |    1!    |1  ¦   |  2   
+ ayA    |    1!    |2  ¦   |  3   
+
+
+/Auu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Auu    |          |1  ¦   |      
+ Auy    |          |2! ¦   |  1   
+ Ayy    |          |3! ¦   |  2   
+ auu    |    1!    |   ¦   |  1   
+ auy    |    1!    |1  ¦   |  2   
+ ayy    |    1!    |2  ¦   |  3   
+
+
+/yee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yee    |          |1  ¦   |      
+ yeE    |          |1  ¦1! |  1   
+ yEE    |          |1  ¦2! |  2   
+ uee    |    1!    |   ¦   |  1   
+ ueE    |    1!    |   ¦1  |  2   
+ uEE    |    1!    |   ¦2  |  3   
+
+
+/yei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yei    |          |1  ¦   |      
+ yEi    |          |1  ¦1! |  1   
+ uei    |    1!    |   ¦   |  1   
+ uEi    |    1!    |   ¦1  |  2   
+ yeI 1! |          |1  ¦1  |  1   
+ yEI 1! |          |1  ¦2  |  2   
+ ueI 1! |    1     |   ¦1  |  2   
+ uEI 1! |    1     |   ¦2  |  3   
+
+
+/yeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yeo    |          |1  ¦   |      
+ yEo    |          |1  ¦1! |  1   
+ yeO    |          |2! ¦   |  1   
+ yEO    |          |2! ¦1  |  2   
+ ueo    |    1!    |   ¦   |  1   
+ uEo    |    1!    |   ¦1  |  2   
+ ueO    |    1!    |1  ¦   |  2   
+ uEO    |    1!    |1  ¦1  |  3   
+
+
+/yea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yea    |          |1  ¦   |      
+ yEa    |          |1  ¦1! |  1   
+ yeA    |          |2! ¦   |  1   
+ yEA    |          |2! ¦1  |  2   
+ uea    |    1!    |   ¦   |  1   
+ uEa    |    1!    |   ¦1  |  2   
+ ueA    |    1!    |1  ¦   |  2   
+ uEA    |    1!    |1  ¦1  |  3   
+
+
+/yeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yeu    |          |1  ¦   |      
+ yEu    |          |1  ¦1! |  1   
+ yey    |          |2! ¦   |  1   
+ yEy    |          |2! ¦1  |  2   
+ ueu    |    1!    |   ¦   |  1   
+ uEu    |    1!    |   ¦1  |  2   
+ uey    |    1!    |1  ¦   |  2   
+ uEy    |    1!    |1  ¦1  |  3   
+
+
+/yie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yie    |          |1  ¦   |      
+ yiE    |          |1  ¦1! |  1   
+ uie    |    1!    |   ¦   |  1   
+ uiE    |    1!    |   ¦1  |  2   
+ yIe 1! |          |1  ¦1  |  1   
+ yIE 1! |          |1  ¦2  |  2   
+ uIe 1! |    1     |   ¦1  |  2   
+ uIE 1! |    1     |   ¦2  |  3   
+
+
+/yii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yii    |          |1  ¦   |      
+ uii    |    1!    |   ¦   |  1   
+ yiI 1! |          |1  ¦1  |  1   
+ uiI 1! |    1     |   ¦1  |  2   
+ yII 2! |          |1  ¦2  |  2   
+ uII 2! |    1     |   ¦2  |  3   
+
+
+/yio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yio    |          |1  ¦   |      
+ yiO    |          |2! ¦   |  1   
+ uio    |    1!    |   ¦   |  1   
+ uiO    |    1!    |1  ¦   |  2   
+ yIo 1! |          |1  ¦1  |  1   
+ yIO 1! |          |2  ¦1  |  2   
+ uIo 1! |    1     |   ¦1  |  2   
+ uIO 1! |    1     |1  ¦1  |  3   
+
+
+/yia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yia    |          |1  ¦   |      
+ yiA    |          |2! ¦   |  1   
+ uia    |    1!    |   ¦   |  1   
+ uiA    |    1!    |1  ¦   |  2   
+ yIa 1! |          |1  ¦1  |  1   
+ yIA 1! |          |2  ¦1  |  2   
+ uIa 1! |    1     |   ¦1  |  2   
+ uIA 1! |    1     |1  ¦1  |  3   
+
+
+/yiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yiu    |          |1  ¦   |      
+ yiy    |          |2! ¦   |  1   
+ uiu    |    1!    |   ¦   |  1   
+ uiy    |    1!    |1  ¦   |  2   
+ yIu 1! |          |1  ¦1  |  1   
+ yIy 1! |          |2  ¦1  |  2   
+ uIu 1! |    1     |   ¦1  |  2   
+ uIy 1! |    1     |1  ¦1  |  3   
+
+
+/yoe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yoe    |          |1  ¦   |      
+ yoE    |          |1  ¦1! |  1   
+ yOe    |          |2! ¦   |  1   
+ yOE    |          |2! ¦1  |  2   
+ uoe    |    1!    |   ¦   |  1   
+ uoE    |    1!    |   ¦1  |  2   
+ uOe    |    1!    |1  ¦   |  2   
+ uOE    |    1!    |1  ¦1  |  3   
+
+
+/yoi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yoi    |          |1  ¦   |      
+ yOi    |          |2! ¦   |  1   
+ uoi    |    1!    |   ¦   |  1   
+ uOi    |    1!    |1  ¦   |  2   
+ yoI 1! |          |1  ¦1  |  1   
+ yOI 1! |          |2  ¦1  |  2   
+ uoI 1! |    1     |   ¦1  |  2   
+ uOI 1! |    1     |1  ¦1  |  3   
+
+
+/yoo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yoo    |          |1  ¦   |      
+ yoO    |          |2! ¦   |  1   
+ yOO    |          |3! ¦   |  2   
+ uoo    |    1!    |   ¦   |  1   
+ uoO    |    1!    |1  ¦   |  2   
+ uOO    |    1!    |2  ¦   |  3   
+
+
+/yoa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yoa    |          |1  ¦   |      
+ yoA    |          |2! ¦   |  1   
+ yOA    |          |3! ¦   |  2   
+ uoa    |    1!    |   ¦   |  1   
+ uoA    |    1!    |1  ¦   |  2   
+ uOA    |    1!    |2  ¦   |  3   
+
+
+/you/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>you    |          |1  ¦   |      
+ yoy    |          |2! ¦   |  1   
+ yOy    |          |3! ¦   |  2   
+ uou    |    1!    |   ¦   |  1   
+ uoy    |    1!    |1  ¦   |  2   
+ uOy    |    1!    |2  ¦   |  3   
+
+
+/yae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yae    |          |1  ¦   |      
+ yaE    |          |1  ¦1! |  1   
+ yAe    |          |2! ¦   |  1   
+ yAE    |          |2! ¦1  |  2   
+ uae    |    1!    |   ¦   |  1   
+ uaE    |    1!    |   ¦1  |  2   
+ uAe    |    1!    |1  ¦   |  2   
+ uAE    |    1!    |1  ¦1  |  3   
+
+
+/yai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yai    |          |1  ¦   |      
+ yAi    |          |2! ¦   |  1   
+ uai    |    1!    |   ¦   |  1   
+ uAi    |    1!    |1  ¦   |  2   
+ yaI 1! |          |1  ¦1  |  1   
+ yAI 1! |          |2  ¦1  |  2   
+ uaI 1! |    1     |   ¦1  |  2   
+ uAI 1! |    1     |1  ¦1  |  3   
+
+
+/yao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yao    |          |1  ¦   |      
+ yaO    |          |2! ¦   |  1   
+ yAO    |          |3! ¦   |  2   
+ uao    |    1!    |   ¦   |  1   
+ uaO    |    1!    |1  ¦   |  2   
+ uAO    |    1!    |2  ¦   |  3   
+
+
+/yaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yaa    |          |1  ¦   |      
+ yaA    |          |2! ¦   |  1   
+ yAA    |          |3! ¦   |  2   
+ uaa    |    1!    |   ¦   |  1   
+ uaA    |    1!    |1  ¦   |  2   
+ uAA    |    1!    |2  ¦   |  3   
+
+
+/yau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yau    |          |1  ¦   |      
+ yay    |          |2! ¦   |  1   
+ yAy    |          |3! ¦   |  2   
+ uau    |    1!    |   ¦   |  1   
+ uay    |    1!    |1  ¦   |  2   
+ uAy    |    1!    |2  ¦   |  3   
+
+
+/yue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yue    |          |1  ¦   |      
+ yuE    |          |1  ¦1! |  1   
+ yye    |          |2! ¦   |  1   
+ yyE    |          |2! ¦1  |  2   
+ uue    |    1!    |   ¦   |  1   
+ uuE    |    1!    |   ¦1  |  2   
+ uye    |    1!    |1  ¦   |  2   
+ uyE    |    1!    |1  ¦1  |  3   
+
+
+/yui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yui    |          |1  ¦   |      
+ yyi    |          |2! ¦   |  1   
+ uui    |    1!    |   ¦   |  1   
+ uyi    |    1!    |1  ¦   |  2   
+ yuI 1! |          |1  ¦1  |  1   
+ yyI 1! |          |2  ¦1  |  2   
+ uuI 1! |    1     |   ¦1  |  2   
+ uyI 1! |    1     |1  ¦1  |  3   
+
+
+/yuo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yuo    |          |1  ¦   |      
+ yuO    |          |2! ¦   |  1   
+ yyO    |          |3! ¦   |  2   
+ uuo    |    1!    |   ¦   |  1   
+ uuO    |    1!    |1  ¦   |  2   
+ uyO    |    1!    |2  ¦   |  3   
+
+
+/yua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yua    |          |1  ¦   |      
+ yuA    |          |2! ¦   |  1   
+ yyA    |          |3! ¦   |  2   
+ uua    |    1!    |   ¦   |  1   
+ uuA    |    1!    |1  ¦   |  2   
+ uyA    |    1!    |2  ¦   |  3   
+
+
+/yuu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>yuu    |          |1  ¦   |      
+ yuy    |          |2! ¦   |  1   
+ yyy    |          |3! ¦   |  2   
+ uuu    |    1!    |   ¦   |  1   
+ uuy    |    1!    |1  ¦   |  2   
+ uyy    |    1!    |2  ¦   |  3   
+
+
+/eee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eee    |          |   ¦   |      
+ eeE    |          |   ¦1! |  1   
+ eEE    |          |   ¦2! |  2   
+ Eee    |    1!    |   ¦1  |  1   
+ EeE    |    1!    |   ¦2  |  2   
+ EEE    |    1!    |   ¦3  |  3   
+
+
+/eei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eei    |          |   ¦   |      
+ eEi    |          |   ¦1! |  1   
+ Eei    |    1!    |   ¦1  |  1   
+ EEi    |    1!    |   ¦2  |  2   
+ eeI 1! |          |   ¦1  |  1   
+ eEI 1! |          |   ¦2  |  2   
+ EeI 1! |    1     |   ¦2  |  2   
+ EEI 1! |    1     |   ¦3  |  3   
+
+
+/eeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eeo    |          |   ¦   |      
+ eEo    |          |   ¦1! |  1   
+ eeO    |          |1! ¦   |  1   
+ eEO    |          |1! ¦1  |  2   
+ Eeo    |    1!    |   ¦1  |  1   
+ EEo    |    1!    |   ¦2  |  2   
+ EeO    |    1!    |1  ¦1  |  2   
+ EEO    |    1!    |1  ¦2  |  3   
+
+
+/eea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eea    |          |   ¦   |      
+ eEa    |          |   ¦1! |  1   
+ eeA    |          |1! ¦   |  1   
+ eEA    |          |1! ¦1  |  2   
+ Eea    |    1!    |   ¦1  |  1   
+ EEa    |    1!    |   ¦2  |  2   
+ EeA    |    1!    |1  ¦1  |  2   
+ EEA    |    1!    |1  ¦2  |  3   
+
+
+/eeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eeu    |          |   ¦   |      
+ eEu    |          |   ¦1! |  1   
+ eey    |          |1! ¦   |  1   
+ eEy    |          |1! ¦1  |  2   
+ Eeu    |    1!    |   ¦1  |  1   
+ EEu    |    1!    |   ¦2  |  2   
+ Eey    |    1!    |1  ¦1  |  2   
+ EEy    |    1!    |1  ¦2  |  3   
+
+
+/eie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eie    |          |   ¦   |      
+ eiE    |          |   ¦1! |  1   
+ Eie    |    1!    |   ¦1  |  1   
+ EiE    |    1!    |   ¦2  |  2   
+ eIe 1! |          |   ¦1  |  1   
+ eIE 1! |          |   ¦2  |  2   
+ EIe 1! |    1     |   ¦2  |  2   
+ EIE 1! |    1     |   ¦3  |  3   
+
+
+/eii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eii    |          |   ¦   |      
+ Eii    |    1!    |   ¦1  |  1   
+ eiI 1! |          |   ¦1  |  1   
+ EiI 1! |    1     |   ¦2  |  2   
+ eII 2! |          |   ¦2  |  2   
+ EII 2! |    1     |   ¦3  |  3   
+
+
+/eio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eio    |          |   ¦   |      
+ eiO    |          |1! ¦   |  1   
+ Eio    |    1!    |   ¦1  |  1   
+ EiO    |    1!    |1  ¦1  |  2   
+ eIo 1! |          |   ¦1  |  1   
+ eIO 1! |          |1  ¦1  |  2   
+ EIo 1! |    1     |   ¦2  |  2   
+ EIO 1! |    1     |1  ¦2  |  3   
+
+
+/eia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eia    |          |   ¦   |      
+ eiA    |          |1! ¦   |  1   
+ Eia    |    1!    |   ¦1  |  1   
+ EiA    |    1!    |1  ¦1  |  2   
+ eIa 1! |          |   ¦1  |  1   
+ eIA 1! |          |1  ¦1  |  2   
+ EIa 1! |    1     |   ¦2  |  2   
+ EIA 1! |    1     |1  ¦2  |  3   
+
+
+/eiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eiu    |          |   ¦   |      
+ eiy    |          |1! ¦   |  1   
+ Eiu    |    1!    |   ¦1  |  1   
+ Eiy    |    1!    |1  ¦1  |  2   
+ eIu 1! |          |   ¦1  |  1   
+ eIy 1! |          |1  ¦1  |  2   
+ EIu 1! |    1     |   ¦2  |  2   
+ EIy 1! |    1     |1  ¦2  |  3   
+
+
+/eoe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eoe    |          |   ¦   |      
+ eoE    |          |   ¦1! |  1   
+ eOe    |          |1! ¦   |  1   
+ eOE    |          |1! ¦1  |  2   
+ Eoe    |    1!    |   ¦1  |  1   
+ EoE    |    1!    |   ¦2  |  2   
+ EOe    |    1!    |1  ¦1  |  2   
+ EOE    |    1!    |1  ¦2  |  3   
+
+
+/eoi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eoi    |          |   ¦   |      
+ eOi    |          |1! ¦   |  1   
+ Eoi    |    1!    |   ¦1  |  1   
+ EOi    |    1!    |1  ¦1  |  2   
+ eoI 1! |          |   ¦1  |  1   
+ eOI 1! |          |1  ¦1  |  2   
+ EoI 1! |    1     |   ¦2  |  2   
+ EOI 1! |    1     |1  ¦2  |  3   
+
+
+/eoo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eoo    |          |   ¦   |      
+ eoO    |          |1! ¦   |  1   
+ eOO    |          |2! ¦   |  2   
+ Eoo    |    1!    |   ¦1  |  1   
+ EoO    |    1!    |1  ¦1  |  2   
+ EOO    |    1!    |2  ¦1  |  3   
+
+
+/eoa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eoa    |          |   ¦   |      
+ eoA    |          |1! ¦   |  1   
+ eOA    |          |2! ¦   |  2   
+ Eoa    |    1!    |   ¦1  |  1   
+ EoA    |    1!    |1  ¦1  |  2   
+ EOA    |    1!    |2  ¦1  |  3   
+
+
+/eou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eou    |          |   ¦   |      
+ eoy    |          |1! ¦   |  1   
+ eOy    |          |2! ¦   |  2   
+ Eou    |    1!    |   ¦1  |  1   
+ Eoy    |    1!    |1  ¦1  |  2   
+ EOy    |    1!    |2  ¦1  |  3   
+
+
+/eae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eae    |          |   ¦   |      
+ eaE    |          |   ¦1! |  1   
+ eAe    |          |1! ¦   |  1   
+ eAE    |          |1! ¦1  |  2   
+ Eae    |    1!    |   ¦1  |  1   
+ EaE    |    1!    |   ¦2  |  2   
+ EAe    |    1!    |1  ¦1  |  2   
+ EAE    |    1!    |1  ¦2  |  3   
+
+
+/eai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eai    |          |   ¦   |      
+ eAi    |          |1! ¦   |  1   
+ Eai    |    1!    |   ¦1  |  1   
+ EAi    |    1!    |1  ¦1  |  2   
+ eaI 1! |          |   ¦1  |  1   
+ eAI 1! |          |1  ¦1  |  2   
+ EaI 1! |    1     |   ¦2  |  2   
+ EAI 1! |    1     |1  ¦2  |  3   
+
+
+/eao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eao    |          |   ¦   |      
+ eaO    |          |1! ¦   |  1   
+ eAO    |          |2! ¦   |  2   
+ Eao    |    1!    |   ¦1  |  1   
+ EaO    |    1!    |1  ¦1  |  2   
+ EAO    |    1!    |2  ¦1  |  3   
+
+
+/eaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eaa    |          |   ¦   |      
+ eaA    |          |1! ¦   |  1   
+ eAA    |          |2! ¦   |  2   
+ Eaa    |    1!    |   ¦1  |  1   
+ EaA    |    1!    |1  ¦1  |  2   
+ EAA    |    1!    |2  ¦1  |  3   
+
+
+/eau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eau    |          |   ¦   |      
+ eay    |          |1! ¦   |  1   
+ eAy    |          |2! ¦   |  2   
+ Eau    |    1!    |   ¦1  |  1   
+ Eay    |    1!    |1  ¦1  |  2   
+ EAy    |    1!    |2  ¦1  |  3   
+
+
+/eue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eue    |          |   ¦   |      
+ euE    |          |   ¦1! |  1   
+ eye    |          |1! ¦   |  1   
+ eyE    |          |1! ¦1  |  2   
+ Eue    |    1!    |   ¦1  |  1   
+ EuE    |    1!    |   ¦2  |  2   
+ Eye    |    1!    |1  ¦1  |  2   
+ EyE    |    1!    |1  ¦2  |  3   
+
+
+/eui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eui    |          |   ¦   |      
+ eyi    |          |1! ¦   |  1   
+ Eui    |    1!    |   ¦1  |  1   
+ Eyi    |    1!    |1  ¦1  |  2   
+ euI 1! |          |   ¦1  |  1   
+ eyI 1! |          |1  ¦1  |  2   
+ EuI 1! |    1     |   ¦2  |  2   
+ EyI 1! |    1     |1  ¦2  |  3   
+
+
+/euo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>euo    |          |   ¦   |      
+ euO    |          |1! ¦   |  1   
+ eyO    |          |2! ¦   |  2   
+ Euo    |    1!    |   ¦1  |  1   
+ EuO    |    1!    |1  ¦1  |  2   
+ EyO    |    1!    |2  ¦1  |  3   
+
+
+/eua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>eua    |          |   ¦   |      
+ euA    |          |1! ¦   |  1   
+ eyA    |          |2! ¦   |  2   
+ Eua    |    1!    |   ¦1  |  1   
+ EuA    |    1!    |1  ¦1  |  2   
+ EyA    |    1!    |2  ¦1  |  3   
+
+
+/euu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>euu    |          |   ¦   |      
+ euy    |          |1! ¦   |  1   
+ eyy    |          |2! ¦   |  2   
+ Euu    |    1!    |   ¦1  |  1   
+ Euy    |    1!    |1  ¦1  |  2   
+ Eyy    |    1!    |2  ¦1  |  3   
+
+
+/iee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iee    |          |   ¦   |      
+ ieE    |          |   ¦1! |  1   
+ iEE    |          |   ¦2! |  2   
+ Iee 1! |    1     |   ¦1  |  1   
+ IeE 1! |    1     |   ¦2  |  2   
+ IEE 1! |    1     |   ¦3  |  3   
+
+
+/iei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iei    |          |   ¦   |      
+ iEi    |          |   ¦1! |  1   
+ ieI 1! |          |   ¦1  |  1   
+ iEI 1! |          |   ¦2  |  2   
+ Iei 1! |    1     |   ¦1  |  1   
+ IEi 1! |    1     |   ¦2  |  2   
+ IeI 2! |    1     |   ¦2  |  2   
+ IEI 2! |    1     |   ¦3  |  3   
+
+
+/ieo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ieo    |          |   ¦   |      
+ iEo    |          |   ¦1! |  1   
+ ieO    |          |1! ¦   |  1   
+ iEO    |          |1! ¦1  |  2   
+ Ieo 1! |    1     |   ¦1  |  1   
+ IEo 1! |    1     |   ¦2  |  2   
+ IeO 1! |    1     |1  ¦1  |  2   
+ IEO 1! |    1     |1  ¦2  |  3   
+
+
+/iea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iea    |          |   ¦   |      
+ iEa    |          |   ¦1! |  1   
+ ieA    |          |1! ¦   |  1   
+ iEA    |          |1! ¦1  |  2   
+ Iea 1! |    1     |   ¦1  |  1   
+ IEa 1! |    1     |   ¦2  |  2   
+ IeA 1! |    1     |1  ¦1  |  2   
+ IEA 1! |    1     |1  ¦2  |  3   
+
+
+/ieu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ieu    |          |   ¦   |      
+ iEu    |          |   ¦1! |  1   
+ iey    |          |1! ¦   |  1   
+ iEy    |          |1! ¦1  |  2   
+ Ieu 1! |    1     |   ¦1  |  1   
+ IEu 1! |    1     |   ¦2  |  2   
+ Iey 1! |    1     |1  ¦1  |  2   
+ IEy 1! |    1     |1  ¦2  |  3   
+
+
+/iie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iie    |          |   ¦   |      
+ iiE    |          |   ¦1! |  1   
+ iIe 1! |          |   ¦1  |  1   
+ iIE 1! |          |   ¦2  |  2   
+ Iie 1! |    1     |   ¦1  |  1   
+ IiE 1! |    1     |   ¦2  |  2   
+ IIe 2! |    1     |   ¦2  |  2   
+ IIE 2! |    1     |   ¦3  |  3   
+
+
+/iii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iii    |          |   ¦   |      
+ iiI 1! |          |   ¦1  |  1   
+ Iii 1! |    1     |   ¦1  |  1   
+ iII 2! |          |   ¦2  |  2   
+ IiI 2! |    1     |   ¦2  |  2   
+ III 3! |    1     |   ¦3  |  3   
+
+
+/iio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iio    |          |   ¦   |      
+ iiO    |          |1! ¦   |  1   
+ iIo 1! |          |   ¦1  |  1   
+ iIO 1! |          |1  ¦1  |  2   
+ Iio 1! |    1     |   ¦1  |  1   
+ IiO 1! |    1     |1  ¦1  |  2   
+ IIo 2! |    1     |   ¦2  |  2   
+ IIO 2! |    1     |1  ¦2  |  3   
+
+
+/iia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iia    |          |   ¦   |      
+ iiA    |          |1! ¦   |  1   
+ iIa 1! |          |   ¦1  |  1   
+ iIA 1! |          |1  ¦1  |  2   
+ Iia 1! |    1     |   ¦1  |  1   
+ IiA 1! |    1     |1  ¦1  |  2   
+ IIa 2! |    1     |   ¦2  |  2   
+ IIA 2! |    1     |1  ¦2  |  3   
+
+
+/iiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iiu    |          |   ¦   |      
+ iiy    |          |1! ¦   |  1   
+ iIu 1! |          |   ¦1  |  1   
+ iIy 1! |          |1  ¦1  |  2   
+ Iiu 1! |    1     |   ¦1  |  1   
+ Iiy 1! |    1     |1  ¦1  |  2   
+ IIu 2! |    1     |   ¦2  |  2   
+ IIy 2! |    1     |1  ¦2  |  3   
+
+
+/ioe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ioe    |          |   ¦   |      
+ ioE    |          |   ¦1! |  1   
+ iOe    |          |1! ¦   |  1   
+ iOE    |          |1! ¦1  |  2   
+ Ioe 1! |    1     |   ¦1  |  1   
+ IoE 1! |    1     |   ¦2  |  2   
+ IOe 1! |    1     |1  ¦1  |  2   
+ IOE 1! |    1     |1  ¦2  |  3   
+
+
+/ioi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ioi    |          |   ¦   |      
+ iOi    |          |1! ¦   |  1   
+ ioI 1! |          |   ¦1  |  1   
+ iOI 1! |          |1  ¦1  |  2   
+ Ioi 1! |    1     |   ¦1  |  1   
+ IOi 1! |    1     |1  ¦1  |  2   
+ IoI 2! |    1     |   ¦2  |  2   
+ IOI 2! |    1     |1  ¦2  |  3   
+
+
+/ioo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ioo    |          |   ¦   |      
+ ioO    |          |1! ¦   |  1   
+ iOO    |          |2! ¦   |  2   
+ Ioo 1! |    1     |   ¦1  |  1   
+ IoO 1! |    1     |1  ¦1  |  2   
+ IOO 1! |    1     |2  ¦1  |  3   
+
+
+/ioa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ioa    |          |   ¦   |      
+ ioA    |          |1! ¦   |  1   
+ iOA    |          |2! ¦   |  2   
+ Ioa 1! |    1     |   ¦1  |  1   
+ IoA 1! |    1     |1  ¦1  |  2   
+ IOA 1! |    1     |2  ¦1  |  3   
+
+
+/iou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iou    |          |   ¦   |      
+ ioy    |          |1! ¦   |  1   
+ iOy    |          |2! ¦   |  2   
+ Iou 1! |    1     |   ¦1  |  1   
+ Ioy 1! |    1     |1  ¦1  |  2   
+ IOy 1! |    1     |2  ¦1  |  3   
+
+
+/iae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iae    |          |   ¦   |      
+ iaE    |          |   ¦1! |  1   
+ iAe    |          |1! ¦   |  1   
+ iAE    |          |1! ¦1  |  2   
+ Iae 1! |    1     |   ¦1  |  1   
+ IaE 1! |    1     |   ¦2  |  2   
+ IAe 1! |    1     |1  ¦1  |  2   
+ IAE 1! |    1     |1  ¦2  |  3   
+
+
+/iai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iai    |          |   ¦   |      
+ iAi    |          |1! ¦   |  1   
+ iaI 1! |          |   ¦1  |  1   
+ iAI 1! |          |1  ¦1  |  2   
+ Iai 1! |    1     |   ¦1  |  1   
+ IAi 1! |    1     |1  ¦1  |  2   
+ IaI 2! |    1     |   ¦2  |  2   
+ IAI 2! |    1     |1  ¦2  |  3   
+
+
+/iao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iao    |          |   ¦   |      
+ iaO    |          |1! ¦   |  1   
+ iAO    |          |2! ¦   |  2   
+ Iao 1! |    1     |   ¦1  |  1   
+ IaO 1! |    1     |1  ¦1  |  2   
+ IAO 1! |    1     |2  ¦1  |  3   
+
+
+/iaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iaa    |          |   ¦   |      
+ iaA    |          |1! ¦   |  1   
+ iAA    |          |2! ¦   |  2   
+ Iaa 1! |    1     |   ¦1  |  1   
+ IaA 1! |    1     |1  ¦1  |  2   
+ IAA 1! |    1     |2  ¦1  |  3   
+
+
+/iau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iau    |          |   ¦   |      
+ iay    |          |1! ¦   |  1   
+ iAy    |          |2! ¦   |  2   
+ Iau 1! |    1     |   ¦1  |  1   
+ Iay 1! |    1     |1  ¦1  |  2   
+ IAy 1! |    1     |2  ¦1  |  3   
+
+
+/iue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iue    |          |   ¦   |      
+ iuE    |          |   ¦1! |  1   
+ iye    |          |1! ¦   |  1   
+ iyE    |          |1! ¦1  |  2   
+ Iue 1! |    1     |   ¦1  |  1   
+ IuE 1! |    1     |   ¦2  |  2   
+ Iye 1! |    1     |1  ¦1  |  2   
+ IyE 1! |    1     |1  ¦2  |  3   
+
+
+/iui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iui    |          |   ¦   |      
+ iyi    |          |1! ¦   |  1   
+ iuI 1! |          |   ¦1  |  1   
+ iyI 1! |          |1  ¦1  |  2   
+ Iui 1! |    1     |   ¦1  |  1   
+ Iyi 1! |    1     |1  ¦1  |  2   
+ IuI 2! |    1     |   ¦2  |  2   
+ IyI 2! |    1     |1  ¦2  |  3   
+
+
+/iuo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iuo    |          |   ¦   |      
+ iuO    |          |1! ¦   |  1   
+ iyO    |          |2! ¦   |  2   
+ Iuo 1! |    1     |   ¦1  |  1   
+ IuO 1! |    1     |1  ¦1  |  2   
+ IyO 1! |    1     |2  ¦1  |  3   
+
+
+/iua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iua    |          |   ¦   |      
+ iuA    |          |1! ¦   |  1   
+ iyA    |          |2! ¦   |  2   
+ Iua 1! |    1     |   ¦1  |  1   
+ IuA 1! |    1     |1  ¦1  |  2   
+ IyA 1! |    1     |2  ¦1  |  3   
+
+
+/iuu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>iuu    |          |   ¦   |      
+ iuy    |          |1! ¦   |  1   
+ iyy    |          |2! ¦   |  2   
+ Iuu 1! |    1     |   ¦1  |  1   
+ Iuy 1! |    1     |1  ¦1  |  2   
+ Iyy 1! |    1     |2  ¦1  |  3   
+
+
+/Eee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eee    |          |   ¦1  |      
+ EeE    |          |   ¦2! |  1   
+ EEE    |          |   ¦3! |  2   
+ eee    |    1!    |   ¦   |  1   
+ eeE    |    1!    |   ¦1  |  2   
+ eEE    |    1!    |   ¦2  |  3   
+
+
+/Eei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eei    |          |   ¦1  |      
+ EEi    |          |   ¦2! |  1   
+ eei    |    1!    |   ¦   |  1   
+ eEi    |    1!    |   ¦1  |  2   
+ EeI 1! |          |   ¦2  |  1   
+ EEI 1! |          |   ¦3  |  2   
+ eeI 1! |    1     |   ¦1  |  2   
+ eEI 1! |    1     |   ¦2  |  3   
+
+
+/Eeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eeo    |          |   ¦1  |      
+ EEo    |          |   ¦2! |  1   
+ EeO    |          |1! ¦1  |  1   
+ EEO    |          |1! ¦2  |  2   
+ eeo    |    1!    |   ¦   |  1   
+ eEo    |    1!    |   ¦1  |  2   
+ eeO    |    1!    |1  ¦   |  2   
+ eEO    |    1!    |1  ¦1  |  3   
+
+
+/Eea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eea    |          |   ¦1  |      
+ EEa    |          |   ¦2! |  1   
+ EeA    |          |1! ¦1  |  1   
+ EEA    |          |1! ¦2  |  2   
+ eea    |    1!    |   ¦   |  1   
+ eEa    |    1!    |   ¦1  |  2   
+ eeA    |    1!    |1  ¦   |  2   
+ eEA    |    1!    |1  ¦1  |  3   
+
+
+/Eeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eeu    |          |   ¦1  |      
+ EEu    |          |   ¦2! |  1   
+ Eey    |          |1! ¦1  |  1   
+ EEy    |          |1! ¦2  |  2   
+ eeu    |    1!    |   ¦   |  1   
+ eEu    |    1!    |   ¦1  |  2   
+ eey    |    1!    |1  ¦   |  2   
+ eEy    |    1!    |1  ¦1  |  3   
+
+
+/Eie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eie    |          |   ¦1  |      
+ EiE    |          |   ¦2! |  1   
+ eie    |    1!    |   ¦   |  1   
+ eiE    |    1!    |   ¦1  |  2   
+ EIe 1! |          |   ¦2  |  1   
+ EIE 1! |          |   ¦3  |  2   
+ eIe 1! |    1     |   ¦1  |  2   
+ eIE 1! |    1     |   ¦2  |  3   
+
+
+/Eii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eii    |          |   ¦1  |      
+ eii    |    1!    |   ¦   |  1   
+ EiI 1! |          |   ¦2  |  1   
+ eiI 1! |    1     |   ¦1  |  2   
+ EII 2! |          |   ¦3  |  2   
+ eII 2! |    1     |   ¦2  |  3   
+
+
+/Eio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eio    |          |   ¦1  |      
+ EiO    |          |1! ¦1  |  1   
+ eio    |    1!    |   ¦   |  1   
+ eiO    |    1!    |1  ¦   |  2   
+ EIo 1! |          |   ¦2  |  1   
+ EIO 1! |          |1  ¦2  |  2   
+ eIo 1! |    1     |   ¦1  |  2   
+ eIO 1! |    1     |1  ¦1  |  3   
+
+
+/Eia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eia    |          |   ¦1  |      
+ EiA    |          |1! ¦1  |  1   
+ eia    |    1!    |   ¦   |  1   
+ eiA    |    1!    |1  ¦   |  2   
+ EIa 1! |          |   ¦2  |  1   
+ EIA 1! |          |1  ¦2  |  2   
+ eIa 1! |    1     |   ¦1  |  2   
+ eIA 1! |    1     |1  ¦1  |  3   
+
+
+/Eiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eiu    |          |   ¦1  |      
+ Eiy    |          |1! ¦1  |  1   
+ eiu    |    1!    |   ¦   |  1   
+ eiy    |    1!    |1  ¦   |  2   
+ EIu 1! |          |   ¦2  |  1   
+ EIy 1! |          |1  ¦2  |  2   
+ eIu 1! |    1     |   ¦1  |  2   
+ eIy 1! |    1     |1  ¦1  |  3   
+
+
+/Eoe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eoe    |          |   ¦1  |      
+ EoE    |          |   ¦2! |  1   
+ EOe    |          |1! ¦1  |  1   
+ EOE    |          |1! ¦2  |  2   
+ eoe    |    1!    |   ¦   |  1   
+ eoE    |    1!    |   ¦1  |  2   
+ eOe    |    1!    |1  ¦   |  2   
+ eOE    |    1!    |1  ¦1  |  3   
+
+
+/Eoi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eoi    |          |   ¦1  |      
+ EOi    |          |1! ¦1  |  1   
+ eoi    |    1!    |   ¦   |  1   
+ eOi    |    1!    |1  ¦   |  2   
+ EoI 1! |          |   ¦2  |  1   
+ EOI 1! |          |1  ¦2  |  2   
+ eoI 1! |    1     |   ¦1  |  2   
+ eOI 1! |    1     |1  ¦1  |  3   
+
+
+/Eoo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eoo    |          |   ¦1  |      
+ EoO    |          |1! ¦1  |  1   
+ EOO    |          |2! ¦1  |  2   
+ eoo    |    1!    |   ¦   |  1   
+ eoO    |    1!    |1  ¦   |  2   
+ eOO    |    1!    |2  ¦   |  3   
+
+
+/Eoa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eoa    |          |   ¦1  |      
+ EoA    |          |1! ¦1  |  1   
+ EOA    |          |2! ¦1  |  2   
+ eoa    |    1!    |   ¦   |  1   
+ eoA    |    1!    |1  ¦   |  2   
+ eOA    |    1!    |2  ¦   |  3   
+
+
+/Eou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eou    |          |   ¦1  |      
+ Eoy    |          |1! ¦1  |  1   
+ EOy    |          |2! ¦1  |  2   
+ eou    |    1!    |   ¦   |  1   
+ eoy    |    1!    |1  ¦   |  2   
+ eOy    |    1!    |2  ¦   |  3   
+
+
+/Eae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eae    |          |   ¦1  |      
+ EaE    |          |   ¦2! |  1   
+ EAe    |          |1! ¦1  |  1   
+ EAE    |          |1! ¦2  |  2   
+ eae    |    1!    |   ¦   |  1   
+ eaE    |    1!    |   ¦1  |  2   
+ eAe    |    1!    |1  ¦   |  2   
+ eAE    |    1!    |1  ¦1  |  3   
+
+
+/Eai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eai    |          |   ¦1  |      
+ EAi    |          |1! ¦1  |  1   
+ eai    |    1!    |   ¦   |  1   
+ eAi    |    1!    |1  ¦   |  2   
+ EaI 1! |          |   ¦2  |  1   
+ EAI 1! |          |1  ¦2  |  2   
+ eaI 1! |    1     |   ¦1  |  2   
+ eAI 1! |    1     |1  ¦1  |  3   
+
+
+/Eao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eao    |          |   ¦1  |      
+ EaO    |          |1! ¦1  |  1   
+ EAO    |          |2! ¦1  |  2   
+ eao    |    1!    |   ¦   |  1   
+ eaO    |    1!    |1  ¦   |  2   
+ eAO    |    1!    |2  ¦   |  3   
+
+
+/Eaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eaa    |          |   ¦1  |      
+ EaA    |          |1! ¦1  |  1   
+ EAA    |          |2! ¦1  |  2   
+ eaa    |    1!    |   ¦   |  1   
+ eaA    |    1!    |1  ¦   |  2   
+ eAA    |    1!    |2  ¦   |  3   
+
+
+/Eau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eau    |          |   ¦1  |      
+ Eay    |          |1! ¦1  |  1   
+ EAy    |          |2! ¦1  |  2   
+ eau    |    1!    |   ¦   |  1   
+ eay    |    1!    |1  ¦   |  2   
+ eAy    |    1!    |2  ¦   |  3   
+
+
+/Eue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eue    |          |   ¦1  |      
+ EuE    |          |   ¦2! |  1   
+ Eye    |          |1! ¦1  |  1   
+ EyE    |          |1! ¦2  |  2   
+ eue    |    1!    |   ¦   |  1   
+ euE    |    1!    |   ¦1  |  2   
+ eye    |    1!    |1  ¦   |  2   
+ eyE    |    1!    |1  ¦1  |  3   
+
+
+/Eui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eui    |          |   ¦1  |      
+ Eyi    |          |1! ¦1  |  1   
+ eui    |    1!    |   ¦   |  1   
+ eyi    |    1!    |1  ¦   |  2   
+ EuI 1! |          |   ¦2  |  1   
+ EyI 1! |          |1  ¦2  |  2   
+ euI 1! |    1     |   ¦1  |  2   
+ eyI 1! |    1     |1  ¦1  |  3   
+
+
+/Euo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Euo    |          |   ¦1  |      
+ EuO    |          |1! ¦1  |  1   
+ EyO    |          |2! ¦1  |  2   
+ euo    |    1!    |   ¦   |  1   
+ euO    |    1!    |1  ¦   |  2   
+ eyO    |    1!    |2  ¦   |  3   
+
+
+/Eua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Eua    |          |   ¦1  |      
+ EuA    |          |1! ¦1  |  1   
+ EyA    |          |2! ¦1  |  2   
+ eua    |    1!    |   ¦   |  1   
+ euA    |    1!    |1  ¦   |  2   
+ eyA    |    1!    |2  ¦   |  3   
+
+
+/Euu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>Euu    |          |   ¦1  |      
+ Euy    |          |1! ¦1  |  1   
+ Eyy    |          |2! ¦1  |  2   
+ euu    |    1!    |   ¦   |  1   
+ euy    |    1!    |1  ¦   |  2   
+ eyy    |    1!    |2  ¦   |  3   
+
+
+/oee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oee    |          |   ¦   |      
+ oeE    |          |   ¦1! |  1   
+ oEE    |          |   ¦2! |  2   
+ Oee    |    1!    |1  ¦   |  1   
+ OeE    |    1!    |1  ¦1  |  2   
+ OEE    |    1!    |1  ¦2  |  3   
+
+
+/oei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oei    |          |   ¦   |      
+ oEi    |          |   ¦1! |  1   
+ Oei    |    1!    |1  ¦   |  1   
+ OEi    |    1!    |1  ¦1  |  2   
+ oeI 1! |          |   ¦1  |  1   
+ oEI 1! |          |   ¦2  |  2   
+ OeI 1! |    1     |1  ¦1  |  2   
+ OEI 1! |    1     |1  ¦2  |  3   
+
+
+/oeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oeo    |          |   ¦   |      
+ oEo    |          |   ¦1! |  1   
+ oeO    |          |1! ¦   |  1   
+ oEO    |          |1! ¦1  |  2   
+ Oeo    |    1!    |1  ¦   |  1   
+ OEo    |    1!    |1  ¦1  |  2   
+ OeO    |    1!    |2  ¦   |  2   
+ OEO    |    1!    |2  ¦1  |  3   
+
+
+/oea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oea    |          |   ¦   |      
+ oEa    |          |   ¦1! |  1   
+ oeA    |          |1! ¦   |  1   
+ oEA    |          |1! ¦1  |  2   
+ Oea    |    1!    |1  ¦   |  1   
+ OEa    |    1!    |1  ¦1  |  2   
+ OeA    |    1!    |2  ¦   |  2   
+ OEA    |    1!    |2  ¦1  |  3   
+
+
+/oeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oeu    |          |   ¦   |      
+ oEu    |          |   ¦1! |  1   
+ oey    |          |1! ¦   |  1   
+ oEy    |          |1! ¦1  |  2   
+ Oeu    |    1!    |1  ¦   |  1   
+ OEu    |    1!    |1  ¦1  |  2   
+ Oey    |    1!    |2  ¦   |  2   
+ OEy    |    1!    |2  ¦1  |  3   
+
+
+/oie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oie    |          |   ¦   |      
+ oiE    |          |   ¦1! |  1   
+ Oie    |    1!    |1  ¦   |  1   
+ OiE    |    1!    |1  ¦1  |  2   
+ oIe 1! |          |   ¦1  |  1   
+ oIE 1! |          |   ¦2  |  2   
+ OIe 1! |    1     |1  ¦1  |  2   
+ OIE 1! |    1     |1  ¦2  |  3   
+
+
+/oii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oii    |          |   ¦   |      
+ Oii    |    1!    |1  ¦   |  1   
+ oiI 1! |          |   ¦1  |  1   
+ OiI 1! |    1     |1  ¦1  |  2   
+ oII 2! |          |   ¦2  |  2   
+ OII 2! |    1     |1  ¦2  |  3   
+
+
+/oio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oio    |          |   ¦   |      
+ oiO    |          |1! ¦   |  1   
+ Oio    |    1!    |1  ¦   |  1   
+ OiO    |    1!    |2  ¦   |  2   
+ oIo 1! |          |   ¦1  |  1   
+ oIO 1! |          |1  ¦1  |  2   
+ OIo 1! |    1     |1  ¦1  |  2   
+ OIO 1! |    1     |2  ¦1  |  3   
+
+
+/oia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oia    |          |   ¦   |      
+ oiA    |          |1! ¦   |  1   
+ Oia    |    1!    |1  ¦   |  1   
+ OiA    |    1!    |2  ¦   |  2   
+ oIa 1! |          |   ¦1  |  1   
+ oIA 1! |          |1  ¦1  |  2   
+ OIa 1! |    1     |1  ¦1  |  2   
+ OIA 1! |    1     |2  ¦1  |  3   
+
+
+/oiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oiu    |          |   ¦   |      
+ oiy    |          |1! ¦   |  1   
+ Oiu    |    1!    |1  ¦   |  1   
+ Oiy    |    1!    |2  ¦   |  2   
+ oIu 1! |          |   ¦1  |  1   
+ oIy 1! |          |1  ¦1  |  2   
+ OIu 1! |    1     |1  ¦1  |  2   
+ OIy 1! |    1     |2  ¦1  |  3   
+
+
+/ooe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ooe    |          |   ¦   |      
+ ooE    |          |   ¦1! |  1   
+ oOe    |          |1! ¦   |  1   
+ oOE    |          |1! ¦1  |  2   
+ Ooe    |    1!    |1  ¦   |  1   
+ OoE    |    1!    |1  ¦1  |  2   
+ OOe    |    1!    |2  ¦   |  2   
+ OOE    |    1!    |2  ¦1  |  3   
+
+
+/ooi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ooi    |          |   ¦   |      
+ oOi    |          |1! ¦   |  1   
+ Ooi    |    1!    |1  ¦   |  1   
+ OOi    |    1!    |2  ¦   |  2   
+ ooI 1! |          |   ¦1  |  1   
+ oOI 1! |          |1  ¦1  |  2   
+ OoI 1! |    1     |1  ¦1  |  2   
+ OOI 1! |    1     |2  ¦1  |  3   
+
+
+/ooo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ooo    |          |   ¦   |      
+ ooO    |          |1! ¦   |  1   
+ oOO    |          |2! ¦   |  2   
+ Ooo    |    1!    |1  ¦   |  1   
+ OoO    |    1!    |2  ¦   |  2   
+ OOO    |    1!    |3  ¦   |  3   
+
+
+/ooa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ooa    |          |   ¦   |      
+ ooA    |          |1! ¦   |  1   
+ oOA    |          |2! ¦   |  2   
+ Ooa    |    1!    |1  ¦   |  1   
+ OoA    |    1!    |2  ¦   |  2   
+ OOA    |    1!    |3  ¦   |  3   
+
+
+/oou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oou    |          |   ¦   |      
+ ooy    |          |1! ¦   |  1   
+ oOy    |          |2! ¦   |  2   
+ Oou    |    1!    |1  ¦   |  1   
+ Ooy    |    1!    |2  ¦   |  2   
+ OOy    |    1!    |3  ¦   |  3   
+
+
+/oae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oae    |          |   ¦   |      
+ oaE    |          |   ¦1! |  1   
+ oAe    |          |1! ¦   |  1   
+ oAE    |          |1! ¦1  |  2   
+ Oae    |    1!    |1  ¦   |  1   
+ OaE    |    1!    |1  ¦1  |  2   
+ OAe    |    1!    |2  ¦   |  2   
+ OAE    |    1!    |2  ¦1  |  3   
+
+
+/oai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oai    |          |   ¦   |      
+ oAi    |          |1! ¦   |  1   
+ Oai    |    1!    |1  ¦   |  1   
+ OAi    |    1!    |2  ¦   |  2   
+ oaI 1! |          |   ¦1  |  1   
+ oAI 1! |          |1  ¦1  |  2   
+ OaI 1! |    1     |1  ¦1  |  2   
+ OAI 1! |    1     |2  ¦1  |  3   
+
+
+/oao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oao    |          |   ¦   |      
+ oaO    |          |1! ¦   |  1   
+ oAO    |          |2! ¦   |  2   
+ Oao    |    1!    |1  ¦   |  1   
+ OaO    |    1!    |2  ¦   |  2   
+ OAO    |    1!    |3  ¦   |  3   
+
+
+/oaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oaa    |          |   ¦   |      
+ oaA    |          |1! ¦   |  1   
+ oAA    |          |2! ¦   |  2   
+ Oaa    |    1!    |1  ¦   |  1   
+ OaA    |    1!    |2  ¦   |  2   
+ OAA    |    1!    |3  ¦   |  3   
+
+
+/oau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oau    |          |   ¦   |      
+ oay    |          |1! ¦   |  1   
+ oAy    |          |2! ¦   |  2   
+ Oau    |    1!    |1  ¦   |  1   
+ Oay    |    1!    |2  ¦   |  2   
+ OAy    |    1!    |3  ¦   |  3   
+
+
+/oue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oue    |          |   ¦   |      
+ ouE    |          |   ¦1! |  1   
+ oye    |          |1! ¦   |  1   
+ oyE    |          |1! ¦1  |  2   
+ Oue    |    1!    |1  ¦   |  1   
+ OuE    |    1!    |1  ¦1  |  2   
+ Oye    |    1!    |2  ¦   |  2   
+ OyE    |    1!    |2  ¦1  |  3   
+
+
+/oui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oui    |          |   ¦   |      
+ oyi    |          |1! ¦   |  1   
+ Oui    |    1!    |1  ¦   |  1   
+ Oyi    |    1!    |2  ¦   |  2   
+ ouI 1! |          |   ¦1  |  1   
+ oyI 1! |          |1  ¦1  |  2   
+ OuI 1! |    1     |1  ¦1  |  2   
+ OyI 1! |    1     |2  ¦1  |  3   
+
+
+/ouo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ouo    |          |   ¦   |      
+ ouO    |          |1! ¦   |  1   
+ oyO    |          |2! ¦   |  2   
+ Ouo    |    1!    |1  ¦   |  1   
+ OuO    |    1!    |2  ¦   |  2   
+ OyO    |    1!    |3  ¦   |  3   
+
+
+/oua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>oua    |          |   ¦   |      
+ ouA    |          |1! ¦   |  1   
+ oyA    |          |2! ¦   |  2   
+ Oua    |    1!    |1  ¦   |  1   
+ OuA    |    1!    |2  ¦   |  2   
+ OyA    |    1!    |3  ¦   |  3   
+
+
+/ouu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ouu    |          |   ¦   |      
+ ouy    |          |1! ¦   |  1   
+ oyy    |          |2! ¦   |  2   
+ Ouu    |    1!    |1  ¦   |  1   
+ Ouy    |    1!    |2  ¦   |  2   
+ Oyy    |    1!    |3  ¦   |  3   
+
+
+/aee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aee    |          |   ¦   |      
+ aeE    |          |   ¦1! |  1   
+ aEE    |          |   ¦2! |  2   
+ Aee    |    1!    |1  ¦   |  1   
+ AeE    |    1!    |1  ¦1  |  2   
+ AEE    |    1!    |1  ¦2  |  3   
+
+
+/aei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aei    |          |   ¦   |      
+ aEi    |          |   ¦1! |  1   
+ Aei    |    1!    |1  ¦   |  1   
+ AEi    |    1!    |1  ¦1  |  2   
+ aeI 1! |          |   ¦1  |  1   
+ aEI 1! |          |   ¦2  |  2   
+ AeI 1! |    1     |1  ¦1  |  2   
+ AEI 1! |    1     |1  ¦2  |  3   
+
+
+/aeo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aeo    |          |   ¦   |      
+ aEo    |          |   ¦1! |  1   
+ aeO    |          |1! ¦   |  1   
+ aEO    |          |1! ¦1  |  2   
+ Aeo    |    1!    |1  ¦   |  1   
+ AEo    |    1!    |1  ¦1  |  2   
+ AeO    |    1!    |2  ¦   |  2   
+ AEO    |    1!    |2  ¦1  |  3   
+
+
+/aea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aea    |          |   ¦   |      
+ aEa    |          |   ¦1! |  1   
+ aeA    |          |1! ¦   |  1   
+ aEA    |          |1! ¦1  |  2   
+ Aea    |    1!    |1  ¦   |  1   
+ AEa    |    1!    |1  ¦1  |  2   
+ AeA    |    1!    |2  ¦   |  2   
+ AEA    |    1!    |2  ¦1  |  3   
+
+
+/aeu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aeu    |          |   ¦   |      
+ aEu    |          |   ¦1! |  1   
+ aey    |          |1! ¦   |  1   
+ aEy    |          |1! ¦1  |  2   
+ Aeu    |    1!    |1  ¦   |  1   
+ AEu    |    1!    |1  ¦1  |  2   
+ Aey    |    1!    |2  ¦   |  2   
+ AEy    |    1!    |2  ¦1  |  3   
+
+
+/aie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aie    |          |   ¦   |      
+ aiE    |          |   ¦1! |  1   
+ Aie    |    1!    |1  ¦   |  1   
+ AiE    |    1!    |1  ¦1  |  2   
+ aIe 1! |          |   ¦1  |  1   
+ aIE 1! |          |   ¦2  |  2   
+ AIe 1! |    1     |1  ¦1  |  2   
+ AIE 1! |    1     |1  ¦2  |  3   
+
+
+/aii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aii    |          |   ¦   |      
+ Aii    |    1!    |1  ¦   |  1   
+ aiI 1! |          |   ¦1  |  1   
+ AiI 1! |    1     |1  ¦1  |  2   
+ aII 2! |          |   ¦2  |  2   
+ AII 2! |    1     |1  ¦2  |  3   
+
+
+/aio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aio    |          |   ¦   |      
+ aiO    |          |1! ¦   |  1   
+ Aio    |    1!    |1  ¦   |  1   
+ AiO    |    1!    |2  ¦   |  2   
+ aIo 1! |          |   ¦1  |  1   
+ aIO 1! |          |1  ¦1  |  2   
+ AIo 1! |    1     |1  ¦1  |  2   
+ AIO 1! |    1     |2  ¦1  |  3   
+
+
+/aia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aia    |          |   ¦   |      
+ aiA    |          |1! ¦   |  1   
+ Aia    |    1!    |1  ¦   |  1   
+ AiA    |    1!    |2  ¦   |  2   
+ aIa 1! |          |   ¦1  |  1   
+ aIA 1! |          |1  ¦1  |  2   
+ AIa 1! |    1     |1  ¦1  |  2   
+ AIA 1! |    1     |2  ¦1  |  3   
+
+
+/aiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aiu    |          |   ¦   |      
+ aiy    |          |1! ¦   |  1   
+ Aiu    |    1!    |1  ¦   |  1   
+ Aiy    |    1!    |2  ¦   |  2   
+ aIu 1! |          |   ¦1  |  1   
+ aIy 1! |          |1  ¦1  |  2   
+ AIu 1! |    1     |1  ¦1  |  2   
+ AIy 1! |    1     |2  ¦1  |  3   
+
+
+/aoe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aoe    |          |   ¦   |      
+ aoE    |          |   ¦1! |  1   
+ aOe    |          |1! ¦   |  1   
+ aOE    |          |1! ¦1  |  2   
+ Aoe    |    1!    |1  ¦   |  1   
+ AoE    |    1!    |1  ¦1  |  2   
+ AOe    |    1!    |2  ¦   |  2   
+ AOE    |    1!    |2  ¦1  |  3   
+
+
+/aoi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aoi    |          |   ¦   |      
+ aOi    |          |1! ¦   |  1   
+ Aoi    |    1!    |1  ¦   |  1   
+ AOi    |    1!    |2  ¦   |  2   
+ aoI 1! |          |   ¦1  |  1   
+ aOI 1! |          |1  ¦1  |  2   
+ AoI 1! |    1     |1  ¦1  |  2   
+ AOI 1! |    1     |2  ¦1  |  3   
+
+
+/aoo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aoo    |          |   ¦   |      
+ aoO    |          |1! ¦   |  1   
+ aOO    |          |2! ¦   |  2   
+ Aoo    |    1!    |1  ¦   |  1   
+ AoO    |    1!    |2  ¦   |  2   
+ AOO    |    1!    |3  ¦   |  3   
+
+
+/aoa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aoa    |          |   ¦   |      
+ aoA    |          |1! ¦   |  1   
+ aOA    |          |2! ¦   |  2   
+ Aoa    |    1!    |1  ¦   |  1   
+ AoA    |    1!    |2  ¦   |  2   
+ AOA    |    1!    |3  ¦   |  3   
+
+
+/aou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aou    |          |   ¦   |      
+ aoy    |          |1! ¦   |  1   
+ aOy    |          |2! ¦   |  2   
+ Aou    |    1!    |1  ¦   |  1   
+ Aoy    |    1!    |2  ¦   |  2   
+ AOy    |    1!    |3  ¦   |  3   
+
+
+/aae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aae    |          |   ¦   |      
+ aaE    |          |   ¦1! |  1   
+ aAe    |          |1! ¦   |  1   
+ aAE    |          |1! ¦1  |  2   
+ Aae    |    1!    |1  ¦   |  1   
+ AaE    |    1!    |1  ¦1  |  2   
+ AAe    |    1!    |2  ¦   |  2   
+ AAE    |    1!    |2  ¦1  |  3   
+
+
+/aai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aai    |          |   ¦   |      
+ aAi    |          |1! ¦   |  1   
+ Aai    |    1!    |1  ¦   |  1   
+ AAi    |    1!    |2  ¦   |  2   
+ aaI 1! |          |   ¦1  |  1   
+ aAI 1! |          |1  ¦1  |  2   
+ AaI 1! |    1     |1  ¦1  |  2   
+ AAI 1! |    1     |2  ¦1  |  3   
+
+
+/aao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aao    |          |   ¦   |      
+ aaO    |          |1! ¦   |  1   
+ aAO    |          |2! ¦   |  2   
+ Aao    |    1!    |1  ¦   |  1   
+ AaO    |    1!    |2  ¦   |  2   
+ AAO    |    1!    |3  ¦   |  3   
+
+
+/aaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aaa    |          |   ¦   |      
+ aaA    |          |1! ¦   |  1   
+ aAA    |          |2! ¦   |  2   
+ Aaa    |    1!    |1  ¦   |  1   
+ AaA    |    1!    |2  ¦   |  2   
+ AAA    |    1!    |3  ¦   |  3   
+
+
+/aau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aau    |          |   ¦   |      
+ aay    |          |1! ¦   |  1   
+ aAy    |          |2! ¦   |  2   
+ Aau    |    1!    |1  ¦   |  1   
+ Aay    |    1!    |2  ¦   |  2   
+ AAy    |    1!    |3  ¦   |  3   
+
+
+/aue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aue    |          |   ¦   |      
+ auE    |          |   ¦1! |  1   
+ aye    |          |1! ¦   |  1   
+ ayE    |          |1! ¦1  |  2   
+ Aue    |    1!    |1  ¦   |  1   
+ AuE    |    1!    |1  ¦1  |  2   
+ Aye    |    1!    |2  ¦   |  2   
+ AyE    |    1!    |2  ¦1  |  3   
+
+
+/aui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aui    |          |   ¦   |      
+ ayi    |          |1! ¦   |  1   
+ Aui    |    1!    |1  ¦   |  1   
+ Ayi    |    1!    |2  ¦   |  2   
+ auI 1! |          |   ¦1  |  1   
+ ayI 1! |          |1  ¦1  |  2   
+ AuI 1! |    1     |1  ¦1  |  2   
+ AyI 1! |    1     |2  ¦1  |  3   
+
+
+/auo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>auo    |          |   ¦   |      
+ auO    |          |1! ¦   |  1   
+ ayO    |          |2! ¦   |  2   
+ Auo    |    1!    |1  ¦   |  1   
+ AuO    |    1!    |2  ¦   |  2   
+ AyO    |    1!    |3  ¦   |  3   
+
+
+/aua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>aua    |          |   ¦   |      
+ auA    |          |1! ¦   |  1   
+ ayA    |          |2! ¦   |  2   
+ Aua    |    1!    |1  ¦   |  1   
+ AuA    |    1!    |2  ¦   |  2   
+ AyA    |    1!    |3  ¦   |  3   
+
+
+/auu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>auu    |          |   ¦   |      
+ auy    |          |1! ¦   |  1   
+ ayy    |          |2! ¦   |  2   
+ Auu    |    1!    |1  ¦   |  1   
+ Auy    |    1!    |2  ¦   |  2   
+ Ayy    |    1!    |3  ¦   |  3   
+
+
+/uee/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uee    |          |   ¦   |      
+ ueE    |          |   ¦1! |  1   
+ uEE    |          |   ¦2! |  2   
+ yee    |    1!    |1  ¦   |  1   
+ yeE    |    1!    |1  ¦1  |  2   
+ yEE    |    1!    |1  ¦2  |  3   
+
+
+/uei/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uei    |          |   ¦   |      
+ uEi    |          |   ¦1! |  1   
+ yei    |    1!    |1  ¦   |  1   
+ yEi    |    1!    |1  ¦1  |  2   
+ ueI 1! |          |   ¦1  |  1   
+ uEI 1! |          |   ¦2  |  2   
+ yeI 1! |    1     |1  ¦1  |  2   
+ yEI 1! |    1     |1  ¦2  |  3   
+
+
+/ueo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ueo    |          |   ¦   |      
+ uEo    |          |   ¦1! |  1   
+ ueO    |          |1! ¦   |  1   
+ uEO    |          |1! ¦1  |  2   
+ yeo    |    1!    |1  ¦   |  1   
+ yEo    |    1!    |1  ¦1  |  2   
+ yeO    |    1!    |2  ¦   |  2   
+ yEO    |    1!    |2  ¦1  |  3   
+
+
+/uea/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uea    |          |   ¦   |      
+ uEa    |          |   ¦1! |  1   
+ ueA    |          |1! ¦   |  1   
+ uEA    |          |1! ¦1  |  2   
+ yea    |    1!    |1  ¦   |  1   
+ yEa    |    1!    |1  ¦1  |  2   
+ yeA    |    1!    |2  ¦   |  2   
+ yEA    |    1!    |2  ¦1  |  3   
+
+
+/ueu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>ueu    |          |   ¦   |      
+ uEu    |          |   ¦1! |  1   
+ uey    |          |1! ¦   |  1   
+ uEy    |          |1! ¦1  |  2   
+ yeu    |    1!    |1  ¦   |  1   
+ yEu    |    1!    |1  ¦1  |  2   
+ yey    |    1!    |2  ¦   |  2   
+ yEy    |    1!    |2  ¦1  |  3   
+
+
+/uie/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uie    |          |   ¦   |      
+ uiE    |          |   ¦1! |  1   
+ yie    |    1!    |1  ¦   |  1   
+ yiE    |    1!    |1  ¦1  |  2   
+ uIe 1! |          |   ¦1  |  1   
+ uIE 1! |          |   ¦2  |  2   
+ yIe 1! |    1     |1  ¦1  |  2   
+ yIE 1! |    1     |1  ¦2  |  3   
+
+
+/uii/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uii    |          |   ¦   |      
+ yii    |    1!    |1  ¦   |  1   
+ uiI 1! |          |   ¦1  |  1   
+ yiI 1! |    1     |1  ¦1  |  2   
+ uII 2! |          |   ¦2  |  2   
+ yII 2! |    1     |1  ¦2  |  3   
+
+
+/uio/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uio    |          |   ¦   |      
+ uiO    |          |1! ¦   |  1   
+ yio    |    1!    |1  ¦   |  1   
+ yiO    |    1!    |2  ¦   |  2   
+ uIo 1! |          |   ¦1  |  1   
+ uIO 1! |          |1  ¦1  |  2   
+ yIo 1! |    1     |1  ¦1  |  2   
+ yIO 1! |    1     |2  ¦1  |  3   
+
+
+/uia/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uia    |          |   ¦   |      
+ uiA    |          |1! ¦   |  1   
+ yia    |    1!    |1  ¦   |  1   
+ yiA    |    1!    |2  ¦   |  2   
+ uIa 1! |          |   ¦1  |  1   
+ uIA 1! |          |1  ¦1  |  2   
+ yIa 1! |    1     |1  ¦1  |  2   
+ yIA 1! |    1     |2  ¦1  |  3   
+
+
+/uiu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uiu    |          |   ¦   |      
+ uiy    |          |1! ¦   |  1   
+ yiu    |    1!    |1  ¦   |  1   
+ yiy    |    1!    |2  ¦   |  2   
+ uIu 1! |          |   ¦1  |  1   
+ uIy 1! |          |1  ¦1  |  2   
+ yIu 1! |    1     |1  ¦1  |  2   
+ yIy 1! |    1     |2  ¦1  |  3   
+
+
+/uoe/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uoe    |          |   ¦   |      
+ uoE    |          |   ¦1! |  1   
+ uOe    |          |1! ¦   |  1   
+ uOE    |          |1! ¦1  |  2   
+ yoe    |    1!    |1  ¦   |  1   
+ yoE    |    1!    |1  ¦1  |  2   
+ yOe    |    1!    |2  ¦   |  2   
+ yOE    |    1!    |2  ¦1  |  3   
+
+
+/uoi/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uoi    |          |   ¦   |      
+ uOi    |          |1! ¦   |  1   
+ yoi    |    1!    |1  ¦   |  1   
+ yOi    |    1!    |2  ¦   |  2   
+ uoI 1! |          |   ¦1  |  1   
+ uOI 1! |          |1  ¦1  |  2   
+ yoI 1! |    1     |1  ¦1  |  2   
+ yOI 1! |    1     |2  ¦1  |  3   
+
+
+/uoo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uoo    |          |   ¦   |      
+ uoO    |          |1! ¦   |  1   
+ uOO    |          |2! ¦   |  2   
+ yoo    |    1!    |1  ¦   |  1   
+ yoO    |    1!    |2  ¦   |  2   
+ yOO    |    1!    |3  ¦   |  3   
+
+
+/uoa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uoa    |          |   ¦   |      
+ uoA    |          |1! ¦   |  1   
+ uOA    |          |2! ¦   |  2   
+ yoa    |    1!    |1  ¦   |  1   
+ yoA    |    1!    |2  ¦   |  2   
+ yOA    |    1!    |3  ¦   |  3   
+
+
+/uou/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uou    |          |   ¦   |      
+ uoy    |          |1! ¦   |  1   
+ uOy    |          |2! ¦   |  2   
+ you    |    1!    |1  ¦   |  1   
+ yoy    |    1!    |2  ¦   |  2   
+ yOy    |    1!    |3  ¦   |  3   
+
+
+/uae/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uae    |          |   ¦   |      
+ uaE    |          |   ¦1! |  1   
+ uAe    |          |1! ¦   |  1   
+ uAE    |          |1! ¦1  |  2   
+ yae    |    1!    |1  ¦   |  1   
+ yaE    |    1!    |1  ¦1  |  2   
+ yAe    |    1!    |2  ¦   |  2   
+ yAE    |    1!    |2  ¦1  |  3   
+
+
+/uai/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uai    |          |   ¦   |      
+ uAi    |          |1! ¦   |  1   
+ yai    |    1!    |1  ¦   |  1   
+ yAi    |    1!    |2  ¦   |  2   
+ uaI 1! |          |   ¦1  |  1   
+ uAI 1! |          |1  ¦1  |  2   
+ yaI 1! |    1     |1  ¦1  |  2   
+ yAI 1! |    1     |2  ¦1  |  3   
+
+
+/uao/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uao    |          |   ¦   |      
+ uaO    |          |1! ¦   |  1   
+ uAO    |          |2! ¦   |  2   
+ yao    |    1!    |1  ¦   |  1   
+ yaO    |    1!    |2  ¦   |  2   
+ yAO    |    1!    |3  ¦   |  3   
+
+
+/uaa/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uaa    |          |   ¦   |      
+ uaA    |          |1! ¦   |  1   
+ uAA    |          |2! ¦   |  2   
+ yaa    |    1!    |1  ¦   |  1   
+ yaA    |    1!    |2  ¦   |  2   
+ yAA    |    1!    |3  ¦   |  3   
+
+
+/uau/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uau    |          |   ¦   |      
+ uay    |          |1! ¦   |  1   
+ uAy    |          |2! ¦   |  2   
+ yau    |    1!    |1  ¦   |  1   
+ yay    |    1!    |2  ¦   |  2   
+ yAy    |    1!    |3  ¦   |  3   
+
+
+/uue/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uue    |          |   ¦   |      
+ uuE    |          |   ¦1! |  1   
+ uye    |          |1! ¦   |  1   
+ uyE    |          |1! ¦1  |  2   
+ yue    |    1!    |1  ¦   |  1   
+ yuE    |    1!    |1  ¦1  |  2   
+ yye    |    1!    |2  ¦   |  2   
+ yyE    |    1!    |2  ¦1  |  3   
+
+
+/uui/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uui    |          |   ¦   |      
+ uyi    |          |1! ¦   |  1   
+ yui    |    1!    |1  ¦   |  1   
+ yyi    |    1!    |2  ¦   |  2   
+ uuI 1! |          |   ¦1  |  1   
+ uyI 1! |          |1  ¦1  |  2   
+ yuI 1! |    1     |1  ¦1  |  2   
+ yyI 1! |    1     |2  ¦1  |  3   
+
+
+/uuo/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uuo    |          |   ¦   |      
+ uuO    |          |1! ¦   |  1   
+ uyO    |          |2! ¦   |  2   
+ yuo    |    1!    |1  ¦   |  1   
+ yuO    |    1!    |2  ¦   |  2   
+ yyO    |    1!    |3  ¦   |  3   
+
+
+/uua/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uua    |          |   ¦   |      
+ uuA    |          |1! ¦   |  1   
+ uyA    |          |2! ¦   |  2   
+ yua    |    1!    |1  ¦   |  1   
+ yuA    |    1!    |2  ¦   |  2   
+ yyA    |    1!    |3  ¦   |  3   
+
+
+/uuu/: 
+     *B1|Id(Bk)Syl1|*F3¦*B2|Id(Bk)
+>uuu    |          |   ¦   |      
+ uuy    |          |1! ¦   |  1   
+ uyy    |          |2! ¦   |  2   
+ yuu    |    1!    |1  ¦   |  1   
+ yuy    |    1!    |2  ¦   |  2   
+ yyy    |    1!    |3  ¦   |  3   
+
+
+3. Status of Proposed Constraints:  Necessary or Unnecessary
+
+   Id(Bk)Syl1  Not necessary
+   Id(Bk)      Not necessary
+   *F3         Not necessary
+   *B1         Not necessary
+   *B2         Not necessary
+
+
+A check has determined that, although the grammar will still work with the
+removal of ANY ONE of the constraints marked above as unnecessary, the
+grammar will NOT work if they are removed en masse.
+

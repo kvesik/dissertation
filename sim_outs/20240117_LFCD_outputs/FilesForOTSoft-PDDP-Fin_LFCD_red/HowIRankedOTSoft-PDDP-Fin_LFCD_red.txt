@@ -1,0 +1,62 @@
+******Application of Low Faithfulness Constraint Demotion******
+
+Input file:  C:\Users\kvesik\Documents\School\dialect-learning\OTSoft2.6old\run stuff dir\OTSoft-PDDP-Fin_LFCD_red.txt
+
+
+******Now doing Stratum #1******
+
+Avoid Preference For Losers:
+  Search found no unranked constraints that prefer losers.
+
+Favor Markedness:
+  *B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F3..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F3 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F3 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (newly ranked):    *B2
+                               *F3_B5
+                               *F3..._B5
+                               *_B5F3
+                               *_B5...F3
+
+  Markedness constraints still unranked:
+    (none)
+  Faithfulness constraints still unranked:
+    Id(Bk)Syl1
+    Id(Bk)
+
+******Now doing Stratum #2******
+
+Avoid Preference For Losers:
+  Search found no unranked constraints that prefer losers.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Only remaining rankable constraints are inactive Faithfulness constraints.  
+  All of them join the current stratum:
+    Id(Bk)Syl1
+    Id(Bk)
+
+Results so far:
+
+  Stratum 1 (already ranked):  *B2
+                               *F3_B5
+                               *F3..._B5
+                               *_B5F3
+                               *_B5...F3
+  Stratum 2 (newly ranked):    Id(Bk)Syl1
+                               Id(Bk)
+
+  Markedness constraints still unranked:
+    (none)
+  Faithfulness constraints still unranked:
+    (none)
+
+Ranking is complete and yields successful grammar.

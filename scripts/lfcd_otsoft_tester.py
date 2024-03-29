@@ -327,7 +327,7 @@ def main(relfilepath=None):
     endofcustomizationstring = grammarfilename.index("DraftOutput")
     customizationstring = grammarfilename[begofcustomizationstring:endofcustomizationstring]
 
-    testfileparentparentdir = os.path.join("..", "sim_ins", "20240301 all inputs with IdFt1")  # "20240221 SSeto inputs without any first-syl transparency")  # "20240216 SSeto inputs without first-syl e-transparency")  # "20240117 onward - OTSoft inputs (max len 3)")  # "20240216 SSeto inputs without first-syl e-transparency")
+    testfileparentparentdir = os.path.join("..", "sim_ins", "20240117 on - OTSoft inputs")  # "20240301 all inputs with IdFt1")  # "20240221 SSeto inputs without any first-syl transparency")  # "20240216 SSeto inputs without first-syl e-transparency")  # "20240117 onward - OTSoft inputs (max len 3)")  # "20240216 SSeto inputs without first-syl e-transparency")
     testtableauxfilepath = ""
     testfileparentdirs = [os.path.join(testfileparentparentdir, fn) for fn in os.listdir(testfileparentparentdir) if fn.endswith(("forOTS_" + customizationstring + "_test").replace("__", "_"))]
     for tfpdir in [fn for fn in testfileparentdirs if os.path.isdir(fn)]:
@@ -421,14 +421,21 @@ def getmatchtype(inputfrequencies, outputfrequencies):
 if __name__ == "__main__":
     filesdone = []
     firstfolder = "../sim_outs/20240117_LFCD_outputs"
-    folderswithLFCDfiles = [fn for fn in os.listdir(firstfolder) if "FilesForOTSoft" in fn and "LFCD" in fn]  #  and "nos1tr" in fn]
+    folderswithLFCDfiles = [fn for fn in os.listdir(firstfolder) if "FilesForOTSoft" in fn and "LFCD" in fn and fn.endswith("_itra")]  #  and "nos1tr" in fn]
     for secondfolder in folderswithLFCDfiles:
-        DraftOutputfiles = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if fn.endswith("DraftOutput_strata.txt")]
-        for DOfile in DraftOutputfiles:
-            if True:  # "Fin" in DOfile or "NSeto" in DOfile or "SSeto" in DOfile:  # True
-                filesdone.append(secondfolder)
-                print("testing grammar in " + secondfolder)
-                main(os.path.join(firstfolder, secondfolder, DOfile))
+        DraftOutputfiles = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if fn.endswith("DraftOutput.txt")]
+        DraftOutputfiles_cleaned = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if fn.endswith("DraftOutput_strata.txt")]
+        if DraftOutputfiles:
+            draftpath = os.path.join(firstfolder, secondfolder, DraftOutputfiles[0])
+        elif DraftOutputfiles_cleaned:
+            draftpath = os.path.join(firstfolder, secondfolder, DraftOutputfiles_cleaned[0].replace("Output_strata.txt", "Output.txt"))
+        else:
+            print("can't find strata in", secondfolder, " - skipping to next folder")
+            continue
+        if True:  # "Fin" in DOfile or "NSeto" in DOfile or "SSeto" in DOfile:  # True
+            filesdone.append(secondfolder)
+            print("testing grammar in " + secondfolder)
+            main(draftpath)
 
     # main("OTSoft2.6old - use this loc as of 20230413 - prev files in Program Files/R03 - FilesForOTSoft_Fin_GLA_PDDP_nodia/OTSoft_Fin_GLA_PDDP_nodiaFullHistory.xls")
 

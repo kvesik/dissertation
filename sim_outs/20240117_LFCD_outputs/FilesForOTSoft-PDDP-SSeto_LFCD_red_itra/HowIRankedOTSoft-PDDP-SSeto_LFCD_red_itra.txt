@@ -1,0 +1,200 @@
+******Application of Low Faithfulness Constraint Demotion******
+
+Input file:  C:\Users\kvesik\Documents\School\dialect-learning\OTSoft2.6old\run stuff dir\OTSoft-PDDP-SSeto_LFCD_red_itra.txt
+
+
+******Now doing Stratum #1******
+
+Avoid Preference For Losers:
+  *F1 is excluded from stratum; prefers loser *[oA] for /OA/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B1 is excluded from stratum; prefers loser *[ii] for /Ii/.
+  *F3..._B2 is excluded from stratum; prefers loser *[Ooe] for /OoE/.
+
+Favor Markedness:
+  *F3_B2 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5F4 is a Markedness constraint that favors no losers, joins new stratum.
+  *_B5...F4 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (newly ranked):    *F3_B2
+                               *_B5F4
+                               *_B5...F4
+
+  Markedness constraints still unranked:
+    *F1
+    *B1
+    *F4_B5
+    *F4..._B5
+    *F3..._B2
+  Faithfulness constraints still unranked:
+    Id(Bk)Syl1
+    Id(Bk)
+
+******Now doing Stratum #2******
+
+Avoid Preference For Losers:
+  *F1 is excluded from stratum; prefers loser *[oa] for /OA/.
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *B1 is excluded from stratum; prefers loser *[ii] for /Ii/.
+  *F3..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk)Syl1 is shown to be active by ruling out *[oa] for /OA/.
+  Id(Bk) is shown to be active by ruling out *[oa] for /OA/.
+  All unranked Faithfulness constraints are active.
+
+Favor Specificity:
+  Id(Bk) is excluded from stratum because Id(Bk)Syl1 is more specific.
+
+Favor Autonomy:
+  Id(Bk)Syl1 is assigned 0 helpers, based on /OA/ -/-> *[oa].
+
+  Lowest number of helpers:   0 
+  Constraint Id(Bk)Syl1 joins the current stratum, having 0 helpers.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F3_B2
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (newly ranked):    Id(Bk)Syl1
+
+  Markedness constraints still unranked:
+    *F1
+    *B1
+    *F4_B5
+    *F4..._B5
+    *F3..._B2
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #3******
+
+Avoid Preference For Losers:
+  *F4_B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F4..._B5 is excluded from stratum; prefers loser *[OO] for /Oo/.
+  *F3..._B2 is excluded from stratum; prefers loser *[OOe] for /OoE/.
+
+Favor Markedness:
+  *F1 is a Markedness constraint that favors no losers, joins new stratum.
+  *B1 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F3_B2
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  Id(Bk)Syl1
+  Stratum 3 (newly ranked):    *F1
+                               *B1
+
+  Markedness constraints still unranked:
+    *F4_B5
+    *F4..._B5
+    *F3..._B2
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #4******
+
+Avoid Preference For Losers:
+  *F4_B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+
+Favor Markedness:
+  *F3..._B2 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F3_B2
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  Id(Bk)Syl1
+  Stratum 3 (already ranked):  *F1
+                               *B1
+  Stratum 4 (newly ranked):    *F3..._B2
+
+  Markedness constraints still unranked:
+    *F4_B5
+    *F4..._B5
+  Faithfulness constraints still unranked:
+    Id(Bk)
+
+******Now doing Stratum #5******
+
+Avoid Preference For Losers:
+  *F4_B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+  *F4..._B5 is excluded from stratum; prefers loser *[ee] for /eE/.
+
+Favor Markedness:
+  There are no rankable Markedness constraints.
+
+Favor Activeness:
+  Id(Bk) is shown to be active by ruling out *[ee] for /eE/.
+  Id(Bk)Syl1 is excluded from stratum because it is inactive.
+
+Favor Specificity:
+  (no cases found)
+
+Favor Autonomy:
+  Id(Bk) is assigned 0 helpers, based on /eE/ -/-> *[ee].
+
+  Lowest number of helpers:   0 
+  Constraint Id(Bk) joins the current stratum, having 0 helpers.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F3_B2
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  Id(Bk)Syl1
+  Stratum 3 (already ranked):  *F1
+                               *B1
+  Stratum 4 (already ranked):  *F3..._B2
+  Stratum 5 (newly ranked):    Id(Bk)
+
+  Markedness constraints still unranked:
+    *F4_B5
+    *F4..._B5
+  Faithfulness constraints still unranked:
+    (none)
+
+******Now doing Stratum #6******
+
+Avoid Preference For Losers:
+  Search found no unranked constraints that prefer losers.
+
+Favor Markedness:
+  *F4_B5 is a Markedness constraint that favors no losers, joins new stratum.
+  *F4..._B5 is a Markedness constraint that favors no losers, joins new stratum.
+  Faithfulness constraints are excluded from stratum.
+
+Results so far:
+
+  Stratum 1 (already ranked):  *F3_B2
+                               *_B5F4
+                               *_B5...F4
+  Stratum 2 (already ranked):  Id(Bk)Syl1
+  Stratum 3 (already ranked):  *F1
+                               *B1
+  Stratum 4 (already ranked):  *F3..._B2
+  Stratum 5 (already ranked):  Id(Bk)
+  Stratum 6 (newly ranked):    *F4_B5
+                               *F4..._B5
+
+  Markedness constraints still unranked:
+    (none)
+  Faithfulness constraints still unranked:
+    (none)
+
+Ranking is complete and yields successful grammar.

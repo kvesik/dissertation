@@ -20,6 +20,7 @@ MAGRI = True
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
+    #   4 if update rule mentioned in Magri & Kager 2015: 1 / (1 + numpromotions)
 MAGRITYPE = 3
 SPECGENBIAS = 0  # 20  # 20 is OTSoft default; -1 means don't bother; 0 means spec must be >= gen
 EXPANDINGBIAS = True
@@ -64,7 +65,8 @@ class Learner:
     #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
     #   2 if 1 / numpromotions
     #   3 if numdemotions / (numdemotions + numpromotions)
-    def __init__(self, srcfilepath, destdir, expnum, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False):
+    #   4 if update rule mentioned in Magri & Kager 2015: 1 / (1 + numpromotions)
+    def __init__(self, srcfilepath, destdir, expnum, magri=True, demoteunlyundominatedlosers=False, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -77,6 +79,7 @@ class Learner:
         #     afterlastslash = self.file.rfind("/") + 1
         #     self.historyfile = self.historyfile[0:afterlastslash] + expnum + " - " + self.historyfile[afterlastslash:]
         #     self.resultsfile = self.resultsfile[0:afterlastslash] + expnum + " - " + self.resultsfile[afterlastslash:]
+        self.demoteunlyundominatedlosers = demoteunlyundominatedlosers
         self.magri = magri
         self.magritype = magritype
         self.constraints = []
@@ -273,8 +276,12 @@ class Learner:
 
         # demotion amount as usual
         # promotion amount = (# constraints demoted)/(1 + # constraints promoted)
-        numpromoted = 0
-        numdemoted = 0
+        # TODO supplanted by lines below, 'erc = {}' to '# else erc[c] == "e" and we don't need to do anything'
+        # numwinnerpreferrers = 0
+        # numloserpreferrers = 0
+
+        erc = {}
+        maxwinnerpreferringweight = 0
         for c in self.constraints:
             w = winner_df[c].values[0]
             o = optimal_df[c].values[0]
@@ -284,11 +291,47 @@ class Learner:
                 w -= overlap
                 o -= overlap
             if w > 0:
-                numdemoted += 1  # for Magri update
-                adjustments[c] = -1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+                erc[c] = "L"  # in this ERC, this is a loser-preferring constraint
             elif o > 0:
-                numpromoted += 1  # for Magri update
+                erc[c] = "W"  # in this ERC, this is a winner-preferring constraint
+                maxwinnerpreferringweight = max(maxwinnerpreferringweight, self.weights[c])
+            else:
+                erc[c] = "e"  # in this ERC, this constraint prefers neither winner nor loser
+        numloserpreferrers = (list(erc.values())).count("L")
+        numwinnerpreferrers = (list(erc.values())).count("W")
+        undominatedloserpreferrers = [con for (con, pref) in erc.items() if pref == "L" and self.weights[con] >= maxwinnerpreferringweight]
+
+        for c in self.constraints:
+            if erc[c] == "L":
+                if not self.demoteunlyundominatedlosers:
+                    adjustments[c] = -1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+                elif c in undominatedloserpreferrers:
+                    adjustments[c] = -1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+                else:
+                    # no undominated, but I want to see it visually marked in the output, so
+                    adjustments[c] = 0
+            elif erc[c] == "W":
                 adjustments[c] = 1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+            # else erc[c] == "e" and we don't need to do anything
+
+        # TODO supplanted by lines above, 'erc = {}' to '# else erc[c] == "e" and we don't need to do anything'
+        # for c in self.constraints:
+        #     w = winner_df[c].values[0]
+        #     o = optimal_df[c].values[0]
+        #     if w > 0 and o > 0:
+        #         # cancel out violations - just look at relative difference
+        #         overlap = min([w, o])
+        #         w -= overlap
+        #         o -= overlap
+        #     if w > 0:
+        #         numloserpreferrers += 1  # for Magri update
+        #         if self.isLundominated():
+        #             adjustments[c] = -1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+        #     elif o > 0:
+        #         numwinnerpreferrers += 1  # for Magri update
+        #         adjustments[c] = 1 * (cur_R_F if (c.startswith("Id") or c.startswith("Max")) else cur_R_M)
+
+
         # if we're doing "prefer specificity," make sure that if a specific faithfulness constraint is getting promoted,
         # its general counterpart stays where it is
         if self.preferspecificity:
@@ -297,21 +340,24 @@ class Learner:
                     specadjustment = adjustments[speccon]
                     adjustments[gencon] = 0
                     if specadjustment > 0:
-                        numpromoted -= 1
+                        numwinnerpreferrers -= 1
                     elif specadjustment < 0:
-                        numdemoted -= 1
+                        numloserpreferrers -= 1
         if self.magri:
             # magritype =
             #   1 if original update rule from Magri 2012: numdemotions / (1 + numpromotions)
             #   2 if 1 / numpromotions
             #   3 if numdemotions / (numdemotions + numpromotions)
+            #   4 if update rule mentioned in Magri & Kager 2015: 1 / (1 + numpromotions)
             if self.magritype == 1:
-                promotion_ratio = numdemoted / (1 + numpromoted)
+                promotion_ratio = numloserpreferrers / (1 + numwinnerpreferrers)
             elif self.magritype == 2:
-                promotion_ratio = 1 / numpromoted
+                promotion_ratio = 1 / numwinnerpreferrers
             elif self.magritype == 3:
-                promotion_ratio = numdemoted / (numdemoted + numpromoted)
-            if numdemoted == 0:
+                promotion_ratio = numloserpreferrers / (numloserpreferrers + numwinnerpreferrers)
+            elif self.magritype == 4:
+                promotion_ratio = 1 / (1 + numwinnerpreferrers)
+            if numloserpreferrers == 0:
                 pass
                 # print(winner_df)
                 # print(optimal_df)
@@ -598,7 +644,10 @@ def main(prefix="", argstuple=None):
     files_exps = [
         # ('OTSoft-PDDP-NEst_GLA.txt', 'NE153'),
         # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi183'),
-        ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi994'),
+        # ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi994'),
+        # ('OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn.txt', 'NE994'),
+        ('OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn.txt', 'NE883'),
+        ('OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn.txt', 'Fi883'),
         # ('OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn.txt', 'NE993'),
         # ('OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn.txt', 'NS993'),
         # ('OTSoft-PDDP-SSeto_GLA_wdel-gen-ne_ixn.txt', 'SS993')
@@ -692,28 +741,30 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         # rf.write("time elapsed: " + str(endtime-starttime))
 
 
-def feb2024combinations():
-    for magri in [False, True]:
-        for magritype in [1, 3] if magri else [0]:  # [1, 2, 3]
-            for gravity in [True]:  # , False]:
-                for gravityconst in [2] if gravity else [0]:
-                    for preferspecificity in [False]:  # , True]:
-                        for specgenbias in [20]:  # -1, 0, 20, 30]:
-                            for expandingbias in [False]:  # , True] if specgenbias >= 0 else [False]:
-                                for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
-                                    abbrevstr = "NT"  # "NIT_"
-                                    abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
-                                    abbrevstr += "gr_" if gravity else ""
-                                    abbrevstr += "fs_" if preferspecificity else ""
-                                    if specgenbias >= 0:
-                                        abbrevstr += "sg" + str(specgenbias) + "_"
-                                        if expandingbias:
-                                            abbrevstr += "ex" + ("-s" if expandingslowly else "-r") + "_"
-                                    print(abbrevstr)
-                                    # fs_sg20_ex - r
-                                    main(prefix=abbrevstr, argstuple=(magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly))
+def apr2024combinations():
+    for demoteonlyundominatedlosers in [False, True]:
+        for magri in [False, True]:
+            for magritype in [1, 2, 3, 4] if magri else [0]:  # [1, 2, 3]
+                for gravity in [False]:  # [True]:  # , False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [False]:  # , True]:
+                            for specgenbias in [20, 30]:  # -1, 0, 20, 30]:
+                                for expandingbias in [False]:  # , True] if specgenbias >= 0 else [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
+                                        abbrevstr = "NT_"  # "NIT_"
+                                        abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
+                                        abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                        abbrevstr += "gr_" if gravity else ""
+                                        abbrevstr += "fs_" if preferspecificity else ""
+                                        if specgenbias >= 0:
+                                            abbrevstr += "sg" + str(specgenbias) + "_"
+                                            if expandingbias:
+                                                abbrevstr += "ex" + ("-s" if expandingslowly else "-r") + "_"
+                                        print(abbrevstr)
+                                        # fs_sg20_ex - r
+                                        main(prefix=abbrevstr, argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly))
 
 
 if __name__ == "__main__":
     # main()
-    feb2024combinations()
+    apr2024combinations()

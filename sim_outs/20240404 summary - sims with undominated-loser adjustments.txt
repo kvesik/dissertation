@@ -1,0 +1,53 @@
+basic constraint set (no deletion); magri types 0,1,2,3,4 x sg 20,30
+
+Finnish
+NT_UnL_mg4_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA	possibly good
+NT_UnL_mg4_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA	possibly good
+NT_UnL_mg3_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA	both ident at top
+NT_UnL_mg3_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA	both ident at top
+NT_UnL_mg2_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA	possibly good
+NT_UnL_mg2_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA	possibly good
+NT_UnL_mg1_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA	both ident at top
+NT_UnL_mg1_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA	both ident at top
+NT_UnL_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA	both ident at top
+NT_UnL_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA	both ident at top
+
+North Estonian
+NT_UnL_mg4_sg30_NE883_python_OTSoft-PDDP-NEst_GLA	spec ident at top
+NT_UnL_mg4_sg20_NE883_python_OTSoft-PDDP-NEst_GLA	spec ident at top
+NT_UnL_mg3_sg30_NE883_python_OTSoft-PDDP-NEst_GLA	both ident at top
+NT_UnL_mg3_sg20_NE883_python_OTSoft-PDDP-NEst_GLA	both ident at top
+NT_UnL_mg2_sg30_NE883_python_OTSoft-PDDP-NEst_GLA	spec ident at top
+NT_UnL_mg2_sg20_NE883_python_OTSoft-PDDP-NEst_GLA	spec ident at top
+NT_UnL_mg1_sg30_NE883_python_OTSoft-PDDP-NEst_GLA	both ident at top
+NT_UnL_mg1_sg20_NE883_python_OTSoft-PDDP-NEst_GLA	both ident at top
+NT_UnL_sg30_NE883_python_OTSoft-PDDP-NEst_GLA	spec ident at top
+NT_UnL_sg20_NE883_python_OTSoft-PDDP-NEst_GLA	both ident at top
+
+
+enlarged constraint set (deletion & nonempty); magri types 0,1,2,3,4 x sg 20,30
+
+Finnish
+NT_UnL_mg4_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	possibly good
+NT_UnL_mg4_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	*F4(...)B3 too high / spec ident too low?
+NT_UnL_mg3_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	possibly good
+NT_UnL_mg3_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	possibly good
+NT_UnL_mg2_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	possibly good
+NT_UnL_mg2_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	possibly good
+NT_UnL_mg1_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	both ident near top
+NT_UnL_mg1_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	both ident at top
+NT_UnL_sg20_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	*B5 too high
+NT_UnL_sg30_Fi883_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn	*B5 maybe too high
+
+North Estonian
+NT_UnL_mg4_sg20_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	*F3 too low
+NT_UnL_mg4_sg30_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	*F5, *B5 too high
+NT_UnL_mg3_sg20_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	spec ident at top
+NT_UnL_mg3_sg30_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	spec ident at top
+NT_UnL_mg2_sg20_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	*F3 too low
+NT_UnL_mg2_sg30_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	spec ident at top
+NT_UnL_mg1_sg20_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	both ident at top
+NT_UnL_mg1_sg30_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	both ident at top
+NT_UnL_sg20_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	both ident at top
+NT_UnL_sg30_NE883_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn	*B1 way too low, *F3 too low
+

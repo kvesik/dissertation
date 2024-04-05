@@ -285,18 +285,25 @@ class Learner:
         for c in self.constraints:
             w = winner_df[c].values[0]
             o = optimal_df[c].values[0]
-            if w > 0 and o > 0:
-                # cancel out violations - just look at relative difference
-                overlap = min([w, o])
-                w -= overlap
-                o -= overlap
-            if w > 0:
+            if w > o:
                 erc[c] = "L"  # in this ERC, this is a loser-preferring constraint
-            elif o > 0:
+            elif o > w:
                 erc[c] = "W"  # in this ERC, this is a winner-preferring constraint
                 maxwinnerpreferringweight = max(maxwinnerpreferringweight, self.weights[c])
             else:
                 erc[c] = "e"  # in this ERC, this constraint prefers neither winner nor loser
+            # if w > 0 and o > 0:
+            #     # cancel out violations - just look at relative difference
+            #     overlap = min([w, o])
+            #     w -= overlap
+            #     o -= overlap
+            # if w > 0:
+            #     erc[c] = "L"  # in this ERC, this is a loser-preferring constraint
+            # elif o > 0:
+            #     erc[c] = "W"  # in this ERC, this is a winner-preferring constraint
+            #     maxwinnerpreferringweight = max(maxwinnerpreferringweight, self.weights[c])
+            # else:
+            #     erc[c] = "e"  # in this ERC, this constraint prefers neither winner nor loser
         numloserpreferrers = (list(erc.values())).count("L")
         numwinnerpreferrers = (list(erc.values())).count("W")
         undominatedloserpreferrers = [con for (con, pref) in erc.items() if pref == "L" and self.weights[con] >= maxwinnerpreferringweight]
@@ -445,16 +452,113 @@ class Learner:
                 datum = candidates[idx]
             idx += 1
 
-        # generate the optimal candidate based on current constraint weights (ranking), with or without noise
-        evalweights = self.getevalweights(cur_noise_F, cur_noise_M)
-        optimal_cand = evaluate_one(tableau_df, evalweights)
+        usemethod1 = True
+        if usemethod1:
+            # Method 1 for selecting the loser of interest: current hypothesized grammar's optimal output
+            #
+            # generate the optimal candidate based on current constraint weights (ranking), with or without noise
+            evalweights = self.getevalweights(cur_noise_F, cur_noise_M)
+            optimal_cand = evaluate_one(tableau_df, evalweights)
+            #
+            # if the optimal candidate matches the intended winner, do nothing
+            #
+            # if the optimal candidate does not match the intended winner, update the weights
+            if datum != optimal_cand:
+                self.errorcounter += 1
+                self.updateweights(tableau_df, datum, optimal_cand, cur_R_F, cur_R_M, learningtrial_num, historystream)
+            #
+            # end of Method 1.
+        else:
+            # Method 2 for selecting the loser of interest: Magri & Kager 2015 strategy using ERCs
+            #
+            # the row of the tableau where the candidate (ie, the value in the ur column) is the winner
+            winnerviolationprofile_df = tableau_df[tableau_df[ur] == datum]
+            erc_df = tableau_df.copy(deep=True)
+            erc_df.drop(erc_df.index[(erc_df[ur] == ur)], axis=0, inplace=True)  # don't need the winner row for a table of ERCs
+            candidate_contenders = [cand for cand in tableau_df[ur].values]  # may not be necessary to know their names... except maybe to compare to intended winner(s)?
+            for candidate in candidate_contenders:
+                # the row of the tableau where the candidate (ie, the value in the ur column) is the one we're focused on in this iteration
+                candidateviolationprofile_df = tableau_df[tableau_df[ur] == candidate]
+                for con in self.constraints:
+                    preference_string = "e"
+                    if candidateviolationprofile_df[con] > winnerviolationprofile_df[con]:
+                        preference_string = "W"
+                    elif candidateviolationprofile_df[con] < winnerviolationprofile_df[con]:
+                        preference_string = "L"
+                    # else if they're equal:
+                        # then leave preference_string = "e"
+                    erc_df.loc[erc_df[ur] == candidate, con] = preference_string
+            # now the table of ERCs should be correctly loaded with W/L/e entries for each potential-loser's row
+            #
+            # check for, and remove, superset rows
+            numrowseliminated = self.removesupersets(erc_df)
+            # TODO split multi-L ERCs into multiple single-L ERCs
+            self.splitERCswithmultipleLs(erc_df)
+            # TODO find n, the least number of Ws in a row
+            fewestW = self.findfewestWs(erc_df)
+            # TODO choose a row randomly from all of those with n Ws
+            selectedloser = self.chooserandomrow(erc_df, fewestW)
+            # TODO make updates based on that row
+            #
+            # end of Method 2.
 
-        # if the optimal candidate matches the intended winner, do nothing
+    def splitERCswithmultipleLs(self, erc_df):
+        ur = erc_df.columns[0]
+        numrows = erc_df.shape[0]
+        rowstoremove = []
 
-        # if the optimal candidate does not match the intended winner, update the weights
-        if datum != optimal_cand:
-            self.errorcounter += 1
-            self.updateweights(tableau_df, datum, optimal_cand, cur_R_F, cur_R_M, learningtrial_num, historystream)
+        for row_idx in range(numrows):
+            cons_with_Ls = []
+            for con in self.constraints:
+                if erc_df[row_idx, con] == "L":
+                    cons_with_Ls.append(con)
+
+            if len(cons_with_Ls) > 1:
+                rowstoremove.append(row_idx)
+
+                for counter, con in enumerate(cons_with_Ls):
+
+                    suffixedloser = erc_df[ur].values[row_idx] + str(counter)
+                    erc_df.loc[len(erc_df.index)] = [suffixedloser, 89, 93]
+                # split into multiple lines, each with only one L (and candidate name suffixed with counter)
+                # remove the line with multiple Ls
+
+
+        # potential_losers = [cand for cand in erc_df[ur].values]
+        # for loser in potential_losers:
+        #     loserERC_df = erc_df[erc_df[ur] == loser]
+
+
+
+    def removesupersets(self, erc_df):
+        numrows = erc_df.shape[0]
+        rowstoeliminate = []
+
+        for i in range(numrows):
+            for j in range(numrows):
+                if i != j and i not in rowstoeliminate and j not in rowstoeliminate:  # so we don't make unecessary comparisons
+                    superrow = []
+                    for con in self.constraints:
+                        if erc_df[i, con] == erc_df[j, con]:
+                            superrow.append("equal")
+                        elif erc_df[i, con] == "e" and erc_df[j, con] in ["W", "L"]:
+                            superrow.append("j")
+                        elif erc_df[j, con] == "e" and erc_df[i, con] in ["W", "L"]:
+                            superrow.append("i")
+                        else:  # one is "W" and the other is "L"
+                            superrow.append("conflict")
+                    if [result for result in superrow if result in ["equal", "i"]] == superrow:
+                        # comparison list only contains "equal" and "i" results; this means "i" is a superset of "j"
+                        rowstoeliminate.append(i)
+                    elif [result for result in superrow if result in ["equal", "j"]] == superrow:
+                        # comparison list only contains "equal" and "j" results; this means "j" is a superset of "i"
+                        rowstoeliminate.append(j)
+                    # else the comparison list contains conflicts,
+                    # either at a single constraint (ie a "conflict" entry),
+                    # or across constraints (ie "j" in one spot and "i" somewhere else):
+                        # neither row can be eliminated
+        erc_df.drop(rowstoeliminate, axis=0, inplace=True)
+        return len(rowstoeliminate)
 
     def testgrammar(self, numtimes):
         forms = {}  # ur --> dict of [ candidate --> frequency ]
@@ -552,7 +656,6 @@ def get_tableau(ur, tableau, constraints):
 def evaluate_one(tableau_df, evalweights):
 
     ur = tableau_df.columns[0]
-    winner = ""
     candidate_contenders = [cand for cand in tableau_df[ur].values]
 
     wts = list(evalweights.items())  # make it a list of key-value pairs (tuples)

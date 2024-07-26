@@ -1235,8 +1235,8 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
     length1words = makeinputstrings([allsegments], ucla=uclayes_otsoftno)
     length2words = makeinputstrings([allsegments, allsegments], ucla=uclayes_otsoftno)
     length3words = makeinputstrings([allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
-    length4words = makeinputstrings([allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
-    length5words = makeinputstrings([allsegments, allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
+    length4words = []  # makeinputstrings([allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
+    length5words = []  # makeinputstrings([allsegments, allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
     # somelongerwords = ["iieB", "iiFõ", "iiiBe", "iiiiõF", "iiiiõ"]
 
     if not uclayes_otsoftno:  # OTSoft
@@ -1251,9 +1251,9 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
         if TRANSPin:
             customizations += "_wtr" + (("-grp" + ("-int" if GRPINTin else "-tf")) if FTGRPin else "-ind")
         customizations += "_ixn" if IXNin else ""
-        customizations += "_itra" if ITRANSPin else ""
+        customizations += "" if ITRANSPin else "_nointra"
         customizations += "_test" if TESTin else ""
-        foldername = datetime.now().strftime('%Y%m%d') + '_forOTS'  # '-OTSoft-files'  # .%H%M%S
+        foldername = datetime.now().strftime('%Y%m%d') + '_OTS'  # '-OTSoft-files'  # .%H%M%S
         os.mkdir(foldername+customizations)
         for langname in langnames:  #  [SSeto]:  # langnames:
             tableaux_generator = OTSoftTableauxGenerator(langname, special=SPECIALin, bfocus=True, withdeletions=DELin,
@@ -1280,37 +1280,27 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
 if __name__ == "__main__":
     ft = [False, True]
 
-    # generate inputs for all languages, under all combinations of arguments as of 20231005
+    # generate inputs for all languages, under all combinations of arguments as of 20240507
     if True:
         counter = 1
         for DEL in ft:
-            deletebyfeature = [False]
-            includenonemptyMconstraint = [False]
-            if DEL:
-                deletebyfeature += [True]
-                includenonemptyMconstraint += [True]
+            deletebyfeature = [False, True] if DEL else [False]
+            includenonemptyMconstraint = [False, True] if DEL else [False]
             for DELFT in deletebyfeature:
                 for NONEMPTY in includenonemptyMconstraint:
-                    for TRANSP in [False]:  # ft:
-                        groupfeaturesoptions = [False]
-                        if TRANSP:
-                            groupfeaturesoptions += [True]
+                    for TRANSP in ft:
+                        groupfeaturesoptions = [False, True] if TRANSP else [False]
                         for FTGRP in groupfeaturesoptions:
-                            countgroupasintoptions = [False]
-                            if FTGRP:
-                                countgroupasintoptions += [True]
+                            countgroupasintoptions = [False, True] if FTGRP else [False]
                             for GRPINT in countgroupasintoptions:
-                                interactionoptions = [False]
-                                if DEL or TRANSP:
-                                    interactionoptions = [True]  # += [True]
+                                interactionoptions = [True] if (DEL or TRANSP) else [False]
                                 for IXN in interactionoptions:
                                     for IDFT in [False]:  # ft:
                                         for TEST in ft:
                                             for ITRANSP in ft:
-                                                for REDUCED in [True]:  # ft:
+                                                for REDUCED in ft:
                                                     print("iteration", counter)
                                                     counter += 1
-                                                    # if TRANSP and FTGRP: ###############################
                                                     main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST, ITRANSPin=ITRANSP, REDUCEDin=REDUCED)
 
     elif False:

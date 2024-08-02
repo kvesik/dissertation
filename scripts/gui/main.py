@@ -10,8 +10,10 @@ from PyQt5.QtWidgets import (
     QApplication,
     QGroupBox,
     QCheckBox,
-    QSizePolicy,
-    QSpacerItem
+    QSpacerItem,
+    QButtonGroup,
+    QRadioButton,
+    QFrame
 )
 
 from PyQt5.QtCore import (
@@ -28,24 +30,31 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(QSize(480, 80))  # Set sizes
         self.setWindowTitle("Learning parameter combinations for Balto-Finnic vowel patterns")
         central_widget = QWidget(self)  # Create a central widget
-        mainlayout = QHBoxLayout()
+        mainlayout = QVBoxLayout()
         
-        Fspecificitywidget = self.create_Fspecificity_widget()
-        mainlayout.addWidget(Fspecificitywidget)
+        self.Fspecificitywidget = self.create_Fspecificity_widget()
+        mainlayout.addWidget(self.Fspecificitywidget)
         
-        # magriwidget = self.create_magri_widget()
-        #
-        # expandingbiaswidget = self.create_expandingbias_widget()
-        #
-        # noisewidget = self.create_noise_widget()
-        #
-        # plasticitywidget = self.create_plasticity_widget()
-        #
-        # undominatedloserswidget = self.create_undominatedlosers_widget()
-        #
-        # gravitywidget = self.create_gravity_widget()
-        #
-        # Mgeneralitywidget = self.create_Mgen_widget()
+        self.magriwidget = self.create_magri_widget()
+        mainlayout.addWidget(self.magriwidget)
+
+        self.expandingbiaswidget = self.create_expandingbias_widget()
+        mainlayout.addWidget(self.expandingbiaswidget)
+
+        self.noisewidget = self.create_noise_widget()
+        mainlayout.addWidget(self.noisewidget)
+
+        self.plasticitywidget = self.create_plasticity_widget()
+        mainlayout.addWidget(self.plasticitywidget)
+
+        self.undominatedloserswidget = self.create_undominatedlosers_widget()
+        mainlayout.addWidget(self.undominatedloserswidget)
+
+        self.gravitywidget = self.create_gravity_widget()
+        mainlayout.addWidget(self.gravitywidget)
+
+        self.Mgeneralitywidget = self.create_Mgen_widget()
+        mainlayout.addWidget(self.Mgeneralitywidget)
 
         # selectionlayout = QVBoxLayout()
         #
@@ -93,36 +102,76 @@ class MainWindow(QMainWindow):
     def create_Fspecificity_widget(self):
         Fspecificitywidget = QGroupBox("Specific over general faithfulness")
 
-        apriori_label = QLabel("Minimum a priori distance between specific and general faith")
+        self.apriori_cb = QCheckBox("Use a priori ranking of specific over general faithfulness")
+        self.apriori_label = QLabel("Minimum a priori distance between specific and general faith")
         aprioribiaslist = [0, 10, 20, 25, 30, 35, 40]
-        apriori_combobox = QComboBox()
-        apriori_combobox.addItems([str(bias) for bias in aprioribiaslist])
-        apriori_combobox.setEnabled(False)
-        apriori_cb = QCheckBox("Use a priori ranking of specific over general faithfulness")
-        apriori_cb.toggled.connect(apriori_combobox.setEnabled)
+        self.apriori_combobox = QComboBox()
+        self.apriori_combobox.addItems([str(bias) for bias in aprioribiaslist])
+        # self.apriori_combobox.setEnabled(False)
 
-        favourspecificity_cb = QCheckBox("Favour specificity by promoting only specific faith when both specific and general are eligible")
+        self.apriori_cb.toggled.connect(self.apriori_combobox.setEnabled)
+        self.apriori_combobox.currentIndexChanged.connect(lambda x: self.apriori_cb.setChecked(True))
+
+        self.favourspecificity_cb = QCheckBox("Favour specificity by promoting only specific faith when both specific and general are eligible")
 
         Fspec_layout = QVBoxLayout()
 
-        Fspec_layout.addWidget(apriori_cb)
+        Fspec_layout.addWidget(self.apriori_cb)
 
         apriori_layout = QHBoxLayout()
-        apriori_layout.addWidget(apriori_label)
-        apriori_layout.addWidget(apriori_combobox)
+        apriori_layout.addWidget(self.apriori_label)
+        apriori_layout.addWidget(self.apriori_combobox)
         Fspec_layout.addLayout(apriori_layout)
 
-        Fspec_layout.addSpacerItem(QSpacerItem(0, 20))
-        
-        Fspec_layout.addWidget(favourspecificity_cb)
+        horizontal_line = QFrame()
+        horizontal_line.setFrameShape(QFrame.HLine)
+        horizontal_line.setFrameShadow(QFrame.Sunken)
+        Fspec_layout.addWidget(horizontal_line)
+
+        Fspec_layout.addWidget(self.favourspecificity_cb)
 
         Fspecificitywidget.setLayout(Fspec_layout)
         return Fspecificitywidget
 
     def create_magri_widget(self):
-        magriwidget = QWidget()
-        # TODO implement
+        magriwidget = QGroupBox("Promotion fraction for update rule ('Magri update')")
+        magri_cb = QCheckBox("Use a non-unit promotion fraction")
+        magridef_label = QLabel("     (d = num demotions, p = num promotions)")
+
+        magri_btngrp = QButtonGroup()
+        magri1_rb = QRadioButton("Type 1: original 'calibrated' rules from Magri 2012: d / (1 + p)")
+        magri1_rb.setProperty('type', 1)
+        magri_btngrp.addButton(magri1_rb)
+        magri2_rb = QRadioButton("Type 2: 1 / p")
+        magri2_rb.setProperty('type', 2)
+        magri_btngrp.addButton(magri2_rb)
+        magri3_rb = QRadioButton("Type 3: d / (d + p)")
+        magri3_rb.setProperty('type', 3)
+        magri_btngrp.addButton(magri3_rb)
+        magri4_rb = QRadioButton("Type 4: from Magri & Kager 2015: 1 / (1 + p)")
+        magri4_rb.setProperty('type', 4)
+        magri_btngrp.addButton(magri4_rb)
+
+        magri_cb.toggled.connect(lambda checked: self.enableButtonGroup(magri_btngrp, checked))
+        magri_btngrp.buttonToggled.connect(lambda x, y: magri_cb.setChecked(True))
+
+        magri_layout = QVBoxLayout()
+
+        magri_layout.addWidget(magri_cb)
+        magri_layout.addWidget(magridef_label)
+
+        for rb in [magri1_rb, magri2_rb, magri3_rb, magri4_rb]:
+            rb_layout = QHBoxLayout()
+            rb_layout.addSpacerItem(QSpacerItem(20, 0))
+            rb_layout.addWidget(rb)
+            magri_layout.addLayout(rb_layout)
+
+        magriwidget.setLayout(magri_layout)
         return magriwidget
+
+    def enableButtonGroup(self, btngrp, enable):
+        for btn in btngrp.buttons():
+            btn.setEnabled(enable)
 
     def create_expandingbias_widget(self):
         expandingbiaswidget = QWidget()

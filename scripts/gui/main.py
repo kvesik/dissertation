@@ -20,6 +20,12 @@ from PyQt5.QtCore import (
     QSize
 )
 
+class HorizontalLine(QFrame):
+    def __init__(self):
+        super().__init__()
+        self.setFrameShape(QFrame.HLine)
+        self.setFrameShadow(QFrame.Sunken)
+
 
 class MainWindow(QMainWindow):
     # Override class constructor
@@ -27,77 +33,38 @@ class MainWindow(QMainWindow):
         # You must call the super class method
         super().__init__()
 
-        self.setMinimumSize(QSize(480, 80))  # Set sizes
+        # self.setMinimumSize(QSize(480, 80))
         self.setWindowTitle("Learning parameter combinations for Balto-Finnic vowel patterns")
-        central_widget = QWidget(self)  # Create a central widget
-        mainlayout = QVBoxLayout()
+        central_widget = QWidget(self)
+        mainlayout = QHBoxLayout()
+        mainlayout_L = QVBoxLayout()
+        mainlayout_R = QVBoxLayout()
         
         self.Fspecificitywidget = self.create_Fspecificity_widget()
-        mainlayout.addWidget(self.Fspecificitywidget)
+        mainlayout_L.addWidget(self.Fspecificitywidget)
         
         self.magriwidget = self.create_magri_widget()
-        mainlayout.addWidget(self.magriwidget)
-
-        self.expandingbiaswidget = self.create_expandingbias_widget()
-        mainlayout.addWidget(self.expandingbiaswidget)
+        mainlayout_L.addWidget(self.magriwidget)
 
         self.noisewidget = self.create_noise_widget()
-        mainlayout.addWidget(self.noisewidget)
+        mainlayout_L.addWidget(self.noisewidget)
 
         self.plasticitywidget = self.create_plasticity_widget()
-        mainlayout.addWidget(self.plasticitywidget)
+        mainlayout_R.addWidget(self.plasticitywidget)
 
         self.undominatedloserswidget = self.create_undominatedlosers_widget()
-        mainlayout.addWidget(self.undominatedloserswidget)
+        mainlayout_R.addWidget(self.undominatedloserswidget)
 
         self.gravitywidget = self.create_gravity_widget()
-        mainlayout.addWidget(self.gravitywidget)
+        mainlayout_R.addWidget(self.gravitywidget)
 
         self.Mgeneralitywidget = self.create_Mgen_widget()
-        mainlayout.addWidget(self.Mgeneralitywidget)
+        mainlayout_R.addWidget(self.Mgeneralitywidget)
 
-        # selectionlayout = QVBoxLayout()
-        #
-        # searchlayout = QHBoxLayout()
-        #
-        # searchlayout.addWidget(QLabel("Enter tree node", self))  # , 0, 0)
-        #
-        # self.combobox = TreeSearchComboBox(self)
-        # self.combobox.setModel(self.comboproxymodel)
-        # # self.combobox.insertItem(0, "")
-        # # self.combobox.insertSeparator(-1)
-        # self.combobox.setCurrentIndex(-1)
-        # self.combobox.adjustSize()
-        # self.combobox.setEditable(True)
-        # self.combobox.setInsertPolicy(QComboBox.NoInsert)
-        # self.combobox.setFocusPolicy(Qt.StrongFocus)
-        # self.combobox.setEnabled(True)
-        # self.combobox.completer().setCaseSensitivity(Qt.CaseInsensitive)
-        # self.combobox.completer().setFilterMode(Qt.MatchContains)
-        # self.combobox.completer().setCompletionMode(QCompleter.PopupCompletion)
-        # tct = TreeClickTracker(self)
-        # self.combobox.installEventFilter(tct)
-        # searchlayout.addWidget(self.combobox)
-        #
-        # selectionlayout.addLayout(searchlayout)
-        #
-        # self.pathslistview = MyListView()
-        # self.pathslistview.setSelectionMode(QAbstractItemView.MultiSelection)
-        # self.pathslistview.setModel(self.listproxymodel)
-        # self.pathslistview.setMinimumWidth(500)
-        # selectionlayout.addWidget(self.pathslistview)
-        #
-        # mainlayout.addLayout(selectionlayout)
-        #
-        # self.treedisplay = QTreeView()
-        # self.treedisplay.setHeaderHidden(True)
-        # self.treedisplay.setModel(self.treemodel)
-        # self.treedisplay.setMinimumWidth(500)
-        #
-        # mainlayout.addWidget(self.treedisplay)
-
+        mainlayout.addLayout(mainlayout_L)
+        mainlayout.addLayout(mainlayout_R)
         central_widget.setLayout(mainlayout)
-        self.setCentralWidget(central_widget)  # Install the central widget
+        self.setCentralWidget(central_widget)
 
     def create_Fspecificity_widget(self):
         Fspecificitywidget = QGroupBox("Specific over general faithfulness")
@@ -109,8 +76,23 @@ class MainWindow(QMainWindow):
         self.apriori_combobox.addItems([str(bias) for bias in aprioribiaslist])
         # self.apriori_combobox.setEnabled(False)
 
+        self.expandingbias_cb = QCheckBox("Minumum a priori distance increases during simulation")
+        expandingbias_label = QLabel("     (diff = actualdistance - currentmindistance; only when diff > 0)")
+        expandingbias_btngrp = QButtonGroup()
+        epxandingbias1_rb = QRadioButton("Type 1: min distance increases by diff")
+        epxandingbias1_rb.setProperty('type', 1)
+        expandingbias_btngrp.addButton(epxandingbias1_rb)
+        epxandingbias2_rb = QRadioButton("Type 2: min distance increases by diff / 2")
+        epxandingbias2_rb.setProperty('type', 2)
+        expandingbias_btngrp.addButton(epxandingbias2_rb)
+        epxandingbias3_rb = QRadioButton("Type 3: min distance increases by diff / (learning trial #)")
+        epxandingbias3_rb.setProperty('type', 3)
+        expandingbias_btngrp.addButton(epxandingbias3_rb)
+
         self.apriori_cb.toggled.connect(self.apriori_combobox.setEnabled)
         self.apriori_combobox.currentIndexChanged.connect(lambda x: self.apriori_cb.setChecked(True))
+        self.expandingbias_cb.toggled.connect(lambda checked: self.enableButtonGroup(expandingbias_btngrp, checked))
+        expandingbias_btngrp.buttonToggled.connect(lambda x, y: self.expandingbias_cb.setChecked(True))
 
         self.favourspecificity_cb = QCheckBox("Favour specificity by promoting only specific faith when both specific and general are eligible")
 
@@ -123,10 +105,17 @@ class MainWindow(QMainWindow):
         apriori_layout.addWidget(self.apriori_combobox)
         Fspec_layout.addLayout(apriori_layout)
 
-        horizontal_line = QFrame()
-        horizontal_line.setFrameShape(QFrame.HLine)
-        horizontal_line.setFrameShadow(QFrame.Sunken)
-        Fspec_layout.addWidget(horizontal_line)
+        expandingbias_layout = QVBoxLayout()
+        expandingbias_layout.addWidget(self.expandingbias_cb)
+        expandingbias_layout.addWidget(expandingbias_label)
+        for rb in [epxandingbias1_rb, epxandingbias2_rb, epxandingbias3_rb]:
+            rb_layout = QHBoxLayout()
+            rb_layout.addSpacerItem(QSpacerItem(20, 0))
+            rb_layout.addWidget(rb)
+            expandingbias_layout.addLayout(rb_layout)
+        Fspec_layout.addLayout(expandingbias_layout)
+
+        Fspec_layout.addWidget(HorizontalLine())
 
         Fspec_layout.addWidget(self.favourspecificity_cb)
 
@@ -173,33 +162,68 @@ class MainWindow(QMainWindow):
         for btn in btngrp.buttons():
             btn.setEnabled(enable)
 
-    def create_expandingbias_widget(self):
-        expandingbiaswidget = QWidget()
-        # TODO implement
-        return expandingbiaswidget
-
     def create_noise_widget(self):
-        noisewidget = QWidget()
-        # TODO implement
+        noisewidget = QGroupBox("Learning noise")
+        noiseF_label = QLabel("Learning noise for faithfulness constraints")
+        noiseF_list = [2]
+        self.noiseF_combobox = QComboBox()
+        self.noiseF_combobox.addItems([str(noise) for noise in noiseF_list])
+        noiseM_label = QLabel("Learning noise for markedness constraints")
+        noiseM_list = [2]
+        self.noiseM_combobox = QComboBox()
+        self.noiseM_combobox.addItems([str(noise) for noise in noiseM_list])
+        
+        noise_layout = QVBoxLayout()
+
+        noiseF_layout = QHBoxLayout()
+        noiseF_layout.addWidget(noiseF_label)
+        noiseF_layout.addWidget(self.noiseF_combobox)
+        noise_layout.addLayout(noiseF_layout)
+        noiseM_layout = QHBoxLayout()
+        noiseM_layout.addWidget(noiseM_label)
+        noiseM_layout.addWidget(self.noiseM_combobox)
+        noise_layout.addLayout(noiseM_layout)
+
+        noisewidget.setLayout(noise_layout)
         return noisewidget
 
     def create_plasticity_widget(self):
-        plasticitywidget = QWidget()
-        # TODO implement
+        plasticitywidget = QGroupBox("Learning plasticity")
+        LRF_label = QLabel("Plasticity (learning rate) for faithfulness constraints")
+        LRF_list = [[2, 0.2, 0.02, 0.002]]
+        self.LRF_combobox = QComboBox()
+        self.LRF_combobox.addItems(str(LRseries) for LRseries in LRF_list)
+        LRM_label = QLabel("Plasticity (learning rate) for markedness constraints")
+        LRM_list = [[2, 0.2, 0.02, 0.002]]
+        self.LRM_combobox = QComboBox()
+        self.LRM_combobox.addItems(str(LRseries) for LRseries in LRM_list)
+
+        plasticity_layout = QVBoxLayout()
+
+        LRF_layout = QHBoxLayout()
+        LRF_layout.addWidget(LRF_label)
+        LRF_layout.addWidget(self.LRF_combobox)
+        plasticity_layout.addLayout(LRF_layout)
+        LRM_layout = QHBoxLayout()
+        LRM_layout.addWidget(LRM_label)
+        LRM_layout.addWidget(self.LRM_combobox)
+        plasticity_layout.addLayout(LRM_layout)
+
+        plasticitywidget.setLayout(plasticity_layout)
         return plasticitywidget
 
     def create_gravity_widget(self):
-        gravitywidget = QWidget()
+        gravitywidget = QGroupBox("TODO")
         # TODO implement
         return gravitywidget
 
     def create_undominatedlosers_widget(self):
-        undominatedloserswidget = QWidget()
+        undominatedloserswidget = QGroupBox("TODO")
         # TODO implement
         return undominatedloserswidget
 
     def create_Mgen_widget(self):
-        Mgeneralitywidget = QWidget()
+        Mgeneralitywidget = QGroupBox("TODO")
         # TODO implement
         return Mgeneralitywidget
 

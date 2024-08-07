@@ -3,6 +3,7 @@ import sys
 from PyQt5.QtWidgets import (
     QMainWindow,
     QWidget,
+    QLayout,
     QHBoxLayout,
     QVBoxLayout,
     QLabel,
@@ -58,7 +59,7 @@ class MainWindow(QMainWindow):
         self.gravitywidget = self.create_gravity_widget()
         mainlayout_R.addWidget(self.gravitywidget)
 
-        self.Mgeneralitywidget = self.create_Mgen_widget()
+        self.Mgeneralitywidget = self.create_Mgenerality_widget()
         mainlayout_R.addWidget(self.Mgeneralitywidget)
 
         mainlayout.addLayout(mainlayout_L)
@@ -79,52 +80,43 @@ class MainWindow(QMainWindow):
         self.expandingbias_cb = QCheckBox("Minumum a priori distance increases during simulation")
         expandingbias_label = QLabel("     (diff = actualdistance - currentmindistance; only when diff > 0)")
         expandingbias_btngrp = QButtonGroup()
-        epxandingbias1_rb = QRadioButton("Type 1: min distance increases by diff")
-        epxandingbias1_rb.setProperty('type', 1)
-        expandingbias_btngrp.addButton(epxandingbias1_rb)
-        epxandingbias2_rb = QRadioButton("Type 2: min distance increases by diff / 2")
-        epxandingbias2_rb.setProperty('type', 2)
-        expandingbias_btngrp.addButton(epxandingbias2_rb)
-        epxandingbias3_rb = QRadioButton("Type 3: min distance increases by diff / (learning trial #)")
-        epxandingbias3_rb.setProperty('type', 3)
-        expandingbias_btngrp.addButton(epxandingbias3_rb)
+        expandingbias1_rb = QRadioButton("Type 1: min distance increases by diff")
+        expandingbias1_rb.setProperty('type', 1)
+        expandingbias_btngrp.addButton(expandingbias1_rb)
+        expandingbias2_rb = QRadioButton("Type 2: min distance increases by diff / 2")
+        expandingbias2_rb.setProperty('type', 2)
+        expandingbias_btngrp.addButton(expandingbias2_rb)
+        expandingbias3_rb = QRadioButton("Type 3: min distance increases by diff / (learning trial #)")
+        expandingbias3_rb.setProperty('type', 3)
+        expandingbias_btngrp.addButton(expandingbias3_rb)
 
         self.apriori_cb.toggled.connect(self.apriori_combobox.setEnabled)
         self.apriori_combobox.currentIndexChanged.connect(lambda x: self.apriori_cb.setChecked(True))
         self.expandingbias_cb.toggled.connect(lambda checked: self.enableButtonGroup(expandingbias_btngrp, checked))
         expandingbias_btngrp.buttonToggled.connect(lambda x, y: self.expandingbias_cb.setChecked(True))
 
-        self.favourspecificity_cb = QCheckBox("Favour specificity by promoting only specific faith when both specific and general are eligible")
+        self.favourspecificity_cb = QCheckBox("Favour specificity by promoting only spec faith when both spec and gen are eligible")
 
-        Fspec_layout = QVBoxLayout()
-
-        Fspec_layout.addWidget(self.apriori_cb)
-
-        apriori_layout = QHBoxLayout()
-        apriori_layout.addWidget(self.apriori_label)
-        apriori_layout.addWidget(self.apriori_combobox)
-        Fspec_layout.addLayout(apriori_layout)
-
-        expandingbias_layout = QVBoxLayout()
-        expandingbias_layout.addWidget(self.expandingbias_cb)
-        expandingbias_layout.addWidget(expandingbias_label)
-        for rb in [epxandingbias1_rb, epxandingbias2_rb, epxandingbias3_rb]:
-            rb_layout = QHBoxLayout()
-            rb_layout.addSpacerItem(QSpacerItem(20, 0))
-            rb_layout.addWidget(rb)
-            expandingbias_layout.addLayout(rb_layout)
-        Fspec_layout.addLayout(expandingbias_layout)
-
-        Fspec_layout.addWidget(HorizontalLine())
-
-        Fspec_layout.addWidget(self.favourspecificity_cb)
+        Fspec_widgettree = {
+            self.apriori_cb: {
+                self.get_serial_layout([self.apriori_label, self.apriori_combobox], True): {}
+            },
+            self.expandingbias_cb: {
+                expandingbias1_rb: {},
+                expandingbias2_rb: {},
+                expandingbias3_rb: {}
+            },
+            HorizontalLine(): {},
+            self.favourspecificity_cb: {}
+        }
+        Fspec_layout = self.get_nested_layout(Fspec_widgettree)
 
         Fspecificitywidget.setLayout(Fspec_layout)
         return Fspecificitywidget
 
     def create_magri_widget(self):
         magriwidget = QGroupBox("Promotion fraction for update rule ('Magri update')")
-        magri_cb = QCheckBox("Use a non-unit promotion fraction")
+        self.magri_cb = QCheckBox("Use a non-unit promotion fraction")
         magridef_label = QLabel("     (d = num demotions, p = num promotions)")
 
         magri_btngrp = QButtonGroup()
@@ -141,19 +133,18 @@ class MainWindow(QMainWindow):
         magri4_rb.setProperty('type', 4)
         magri_btngrp.addButton(magri4_rb)
 
-        magri_cb.toggled.connect(lambda checked: self.enableButtonGroup(magri_btngrp, checked))
-        magri_btngrp.buttonToggled.connect(lambda x, y: magri_cb.setChecked(True))
+        self.magri_cb.toggled.connect(lambda checked: self.enableButtonGroup(magri_btngrp, checked))
+        magri_btngrp.buttonToggled.connect(lambda x, y: self.magri_cb.setChecked(True))
 
-        magri_layout = QVBoxLayout()
-
-        magri_layout.addWidget(magri_cb)
-        magri_layout.addWidget(magridef_label)
-
-        for rb in [magri1_rb, magri2_rb, magri3_rb, magri4_rb]:
-            rb_layout = QHBoxLayout()
-            rb_layout.addSpacerItem(QSpacerItem(20, 0))
-            rb_layout.addWidget(rb)
-            magri_layout.addLayout(rb_layout)
+        magri_widgettree = {
+            self.magri_cb: {
+                magridef_label: {},
+                magri1_rb: {},
+                magri2_rb: {},
+                magri3_rb: {}
+            }
+        }
+        magri_layout = self.get_nested_layout(magri_widgettree)
 
         magriwidget.setLayout(magri_layout)
         return magriwidget
@@ -172,17 +163,12 @@ class MainWindow(QMainWindow):
         noiseM_list = [2]
         self.noiseM_combobox = QComboBox()
         self.noiseM_combobox.addItems([str(noise) for noise in noiseM_list])
-        
-        noise_layout = QVBoxLayout()
 
-        noiseF_layout = QHBoxLayout()
-        noiseF_layout.addWidget(noiseF_label)
-        noiseF_layout.addWidget(self.noiseF_combobox)
-        noise_layout.addLayout(noiseF_layout)
-        noiseM_layout = QHBoxLayout()
-        noiseM_layout.addWidget(noiseM_label)
-        noiseM_layout.addWidget(self.noiseM_combobox)
-        noise_layout.addLayout(noiseM_layout)
+        noise_widgettree = {
+            self.get_serial_layout([noiseF_label, self.noiseF_combobox], True): {},
+            self.get_serial_layout([noiseM_label, self.noiseM_combobox], True): {}
+        }
+        noise_layout = self.get_nested_layout(noise_widgettree)
 
         noisewidget.setLayout(noise_layout)
         return noisewidget
@@ -198,16 +184,11 @@ class MainWindow(QMainWindow):
         self.LRM_combobox = QComboBox()
         self.LRM_combobox.addItems(str(LRseries) for LRseries in LRM_list)
 
-        plasticity_layout = QVBoxLayout()
-
-        LRF_layout = QHBoxLayout()
-        LRF_layout.addWidget(LRF_label)
-        LRF_layout.addWidget(self.LRF_combobox)
-        plasticity_layout.addLayout(LRF_layout)
-        LRM_layout = QHBoxLayout()
-        LRM_layout.addWidget(LRM_label)
-        LRM_layout.addWidget(self.LRM_combobox)
-        plasticity_layout.addLayout(LRM_layout)
+        plasticity_widgettree = {
+            self.get_serial_layout([LRF_label, self.LRF_combobox], True): {},
+            self.get_serial_layout([LRM_label, self.LRM_combobox], True): {}
+        }
+        plasticity_layout = self.get_nested_layout(plasticity_widgettree)
 
         plasticitywidget.setLayout(plasticity_layout)
         return plasticitywidget
@@ -218,35 +199,106 @@ class MainWindow(QMainWindow):
         return gravitywidget
 
     def create_undominatedlosers_widget(self):
-        undominatedloserswidget = QGroupBox("TODO")
-        # TODO implement
+        undominatedloserswidget = QGroupBox("Demoting losers")
+        self.demoteonlyundominated_cb = QCheckBox("Demote only undominated losers")
+
+        undominatedlosers_layout = QVBoxLayout()
+        undominatedlosers_layout.addWidget(self.demoteonlyundominated_cb)
+
+        undominatedloserswidget.setLayout(undominatedlosers_layout)
         return undominatedloserswidget
 
-    def create_Mgen_widget(self):
-        Mgeneralitywidget = QGroupBox("TODO")
-        # TODO implement
-        return Mgeneralitywidget
+    def create_Mgenerality_widget(self):
+        Mgeneralitywidget = QGroupBox("General over specific markedness")
 
-    # def eventFilter(self, obj, event):
-    #
-    #     # if event.type() == QEvent.MouseButtonPress: # isinstance(obj, QTreeWidget) and
-    #     #     print("mouse press") #, obj.currentItem().text(0))
-    #     #     # self.mousepressedintreewidget = True
-    #     #     pos = event.pos()
-    #     #     print(self.treedisplay.itemAt(pos).text(0))
-    #     #     return QObject.eventFilter(self, obj, event)
-    #     if event.type() == QEvent.KeyPress:
-    #         keyevent = QKeyEvent(event)
-    #         print("key", keyevent.key())
-    #         return QObject.eventFilter(self, obj, event)
-    #     # elif event.type() == QEvent.MouseButtonRelease:
-    #     #     print("mouse release")
-    #     #     # self.mousepressedintreewidget = False
-    #     #     return QObject.eventFilter(self, obj, event)
-    #     # else:
-    #     #     return QObject.eventFilter(self, obj, event)
-    #
-    #     return QObject.eventFilter(self, obj, event)
+        self.Mgen_cb = QCheckBox("Distribute initial markedness values according to generality")
+        
+        self.Mgen_btngrp = QButtonGroup()
+        Mgen1_rb = QRadioButton("Type 1: generality (application rate) calculated from input file")
+        Mgen1_rb.setProperty('type', 1)
+        self.Mgen_btngrp.addButton(Mgen1_rb)
+        Mgen2_rb = QRadioButton("Type 2: 5 strata, built greedily top-down (cons w/ B5 or F5, then 4, 3, 2, 1)")
+        Mgen2_rb.setProperty('type', 2)
+        self.Mgen_btngrp.addButton(Mgen2_rb)
+        Mgen3_rb = QRadioButton("Type 3: 3 strata, starting w/ segmental cons, then LD VH, then local VH")
+        Mgen3_rb.setProperty('type', 3)
+        self.Mgen_btngrp.addButton(Mgen3_rb)
+        Mgen4_rb = QRadioButton("Type 4: 5 strata, built greedily bottom-up (cons w/ B1 or F1, then 2, 3, 4, 5)")
+        Mgen4_rb.setProperty('type', 4)
+        self.Mgen_btngrp.addButton(Mgen4_rb)
+        
+        Mgen1_lowend_label = QLabel("starting value when application rate is 0 (y-int)")
+        Mgen1_lowend_list = [25, 50, 75, 100, 150, 200, 300]
+        self.Mgen1_lowend_combobox = QComboBox()
+        self.Mgen1_lowend_combobox.addItems([str(yint) for yint in Mgen1_lowend_list])
+        
+        Mgen1_highend_label = QLabel("starting value when application rate is 1 (slope)")
+        Mgen1_highend_list = [25, 50, 75, 100, 150, 200, 300]
+        self.Mgen1_highend_combobox = QComboBox()
+        self.Mgen1_highend_combobox.addItems([str(slope) for slope in Mgen1_highend_list])
+
+        Mgen2_strata_label = QLabel("strata values")
+        Mgen_5strata_list = [[180, 160, 140, 120, 100]]
+        self.Mgen2_strata_combobox = QComboBox()
+        self.Mgen2_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+
+        Mgen3_strata_label = QLabel("strata values")
+        Mgen_3strata_list = [[140, 120, 100]]
+        self.Mgen3_strata_combobox = QComboBox()
+        self.Mgen3_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+
+        Mgen4_strata_label = QLabel("strata values")
+        self.Mgen4_strata_combobox = QComboBox()
+        self.Mgen4_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+
+        self.Mgen_cb.toggled.connect(lambda checked: self.check_enable_Mgen_options())
+        self.Mgen1_lowend_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
+        self.Mgen1_highend_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
+        self.Mgen_btngrp.buttonToggled.connect(lambda x, y: self.Mgen_cb.setChecked(True))
+
+        Mgen_widgettree = {
+            self.Mgen_cb: {
+                Mgen1_rb: {
+                    self.get_serial_layout([Mgen1_lowend_label, self.Mgen1_lowend_combobox], True): {},
+                    self.get_serial_layout([Mgen1_highend_label, self.Mgen1_highend_combobox], True): {}
+                },
+                Mgen2_rb: {
+                    self.get_serial_layout([Mgen2_strata_label, self.Mgen2_strata_combobox], True): {}
+                },
+                Mgen3_rb: {
+                    self.get_serial_layout([Mgen3_strata_label, self.Mgen3_strata_combobox], True): {}
+                },
+                Mgen4_rb: {
+                    self.get_serial_layout([Mgen4_strata_label, self.Mgen4_strata_combobox], True): {}
+                }
+            }
+        }
+        Mgen_layout = self.get_nested_layout(Mgen_widgettree)
+
+        Mgeneralitywidget.setLayout(Mgen_layout)
+        return Mgeneralitywidget
+    
+    def check_enable_Mgen_options(self):
+        pass  # TODO
+
+    def get_nested_layout(self, tree_dict):
+        main_layout = QVBoxLayout()
+        for (parentwidget, childtree) in tree_dict.items():
+            if isinstance(parentwidget, QWidget):
+                main_layout.addWidget(parentwidget)
+            elif isinstance(parentwidget, QLayout):
+                main_layout.addLayout(parentwidget)
+            sub_layout = QHBoxLayout()
+            sub_layout.addSpacerItem(QSpacerItem(30, 0))
+            sub_layout.addLayout(self.get_nested_layout(childtree))
+            main_layout.addLayout(sub_layout)
+        return main_layout
+
+    def get_serial_layout(self, widgetslist, horizontal):
+        layout = QHBoxLayout() if horizontal else QVBoxLayout()
+        for item in widgetslist:
+            layout.addWidget(item)
+        return layout
 
 
 if __name__ == "__main__":

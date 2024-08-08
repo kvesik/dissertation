@@ -13,6 +13,7 @@ INIT_F = 0
 INIT_M = 100
 
 WORKING_DIR = "../sim_ins/20240507 on - OTSoft inputs"  # "OTSoft2.6old"
+OUTPUTS_DIR = "../sim_outs/20240507_GLA_outputs"
 DATA_DIR = WORKING_DIR + "/20240507_OTS" #  + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
 DEMOTEONLYUNDOMINATEDLOSERS = False
@@ -28,6 +29,7 @@ EXPANDINGBIAS = True
 EXPANDSLOWLY = True
 EXPANDSLOWLYDECREASINGRATE = True
 INITRANKINGSWITHMGENERALITY = 0
+RELU = False
 GRAVITY = False
 GRAVITYCONST = 2
 PREFERSPECIFICITY = True
@@ -166,13 +168,21 @@ class Learner:
     #       1.18 and gets *INIT_M*.75 +INIT_M*.75 (ie, *75 +75)
     #       1.19 and gets *INIT_M*.75 +INIT_M (ie, *75 +100)
     #       1.21 and gets *INIT_M +INIT_M*.75 (ie, *100 +75)
+    #       1.22 and gets *INIT_M*.40 +INIT_M*.40 (ie, *40 +40)
+    #       1.23 and gets *INIT_M*.40 +INIT_M*.60 (ie, *40 +60)
+    #       1.24 and gets *INIT_M*.50 +INIT_M*.40 (ie, *50 +40)
+    #       1.25 and gets *INIT_M*.50 +INIT_M*.60 (ie, *50 +60)
+    #       1.26 and gets *INIT_M*.60 +INIT_M*.40 (ie, *60 +40)
+    #       1.27 and gets *INIT_M*.60 +INIT_M*.60 (ie, *60 +60)
+    #       1.28 and gets *INIT_M*.85 +INIT_M*.50 (ie, *85 +50)
+    #       1.29 and gets *INIT_M +INIT_M*.75 (ie, *100 +75)
     #   2   if strata are determined greedily by all items containing B5 or F5, then 4, then 3, 2, 1
     #       2.1 with 5s at 180, 4s at 160, 3 at 140, 2 at 120, 1 at 100
     #   3   if strata are determed by all single segmental constraints, then long-distance harmony, then local harmony
     #       3.1 with singles at 140, LD at 120, local at 100
     #   4   if strata are determined greedily by all items containing B1 or F1, then 2, 3, 4, 5 (like option 2 but starting at bottom)
     #       4.1 with 1s at 100, 2s at 120, 3 at 140, 4 at 160, 5 at 180
-    def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswithMgenerality=0):
+    def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswithMgenerality=0, relu=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -201,6 +211,7 @@ class Learner:
         self.preferspecificity = preferspecificity
         self.errorcounter = 0
         self.initrankingswithMgenerality = initrankingswithMgenerality
+        self.relu = relu
 
     def set_tableaux(self, tableaux_list):
         self.tableaux_list = tableaux_list
@@ -346,6 +357,32 @@ class Learner:
                         elif self.initrankingswithMgenerality == 1.21:
                             # M range from 75 to 175
                             self.weights[con] = INIT_M*.75 + (combined2and3gram_generality*INIT_M*1.0)
+
+                        elif self.initrankingswithMgenerality == 1.22:
+                            # M range from 40 to 80
+                            self.weights[con] = INIT_M * .40 + (combined2and3gram_generality * INIT_M * .40)
+                        elif self.initrankingswithMgenerality == 1.23:
+                            # M range from 60 to 100
+                            self.weights[con] = INIT_M*.60 + (combined2and3gram_generality*INIT_M*.40)
+                        elif self.initrankingswithMgenerality == 1.24:
+                            # M range from 40 to 90
+                            self.weights[con] = INIT_M*.40 + (combined2and3gram_generality*INIT_M*.50)
+                        elif self.initrankingswithMgenerality == 1.25:
+                            # M range from 60 to 110
+                            self.weights[con] = INIT_M*.60 + (combined2and3gram_generality*INIT_M*.50)
+                        elif self.initrankingswithMgenerality == 1.26:
+                            # M range from 40 to 100
+                            self.weights[con] = INIT_M*.40 + (combined2and3gram_generality*INIT_M*.60)
+                        elif self.initrankingswithMgenerality == 1.27:
+                            # M range from 60 to 120
+                            self.weights[con] = INIT_M*.60 + (combined2and3gram_generality*INIT_M*.60)
+                        elif self.initrankingswithMgenerality == 1.28:
+                            # M range from 50 to 90
+                            self.weights[con] = INIT_M*.50 + (combined2and3gram_generality*INIT_M*.40)
+                        elif self.initrankingswithMgenerality == 1.29:
+                            # M range from 50 to 135
+                            self.weights[con] = INIT_M*.50 + (combined2and3gram_generality*INIT_M*.85)
+
             elif 2 <= self.initrankingswithMgenerality < 3:
                 # with strata determined by all items containing B5 or F5, then 4, then 3, 2, 1
                 lowestvalue = 100 if self.initrankingswithMgenerality == 2.1 else 100
@@ -596,6 +633,8 @@ class Learner:
                     adjustment_amount *= promotion_ratio
                 linetowrite += "\t" + str(adjustment_amount)
                 self.weights[con] = self.weights[con] + adjustment_amount
+                if self.relu and self.weights[con] < 0:
+                    self.weights[con] = 0
                 linetowrite += "\t" + str(self.weights[con])
             else:
                 linetowrite += "\t\t"
@@ -1003,13 +1042,13 @@ def justtests(skipifalreadydone=True):
         'NS': ('OTSoft-PDDP-NSeto_GLA.txt', 'NS894'),
     }
 
-    resultsfolders = os.listdir(WORKING_DIR)
-    resultsfolders = [fol for fol in resultsfolders if fol.startswith("T_Mgen")]
+    resultsfolders = os.listdir(OUTPUTS_DIR)
+    resultsfolders = [fol for fol in resultsfolders if "testycopy" in fol]  # if fol.startswith("T_Mgen")]
     numfolders = len(resultsfolders)
 
     for idx, fol in enumerate(resultsfolders):
         print("folder", idx+1, "of", numfolders)
-        resultsfile = os.listdir(os.path.join(WORKING_DIR, fol))
+        resultsfile = os.listdir(os.path.join(OUTPUTS_DIR, fol))
         resultsfile = [fi for fi in resultsfile if "RESULTS" in fi][0]
         if "Fin" in resultsfile:
             inputsfile = files_exps['Fi'][0]
@@ -1019,7 +1058,7 @@ def justtests(skipifalreadydone=True):
             inputsfile = files_exps['NS'][0]
 
         testresultsfilename = os.path.join(fol, resultsfile.replace("RESULTS", "TESTS"))
-        if os.path.exists(os.path.join(WORKING_DIR, testresultsfilename)) and skipifalreadydone:
+        if os.path.exists(os.path.join(OUTPUTS_DIR, testresultsfilename)) and skipifalreadydone:
             print("skipping; already done:", testresultsfilename)
             continue
 
@@ -1028,14 +1067,14 @@ def justtests(skipifalreadydone=True):
         learner.set_tableaux(get_tableaux(tableaux, learner.constraints))
 
         # read weights from grammar file
-        finalweights = readfinalweightsfromgrammar(os.path.join(WORKING_DIR, fol, resultsfile))
+        finalweights = readfinalweightsfromgrammar(os.path.join(OUTPUTS_DIR, fol, resultsfile))
         if not finalweights:
             print("skipping; file not found (probably name is too long):", testresultsfilename)
             continue
 
         learner.weights = finalweights
 
-        with io.open(os.path.join(WORKING_DIR, testresultsfilename), "w") as testresultsfile:
+        with io.open(os.path.join(OUTPUTS_DIR, testresultsfilename), "w") as testresultsfile:
             starttime = datetime.now()
 
             testresultsfile.write("\n--------------- RESULTS ---------------------\n\n")
@@ -1045,7 +1084,7 @@ def justtests(skipifalreadydone=True):
             print("\n--------------- BEGIN TEST ---------------------")
             print(testresultsfilename + "\n")
             testresultsfile.write("\n--------------- BEGIN TEST ---------------------\n\n")
-            testresults = learner.testgrammar(10)  # 100
+            testresults = learner.testgrammar(100)  # 100
             for results_t in testresults:
                 ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(finalweights.keys()), axis=1)
                 testresultsfile.write(ordered_t.to_string(index=False) + "\n\n")
@@ -1131,7 +1170,7 @@ def main(prefix="", argstuple=None):
 def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
     starttime = datetime.now()
     if argstuple is None:
-        learner = Learner(srcfilepath, destdir, expnum, demoteunlyundominatedlosers=DEMOTEONLYUNDOMINATEDLOSERS, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, gravityconst=GRAVITYCONST, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY, expandslowlydecreasingrate=EXPANDSLOWLYDECREASINGRATE, initrankingswithMgenerality=INITRANKINGSWITHMGENERALITY)
+        learner = Learner(srcfilepath, destdir, expnum, demoteunlyundominatedlosers=DEMOTEONLYUNDOMINATEDLOSERS, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, gravityconst=GRAVITYCONST, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY, expandslowlydecreasingrate=EXPANDSLOWLYDECREASINGRATE, initrankingswithMgenerality=INITRANKINGSWITHMGENERALITY, relu=RELU)
     else:
         learner = Learner(srcfilepath, destdir, expnum, *argstuple)
 
@@ -1243,24 +1282,67 @@ def onespecificthing():
                                 for expandingbias in [False]:  # , True] if specgenbias >= 0 else [False]:
                                     for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
                                         for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
-                                            for initrankingswithMgenerality in [1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.21]:  # [4.1]:  # [1.2, 2.1, 3.1]:  # [1.1, 1.2, 2.1, 3.1]:  # [True]:
-                                                abbrevstr = "T_"  # tested  # "NIT_"  # no inputs with initial-syl transparent vowels
-                                                abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
-                                                if initrankingswithMgenerality > 0:
-                                                    abbrevstr += "Mgen" + str(initrankingswithMgenerality) + "_"
-                                                else:
-                                                    abbrevstr += "M" + str(INIT_M) + "_"
-                                                # abbrevstr += "Mgen" + str(initrankingswithMgenerality) + "_" if initrankingswithMgenerality > 0 else ""
-                                                abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
-                                                abbrevstr += "gr_" if gravity else ""
-                                                abbrevstr += "fs_" if preferspecificity else ""
-                                                if specgenbias >= 0:
-                                                    abbrevstr += "sg" + str(specgenbias) + "_"
-                                                    if expandingbias:
-                                                        abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
-                                                print(abbrevstr)
-                                                # fs_sg20_ex - r
-                                                main(prefix=abbrevstr, argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly, expandslowlydecreasingrate, initrankingswithMgenerality))
+                                            for initrankingswithMgenerality in [1.1]:  # 22, 1.23, 1.24, 1.25, 1.26, 1.27, 1.28, 1.29]:  # [4.1]:  # [1.2, 2.1, 3.1]:  # [1.1, 1.2, 2.1, 3.1]:  # [True]:
+                                                for ReLU in [True]:
+                                                    abbrevstr = "T_"  # tested  # "NIT_"  # no inputs with initial-syl transparent vowels
+                                                    abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
+                                                    if initrankingswithMgenerality > 0:
+                                                        abbrevstr += "Mgen" + str(initrankingswithMgenerality) + "_"
+                                                    else:
+                                                        abbrevstr += "M" + str(INIT_M) + "_"
+                                                    # abbrevstr += "Mgen" + str(initrankingswithMgenerality) + "_" if initrankingswithMgenerality > 0 else ""
+                                                    abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                                    abbrevstr += "gr_" if gravity else ""
+                                                    abbrevstr += "fs_" if preferspecificity else ""
+                                                    if specgenbias >= 0:
+                                                        abbrevstr += "sg" + str(specgenbias) + "_"
+                                                        if expandingbias:
+                                                            abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
+                                                    if ReLU:
+                                                        abbrevstr += "ReLU_"
+                                                    print(abbrevstr)
+                                                    # fs_sg20_ex - r
+                                                    main(prefix=abbrevstr, argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly, expandslowlydecreasingrate, initrankingswithMgenerality, ReLU))
+
+
+def startwithMgen():
+    gravity = False
+    gravityconst = 0
+    for initrankingswithMgenerality in [1.1, 1.17]:  # 1.4, 1.11, 1.13, 1.5, 1.14, 1.16, 1.18, 1.6, 1.8, 1.21]:
+        for specgenbias in [-1, 0, 10, 20, 30, 40]:
+            for favourspecificity in [False, True]:
+                for magri in [False, True]:
+                    for magritype in [1, 2, 3, 4] if magri else [0]:
+                        for expandingbias in [False, True] if specgenbias >= 0 else [False]:
+                            for expandingslowly in [False, True] if expandingbias else [False]:
+                                for expandslowlydecreasingrate in [False, True] if expandingslowly else [False]:
+                                    for demoteonlyundominatedlosers in [False, True]:
+                                        for ReLU in [True]:
+                                            abbrevstr = "T_"  # tested  # "NIT_"  # no inputs with initial-syl transparent vowels
+                                            abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
+                                            if initrankingswithMgenerality > 0:
+                                                abbrevstr += "Mgen" + str(initrankingswithMgenerality) + "_"
+                                            else:
+                                                abbrevstr += "M" + str(INIT_M) + "_"
+                                            # abbrevstr += "Mgen" + str(initrankingswithMgenerality) + "_" if initrankingswithMgenerality > 0 else ""
+                                            abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                            # abbrevstr += "gr_" if gravity else ""
+                                            abbrevstr += "fs_" if favourspecificity else ""
+                                            if specgenbias >= 0:
+                                                abbrevstr += "sg" + str(specgenbias) + "_"
+                                                if expandingbias:
+                                                    abbrevstr += "ex" + (("-s" + (
+                                                        "-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
+                                            if ReLU:
+                                                abbrevstr += "ReLU_"
+                                            print(abbrevstr)
+                                            # fs_sg20_ex - r
+                                            main(prefix=abbrevstr,
+                                                 argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias,
+                                                            gravity, gravityconst, favourspecificity, expandingbias,
+                                                            expandingslowly, expandslowlydecreasingrate,
+                                                            initrankingswithMgenerality, ReLU)
+                                                 )
 
 
 if __name__ == "__main__":

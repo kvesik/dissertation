@@ -538,14 +538,14 @@ class OTSoftTableauxGenerator:
     def get_allviolations(self, inputform, candidate, constraintset):
         return [self.get_numviolations(inputform, candidate, con) for con in constraintset]
 
-    def initialtransparent(self, wd):
-        if self.lang in [Fin, SSeto]:
-            return wd[0] in [i, e]
-        elif self.lang == NSeto:
-            return wd[0] == i
-        else:  # including for NEst
-            return False
-
+    # # made static for use in other files/classes
+    # def initialtransparent(self, wd):
+    #     if self.lang in [Fin, SSeto]:
+    #         return wd[0] in [i, e]
+    #     elif self.lang == NSeto:
+    #         return wd[0] == i
+    #     else:  # including for NEst
+    #         return False
 
     def generate_tableaux(self, inputs, relativefrequencies=None, foldername=None, customizations=""):
         # with io.open("OTSoft_"+lang+"_GLA_PDDP_nodiacritics.txt", "w", encoding='utf-8') as fGLA:
@@ -629,7 +629,7 @@ class OTSoftTableauxGenerator:
                             outstring = wd if idx == 0 else ""
                             outstring += "\t" + cand + "\t"
                             iswinner = isintendedwinner(wd, cand, self.lang, self.special)
-                            if iswinner and wd == cand and (self.inittransp_inputs or not self.initialtransparent(wd)) :
+                            if iswinner and wd == cand and (self.inittransp_inputs or not initialtransparent(wd, self.lang)) :
                                 # faithful winner; use in learning (and testing) data
                                 outstring += "1\t"
                                 ct += 1
@@ -899,6 +899,15 @@ def checksetsinpositions(vowelset, position, candidate):
 #         sys.exit(1)
 
 
+def initialtransparent(wd, lang):
+    if lang in [Fin, SSeto]:
+        return wd[0] in [i, e]
+    elif lang == NSeto:
+        return wd[0] == i
+    else:  # including for NEst
+        return False
+
+
 def iswordinlang(wd, lang, special=0):
 
     # In case we're looking at a substring of a word in SSeto that either started with /e/ or contained an /o/
@@ -1010,6 +1019,25 @@ def isintendedwinner(inputform, candidate, lang, special=0):
 
     else:
         return True
+
+def isalternatewinner(inputform, candidate, lang):
+
+    initURsegtransparent = initialtransparent(inputform, lang)
+    candinlang = iswordinlang(candidate, lang)
+
+    if candinlang:
+        if initURsegtransparent:
+            return True
+        else:
+            if lang == NEst:
+                initURsegfixedtransparent = (inputform[0] not in b1) and initialtransparent(candidate[0], NEst)
+            elif lang == Fin:
+                initURsegfixedtransparent = (inputform[0] not in b2) and initialtransparent(candidate[0], Fin)
+            else:
+                initURsegfixedtransparent = False
+            return initURsegfixedtransparent
+    else:
+        return False
 
 
 # def removeinitialtransparentV(inputform, candidate, lang):

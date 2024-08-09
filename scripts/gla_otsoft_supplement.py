@@ -1043,7 +1043,7 @@ def justtests(skipifalreadydone=True):
     }
 
     resultsfolders = os.listdir(OUTPUTS_DIR)
-    resultsfolders = [fol for fol in resultsfolders]   #  if "testycopy" in fol]  # if fol.startswith("T_Mgen")]
+    resultsfolders = [fol for fol in resultsfolders if os.path.isdir(os.path.join(OUTPUTS_DIR, fol))]   #  if "testycopy" in fol]  # if fol.startswith("T_Mgen")]
     numfolders = len(resultsfolders)
 
     for idx, fol in enumerate(resultsfolders):

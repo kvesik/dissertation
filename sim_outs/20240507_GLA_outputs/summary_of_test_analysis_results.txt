@@ -185,9 +185,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9996363636363635
-average frequency of bad test results: 0.00036363636363636367
-number inputs with exactly 100% good results: 1096 of 1100
+average frequency of good test results: 0.9995363636363641
+average frequency of bad test results: 0.0004636363636363638
+number inputs with exactly 100% good results: 1055 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -199,8 +199,8 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9996363636363635
-	average frequency of bad results = 0.00036363636363636367
+	average frequency of good results = 0.9995363636363641
+	average frequency of bad results = 0.0004636363636363638
 NSeto
 average frequency of good test results: 1.0
 average frequency of bad test results: 0.0
@@ -219,8 +219,8 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 all langs under these specifications:
-	average frequency of good results = 0.9998787878787878
-	average frequency of bad results = 0.00012121212121212122
+	average frequency of good results = 0.9998454545454547
+	average frequency of bad results = 0.0001545454545454546
 
 Mgen1.12_mg4_fs_sg20
 Fin
@@ -241,9 +241,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9998181818181818
+average frequency of good test results: 0.9998181818181819
 average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+number inputs with exactly 100% good results: 1081 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -255,7 +255,7 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
+	average frequency of good results = 0.9998181818181819
 	average frequency of bad results = 0.00018181818181818183
 NSeto
 average frequency of good test results: 1.0
@@ -275,7 +275,7 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 all langs under these specifications:
-	average frequency of good results = 0.9999393939393939
+	average frequency of good results = 0.999939393939394
 	average frequency of bad results = 6.060606060606061e-05
 
 Mgen1.13_mg4_fs_sg20
@@ -297,26 +297,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.8457272727272729
-average frequency of bad test results: 0.15427272727272745
-number inputs with exactly 100% good results: 920 of 1100
+average frequency of good test results: 0.8449090909090909
+average frequency of bad test results: 0.1550909090909089
+number inputs with exactly 100% good results: 901 of 1100
 number inputs with at least 90% good results: 920 of 1100
 number inputs with at least 80% good results: 920 of 1100
 number inputs with at least 70% good results: 920 of 1100
 number inputs with at least 60% good results: 920 of 1100
 number inputs with at least 50% good results: 920 of 1100
-number inputs with at least 40% good results: 921 of 1100
-number inputs with at least 30% good results: 922 of 1100
-number inputs with at least 20% good results: 942 of 1100
-number inputs with at least 10% good results: 998 of 1100
-number inputs with exactly 0% bad results: 102 of 1100
+number inputs with at least 40% good results: 920 of 1100
+number inputs with at least 30% good results: 920 of 1100
+number inputs with at least 20% good results: 920 of 1100
+number inputs with at least 10% good results: 932 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.8457272727272729
-	average frequency of bad results = 0.15427272727272745
+	average frequency of good results = 0.8449090909090909
+	average frequency of bad results = 0.1550909090909089
 NSeto
-average frequency of good test results: 0.9997272727272726
-average frequency of bad test results: 0.0002727272727272728
-number inputs with exactly 100% good results: 1097 of 1100
+average frequency of good test results: 0.9994454545454551
+average frequency of bad test results: 0.0005545454545454548
+number inputs with exactly 100% good results: 1054 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -328,11 +328,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9997272727272726
-	average frequency of bad results = 0.0002727272727272728
+	average frequency of good results = 0.9994454545454551
+	average frequency of bad results = 0.0005545454545454548
 all langs under these specifications:
-	average frequency of good results = 0.9484848484848486
-	average frequency of bad results = 0.051515151515151576
+	average frequency of good results = 0.948118181818182
+	average frequency of bad results = 0.05188181818181811
 
 Mgen1.14_mg4_fs_sg20
 Fin
@@ -353,13 +353,13 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9814545454545448
-average frequency of bad test results: 0.018545454545454535
-number inputs with exactly 100% good results: 976 of 1100
-number inputs with at least 90% good results: 1044 of 1100
-number inputs with at least 80% good results: 1082 of 1100
-number inputs with at least 70% good results: 1095 of 1100
-number inputs with at least 60% good results: 1099 of 1100
+average frequency of good test results: 0.9811454545454548
+average frequency of bad test results: 0.01885454545454545
+number inputs with exactly 100% good results: 893 of 1100
+number inputs with at least 90% good results: 986 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
 number inputs with at least 50% good results: 1100 of 1100
 number inputs with at least 40% good results: 1100 of 1100
 number inputs with at least 30% good results: 1100 of 1100
@@ -367,12 +367,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9814545454545448
-	average frequency of bad results = 0.018545454545454535
+	average frequency of good results = 0.9811454545454548
+	average frequency of bad results = 0.01885454545454545
 NSeto
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9998909090909092
+average frequency of bad test results: 0.00010909090909090908
+number inputs with exactly 100% good results: 1089 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -384,11 +384,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9998909090909092
+	average frequency of bad results = 0.00010909090909090908
 all langs under these specifications:
-	average frequency of good results = 0.9937878787878787
-	average frequency of bad results = 0.006212121212121208
+	average frequency of good results = 0.993678787878788
+	average frequency of bad results = 0.00632121212121212
 
 Mgen1.15_mg4_fs_sg20
 Fin
@@ -409,9 +409,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.999727272727273
+average frequency of bad test results: 0.0002727272727272728
+number inputs with exactly 100% good results: 1072 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -423,12 +423,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.999727272727273
+	average frequency of bad results = 0.0002727272727272728
 NSeto
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9997181818181821
+average frequency of bad test results: 0.00028181818181818185
+number inputs with exactly 100% good results: 1079 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -440,11 +440,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9997181818181821
+	average frequency of bad results = 0.00028181818181818185
 all langs under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9998151515151518
+	average frequency of bad results = 0.0001848484848484849
 
 Mgen1.16_mg4_fs_sg20
 Fin
@@ -465,30 +465,30 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9306363636363637
-average frequency of bad test results: 0.06936363636363636
-number inputs with exactly 100% good results: 988 of 1100
+average frequency of good test results: 0.9307636363636365
+average frequency of bad test results: 0.06923636363636367
+number inputs with exactly 100% good results: 976 of 1100
 number inputs with at least 90% good results: 990 of 1100
 number inputs with at least 80% good results: 990 of 1100
-number inputs with at least 70% good results: 991 of 1100
-number inputs with at least 60% good results: 998 of 1100
-number inputs with at least 50% good results: 1008 of 1100
-number inputs with at least 40% good results: 1033 of 1100
-number inputs with at least 30% good results: 1058 of 1100
-number inputs with at least 20% good results: 1084 of 1100
-number inputs with at least 10% good results: 1097 of 1100
-number inputs with exactly 0% bad results: 3 of 1100
+number inputs with at least 70% good results: 990 of 1100
+number inputs with at least 60% good results: 990 of 1100
+number inputs with at least 50% good results: 990 of 1100
+number inputs with at least 40% good results: 992 of 1100
+number inputs with at least 30% good results: 1055 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9306363636363637
-	average frequency of bad results = 0.06936363636363636
+	average frequency of good results = 0.9307636363636365
+	average frequency of bad results = 0.06923636363636367
 NSeto
-average frequency of good test results: 0.9883636363636358
-average frequency of bad test results: 0.011636363636363629
-number inputs with exactly 100% good results: 1028 of 1100
-number inputs with at least 90% good results: 1063 of 1100
-number inputs with at least 80% good results: 1085 of 1100
-number inputs with at least 70% good results: 1097 of 1100
-number inputs with at least 60% good results: 1099 of 1100
+average frequency of good test results: 0.9890909090909091
+average frequency of bad test results: 0.010909090909090906
+number inputs with exactly 100% good results: 999 of 1100
+number inputs with at least 90% good results: 1038 of 1100
+number inputs with at least 80% good results: 1099 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
 number inputs with at least 50% good results: 1100 of 1100
 number inputs with at least 40% good results: 1100 of 1100
 number inputs with at least 30% good results: 1100 of 1100
@@ -496,11 +496,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9883636363636358
-	average frequency of bad results = 0.011636363636363629
+	average frequency of good results = 0.9890909090909091
+	average frequency of bad results = 0.010909090909090906
 all langs under these specifications:
-	average frequency of good results = 0.9729999999999999
-	average frequency of bad results = 0.026999999999999996
+	average frequency of good results = 0.9732848484848485
+	average frequency of bad results = 0.026715151515151525
 
 Mgen1.17_mg4_fs_sg20
 Fin
@@ -521,9 +521,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9998090909090911
+average frequency of bad test results: 0.00019090909090909092
+number inputs with exactly 100% good results: 1081 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -535,12 +535,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9998090909090911
+	average frequency of bad results = 0.00019090909090909092
 NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
+average frequency of good test results: 0.9999636363636364
+average frequency of bad test results: 3.6363636363636364e-05
+number inputs with exactly 100% good results: 1096 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -552,11 +552,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
+	average frequency of good results = 0.9999636363636364
+	average frequency of bad results = 3.6363636363636364e-05
 all langs under these specifications:
-	average frequency of good results = 0.9999696969696971
-	average frequency of bad results = 3.0303030303030306e-05
+	average frequency of good results = 0.9999242424242425
+	average frequency of bad results = 7.575757575757576e-05
 
 Mgen1.18_mg4_fs_sg20
 Fin
@@ -577,9 +577,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9992727272727271
-average frequency of bad test results: 0.0007272727272727272
-number inputs with exactly 100% good results: 1092 of 1100
+average frequency of good test results: 0.9994545454545459
+average frequency of bad test results: 0.0005454545454545457
+number inputs with exactly 100% good results: 1057 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -591,12 +591,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9992727272727271
-	average frequency of bad results = 0.0007272727272727272
+	average frequency of good results = 0.9994545454545459
+	average frequency of bad results = 0.0005454545454545457
 NSeto
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 1.0
+average frequency of bad test results: 0.0
+number inputs with exactly 100% good results: 1100 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -608,11 +608,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 1.0
+	average frequency of bad results = 0.0
 all langs under these specifications:
-	average frequency of good results = 0.9997272727272727
-	average frequency of bad results = 0.00027272727272727274
+	average frequency of good results = 0.999818181818182
+	average frequency of bad results = 0.0001818181818181819
 
 Mgen1.19_mg4_fs_sg20
 Fin
@@ -633,26 +633,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9991818181818181
-average frequency of bad test results: 0.0008181818181818182
-number inputs with exactly 100% good results: 1093 of 1100
-number inputs with at least 90% good results: 1098 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.9991818181818181
-	average frequency of bad results = 0.0008181818181818182
-NSeto
-average frequency of good test results: 0.9995454545454545
-average frequency of bad test results: 0.00045454545454545455
-number inputs with exactly 100% good results: 1095 of 1100
+average frequency of good test results: 0.9997181818181821
+average frequency of bad test results: 0.00028181818181818185
+number inputs with exactly 100% good results: 1079 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -664,11 +647,28 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9995454545454545
-	average frequency of bad results = 0.00045454545454545455
+	average frequency of good results = 0.9997181818181821
+	average frequency of bad results = 0.00028181818181818185
+NSeto
+average frequency of good test results: 0.9991454545454553
+average frequency of bad test results: 0.000854545454545455
+number inputs with exactly 100% good results: 1046 of 1100
+number inputs with at least 90% good results: 1100 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
+number inputs with at least 50% good results: 1100 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9991454545454553
+	average frequency of bad results = 0.000854545454545455
 all langs under these specifications:
-	average frequency of good results = 0.9995757575757575
-	average frequency of bad results = 0.0004242424242424242
+	average frequency of good results = 0.9996212121212125
+	average frequency of bad results = 0.000378787878787879
 
 Mgen1.1_fs_sg20
 Fin
@@ -1323,26 +1323,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9263636363636367
-average frequency of bad test results: 0.07363636363636358
-number inputs with exactly 100% good results: 916 of 1100
-number inputs with at least 90% good results: 924 of 1100
-number inputs with at least 80% good results: 935 of 1100
-number inputs with at least 70% good results: 967 of 1100
-number inputs with at least 60% good results: 1016 of 1100
-number inputs with at least 50% good results: 1053 of 1100
-number inputs with at least 40% good results: 1086 of 1100
-number inputs with at least 30% good results: 1095 of 1100
-number inputs with at least 20% good results: 1098 of 1100
+average frequency of good test results: 0.9231454545454547
+average frequency of bad test results: 0.0768545454545455
+number inputs with exactly 100% good results: 872 of 1100
+number inputs with at least 90% good results: 920 of 1100
+number inputs with at least 80% good results: 920 of 1100
+number inputs with at least 70% good results: 920 of 1100
+number inputs with at least 60% good results: 939 of 1100
+number inputs with at least 50% good results: 1062 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9263636363636367
-	average frequency of bad results = 0.07363636363636358
+	average frequency of good results = 0.9231454545454547
+	average frequency of bad results = 0.0768545454545455
 NSeto
-average frequency of good test results: 0.9997272727272726
-average frequency of bad test results: 0.0002727272727272728
-number inputs with exactly 100% good results: 1097 of 1100
+average frequency of good test results: 0.9998636363636365
+average frequency of bad test results: 0.00013636363636363637
+number inputs with exactly 100% good results: 1087 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -1354,11 +1354,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9997272727272726
-	average frequency of bad results = 0.0002727272727272728
+	average frequency of good results = 0.9998636363636365
+	average frequency of bad results = 0.00013636363636363637
 all langs under these specifications:
-	average frequency of good results = 0.9753636363636365
-	average frequency of bad results = 0.02463636363636362
+	average frequency of good results = 0.9743363636363638
+	average frequency of bad results = 0.025663636363636378
 
 Mgen1.1_mg4_fs_sg10
 Fin
@@ -1379,9 +1379,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9989090909090906
-average frequency of bad test results: 0.001090909090909091
-number inputs with exactly 100% good results: 1088 of 1100
+average frequency of good test results: 0.999154545454546
+average frequency of bad test results: 0.0008454545454545462
+number inputs with exactly 100% good results: 1019 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -1393,12 +1393,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9989090909090906
-	average frequency of bad results = 0.001090909090909091
+	average frequency of good results = 0.999154545454546
+	average frequency of bad results = 0.0008454545454545462
 NSeto
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9996818181818184
+average frequency of bad test results: 0.0003181818181818182
+number inputs with exactly 100% good results: 1077 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -1410,11 +1410,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9996818181818184
+	average frequency of bad results = 0.0003181818181818182
 all langs under these specifications:
-	average frequency of good results = 0.9995757575757575
-	average frequency of bad results = 0.00042424242424242425
+	average frequency of good results = 0.9996121212121215
+	average frequency of bad results = 0.0003878787878787881
 
 Mgen1.1_mg4_fs_sg20
 Fin
@@ -1536,9 +1536,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9998181818181819
+average frequency of bad test results: 0.00018181818181818186
+number inputs with exactly 100% good results: 1080 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -1550,12 +1550,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9998181818181819
+	average frequency of bad results = 0.00018181818181818186
 NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
+average frequency of good test results: 0.9999272727272728
+average frequency of bad test results: 7.272727272727273e-05
+number inputs with exactly 100% good results: 1092 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -1567,11 +1567,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
+	average frequency of good results = 0.9999272727272728
+	average frequency of bad results = 7.272727272727273e-05
 all langs under these specifications:
-	average frequency of good results = 0.9999696969696971
-	average frequency of bad results = 3.0303030303030306e-05
+	average frequency of good results = 0.9999151515151515
+	average frequency of bad results = 8.484848484848486e-05
 
 Mgen1.1_mg4_fs_sg25
 Fin
@@ -2343,9 +2343,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9998181818181819
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9995818181818183
+average frequency of bad test results: 0.00041818181818181836
+number inputs with exactly 100% good results: 1066 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2357,12 +2357,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181819
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9995818181818183
+	average frequency of bad results = 0.00041818181818181836
 NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
+average frequency of good test results: 0.9999454545454546
+average frequency of bad test results: 5.454545454545455e-05
+number inputs with exactly 100% good results: 1095 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2374,33 +2374,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
+	average frequency of good results = 0.9999454545454546
+	average frequency of bad results = 5.454545454545455e-05
 all langs under these specifications:
-	average frequency of good results = 0.999939393939394
-	average frequency of bad results = 6.060606060606061e-05
-
-Mgen1.22testycopy_mg4_fs_sg20
-NSeto
-average frequency of good test results: 0.9999272727272728
-average frequency of bad test results: 7.272727272727273e-05
-number inputs with exactly 100% good results: 1093 of 1100
-number inputs with at least 90% good results: 1100 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.9999272727272728
-	average frequency of bad results = 7.272727272727273e-05
-all langs under these specifications:
-	average frequency of good results = 0.9999272727272728
-	average frequency of bad results = 7.272727272727273e-05
+	average frequency of good results = 0.9998424242424243
+	average frequency of bad results = 0.00015757575757575763
 
 Mgen1.22_mg4_fs_sg20
 Fin
@@ -2421,9 +2399,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9992727272727271
-average frequency of bad test results: 0.0007272727272727272
-number inputs with exactly 100% good results: 1092 of 1100
+average frequency of good test results: 0.9995181818181821
+average frequency of bad test results: 0.00048181818181818205
+number inputs with exactly 100% good results: 1059 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2435,12 +2413,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9992727272727271
-	average frequency of bad results = 0.0007272727272727272
+	average frequency of good results = 0.9995181818181821
+	average frequency of bad results = 0.00048181818181818205
 NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
+average frequency of good test results: 0.9999272727272728
+average frequency of bad test results: 7.272727272727271e-05
+number inputs with exactly 100% good results: 1094 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2452,11 +2430,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
+	average frequency of good results = 0.9999272727272728
+	average frequency of bad results = 7.272727272727271e-05
 all langs under these specifications:
-	average frequency of good results = 0.9997575757575756
-	average frequency of bad results = 0.00024242424242424242
+	average frequency of good results = 0.9998151515151515
+	average frequency of bad results = 0.00018484848484848494
 
 Mgen1.23_mg4_fs_sg20
 Fin
@@ -2477,9 +2455,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9998454545454547
+average frequency of bad test results: 0.00015454545454545454
+number inputs with exactly 100% good results: 1085 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2491,12 +2469,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9998454545454547
+	average frequency of bad results = 0.00015454545454545454
 NSeto
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9998545454545456
+average frequency of bad test results: 0.00014545454545454548
+number inputs with exactly 100% good results: 1086 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2508,11 +2486,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9998545454545456
+	average frequency of bad results = 0.00014545454545454548
 all langs under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9999000000000001
+	average frequency of bad results = 0.0001
 
 Mgen1.24_mg4_fs_sg20
 Fin
@@ -2533,9 +2511,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9995454545454545
-average frequency of bad test results: 0.00045454545454545455
-number inputs with exactly 100% good results: 1095 of 1100
+average frequency of good test results: 0.9992727272727278
+average frequency of bad test results: 0.0007272727272727277
+number inputs with exactly 100% good results: 1041 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2547,13 +2525,13 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9995454545454545
-	average frequency of bad results = 0.00045454545454545455
+	average frequency of good results = 0.9992727272727278
+	average frequency of bad results = 0.0007272727272727277
 NSeto
-average frequency of good test results: 0.9996363636363635
-average frequency of bad test results: 0.00036363636363636367
-number inputs with exactly 100% good results: 1097 of 1100
-number inputs with at least 90% good results: 1099 of 1100
+average frequency of good test results: 0.999636363636364
+average frequency of bad test results: 0.0003636363636363638
+number inputs with exactly 100% good results: 1078 of 1100
+number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
 number inputs with at least 60% good results: 1100 of 1100
@@ -2564,11 +2542,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9996363636363635
-	average frequency of bad results = 0.00036363636363636367
+	average frequency of good results = 0.999636363636364
+	average frequency of bad results = 0.0003636363636363638
 all langs under these specifications:
-	average frequency of good results = 0.9997272727272727
-	average frequency of bad results = 0.00027272727272727274
+	average frequency of good results = 0.9996363636363639
+	average frequency of bad results = 0.0003636363636363638
 
 Mgen1.2_mg4_fs_sg20
 Fin
@@ -2589,9 +2567,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9993636363636363
-average frequency of bad test results: 0.0006363636363636363
-number inputs with exactly 100% good results: 1093 of 1100
+average frequency of good test results: 0.999609090909091
+average frequency of bad test results: 0.00039090909090909107
+number inputs with exactly 100% good results: 1061 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2603,12 +2581,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9993636363636363
-	average frequency of bad results = 0.0006363636363636363
+	average frequency of good results = 0.999609090909091
+	average frequency of bad results = 0.00039090909090909107
 NSeto
-average frequency of good test results: 0.9997272727272726
-average frequency of bad test results: 0.0002727272727272728
-number inputs with exactly 100% good results: 1097 of 1100
+average frequency of good test results: 0.9998818181818183
+average frequency of bad test results: 0.00011818181818181818
+number inputs with exactly 100% good results: 1090 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2620,11 +2598,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9997272727272726
-	average frequency of bad results = 0.0002727272727272728
+	average frequency of good results = 0.9998818181818183
+	average frequency of bad results = 0.00011818181818181818
 all langs under these specifications:
-	average frequency of good results = 0.9996969696969696
-	average frequency of bad results = 0.00030303030303030303
+	average frequency of good results = 0.999830303030303
+	average frequency of bad results = 0.00016969696969696974
 
 Mgen1.2_mg4_fs_sg25
 Fin
@@ -2645,26 +2623,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9989090909090906
-average frequency of bad test results: 0.001090909090909091
-number inputs with exactly 100% good results: 1090 of 1100
-number inputs with at least 90% good results: 1098 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.9989090909090906
-	average frequency of bad results = 0.001090909090909091
-NSeto
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9991363636363643
+average frequency of bad test results: 0.000863636363636364
+number inputs with exactly 100% good results: 1062 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2676,11 +2637,28 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9991363636363643
+	average frequency of bad results = 0.000863636363636364
+NSeto
+average frequency of good test results: 0.9998636363636365
+average frequency of bad test results: 0.00013636363636363637
+number inputs with exactly 100% good results: 1085 of 1100
+number inputs with at least 90% good results: 1100 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
+number inputs with at least 50% good results: 1100 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9998636363636365
+	average frequency of bad results = 0.00013636363636363637
 all langs under these specifications:
-	average frequency of good results = 0.9996060606060606
-	average frequency of bad results = 0.00039393939393939396
+	average frequency of good results = 0.9996666666666668
+	average frequency of bad results = 0.00033333333333333343
 
 Mgen1.2_mg4_fs_sg35
 Fin
@@ -2701,9 +2679,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9996363636363635
-average frequency of bad test results: 0.00036363636363636367
-number inputs with exactly 100% good results: 1096 of 1100
+average frequency of good test results: 0.9998545454545456
+average frequency of bad test results: 0.00014545454545454546
+number inputs with exactly 100% good results: 1085 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2715,12 +2693,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9996363636363635
-	average frequency of bad results = 0.00036363636363636367
+	average frequency of good results = 0.9998545454545456
+	average frequency of bad results = 0.00014545454545454546
 NSeto
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9996818181818184
+average frequency of bad test results: 0.00031818181818181815
+number inputs with exactly 100% good results: 1077 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2732,11 +2710,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9996818181818184
+	average frequency of bad results = 0.00031818181818181815
 all langs under these specifications:
-	average frequency of good results = 0.9998181818181817
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9998454545454547
+	average frequency of bad results = 0.00015454545454545454
 
 Mgen1.3_mg4_fs_sg20
 Fin
@@ -2757,9 +2735,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9997727272727275
+average frequency of bad test results: 0.00022727272727272733
+number inputs with exactly 100% good results: 1078 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2771,11 +2749,67 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9997727272727275
+	average frequency of bad results = 0.00022727272727272733
 NSeto
-average frequency of good test results: 0.9996363636363635
-average frequency of bad test results: 0.00036363636363636367
+average frequency of good test results: 0.9997363636363639
+average frequency of bad test results: 0.0002636363636363637
+number inputs with exactly 100% good results: 1082 of 1100
+number inputs with at least 90% good results: 1100 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
+number inputs with at least 50% good results: 1100 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9997363636363639
+	average frequency of bad results = 0.0002636363636363637
+all langs under these specifications:
+	average frequency of good results = 0.9998363636363639
+	average frequency of bad results = 0.00016363636363636366
+
+Mgen1.4_mg4_fs_sg20
+Fin
+average frequency of good test results: 0.9949545454545494
+average frequency of bad test results: 0.005045454545454534
+number inputs with exactly 100% good results: 899 of 1100
+number inputs with at least 90% good results: 1100 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
+number inputs with at least 50% good results: 1100 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9949545454545494
+	average frequency of bad results = 0.005045454545454534
+NEst
+average frequency of good test results: 0.9456818181818186
+average frequency of bad test results: 0.0543181818181818
+number inputs with exactly 100% good results: 975 of 1100
+number inputs with at least 90% good results: 990 of 1100
+number inputs with at least 80% good results: 990 of 1100
+number inputs with at least 70% good results: 990 of 1100
+number inputs with at least 60% good results: 990 of 1100
+number inputs with at least 50% good results: 1019 of 1100
+number inputs with at least 40% good results: 1085 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9456818181818186
+	average frequency of bad results = 0.0543181818181818
+NSeto
+average frequency of good test results: 0.9999636363636364
+average frequency of bad test results: 3.6363636363636364e-05
 number inputs with exactly 100% good results: 1096 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
@@ -2788,67 +2822,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9996363636363635
-	average frequency of bad results = 0.00036363636363636367
+	average frequency of good results = 0.9999636363636364
+	average frequency of bad results = 3.6363636363636364e-05
 all langs under these specifications:
-	average frequency of good results = 0.9998181818181817
-	average frequency of bad results = 0.00018181818181818183
-
-Mgen1.4_mg4_fs_sg20
-Fin
-average frequency of good test results: 0.9955454545454536
-average frequency of bad test results: 0.004454545454545456
-number inputs with exactly 100% good results: 1057 of 1100
-number inputs with at least 90% good results: 1093 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.9955454545454536
-	average frequency of bad results = 0.004454545454545456
-NEst
-average frequency of good test results: 0.943545454545454
-average frequency of bad test results: 0.056454545454545466
-number inputs with exactly 100% good results: 990 of 1100
-number inputs with at least 90% good results: 990 of 1100
-number inputs with at least 80% good results: 993 of 1100
-number inputs with at least 70% good results: 999 of 1100
-number inputs with at least 60% good results: 1013 of 1100
-number inputs with at least 50% good results: 1037 of 1100
-number inputs with at least 40% good results: 1070 of 1100
-number inputs with at least 30% good results: 1090 of 1100
-number inputs with at least 20% good results: 1097 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.943545454545454
-	average frequency of bad results = 0.056454545454545466
-NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
-number inputs with at least 90% good results: 1100 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
-all langs under these specifications:
-	average frequency of good results = 0.9796969696969692
-	average frequency of bad results = 0.020303030303030305
+	average frequency of good results = 0.9802000000000014
+	average frequency of bad results = 0.019799999999999988
 
 Mgen1.5_mg4_fs_sg20
 Fin
@@ -2869,26 +2847,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9455454545454545
-average frequency of bad test results: 0.05445454545454548
-number inputs with exactly 100% good results: 986 of 1100
+average frequency of good test results: 0.9451727272727277
+average frequency of bad test results: 0.054827272727272745
+number inputs with exactly 100% good results: 960 of 1100
 number inputs with at least 90% good results: 990 of 1100
-number inputs with at least 80% good results: 992 of 1100
-number inputs with at least 70% good results: 1001 of 1100
-number inputs with at least 60% good results: 1020 of 1100
-number inputs with at least 50% good results: 1051 of 1100
-number inputs with at least 40% good results: 1076 of 1100
-number inputs with at least 30% good results: 1090 of 1100
-number inputs with at least 20% good results: 1096 of 1100
-number inputs with at least 10% good results: 1099 of 1100
-number inputs with exactly 0% bad results: 1 of 1100
+number inputs with at least 80% good results: 990 of 1100
+number inputs with at least 70% good results: 990 of 1100
+number inputs with at least 60% good results: 992 of 1100
+number inputs with at least 50% good results: 1017 of 1100
+number inputs with at least 40% good results: 1089 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9455454545454545
-	average frequency of bad results = 0.05445454545454548
+	average frequency of good results = 0.9451727272727277
+	average frequency of bad results = 0.054827272727272745
 NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
+average frequency of good test results: 0.999909090909091
+average frequency of bad test results: 9.09090909090909e-05
+number inputs with exactly 100% good results: 1094 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -2900,11 +2878,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
+	average frequency of good results = 0.999909090909091
+	average frequency of bad results = 9.09090909090909e-05
 all langs under these specifications:
-	average frequency of good results = 0.9818484848484849
-	average frequency of bad results = 0.018151515151515158
+	average frequency of good results = 0.9816939393939396
+	average frequency of bad results = 0.018306060606060614
 
 Mgen1.6_mg4_fs_sg20
 Fin
@@ -2925,22 +2903,22 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9697272727272734
-average frequency of bad test results: 0.030272727272727284
-number inputs with exactly 100% good results: 991 of 1100
-number inputs with at least 90% good results: 1008 of 1100
-number inputs with at least 80% good results: 1026 of 1100
+average frequency of good test results: 0.970327272727273
+average frequency of bad test results: 0.02967272727272726
+number inputs with exactly 100% good results: 970 of 1100
+number inputs with at least 90% good results: 990 of 1100
+number inputs with at least 80% good results: 994 of 1100
 number inputs with at least 70% good results: 1056 of 1100
-number inputs with at least 60% good results: 1089 of 1100
-number inputs with at least 50% good results: 1097 of 1100
+number inputs with at least 60% good results: 1099 of 1100
+number inputs with at least 50% good results: 1100 of 1100
 number inputs with at least 40% good results: 1100 of 1100
 number inputs with at least 30% good results: 1100 of 1100
 number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9697272727272734
-	average frequency of bad results = 0.030272727272727284
+	average frequency of good results = 0.970327272727273
+	average frequency of bad results = 0.02967272727272726
 NSeto
 average frequency of good test results: 1.0
 average frequency of bad test results: 0.0
@@ -2959,8 +2937,8 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 all langs under these specifications:
-	average frequency of good results = 0.9899090909090912
-	average frequency of bad results = 0.010090909090909095
+	average frequency of good results = 0.9901090909090909
+	average frequency of bad results = 0.009890909090909087
 
 Mgen1.7_mg4_fs_sg20
 Fin
@@ -2982,8 +2960,8 @@ this lang under these specifications:
 	average frequency of bad results = 0.0
 NEst
 average frequency of good test results: 0.8360909090909091
-average frequency of bad test results: 0.16390909090909092
-number inputs with exactly 100% good results: 917 of 1100
+average frequency of bad test results: 0.16390909090909084
+number inputs with exactly 100% good results: 896 of 1100
 number inputs with at least 90% good results: 920 of 1100
 number inputs with at least 80% good results: 920 of 1100
 number inputs with at least 70% good results: 920 of 1100
@@ -2996,12 +2974,12 @@ number inputs with at least 10% good results: 920 of 1100
 number inputs with exactly 0% bad results: 180 of 1100
 this lang under these specifications:
 	average frequency of good results = 0.8360909090909091
-	average frequency of bad results = 0.16390909090909092
+	average frequency of bad results = 0.16390909090909084
 NSeto
-average frequency of good test results: 0.9992727272727271
-average frequency of bad test results: 0.0007272727272727272
-number inputs with exactly 100% good results: 1093 of 1100
-number inputs with at least 90% good results: 1099 of 1100
+average frequency of good test results: 0.9995272727272732
+average frequency of bad test results: 0.0004727272727272727
+number inputs with exactly 100% good results: 1068 of 1100
+number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
 number inputs with at least 60% good results: 1100 of 1100
@@ -3012,11 +2990,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9992727272727271
-	average frequency of bad results = 0.0007272727272727272
+	average frequency of good results = 0.9995272727272732
+	average frequency of bad results = 0.0004727272727272727
 all langs under these specifications:
-	average frequency of good results = 0.9451212121212121
-	average frequency of bad results = 0.05487878787878788
+	average frequency of good results = 0.9452060606060608
+	average frequency of bad results = 0.05479393939393937
 
 Mgen1.8_mg4_fs_sg20
 Fin
@@ -3037,9 +3015,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9999000000000001
+average frequency of bad test results: 9.999999999999999e-05
+number inputs with exactly 100% good results: 1089 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3051,12 +3029,12 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9999000000000001
+	average frequency of bad results = 9.999999999999999e-05
 NSeto
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9999454545454546
+average frequency of bad test results: 5.454545454545455e-05
+number inputs with exactly 100% good results: 1094 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3068,11 +3046,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9999454545454546
+	average frequency of bad results = 5.454545454545455e-05
 all langs under these specifications:
-	average frequency of good results = 0.999939393939394
-	average frequency of bad results = 6.060606060606061e-05
+	average frequency of good results = 0.9999484848484849
+	average frequency of bad results = 5.151515151515152e-05
 
 Mgen1.9_mg4_fs_sg20
 Fin
@@ -3093,9 +3071,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.999909090909091
+average frequency of bad test results: 9.09090909090909e-05
+number inputs with exactly 100% good results: 1090 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3107,28 +3085,28 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.999909090909091
+	average frequency of bad results = 9.09090909090909e-05
 NSeto
-average frequency of good test results: 0.938272727272727
-average frequency of bad test results: 0.061727272727272735
-number inputs with exactly 100% good results: 1005 of 1100
+average frequency of good test results: 0.9407272727272721
+average frequency of bad test results: 0.059272727272727276
+number inputs with exactly 100% good results: 1004 of 1100
 number inputs with at least 90% good results: 1005 of 1100
 number inputs with at least 80% good results: 1005 of 1100
 number inputs with at least 70% good results: 1005 of 1100
-number inputs with at least 60% good results: 1007 of 1100
-number inputs with at least 50% good results: 1014 of 1100
-number inputs with at least 40% good results: 1038 of 1100
-number inputs with at least 30% good results: 1061 of 1100
-number inputs with at least 20% good results: 1086 of 1100
-number inputs with at least 10% good results: 1095 of 1100
-number inputs with exactly 0% bad results: 5 of 1100
+number inputs with at least 60% good results: 1005 of 1100
+number inputs with at least 50% good results: 1005 of 1100
+number inputs with at least 40% good results: 1009 of 1100
+number inputs with at least 30% good results: 1063 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.938272727272727
-	average frequency of bad results = 0.061727272727272735
+	average frequency of good results = 0.9407272727272721
+	average frequency of bad results = 0.059272727272727276
 all langs under these specifications:
-	average frequency of good results = 0.9793636363636362
-	average frequency of bad results = 0.020636363636363637
+	average frequency of good results = 0.9802121212121211
+	average frequency of bad results = 0.01978787878787879
 
 Mgen2.1_mg4_fs_sg25
 Fin
@@ -3149,26 +3127,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9438181818181821
-average frequency of bad test results: 0.05618181818181814
-number inputs with exactly 100% good results: 1018 of 1100
-number inputs with at least 90% good results: 1031 of 1100
+average frequency of good test results: 0.9445454545454556
+average frequency of bad test results: 0.05545454545454543
+number inputs with exactly 100% good results: 970 of 1100
+number inputs with at least 90% good results: 1032 of 1100
 number inputs with at least 80% good results: 1032 of 1100
 number inputs with at least 70% good results: 1032 of 1100
 number inputs with at least 60% good results: 1032 of 1100
 number inputs with at least 50% good results: 1032 of 1100
-number inputs with at least 40% good results: 1033 of 1100
-number inputs with at least 30% good results: 1040 of 1100
-number inputs with at least 20% good results: 1053 of 1100
-number inputs with at least 10% good results: 1079 of 1100
-number inputs with exactly 0% bad results: 21 of 1100
+number inputs with at least 40% good results: 1032 of 1100
+number inputs with at least 30% good results: 1032 of 1100
+number inputs with at least 20% good results: 1034 of 1100
+number inputs with at least 10% good results: 1081 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9438181818181821
-	average frequency of bad results = 0.05618181818181814
+	average frequency of good results = 0.9445454545454556
+	average frequency of bad results = 0.05545454545454543
 NSeto
-average frequency of good test results: 0.9996363636363635
-average frequency of bad test results: 0.00036363636363636367
-number inputs with exactly 100% good results: 1096 of 1100
+average frequency of good test results: 0.9997727272727275
+average frequency of bad test results: 0.00022727272727272727
+number inputs with exactly 100% good results: 1080 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3180,11 +3158,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9996363636363635
-	average frequency of bad results = 0.00036363636363636367
+	average frequency of good results = 0.9997727272727275
+	average frequency of bad results = 0.00022727272727272727
 all langs under these specifications:
-	average frequency of good results = 0.9811515151515152
-	average frequency of bad results = 0.018848484848484833
+	average frequency of good results = 0.9814393939393944
+	average frequency of bad results = 0.018560606060606052
 
 Mgen2.1_mg4_fs_sg35
 Fin
@@ -3205,26 +3183,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9478181818181819
-average frequency of bad test results: 0.05218181818181816
-number inputs with exactly 100% good results: 1016 of 1100
-number inputs with at least 90% good results: 1029 of 1100
+average frequency of good test results: 0.9511727272727285
+average frequency of bad test results: 0.04882727272727271
+number inputs with exactly 100% good results: 943 of 1100
+number inputs with at least 90% good results: 1032 of 1100
 number inputs with at least 80% good results: 1032 of 1100
 number inputs with at least 70% good results: 1032 of 1100
 number inputs with at least 60% good results: 1032 of 1100
-number inputs with at least 50% good results: 1035 of 1100
-number inputs with at least 40% good results: 1037 of 1100
-number inputs with at least 30% good results: 1050 of 1100
-number inputs with at least 20% good results: 1073 of 1100
-number inputs with at least 10% good results: 1090 of 1100
-number inputs with exactly 0% bad results: 10 of 1100
+number inputs with at least 50% good results: 1032 of 1100
+number inputs with at least 40% good results: 1032 of 1100
+number inputs with at least 30% good results: 1033 of 1100
+number inputs with at least 20% good results: 1091 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9478181818181819
-	average frequency of bad results = 0.05218181818181816
+	average frequency of good results = 0.9511727272727285
+	average frequency of bad results = 0.04882727272727271
 NSeto
-average frequency of good test results: 0.999909090909091
-average frequency of bad test results: 9.090909090909092e-05
-number inputs with exactly 100% good results: 1099 of 1100
+average frequency of good test results: 0.9996636363636366
+average frequency of bad test results: 0.0003363636363636364
+number inputs with exactly 100% good results: 1082 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3236,11 +3214,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909092e-05
+	average frequency of good results = 0.9996636363636366
+	average frequency of bad results = 0.0003363636363636364
 all langs under these specifications:
-	average frequency of good results = 0.9825757575757575
-	average frequency of bad results = 0.01742424242424242
+	average frequency of good results = 0.9836121212121217
+	average frequency of bad results = 0.01638787878787878
 
 Mgen3.1_mg4_fs_sg25
 Fin
@@ -3261,26 +3239,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9029090909090907
-average frequency of bad test results: 0.09709090909090906
-number inputs with exactly 100% good results: 942 of 1100
+average frequency of good test results: 0.9
+average frequency of bad test results: 0.10000000000000005
+number inputs with exactly 100% good results: 913 of 1100
 number inputs with at least 90% good results: 944 of 1100
-number inputs with at least 80% good results: 945 of 1100
-number inputs with at least 70% good results: 945 of 1100
-number inputs with at least 60% good results: 950 of 1100
-number inputs with at least 50% good results: 966 of 1100
-number inputs with at least 40% good results: 1004 of 1100
-number inputs with at least 30% good results: 1051 of 1100
-number inputs with at least 20% good results: 1086 of 1100
-number inputs with at least 10% good results: 1099 of 1100
-number inputs with exactly 0% bad results: 1 of 1100
+number inputs with at least 80% good results: 944 of 1100
+number inputs with at least 70% good results: 944 of 1100
+number inputs with at least 60% good results: 944 of 1100
+number inputs with at least 50% good results: 944 of 1100
+number inputs with at least 40% good results: 946 of 1100
+number inputs with at least 30% good results: 1020 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9029090909090907
-	average frequency of bad results = 0.09709090909090906
+	average frequency of good results = 0.9
+	average frequency of bad results = 0.10000000000000005
 NSeto
-average frequency of good test results: 0.9995454545454545
-average frequency of bad test results: 0.00045454545454545455
-number inputs with exactly 100% good results: 1095 of 1100
+average frequency of good test results: 0.9993363636363642
+average frequency of bad test results: 0.0006636363636363641
+number inputs with exactly 100% good results: 1064 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3292,11 +3270,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9995454545454545
-	average frequency of bad results = 0.00045454545454545455
+	average frequency of good results = 0.9993363636363642
+	average frequency of bad results = 0.0006636363636363641
 all langs under these specifications:
-	average frequency of good results = 0.9674848484848484
-	average frequency of bad results = 0.032515151515151504
+	average frequency of good results = 0.9664454545454547
+	average frequency of bad results = 0.03355454545454547
 
 Mgen3.1_mg4_fs_sg35
 Fin
@@ -3317,26 +3295,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9997272727272726
-average frequency of bad test results: 0.0002727272727272728
-number inputs with exactly 100% good results: 1098 of 1100
-number inputs with at least 90% good results: 1099 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.9997272727272726
-	average frequency of bad results = 0.0002727272727272728
-NSeto
-average frequency of good test results: 1.0
-average frequency of bad test results: 0.0
-number inputs with exactly 100% good results: 1100 of 1100
+average frequency of good test results: 0.999609090909091
+average frequency of bad test results: 0.00039090909090909107
+number inputs with exactly 100% good results: 1064 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3348,11 +3309,28 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 1.0
-	average frequency of bad results = 0.0
+	average frequency of good results = 0.999609090909091
+	average frequency of bad results = 0.00039090909090909107
+NSeto
+average frequency of good test results: 0.9998909090909092
+average frequency of bad test results: 0.00010909090909090908
+number inputs with exactly 100% good results: 1088 of 1100
+number inputs with at least 90% good results: 1100 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
+number inputs with at least 50% good results: 1100 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9998909090909092
+	average frequency of bad results = 0.00010909090909090908
 all langs under these specifications:
-	average frequency of good results = 0.999909090909091
-	average frequency of bad results = 9.090909090909093e-05
+	average frequency of good results = 0.9998333333333335
+	average frequency of bad results = 0.00016666666666666672
 
 Mgen4.1_mg4_fs_sg25
 Fin
@@ -3373,26 +3351,26 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.8897272727272726
-average frequency of bad test results: 0.11027272727272723
-number inputs with exactly 100% good results: 940 of 1100
+average frequency of good test results: 0.8883272727272732
+average frequency of bad test results: 0.1116727272727273
+number inputs with exactly 100% good results: 920 of 1100
 number inputs with at least 90% good results: 944 of 1100
 number inputs with at least 80% good results: 944 of 1100
 number inputs with at least 70% good results: 944 of 1100
-number inputs with at least 60% good results: 946 of 1100
-number inputs with at least 50% good results: 952 of 1100
-number inputs with at least 40% good results: 974 of 1100
-number inputs with at least 30% good results: 1005 of 1100
-number inputs with at least 20% good results: 1051 of 1100
-number inputs with at least 10% good results: 1087 of 1100
-number inputs with exactly 0% bad results: 13 of 1100
+number inputs with at least 60% good results: 944 of 1100
+number inputs with at least 50% good results: 944 of 1100
+number inputs with at least 40% good results: 944 of 1100
+number inputs with at least 30% good results: 946 of 1100
+number inputs with at least 20% good results: 1046 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.8897272727272726
-	average frequency of bad results = 0.11027272727272723
+	average frequency of good results = 0.8883272727272732
+	average frequency of bad results = 0.1116727272727273
 NSeto
-average frequency of good test results: 0.9994545454545454
-average frequency of bad test results: 0.0005454545454545455
-number inputs with exactly 100% good results: 1094 of 1100
+average frequency of good test results: 0.9994090909090915
+average frequency of bad test results: 0.0005909090909090912
+number inputs with exactly 100% good results: 1061 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3404,11 +3382,11 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9994545454545454
-	average frequency of bad results = 0.0005454545454545455
+	average frequency of good results = 0.9994090909090915
+	average frequency of bad results = 0.0005909090909090912
 all langs under these specifications:
-	average frequency of good results = 0.9630606060606061
-	average frequency of bad results = 0.036939393939393925
+	average frequency of good results = 0.9625787878787881
+	average frequency of bad results = 0.037421212121212126
 
 Mgen4.1_mg4_fs_sg35
 Fin
@@ -3429,26 +3407,9 @@ this lang under these specifications:
 	average frequency of good results = 1.0
 	average frequency of bad results = 0.0
 NEst
-average frequency of good test results: 0.9993636363636366
-average frequency of bad test results: 0.0006363636363636363
-number inputs with exactly 100% good results: 1094 of 1100
-number inputs with at least 90% good results: 1099 of 1100
-number inputs with at least 80% good results: 1100 of 1100
-number inputs with at least 70% good results: 1100 of 1100
-number inputs with at least 60% good results: 1100 of 1100
-number inputs with at least 50% good results: 1100 of 1100
-number inputs with at least 40% good results: 1100 of 1100
-number inputs with at least 30% good results: 1100 of 1100
-number inputs with at least 20% good results: 1100 of 1100
-number inputs with at least 10% good results: 1100 of 1100
-number inputs with exactly 0% bad results: 0 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.9993636363636366
-	average frequency of bad results = 0.0006363636363636363
-NSeto
-average frequency of good test results: 0.9998181818181818
-average frequency of bad test results: 0.00018181818181818183
-number inputs with exactly 100% good results: 1098 of 1100
+average frequency of good test results: 0.9994454545454546
+average frequency of bad test results: 0.0005545454545454547
+number inputs with exactly 100% good results: 1070 of 1100
 number inputs with at least 90% good results: 1100 of 1100
 number inputs with at least 80% good results: 1100 of 1100
 number inputs with at least 70% good results: 1100 of 1100
@@ -3460,17 +3421,34 @@ number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.9998181818181818
-	average frequency of bad results = 0.00018181818181818183
+	average frequency of good results = 0.9994454545454546
+	average frequency of bad results = 0.0005545454545454547
+NSeto
+average frequency of good test results: 0.9998727272727274
+average frequency of bad test results: 0.00012727272727272728
+number inputs with exactly 100% good results: 1089 of 1100
+number inputs with at least 90% good results: 1100 of 1100
+number inputs with at least 80% good results: 1100 of 1100
+number inputs with at least 70% good results: 1100 of 1100
+number inputs with at least 60% good results: 1100 of 1100
+number inputs with at least 50% good results: 1100 of 1100
+number inputs with at least 40% good results: 1100 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
+number inputs with at least 10% good results: 1100 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.9998727272727274
+	average frequency of bad results = 0.00012727272727272728
 all langs under these specifications:
-	average frequency of good results = 0.9997272727272728
-	average frequency of bad results = 0.00027272727272727274
+	average frequency of good results = 0.9997727272727274
+	average frequency of bad results = 0.00022727272727272733
 
 UnL_Mgen1.1_mg2_sg20
 Fin
-average frequency of good test results: 0.47263636363636363
-average frequency of bad test results: 0.5273636363636364
-number inputs with exactly 100% good results: 514 of 1100
+average frequency of good test results: 0.4721909090909096
+average frequency of bad test results: 0.5278090909090905
+number inputs with exactly 100% good results: 426 of 1100
 number inputs with at least 90% good results: 520 of 1100
 number inputs with at least 80% good results: 520 of 1100
 number inputs with at least 70% good results: 520 of 1100
@@ -3479,15 +3457,15 @@ number inputs with at least 50% good results: 520 of 1100
 number inputs with at least 40% good results: 520 of 1100
 number inputs with at least 30% good results: 520 of 1100
 number inputs with at least 20% good results: 520 of 1100
-number inputs with at least 10% good results: 525 of 1100
-number inputs with exactly 0% bad results: 575 of 1100
+number inputs with at least 10% good results: 520 of 1100
+number inputs with exactly 0% bad results: 532 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.47263636363636363
-	average frequency of bad results = 0.5273636363636364
+	average frequency of good results = 0.4721909090909096
+	average frequency of bad results = 0.5278090909090905
 NEst
-average frequency of good test results: 0.24845454545454532
-average frequency of bad test results: 0.7515454545454542
-number inputs with exactly 100% good results: 269 of 1100
+average frequency of good test results: 0.247945454545454
+average frequency of bad test results: 0.752054545454547
+number inputs with exactly 100% good results: 237 of 1100
 number inputs with at least 90% good results: 270 of 1100
 number inputs with at least 80% good results: 270 of 1100
 number inputs with at least 70% good results: 270 of 1100
@@ -3495,128 +3473,16 @@ number inputs with at least 60% good results: 270 of 1100
 number inputs with at least 50% good results: 270 of 1100
 number inputs with at least 40% good results: 270 of 1100
 number inputs with at least 30% good results: 270 of 1100
-number inputs with at least 20% good results: 272 of 1100
-number inputs with at least 10% good results: 302 of 1100
-number inputs with exactly 0% bad results: 798 of 1100
+number inputs with at least 20% good results: 270 of 1100
+number inputs with at least 10% good results: 270 of 1100
+number inputs with exactly 0% bad results: 599 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.24845454545454532
-	average frequency of bad results = 0.7515454545454542
+	average frequency of good results = 0.247945454545454
+	average frequency of bad results = 0.752054545454547
 NSeto
-average frequency of good test results: 0.29963636363636365
-average frequency of bad test results: 0.7003636363636362
-number inputs with exactly 100% good results: 324 of 1100
-number inputs with at least 90% good results: 328 of 1100
-number inputs with at least 80% good results: 328 of 1100
-number inputs with at least 70% good results: 328 of 1100
-number inputs with at least 60% good results: 328 of 1100
-number inputs with at least 50% good results: 328 of 1100
-number inputs with at least 40% good results: 328 of 1100
-number inputs with at least 30% good results: 328 of 1100
-number inputs with at least 20% good results: 329 of 1100
-number inputs with at least 10% good results: 347 of 1100
-number inputs with exactly 0% bad results: 753 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.29963636363636365
-	average frequency of bad results = 0.7003636363636362
-all langs under these specifications:
-	average frequency of good results = 0.34024242424242424
-	average frequency of bad results = 0.6597575757575757
-
-UnL_Mgen1.1_mg2_sg35
-Fin
-average frequency of good test results: 0.45836363636363586
-average frequency of bad test results: 0.5416363636363644
-number inputs with exactly 100% good results: 397 of 1100
-number inputs with at least 90% good results: 482 of 1100
-number inputs with at least 80% good results: 515 of 1100
-number inputs with at least 70% good results: 519 of 1100
-number inputs with at least 60% good results: 520 of 1100
-number inputs with at least 50% good results: 520 of 1100
-number inputs with at least 40% good results: 520 of 1100
-number inputs with at least 30% good results: 520 of 1100
-number inputs with at least 20% good results: 520 of 1100
-number inputs with at least 10% good results: 529 of 1100
-number inputs with exactly 0% bad results: 571 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.45836363636363586
-	average frequency of bad results = 0.5416363636363644
-NEst
-average frequency of good test results: 0.25090909090909086
-average frequency of bad test results: 0.7490909090909084
-number inputs with exactly 100% good results: 266 of 1100
-number inputs with at least 90% good results: 270 of 1100
-number inputs with at least 80% good results: 270 of 1100
-number inputs with at least 70% good results: 270 of 1100
-number inputs with at least 60% good results: 270 of 1100
-number inputs with at least 50% good results: 270 of 1100
-number inputs with at least 40% good results: 270 of 1100
-number inputs with at least 30% good results: 272 of 1100
-number inputs with at least 20% good results: 277 of 1100
-number inputs with at least 10% good results: 325 of 1100
-number inputs with exactly 0% bad results: 775 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.25090909090909086
-	average frequency of bad results = 0.7490909090909084
-NSeto
-average frequency of good test results: 0.3095454545454547
-average frequency of bad test results: 0.6904545454545445
-number inputs with exactly 100% good results: 323 of 1100
-number inputs with at least 90% good results: 328 of 1100
-number inputs with at least 80% good results: 328 of 1100
-number inputs with at least 70% good results: 328 of 1100
-number inputs with at least 60% good results: 328 of 1100
-number inputs with at least 50% good results: 328 of 1100
-number inputs with at least 40% good results: 328 of 1100
-number inputs with at least 30% good results: 330 of 1100
-number inputs with at least 20% good results: 346 of 1100
-number inputs with at least 10% good results: 438 of 1100
-number inputs with exactly 0% bad results: 662 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.3095454545454547
-	average frequency of bad results = 0.6904545454545445
-all langs under these specifications:
-	average frequency of good results = 0.33960606060606047
-	average frequency of bad results = 0.6603939393939391
-
-UnL_Mgen1.1_mg3_sg20
-Fin
-average frequency of good test results: 0.268090909090909
-average frequency of bad test results: 0.7319090909090901
-number inputs with exactly 100% good results: 288 of 1100
-number inputs with at least 90% good results: 288 of 1100
-number inputs with at least 80% good results: 288 of 1100
-number inputs with at least 70% good results: 288 of 1100
-number inputs with at least 60% good results: 288 of 1100
-number inputs with at least 50% good results: 288 of 1100
-number inputs with at least 40% good results: 288 of 1100
-number inputs with at least 30% good results: 288 of 1100
-number inputs with at least 20% good results: 293 of 1100
-number inputs with at least 10% good results: 352 of 1100
-number inputs with exactly 0% bad results: 748 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.268090909090909
-	average frequency of bad results = 0.7319090909090901
-NEst
-average frequency of good test results: 0.25118181818181795
-average frequency of bad test results: 0.748818181818181
-number inputs with exactly 100% good results: 268 of 1100
-number inputs with at least 90% good results: 270 of 1100
-number inputs with at least 80% good results: 270 of 1100
-number inputs with at least 70% good results: 270 of 1100
-number inputs with at least 60% good results: 270 of 1100
-number inputs with at least 50% good results: 270 of 1100
-number inputs with at least 40% good results: 270 of 1100
-number inputs with at least 30% good results: 270 of 1100
-number inputs with at least 20% good results: 273 of 1100
-number inputs with at least 10% good results: 332 of 1100
-number inputs with exactly 0% bad results: 768 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.25118181818181795
-	average frequency of bad results = 0.748818181818181
-NSeto
-average frequency of good test results: 0.29818181818181816
-average frequency of bad test results: 0.7018181818181818
-number inputs with exactly 100% good results: 326 of 1100
+average frequency of good test results: 0.30028181818181743
+average frequency of bad test results: 0.6997181818181833
+number inputs with exactly 100% good results: 293 of 1100
 number inputs with at least 90% good results: 328 of 1100
 number inputs with at least 80% good results: 328 of 1100
 number inputs with at least 70% good results: 328 of 1100
@@ -3625,20 +3491,76 @@ number inputs with at least 50% good results: 328 of 1100
 number inputs with at least 40% good results: 328 of 1100
 number inputs with at least 30% good results: 328 of 1100
 number inputs with at least 20% good results: 328 of 1100
-number inputs with at least 10% good results: 330 of 1100
-number inputs with exactly 0% bad results: 770 of 1100
+number inputs with at least 10% good results: 328 of 1100
+number inputs with exactly 0% bad results: 547 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.29818181818181816
-	average frequency of bad results = 0.7018181818181818
+	average frequency of good results = 0.30028181818181743
+	average frequency of bad results = 0.6997181818181833
 all langs under these specifications:
-	average frequency of good results = 0.27248484848484833
-	average frequency of bad results = 0.727515151515151
+	average frequency of good results = 0.3401393939393937
+	average frequency of bad results = 0.659860606060607
 
-UnL_Mgen1.1_mg3_sg35
+UnL_Mgen1.1_mg2_sg35
 Fin
-average frequency of good test results: 0.2626363636363636
-average frequency of bad test results: 0.7373636363636363
-number inputs with exactly 100% good results: 288 of 1100
+average frequency of good test results: 0.45723636363636316
+average frequency of bad test results: 0.5427636363636372
+number inputs with exactly 100% good results: 274 of 1100
+number inputs with at least 90% good results: 492 of 1100
+number inputs with at least 80% good results: 520 of 1100
+number inputs with at least 70% good results: 520 of 1100
+number inputs with at least 60% good results: 520 of 1100
+number inputs with at least 50% good results: 520 of 1100
+number inputs with at least 40% good results: 520 of 1100
+number inputs with at least 30% good results: 520 of 1100
+number inputs with at least 20% good results: 520 of 1100
+number inputs with at least 10% good results: 520 of 1100
+number inputs with exactly 0% bad results: 518 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.45723636363636316
+	average frequency of bad results = 0.5427636363636372
+NEst
+average frequency of good test results: 0.2506909090909091
+average frequency of bad test results: 0.7493090909090928
+number inputs with exactly 100% good results: 239 of 1100
+number inputs with at least 90% good results: 270 of 1100
+number inputs with at least 80% good results: 270 of 1100
+number inputs with at least 70% good results: 270 of 1100
+number inputs with at least 60% good results: 270 of 1100
+number inputs with at least 50% good results: 270 of 1100
+number inputs with at least 40% good results: 270 of 1100
+number inputs with at least 30% good results: 270 of 1100
+number inputs with at least 20% good results: 270 of 1100
+number inputs with at least 10% good results: 270 of 1100
+number inputs with exactly 0% bad results: 581 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.2506909090909091
+	average frequency of bad results = 0.7493090909090928
+NSeto
+average frequency of good test results: 0.30911818181818057
+average frequency of bad test results: 0.6908818181818219
+number inputs with exactly 100% good results: 290 of 1100
+number inputs with at least 90% good results: 328 of 1100
+number inputs with at least 80% good results: 328 of 1100
+number inputs with at least 70% good results: 328 of 1100
+number inputs with at least 60% good results: 328 of 1100
+number inputs with at least 50% good results: 328 of 1100
+number inputs with at least 40% good results: 328 of 1100
+number inputs with at least 30% good results: 328 of 1100
+number inputs with at least 20% good results: 328 of 1100
+number inputs with at least 10% good results: 328 of 1100
+number inputs with exactly 0% bad results: 229 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.30911818181818057
+	average frequency of bad results = 0.6908818181818219
+all langs under these specifications:
+	average frequency of good results = 0.33901515151515094
+	average frequency of bad results = 0.6609848484848507
+
+UnL_Mgen1.1_mg3_sg20
+Fin
+average frequency of good test results: 0.26739090909090896
+average frequency of bad test results: 0.7326090909090933
+number inputs with exactly 100% good results: 278 of 1100
 number inputs with at least 90% good results: 288 of 1100
 number inputs with at least 80% good results: 288 of 1100
 number inputs with at least 70% good results: 288 of 1100
@@ -3647,32 +3569,32 @@ number inputs with at least 50% good results: 288 of 1100
 number inputs with at least 40% good results: 288 of 1100
 number inputs with at least 30% good results: 288 of 1100
 number inputs with at least 20% good results: 288 of 1100
-number inputs with at least 10% good results: 297 of 1100
-number inputs with exactly 0% bad results: 803 of 1100
+number inputs with at least 10% good results: 288 of 1100
+number inputs with exactly 0% bad results: 571 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.2626363636363636
-	average frequency of bad results = 0.7373636363636363
+	average frequency of good results = 0.26739090909090896
+	average frequency of bad results = 0.7326090909090933
 NEst
-average frequency of good test results: 0.31636363636363624
-average frequency of bad test results: 0.6836363636363627
-number inputs with exactly 100% good results: 269 of 1100
+average frequency of good test results: 0.2512909090909088
+average frequency of bad test results: 0.7487090909090939
+number inputs with exactly 100% good results: 247 of 1100
 number inputs with at least 90% good results: 270 of 1100
 number inputs with at least 80% good results: 270 of 1100
-number inputs with at least 70% good results: 271 of 1100
-number inputs with at least 60% good results: 274 of 1100
-number inputs with at least 50% good results: 289 of 1100
-number inputs with at least 40% good results: 326 of 1100
-number inputs with at least 30% good results: 391 of 1100
-number inputs with at least 20% good results: 506 of 1100
-number inputs with at least 10% good results: 614 of 1100
-number inputs with exactly 0% bad results: 486 of 1100
+number inputs with at least 70% good results: 270 of 1100
+number inputs with at least 60% good results: 270 of 1100
+number inputs with at least 50% good results: 270 of 1100
+number inputs with at least 40% good results: 270 of 1100
+number inputs with at least 30% good results: 270 of 1100
+number inputs with at least 20% good results: 270 of 1100
+number inputs with at least 10% good results: 270 of 1100
+number inputs with exactly 0% bad results: 479 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.31636363636363624
-	average frequency of bad results = 0.6836363636363627
+	average frequency of good results = 0.2512909090909088
+	average frequency of bad results = 0.7487090909090939
 NSeto
-average frequency of good test results: 0.2985454545454545
-average frequency of bad test results: 0.7014545454545454
-number inputs with exactly 100% good results: 327 of 1100
+average frequency of good test results: 0.2984363636363634
+average frequency of bad test results: 0.7015636363636366
+number inputs with exactly 100% good results: 314 of 1100
 number inputs with at least 90% good results: 328 of 1100
 number inputs with at least 80% good results: 328 of 1100
 number inputs with at least 70% good results: 328 of 1100
@@ -3681,77 +3603,133 @@ number inputs with at least 50% good results: 328 of 1100
 number inputs with at least 40% good results: 328 of 1100
 number inputs with at least 30% good results: 328 of 1100
 number inputs with at least 20% good results: 328 of 1100
-number inputs with at least 10% good results: 333 of 1100
-number inputs with exactly 0% bad results: 767 of 1100
+number inputs with at least 10% good results: 328 of 1100
+number inputs with exactly 0% bad results: 730 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.2985454545454545
-	average frequency of bad results = 0.7014545454545454
+	average frequency of good results = 0.2984363636363634
+	average frequency of bad results = 0.7015636363636366
 all langs under these specifications:
-	average frequency of good results = 0.29251515151515145
-	average frequency of bad results = 0.7074848484848482
+	average frequency of good results = 0.27237272727272704
+	average frequency of bad results = 0.7276272727272746
 
-UnL_Mgen1.1_mg4_sg20
+UnL_Mgen1.1_mg3_sg35
 Fin
-average frequency of good test results: 0.44309090909090887
-average frequency of bad test results: 0.5569090909090916
-number inputs with exactly 100% good results: 335 of 1100
-number inputs with at least 90% good results: 418 of 1100
-number inputs with at least 80% good results: 486 of 1100
-number inputs with at least 70% good results: 512 of 1100
-number inputs with at least 60% good results: 520 of 1100
-number inputs with at least 50% good results: 520 of 1100
-number inputs with at least 40% good results: 520 of 1100
-number inputs with at least 30% good results: 520 of 1100
-number inputs with at least 20% good results: 520 of 1100
-number inputs with at least 10% good results: 522 of 1100
-number inputs with exactly 0% bad results: 578 of 1100
+average frequency of good test results: 0.2624363636363635
+average frequency of bad test results: 0.7375636363636369
+number inputs with exactly 100% good results: 283 of 1100
+number inputs with at least 90% good results: 288 of 1100
+number inputs with at least 80% good results: 288 of 1100
+number inputs with at least 70% good results: 288 of 1100
+number inputs with at least 60% good results: 288 of 1100
+number inputs with at least 50% good results: 288 of 1100
+number inputs with at least 40% good results: 288 of 1100
+number inputs with at least 30% good results: 288 of 1100
+number inputs with at least 20% good results: 288 of 1100
+number inputs with at least 10% good results: 288 of 1100
+number inputs with exactly 0% bad results: 751 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.44309090909090887
-	average frequency of bad results = 0.5569090909090916
+	average frequency of good results = 0.2624363636363635
+	average frequency of bad results = 0.7375636363636369
 NEst
-average frequency of good test results: 0.27372727272727243
-average frequency of bad test results: 0.7262727272727253
-number inputs with exactly 100% good results: 266 of 1100
+average frequency of good test results: 0.3155181818181818
+average frequency of bad test results: 0.6844818181818182
+number inputs with exactly 100% good results: 245 of 1100
 number inputs with at least 90% good results: 270 of 1100
 number inputs with at least 80% good results: 270 of 1100
 number inputs with at least 70% good results: 270 of 1100
 number inputs with at least 60% good results: 270 of 1100
 number inputs with at least 50% good results: 270 of 1100
-number inputs with at least 40% good results: 271 of 1100
-number inputs with at least 30% good results: 288 of 1100
-number inputs with at least 20% good results: 345 of 1100
-number inputs with at least 10% good results: 491 of 1100
-number inputs with exactly 0% bad results: 609 of 1100
+number inputs with at least 40% good results: 270 of 1100
+number inputs with at least 30% good results: 275 of 1100
+number inputs with at least 20% good results: 484 of 1100
+number inputs with at least 10% good results: 648 of 1100
+number inputs with exactly 0% bad results: 390 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.27372727272727243
-	average frequency of bad results = 0.7262727272727253
+	average frequency of good results = 0.3155181818181818
+	average frequency of bad results = 0.6844818181818182
 NSeto
-average frequency of good test results: 0.5642727272727273
-average frequency of bad test results: 0.4357272727272726
-number inputs with exactly 100% good results: 323 of 1100
-number inputs with at least 90% good results: 334 of 1100
-number inputs with at least 80% good results: 351 of 1100
-number inputs with at least 70% good results: 412 of 1100
-number inputs with at least 60% good results: 475 of 1100
-number inputs with at least 50% good results: 619 of 1100
-number inputs with at least 40% good results: 759 of 1100
-number inputs with at least 30% good results: 882 of 1100
-number inputs with at least 20% good results: 993 of 1100
-number inputs with at least 10% good results: 1059 of 1100
-number inputs with exactly 0% bad results: 41 of 1100
+average frequency of good test results: 0.29834545454545447
+average frequency of bad test results: 0.7016545454545456
+number inputs with exactly 100% good results: 315 of 1100
+number inputs with at least 90% good results: 328 of 1100
+number inputs with at least 80% good results: 328 of 1100
+number inputs with at least 70% good results: 328 of 1100
+number inputs with at least 60% good results: 328 of 1100
+number inputs with at least 50% good results: 328 of 1100
+number inputs with at least 40% good results: 328 of 1100
+number inputs with at least 30% good results: 328 of 1100
+number inputs with at least 20% good results: 328 of 1100
+number inputs with at least 10% good results: 328 of 1100
+number inputs with exactly 0% bad results: 741 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.5642727272727273
-	average frequency of bad results = 0.4357272727272726
+	average frequency of good results = 0.29834545454545447
+	average frequency of bad results = 0.7016545454545456
 all langs under these specifications:
-	average frequency of good results = 0.42703030303030287
-	average frequency of bad results = 0.5729696969696965
+	average frequency of good results = 0.29209999999999997
+	average frequency of bad results = 0.7079000000000003
+
+UnL_Mgen1.1_mg4_sg20
+Fin
+average frequency of good test results: 0.4416636363636359
+average frequency of bad test results: 0.5583363636363632
+number inputs with exactly 100% good results: 265 of 1100
+number inputs with at least 90% good results: 314 of 1100
+number inputs with at least 80% good results: 506 of 1100
+number inputs with at least 70% good results: 520 of 1100
+number inputs with at least 60% good results: 520 of 1100
+number inputs with at least 50% good results: 520 of 1100
+number inputs with at least 40% good results: 520 of 1100
+number inputs with at least 30% good results: 520 of 1100
+number inputs with at least 20% good results: 520 of 1100
+number inputs with at least 10% good results: 520 of 1100
+number inputs with exactly 0% bad results: 517 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.4416636363636359
+	average frequency of bad results = 0.5583363636363632
+NEst
+average frequency of good test results: 0.27106363636363645
+average frequency of bad test results: 0.7289363636363634
+number inputs with exactly 100% good results: 224 of 1100
+number inputs with at least 90% good results: 270 of 1100
+number inputs with at least 80% good results: 270 of 1100
+number inputs with at least 70% good results: 270 of 1100
+number inputs with at least 60% good results: 270 of 1100
+number inputs with at least 50% good results: 270 of 1100
+number inputs with at least 40% good results: 270 of 1100
+number inputs with at least 30% good results: 270 of 1100
+number inputs with at least 20% good results: 270 of 1100
+number inputs with at least 10% good results: 347 of 1100
+number inputs with exactly 0% bad results: 386 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.27106363636363645
+	average frequency of bad results = 0.7289363636363634
+NSeto
+average frequency of good test results: 0.5614454545454557
+average frequency of bad test results: 0.4385545454545447
+number inputs with exactly 100% good results: 296 of 1100
+number inputs with at least 90% good results: 328 of 1100
+number inputs with at least 80% good results: 328 of 1100
+number inputs with at least 70% good results: 328 of 1100
+number inputs with at least 60% good results: 353 of 1100
+number inputs with at least 50% good results: 488 of 1100
+number inputs with at least 40% good results: 700 of 1100
+number inputs with at least 30% good results: 931 of 1100
+number inputs with at least 20% good results: 989 of 1100
+number inputs with at least 10% good results: 1062 of 1100
+number inputs with exactly 0% bad results: 0 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.5614454545454557
+	average frequency of bad results = 0.4385545454545447
+all langs under these specifications:
+	average frequency of good results = 0.4247242424242427
+	average frequency of bad results = 0.5752757575757571
 
 UnL_Mgen1.1_mg4_sg35
 Fin
-average frequency of good test results: 0.470272727272727
-average frequency of bad test results: 0.5297272727272728
-number inputs with exactly 100% good results: 489 of 1100
-number inputs with at least 90% good results: 519 of 1100
+average frequency of good test results: 0.4705636363636371
+average frequency of bad test results: 0.5294363636363629
+number inputs with exactly 100% good results: 349 of 1100
+number inputs with at least 90% good results: 520 of 1100
 number inputs with at least 80% good results: 520 of 1100
 number inputs with at least 70% good results: 520 of 1100
 number inputs with at least 60% good results: 520 of 1100
@@ -3759,53 +3737,53 @@ number inputs with at least 50% good results: 520 of 1100
 number inputs with at least 40% good results: 520 of 1100
 number inputs with at least 30% good results: 520 of 1100
 number inputs with at least 20% good results: 520 of 1100
-number inputs with at least 10% good results: 525 of 1100
-number inputs with exactly 0% bad results: 575 of 1100
+number inputs with at least 10% good results: 520 of 1100
+number inputs with exactly 0% bad results: 546 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.470272727272727
-	average frequency of bad results = 0.5297272727272728
+	average frequency of good results = 0.4705636363636371
+	average frequency of bad results = 0.5294363636363629
 NEst
-average frequency of good test results: 0.346909090909091
-average frequency of bad test results: 0.6530909090909085
-number inputs with exactly 100% good results: 266 of 1100
+average frequency of good test results: 0.34894545454545395
+average frequency of bad test results: 0.6510545454545466
+number inputs with exactly 100% good results: 209 of 1100
 number inputs with at least 90% good results: 270 of 1100
 number inputs with at least 80% good results: 270 of 1100
-number inputs with at least 70% good results: 272 of 1100
-number inputs with at least 60% good results: 280 of 1100
-number inputs with at least 50% good results: 315 of 1100
-number inputs with at least 40% good results: 392 of 1100
-number inputs with at least 30% good results: 500 of 1100
-number inputs with at least 20% good results: 590 of 1100
-number inputs with at least 10% good results: 661 of 1100
-number inputs with exactly 0% bad results: 439 of 1100
+number inputs with at least 70% good results: 270 of 1100
+number inputs with at least 60% good results: 270 of 1100
+number inputs with at least 50% good results: 270 of 1100
+number inputs with at least 40% good results: 276 of 1100
+number inputs with at least 30% good results: 467 of 1100
+number inputs with at least 20% good results: 643 of 1100
+number inputs with at least 10% good results: 648 of 1100
+number inputs with exactly 0% bad results: 298 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.346909090909091
-	average frequency of bad results = 0.6530909090909085
+	average frequency of good results = 0.34894545454545395
+	average frequency of bad results = 0.6510545454545466
 NSeto
-average frequency of good test results: 0.7618181818181823
-average frequency of bad test results: 0.23818181818181838
-number inputs with exactly 100% good results: 361 of 1100
-number inputs with at least 90% good results: 441 of 1100
-number inputs with at least 80% good results: 573 of 1100
-number inputs with at least 70% good results: 744 of 1100
-number inputs with at least 60% good results: 905 of 1100
-number inputs with at least 50% good results: 999 of 1100
-number inputs with at least 40% good results: 1067 of 1100
-number inputs with at least 30% good results: 1089 of 1100
-number inputs with at least 20% good results: 1099 of 1100
+average frequency of good test results: 0.7641181818181818
+average frequency of bad test results: 0.2358818181818181
+number inputs with exactly 100% good results: 310 of 1100
+number inputs with at least 90% good results: 331 of 1100
+number inputs with at least 80% good results: 410 of 1100
+number inputs with at least 70% good results: 580 of 1100
+number inputs with at least 60% good results: 924 of 1100
+number inputs with at least 50% good results: 1070 of 1100
+number inputs with at least 40% good results: 1099 of 1100
+number inputs with at least 30% good results: 1100 of 1100
+number inputs with at least 20% good results: 1100 of 1100
 number inputs with at least 10% good results: 1100 of 1100
 number inputs with exactly 0% bad results: 0 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.7618181818181823
-	average frequency of bad results = 0.23818181818181838
+	average frequency of good results = 0.7641181818181818
+	average frequency of bad results = 0.2358818181818181
 all langs under these specifications:
-	average frequency of good results = 0.5263333333333334
-	average frequency of bad results = 0.4736666666666666
+	average frequency of good results = 0.5278757575757576
+	average frequency of bad results = 0.4721242424242425
 
 UnL_Mgen1.1_sg20
 Fin
-average frequency of good test results: 0.26181818181818184
-average frequency of bad test results: 0.7381818181818182
+average frequency of good test results: 0.2618545454545454
+average frequency of bad test results: 0.7381454545454545
 number inputs with exactly 100% good results: 288 of 1100
 number inputs with at least 90% good results: 288 of 1100
 number inputs with at least 80% good results: 288 of 1100
@@ -3816,87 +3794,31 @@ number inputs with at least 40% good results: 288 of 1100
 number inputs with at least 30% good results: 288 of 1100
 number inputs with at least 20% good results: 288 of 1100
 number inputs with at least 10% good results: 288 of 1100
-number inputs with exactly 0% bad results: 812 of 1100
+number inputs with exactly 0% bad results: 808 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.26181818181818184
-	average frequency of bad results = 0.7381818181818182
+	average frequency of good results = 0.2618545454545454
+	average frequency of bad results = 0.7381454545454545
 NEst
-average frequency of good test results: 0.3145454545454547
-average frequency of bad test results: 0.6854545454545447
-number inputs with exactly 100% good results: 268 of 1100
-number inputs with at least 90% good results: 270 of 1100
-number inputs with at least 80% good results: 270 of 1100
-number inputs with at least 70% good results: 270 of 1100
-number inputs with at least 60% good results: 274 of 1100
-number inputs with at least 50% good results: 287 of 1100
-number inputs with at least 40% good results: 315 of 1100
-number inputs with at least 30% good results: 400 of 1100
-number inputs with at least 20% good results: 504 of 1100
-number inputs with at least 10% good results: 602 of 1100
-number inputs with exactly 0% bad results: 498 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.3145454545454547
-	average frequency of bad results = 0.6854545454545447
-NSeto
-average frequency of good test results: 0.2984545454545454
-average frequency of bad test results: 0.7015454545454545
-number inputs with exactly 100% good results: 327 of 1100
-number inputs with at least 90% good results: 328 of 1100
-number inputs with at least 80% good results: 328 of 1100
-number inputs with at least 70% good results: 328 of 1100
-number inputs with at least 60% good results: 328 of 1100
-number inputs with at least 50% good results: 328 of 1100
-number inputs with at least 40% good results: 328 of 1100
-number inputs with at least 30% good results: 328 of 1100
-number inputs with at least 20% good results: 328 of 1100
-number inputs with at least 10% good results: 332 of 1100
-number inputs with exactly 0% bad results: 768 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.2984545454545454
-	average frequency of bad results = 0.7015454545454545
-all langs under these specifications:
-	average frequency of good results = 0.29160606060606065
-	average frequency of bad results = 0.7083939393939391
-
-UnL_Mgen1.1_sg35
-Fin
-average frequency of good test results: 0.26199999999999996
-average frequency of bad test results: 0.738
-number inputs with exactly 100% good results: 285 of 1100
-number inputs with at least 90% good results: 288 of 1100
-number inputs with at least 80% good results: 288 of 1100
-number inputs with at least 70% good results: 288 of 1100
-number inputs with at least 60% good results: 288 of 1100
-number inputs with at least 50% good results: 288 of 1100
-number inputs with at least 40% good results: 288 of 1100
-number inputs with at least 30% good results: 288 of 1100
-number inputs with at least 20% good results: 288 of 1100
-number inputs with at least 10% good results: 293 of 1100
-number inputs with exactly 0% bad results: 807 of 1100
-this lang under these specifications:
-	average frequency of good results = 0.26199999999999996
-	average frequency of bad results = 0.738
-NEst
-average frequency of good test results: 0.2678181818181814
-average frequency of bad test results: 0.732181818181816
-number inputs with exactly 100% good results: 270 of 1100
+average frequency of good test results: 0.31409090909090936
+average frequency of bad test results: 0.6859090909090902
+number inputs with exactly 100% good results: 263 of 1100
 number inputs with at least 90% good results: 270 of 1100
 number inputs with at least 80% good results: 270 of 1100
 number inputs with at least 70% good results: 270 of 1100
 number inputs with at least 60% good results: 270 of 1100
 number inputs with at least 50% good results: 270 of 1100
 number inputs with at least 40% good results: 270 of 1100
-number inputs with at least 30% good results: 276 of 1100
-number inputs with at least 20% good results: 319 of 1100
-number inputs with at least 10% good results: 461 of 1100
-number inputs with exactly 0% bad results: 639 of 1100
+number inputs with at least 30% good results: 277 of 1100
+number inputs with at least 20% good results: 473 of 1100
+number inputs with at least 10% good results: 647 of 1100
+number inputs with exactly 0% bad results: 442 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.2678181818181814
-	average frequency of bad results = 0.732181818181816
+	average frequency of good results = 0.31409090909090936
+	average frequency of bad results = 0.6859090909090902
 NSeto
-average frequency of good test results: 0.29818181818181816
-average frequency of bad test results: 0.7018181818181818
-number inputs with exactly 100% good results: 328 of 1100
+average frequency of good test results: 0.2982727272727271
+average frequency of bad test results: 0.7017272727272728
+number inputs with exactly 100% good results: 317 of 1100
 number inputs with at least 90% good results: 328 of 1100
 number inputs with at least 80% good results: 328 of 1100
 number inputs with at least 70% good results: 328 of 1100
@@ -3906,11 +3828,152 @@ number inputs with at least 40% good results: 328 of 1100
 number inputs with at least 30% good results: 328 of 1100
 number inputs with at least 20% good results: 328 of 1100
 number inputs with at least 10% good results: 328 of 1100
-number inputs with exactly 0% bad results: 772 of 1100
+number inputs with exactly 0% bad results: 750 of 1100
 this lang under these specifications:
-	average frequency of good results = 0.29818181818181816
-	average frequency of bad results = 0.7018181818181818
+	average frequency of good results = 0.2982727272727271
+	average frequency of bad results = 0.7017272727272728
 all langs under these specifications:
-	average frequency of good results = 0.2759999999999998
-	average frequency of bad results = 0.7239999999999993
+	average frequency of good results = 0.2914060606060606
+	average frequency of bad results = 0.7085939393939391
 
+UnL_Mgen1.1_sg35
+Fin
+average frequency of good test results: 0.26200909090909097
+average frequency of bad test results: 0.7379909090909093
+number inputs with exactly 100% good results: 280 of 1100
+number inputs with at least 90% good results: 288 of 1100
+number inputs with at least 80% good results: 288 of 1100
+number inputs with at least 70% good results: 288 of 1100
+number inputs with at least 60% good results: 288 of 1100
+number inputs with at least 50% good results: 288 of 1100
+number inputs with at least 40% good results: 288 of 1100
+number inputs with at least 30% good results: 288 of 1100
+number inputs with at least 20% good results: 288 of 1100
+number inputs with at least 10% good results: 288 of 1100
+number inputs with exactly 0% bad results: 784 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.26200909090909097
+	average frequency of bad results = 0.7379909090909093
+NEst
+average frequency of good test results: 0.2660181818181822
+average frequency of bad test results: 0.7339818181818192
+number inputs with exactly 100% good results: 266 of 1100
+number inputs with at least 90% good results: 270 of 1100
+number inputs with at least 80% good results: 270 of 1100
+number inputs with at least 70% good results: 270 of 1100
+number inputs with at least 60% good results: 270 of 1100
+number inputs with at least 50% good results: 270 of 1100
+number inputs with at least 40% good results: 270 of 1100
+number inputs with at least 30% good results: 270 of 1100
+number inputs with at least 20% good results: 270 of 1100
+number inputs with at least 10% good results: 296 of 1100
+number inputs with exactly 0% bad results: 453 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.2660181818181822
+	average frequency of bad results = 0.7339818181818192
+NSeto
+average frequency of good test results: 0.29821818181818177
+average frequency of bad test results: 0.7017818181818182
+number inputs with exactly 100% good results: 323 of 1100
+number inputs with at least 90% good results: 328 of 1100
+number inputs with at least 80% good results: 328 of 1100
+number inputs with at least 70% good results: 328 of 1100
+number inputs with at least 60% good results: 328 of 1100
+number inputs with at least 50% good results: 328 of 1100
+number inputs with at least 40% good results: 328 of 1100
+number inputs with at least 30% good results: 328 of 1100
+number inputs with at least 20% good results: 328 of 1100
+number inputs with at least 10% good results: 328 of 1100
+number inputs with exactly 0% bad results: 764 of 1100
+this lang under these specifications:
+	average frequency of good results = 0.29821818181818177
+	average frequency of bad results = 0.7017818181818182
+all langs under these specifications:
+	average frequency of good results = 0.27541515151515167
+	average frequency of bad results = 0.7245848484848488
+
+
+top 20 average frequencies of good results:
+  1) 0.9999484848484849
+	Mgen1.8_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+  2) 0.999939393939394
+	Mgen1.12_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+  3) 0.9999242424242425
+	Mgen1.17_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+  4) 0.9999151515151515
+	Mgen1.1_mg4_fs_sg20_ReLU (lowest num inputs above 90% good results = 1100)
+  5) 0.9999000000000001
+	Mgen1.23_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+  6) 0.9998454545454547
+	Mgen1.11_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+	Mgen1.2_mg4_fs_sg35 (lowest num inputs above 90% good results = 1100)
+  7) 0.9998424242424243
+	Mgen1.21_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+  8) 0.9998363636363639
+	Mgen1.3_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+  9) 0.9998333333333335
+	Mgen3.1_mg4_fs_sg35 (lowest num inputs above 90% good results = 1100)
+ 10) 0.999830303030303
+	Mgen1.2_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+ 11) 0.999818181818182
+	Mgen1.18_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+ 12) 0.9998151515151518
+	Mgen1.15_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+ 13) 0.9998151515151515
+	Mgen1.22_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+ 14) 0.9998000000000001
+	Mgen1.1_mg4_fs_sg30 (lowest num inputs above 90% good results = 1100)
+ 15) 0.9997818181818182
+	Mgen1.1_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+ 16) 0.9997727272727274
+	Mgen4.1_mg4_fs_sg35 (lowest num inputs above 90% good results = 1100)
+ 17) 0.9997363636363638
+	Mgen1.1_mg4_fs_sg25 (lowest num inputs above 90% good results = 1100)
+ 18) 0.9996666666666668
+	Mgen1.2_mg4_fs_sg25 (lowest num inputs above 90% good results = 1100)
+ 19) 0.9996363636363639
+	Mgen1.24_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+ 20) 0.9996212121212125
+	Mgen1.19_mg4_fs_sg20 (lowest num inputs above 90% good results = 1100)
+
+bottom 20 average frequencies of good results:
+-20) 0.948118181818182
+	Mgen1.13_mg4_fs_sg20
+-19) 0.9452060606060608
+	Mgen1.7_mg4_fs_sg20
+-18) 0.9451818181818185
+	M100_mg4_fs_sg20
+-17) 0.945109090909091
+	M300_mg4_fs_sg35
+-16) 0.9444636363636366
+	M300_mg4_fs_sg25
+-15) 0.9159090909090908
+	Mgen1.1_mg2_sg30
+-14) 0.7597242424242422
+	Mgen1.1_mg3_sg35
+-13) 0.7008393939393947
+	Mgen1.1_mg3_sg20
+-12) 0.5278757575757576
+	UnL_Mgen1.1_mg4_sg35
+-11) 0.48957272727272727
+	Mgen1.1_fs_sg20
+-10) 0.4894757575757576
+	Mgen1.1_fs_sg35
+ -9) 0.4558757575757572
+	Mgen1.1_sg20
+ -8) 0.4247242424242427
+	UnL_Mgen1.1_mg4_sg20
+ -7) 0.3401393939393937
+	UnL_Mgen1.1_mg2_sg20
+ -6) 0.33901515151515094
+	UnL_Mgen1.1_mg2_sg35
+ -5) 0.29209999999999997
+	UnL_Mgen1.1_mg3_sg35
+ -4) 0.2914060606060606
+	UnL_Mgen1.1_sg20
+ -3) 0.2763424242424242
+	Mgen1.1_sg35
+ -2) 0.27541515151515167
+	UnL_Mgen1.1_sg35
+ -1) 0.27237272727272704
+	UnL_Mgen1.1_mg3_sg20

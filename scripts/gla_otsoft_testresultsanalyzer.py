@@ -212,7 +212,7 @@ def main_individual(TESTSfilepath=None):
                     degree = "exactly"
                 elif percent == 0:
                     degree = "exactly"
-                    goodbad = "bad"
+                    # goodbad = "bad"
 
                 # write the summary
                 wf.write(writestring.format(degree=degree, percent=percent, goodbad=goodbad, num=num, total=totalresults))

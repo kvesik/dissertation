@@ -20,6 +20,7 @@ class Grammar:
         self.intendedtableauxfilepath = intendedtableauxfilepath
         self.TESTSfilepath = grammarTESTSresultsfilepath
         self.analysisfile = self.TESTSfilepath.replace("00.txt", "00_analysis.txt")
+        self.containingfolder = os.path.split(self.TESTSfilepath)[0]
         self.constraints = []
         self.intendedtableaux_list = []
         self.grammarTESTStableaux_list = []
@@ -121,6 +122,9 @@ def main_individual(TESTSfilepath=None):
         10: len([res for res in goodtestresults if res >= 0.10]),
         0: len([res for res in goodtestresults if res == 0])
     }
+
+    with io.open(os.path.join(grammar.containingfolder, str(averagegoodresults) + ".averagegoodresults"), "w") as rf:
+        pass  # basically just want Unix "touch"
 
     with io.open(grammar.analysisfile, "w") as wf:
         with io.open(grammar.TESTSfilepath, "r") as tf:
@@ -391,7 +395,7 @@ def summarizeallfolders():
         wf.write("\n")
         wf.write("there are " + str(len(below30percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or below 30%:\n")
         wf.write(str(sorted(below30percent_freqs, reverse=True)))
-        wf.write("\n")
+        wf.write("\n\n")
 
         wf.write("top 20 average frequencies of good results:\n")
         for idx, freq in enumerate(top20):

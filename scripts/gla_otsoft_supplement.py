@@ -1381,7 +1381,7 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         # print("\n--------------- OMIT TEST ---------------------")
         print("\n--------------- BEGIN TEST ---------------------\n")
         rf.write("\n--------------- BEGIN TEST ---------------------\n\n")
-        testresults = learner.testgrammar(10)  # 100
+        testresults = learner.testgrammar(5)  # 100
         for results_t in testresults:
             ordered_t = results_t.reindex([results_t.columns[0]]+list(results_t.columns[1:3])+list(cons), axis=1)
             rf.write(ordered_t.to_string(index=False) + "\n\n")
@@ -1391,54 +1391,22 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         rf.write("time elapsed: " + str(endtime-starttime))
 
 
-def may2024combinations():
-    for demoteonlyundominatedlosers in [False]:  # , True]:  # , True]:
-        for magri in [False, True]:
-            for magritype in [2, 3, 4] if magri else [0]:  # [1, 2, 3]
-                for gravity in [False]:  # [True]:  # , False]:
-                    for gravityconst in [2] if gravity else [0]:
-                        for preferspecificity in [True]:
-                            for specgenbias in [20, 35]:  # , 20, 30]:  # -1, 0, 20, 30]:
-                                for expandingbias in [False]:  # , True] if specgenbias >= 0 else [False]:
-                                    for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
-                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
-                                            for initrankingswMgen in [1.2, 2.1, 3.1]:  # [1.1, 1.2, 2.1, 3.1]:  # [True]:
-                                                for initMrankingscalcbysums in [True, False] if initrankingswMgen > 0 else [True]:
-                                                    abbrevstr = "T_"  # tested  # "NIT_"  # no inputs with initial-syl transparent vowels
-                                                    abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
-                                                    if initrankingswMgen > 0:
-                                                        abbrevstr += "Mgen" + initrankingswMgen + ("s" if initMrankingscalcbysums else "a") + "_"
-                                                    else:
-                                                        abbrevstr += "M" + str(INIT_M) + "_"
-                                                    # abbrevstr += "Mgen" + initrankingswMgen + "_" if initrankingswMgen > 0 else ""
-                                                    abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
-                                                    abbrevstr += "gr_" if gravity else ""
-                                                    abbrevstr += "fs_" if preferspecificity else ""
-                                                    if specgenbias >= 0:
-                                                        abbrevstr += "sg" + str(specgenbias) + "_"
-                                                        if expandingbias:
-                                                            abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
-                                                    print(abbrevstr)
-                                                    # fs_sg20_ex - r
-                                                    main(prefix=abbrevstr, argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly, expandslowlydecreasingrate, initrankingswMgen, initMrankingscalcbysums, True))
-
-
-def onespecificthing():
+def run_combinations():
     for demoteonlyundominatedlosers in [False, True]:  # , True]:  # , True]:
         for magri in [False, True]:  # , True]:
             for magritype in [1, 2, 3, 4] if magri else [0]:  # [1, 2, 3]
                 for gravity in [False]:  # [True]:  # , False]:
                     for gravityconst in [2] if gravity else [0]:
                         for preferspecificity in [False, True]:  # , True]:
-                            for specgenbias in [-1, 0, 20, 30, 40]:  # [20, 25, 30, 35, 40]:  # , 20, 30]:  # -1, 0, 20, 30]:
-                                for expandingbias in [False]:  # , True] if specgenbias >= 0 else [False]:
+                            for specgenbias in [-1, 0, 10, 20, 30, 40]:  # [20, 25, 30, 35, 40]:  # , 20, 30]:  # -1, 0, 20, 30]:
+                                for expandingbias in [False]:  # , True]:  # , True] if specgenbias >= 0 else [False]:
                                     for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
                                         for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
                                             for initrankingswMgen_type in ["1.050.050", "1.050.100", "1.100.050", "1.100.100", "1.150.050", "1.150.100"]:
-                                                for initMrankings_whichcand in ["faithful", "random", "all"]:
-                                                    for initMrankings_calchow in ["sum", "average"] if initMrankings_whichcand == "all" else ["sum"]:
+                                                for initMrankings_whichcand in ["faithful"]:  # , "random", "all"]:
+                                                    for initMrankings_calchow in ["sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
                                                         for ReLU in [False, True]:
-                                                            abbrevstr = "N_"  # not tested
+                                                            abbrevstr = "T_"  # not tested
                                                             abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
                                                             if int(initrankingswMgen_type[0]) > 0:
                                                                 abbrevstr += "Mgen" + initrankingswMgen_type
@@ -1457,52 +1425,15 @@ def onespecificthing():
                                                                 abbrevstr += "ReLU_"
                                                             print(abbrevstr)
                                                             # fs_sg20_ex - r
-                                                            main(prefix=abbrevstr, argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias, gravity, gravityconst, preferspecificity, expandingbias, expandingslowly, expandslowlydecreasingrate, initrankingswMgen_type, initMrankings_whichcand, initMrankings_calchow, ReLU))
-
-
-def startwithMgen():
-    gravity = False
-    gravityconst = 0
-    for initrankingswMgen in ["TODO these have to be strings now"]:
-        for initMrankingscalcbysums in [True, False] if int(initrankingswMgen[0]) > 0 else [True]:
-            for specgenbias in [-1, 0, 10, 20, 30, 40]:
-                for favourspecificity in [False, True]:
-                    for magri in [False, True]:
-                        for magritype in [1, 2, 3, 4] if magri else [0]:
-                            for expandingbias in [False, True] if specgenbias >= 0 else [False]:
-                                for expandingslowly in [False, True] if expandingbias else [False]:
-                                    for expandslowlydecreasingrate in [False, True] if expandingslowly else [False]:
-                                        for demoteonlyundominatedlosers in [False, True]:
-                                            for ReLU in [True]:
-                                                abbrevstr = "T_"  # tested  # "NIT_"  # no inputs with initial-syl transparent vowels
-                                                abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
-                                                if int(initrankingswMgen[0]) > 0:
-                                                    abbrevstr += "Mgen" + initrankingswMgen + ("s" if initMrankingscalcbysums else "a") + "_"
-                                                else:
-                                                    abbrevstr += "M" + str(INIT_M) + "_"
-                                                # abbrevstr += "Mgen" + initrankingswMgen + "_" if initrankingswMgen > 0 else ""
-                                                abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
-                                                # abbrevstr += "gr_" if gravity else ""
-                                                abbrevstr += "fs_" if favourspecificity else ""
-                                                if specgenbias >= 0:
-                                                    abbrevstr += "sg" + str(specgenbias) + "_"
-                                                    if expandingbias:
-                                                        abbrevstr += "ex" + (("-s" + (
-                                                            "-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
-                                                if ReLU:
-                                                    abbrevstr += "ReLU_"
-                                                print(abbrevstr)
-                                                # fs_sg20_ex - r
-                                                main(prefix=abbrevstr,
-                                                     argstuple=(demoteonlyundominatedlosers, magri, magritype, specgenbias,
-                                                                gravity, gravityconst, favourspecificity, expandingbias,
-                                                                expandingslowly, expandslowlydecreasingrate,
-                                                                initrankingswMgen, initMrankingscalcbysums, ReLU)
-                                                     )
+                                                            main(prefix=abbrevstr, argstuple=(
+                                                                demoteonlyundominatedlosers, magri, magritype,
+                                                                specgenbias, gravity, gravityconst, preferspecificity,
+                                                                expandingbias, expandingslowly,
+                                                                expandslowlydecreasingrate, initrankingswMgen_type,
+                                                                initMrankings_whichcand, initMrankings_calchow, ReLU))
 
 
 if __name__ == "__main__":
     # main()
-    # may2024combinations()
-    onespecificthing()
+    run_combinations()
     # justtests(skipifalreadydone=True)

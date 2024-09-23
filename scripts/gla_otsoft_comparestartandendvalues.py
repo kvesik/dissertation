@@ -50,7 +50,7 @@ def main(resultsfilepath=None):
 
 if __name__ == "__main__":
     filesdone = []
-    firstfolder = "../sim_outs/20240507_GLA_outputs"
+    firstfolder = "../sim_outs/20240923_GLA_outputs"
     folderswithGLAfiles = [fn for fn in os.listdir(firstfolder) if "OTSoft-PDDP" in fn and "_GLA" in fn]
     for secondfolder in folderswithGLAfiles:
         Resultsfiles = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if "_GLA_RESULTS" in fn and fn.endswith(".txt")]

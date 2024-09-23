@@ -1163,7 +1163,17 @@ def make_files_exps_list():
     return files_exps
 
 
-def justtests(skipifalreadydone=True):
+def meetsminbenchmark(foldername, minbenchmark):
+    folderpath = os.path.join(OUTPUTS_DIR, foldername)
+    resultsfiles = [f for f in os.listdir(folderpath) if f.endswith(".averagegoodresults")]
+    if len(resultsfiles) > 0:
+        thisfolderresults = float(resultsfiles[0].replace(".averagegoodresults", ""))
+        return thisfolderresults >= minbenchmark
+    else:
+        return True
+
+
+def justtests(skipifalreadydone=True, onlyatleastasgoodas=0):
     files_exps = {
         'NE': ('OTSoft-PDDP-NEst_GLA.txt', 'NE894'),
         'Fi': ('OTSoft-PDDP-Fin_GLA.txt', 'Fi894'),
@@ -1171,7 +1181,8 @@ def justtests(skipifalreadydone=True):
     }
 
     resultsfolders = os.listdir(OUTPUTS_DIR)
-    resultsfolders = [fol for fol in resultsfolders if os.path.isdir(os.path.join(OUTPUTS_DIR, fol))]   #  if "testycopy" in fol]  # if fol.startswith("T_Mgen")]
+    resultsfolders = [fol for fol in resultsfolders if os.path.isdir(os.path.join(OUTPUTS_DIR, fol))
+                      and meetsminbenchmark(fol, onlyatleastasgoodas)]
     numfolders = len(resultsfolders)
 
     for idx, fol in enumerate(resultsfolders):

@@ -6,7 +6,8 @@ def main():
     os.chdir(outputs_folder)
     inputfolders = [f for f in os.listdir() if os.path.isdir(f)]
     for f in inputfolders:
-        f_new = rejig_2ndtry_folders(renumber_Mgen(f))
+        f_new = renumber_Mgen(f)
+        f_new = rejig_2ndtry_folders(f_new)
 
         if f == f_new:
             print("no change:", f)
@@ -16,14 +17,7 @@ def main():
 
 
 def rejig_2ndtry_folders(f):
-    if "2nd try" in f:
-        oldtext = "2nd try"
-    elif "2try" in f:
-        oldtext = "2try"
-    else:
-        return f
-
-    return f.replace(oldtext, "try2")
+    return f.replace("2nd try", "try2").replace("2try", "try2")
 
 
 def renumber_Mgen(f):

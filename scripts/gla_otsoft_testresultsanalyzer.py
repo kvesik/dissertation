@@ -24,55 +24,6 @@ class Grammar:
         self.intendedtableaux_list = []
         self.grammarTESTStableaux_list = []
 
-    # # TODO description
-    # # intendedtableaux = dictionary of inputstring --> { dictionary of candidate --> list of violations }
-    # def set_intendedfrequencies(self, intendedtableaux):
-    #     list_of_dfs = []
-    #     for ur in intendedtableaux.keys():
-    #         list_of_dfs.append(get_tableau(ur, intendedtableaux[ur], self.constraints))
-    #     self.intendedtableaux_list = list_of_dfs
-    #
-    # # TODO description
-    # def read_intendedfrequencies(self):
-    #     with io.open(self.intendedtableauxfilepath, "r") as infile:
-    #         df = pd.read_csv(infile, sep="\t", header=1, keep_default_na=False)
-    #         df.rename(
-    #             columns=({'Unnamed: 0': 'input', 'Unnamed: 1': 'candidate', 'Unnamed: 2': 'frequency'}),
-    #             inplace=True,
-    #         )
-    #         # assume violations are listed explicitly
-    #         tableaux = {}
-    #
-    #         cur_input = ""
-    #         cur_tableau = {}
-    #         for idx, row in df.iterrows():
-    #             if row["input"] != "":
-    #                 if len(cur_tableau.keys()) > 0:
-    #                     # save previous input's tableau
-    #                     tableaux[cur_input] = cur_tableau
-    #                 # start a new tableau
-    #                 cur_input = row["input"]
-    #                 cur_tableau = {}
-    #             cur_candidate = row["candidate"]
-    #             cur_frequency = row["frequency"]
-    #             if cur_frequency == "":
-    #                 cur_frequency = 0
-    #             else:
-    #                 cur_frequency = float(cur_frequency)
-    #
-    #             cur_violations = getviolations(row[3:])
-    #             # cur_violations = getviolations(cur_input, cur_candidate, list(df.columns[3:]), row[3:])
-    #             cur_tableau[cur_candidate] = {}
-    #             cur_tableau[cur_candidate]["frequency"] = cur_frequency
-    #             cur_tableau[cur_candidate]["violations"] = cur_violations
-    #
-    #         # save the final input's tableau
-    #         tableaux[cur_input] = cur_tableau
-    #
-    #     self.constraints = list(df.columns[3:])
-    #
-    #     return tableaux
-
     def collecttestresults(self):
         results = {}
         with io.open(self.TESTSfilepath, "r") as tf:
@@ -121,28 +72,6 @@ class Grammar:
 # end of class Grammar #
 
 
-# def getviolations(cellvalues):
-#     # used to be: def getviolations(ur, candidate, cons, cellvalues):
-#     violations = []
-#     for idx, cell in enumerate(cellvalues):
-#         if re.match("\d+", str(cell)):
-#             # number of violations was explicitly assigned
-#             numviolations = int(cell)
-#         else:  # violation mark(s) hasn't been explicitly assigned
-#             numviolations = 0
-#         violations.append(numviolations)
-#     return violations
-#
-#
-# # tableau = dictionary of candidate --> list of violations
-# def get_tableau(ur, tableau, constraints):
-#     df_lists = []
-#     for cand in tableau.keys():
-#         df_lists.append([cand]+[tableau[cand]["frequency"]]+tableau[cand]["violations"])
-#     df = pd.DataFrame(df_lists, columns=[ur]+["frequency"]+constraints)
-#     return df
-
-
 def main_individual(TESTSfilepath=None):
     if TESTSfilepath is None:
         TESTSfilepath = input("Enter relative filepath whose GLA TESTS results to analyze: ")
@@ -174,8 +103,6 @@ def main_individual(TESTSfilepath=None):
         # already done; skip this one
         print("    already done; skipping")
         return
-    # TODO do we need this??
-    # grammar.set_intendedfrequencies(grammar.read_intendedfrequencies())
     testresults = grammar.collecttestresults()
     goodtestresults, badtestresults = zip(*testresults.values())
     totalresults = len(goodtestresults)
@@ -238,68 +165,6 @@ def main_individual(TESTSfilepath=None):
                         current_ur = tf_ln.strip().split()[0]
                     wf.write(tf_ln)
                 tf_ln = tf.readline()
-        #
-        # detailsstring = ""
-        # matchtypes = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, -1: 0}
-        #
-        # for results_t in testresults:
-        #     ur = results_t.columns[0]
-        #     inputfrequencies = results_t["frequency"].values
-        #     outputfrequencies = results_t["outputfrequency"].values
-        #     matchtype = getmatchtype(inputfrequencies, outputfrequencies)
-        #     matchtypes[matchtype] += 1
-        #
-        #     teststatementstring = "UR " + ur + ": the generated output (" + str(matchtype) + ") "
-        #     if matchtype == 0:
-        #         teststatementstring += "COULD NOT BE DETERMINED from this ranking."
-        #     elif matchtype == 1:
-        #         teststatementstring += "MATCHES what was predicted."
-        #     elif matchtype == 2:
-        #         teststatementstring += "is a STRICT, NONEMPTY SUBSET of what was predicted."
-        #     elif matchtype == 3:
-        #         teststatementstring += "COULD NOT BE DETERMINED from this ranking, but the last candidates standing (neg freqs) match what was predicted."
-        #     elif matchtype == 4:
-        #         teststatementstring += "COULD NOT BE DETERMINED from this ranking, but the last candidates standing (neg freqs) form a strict, nonempty subset of what was predicted."
-        #     else:
-        #         teststatementstring += "is a MYSTERY. ooooOOOOOOOoooooo..."
-        #
-        #     ordered_constraints = [c for stratum in grammar.strata for c in stratum]
-        #     ordered_t = results_t.reindex(
-        #         [results_t.columns[0]] + list(results_t.columns[1:3]) + ordered_constraints, axis=1)
-        #     testtableauxstring = ordered_t.to_string(index=False)
-        #     detailsstring += teststatementstring + "\n" + testtableauxstring + "\n\n"
-        #
-        # wf.write("Of " + str(len(testresults)) + " inputs:\n")
-        # wf.write("   (1) " + str(matchtypes[1]) + " had outputs that MATCH what was predicted\n")
-        # wf.write("   (2) " + str(matchtypes[2]) + " had outputs that are a STRICT, NONEMPTY SUBSET of what was predicted\n")
-        # wf.write("   (3) " + str(matchtypes[3]) + " had outputs that COULD NOT BE DETERMINED from this ranking, but the last candidates standing match what was predicted\n")
-        # wf.write("   (4) " + str(matchtypes[4]) + " had outputs that COULD NOT BE DETERMINED from this ranking, but the last candidates standing (neg freqs) form a strict, nonempty subset of what was predicted\n")
-        # wf.write("   (0) " + str(matchtypes[0]) + " had outputs that COULD NOT BE DETERMINED from this ranking\n")
-        # wf.write("   (-1) " + str(matchtypes[-1]) + " had outputs that are a MYSTERY\n\n")
-        # wf.write(detailsstring)
-
-
-# def getmatchtype(inputfrequencies, outputfrequencies):
-#     if all([o >= 0 for o in outputfrequencies]):
-#         out_equals_in = all(inputfrequencies == outputfrequencies)
-#         out_empty = all([o == 0 for o in outputfrequencies])
-#         out_strictsubsetof_in = all([o <= i for (i, o) in zip(inputfrequencies, outputfrequencies)]) and not out_equals_in
-#         if out_equals_in:
-#             return 1
-#         elif out_empty:
-#             return 0
-#         elif out_strictsubsetof_in:
-#             return 2
-#     else:
-#         out_undetermined_equalsin = all([bool(i) == bool(o) for (i, o) in zip(inputfrequencies, outputfrequencies)])
-#         out_undetermined_subsetin = all([not(i == 0 and o < 0) for (i, o) in zip(inputfrequencies, outputfrequencies)]) and not out_undetermined_equalsin
-#         if out_undetermined_equalsin:
-#             return 3
-#         elif out_undetermined_subsetin:
-#             return 4
-#
-#     # else none of the above
-#     return -1
 
 
 def main_overall_onefolder(analysisfilepath=None):
@@ -313,9 +178,11 @@ def main_overall_onefolder(analysisfilepath=None):
     endoflangstring = analysisfilename.index("_GLA_")
     langstring = analysisfilename[begoflangstring:endoflangstring]
 
-    begofspecificationstring = 2
-    endofspecificationstring = analysisfoldername.index("_python") - 6
-    specificationstring = analysisfoldername[begofspecificationstring:endofspecificationstring]
+    specificationstring = analysisfoldername[:2] if analysisfoldername.startswith("c") else (analysisfoldername[:4] if analysisfoldername.startswith("redo") else "")
+    reduced_analysisfoldername = analysisfoldername[len(specificationstring):]
+    # begofspecificationstring = 2
+    endofspecificationstring = reduced_analysisfoldername.index("_python") - 6
+    specificationstring += reduced_analysisfoldername[:endofspecificationstring]  # [begofspecificationstring:endofspecificationstring]
 
     resultstext = ""
     avggoodfreq = 0
@@ -442,9 +309,6 @@ def summarizeallfolders():
             filesdone.append(secondfolder)
             print("collecting test analysis info from " + secondfolder)
 
-            # specification = ""
-            # lang = ""
-            # results = []
             onefileresults = main_overall_onefolder(analysisfilepath)
             lang = onefileresults["lang"]
             specs = onefileresults["specs"]
@@ -460,12 +324,6 @@ def summarizeallfolders():
             if lang not in allresults[specs].keys():
                 allresults[specs][lang] = []
             allresults[specs][lang].append((results_strs, results_nums))
-            #
-            # if results_nums[0] > highestresult:
-            #     highestresult = results_nums[0]
-            #     highestresultspecs = [specs]
-            # elif results_nums[0] == highestresult:
-            #     highestresultspecs.append(specs)
 
     with io.open(os.path.join(OUTPUTS_DIR, "summary_of_test_analysis_results.txt"), "w") as wf:
         for specs in allresults.keys():
@@ -500,18 +358,6 @@ def summarizeallfolders():
             wf.write("\taverage frequency of good results = " + str(thisspec_overallavgfreqgood) + "\n")
             wf.write("\taverage frequency of bad results = " + str(thisspec_overallavgfreqbad) + "\n")
             wf.write("\n")
-            #
-            # if thisspec_overallavgfreqgood > highestresult:
-            #     highestresult = thisspec_overallavgfreqgood
-            #     highestresultspecs = [specs]
-            # elif thisspec_overallavgfreqgood == highestresult:
-            #     highestresultspecs.append(specs)
-            #
-            # if thisspec_overallavgfreqgood < lowestresult:
-            #     lowestresult = thisspec_overallavgfreqgood
-            #     lowestresultspecs = [specs]
-            # elif thisspec_overallavgfreqgood == lowestresult:
-            #     lowestresultspecs.append(specs)
 
             if thisspec_overallavgfreqgood not in resultsbyavggoodfreq.keys():
                 resultsbyavggoodfreq[thisspec_overallavgfreqgood] = []
@@ -522,29 +368,30 @@ def summarizeallfolders():
                         lowestnumover90forthisspec = resnums[3]
             resultsbyavggoodfreq[thisspec_overallavgfreqgood].append((specs, lowestnumover90forthisspec))
 
-        #
-        # wf.write("highest average frequency of good results: " + str(highestresult) + "\n")
-        # wf.write("specs with that frequency:\n")
-        # for spec in highestresultspecs:
-        #     wf.write("\t" + spec + "\n")
-        #
-        # wf.write("lowest average frequency of good results: " + str(lowestresult) + "\n")
-        # wf.write("specs with that frequency:\n")
-        # for spec in lowestresultspecs:
-        #     wf.write("\t" + spec + "\n")
-
         wf.write("\n")
 
         resultsindescendingorder = sorted(([k for k in resultsbyavggoodfreq.keys()]), reverse=True)
         top20 = resultsindescendingorder[:20]
         bot20 = resultsindescendingorder[-20:]
+        above95percent = [fr for fr in resultsindescendingorder if fr >= 0.95]
+        above99percent = [fr for fr in resultsindescendingorder if fr >= 0.99]
+        below30percent = [fr for fr in resultsindescendingorder if fr <= 0.30]
+
+        wf.write("there are " + str(len(above95percent)) + " of " + str(len(resultsindescendingorder)) + " sets of specs with results at or above 95%:\n")
+        wf.write(str(above95percent))
+        wf.write("\n")
+        wf.write("there are " + str(len(above99percent)) + " of " + str(len(resultsindescendingorder)) + " sets of specs with results at or above 99%:\n")
+        wf.write(str(above99percent))
+        wf.write("\n")
+        wf.write("there are " + str(len(below30percent)) + " of " + str(len(resultsindescendingorder)) + " sets of specs with results at or below 30%:\n")
+        wf.write(str(below30percent))
+        wf.write("\n")
 
         wf.write("top 20 average frequencies of good results:\n")
         for idx, freq in enumerate(top20):
             place = idx + 1
             specline = "{place:>3}) " + str(freq) + "\n"
             wf.write(specline.format(place=place))
-            # wf.write(str(idx+1) + ". " + str(freq) + "\n")
             for spec, lowestnumabove90 in resultsbyavggoodfreq[freq]:
                 wf.write("\t" + spec + " (lowest num inputs above 90% good results = " + str(lowestnumabove90) + ")\n")
         wf.write("\n")
@@ -553,10 +400,8 @@ def summarizeallfolders():
             place = idx - 20
             specline = "{place:>3}) " + str(freq) + "\n"
             wf.write(specline.format(place=place))
-            # wf.write(str(idx-10) + ") " + str(freq) + "\n")
             for spec, lowestnumabove90 in resultsbyavggoodfreq[freq]:
                 wf.write("\t" + spec + "\n")
-
 
 
 if __name__ == "__main__":

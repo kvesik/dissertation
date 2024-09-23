@@ -10,7 +10,7 @@ from generate_tableaux_otsoft_specifylang import isintendedwinner, isalternatewi
 
 
 typetoanalyze = "TESTS"  #  "RESULTS"
-OUTPUTS_DIR = "../sim_outs/20240507_GLA_outputs"
+OUTPUTS_DIR = "../sim_outs/20240923_GLA_outputs"
 
 
 class Grammar:
@@ -269,7 +269,7 @@ def testindividualfolders():
 
         if True:
             filesdone.append(secondfolder)
-            print("testing grammar in " + secondfolder)
+            print("analyizing test results of grammar in " + secondfolder)
             main_individual(TESTSfilepath)
 
             # TODO
@@ -290,6 +290,7 @@ def summarizeallfolders():
     # lowestresult = 1.0
     # lowestresultspecs = []  # list of strings
     resultsbyavggoodfreq = {}  # dict of float --> list of [tuple of (str, int)]
+    resultsbyspec = {}  # dict of str --> float
         # freq of good results --> [(specs, lowest numover90 in these specs), ...]
 
     for secondfolder in folderstotest:
@@ -359,6 +360,7 @@ def summarizeallfolders():
             wf.write("\taverage frequency of bad results = " + str(thisspec_overallavgfreqbad) + "\n")
             wf.write("\n")
 
+            resultsbyspec[specs] = thisspec_overallavgfreqgood
             if thisspec_overallavgfreqgood not in resultsbyavggoodfreq.keys():
                 resultsbyavggoodfreq[thisspec_overallavgfreqgood] = []
             lowestnumover90forthisspec = 1100
@@ -371,20 +373,24 @@ def summarizeallfolders():
         wf.write("\n")
 
         resultsindescendingorder = sorted(([k for k in resultsbyavggoodfreq.keys()]), reverse=True)
+        howmanyresults = len(allresults)
         top20 = resultsindescendingorder[:20]
         bot20 = resultsindescendingorder[-20:]
-        above95percent = [fr for fr in resultsindescendingorder if fr >= 0.95]
-        above99percent = [fr for fr in resultsindescendingorder if fr >= 0.99]
-        below30percent = [fr for fr in resultsindescendingorder if fr <= 0.30]
+        above95percent_freqs = [fr for fr in resultsbyspec.values() if fr >= 0.95]
+        above95percent_specs = [sp for sp in allresults.keys() if resultsbyspec[sp] >= 0.95]
+        above99percent_freqs = [fr for fr in resultsbyspec.values() if fr >= 0.99]
+        above99percent_specs = [sp for sp in allresults.keys() if resultsbyspec[sp] >= 0.99]
+        below30percent_freqs = [fr for fr in resultsbyspec.values() if fr <= 0.30]
+        below30percent_specs = [sp for sp in allresults.keys() if resultsbyspec[sp] <= 0.30]
 
-        wf.write("there are " + str(len(above95percent)) + " of " + str(len(resultsindescendingorder)) + " sets of specs with results at or above 95%:\n")
-        wf.write(str(above95percent))
+        wf.write("there are " + str(len(above95percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or above 95%:\n")
+        wf.write(str(sorted(above95percent_freqs, reverse=True)))
         wf.write("\n")
-        wf.write("there are " + str(len(above99percent)) + " of " + str(len(resultsindescendingorder)) + " sets of specs with results at or above 99%:\n")
-        wf.write(str(above99percent))
+        wf.write("there are " + str(len(above99percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or above 99%:\n")
+        wf.write(str(sorted(above99percent_freqs, reverse=True)))
         wf.write("\n")
-        wf.write("there are " + str(len(below30percent)) + " of " + str(len(resultsindescendingorder)) + " sets of specs with results at or below 30%:\n")
-        wf.write(str(below30percent))
+        wf.write("there are " + str(len(below30percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or below 30%:\n")
+        wf.write(str(sorted(below30percent_freqs, reverse=True)))
         wf.write("\n")
 
         wf.write("top 20 average frequencies of good results:\n")
@@ -406,14 +412,18 @@ def summarizeallfolders():
 
 if __name__ == "__main__":
     whattotest = ""
-    while whattotest not in ["A", "I", "X"]:
+    while whattotest not in ["A", "I", "B", "X"]:
         whattotest = input("Do you want to:\n"
                            + "\t- summarize results for each individual simulation folder (I)?\n"
                            + "\t- summarize results for all sim folders overall (A)?\n"
+                           + "\t- summarize results for both I + A: each individual sim folder, followed by overall (B)?\n"
                            + "\t- exit (X)?\n").upper()
     if whattotest == "I":
         testindividualfolders()
     elif whattotest == "A":
+        summarizeallfolders()
+    elif whattotest == "B":
+        testindividualfolders()
         summarizeallfolders()
     elif whattotest == "X":
         sys.exit(0)

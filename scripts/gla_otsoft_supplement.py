@@ -151,16 +151,22 @@ class Learner:
     #   4 if update rule mentioned in Magri & Kager 2015: 1 / (1 + numpromotions)
     # initrankingswMgen_type =
     #   0   if not used
-    #   1.yyy.sss   if application rate calculated from inputs
+    #   3.2a.n   if strata are determined greedily by all items containing B5 or F5, then 4, then 3, 2, 1
+    #       (formerly 2.n)
+    #       3.2a.1 with 5s at 180, 4s at 160, 3 at 140, 2 at 120, 1 at 100
+    #   3.1.n   if strata are determed by all single segmental constraints, then long-distance harmony, then local harmony
+    #       (formerly 3.1)
+    #       3.1.1 with singles at 140, LD at 120, local at 100
+    #   3.2b.n   if strata are determined greedily by all items containing B1 or F1, then 2, 3, 4, 5 (like 3.2a but starting at bottom)
+    #       (formerly 4.1)
+    #       3.2b.1 with 1s at 100, 2s at 120, 3 at 140, 4 at 160, 5 at 180
+    #   4.yyy.sssWH   if application rate calculated from candidates in input file or heard inputs
+    #       (formerly 1.yyy.sss, and before that 1.nn)
     #       where yyy% is the y-intercept multiplier
     #       and sss% is the slope multiplier
+    #       and W = which candidate is used (a=all, f=faithful, r=random)
+    #       and H = how the calculation is done (s=sum, a=average)
     #       e.g. the application rate gets *INIT_M*y.yy + INIT_M*s.ss
-    #   2.n   if strata are determined greedily by all items containing B5 or F5, then 4, then 3, 2, 1
-    #       2.1 with 5s at 180, 4s at 160, 3 at 140, 2 at 120, 1 at 100
-    #   3.n   if strata are determed by all single segmental constraints, then long-distance harmony, then local harmony
-    #       3.1 with singles at 140, LD at 120, local at 100
-    #   4.n   if strata are determined greedily by all items containing B1 or F1, then 2, 3, 4, 5 (like option 2 but starting at bottom)
-    #       4.1 with 1s at 100, 2s at 120, 3 at 140, 4 at 160, 5 at 180
     def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswMgen_type="0", initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
@@ -478,10 +484,10 @@ class Learner:
         Fcons = [c for c in self.constraints if c.startswith("Id") or c.startswith("Max")]  # or a bunch of other stuff, but this is the only kind relevant to me
         Mcons = [c for c in self.constraints if c not in Fcons]
 
-        if self.initrankingswMgen_int >= 1:
+        if self.initrankingswMgen_int > 0:
             print("--------------- BEGIN M GENERALITY CALCULATIONS ---------------------")
 
-            if self.initrankingswMgen_int == 1:
+            if self.initrankingswMgen_int == 4:
                 Mgen_bycon = self.observe(1)  # do one batch of observation, to figure out markedness application rates
 
                 # yint_multiplier = 1
@@ -529,17 +535,10 @@ class Learner:
                 for con in Mcons:
                     self.weights[con] = (INIT_M * yint_multiplier) + (Mgen_bycon[con] * INIT_M * slope_multiplier)
 
-            elif self.initrankingswMgen_int == 2:
-                # with strata determined by all items containing B5 or F5, then 4, then 3, 2, 1
-                lowestvalue = 100 if self.initrankingswMgen_type == "2.1" else 100
-                intervalsize = 20 if self.initrankingswMgen_type == "2.1" else 20
-                for con in Mcons:
-                    self.weights[con] = lowestvalue + (getmaxdigit(con) - 1) * intervalsize
-
-            elif self.initrankingswMgen_int == 3:
+            elif self.initrankingswMgen_type.startswith("3.1"):
                 # with strata determined by all single segmental cons, then LD harmony, then local harmony
-                lowestvalue = 100 if self.initrankingswMgen_type == "3.1" else 100
-                intervalsize = 20 if self.initrankingswMgen_type == "3.1" else 20
+                lowestvalue = 100 if self.initrankingswMgen_type == "3.1.1" else 100
+                intervalsize = 20 if self.initrankingswMgen_type == "3.1.1" else 20
                 for con in Mcons:
                     if "F" in con and "B" in con:
                         if "..." in con:
@@ -552,12 +551,20 @@ class Learner:
                         # it's a segmental markedness constraint
                         self.weights[con] = lowestvalue + intervalsize * 2
 
-            elif self.initrankingswMgen_int == 4:
+            elif self.initrankingswMgen_type.startswith("3.2a"):
+                # with strata determined by all items containing B5 or F5, then 4, then 3, 2, 1
+                lowestvalue = 100 if self.initrankingswMgen_type == "3.2a.1" else 100
+                intervalsize = 20 if self.initrankingswMgen_type == "3.2a.1" else 20
+                for con in Mcons:
+                    self.weights[con] = lowestvalue + (getmaxdigit(con) - 1) * intervalsize
+
+            elif self.initrankingswMgen_type.startswith("3.2b"):
                 # with strata determined by all items containing B1 or F1, then 2, then 3, 4, 5
-                lowestvalue = 100 if self.initrankingswMgen_type == "4.1" else 100
-                intervalsize = 20 if self.initrankingswMgen_type == "4.1" else 20
+                lowestvalue = 100 if self.initrankingswMgen_type == "3.2b.1" else 100
+                intervalsize = 20 if self.initrankingswMgen_type == "3.2b.1" else 20
                 for con in Mcons:
                     self.weights[con] = lowestvalue + (getmindigit(con) - 1) * intervalsize
+
         else:
             # no initial weights have been specified; start from scratch
             for con in Mcons:

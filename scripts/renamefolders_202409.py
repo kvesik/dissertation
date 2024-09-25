@@ -6,8 +6,11 @@ def main():
     os.chdir(outputs_folder)
     inputfolders = [f for f in os.listdir() if os.path.isdir(f)]
     for f in inputfolders:
-        f_new = renumber_Mgen(f)
-        f_new = rejig_2ndtry_folders(f_new)
+        f_new = f
+        # f_new = renumber_OG_Mgen(f_new)
+        # f_new = rejig_2ndtry_folders(f_new)
+        f_new = renumber_Mgen_methods(f_new)
+        # f_new = rename_Mgen_refineALL(f_new)
 
         if f == f_new:
             print("no change:", f)
@@ -16,11 +19,61 @@ def main():
             os.rename(f, f_new)
 
 
+def renumber_Mgen_methods(f):
+    Mgentype_startidx = f.find("Mgen")
+    if Mgentype_startidx >= 0:
+        Mgentype_stopidx = f.find("_", Mgentype_startidx)
+        Mgentype_full = f[Mgentype_startidx:Mgentype_stopidx]
+        Mgentype = Mgentype_full[4:]
+
+        newcode = Mgentype  # defaults to no change
+
+        # renaming "method 1" to "method 4"
+        if Mgentype.startswith("1."):
+            newcode = "4" + Mgentype[1:]
+
+        # each of these renamed types is the main method,
+        # followed by sub-method if applicable,
+        # followed lastly by specific numerical settings for this instance
+        elif Mgentype == "2.1":
+            newcode = "3.2a.1"
+        elif Mgentype == "3.1":
+            newcord = "3.1.1"
+        elif Mgentype == "4.1":
+            newcode = "3.2b.1"
+        elif Mgentype.startswith("4.") and len(Mgentype) > 6:
+            # print("already renamed:", f)
+            pass
+        else:
+            print("exception: Mgentype", Mgentype, "in folder", f)
+
+        newfoldername = f[:Mgentype_startidx] + "Mgen" + newcode + f[Mgentype_stopidx:]
+        return newfoldername
+
+    else:
+        return f
+
+
+def rename_Mgen_refineALL(f):
+    Mgentype_startidx = f.find("Mgen")
+    if Mgentype_startidx >= 0:
+        Mgentype_stopidx = f.find("_", Mgentype_startidx)
+        Mgentype_full = f[Mgentype_startidx:Mgentype_stopidx]
+        Mgentype = Mgentype_full[4:]
+
+        if Mgentype.endswith("as"):
+            newfoldername = f[:Mgentype_startidx] + "Mgen" + Mgentype.replace("as", "As") + f[Mgentype_stopidx:]
+            # "As" with a capital A means that this is done the old way, with precisely one look at each input
+            # (effectively, a batch size of 1100)
+            return newfoldername
+    return f
+
+
 def rejig_2ndtry_folders(f):
     return f.replace("2nd try", "try2").replace("2try", "try2")
 
 
-def renumber_Mgen(f):
+def renumber_OG_Mgen(f):
     Mgentype_startidx = f.find("Mgen1.")
     if Mgentype_startidx >= 0:
         Mgentype_stopidx = f.find("_", Mgentype_startidx)

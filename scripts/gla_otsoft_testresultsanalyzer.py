@@ -123,6 +123,11 @@ def main_individual(TESTSfilepath=None):
         0: len([res for res in goodtestresults if res == 0])
     }
 
+    # get rid of any existing results summary files
+    avggoodresults_files = [fn for fn in os.listdir(grammar.containingfolder) if fn.endswith(".averagegoodresults")]
+    for existing in avggoodresults_files:
+        os.remove(os.path.join(grammar.containingfolder, existing))
+    # set the new results summary file
     with io.open(os.path.join(grammar.containingfolder, str(averagegoodresults) + ".averagegoodresults"), "w") as rf:
         pass  # basically just want Unix "touch"
 
@@ -273,7 +278,7 @@ def testindividualfolders():
 
         if True:
             filesdone.append(secondfolder)
-            print("analyizing test results of grammar in " + secondfolder)
+            print("analyzing test results of grammar in " + secondfolder)
             main_individual(TESTSfilepath)
 
             # TODO
@@ -412,6 +417,14 @@ def summarizeallfolders():
             wf.write(specline.format(place=place))
             for spec, lowestnumabove90 in resultsbyavggoodfreq[freq]:
                 wf.write("\t" + spec + "\n")
+        wf.write("\n")
+        wf.write("ALL average frequencies of good results:\n")
+        for idx, freq in enumerate(resultsindescendingorder):
+            place = idx + 1
+            specline = "{place:>3}) " + str(freq) + "\n"
+            wf.write(specline.format(place=place))
+            for spec, lowestnumabove90 in resultsbyavggoodfreq[freq]:
+                wf.write("\t" + spec + " (lowest num inputs above 90% good results = " + str(lowestnumabove90) + ")\n")
 
 
 if __name__ == "__main__":

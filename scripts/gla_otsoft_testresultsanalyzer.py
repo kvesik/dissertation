@@ -394,10 +394,10 @@ def summarizeallfolders():
 
         wf.write("there are " + str(len(above95percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or above 95%:\n")
         wf.write(str(sorted(above95percent_freqs, reverse=True)))
-        wf.write("\n")
+        wf.write("\n\n")
         wf.write("there are " + str(len(above99percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or above 99%:\n")
         wf.write(str(sorted(above99percent_freqs, reverse=True)))
-        wf.write("\n")
+        wf.write("\n\n")
         wf.write("there are " + str(len(below30percent_specs)) + " of " + str(howmanyresults) + " sets of specs with results at or below 30%:\n")
         wf.write(str(sorted(below30percent_freqs, reverse=True)))
         wf.write("\n\n")

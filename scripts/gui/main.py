@@ -129,7 +129,7 @@ class MainWindow(QMainWindow):
         magri3_rb = QRadioButton("Type 3: d / (d + p)")
         magri3_rb.setProperty('type', 3)
         magri_btngrp.addButton(magri3_rb)
-        magri4_rb = QRadioButton("Type 4: from Magri & Kager 2015: 1 / (1 + p)")
+        magri4_rb = QRadioButton("Type 4: from Magri and Kager 2015: 1 / (1 + p)")
         magri4_rb.setProperty('type', 4)
         magri_btngrp.addButton(magri4_rb)
 
@@ -141,7 +141,8 @@ class MainWindow(QMainWindow):
                 magridef_label: {},
                 magri1_rb: {},
                 magri2_rb: {},
-                magri3_rb: {}
+                magri3_rb: {},
+                magri4_rb: {}
             }
         }
         magri_layout = self.get_nested_layout(magri_widgettree)
@@ -195,6 +196,10 @@ class MainWindow(QMainWindow):
 
     def create_gravity_widget(self):
         gravitywidget = QGroupBox("TODO")
+        self.gravity_cb = QCheckBox("Apply gravity to general faithfulness constraint(s)")
+
+        gravity_layout = QVBoxLayout()
+        # gravity_layout.addWidget()
         # TODO implement
         return gravitywidget
 
@@ -214,62 +219,90 @@ class MainWindow(QMainWindow):
         self.Mgen_cb = QCheckBox("Distribute initial markedness values according to generality")
         
         self.Mgen_btngrp = QButtonGroup()
-        Mgen1_rb = QRadioButton("Type 1: generality (application rate) calculated from input file")
-        Mgen1_rb.setProperty('type', 1)
-        self.Mgen_btngrp.addButton(Mgen1_rb)
-        Mgen2_rb = QRadioButton("Type 2: 5 strata, built greedily top-down (cons w/ B5 or F5, then 4, 3, 2, 1)")
-        Mgen2_rb.setProperty('type', 2)
-        self.Mgen_btngrp.addButton(Mgen2_rb)
-        Mgen3_rb = QRadioButton("Type 3: 3 strata, starting w/ segmental cons, then LD VH, then local VH")
-        Mgen3_rb.setProperty('type', 3)
-        self.Mgen_btngrp.addButton(Mgen3_rb)
-        Mgen4_rb = QRadioButton("Type 4: 5 strata, built greedily bottom-up (cons w/ B1 or F1, then 2, 3, 4, 5)")
-        Mgen4_rb.setProperty('type', 4)
+        # Mgen0_rb = QRadioButton("Method 0: fully theoretical (not feasible)")
+        # Mgen0_rb.setProperty('method', "0")
+        # Mgen0_rb.setEnabled(False)
+        # self.Mgen_btngrp.addButton(Mgen0_rb)
+        # Mgen1_rb = QRadioButton("Method 1: generality (application rate) calculated from heard inputs or candidates in input file")
+        # Mgen1_rb.setProperty('method', "1")
+        # self.Mgen_btngrp.addButton(Mgen1_rb)
+        Mgen3_1_rb = QRadioButton("Method 3.1: 3 strata, starting w/ segmental cons, then LD VH, then local VH")
+        Mgen3_1_rb.setProperty('method', "3.1")
+        self.Mgen_btngrp.addButton(Mgen3_1_rb)
+        Mgen3_2a_rb = QRadioButton("Method 3.2a: 5 strata, built greedily top-down (cons w/ B5 or F5, then 4, 3, 2, 1)")
+        Mgen3_2a_rb.setProperty('method', "3.2a")
+        self.Mgen_btngrp.addButton(Mgen3_2a_rb)
+        Mgen3_2b_rb = QRadioButton("Method 3.2b: 5 strata, built greedily bottom-up (cons w/ B1 or F1, then 2, 3, 4, 5)")
+        Mgen3_2b_rb.setProperty('method', "3.2b")
+        self.Mgen_btngrp.addButton(Mgen3_2b_rb)
+        Mgen4_rb = QRadioButton("Method 4: generality (application rate) calculated from heard inputs or candidates in input file")
+        Mgen4_rb.setProperty('method', "4")
         self.Mgen_btngrp.addButton(Mgen4_rb)
-        
-        Mgen1_lowend_label = QLabel("starting value when application rate is 0 (y-int)")
-        Mgen1_lowend_list = [25, 50, 75, 100, 150, 200, 300]
-        self.Mgen1_lowend_combobox = QComboBox()
-        self.Mgen1_lowend_combobox.addItems([str(yint) for yint in Mgen1_lowend_list])
-        
-        Mgen1_highend_label = QLabel("starting value when application rate is 1 (slope)")
-        Mgen1_highend_list = [25, 50, 75, 100, 150, 200, 300]
-        self.Mgen1_highend_combobox = QComboBox()
-        self.Mgen1_highend_combobox.addItems([str(slope) for slope in Mgen1_highend_list])
 
-        Mgen2_strata_label = QLabel("strata values")
-        Mgen_5strata_list = [[180, 160, 140, 120, 100]]
-        self.Mgen2_strata_combobox = QComboBox()
-        self.Mgen2_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
-
-        Mgen3_strata_label = QLabel("strata values")
+        yint_str = "initial value when application rate is 0 (y-int)"
+        yint_list = [25, 50, 75, 100, 150, 200, 300]
+        slope_str = "initial value when application rate is 1 (slope)"
+        slope_list = [25, 50, 75, 100, 150, 200, 300]
+        strata_str = "strata values"
         Mgen_3strata_list = [[140, 120, 100]]
-        self.Mgen3_strata_combobox = QComboBox()
-        self.Mgen3_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+        Mgen_5strata_list = [[180, 160, 140, 120, 100]]
 
-        Mgen4_strata_label = QLabel("strata values")
-        self.Mgen4_strata_combobox = QComboBox()
-        self.Mgen4_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+        # Mgen2_yint_label = QLabel(yint_str)
+        # self.Mgen2_yint_combobox = QComboBox()
+        # self.Mgen2_yint_combobox.addItems([str(yint) for yint in yint_list])
+        #
+        # Mgen2_slope_label = QLabel(slope_str)
+        # self.Mgen2_slope_combobox = QComboBox()
+        # self.Mgen2_slope_combobox.addItems([str(slope) for slope in slope_list])
+
+        Mgen3_1_strata_label = QLabel(strata_str)
+        self.Mgen3_1_strata_combobox = QComboBox()
+        self.Mgen3_1_strata_combobox.addItems([str(stratum) for stratum in Mgen_3strata_list])
+
+        Mgen3_2a_strata_label = QLabel(strata_str)
+        self.Mgen3_2a_strata_combobox = QComboBox()
+        self.Mgen3_2a_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+
+        Mgen3_2b_strata_label = QLabel(strata_str)
+        self.Mgen3_2b_strata_combobox = QComboBox()
+        self.Mgen3_2b_strata_combobox.addItems([str(stratum) for stratum in Mgen_5strata_list])
+
+        Mgen4_whichcands_label = QLabel()
+
+        Mgen4_yint_label = QLabel(yint_str)
+        self.Mgen4_yint_combobox = QComboBox()
+        self.Mgen4_yint_combobox.addItems([str(yint) for yint in yint_list])
+
+        Mgen4_slope_label = QLabel(slope_str)
+        self.Mgen4_slope_combobox = QComboBox()
+        self.Mgen4_slope_combobox.addItems([str(slope) for slope in slope_list])
 
         self.Mgen_cb.toggled.connect(lambda checked: self.check_enable_Mgen_options())
-        self.Mgen1_lowend_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
-        self.Mgen1_highend_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
+        self.Mgen2_yint_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
+        self.Mgen2_slope_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
+        self.Mgen4_yint_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
+        self.Mgen4_slope_combobox.currentIndexChanged.connect(lambda x: self.Mgen_cb.setChecked(True))
         self.Mgen_btngrp.buttonToggled.connect(lambda x, y: self.Mgen_cb.setChecked(True))
 
         Mgen_widgettree = {
             self.Mgen_cb: {
+                Mgen0_rb: {},
                 Mgen1_rb: {
-                    self.get_serial_layout([Mgen1_lowend_label, self.Mgen1_lowend_combobox], True): {},
-                    self.get_serial_layout([Mgen1_highend_label, self.Mgen1_highend_combobox], True): {}
+                    self.get_serial_layout([Mgen2_yint_label, self.Mgen2_yint_combobox], True): {},
+                    self.get_serial_layout([Mgen2_slope_label, self.Mgen2_slope_combobox], True): {}
                 },
-                Mgen2_rb: {
-                    self.get_serial_layout([Mgen2_strata_label, self.Mgen2_strata_combobox], True): {}
+                Mgen3_1_rb: {
+                    self.get_serial_layout([Mgen3_1_strata_label, self.Mgen3_1_strata_combobox], True): {}
                 },
-                Mgen3_rb: {
-                    self.get_serial_layout([Mgen3_strata_label, self.Mgen3_strata_combobox], True): {}
+                Mgen3_2a_rb: {
+                    self.get_serial_layout([Mgen3_2a_strata_label, self.Mgen3_2a_strata_combobox], True): {}
+                },
+                Mgen3_2b_rb: {
+                    self.get_serial_layout([Mgen3_2b_strata_label, self.Mgen3_2b_strata_combobox], True): {}
                 },
                 Mgen4_rb: {
-                    self.get_serial_layout([Mgen4_strata_label, self.Mgen4_strata_combobox], True): {}
+                    self.get_serial_layout([Mgen4_yint_label, self.Mgen4_yint_combobox], True): {},
+                    self.get_serial_layout([Mgen4_slope_label, self.Mgen4_slope_combobox], True): {}
                 }
             }
         }

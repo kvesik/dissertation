@@ -16,7 +16,7 @@ INIT_F = 0
 INIT_M = 100
 
 WORKING_DIR = "../sim_ins/20240507 on - OTSoft inputs"  # "OTSoft2.6old"
-OUTPUTS_DIR = "../sim_outs/20240923_GLA_outputs"
+OUTPUTS_DIR = "../sim_outs/20240507_GLA_outputs"
 DATA_DIR = WORKING_DIR + "/20240507_OTS" #  + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
 DEMOTEONLYUNDOMINATEDLOSERS = False

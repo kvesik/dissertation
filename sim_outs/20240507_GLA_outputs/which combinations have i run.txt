@@ -1,0 +1,26 @@
+20240923-20240925 (1440 combinations x 3 languages = 4320 runs)
+
+def run_combinations():
+    for demoteonlyundominatedlosers in [False, True]: 
+        for magri in [False, True]:  
+            for magritype in [1, 2, 3, 4] if magri else [0]: 
+                for gravity in [False]:  
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [False, True]: 
+                            for specgenbias in [-1, 0, 10, 20, 30, 40]:  
+                                for expandingbias in [False]:  
+                                    for expandingslowly in [True] if expandingbias else [False]:  
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["1.050.050", "1.050.100", "1.100.050", "1.100.100", "1.150.050", "1.150.100"]:
+                                                for initMrankings_whichcand in ["faithful"]:  
+                                                    for initMrankings_calchow in ["sum"]:  
+                                                        for ReLU in [False, True]:
+
+
+*** need to compare other initrankingswMgen_type values, as well as (eventually) gravity, expanding bias, etc.
+*** what about randomly distributed M constraints?
+*** redo "all/sum" sims due to incorrect calculations:
+	redoT_Mgen1.050.025as
+	redoT_Mgen1.050.025as_mg4_fs_sg20
+	redoT_Mgen1.100.025as
+	redoT_Mgen1.100.025as_mg4_fs_sg20

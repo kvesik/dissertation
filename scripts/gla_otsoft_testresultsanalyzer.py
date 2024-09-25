@@ -10,7 +10,7 @@ from generate_tableaux_otsoft_specifylang import isintendedwinner, isalternatewi
 
 
 typetoanalyze = "TESTS"  #  "RESULTS"
-OUTPUTS_DIR = "../sim_outs/20240923_GLA_outputs"
+OUTPUTS_DIR = "../sim_outs/20240507_GLA_outputs"
 
 
 class Grammar:

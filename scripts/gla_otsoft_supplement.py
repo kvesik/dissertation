@@ -16,7 +16,7 @@ INIT_F = 0
 INIT_M = 100
 
 WORKING_DIR = "../sim_ins/20240507 on - OTSoft inputs"  # "OTSoft2.6old"
-OUTPUTS_DIR = "../sim_outs/20240507_GLA_outputs"
+OUTPUTS_DIR = "../sim_outs/20240923_GLA_outputs"
 DATA_DIR = WORKING_DIR + "/20240507_OTS" #  + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
 DEMOTEONLYUNDOMINATEDLOSERS = False
@@ -1417,7 +1417,7 @@ def run_combinations():
                                                 for initMrankings_whichcand in ["faithful"]:  # , "random", "all"]:
                                                     for initMrankings_calchow in ["sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
                                                         for ReLU in [False, True]:
-                                                            abbrevstr = "T_"  # not tested
+                                                            abbrevstr = "T_"  # tested
                                                             abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
                                                             if int(initrankingswMgen_type[0]) > 0:
                                                                 abbrevstr += "Mgen" + initrankingswMgen_type

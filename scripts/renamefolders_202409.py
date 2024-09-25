@@ -7,9 +7,10 @@ def main():
     inputfolders = [f for f in os.listdir() if os.path.isdir(f)]
     for f in inputfolders:
         f_new = f
+        # TODO uncomment whichever methods you need!
         # f_new = renumber_OG_Mgen(f_new)
         # f_new = rejig_2ndtry_folders(f_new)
-        f_new = renumber_Mgen_methods(f_new)
+        # f_new = renumber_Mgen_methods(f_new)
         # f_new = rename_Mgen_refineALL(f_new)
 
         if f == f_new:

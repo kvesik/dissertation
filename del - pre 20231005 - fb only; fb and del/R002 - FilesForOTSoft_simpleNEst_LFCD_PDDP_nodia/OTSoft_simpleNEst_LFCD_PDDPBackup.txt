@@ -1,0 +1,1214 @@
+			Id(Bk)Syl1	Id(Bk)	*F3	*B1	*B2	*F3_B1	*F3..._B1	*F3_B2	*F3..._B2	*_B1F3	*_B1...F3	*_B2F3	*_B2...F3
+			Id(Bk)Syl1	Id(Bk)	*F3	*B1	*B2	*F3_B1	*F3..._B1	*F3_B2	*F3..._B2	*_B1F3	*_B1...F3	*_B2F3	*_B2...F3
+Oe	Oe	 1 			 1 										
+	OE			 1 	 1 		 1 			 1 	 1 				
+	oe		 1 	 1 											
+	oE		 1 	 2 			 1 								
+Oi	Oi	 1 			 1 										
+	OI			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	oi		 1 	 1 											
+	oI		 1 	 2 		 1 	 1 								
+Oa	Oa	 1 			 1 										
+	OA			 1 	 2 										
+	oa		 1 	 1 											
+	oA		 1 	 2 	 1 										
+Ou	Ou	 1 			 1 										
+	Oy			 1 	 2 										
+	ou		 1 	 1 											
+	oy		 1 	 2 	 1 										
+Ae	Ae	 1 			 1 										
+	AE			 1 	 1 		 1 			 1 	 1 				
+	ae		 1 	 1 											
+	aE		 1 	 2 			 1 								
+Ai	Ai	 1 			 1 										
+	AI			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	ai		 1 	 1 											
+	aI		 1 	 2 		 1 	 1 								
+Aa	Aa	 1 			 1 										
+	AA			 1 	 2 										
+	aa		 1 	 1 											
+	aA		 1 	 2 	 1 										
+Au	Au	 1 			 1 										
+	Ay			 1 	 2 										
+	au		 1 	 1 											
+	ay		 1 	 2 	 1 										
+ye	ye	 1 			 1 										
+	yE			 1 	 1 		 1 			 1 	 1 				
+	ue		 1 	 1 											
+	uE		 1 	 2 			 1 								
+yi	yi	 1 			 1 										
+	yI			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	ui		 1 	 1 											
+	uI		 1 	 2 		 1 	 1 								
+ya	ya	 1 			 1 										
+	yA			 1 	 2 										
+	ua		 1 	 1 											
+	uA		 1 	 2 	 1 										
+yu	yu	 1 			 1 										
+	yy			 1 	 2 										
+	uu		 1 	 1 											
+	uy		 1 	 2 	 1 										
+ee	ee	 1 													
+	eE			 1 			 1 								
+	Ee		 1 	 1 			 1 								
+	EE		 1 	 2 			 2 								
+ei	ei	 1 													
+	eI			 1 		 1 	 1 								
+	Ei		 1 	 1 			 1 								
+	EI		 1 	 2 		 1 	 2 								
+ea	ea	 1 													
+	eA			 1 	 1 										
+	Ea		 1 	 1 			 1 								
+	EA		 1 	 2 	 1 		 1 							 1 	 1 
+eu	eu	 1 													
+	ey			 1 	 1 										
+	Eu		 1 	 1 			 1 								
+	Ey		 1 	 2 	 1 		 1 							 1 	 1 
+ie	ie	 1 													
+	iE			 1 			 1 								
+	Ie		 1 	 1 		 1 	 1 								
+	IE		 1 	 2 		 1 	 2 								
+ii	ii	 1 													
+	iI			 1 		 1 	 1 								
+	Ii		 1 	 1 		 1 	 1 								
+	II		 1 	 2 		 2 	 2 								
+ia	ia	 1 													
+	iA			 1 	 1 										
+	Ia		 1 	 1 		 1 	 1 								
+	IA		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+iu	iu	 1 													
+	iy			 1 	 1 										
+	Iu		 1 	 1 		 1 	 1 								
+	Iy		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Ee	Ee	 1 					 1 								
+	EE			 1 			 2 								
+	ee		 1 	 1 											
+	eE		 1 	 2 			 1 								
+Ei	Ei	 1 					 1 								
+	EI			 1 		 1 	 2 								
+	ei		 1 	 1 											
+	eI		 1 	 2 		 1 	 1 								
+Ea	Ea	 1 					 1 								
+	EA			 1 	 1 		 1 							 1 	 1 
+	ea		 1 	 1 											
+	eA		 1 	 2 	 1 										
+Eu	Eu	 1 					 1 								
+	Ey			 1 	 1 		 1 							 1 	 1 
+	eu		 1 	 1 											
+	ey		 1 	 2 	 1 										
+oe	oe	 1 													
+	oE			 1 			 1 								
+	Oe		 1 	 1 	 1 										
+	OE		 1 	 2 	 1 		 1 			 1 	 1 				
+oi	oi	 1 													
+	oI			 1 		 1 	 1 								
+	Oi		 1 	 1 	 1 										
+	OI		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+oa	oa	 1 													
+	oA			 1 	 1 										
+	Oa		 1 	 1 	 1 										
+	OA		 1 	 2 	 2 										
+ou	ou	 1 													
+	oy			 1 	 1 										
+	Ou		 1 	 1 	 1 										
+	Oy		 1 	 2 	 2 										
+ae	ae	 1 													
+	aE			 1 			 1 								
+	Ae		 1 	 1 	 1 										
+	AE		 1 	 2 	 1 		 1 			 1 	 1 				
+ai	ai	 1 													
+	aI			 1 		 1 	 1 								
+	Ai		 1 	 1 	 1 										
+	AI		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+aa	aa	 1 													
+	aA			 1 	 1 										
+	Aa		 1 	 1 	 1 										
+	AA		 1 	 2 	 2 										
+au	au	 1 													
+	ay			 1 	 1 										
+	Au		 1 	 1 	 1 										
+	Ay		 1 	 2 	 2 										
+ue	ue	 1 													
+	uE			 1 			 1 								
+	ye		 1 	 1 	 1 										
+	yE		 1 	 2 	 1 		 1 			 1 	 1 				
+ui	ui	 1 													
+	uI			 1 		 1 	 1 								
+	yi		 1 	 1 	 1 										
+	yI		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+ua	ua	 1 													
+	uA			 1 	 1 										
+	ya		 1 	 1 	 1 										
+	yA		 1 	 2 	 2 										
+uu	uu	 1 													
+	uy			 1 	 1 										
+	yu		 1 	 1 	 1 										
+	yy		 1 	 2 	 2 										
+Oee	Oee	 1 			 1 										
+	OeE			 1 	 1 		 1 				 1 				
+	OEe			 1 	 1 		 1 			 1 	 1 				
+	OEE			 2 	 1 		 2 			 1 	 2 				
+	oee		 1 	 1 											
+	oeE		 1 	 2 			 1 								
+	oEE		 1 	 3 			 2 								
+Oei	Oei	 1 			 1 										
+	OeI			 1 	 1 	 1 	 1 		 1 		 1 				
+	OEi			 1 	 1 		 1 			 1 	 1 				
+	OEI			 2 	 1 	 1 	 2 		 1 	 1 	 2 				
+	oei		 1 	 1 											
+	oeI		 1 	 2 		 1 	 1 								
+	oEi		 1 	 2 			 1 								
+	oEI		 1 	 3 		 1 	 2 								
+Oea	Oea	 1 			 1 										
+	OeA			 1 	 2 										
+	OEa			 1 	 1 		 1 			 1 	 1 				
+	OEA			 2 	 2 		 1 			 1 	 1 			 1 	 1 
+	oea		 1 	 1 											
+	oeA		 1 	 2 	 1 										
+	oEa		 1 	 2 			 1 								
+	oEA		 1 	 3 	 1 		 1 							 1 	 1 
+Oeu	Oeu	 1 			 1 										
+	Oey			 1 	 2 										
+	OEu			 1 	 1 		 1 			 1 	 1 				
+	OEy			 2 	 2 		 1 			 1 	 1 			 1 	 1 
+	oeu		 1 	 1 											
+	oey		 1 	 2 	 1 										
+	oEu		 1 	 2 			 1 								
+	oEy		 1 	 3 	 1 		 1 							 1 	 1 
+Oie	Oie	 1 			 1 										
+	OiE			 1 	 1 		 1 				 1 				
+	OIe			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OIE			 2 	 1 	 1 	 2 	 1 	 1 	 1 	 2 				
+	oie		 1 	 1 											
+	oiE		 1 	 2 			 1 								
+	oIe		 1 	 2 		 1 	 1 								
+	oIE		 1 	 3 		 1 	 2 								
+Oii	Oii	 1 			 1 										
+	OiI			 1 	 1 	 1 	 1 		 1 		 1 				
+	OIi			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OII			 2 	 1 	 2 	 2 	 1 	 2 	 1 	 2 				
+	oii		 1 	 1 											
+	oiI		 1 	 2 		 1 	 1 								
+	oII		 1 	 3 		 2 	 2 								
+Oia	Oia	 1 			 1 										
+	OiA			 1 	 2 										
+	OIa			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OIA			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+	oia		 1 	 1 											
+	oiA		 1 	 2 	 1 										
+	oIa		 1 	 2 		 1 	 1 								
+	oIA		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Oiu	Oiu	 1 			 1 										
+	Oiy			 1 	 2 										
+	OIu			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OIy			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+	oiu		 1 	 1 											
+	oiy		 1 	 2 	 1 										
+	oIu		 1 	 2 		 1 	 1 								
+	oIy		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Oae	Oae	 1 			 1 										
+	OaE			 1 	 1 		 1 				 1 				
+	OAe			 1 	 2 										
+	OAE			 2 	 2 		 1 			 1 	 1 				
+	oae		 1 	 1 											
+	oaE		 1 	 2 			 1 								
+	oAe		 1 	 2 	 1 										
+	oAE		 1 	 3 	 1 		 1 			 1 	 1 				
+Oai	Oai	 1 			 1 										
+	OaI			 1 	 1 	 1 	 1 		 1 		 1 				
+	OAi			 1 	 2 										
+	OAI			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+	oai		 1 	 1 											
+	oaI		 1 	 2 		 1 	 1 								
+	oAi		 1 	 2 	 1 										
+	oAI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+Oaa	Oaa	 1 			 1 										
+	OaA			 1 	 2 										
+	OAA			 2 	 3 										
+	oaa		 1 	 1 											
+	oaA		 1 	 2 	 1 										
+	oAA		 1 	 3 	 2 										
+Oau	Oau	 1 			 1 										
+	Oay			 1 	 2 										
+	OAy			 2 	 3 										
+	oau		 1 	 1 											
+	oay		 1 	 2 	 1 										
+	oAy		 1 	 3 	 2 										
+Oue	Oue	 1 			 1 										
+	OuE			 1 	 1 		 1 				 1 				
+	Oye			 1 	 2 										
+	OyE			 2 	 2 		 1 			 1 	 1 				
+	oue		 1 	 1 											
+	ouE		 1 	 2 			 1 								
+	oye		 1 	 2 	 1 										
+	oyE		 1 	 3 	 1 		 1 			 1 	 1 				
+Oui	Oui	 1 			 1 										
+	OuI			 1 	 1 	 1 	 1 		 1 		 1 				
+	Oyi			 1 	 2 										
+	OyI			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+	oui		 1 	 1 											
+	ouI		 1 	 2 		 1 	 1 								
+	oyi		 1 	 2 	 1 										
+	oyI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+Oua	Oua	 1 			 1 										
+	OuA			 1 	 2 										
+	OyA			 2 	 3 										
+	oua		 1 	 1 											
+	ouA		 1 	 2 	 1 										
+	oyA		 1 	 3 	 2 										
+Ouu	Ouu	 1 			 1 										
+	Ouy			 1 	 2 										
+	Oyy			 2 	 3 										
+	ouu		 1 	 1 											
+	ouy		 1 	 2 	 1 										
+	oyy		 1 	 3 	 2 										
+Aee	Aee	 1 			 1 										
+	AeE			 1 	 1 		 1 				 1 				
+	AEe			 1 	 1 		 1 			 1 	 1 				
+	AEE			 2 	 1 		 2 			 1 	 2 				
+	aee		 1 	 1 											
+	aeE		 1 	 2 			 1 								
+	aEE		 1 	 3 			 2 								
+Aei	Aei	 1 			 1 										
+	AeI			 1 	 1 	 1 	 1 		 1 		 1 				
+	AEi			 1 	 1 		 1 			 1 	 1 				
+	AEI			 2 	 1 	 1 	 2 		 1 	 1 	 2 				
+	aei		 1 	 1 											
+	aeI		 1 	 2 		 1 	 1 								
+	aEi		 1 	 2 			 1 								
+	aEI		 1 	 3 		 1 	 2 								
+Aea	Aea	 1 			 1 										
+	AeA			 1 	 2 										
+	AEa			 1 	 1 		 1 			 1 	 1 				
+	AEA			 2 	 2 		 1 			 1 	 1 			 1 	 1 
+	aea		 1 	 1 											
+	aeA		 1 	 2 	 1 										
+	aEa		 1 	 2 			 1 								
+	aEA		 1 	 3 	 1 		 1 							 1 	 1 
+Aeu	Aeu	 1 			 1 										
+	Aey			 1 	 2 										
+	AEu			 1 	 1 		 1 			 1 	 1 				
+	AEy			 2 	 2 		 1 			 1 	 1 			 1 	 1 
+	aeu		 1 	 1 											
+	aey		 1 	 2 	 1 										
+	aEu		 1 	 2 			 1 								
+	aEy		 1 	 3 	 1 		 1 							 1 	 1 
+Aie	Aie	 1 			 1 										
+	AiE			 1 	 1 		 1 				 1 				
+	AIe			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AIE			 2 	 1 	 1 	 2 	 1 	 1 	 1 	 2 				
+	aie		 1 	 1 											
+	aiE		 1 	 2 			 1 								
+	aIe		 1 	 2 		 1 	 1 								
+	aIE		 1 	 3 		 1 	 2 								
+Aii	Aii	 1 			 1 										
+	AiI			 1 	 1 	 1 	 1 		 1 		 1 				
+	AIi			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AII			 2 	 1 	 2 	 2 	 1 	 2 	 1 	 2 				
+	aii		 1 	 1 											
+	aiI		 1 	 2 		 1 	 1 								
+	aII		 1 	 3 		 2 	 2 								
+Aia	Aia	 1 			 1 										
+	AiA			 1 	 2 										
+	AIa			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AIA			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+	aia		 1 	 1 											
+	aiA		 1 	 2 	 1 										
+	aIa		 1 	 2 		 1 	 1 								
+	aIA		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Aiu	Aiu	 1 			 1 										
+	Aiy			 1 	 2 										
+	AIu			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AIy			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+	aiu		 1 	 1 											
+	aiy		 1 	 2 	 1 										
+	aIu		 1 	 2 		 1 	 1 								
+	aIy		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Aae	Aae	 1 			 1 										
+	AaE			 1 	 1 		 1 				 1 				
+	AAe			 1 	 2 										
+	AAE			 2 	 2 		 1 			 1 	 1 				
+	aae		 1 	 1 											
+	aaE		 1 	 2 			 1 								
+	aAe		 1 	 2 	 1 										
+	aAE		 1 	 3 	 1 		 1 			 1 	 1 				
+Aai	Aai	 1 			 1 										
+	AaI			 1 	 1 	 1 	 1 		 1 		 1 				
+	AAi			 1 	 2 										
+	AAI			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+	aai		 1 	 1 											
+	aaI		 1 	 2 		 1 	 1 								
+	aAi		 1 	 2 	 1 										
+	aAI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+Aaa	Aaa	 1 			 1 										
+	AaA			 1 	 2 										
+	AAA			 2 	 3 										
+	aaa		 1 	 1 											
+	aaA		 1 	 2 	 1 										
+	aAA		 1 	 3 	 2 										
+Aau	Aau	 1 			 1 										
+	Aay			 1 	 2 										
+	AAy			 2 	 3 										
+	aau		 1 	 1 											
+	aay		 1 	 2 	 1 										
+	aAy		 1 	 3 	 2 										
+Aue	Aue	 1 			 1 										
+	AuE			 1 	 1 		 1 				 1 				
+	Aye			 1 	 2 										
+	AyE			 2 	 2 		 1 			 1 	 1 				
+	aue		 1 	 1 											
+	auE		 1 	 2 			 1 								
+	aye		 1 	 2 	 1 										
+	ayE		 1 	 3 	 1 		 1 			 1 	 1 				
+Aui	Aui	 1 			 1 										
+	AuI			 1 	 1 	 1 	 1 		 1 		 1 				
+	Ayi			 1 	 2 										
+	AyI			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+	aui		 1 	 1 											
+	auI		 1 	 2 		 1 	 1 								
+	ayi		 1 	 2 	 1 										
+	ayI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+Aua	Aua	 1 			 1 										
+	AuA			 1 	 2 										
+	AyA			 2 	 3 										
+	aua		 1 	 1 											
+	auA		 1 	 2 	 1 										
+	ayA		 1 	 3 	 2 										
+Auu	Auu	 1 			 1 										
+	Auy			 1 	 2 										
+	Ayy			 2 	 3 										
+	auu		 1 	 1 											
+	auy		 1 	 2 	 1 										
+	ayy		 1 	 3 	 2 										
+yee	yee	 1 			 1 										
+	yeE			 1 	 1 		 1 				 1 				
+	yEe			 1 	 1 		 1 			 1 	 1 				
+	yEE			 2 	 1 		 2 			 1 	 2 				
+	uee		 1 	 1 											
+	ueE		 1 	 2 			 1 								
+	uEE		 1 	 3 			 2 								
+yei	yei	 1 			 1 										
+	yeI			 1 	 1 	 1 	 1 		 1 		 1 				
+	yEi			 1 	 1 		 1 			 1 	 1 				
+	yEI			 2 	 1 	 1 	 2 		 1 	 1 	 2 				
+	uei		 1 	 1 											
+	ueI		 1 	 2 		 1 	 1 								
+	uEi		 1 	 2 			 1 								
+	uEI		 1 	 3 		 1 	 2 								
+yea	yea	 1 			 1 										
+	yeA			 1 	 2 										
+	yEa			 1 	 1 		 1 			 1 	 1 				
+	yEA			 2 	 2 		 1 			 1 	 1 			 1 	 1 
+	uea		 1 	 1 											
+	ueA		 1 	 2 	 1 										
+	uEa		 1 	 2 			 1 								
+	uEA		 1 	 3 	 1 		 1 							 1 	 1 
+yeu	yeu	 1 			 1 										
+	yey			 1 	 2 										
+	yEu			 1 	 1 		 1 			 1 	 1 				
+	yEy			 2 	 2 		 1 			 1 	 1 			 1 	 1 
+	ueu		 1 	 1 											
+	uey		 1 	 2 	 1 										
+	uEu		 1 	 2 			 1 								
+	uEy		 1 	 3 	 1 		 1 							 1 	 1 
+yie	yie	 1 			 1 										
+	yiE			 1 	 1 		 1 				 1 				
+	yIe			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yIE			 2 	 1 	 1 	 2 	 1 	 1 	 1 	 2 				
+	uie		 1 	 1 											
+	uiE		 1 	 2 			 1 								
+	uIe		 1 	 2 		 1 	 1 								
+	uIE		 1 	 3 		 1 	 2 								
+yii	yii	 1 			 1 										
+	yiI			 1 	 1 	 1 	 1 		 1 		 1 				
+	yIi			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yII			 2 	 1 	 2 	 2 	 1 	 2 	 1 	 2 				
+	uii		 1 	 1 											
+	uiI		 1 	 2 		 1 	 1 								
+	uII		 1 	 3 		 2 	 2 								
+yia	yia	 1 			 1 										
+	yiA			 1 	 2 										
+	yIa			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yIA			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+	uia		 1 	 1 											
+	uiA		 1 	 2 	 1 										
+	uIa		 1 	 2 		 1 	 1 								
+	uIA		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+yiu	yiu	 1 			 1 										
+	yiy			 1 	 2 										
+	yIu			 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yIy			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+	uiu		 1 	 1 											
+	uiy		 1 	 2 	 1 										
+	uIu		 1 	 2 		 1 	 1 								
+	uIy		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+yae	yae	 1 			 1 										
+	yaE			 1 	 1 		 1 				 1 				
+	yAe			 1 	 2 										
+	yAE			 2 	 2 		 1 			 1 	 1 				
+	uae		 1 	 1 											
+	uaE		 1 	 2 			 1 								
+	uAe		 1 	 2 	 1 										
+	uAE		 1 	 3 	 1 		 1 			 1 	 1 				
+yai	yai	 1 			 1 										
+	yaI			 1 	 1 	 1 	 1 		 1 		 1 				
+	yAi			 1 	 2 										
+	yAI			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+	uai		 1 	 1 											
+	uaI		 1 	 2 		 1 	 1 								
+	uAi		 1 	 2 	 1 										
+	uAI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+yaa	yaa	 1 			 1 										
+	yaA			 1 	 2 										
+	yAA			 2 	 3 										
+	uaa		 1 	 1 											
+	uaA		 1 	 2 	 1 										
+	uAA		 1 	 3 	 2 										
+yau	yau	 1 			 1 										
+	yay			 1 	 2 										
+	yAy			 2 	 3 										
+	uau		 1 	 1 											
+	uay		 1 	 2 	 1 										
+	uAy		 1 	 3 	 2 										
+yue	yue	 1 			 1 										
+	yuE			 1 	 1 		 1 				 1 				
+	yye			 1 	 2 										
+	yyE			 2 	 2 		 1 			 1 	 1 				
+	uue		 1 	 1 											
+	uuE		 1 	 2 			 1 								
+	uye		 1 	 2 	 1 										
+	uyE		 1 	 3 	 1 		 1 			 1 	 1 				
+yui	yui	 1 			 1 										
+	yuI			 1 	 1 	 1 	 1 		 1 		 1 				
+	yyi			 1 	 2 										
+	yyI			 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+	uui		 1 	 1 											
+	uuI		 1 	 2 		 1 	 1 								
+	uyi		 1 	 2 	 1 										
+	uyI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+yua	yua	 1 			 1 										
+	yuA			 1 	 2 										
+	yyA			 2 	 3 										
+	uua		 1 	 1 											
+	uuA		 1 	 2 	 1 										
+	uyA		 1 	 3 	 2 										
+yuu	yuu	 1 			 1 										
+	yuy			 1 	 2 										
+	yyy			 2 	 3 										
+	uuu		 1 	 1 											
+	uuy		 1 	 2 	 1 										
+	uyy		 1 	 3 	 2 										
+eee	eee	 1 													
+	eeE			 1 			 1 								
+	eEE			 2 			 2 								
+	Eee		 1 	 1 			 1 								
+	EeE		 1 	 2 			 2 								
+	EEE		 1 	 3 			 3 								
+eei	eei	 1 													
+	eeI			 1 		 1 	 1 								
+	eEi			 1 			 1 								
+	eEI			 2 		 1 	 2 								
+	Eei		 1 	 1 			 1 								
+	EeI		 1 	 2 		 1 	 2 								
+	EEi		 1 	 2 			 2 								
+	EEI		 1 	 3 		 1 	 3 								
+eea	eea	 1 													
+	eeA			 1 	 1 										
+	eEa			 1 			 1 								
+	eEA			 2 	 1 		 1 							 1 	 1 
+	Eea		 1 	 1 			 1 								
+	EeA		 1 	 2 	 1 		 1 								 1 
+	EEa		 1 	 2 			 2 								
+	EEA		 1 	 3 	 1 		 2 							 1 	 2 
+eeu	eeu	 1 													
+	eey			 1 	 1 										
+	eEu			 1 			 1 								
+	eEy			 2 	 1 		 1 							 1 	 1 
+	Eeu		 1 	 1 			 1 								
+	Eey		 1 	 2 	 1 		 1 								 1 
+	EEu		 1 	 2 			 2 								
+	EEy		 1 	 3 	 1 		 2 							 1 	 2 
+eie	eie	 1 													
+	eiE			 1 			 1 								
+	eIe			 1 		 1 	 1 								
+	eIE			 2 		 1 	 2 								
+	Eie		 1 	 1 			 1 								
+	EiE		 1 	 2 			 2 								
+	EIe		 1 	 2 		 1 	 2 								
+	EIE		 1 	 3 		 1 	 3 								
+eii	eii	 1 													
+	eiI			 1 		 1 	 1 								
+	eII			 2 		 2 	 2 								
+	Eii		 1 	 1 			 1 								
+	EiI		 1 	 2 		 1 	 2 								
+	EII		 1 	 3 		 2 	 3 								
+eia	eia	 1 													
+	eiA			 1 	 1 										
+	eIa			 1 		 1 	 1 								
+	eIA			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Eia		 1 	 1 			 1 								
+	EiA		 1 	 2 	 1 		 1 								 1 
+	EIa		 1 	 2 		 1 	 2 								
+	EIA		 1 	 3 	 1 	 1 	 2 					 1 	 1 	 1 	 2 
+eiu	eiu	 1 													
+	eiy			 1 	 1 										
+	eIu			 1 		 1 	 1 								
+	eIy			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Eiu		 1 	 1 			 1 								
+	Eiy		 1 	 2 	 1 		 1 								 1 
+	EIu		 1 	 2 		 1 	 2 								
+	EIy		 1 	 3 	 1 	 1 	 2 					 1 	 1 	 1 	 2 
+eae	eae	 1 													
+	eaE			 1 			 1 								
+	eAe			 1 	 1 										
+	eAE			 2 	 1 		 1 			 1 	 1 				
+	Eae		 1 	 1 			 1 								
+	EaE		 1 	 2 			 2 								
+	EAe		 1 	 2 	 1 		 1 							 1 	 1 
+	EAE		 1 	 3 	 1 		 2 			 1 	 1 			 1 	 1 
+eai	eai	 1 													
+	eaI			 1 		 1 	 1 								
+	eAi			 1 	 1 										
+	eAI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Eai		 1 	 1 			 1 								
+	EaI		 1 	 2 		 1 	 2 								
+	EAi		 1 	 2 	 1 		 1 							 1 	 1 
+	EAI		 1 	 3 	 1 	 1 	 2 	 1 	 1 	 1 	 1 			 1 	 1 
+eaa	eaa	 1 													
+	eaA			 1 	 1 										
+	eAA			 2 	 2 										
+	Eaa		 1 	 1 			 1 								
+	EaA		 1 	 2 	 1 		 1 								 1 
+	EAa		 1 	 2 	 1 		 1 							 1 	 1 
+	EAA		 1 	 3 	 2 		 1 							 1 	 1 
+eau	eau	 1 													
+	eay			 1 	 1 										
+	eAy			 2 	 2 										
+	Eau		 1 	 1 			 1 								
+	Eay		 1 	 2 	 1 		 1 								 1 
+	EAu		 1 	 2 	 1 		 1 							 1 	 1 
+	EAy		 1 	 3 	 2 		 1 							 1 	 1 
+eue	eue	 1 													
+	euE			 1 			 1 								
+	eye			 1 	 1 										
+	eyE			 2 	 1 		 1 			 1 	 1 				
+	Eue		 1 	 1 			 1 								
+	EuE		 1 	 2 			 2 								
+	Eye		 1 	 2 	 1 		 1 							 1 	 1 
+	EyE		 1 	 3 	 1 		 2 			 1 	 1 			 1 	 1 
+eui	eui	 1 													
+	euI			 1 		 1 	 1 								
+	eyi			 1 	 1 										
+	eyI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Eui		 1 	 1 			 1 								
+	EuI		 1 	 2 		 1 	 2 								
+	Eyi		 1 	 2 	 1 		 1 							 1 	 1 
+	EyI		 1 	 3 	 1 	 1 	 2 	 1 	 1 	 1 	 1 			 1 	 1 
+eua	eua	 1 													
+	euA			 1 	 1 										
+	eyA			 2 	 2 										
+	Eua		 1 	 1 			 1 								
+	EuA		 1 	 2 	 1 		 1 								 1 
+	Eya		 1 	 2 	 1 		 1 							 1 	 1 
+	EyA		 1 	 3 	 2 		 1 							 1 	 1 
+euu	euu	 1 													
+	euy			 1 	 1 										
+	eyy			 2 	 2 										
+	Euu		 1 	 1 			 1 								
+	Euy		 1 	 2 	 1 		 1 								 1 
+	Eyu		 1 	 2 	 1 		 1 							 1 	 1 
+	Eyy		 1 	 3 	 2 		 1 							 1 	 1 
+iee	iee	 1 													
+	ieE			 1 			 1 								
+	iEE			 2 			 2 								
+	Iee		 1 	 1 		 1 	 1 								
+	IeE		 1 	 2 		 1 	 2 								
+	IEE		 1 	 3 		 1 	 3 								
+iei	iei	 1 													
+	ieI			 1 		 1 	 1 								
+	iEi			 1 			 1 								
+	iEI			 2 		 1 	 2 								
+	Iei		 1 	 1 		 1 	 1 								
+	IeI		 1 	 2 		 2 	 2 								
+	IEi		 1 	 2 		 1 	 2 								
+	IEI		 1 	 3 		 2 	 3 								
+iea	iea	 1 													
+	ieA			 1 	 1 										
+	iEa			 1 			 1 								
+	iEA			 2 	 1 		 1 							 1 	 1 
+	Iea		 1 	 1 		 1 	 1 								
+	IeA		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	IEa		 1 	 2 		 1 	 2 								
+	IEA		 1 	 3 	 1 	 1 	 2 						 1 	 1 	 2 
+ieu	ieu	 1 													
+	iey			 1 	 1 										
+	iEu			 1 			 1 								
+	iEy			 2 	 1 		 1 							 1 	 1 
+	Ieu		 1 	 1 		 1 	 1 								
+	Iey		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	IEu		 1 	 2 		 1 	 2 								
+	IEy		 1 	 3 	 1 	 1 	 2 						 1 	 1 	 2 
+iie	iie	 1 													
+	iiE			 1 			 1 								
+	iIe			 1 		 1 	 1 								
+	iIE			 2 		 1 	 2 								
+	Iie		 1 	 1 		 1 	 1 								
+	IiE		 1 	 2 		 1 	 2 								
+	IIe		 1 	 2 		 2 	 2 								
+	IIE		 1 	 3 		 2 	 3 								
+iii	iii	 1 													
+	iiI			 1 		 1 	 1 								
+	iII			 2 		 2 	 2 								
+	Iii		 1 	 1 		 1 	 1 								
+	IiI		 1 	 2 		 2 	 2 								
+	III		 1 	 3 		 3 	 3 								
+iia	iia	 1 													
+	iiA			 1 	 1 										
+	iIa			 1 		 1 	 1 								
+	iIA			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Iia		 1 	 1 		 1 	 1 								
+	IiA		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	IIa		 1 	 2 		 2 	 2 								
+	IIA		 1 	 3 	 1 	 2 	 2 					 1 	 2 	 1 	 2 
+iiu	iiu	 1 													
+	iiy			 1 	 1 										
+	iIu			 1 		 1 	 1 								
+	iIy			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Iiu		 1 	 1 		 1 	 1 								
+	Iiy		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	IIu		 1 	 2 		 2 	 2 								
+	IIy		 1 	 3 	 1 	 2 	 2 					 1 	 2 	 1 	 2 
+iae	iae	 1 													
+	iaE			 1 			 1 								
+	iAe			 1 	 1 										
+	iAE			 2 	 1 		 1 			 1 	 1 				
+	Iae		 1 	 1 		 1 	 1 								
+	IaE		 1 	 2 		 1 	 2 								
+	IAe		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IAE		 1 	 3 	 1 	 1 	 2 			 1 	 1 	 1 	 1 	 1 	 1 
+iai	iai	 1 													
+	iaI			 1 		 1 	 1 								
+	iAi			 1 	 1 										
+	iAI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Iai		 1 	 1 		 1 	 1 								
+	IaI		 1 	 2 		 2 	 2 								
+	IAi		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IAI		 1 	 3 	 1 	 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+iaa	iaa	 1 													
+	iaA			 1 	 1 										
+	iAA			 2 	 2 										
+	Iaa		 1 	 1 		 1 	 1 								
+	IaA		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	IAa		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IAA		 1 	 3 	 2 	 1 	 1 					 1 	 1 	 1 	 1 
+iau	iau	 1 													
+	iay			 1 	 1 										
+	iAy			 2 	 2 										
+	Iau		 1 	 1 		 1 	 1 								
+	Iay		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	IAu		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IAy		 1 	 3 	 2 	 1 	 1 					 1 	 1 	 1 	 1 
+iue	iue	 1 													
+	iuE			 1 			 1 								
+	iye			 1 	 1 										
+	iyE			 2 	 1 		 1 			 1 	 1 				
+	Iue		 1 	 1 		 1 	 1 								
+	IuE		 1 	 2 		 1 	 2 								
+	Iye		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IyE		 1 	 3 	 1 	 1 	 2 			 1 	 1 	 1 	 1 	 1 	 1 
+iui	iui	 1 													
+	iuI			 1 		 1 	 1 								
+	iyi			 1 	 1 										
+	iyI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Iui		 1 	 1 		 1 	 1 								
+	IuI		 1 	 2 		 2 	 2 								
+	Iyi		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IyI		 1 	 3 	 1 	 2 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+iua	iua	 1 													
+	iuA			 1 	 1 										
+	iyA			 2 	 2 										
+	Iua		 1 	 1 		 1 	 1 								
+	IuA		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	Iya		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	IyA		 1 	 3 	 2 	 1 	 1 					 1 	 1 	 1 	 1 
+iuu	iuu	 1 													
+	iuy			 1 	 1 										
+	iyy			 2 	 2 										
+	Iuu		 1 	 1 		 1 	 1 								
+	Iuy		 1 	 2 	 1 	 1 	 1 						 1 		 1 
+	Iyu		 1 	 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Iyy		 1 	 3 	 2 	 1 	 1 					 1 	 1 	 1 	 1 
+Eee	Eee	 1 					 1 								
+	EeE			 1 			 2 								
+	EEE			 2 			 3 								
+	eee		 1 	 1 											
+	eeE		 1 	 2 			 1 								
+	eEE		 1 	 3 			 2 								
+Eei	Eei	 1 					 1 								
+	EeI			 1 		 1 	 2 								
+	EEi			 1 			 2 								
+	EEI			 2 		 1 	 3 								
+	eei		 1 	 1 											
+	eeI		 1 	 2 		 1 	 1 								
+	eEi		 1 	 2 			 1 								
+	eEI		 1 	 3 		 1 	 2 								
+Eea	Eea	 1 					 1 								
+	EeA			 1 	 1 		 1 								 1 
+	EEa			 1 			 2 								
+	EEA			 2 	 1 		 2 							 1 	 2 
+	eea		 1 	 1 											
+	eeA		 1 	 2 	 1 										
+	eEa		 1 	 2 			 1 								
+	eEA		 1 	 3 	 1 		 1 							 1 	 1 
+Eeu	Eeu	 1 					 1 								
+	Eey			 1 	 1 		 1 								 1 
+	EEu			 1 			 2 								
+	EEy			 2 	 1 		 2 							 1 	 2 
+	eeu		 1 	 1 											
+	eey		 1 	 2 	 1 										
+	eEu		 1 	 2 			 1 								
+	eEy		 1 	 3 	 1 		 1 							 1 	 1 
+Eie	Eie	 1 					 1 								
+	EiE			 1 			 2 								
+	EIe			 1 		 1 	 2 								
+	EIE			 2 		 1 	 3 								
+	eie		 1 	 1 											
+	eiE		 1 	 2 			 1 								
+	eIe		 1 	 2 		 1 	 1 								
+	eIE		 1 	 3 		 1 	 2 								
+Eii	Eii	 1 					 1 								
+	EiI			 1 		 1 	 2 								
+	EII			 2 		 2 	 3 								
+	eii		 1 	 1 											
+	eiI		 1 	 2 		 1 	 1 								
+	eII		 1 	 3 		 2 	 2 								
+Eia	Eia	 1 					 1 								
+	EiA			 1 	 1 		 1 								 1 
+	EIa			 1 		 1 	 2 								
+	EIA			 2 	 1 	 1 	 2 					 1 	 1 	 1 	 2 
+	eia		 1 	 1 											
+	eiA		 1 	 2 	 1 										
+	eIa		 1 	 2 		 1 	 1 								
+	eIA		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Eiu	Eiu	 1 					 1 								
+	Eiy			 1 	 1 		 1 								 1 
+	EIu			 1 		 1 	 2 								
+	EIy			 2 	 1 	 1 	 2 					 1 	 1 	 1 	 2 
+	eiu		 1 	 1 											
+	eiy		 1 	 2 	 1 										
+	eIu		 1 	 2 		 1 	 1 								
+	eIy		 1 	 3 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+Eae	Eae	 1 					 1 								
+	EaE			 1 			 2 								
+	EAe			 1 	 1 		 1 							 1 	 1 
+	EAE			 2 	 1 		 2 			 1 	 1 			 1 	 1 
+	eae		 1 	 1 											
+	eaE		 1 	 2 			 1 								
+	eAe		 1 	 2 	 1 										
+	eAE		 1 	 3 	 1 		 1 			 1 	 1 				
+Eai	Eai	 1 					 1 								
+	EaI			 1 		 1 	 2 								
+	EAi			 1 	 1 		 1 							 1 	 1 
+	EAI			 2 	 1 	 1 	 2 	 1 	 1 	 1 	 1 			 1 	 1 
+	eai		 1 	 1 											
+	eaI		 1 	 2 		 1 	 1 								
+	eAi		 1 	 2 	 1 										
+	eAI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+Eaa	Eaa	 1 					 1 								
+	EaA			 1 	 1 		 1 								 1 
+	EAa			 1 	 1 		 1 							 1 	 1 
+	EAA			 2 	 2 		 1 							 1 	 1 
+	eaa		 1 	 1 											
+	eaA		 1 	 2 	 1 										
+	eAA		 1 	 3 	 2 										
+Eau	Eau	 1 					 1 								
+	Eay			 1 	 1 		 1 								 1 
+	EAu			 1 	 1 		 1 							 1 	 1 
+	EAy			 2 	 2 		 1 							 1 	 1 
+	eau		 1 	 1 											
+	eay		 1 	 2 	 1 										
+	eAy		 1 	 3 	 2 										
+Eue	Eue	 1 					 1 								
+	EuE			 1 			 2 								
+	Eye			 1 	 1 		 1 							 1 	 1 
+	EyE			 2 	 1 		 2 			 1 	 1 			 1 	 1 
+	eue		 1 	 1 											
+	euE		 1 	 2 			 1 								
+	eye		 1 	 2 	 1 										
+	eyE		 1 	 3 	 1 		 1 			 1 	 1 				
+Eui	Eui	 1 					 1 								
+	EuI			 1 		 1 	 2 								
+	Eyi			 1 	 1 		 1 							 1 	 1 
+	EyI			 2 	 1 	 1 	 2 	 1 	 1 	 1 	 1 			 1 	 1 
+	eui		 1 	 1 											
+	euI		 1 	 2 		 1 	 1 								
+	eyi		 1 	 2 	 1 										
+	eyI		 1 	 3 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+Eua	Eua	 1 					 1 								
+	EuA			 1 	 1 		 1 								 1 
+	Eya			 1 	 1 		 1 							 1 	 1 
+	EyA			 2 	 2 		 1 							 1 	 1 
+	eua		 1 	 1 											
+	euA		 1 	 2 	 1 										
+	eyA		 1 	 3 	 2 										
+Euu	Euu	 1 					 1 								
+	Euy			 1 	 1 		 1 								 1 
+	Eyu			 1 	 1 		 1 							 1 	 1 
+	Eyy			 2 	 2 		 1 							 1 	 1 
+	euu		 1 	 1 											
+	euy		 1 	 2 	 1 										
+	eyy		 1 	 3 	 2 										
+oee	oee	 1 													
+	oeE			 1 			 1 								
+	oEE			 2 			 2 								
+	Oee		 1 	 1 	 1 										
+	OeE		 1 	 2 	 1 		 1 				 1 				
+	OEe		 1 	 2 	 1 		 1 			 1 	 1 				
+	OEE		 1 	 3 	 1 		 2 			 1 	 2 				
+oei	oei	 1 													
+	oeI			 1 		 1 	 1 								
+	oEi			 1 			 1 								
+	oEI			 2 		 1 	 2 								
+	Oei		 1 	 1 	 1 										
+	OeI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	OEi		 1 	 2 	 1 		 1 			 1 	 1 				
+	OEI		 1 	 3 	 1 	 1 	 2 		 1 	 1 	 2 				
+oea	oea	 1 													
+	oeA			 1 	 1 										
+	oEa			 1 			 1 								
+	oEA			 2 	 1 		 1 							 1 	 1 
+	Oea		 1 	 1 	 1 										
+	OeA		 1 	 2 	 2 										
+	OEa		 1 	 2 	 1 		 1 			 1 	 1 				
+	OEA		 1 	 3 	 2 		 1 			 1 	 1 			 1 	 1 
+oeu	oeu	 1 													
+	oey			 1 	 1 										
+	oEu			 1 			 1 								
+	oEy			 2 	 1 		 1 							 1 	 1 
+	Oeu		 1 	 1 	 1 										
+	Oey		 1 	 2 	 2 										
+	OEu		 1 	 2 	 1 		 1 			 1 	 1 				
+	OEy		 1 	 3 	 2 		 1 			 1 	 1 			 1 	 1 
+oie	oie	 1 													
+	oiE			 1 			 1 								
+	oIe			 1 		 1 	 1 								
+	oIE			 2 		 1 	 2 								
+	Oie		 1 	 1 	 1 										
+	OiE		 1 	 2 	 1 		 1 				 1 				
+	OIe		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OIE		 1 	 3 	 1 	 1 	 2 	 1 	 1 	 1 	 2 				
+oii	oii	 1 													
+	oiI			 1 		 1 	 1 								
+	oII			 2 		 2 	 2 								
+	Oii		 1 	 1 	 1 										
+	OiI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	OIi		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OII		 1 	 3 	 1 	 2 	 2 	 1 	 2 	 1 	 2 				
+oia	oia	 1 													
+	oiA			 1 	 1 										
+	oIa			 1 		 1 	 1 								
+	oIA			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Oia		 1 	 1 	 1 										
+	OiA		 1 	 2 	 2 										
+	OIa		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OIA		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+oiu	oiu	 1 													
+	oiy			 1 	 1 										
+	oIu			 1 		 1 	 1 								
+	oIy			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Oiu		 1 	 1 	 1 										
+	Oiy		 1 	 2 	 2 										
+	OIu		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	OIy		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+oae	oae	 1 													
+	oaE			 1 			 1 								
+	oAe			 1 	 1 										
+	oAE			 2 	 1 		 1 			 1 	 1 				
+	Oae		 1 	 1 	 1 										
+	OaE		 1 	 2 	 1 		 1 				 1 				
+	OAe		 1 	 2 	 2 										
+	OAE		 1 	 3 	 2 		 1 			 1 	 1 				
+oai	oai	 1 													
+	oaI			 1 		 1 	 1 								
+	oAi			 1 	 1 										
+	oAI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Oai		 1 	 1 	 1 										
+	OaI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	OAi		 1 	 2 	 2 										
+	OAI		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+oaa	oaa	 1 													
+	oaA			 1 	 1 										
+	oAA			 2 	 2 										
+	Oaa		 1 	 1 	 1 										
+	OaA		 1 	 2 	 2 										
+	OAA		 1 	 3 	 3 										
+oau	oau	 1 													
+	oay			 1 	 1 										
+	oAy			 2 	 2 										
+	Oau		 1 	 1 	 1 										
+	Oay		 1 	 2 	 2 										
+	OAy		 1 	 3 	 3 										
+oue	oue	 1 													
+	ouE			 1 			 1 								
+	oye			 1 	 1 										
+	oyE			 2 	 1 		 1 			 1 	 1 				
+	Oue		 1 	 1 	 1 										
+	OuE		 1 	 2 	 1 		 1 				 1 				
+	Oye		 1 	 2 	 2 										
+	OyE		 1 	 3 	 2 		 1 			 1 	 1 				
+oui	oui	 1 													
+	ouI			 1 		 1 	 1 								
+	oyi			 1 	 1 										
+	oyI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Oui		 1 	 1 	 1 										
+	OuI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	Oyi		 1 	 2 	 2 										
+	OyI		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+oua	oua	 1 													
+	ouA			 1 	 1 										
+	oyA			 2 	 2 										
+	Oua		 1 	 1 	 1 										
+	OuA		 1 	 2 	 2 										
+	OyA		 1 	 3 	 3 										
+ouu	ouu	 1 													
+	ouy			 1 	 1 										
+	oyy			 2 	 2 										
+	Ouu		 1 	 1 	 1 										
+	Ouy		 1 	 2 	 2 										
+	Oyy		 1 	 3 	 3 										
+aee	aee	 1 													
+	aeE			 1 			 1 								
+	aEE			 2 			 2 								
+	Aee		 1 	 1 	 1 										
+	AeE		 1 	 2 	 1 		 1 				 1 				
+	AEe		 1 	 2 	 1 		 1 			 1 	 1 				
+	AEE		 1 	 3 	 1 		 2 			 1 	 2 				
+aei	aei	 1 													
+	aeI			 1 		 1 	 1 								
+	aEi			 1 			 1 								
+	aEI			 2 		 1 	 2 								
+	Aei		 1 	 1 	 1 										
+	AeI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	AEi		 1 	 2 	 1 		 1 			 1 	 1 				
+	AEI		 1 	 3 	 1 	 1 	 2 		 1 	 1 	 2 				
+aea	aea	 1 													
+	aeA			 1 	 1 										
+	aEa			 1 			 1 								
+	aEA			 2 	 1 		 1 							 1 	 1 
+	Aea		 1 	 1 	 1 										
+	AeA		 1 	 2 	 2 										
+	AEa		 1 	 2 	 1 		 1 			 1 	 1 				
+	AEA		 1 	 3 	 2 		 1 			 1 	 1 			 1 	 1 
+aeu	aeu	 1 													
+	aey			 1 	 1 										
+	aEu			 1 			 1 								
+	aEy			 2 	 1 		 1 							 1 	 1 
+	Aeu		 1 	 1 	 1 										
+	Aey		 1 	 2 	 2 										
+	AEu		 1 	 2 	 1 		 1 			 1 	 1 				
+	AEy		 1 	 3 	 2 		 1 			 1 	 1 			 1 	 1 
+aie	aie	 1 													
+	aiE			 1 			 1 								
+	aIe			 1 		 1 	 1 								
+	aIE			 2 		 1 	 2 								
+	Aie		 1 	 1 	 1 										
+	AiE		 1 	 2 	 1 		 1 				 1 				
+	AIe		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AIE		 1 	 3 	 1 	 1 	 2 	 1 	 1 	 1 	 2 				
+aii	aii	 1 													
+	aiI			 1 		 1 	 1 								
+	aII			 2 		 2 	 2 								
+	Aii		 1 	 1 	 1 										
+	AiI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	AIi		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AII		 1 	 3 	 1 	 2 	 2 	 1 	 2 	 1 	 2 				
+aia	aia	 1 													
+	aiA			 1 	 1 										
+	aIa			 1 		 1 	 1 								
+	aIA			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Aia		 1 	 1 	 1 										
+	AiA		 1 	 2 	 2 										
+	AIa		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AIA		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+aiu	aiu	 1 													
+	aiy			 1 	 1 										
+	aIu			 1 		 1 	 1 								
+	aIy			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	Aiu		 1 	 1 	 1 										
+	Aiy		 1 	 2 	 2 										
+	AIu		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	AIy		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+aae	aae	 1 													
+	aaE			 1 			 1 								
+	aAe			 1 	 1 										
+	aAE			 2 	 1 		 1 			 1 	 1 				
+	Aae		 1 	 1 	 1 										
+	AaE		 1 	 2 	 1 		 1 				 1 				
+	AAe		 1 	 2 	 2 										
+	AAE		 1 	 3 	 2 		 1 			 1 	 1 				
+aai	aai	 1 													
+	aaI			 1 		 1 	 1 								
+	aAi			 1 	 1 										
+	aAI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Aai		 1 	 1 	 1 										
+	AaI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	AAi		 1 	 2 	 2 										
+	AAI		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+aaa	aaa	 1 													
+	aaA			 1 	 1 										
+	aAA			 2 	 2 										
+	Aaa		 1 	 1 	 1 										
+	AaA		 1 	 2 	 2 										
+	AAA		 1 	 3 	 3 										
+aau	aau	 1 													
+	aay			 1 	 1 										
+	aAy			 2 	 2 										
+	Aau		 1 	 1 	 1 										
+	Aay		 1 	 2 	 2 										
+	AAy		 1 	 3 	 3 										
+aue	aue	 1 													
+	auE			 1 			 1 								
+	aye			 1 	 1 										
+	ayE			 2 	 1 		 1 			 1 	 1 				
+	Aue		 1 	 1 	 1 										
+	AuE		 1 	 2 	 1 		 1 				 1 				
+	Aye		 1 	 2 	 2 										
+	AyE		 1 	 3 	 2 		 1 			 1 	 1 				
+aui	aui	 1 													
+	auI			 1 		 1 	 1 								
+	ayi			 1 	 1 										
+	ayI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	Aui		 1 	 1 	 1 										
+	AuI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	Ayi		 1 	 2 	 2 										
+	AyI		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+aua	aua	 1 													
+	auA			 1 	 1 										
+	ayA			 2 	 2 										
+	Aua		 1 	 1 	 1 										
+	AuA		 1 	 2 	 2 										
+	AyA		 1 	 3 	 3 										
+auu	auu	 1 													
+	auy			 1 	 1 										
+	ayy			 2 	 2 										
+	Auu		 1 	 1 	 1 										
+	Auy		 1 	 2 	 2 										
+	Ayy		 1 	 3 	 3 										
+uee	uee	 1 													
+	ueE			 1 			 1 								
+	uEE			 2 			 2 								
+	yee		 1 	 1 	 1 										
+	yeE		 1 	 2 	 1 		 1 				 1 				
+	yEe		 1 	 2 	 1 		 1 			 1 	 1 				
+	yEE		 1 	 3 	 1 		 2 			 1 	 2 				
+uei	uei	 1 													
+	ueI			 1 		 1 	 1 								
+	uEi			 1 			 1 								
+	uEI			 2 		 1 	 2 								
+	yei		 1 	 1 	 1 										
+	yeI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	yEi		 1 	 2 	 1 		 1 			 1 	 1 				
+	yEI		 1 	 3 	 1 	 1 	 2 		 1 	 1 	 2 				
+uea	uea	 1 													
+	ueA			 1 	 1 										
+	uEa			 1 			 1 								
+	uEA			 2 	 1 		 1 							 1 	 1 
+	yea		 1 	 1 	 1 										
+	yeA		 1 	 2 	 2 										
+	yEa		 1 	 2 	 1 		 1 			 1 	 1 				
+	yEA		 1 	 3 	 2 		 1 			 1 	 1 			 1 	 1 
+ueu	ueu	 1 													
+	uey			 1 	 1 										
+	uEu			 1 			 1 								
+	uEy			 2 	 1 		 1 							 1 	 1 
+	yeu		 1 	 1 	 1 										
+	yey		 1 	 2 	 2 										
+	yEu		 1 	 2 	 1 		 1 			 1 	 1 				
+	yEy		 1 	 3 	 2 		 1 			 1 	 1 			 1 	 1 
+uie	uie	 1 													
+	uiE			 1 			 1 								
+	uIe			 1 		 1 	 1 								
+	uIE			 2 		 1 	 2 								
+	yie		 1 	 1 	 1 										
+	yiE		 1 	 2 	 1 		 1 				 1 				
+	yIe		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yIE		 1 	 3 	 1 	 1 	 2 	 1 	 1 	 1 	 2 				
+uii	uii	 1 													
+	uiI			 1 		 1 	 1 								
+	uII			 2 		 2 	 2 								
+	yii		 1 	 1 	 1 										
+	yiI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	yIi		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yII		 1 	 3 	 1 	 2 	 2 	 1 	 2 	 1 	 2 				
+uia	uia	 1 													
+	uiA			 1 	 1 										
+	uIa			 1 		 1 	 1 								
+	uIA			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	yia		 1 	 1 	 1 										
+	yiA		 1 	 2 	 2 										
+	yIa		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yIA		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+uiu	uiu	 1 													
+	uiy			 1 	 1 										
+	uIu			 1 		 1 	 1 								
+	uIy			 2 	 1 	 1 	 1 					 1 	 1 	 1 	 1 
+	yiu		 1 	 1 	 1 										
+	yiy		 1 	 2 	 2 										
+	yIu		 1 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yIy		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 	 1 
+uae	uae	 1 													
+	uaE			 1 			 1 								
+	uAe			 1 	 1 										
+	uAE			 2 	 1 		 1 			 1 	 1 				
+	yae		 1 	 1 	 1 										
+	yaE		 1 	 2 	 1 		 1 				 1 				
+	yAe		 1 	 2 	 2 										
+	yAE		 1 	 3 	 2 		 1 			 1 	 1 				
+uai	uai	 1 													
+	uaI			 1 		 1 	 1 								
+	uAi			 1 	 1 										
+	uAI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yai		 1 	 1 	 1 										
+	yaI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	yAi		 1 	 2 	 2 										
+	yAI		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+uaa	uaa	 1 													
+	uaA			 1 	 1 										
+	uAA			 2 	 2 										
+	yaa		 1 	 1 	 1 										
+	yaA		 1 	 2 	 2 										
+	yAA		 1 	 3 	 3 										
+uau	uau	 1 													
+	uay			 1 	 1 										
+	uAy			 2 	 2 										
+	yau		 1 	 1 	 1 										
+	yay		 1 	 2 	 2 										
+	yAy		 1 	 3 	 3 										
+uue	uue	 1 													
+	uuE			 1 			 1 								
+	uye			 1 	 1 										
+	uyE			 2 	 1 		 1 			 1 	 1 				
+	yue		 1 	 1 	 1 										
+	yuE		 1 	 2 	 1 		 1 				 1 				
+	yye		 1 	 2 	 2 										
+	yyE		 1 	 3 	 2 		 1 			 1 	 1 				
+uui	uui	 1 													
+	uuI			 1 		 1 	 1 								
+	uyi			 1 	 1 										
+	uyI			 2 	 1 	 1 	 1 	 1 	 1 	 1 	 1 				
+	yui		 1 	 1 	 1 										
+	yuI		 1 	 2 	 1 	 1 	 1 		 1 		 1 				
+	yyi		 1 	 2 	 2 										
+	yyI		 1 	 3 	 2 	 1 	 1 	 1 	 1 	 1 	 1 				
+uua	uua	 1 													
+	uuA			 1 	 1 										
+	uyA			 2 	 2 										
+	yua		 1 	 1 	 1 										
+	yuA		 1 	 2 	 2 										
+	yyA		 1 	 3 	 3 										
+uuu	uuu	 1 													
+	uuy			 1 	 1 										
+	uyy			 2 	 2 										
+	yuu		 1 	 1 	 1 										
+	yuy		 1 	 2 	 2 										
+	yyy		 1 	 3 	 3 										

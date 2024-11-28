@@ -1,0 +1,950 @@
+Generated	Heard	Adj. Num	Id(Bk)Syl1	now	Id(Bk)	now	*F3	now	*F5	now	*B2	now	*B5	now	*F3_B2	now	*F3..._B2	now	*F3_B5	now	*F3..._B5	now	*F5_B2	now	*F5..._B2	now	*F5_B5	now	*F5..._B5	now	*_B2F3	now	*_B2...F3	now	*_B2F5	now	*_B2...F5	now	*_B5F3	now	*_B5...F3	now	*_B5F5	now	*_B5...F5	now	
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 20 	 20 																																										
+(Initial)			 20 		 0 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 		 100 	
+oei	Oeioei	Oei	 1 	 21 																																										
+oei	Oei			 1 	 1 																																								
+oei	Oei					-1 	 99 																																						
+oei	Oei							-1 	 99 																																				
+oei	Oei											 1 	 101 																																
+oei	Oei																																									 1 	 101 		
+oei	Oei																																											 1 	 101 
+Iou	iouIou	iou	 1 	 22 																																										
+Iou	iou			 1 	 2 																																								
+Iou	iou							-1 	 98 																																				
+Iou	iou									 1 	 101 																																		
+Iou	iou											 1 	 102 																																
+Iou	iou																									-1 	 99 																		
+Iou	iou																											-1 	 99 																
+iea	ieAiea	ieA			 1 	 3 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 23 																																										
+iea	ieA					-1 	 98 																																						
+iea	ieA							-1 	 97 																																				
+iea	ieA											 1 	 103 																																
+iea	ieA																									 1 	 100 																		
+iea	ieA																											 1 	 100 																
+Oe	oeOe	oe	 1 	 24 																																										
+Oe	oe			 1 	 4 																																								
+Oe	oe					 1 	 99 																																						
+Oe	oe							 1 	 98 																																				
+Oe	oe											-1 	 102 																																
+Oe	oe																																									-1 	 100 		
+Oe	oe																																											-1 	 100 
+iAy	iauiAy	iau			 1 	 5 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 25 																																										
+iAy	iau					 1 	 100 																																						
+iAy	iau							 1 	 99 																																				
+iAy	iau											-1 	 101 																																
+iAy	iau																									-1 	 99 																		
+iAy	iau																											-1 	 99 																
+OAO	oaoOAO	oao	 1 	 26 																																										
+OAO	oao			 1 	 6 																																								
+OAO	oao					 1 	 101 																																						
+OAO	oao							 1 	 100 																																				
+OAO	oao											-1 	 100 																																
+au	Ayau	Ay	 1 	 27 																																										
+au	Ay			 1 	 7 																																								
+au	Ay					-1 	 100 																																						
+au	Ay							-1 	 99 																																				
+au	Ay											 1 	 101 																																
+eyi	euieyi	eui			 1 	 8 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 28 																																										
+eyi	eui					 1 	 101 																																						
+eyi	eui							 1 	 100 																																				
+eyi	eui											-1 	 100 																																
+eyi	eui																									-1 	 98 																		
+eyi	eui																											-1 	 98 																
+eyi	eui																																									-1 	 99 		
+eyi	eui																																											-1 	 99 
+aeu	Aeyaeu	Aey	 1 	 29 																																										
+aeu	Aey			 1 	 9 																																								
+aeu	Aey					-1 	 100 																																						
+aeu	Aey							-1 	 99 																																				
+aeu	Aey											 1 	 101 																																
+aeu	Aey																									 1 	 99 																		
+aeu	Aey																											 1 	 99 																
+aeu	Aey																																									 1 	 100 		
+aeu	Aey																																											 1 	 100 
+EEa	eeaEEa	eea	 1 	 30 																																										
+EEa	eea			 1 	 10 																																								
+EEa	eea							-1 	 98 																																				
+EEa	eea									 1 	 102 																																		
+EEa	eea											 1 	 102 																																
+EEa	eea																									-1 	 98 																		
+EEa	eea																											-1 	 98 																
+AAe	aaeAAe	aae	 1 	 31 																																										
+AAe	aae			 1 	 11 																																								
+AAe	aae					 1 	 101 																																						
+AAe	aae							 1 	 99 																																				
+AAe	aae											-1 	 101 																																
+AAe	aae																																									-1 	 99 		
+AAe	aae																																											-1 	 99 
+Eo	eoEo	eo	 1 	 32 																																										
+Eo	eo			 1 	 12 																																								
+Eo	eo							-1 	 98 																																				
+Eo	eo									 1 	 103 																																		
+Eo	eo											 1 	 102 																																
+Eo	eo																									-1 	 97 																		
+Eo	eo																											-1 	 97 																
+yie	uieyie	uie	 1 	 33 																																										
+yie	uie			 1 	 13 																																								
+yie	uie					 1 	 102 																																						
+yie	uie							 1 	 99 																																				
+yie	uie											-1 	 101 																																
+yie	uie																																									-1 	 98 		
+yie	uie																																											-1 	 98 
+eeo	eeOeeo	eeO			 1 	 14 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 34 																																										
+eeo	eeO					-1 	 101 																																						
+eeo	eeO							-1 	 98 																																				
+eeo	eeO											 1 	 102 																																
+eeo	eeO																									 1 	 98 																		
+eeo	eeO																											 1 	 98 																
+uoa	yOAuoa	yOA	 1 	 35 																																										
+uoa	yOA			 1 	 15 																																								
+uoa	yOA					-1 	 100 																																						
+uoa	yOA							-1 	 97 																																				
+uoa	yOA											 1 	 103 																																
+Oy	ouOy	ou	 1 	 36 																																										
+Oy	ou			 1 	 16 																																								
+Oy	ou					 1 	 101 																																						
+Oy	ou							 1 	 98 																																				
+Oy	ou											-1 	 102 																																
+yAi	uaiyAi	uai	 1 	 37 																																										
+yAi	uai			 1 	 17 																																								
+yAi	uai					 1 	 102 																																						
+yAi	uai							 1 	 99 																																				
+yAi	uai											-1 	 101 																																
+yAi	uai																																									-1 	 97 		
+yAi	uai																																											-1 	 97 
+iao	iAOiao	iAO			 1 	 18 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 38 																																										
+iao	iAO					-1 	 101 																																						
+iao	iAO							-1 	 98 																																				
+iao	iAO											 1 	 102 																																
+iao	iAO																									 1 	 99 																		
+iao	iAO																											 1 	 99 																
+Aye	aueAye	aue	 1 	 39 																																										
+Aye	aue			 1 	 19 																																								
+Aye	aue					 1 	 102 																																						
+Aye	aue							 1 	 99 																																				
+Aye	aue											-1 	 101 																																
+Aye	aue																																									-1 	 96 		
+Aye	aue																																											-1 	 96 
+eoo	eOOeoo	eOO			 1 	 20 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 40 																																										
+eoo	eOO					-1 	 101 																																						
+eoo	eOO							-1 	 98 																																				
+eoo	eOO											 1 	 102 																																
+eoo	eOO																									 1 	 100 																		
+eoo	eOO																											 1 	 100 																
+OOA	ooaOOA	ooa	 1 	 41 																																										
+OOA	ooa			 1 	 21 																																								
+OOA	ooa					 1 	 102 																																						
+OOA	ooa							 1 	 99 																																				
+OOA	ooa											-1 	 101 																																
+aoo	AOOaoo	AOO	 1 	 42 																																										
+aoo	AOO			 1 	 22 																																								
+aoo	AOO					-1 	 101 																																						
+aoo	AOO							-1 	 98 																																				
+aoo	AOO											 1 	 102 																																
+iui	iyiiui	iyi			 1 	 23 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 43 																																										
+iui	iyi					-1 	 100 																																						
+iui	iyi							-1 	 97 																																				
+iui	iyi											 1 	 103 																																
+iui	iyi																									 1 	 101 																		
+iui	iyi																											 1 	 101 																
+iui	iyi																																									 1 	 97 		
+iui	iyi																																											 1 	 97 
+Aiy	aiuAiy	aiu	 1 	 44 																																										
+Aiy	aiu			 1 	 24 																																								
+Aiy	aiu					 1 	 101 																																						
+Aiy	aiu							 1 	 98 																																				
+Aiy	aiu											-1 	 102 																																
+Aiy	aiu																									-1 	 100 																		
+Aiy	aiu																											-1 	 100 																
+Aiy	aiu																																									-1 	 96 		
+Aiy	aiu																																											-1 	 96 
+uou	yOyuou	yOy	 1 	 45 																																										
+uou	yOy			 1 	 25 																																								
+uou	yOy					-1 	 100 																																						
+uou	yOy							-1 	 97 																																				
+uou	yOy											 1 	 103 																																
+iO	ioiO	io			 1 	 26 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 46 																																										
+iO	io					 1 	 101 																																						
+iO	io							 1 	 98 																																				
+iO	io											-1 	 102 																																
+iO	io																									-1 	 99 																		
+iO	io																											-1 	 99 																
+aio	AiOaio	AiO	 1 	 47 																																										
+aio	AiO			 1 	 27 																																								
+aio	AiO					-1 	 100 																																						
+aio	AiO							-1 	 97 																																				
+aio	AiO											 1 	 103 																																
+aio	AiO																									 1 	 100 																		
+aio	AiO																											 1 	 100 																
+aio	AiO																																									 1 	 97 		
+aio	AiO																																											 1 	 97 
+AiA	aiaAiA	aia	 1 	 48 																																										
+AiA	aia			 1 	 28 																																								
+AiA	aia					 1 	 101 																																						
+AiA	aia							 1 	 98 																																				
+AiA	aia											-1 	 102 																																
+AiA	aia																									-1 	 99 																		
+AiA	aia																											-1 	 99 																
+AiA	aia																																									-1 	 96 		
+AiA	aia																																											-1 	 96 
+oui	Oyioui	Oyi	 1 	 49 																																										
+oui	Oyi			 1 	 29 																																								
+oui	Oyi					-1 	 100 																																						
+oui	Oyi							-1 	 97 																																				
+oui	Oyi											 1 	 103 																																
+oui	Oyi																																									 1 	 97 		
+oui	Oyi																																											 1 	 97 
+yyO	uuoyyO	uuo	 1 	 50 																																										
+yyO	uuo			 1 	 30 																																								
+yyO	uuo					 1 	 101 																																						
+yyO	uuo							 1 	 98 																																				
+yyO	uuo											-1 	 102 																																
+yye	uueyye	uue	 1 	 51 																																										
+yye	uue			 1 	 31 																																								
+yye	uue					 1 	 102 																																						
+yye	uue							 1 	 99 																																				
+yye	uue											-1 	 101 																																
+yye	uue																																									-1 	 96 		
+yye	uue																																											-1 	 96 
+yA	uayA	ua	 1 	 52 																																										
+yA	ua			 1 	 32 																																								
+yA	ua					 1 	 103 																																						
+yA	ua							 1 	 100 																																				
+yA	ua											-1 	 100 																																
+uua	yyAuua	yyA	 1 	 53 																																										
+uua	yyA			 1 	 33 																																								
+uua	yyA					-1 	 102 																																						
+uua	yyA							-1 	 99 																																				
+uua	yyA											 1 	 101 																																
+uea	yeAuea	yeA	 1 	 54 																																										
+uea	yeA			 1 	 34 																																								
+uea	yeA					-1 	 101 																																						
+uea	yeA							-1 	 98 																																				
+uea	yeA											 1 	 102 																																
+uea	yeA																									 1 	 100 																		
+uea	yeA																											 1 	 100 																
+uea	yeA																																									 1 	 97 		
+uea	yeA																																											 1 	 97 
+Ay	auAy	au	 1 	 55 																																										
+Ay	au			 1 	 35 																																								
+Ay	au					 1 	 102 																																						
+Ay	au							 1 	 99 																																				
+Ay	au											-1 	 101 																																
+yO	uoyO	uo	 1 	 56 																																										
+yO	uo			 1 	 36 																																								
+yO	uo					 1 	 103 																																						
+yO	uo							 1 	 100 																																				
+yO	uo											-1 	 100 																																
+oai	OAioai	OAi	 1 	 57 																																										
+oai	OAi			 1 	 37 																																								
+oai	OAi					-1 	 102 																																						
+oai	OAi							-1 	 99 																																				
+oai	OAi											 1 	 101 																																
+oai	OAi																																									 1 	 98 		
+oai	OAi																																											 1 	 98 
+uui	yyiuui	yyi	 1 	 58 																																										
+uui	yyi			 1 	 38 																																								
+uui	yyi					-1 	 101 																																						
+uui	yyi							-1 	 98 																																				
+uui	yyi											 1 	 102 																																
+uui	yyi																																									 1 	 99 		
+uui	yyi																																											 1 	 99 
+oee	Oeeoee	Oee	 1 	 59 																																										
+oee	Oee			 1 	 39 																																								
+oee	Oee					-1 	 100 																																						
+oee	Oee							-1 	 97 																																				
+oee	Oee											 1 	 103 																																
+oee	Oee																																									 1 	 100 		
+oee	Oee																																											 1 	 100 
+eAO	eaoeAO	eao			 1 	 40 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 60 																																										
+eAO	eao					 1 	 101 																																						
+eAO	eao							 1 	 98 																																				
+eAO	eao											-1 	 102 																																
+eAO	eao																									-1 	 99 																		
+eAO	eao																											-1 	 99 																
+AAe	aaeAAe	aae	 1 	 61 																																										
+AAe	aae			 1 	 41 																																								
+AAe	aae					 1 	 102 																																						
+AAe	aae							 1 	 99 																																				
+AAe	aae											-1 	 101 																																
+AAe	aae																																									-1 	 99 		
+AAe	aae																																											-1 	 99 
+aao	AAOaao	AAO	 1 	 62 																																										
+aao	AAO			 1 	 42 																																								
+aao	AAO					-1 	 101 																																						
+aao	AAO							-1 	 98 																																				
+aao	AAO											 1 	 102 																																
+eu	eyeu	ey			 1 	 43 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 63 																																										
+eu	ey					-1 	 100 																																						
+eu	ey							-1 	 97 																																				
+eu	ey											 1 	 103 																																
+eu	ey																									 1 	 100 																		
+eu	ey																											 1 	 100 																
+Oyy	ouuOyy	ouu	 1 	 64 																																										
+Oyy	ouu			 1 	 44 																																								
+Oyy	ouu					 1 	 101 																																						
+Oyy	ouu							 1 	 98 																																				
+Oyy	ouu											-1 	 102 																																
+OOe	ooeOOe	ooe	 1 	 65 																																										
+OOe	ooe			 1 	 45 																																								
+OOe	ooe					 1 	 102 																																						
+OOe	ooe							 1 	 99 																																				
+OOe	ooe											-1 	 101 																																
+OOe	ooe																																									-1 	 98 		
+OOe	ooe																																											-1 	 98 
+oou	OOyoou	OOy	 1 	 66 																																										
+oou	OOy			 1 	 46 																																								
+oou	OOy					-1 	 101 																																						
+oou	OOy							-1 	 98 																																				
+oou	OOy											 1 	 102 																																
+AAe	aaeAAe	aae	 1 	 67 																																										
+AAe	aae			 1 	 47 																																								
+AAe	aae					 1 	 102 																																						
+AAe	aae							 1 	 99 																																				
+AAe	aae											-1 	 101 																																
+AAe	aae																																									-1 	 97 		
+AAe	aae																																											-1 	 97 
+ey	euey	eu			 1 	 48 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 68 																																										
+ey	eu					 1 	 103 																																						
+ey	eu							 1 	 100 																																				
+ey	eu											-1 	 100 																																
+ey	eu																									-1 	 99 																		
+ey	eu																											-1 	 99 																
+oIu	oiuoIu	oiu			 1 	 49 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 69 																																										
+oIu	oiu							-1 	 99 																																				
+oIu	oiu									 1 	 104 																																		
+oIu	oiu											 1 	 101 																																
+oIu	oiu																									-1 	 98 																		
+oIu	oiu																											-1 	 98 																
+oIu	oiu																																									-1 	 96 		
+oIu	oiu																																											-1 	 96 
+oeo	OeOoeo	OeO	 1 	 70 																																										
+oeo	OeO			 1 	 50 																																								
+oeo	OeO					-1 	 102 																																						
+oeo	OeO							-1 	 98 																																				
+oeo	OeO											 1 	 102 																																
+oeo	OeO																									 1 	 99 																		
+oeo	OeO																											 1 	 99 																
+oeo	OeO																																									 1 	 97 		
+oeo	OeO																																											 1 	 97 
+EIa	eiaEIa	eia	 1 	 71 																																										
+EIa	eia			 1 	 51 																																								
+EIa	eia							-1 	 97 																																				
+EIa	eia									 1 	 105 																																		
+EIa	eia											 1 	 103 																																
+EIa	eia																									-1 	 98 																		
+EIa	eia																											-1 	 98 																
+Ay	auAy	au	 1 	 72 																																										
+Ay	au			 1 	 52 																																								
+Ay	au					 1 	 103 																																						
+Ay	au							 1 	 98 																																				
+Ay	au											-1 	 102 																																
+ueo	yeOueo	yeO	 1 	 73 																																										
+ueo	yeO			 1 	 53 																																								
+ueo	yeO					-1 	 102 																																						
+ueo	yeO							-1 	 97 																																				
+ueo	yeO											 1 	 103 																																
+ueo	yeO																									 1 	 99 																		
+ueo	yeO																											 1 	 99 																
+ueo	yeO																																									 1 	 98 		
+ueo	yeO																																											 1 	 98 
+eeu	eeyeeu	eey			 1 	 54 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 74 																																										
+eeu	eey					-1 	 101 																																						
+eeu	eey							-1 	 96 																																				
+eeu	eey											 1 	 104 																																
+eeu	eey																									 1 	 100 																		
+eeu	eey																											 1 	 100 																
+yyO	uuoyyO	uuo	 1 	 75 																																										
+yyO	uuo			 1 	 55 																																								
+yyO	uuo					 1 	 102 																																						
+yyO	uuo							 1 	 97 																																				
+yyO	uuo											-1 	 103 																																
+aoi	AOiaoi	AOi	 1 	 76 																																										
+aoi	AOi			 1 	 56 																																								
+aoi	AOi					-1 	 101 																																						
+aoi	AOi							-1 	 96 																																				
+aoi	AOi											 1 	 104 																																
+aoi	AOi																																									 1 	 99 		
+aoi	AOi																																											 1 	 99 
+AOe	aoeAOe	aoe	 1 	 77 																																										
+AOe	aoe			 1 	 57 																																								
+AOe	aoe					 1 	 102 																																						
+AOe	aoe							 1 	 97 																																				
+AOe	aoe											-1 	 103 																																
+AOe	aoe																																									-1 	 98 		
+AOe	aoe																																											-1 	 98 
+eai	eAieai	eAi			 1 	 58 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 78 																																										
+eai	eAi					-1 	 101 																																						
+eai	eAi							-1 	 96 																																				
+eai	eAi											 1 	 104 																																
+eai	eAi																									 1 	 101 																		
+eai	eAi																											 1 	 101 																
+eai	eAi																																									 1 	 99 		
+eai	eAi																																											 1 	 99 
+Oye	oueOye	oue	 1 	 79 																																										
+Oye	oue			 1 	 59 																																								
+Oye	oue					 1 	 102 																																						
+Oye	oue							 1 	 97 																																				
+Oye	oue											-1 	 103 																																
+Oye	oue																																									-1 	 98 		
+Oye	oue																																											-1 	 98 
+au	Ayau	Ay	 1 	 80 																																										
+au	Ay			 1 	 60 																																								
+au	Ay					-1 	 101 																																						
+au	Ay							-1 	 96 																																				
+au	Ay											 1 	 104 																																
+yey	ueuyey	ueu	 1 	 81 																																										
+yey	ueu			 1 	 61 																																								
+yey	ueu					 1 	 102 																																						
+yey	ueu							 1 	 97 																																				
+yey	ueu											-1 	 103 																																
+yey	ueu																									-1 	 100 																		
+yey	ueu																											-1 	 100 																
+yey	ueu																																									-1 	 97 		
+yey	ueu																																											-1 	 97 
+ao	AOao	AO	 1 	 82 																																										
+ao	AO			 1 	 62 																																								
+ao	AO					-1 	 101 																																						
+ao	AO							-1 	 96 																																				
+ao	AO											 1 	 104 																																
+yiO	uioyiO	uio	 1 	 83 																																										
+yiO	uio			 1 	 63 																																								
+yiO	uio					 1 	 102 																																						
+yiO	uio							 1 	 97 																																				
+yiO	uio											-1 	 103 																																
+yiO	uio																									-1 	 99 																		
+yiO	uio																											-1 	 99 																
+yiO	uio																																									-1 	 96 		
+yiO	uio																																											-1 	 96 
+iea	ieAiea	ieA			 1 	 64 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 84 																																										
+iea	ieA					-1 	 101 																																						
+iea	ieA							-1 	 96 																																				
+iea	ieA											 1 	 104 																																
+iea	ieA																									 1 	 100 																		
+iea	ieA																											 1 	 100 																
+iyi	iuiiyi	iui			 1 	 65 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 85 																																										
+iyi	iui					 1 	 102 																																						
+iyi	iui							 1 	 97 																																				
+iyi	iui											-1 	 103 																																
+iyi	iui																									-1 	 99 																		
+iyi	iui																											-1 	 99 																
+iyi	iui																																									-1 	 95 		
+iyi	iui																																											-1 	 95 
+aie	Aieaie	Aie	 1 	 86 																																										
+aie	Aie			 1 	 66 																																								
+aie	Aie					-1 	 101 																																						
+aie	Aie							-1 	 96 																																				
+aie	Aie											 1 	 104 																																
+aie	Aie																																									 1 	 96 		
+aie	Aie																																											 1 	 96 
+Ai	aiAi	ai	 1 	 87 																																										
+Ai	ai			 1 	 67 																																								
+Ai	ai					 1 	 102 																																						
+Ai	ai							 1 	 97 																																				
+Ai	ai											-1 	 103 																																
+Ai	ai																																									-1 	 95 		
+Ai	ai																																											-1 	 95 
+eai	eAieai	eAi			 1 	 68 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 88 																																										
+eai	eAi					-1 	 101 																																						
+eai	eAi							-1 	 96 																																				
+eai	eAi											 1 	 104 																																
+eai	eAi																									 1 	 100 																		
+eai	eAi																											 1 	 100 																
+eai	eAi																																									 1 	 96 		
+eai	eAi																																											 1 	 96 
+iOO	iooiOO	ioo			 1 	 69 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 89 																																										
+iOO	ioo					 1 	 102 																																						
+iOO	ioo							 1 	 97 																																				
+iOO	ioo											-1 	 103 																																
+iOO	ioo																									-1 	 99 																		
+iOO	ioo																											-1 	 99 																
+iA	iaiA	ia			 1 	 70 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 90 																																										
+iA	ia					 1 	 103 																																						
+iA	ia							 1 	 98 																																				
+iA	ia											-1 	 102 																																
+iA	ia																									-1 	 98 																		
+iA	ia																											-1 	 98 																
+oeu	Oeyoeu	Oey	 1 	 91 																																										
+oeu	Oey			 1 	 71 																																								
+oeu	Oey					-1 	 102 																																						
+oeu	Oey							-1 	 97 																																				
+oeu	Oey											 1 	 103 																																
+oeu	Oey																									 1 	 99 																		
+oeu	Oey																											 1 	 99 																
+oeu	Oey																																									 1 	 97 		
+oeu	Oey																																											 1 	 97 
+yO	uoyO	uo	 1 	 92 																																										
+yO	uo			 1 	 72 																																								
+yO	uo					 1 	 103 																																						
+yO	uo							 1 	 98 																																				
+yO	uo											-1 	 102 																																
+eAA	eaaeAA	eaa			 1 	 73 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 93 																																										
+eAA	eaa					 1 	 104 																																						
+eAA	eaa							 1 	 99 																																				
+eAA	eaa											-1 	 101 																																
+eAA	eaa																									-1 	 98 																		
+eAA	eaa																											-1 	 98 																
+aai	AAiaai	AAi	 1 	 94 																																										
+aai	AAi			 1 	 74 																																								
+aai	AAi					-1 	 103 																																						
+aai	AAi							-1 	 98 																																				
+aai	AAi											 1 	 102 																																
+aai	AAi																																									 1 	 98 		
+aai	AAi																																											 1 	 98 
+yiO	uioyiO	uio	 1 	 95 																																										
+yiO	uio			 1 	 75 																																								
+yiO	uio					 1 	 104 																																						
+yiO	uio							 1 	 99 																																				
+yiO	uio											-1 	 101 																																
+yiO	uio																									-1 	 97 																		
+yiO	uio																											-1 	 97 																
+yiO	uio																																									-1 	 97 		
+yiO	uio																																											-1 	 97 
+eae	eAeeae	eAe			 1 	 76 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 96 																																										
+eae	eAe					-1 	 103 																																						
+eae	eAe							-1 	 98 																																				
+eae	eAe											 1 	 102 																																
+eae	eAe																									 1 	 98 																		
+eae	eAe																											 1 	 98 																
+eae	eAe																																									 1 	 98 		
+eae	eAe																																											 1 	 98 
+eAA	eaaeAA	eaa			 1 	 77 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 97 																																										
+eAA	eaa					 1 	 104 																																						
+eAA	eaa							 1 	 99 																																				
+eAA	eaa											-1 	 101 																																
+eAA	eaa																									-1 	 97 																		
+eAA	eaa																											-1 	 97 																
+oie	Oieoie	Oie	 1 	 98 																																										
+oie	Oie			 1 	 78 																																								
+oie	Oie					-1 	 103 																																						
+oie	Oie							-1 	 98 																																				
+oie	Oie											 1 	 102 																																
+oie	Oie																																									 1 	 99 		
+oie	Oie																																											 1 	 99 
+aii	Aiiaii	Aii	 1 	 99 																																										
+aii	Aii			 1 	 79 																																								
+aii	Aii					-1 	 102 																																						
+aii	Aii							-1 	 97 																																				
+aii	Aii											 1 	 103 																																
+aii	Aii																																									 1 	 100 		
+aii	Aii																																											 1 	 100 
+iae	iAeiae	iAe			 1 	 80 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 100 																																										
+iae	iAe					-1 	 101 																																						
+iae	iAe							-1 	 96 																																				
+iae	iAe											 1 	 104 																																
+iae	iAe																									 1 	 98 																		
+iae	iAe																											 1 	 98 																
+iae	iAe																																									 1 	 101 		
+iae	iAe																																											 1 	 101 
+eOy	eoueOy	eou			 1 	 81 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 101 																																										
+eOy	eou					 1 	 102 																																						
+eOy	eou							 1 	 97 																																				
+eOy	eou											-1 	 103 																																
+eOy	eou																									-1 	 97 																		
+eOy	eou																											-1 	 97 																
+iu	iyiu	iy			 1 	 82 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 102 																																										
+iu	iy					-1 	 101 																																						
+iu	iy							-1 	 96 																																				
+iu	iy											 1 	 104 																																
+iu	iy																									 1 	 98 																		
+iu	iy																											 1 	 98 																
+oeo	OeOoeo	OeO	 1 	 103 																																										
+oeo	OeO			 1 	 83 																																								
+oeo	OeO					-1 	 100 																																						
+oeo	OeO							-1 	 95 																																				
+oeo	OeO											 1 	 105 																																
+oeo	OeO																									 1 	 99 																		
+oeo	OeO																											 1 	 99 																
+oeo	OeO																																									 1 	 102 		
+oeo	OeO																																											 1 	 102 
+AOi	aoiAOi	aoi	 1 	 104 																																										
+AOi	aoi			 1 	 84 																																								
+AOi	aoi					 1 	 101 																																						
+AOi	aoi							 1 	 96 																																				
+AOi	aoi											-1 	 104 																																
+AOi	aoi																																									-1 	 101 		
+AOi	aoi																																											-1 	 101 
+yie	uieyie	uie	 1 	 105 																																										
+yie	uie			 1 	 85 																																								
+yie	uie					 1 	 102 																																						
+yie	uie							 1 	 97 																																				
+yie	uie											-1 	 103 																																
+yie	uie																																									-1 	 100 		
+yie	uie																																											-1 	 100 
+yee	ueeyee	uee	 1 	 106 																																										
+yee	uee			 1 	 86 																																								
+yee	uee					 1 	 103 																																						
+yee	uee							 1 	 98 																																				
+yee	uee											-1 	 102 																																
+yee	uee																																									-1 	 99 		
+yee	uee																																											-1 	 99 
+Oio	OiOOio	OiO			 1 	 87 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 107 																																										
+Oio	OiO					-1 	 102 																																						
+Oio	OiO							-1 	 97 																																				
+Oio	OiO											 1 	 103 																																
+Oio	OiO																			 1 	 101 																								
+Oio	OiO																									 1 	 100 																		
+Oio	OiO																											 1 	 100 																
+yae	yAeyae	yAe			 1 	 88 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 108 																																										
+yae	yAe					-1 	 101 																																						
+yae	yAe							-1 	 96 																																				
+yae	yAe											 1 	 104 																																
+yae	yAe																	 1 	 101 																										
+yae	yAe																			 1 	 102 																								
+yae	yAe																									 1 	 101 																		
+yae	yAe																											 1 	 101 																
+yae	yAe																																									 1 	 100 		
+yae	yAe																																											 1 	 100 
+iyy	iuuiyy	iuu			 1 	 89 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 109 																																										
+iyy	iuu					 1 	 102 																																						
+iyy	iuu							 1 	 97 																																				
+iyy	iuu											-1 	 103 																																
+iyy	iuu																									-1 	 100 																		
+iyy	iuu																											-1 	 100 																
+iOe	ioeiOe	ioe			 1 	 90 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 110 																																										
+iOe	ioe					 1 	 103 																																						
+iOe	ioe							 1 	 98 																																				
+iOe	ioe											-1 	 102 																																
+iOe	ioe																									-1 	 99 																		
+iOe	ioe																											-1 	 99 																
+iOe	ioe																																									-1 	 99 		
+iOe	ioe																																											-1 	 99 
+Oae	OAeOae	OAe			 1 	 91 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 111 																																										
+Oae	OAe					-1 	 102 																																						
+Oae	OAe							-1 	 97 																																				
+Oae	OAe											 1 	 103 																																
+Oae	OAe																	 1 	 102 																										
+Oae	OAe																			 1 	 103 																								
+Oae	OAe																									 1 	 100 																		
+Oae	OAe																											 1 	 100 																
+Oae	OAe																																									 1 	 100 		
+Oae	OAe																																											 1 	 100 
+eiu	eiyeiu	eiy			 1 	 92 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 112 																																										
+eiu	eiy					-1 	 101 																																						
+eiu	eiy							-1 	 96 																																				
+eiu	eiy											 1 	 104 																																
+eiu	eiy																									 1 	 101 																		
+eiu	eiy																											 1 	 101 																
+eau	eAyeau	eAy			 1 	 93 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 113 																																										
+eau	eAy					-1 	 100 																																						
+eau	eAy							-1 	 95 																																				
+eau	eAy											 1 	 105 																																
+eau	eAy																									 1 	 102 																		
+eau	eAy																											 1 	 102 																
+uO	uouO	uo			 1 	 94 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 114 																																										
+uO	uo					 1 	 101 																																						
+uO	uo							 1 	 96 																																				
+uO	uo											-1 	 104 																																
+uO	uo																																					 1 	 101 						
+uO	uo																																							 1 	 101 				
+uO	uo																																									 1 	 101 		
+uO	uo																																											 1 	 101 
+aAy	aauaAy	aau			 1 	 95 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 115 																																										
+aAy	aau					 1 	 102 																																						
+aAy	aau							 1 	 97 																																				
+aAy	aau											-1 	 103 																																
+aAy	aau																																					 1 	 102 						
+aAy	aau																																							 1 	 102 				
+aAy	aau																																									 1 	 102 		
+aAy	aau																																											 1 	 102 
+iey	ieuiey	ieu			 1 	 96 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 116 																																										
+iey	ieu					 1 	 103 																																						
+iey	ieu							 1 	 98 																																				
+iey	ieu											-1 	 102 																																
+iey	ieu																									-1 	 101 																		
+iey	ieu																											-1 	 101 																
+uiA	uiauiA	uia			 1 	 97 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 117 																																										
+uiA	uia					 1 	 104 																																						
+uiA	uia							 1 	 99 																																				
+uiA	uia											-1 	 101 																																
+uiA	uia																									-1 	 100 																		
+uiA	uia																											-1 	 100 																
+uiA	uia																																							 1 	 103 				
+iOA	ioaiOA	ioa			 1 	 98 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 118 																																										
+iOA	ioa					 1 	 105 																																						
+iOA	ioa							 1 	 100 																																				
+iOA	ioa											-1 	 100 																																
+iOA	ioa																									-1 	 99 																		
+iOA	ioa																											-1 	 99 																
+uaI	uaiuaI	uai			 1 	 99 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 119 																																										
+uaI	uai							-1 	 99 																																				
+uaI	uai									 1 	 106 																																		
+uaI	uai											 1 	 101 																																
+uaI	uai																																									-1 	 101 		
+uaI	uai																																											-1 	 101 
+uOA	uoauOA	uoa			 1 	 100 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 120 																																										
+uOA	uoa					 1 	 106 																																						
+uOA	uoa							 1 	 100 																																				
+uOA	uoa											-1 	 100 																																
+uOA	uoa																																					 1 	 103 						
+uOA	uoa																																							 1 	 104 				
+uOA	uoa																																									 1 	 102 		
+uOA	uoa																																											 1 	 102 
+Oeo	OeOOeo	OeO			 1 	 101 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 121 																																										
+Oeo	OeO					-1 	 105 																																						
+Oeo	OeO							-1 	 99 																																				
+Oeo	OeO											 1 	 101 																																
+Oeo	OeO																			 1 	 104 																								
+Oeo	OeO																									 1 	 100 																		
+Oeo	OeO																											 1 	 100 																
+iea	ieAiea	ieA			 1 	 102 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 122 																																										
+iea	ieA					-1 	 104 																																						
+iea	ieA							-1 	 98 																																				
+iea	ieA											 1 	 102 																																
+iea	ieA																									 1 	 101 																		
+iea	ieA																											 1 	 101 																
+eia	eiAeia	eiA			 1 	 103 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 123 																																										
+eia	eiA					-1 	 103 																																						
+eia	eiA							-1 	 97 																																				
+eia	eiA											 1 	 103 																																
+eia	eiA																									 1 	 102 																		
+eia	eiA																											 1 	 102 																
+Aue	AyeAue	Aye			 1 	 104 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 124 																																										
+Aue	Aye					-1 	 102 																																						
+Aue	Aye							-1 	 96 																																				
+Aue	Aye											 1 	 104 																																
+Aue	Aye																	 1 	 103 																										
+Aue	Aye																			 1 	 105 																								
+Aue	Aye																									 1 	 103 																		
+Aue	Aye																											 1 	 103 																
+Aue	Aye																																									 1 	 103 		
+Aue	Aye																																											 1 	 103 
+aOA	aoaaOA	aoa			 1 	 105 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 125 																																										
+aOA	aoa					 1 	 103 																																						
+aOA	aoa							 1 	 97 																																				
+aOA	aoa											-1 	 103 																																
+aOA	aoa																																					 1 	 104 						
+aOA	aoa																																							 1 	 105 				
+aOA	aoa																																									 1 	 104 		
+aOA	aoa																																											 1 	 104 
+euu	eyyeuu	eyy			 1 	 106 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 126 																																										
+euu	eyy					-1 	 102 																																						
+euu	eyy							-1 	 96 																																				
+euu	eyy											 1 	 104 																																
+euu	eyy																									 1 	 104 																		
+euu	eyy																											 1 	 104 																
+aiO	aioaiO	aio			 1 	 107 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1 	 127 																																										
+aiO	aio					 1 	 103 																																						
+aiO	aio							 1 	 97 																																				
+aiO	aio											-1 	 103 																																
+aiO	aio																									-1 	 103 																		
+aiO	aio																											-1 	 103 																
+aiO	aio																																							 1 	 106 				
+aIa	aiaaIa	aia			 0.215443469003188 	 107.215443469003 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 127.215443469003 																																										
+aIa	aia							-0.215443469003188 	 96.7845565309968 																																				
+aIa	aia									 0.215443469003188 	 106.215443469003 																																		
+aIa	aia											 0.215443469003188 	 103.215443469003 																																
+aIa	aia																									-0.215443469003188 	 102.784556530997 																		
+aIa	aia																											-0.215443469003188 	 102.784556530997 																
+aIa	aia																																									-0.215443469003188 	 103.784556530997 		
+aIa	aia																																											-0.215443469003188 	 103.784556530997 
+eiO	eioeiO	eio			 0.215443469003188 	 107.430886938006 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 127.430886938006 																																										
+eiO	eio					 0.215443469003188 	 103.215443469003 																																						
+eiO	eio							 0.215443469003188 	 97 																																				
+eiO	eio											-0.215443469003188 	 103 																																
+eiO	eio																									-0.215443469003188 	 102.569113061994 																		
+eiO	eio																											-0.215443469003188 	 102.569113061994 																
+eAe	eaeeAe	eae			 0.215443469003188 	 107.64633040701 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 127.64633040701 																																										
+eAe	eae					 0.215443469003188 	 103.430886938006 																																						
+eAe	eae							 0.215443469003188 	 97.2154434690032 																																				
+eAe	eae											-0.215443469003188 	 102.784556530997 																																
+eAe	eae																									-0.215443469003188 	 102.35366959299 																		
+eAe	eae																											-0.215443469003188 	 102.35366959299 																
+eAe	eae																																									-0.215443469003188 	 103.569113061994 		
+eAe	eae																																											-0.215443469003188 	 103.569113061994 
+eO	eoeO	eo			 0.215443469003188 	 107.861773876013 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 127.861773876013 																																										
+eO	eo					 0.215443469003188 	 103.64633040701 																																						
+eO	eo							 0.215443469003188 	 97.4308869380064 																																				
+eO	eo											-0.215443469003188 	 102.569113061994 																																
+eO	eo																									-0.215443469003188 	 102.138226123987 																		
+eO	eo																											-0.215443469003188 	 102.138226123987 																
+eeo	eeOeeo	eeO			 0.215443469003188 	 108.077217345016 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 128.077217345016 																																										
+eeo	eeO					-0.215443469003188 	 103.430886938006 																																						
+eeo	eeO							-0.215443469003188 	 97.2154434690032 																																				
+eeo	eeO											 0.215443469003188 	 102.784556530997 																																
+eeo	eeO																									 0.215443469003188 	 102.35366959299 																		
+eeo	eeO																											 0.215443469003188 	 102.35366959299 																
+eOe	eoeeOe	eoe			 0.215443469003188 	 108.292660814019 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 128.292660814019 																																										
+eOe	eoe					 0.215443469003188 	 103.64633040701 																																						
+eOe	eoe							 0.215443469003188 	 97.4308869380064 																																				
+eOe	eoe											-0.215443469003188 	 102.569113061994 																																
+eOe	eoe																									-0.215443469003188 	 102.138226123987 																		
+eOe	eoe																											-0.215443469003188 	 102.138226123987 																
+eOe	eoe																																									-0.215443469003188 	 103.35366959299 		
+eOe	eoe																																											-0.215443469003188 	 103.35366959299 
+yai	yAiyai	yAi			 0.215443469003188 	 108.508104283022 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 128.508104283022 																																										
+yai	yAi					-0.215443469003188 	 103.430886938006 																																						
+yai	yAi							-0.215443469003188 	 97.2154434690032 																																				
+yai	yAi											 0.215443469003188 	 102.784556530997 																																
+yai	yAi																	 0.215443469003188 	 103.215443469003 																										
+yai	yAi																			 0.215443469003188 	 105.215443469003 																								
+yai	yAi																									 0.215443469003188 	 102.35366959299 																		
+yai	yAi																											 0.215443469003188 	 102.35366959299 																
+yai	yAi																																									 0.215443469003188 	 103.569113061994 		
+yai	yAi																																											 0.215443469003188 	 103.569113061994 
+eyy	euueyy	euu			 0.215443469003188 	 108.723547752026 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 128.723547752026 																																										
+eyy	euu					 0.215443469003188 	 103.64633040701 																																						
+eyy	euu							 0.215443469003188 	 97.4308869380064 																																				
+eyy	euu											-0.215443469003188 	 102.569113061994 																																
+eyy	euu																									-0.215443469003188 	 102.138226123987 																		
+eyy	euu																											-0.215443469003188 	 102.138226123987 																
+iAA	iaaiAA	iaa			 0.215443469003188 	 108.938991221029 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 128.938991221029 																																										
+iAA	iaa					 0.215443469003188 	 103.861773876013 																																						
+iAA	iaa							 0.215443469003188 	 97.6463304070096 																																				
+iAA	iaa											-0.215443469003188 	 102.35366959299 																																
+iAA	iaa																									-0.215443469003188 	 101.922782654984 																		
+iAA	iaa																											-0.215443469003188 	 101.922782654984 																
+iuo	iyOiuo	iyO			 0.215443469003188 	 109.154434690032 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 129.154434690032 																																										
+iuo	iyO					-0.215443469003188 	 103.64633040701 																																						
+iuo	iyO							-0.215443469003188 	 97.4308869380064 																																				
+iuo	iyO											 0.215443469003188 	 102.569113061994 																																
+iuo	iyO																									 0.215443469003188 	 102.138226123987 																		
+iuo	iyO																											 0.215443469003188 	 102.138226123987 																
+euE	eueeuE	eue			 0.215443469003188 	 109.369878159035 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 129.369878159035 																																										
+euE	eue							-0.215443469003188 	 97.2154434690032 																																				
+euE	eue									 0.215443469003188 	 106.430886938006 																																		
+euE	eue											 0.215443469003188 	 102.784556530997 																																
+euE	eue																							 0.215443469003188 	 100.215443469003 																				
+euE	eue																											 0.215443469003188 	 102.35366959299 																
+euE	eue																																									-0.215443469003188 	 103.35366959299 		
+euE	eue																																											-0.215443469003188 	 103.35366959299 
+oIo	oiooIo	oio			 0.215443469003188 	 109.585321628038 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 0.215443469003191 	 129.585321628038 																																										
+oIo	oio							-0.215443469003188 	 97 																																				
+oIo	oio									 0.215443469003188 	 106.64633040701 																																		
+oIo	oio											 0.215443469003188 	 103 																																
+oIo	oio																									-0.215443469003188 	 101.922782654984 																		
+oIo	oio																											-0.215443469003188 	 102.138226123987 																
+oIo	oio																																									-0.215443469003188 	 103.138226123987 		
+oIo	oio																																											-0.215443469003188 	 103.138226123987 
+aAA	aaaaAA	aaa			 4.64158883361278E-02 	 109.631737516374 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 4.64158883361279E-02 	 129.631737516374 																																										
+aAA	aaa					 4.64158883361278E-02 	 103.692746295346 																																						
+aAA	aaa							 4.64158883361278E-02 	 97.0464158883361 																																				
+aAA	aaa											-4.64158883361278E-02 	 102.953584111664 																																
+aAA	aaa																																					 4.64158883361278E-02 	 104.046415888336 						
+aAA	aaa																																							 4.64158883361278E-02 	 106.046415888336 				
+aAA	aaa																																									 4.64158883361278E-02 	 103.184642012323 		
+aAA	aaa																																											 4.64158883361278E-02 	 103.184642012323 
+Oao	OAOOao	OAO			 4.64158883361278E-02 	 109.678153404711 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 4.64158883361279E-02 	 129.678153404711 																																										
+Oao	OAO					-4.64158883361278E-02 	 103.64633040701 																																						
+Oao	OAO							-4.64158883361278E-02 	 97 																																				
+Oao	OAO											 4.64158883361278E-02 	 103 																																
+Oao	OAO																	 4.64158883361278E-02 	 103.261859357339 																										
+Oao	OAO																			 4.64158883361278E-02 	 105.261859357339 																								
+Oao	OAO																									 4.64158883361278E-02 	 101.96919854332 																		
+Oao	OAO																											 4.64158883361278E-02 	 102.184642012323 																
+eao	eAOeao	eAO			 4.64158883361278E-02 	 109.724569293047 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 4.64158883361279E-02 	 129.724569293047 																																										
+eao	eAO					-4.64158883361278E-02 	 103.599914518673 																																						
+eao	eAO							-4.64158883361278E-02 	 96.9535841116639 																																				
+eao	eAO											 4.64158883361278E-02 	 103.046415888336 																																
+eao	eAO																									 4.64158883361278E-02 	 102.015614431656 																		
+eao	eAO																											 4.64158883361278E-02 	 102.231057900659 																
+iyA	iuaiyA	iua			 4.64158883361278E-02 	 109.770985181383 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 4.64158883361279E-02 	 129.770985181383 																																										
+iyA	iua					 4.64158883361278E-02 	 103.64633040701 																																						
+iyA	iua							 4.64158883361278E-02 	 97 																																				
+iyA	iua											-4.64158883361278E-02 	 103 																																
+iyA	iua																									-4.64158883361278E-02 	 101.96919854332 																		
+iyA	iua																											-4.64158883361278E-02 	 102.184642012323 																
+ey	euey	eu			 4.64158883361278E-02 	 109.817401069719 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 4.64158883361279E-02 	 129.817401069719 																																										
+ey	eu					 4.64158883361278E-02 	 103.692746295346 																																						
+ey	eu							 4.64158883361278E-02 	 97.0464158883361 																																				
+ey	eu											-4.64158883361278E-02 	 102.953584111664 																																
+ey	eu																									-4.64158883361278E-02 	 101.922782654984 																		
+ey	eu																											-4.64158883361278E-02 	 102.138226123987 																
+eOO	eooeOO	eoo			 4.64158883361278E-02 	 109.863816958055 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 4.64158883361279E-02 	 129.863816958055 																																										
+eOO	eoo					 4.64158883361278E-02 	 103.739162183682 																																						
+eOO	eoo							 4.64158883361278E-02 	 97.0928317766723 																																				
+eOO	eoo											-4.64158883361278E-02 	 102.907168223328 																																
+eOO	eoo																									-4.64158883361278E-02 	 101.876366766648 																		
+eOO	eoo																											-4.64158883361278E-02 	 102.091810235651 																
+eui	eyieui	eyi			 0.01 	 109.873816958055 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1.00000000000051E-02 	 129.873816958055 																																										
+eui	eyi					-0.01 	 103.729162183682 																																						
+Apriori	Id(Bk)Syl1 >> Id(Bk)				0.000	109.874																																								
+eui	eyi							-0.01 	 97.0828317766723 																																				
+eui	eyi											 0.01 	 102.917168223328 																																
+eui	eyi																									 0.01 	 101.886366766648 																		
+eui	eyi																											 0.01 	 102.101810235651 																
+eui	eyi																																									 0.01 	 103.194642012323 		
+eui	eyi																																											 0.01 	 103.194642012323 
+eai	eAieai	eAi			 0.01 	 109.883816958055 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1.00000000000051E-02 	 129.883816958055 																																										
+eai	eAi					-0.01 	 103.719162183682 																																						
+Apriori	Id(Bk)Syl1 >> Id(Bk)				0.000	109.884																																								
+eai	eAi							-0.01 	 97.0728317766722 																																				
+eai	eAi											 0.01 	 102.927168223328 																																
+eai	eAi																									 0.01 	 101.896366766648 																		
+eai	eAi																											 0.01 	 102.111810235651 																
+eai	eAi																																									 0.01 	 103.204642012323 		
+eai	eAi																																											 0.01 	 103.204642012323 
+oI	oioI	oi			 0.01 	 109.893816958055 																																								
+Apriori	Id(Bk)Syl1 >> Id(Bk)		 1.00000000000051E-02 	 129.893816958055 																																										
+oI	oi							-0.01 	 97.0628317766722 																																				
+Apriori	Id(Bk)Syl1 >> Id(Bk)				0.000	109.894																																								
+oI	oi									 0.01 	 106.65633040701 																																		
+oI	oi											 0.01 	 102.937168223328 																																
+oI	oi																																									-0.01 	 103.194642012323 		
+oI	oi																																											-0.01 	 103.194642012323 

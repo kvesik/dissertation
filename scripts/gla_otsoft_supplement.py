@@ -57,8 +57,8 @@ LEARNING_TRIALS_DICT = {
 
 LEARNING_R_F = [2, 0.2, 0.02, 0.002]
 LEARNING_R_M = [2, 0.2, 0.02, 0.002]
-LEARNING_NOISE_F = [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
-LEARNING_NOISE_M = [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
+LEARNING_NOISE_F = [2, 2, 2, 2]  # [0.1, 0.1, 0.1, 0.1]  # [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
+LEARNING_NOISE_M = [2, 2, 2, 2]  # [0.1, 0.1, 0.1, 0.1]  # [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
 
 m = "markedness"
 f = "faithfulness"
@@ -164,10 +164,14 @@ class Learner:
     #       (formerly 1.yyy.sss, and before that 1.nn)
     #       where yyy% is the y-intercept multiplier
     #       and sss% is the slope multiplier
-    #       and W = which candidate is used (a=all, f=faithful, r=random)
+    #       and W = which candidate is used (a=all, f=faithful, r=random, o=omniscient)
     #       and H = how the calculation is done (s=sum, a=average)
     #       e.g. the application rate gets *INIT_M*y.yy + INIT_M*s.ss
-    def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswMgen_type="0", initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=False):
+    #   5.yyy.sss   if application rate sampled randomly from a uniform distribution from 0 to 1
+    #       where yyy% is the y-intercept multiplier
+    #       and sss% is the slope multiplier
+    #       e.g. the application rate gets *INIT_M*y.yy + INIT_M*s.ss
+    def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswMgen_type="0",  init_m=100, initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=False):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -196,10 +200,16 @@ class Learner:
         self.preferspecificity = preferspecificity
         self.errorcounter = 0
         self.initrankingswMgen_type = initrankingswMgen_type
+        self.init_m = init_m
         self.initrankingswMgen_int = int(self.initrankingswMgen_type[0])
         self.initMrankings_whichcand = initMrankings_whichcand
         self.initMrankings_calchow = initMrankings_calchow
         self.relu = relu
+
+    def set_info_from_inputfile(self, tableaux_list, constraints, weights):
+        self.constraints = constraints
+        self.weights = weights
+        self.set_tableaux(get_tableaux(tableaux_list, self.constraints))
 
     def set_tableaux(self, tableaux_list):
         self.tableaux_list = tableaux_list
@@ -214,32 +224,32 @@ class Learner:
                 inplace=True,
             )
 
-            rules = {}
-            for colname in df.columns[3:]:
-                contents = list(df[colname].values)
-
-                if contents[0] == "Group1":
-                    # faithfulness constraint
-                    grp2idx = contents.index("Group2")
-                    emptyidx = contents.index("")
-                    grp1 = contents[1:grp2idx]
-                    grp2 = contents[grp2idx + 1:emptyidx]
-                    rules[colname] = {
-                        ctype: f,
-                        g1: list(grp1),
-                        g2: list(grp2)
-                    }
-                elif contents[0] == "" or re.match("\d+", str(contents[0])):
-                    # violations listed explicitly
-                    pass
-                else:
-                    # markedness constraint
-                    emptyidx = contents.index("")
-                    grp1 = contents[:emptyidx]
-                    rules[colname] = {
-                        ctype: m,
-                        g1: list(grp1)
-                    }
+            # rules = {}
+            # for colname in df.columns[3:]:
+            #     contents = list(df[colname].values)
+            #
+            #     if contents[0] == "Group1":
+            #         # faithfulness constraint
+            #         grp2idx = contents.index("Group2")
+            #         emptyidx = contents.index("")
+            #         grp1 = contents[1:grp2idx]
+            #         grp2 = contents[grp2idx + 1:emptyidx]
+            #         rules[colname] = {
+            #             ctype: f,
+            #             g1: list(grp1),
+            #             g2: list(grp2)
+            #         }
+            #     elif contents[0] == "" or re.match("\d+", str(contents[0])):
+            #         # violations listed explicitly
+            #         pass
+            #     else:
+            #         # markedness constraint
+            #         emptyidx = contents.index("")
+            #         grp1 = contents[:emptyidx]
+            #         rules[colname] = {
+            #             ctype: m,
+            #             g1: list(grp1)
+            #         }
 
             tableaux = {}
 
@@ -260,7 +270,7 @@ class Learner:
                 else:
                     cur_frequency = float(cur_frequency)
 
-                cur_violations = getviolations(cur_input, cur_candidate, list(df.columns[3:]), row[3:], rules)
+                cur_violations = getviolations(cur_input, cur_candidate, list(df.columns[3:]), row[3:])  # , rules)
                 cur_tableau[cur_candidate] = {}
                 cur_tableau[cur_candidate]["frequency"] = cur_frequency
                 cur_tableau[cur_candidate]["violations"] = cur_violations
@@ -278,155 +288,6 @@ class Learner:
             for con in self.constraints:
                 self.weights[con] = INIT_WEIGHTS[con]
                 # in theory could just assign the dictionary wholesale but order could be relevant somewhere else...
-        # # elif self.initrankingswMgen_int > 0:
-        # #     # start F constraints from 0 and markedness weights distributed by degree of generality
-        # #     if self.initrankingswMgen_int == 1:
-        # #         # with 0.0 generality at bottom end of M range, and 1.0 generality at top end of M range
-        # #         for con in self.constraints:
-        # #             if con.startswith("Id") or con.startswith("Max"):  # or a bunch of other stuff, but this is the only kind relevant to me
-        # #                 # it's a faith constraint
-        # #                 self.weights[con] = INIT_F
-        # #             else:
-        # #                 # it's a markedness constraint
-        # #                 combined2and3gram_generality = ((100*M_generality_omniscient[con][0]) + (1000*M_generality_omniscient[con][1])) / 1100
-        # #                 yint_multiplier = int(self.initrankingswMgen[2:5])/100
-        # #                 slope_multiplier = int(self.initrankingswMgen[6:])/100
-        # #                 self.weights[con] = INIT_M*yint_multiplier + combined2and3gram_generality*INIT_M*slope_multiplier
-        # #                 # if self.initrankingswMgen == 1.1:
-        # #                 #     # M range from 50 to 100
-        # #                 #     self.weights[con] = INIT_M/2 + (combined2and3gram_generality*INIT_M/2)
-        # #                 # elif self.initrankingswMgen == 1.2:
-        # #                 #     # M range from 100 to 200
-        # #                 #     self.weights[con] = INIT_M + (combined2and3gram_generality*INIT_M)
-        # #                 # elif self.initrankingswMgen == 1.3:
-        # #                 #     # M range from 150 to 300
-        # #                 #     self.weights[con] = INIT_M*1.5 + (combined2and3gram_generality*INIT_M*1.5)
-        # #                 # elif self.initrankingswMgen == 1.4:
-        # #                 #     # M range from 25 to 50
-        # #                 #     self.weights[con] = INIT_M/4 + (combined2and3gram_generality*INIT_M/4)
-        # #                 # elif self.initrankingswMgen == 1.5:
-        # #                 #     # M range from 25 to 75
-        # #                 #     self.weights[con] = INIT_M/4 + (combined2and3gram_generality*INIT_M/2)
-        # #                 # elif self.initrankingswMgen == 1.6:
-        # #                 #     # M range from 25 to 125
-        # #                 #     self.weights[con] = INIT_M/4 + (combined2and3gram_generality*INIT_M)
-        # #                 # elif self.initrankingswMgen == 1.7:
-        # #                 #     # M range from 200 to 225
-        # #                 #     self.weights[con] = INIT_M*2 + (combined2and3gram_generality*INIT_M/4)
-        # #                 # elif self.initrankingswMgen == 1.8:
-        # #                 #     # M range from 50 to 150
-        # #                 #     self.weights[con] = INIT_M/2 + (combined2and3gram_generality*INIT_M)
-        # #                 # elif self.initrankingswMgen == 1.9:
-        # #                 #     # M range from 50 to 250
-        # #                 #     self.weights[con] = INIT_M/2 + (combined2and3gram_generality*INIT_M*2)
-        # #                 # elif self.initrankingswMgen == 1.11:
-        # #                 #     # M range from 50 to 75
-        # #                 #     self.weights[con] = INIT_M/2 + (combined2and3gram_generality*INIT_M/4)  # was written wrong as /2 *2
-        # #                 # elif self.initrankingswMgen == 1.12:
-        # #                 #     # M range from 100 to 125
-        # #                 #     self.weights[con] = INIT_M*1.0 + (combined2and3gram_generality*INIT_M/4)  # was written wrong as /2 *2
-        # #                 # elif self.initrankingswMgen == 1.13:
-        # #                 #     # M range from 75 to 100
-        # #                 #     self.weights[con] = INIT_M*.75 + (combined2and3gram_generality*INIT_M/4)
-        # #                 # elif self.initrankingswMgen == 1.14:
-        # #                 #     # M range from 75 to 125
-        # #                 #     self.weights[con] = INIT_M*.75 + (combined2and3gram_generality*INIT_M/2)
-        # #                 # elif self.initrankingswMgen == 1.15:
-        # #                 #     # M range from 100 to 150
-        # #                 #     self.weights[con] = INIT_M + (combined2and3gram_generality*INIT_M/2)
-        # #                 # elif self.initrankingswMgen == 1.16:
-        # #                 #     # M range from 25 to 100
-        # #                 #     self.weights[con] = INIT_M*.25 + (combined2and3gram_generality*INIT_M*.75)
-        # #                 # elif self.initrankingswMgen == 1.17:
-        # #                 #     # M range from 50 to 125
-        # #                 #     self.weights[con] = INIT_M*.50 + (combined2and3gram_generality*INIT_M*.75)
-        # #                 # elif self.initrankingswMgen == 1.18:
-        # #                 #     # M range from 75 to 150
-        # #                 #     self.weights[con] = INIT_M*.75 + (combined2and3gram_generality*INIT_M*.75)
-        # #                 # elif self.initrankingswMgen == 1.19:
-        # #                 #     # M range from 100 to 175
-        # #                 #     self.weights[con] = INIT_M*1.0 + (combined2and3gram_generality*INIT_M*.75)
-        # #                 # elif self.initrankingswMgen == 1.21:
-        # #                 #     # M range from 75 to 175
-        # #                 #     self.weights[con] = INIT_M*.75 + (combined2and3gram_generality*INIT_M*1.0)
-        # #                 #
-        # #                 # elif self.initrankingswMgen == 1.22:
-        # #                 #     # M range from 40 to 80
-        # #                 #     self.weights[con] = INIT_M * .40 + (combined2and3gram_generality * INIT_M * .40)
-        # #                 # elif self.initrankingswMgen == 1.23:
-        # #                 #     # M range from 60 to 100
-        # #                 #     self.weights[con] = INIT_M*.60 + (combined2and3gram_generality*INIT_M*.40)
-        # #                 # elif self.initrankingswMgen == 1.24:
-        # #                 #     # M range from 40 to 90
-        # #                 #     self.weights[con] = INIT_M*.40 + (combined2and3gram_generality*INIT_M*.50)
-        # #                 # elif self.initrankingswMgen == 1.25:
-        # #                 #     # M range from 60 to 110
-        # #                 #     self.weights[con] = INIT_M*.60 + (combined2and3gram_generality*INIT_M*.50)
-        # #                 # elif self.initrankingswMgen == 1.26:
-        # #                 #     # M range from 40 to 100
-        # #                 #     self.weights[con] = INIT_M*.40 + (combined2and3gram_generality*INIT_M*.60)
-        # #                 # elif self.initrankingswMgen == 1.27:
-        # #                 #     # M range from 60 to 120
-        # #                 #     self.weights[con] = INIT_M*.60 + (combined2and3gram_generality*INIT_M*.60)
-        # #                 # elif self.initrankingswMgen == 1.28:
-        # #                 #     # M range from 50 to 90
-        # #                 #     self.weights[con] = INIT_M*.50 + (combined2and3gram_generality*INIT_M*.40)
-        # #                 # elif self.initrankingswMgen == 1.29:
-        # #                 #     # M range from 50 to 135
-        # #                 #     self.weights[con] = INIT_M*.50 + (combined2and3gram_generality*INIT_M*.85)
-        # #
-        # #     elif self.initrankingswMgen_int == 2:
-        # #         # with strata determined by all items containing B5 or F5, then 4, then 3, 2, 1
-        # #         lowestvalue = 100 if self.initrankingswMgen == "2.1" else 100
-        # #         intervalsize = 20 if self.initrankingswMgen == "2.1" else 20
-        # #         for con in self.constraints:
-        # #             if con.startswith("Id") or con.startswith("Max"):  # or a bunch of other stuff, but this is the only kind relevant to me
-        # #                 # it's a faith constraint
-        # #                 self.weights[con] = INIT_F
-        # #             else:
-        # #                 # it's a markedness constraint
-        # #                 self.weights[con] = lowestvalue + (getmaxdigit(con)-1) * intervalsize
-        # #     elif self.initrankingswMgen_int == 3:
-        # #         # with strata determined by all single segmental cons, then LD harmony, then local harmony
-        # #         lowestvalue = 100 if self.initrankingswMgen == "3.1" else 100
-        # #         intervalsize = 20 if self.initrankingswMgen == "3.1" else 20
-        # #         for con in self.constraints:
-        # #             if con.startswith("Id") or con.startswith("Max"):  # or a bunch of other stuff, but this is the only kind relevant to me
-        # #                 # it's a faith constraint
-        # #                 self.weights[con] = INIT_F
-        # #             else:
-        # #                 # it's a markedness constraint
-        # #                 if "F" in con and "B" in con:
-        # #                     if "..." in con:
-        # #                         # it's a long-distance harmony constraint
-        # #                         self.weights[con] = lowestvalue + intervalsize*1
-        # #                     else:
-        # #                         # it's a local harmony constraint
-        # #                         self.weights[con] = lowestvalue + intervalsize*0
-        # #                 elif "F" in con or "B" in con:
-        # #                     # it's a segmental markedness constraint
-        # #                     self.weights[con] = lowestvalue + intervalsize*2
-        # #     elif self.initrankingswMgen_int == 4:
-        # #         # with strata determined by all items containing B1 or F1, then 2, then 3, 4, 5
-        # #         lowestvalue = 100 if self.initrankingswMgen == "4.1" else 100
-        # #         intervalsize = 20 if self.initrankingswMgen == "4.1" else 20
-        # #         for con in self.constraints:
-        # #             if con.startswith("Id") or con.startswith("Max"):  # or a bunch of other stuff, but this is the only kind relevant to me
-        # #                 # it's a faith constraint
-        # #                 self.weights[con] = INIT_F
-        # #             else:
-        # #                 # it's a markedness constraint
-        # #                 self.weights[con] = lowestvalue + (getmindigit(con)-1) * intervalsize
-        # #     print(self.weights)
-        # else:
-        #     # no initial weights have been specified; start from scratch
-        #     for con in self.constraints:
-        #         if con.startswith("Id") or con.startswith("Max"):  # or a bunch of other stuff, but this is the only kind relevant to me
-        #             # it's a faith constraint
-        #             self.weights[con] = INIT_F
-        #         else:
-        #             # it's a markedness constraint
-        #             self.weights[con] = INIT_M
 
         return tableaux
 
@@ -435,10 +296,15 @@ class Learner:
         numrowsseen = 0
         running_sums = {c:0 for c in self.constraints}
         running_nums = {c:0 for c in self.constraints}
-        batchsize = self.learning_trials[0]  # always use the size of the first learning batch
+        # use the size of the first learning batch for all but omniscient (capital-F Faithful)
+        batchsize = ((10*10)+(10*10*10)) if self.initMrankings_whichcand == "omniscient" else self.learning_trials[0]
 
         for bnum in range(numbatches):
-            sampled_tableaux = random.choices(self.training_tableaux_list, k=batchsize)
+            if self.initMrankings_whichcand == "omniscient":
+                # all tableaux - no point in randomizing because we want each precisely once, and order doesn't matter
+                sampled_tableaux = [t for t in self.tableaux_list]
+            else:  # anything but omniscient
+                sampled_tableaux = random.choices(self.training_tableaux_list, k=batchsize)  # sampled from those with nonzero frequency
             print("number of sampled tableaux in observation batch", bnum, "is", len(sampled_tableaux))
             for t in sampled_tableaux:
                 thistable_numrows = t.shape[0]
@@ -449,9 +315,11 @@ class Learner:
                     print("observation trial #", numinputsseen)
 
                 # observe one input and update running values
-                if self.initMrankings_whichcand == "faithful":
+                if self.initMrankings_whichcand in ["faithful", "omniscient"]:
                     faithfulrow = t.head(1)  # faithful row is always the first one
                     violns = faithfulrow.sum(numeric_only=True, axis=0)
+                    # if violns["*F1_B1"] > 0:
+                    #     print(faithfulrow.iloc[:, : 15])
                 elif self.initMrankings_whichcand == "random":
                     randomrow = t.sample(n=1)
                     violns = randomrow.sum(numeric_only=True, axis=0)
@@ -487,53 +355,25 @@ class Learner:
         if self.initrankingswMgen_int > 0:
             print("--------------- BEGIN M GENERALITY CALCULATIONS ---------------------")
 
-            if self.initrankingswMgen_int == 4:
-                Mgen_bycon = self.observe(1)  # do one batch of observation, to figure out markedness application rates
+            if self.initrankingswMgen_int == 5:
+                print("random distribution")
+                random_applicationrates = [random.random() for i in range(len(Mcons))]
+                Mgen_bycon = {Mcon: Mgen for (Mcon, Mgen) in zip(Mcons, random_applicationrates)}
 
-                # yint_multiplier = 1
-                # slope_multiplier = 0
-
-                yint_multiplier = int(self.initrankingswMgen_type[2:5]) / 100
-                slope_multiplier = int(self.initrankingswMgen_type[6:]) / 100
-
-                # if self.initrankingswMgen in [1.4, 1.5, 1.6, 1.16]:
-                #     yint_multiplier = 0.25
-                # elif self.initrankingswMgen in [1.22, 1.24, 1.26]:
-                #     yint_multiplier = 0.40
-                # elif self.initrankingswMgen in [1.1, 1.8, 1.9, 1.11, 1.12, 1.17, 1.28, 1.29]:
-                #     yint_multiplier = 0.50
-                # elif self.initrankingswMgen in [1.23, 1.25, 1.27]:
-                #     yint_multiplier = 0.60
-                # elif self.initrankingswMgen in [1.13, 1.14, 1.18, 1.21]:
-                #     yint_multiplier = 0.75
-                # elif self.initrankingswMgen in [1.2, 1.15, 1.19]:
-                #     yint_multiplier = 1.0
-                # elif self.initrankingswMgen in [1.3]:
-                #     yint_multiplier = 1.5
-                # elif self.initrankingswMgen in [1.7]:
-                #     yint_multiplier = 2.0
-                #
-                # if self.initrankingswMgen in [1.4, 1.7, 1.13]:
-                #     slope_multiplier = 0.25
-                # elif self.initrankingswMgen in [1.22, 1.23, 1.28]:
-                #     slope_multiplier = 0.40
-                # elif self.initrankingswMgen in [1.1, 1.5, 1.14, 1.15, 1.24, 1.25]:
-                #     slope_multiplier = 0.50
-                # elif self.initrankingswMgen in [1.26, 1.27]:
-                #     slope_multiplier = 0.60
-                # elif self.initrankingswMgen in [1.16, 1.17, 1.18, 1.19]:
-                #     slope_multiplier = 0.75
-                # elif self.initrankingswMgen in [1.29]:
-                #     slope_multiplier = 0.85
-                # elif self.initrankingswMgen in [1.2, 1.6, 1.8, 1.21]:
-                #     slope_multiplier = 1.0
-                # elif self.initrankingswMgen in [1.3]:
-                #     slope_multiplier = 1.5
-                # elif self.initrankingswMgen in [1.9, 1.11, 1.12]:
-                #     slope_multiplier = 2.0
+                b_yint_multiplier = int(self.initrankingswMgen_type[2:5]) / 100
+                m_slope_multiplier = int(self.initrankingswMgen_type[6:]) / 100
 
                 for con in Mcons:
-                    self.weights[con] = (INIT_M * yint_multiplier) + (Mgen_bycon[con] * INIT_M * slope_multiplier)
+                    self.weights[con] = (self.init_m * b_yint_multiplier) + (Mgen_bycon[con] * self.init_m * m_slope_multiplier)
+
+            elif self.initrankingswMgen_int == 4:
+                Mgen_bycon = self.observe(1)  # do one batch of observation, to figure out markedness application rates
+
+                b_yint_multiplier = int(self.initrankingswMgen_type[2:5]) / 100
+                m_slope_multiplier = int(self.initrankingswMgen_type[6:]) / 100
+
+                for con in Mcons:
+                    self.weights[con] = (self.init_m * b_yint_multiplier) + (Mgen_bycon[con] * self.init_m * m_slope_multiplier)
 
             elif self.initrankingswMgen_type.startswith("3.1"):
                 # with strata determined by all single segmental cons, then LD harmony, then local harmony
@@ -568,14 +408,13 @@ class Learner:
         else:
             # no initial weights have been specified; start from scratch
             for con in Mcons:
-                self.weights[con] = INIT_M
+                self.weights[con] = self.init_m
 
         for Fcon in Fcons:
             self.weights[Fcon] = INIT_F
 
         print("--------------- BEGIN TRAIN ---------------------")
         # put headers into history file
-        # headertowrite = "lap num" + "\t" + "generated" + "\t" + "heard"
         headertowrite = "trialnum" + "\t" + "Generated" + "\t" + "Heard"
         startvalstowrite = "" + "\t" + "" + "\t" + ""
         headertowrite += "".join(["\t" + c + "\tnow" for c in self.constraints]) + "\n"
@@ -656,6 +495,25 @@ class Learner:
             else:
                 noise = noise_m
             evalweights[con] = np.random.normal(loc=self.weights[con], scale=noise)
+
+        # for testing - todo remove
+        # weightdiffs = {c: abs(evalweights[c]-self.weights[c]) for c in self.constraints}
+        # maxwd = max(weightdiffs.values())
+        # if maxwd > 0.5:
+        #     print(("*** " if maxwd > 1 else "") + "max(weightdiffs) is " + str(maxwd))
+
+        return evalweights
+
+    def getevalweights_new(self, noise_f, noise_m):
+        evalweights = {con:np.random.normal(loc=self.weights[con], scale=(noise_f if (con.startswith("Id") or con.startswith("Max")) else noise_m)) for con in self.constraints}
+        # evalweights = {}
+        # for con in self.constraints:
+        #     noise = 0
+        #     if con.startswith("Id") or con.startswith("Max"):
+        #         noise = noise_f
+        #     else:
+        #         noise = noise_m
+        #     evalweights[con] = np.random.normal(loc=self.weights[con], scale=noise)
         return evalweights
 
     def updateweights(self, tableau_df, intendedwinner, generatedoutput, cur_R_F, cur_R_M, learningtrial_num, historystream):
@@ -861,7 +719,7 @@ class Learner:
             #
             # generate the optimal candidate based on current constraint weights (ranking), with or without noise
             evalweights = self.getevalweights(cur_noise_F, cur_noise_M)
-            optimal_cand = evaluate_one(tableau_df, evalweights)
+            optimal_cand = evaluate_one(tableau_df, evalweights)  # , self.weights)
             #
             # if the optimal candidate matches the intended winner, do nothing
             #
@@ -985,10 +843,24 @@ class Learner:
             shuffled_tableaux = random.sample(self.tableaux_list, len(self.tableaux_list))
 
             for tableau in shuffled_tableaux:
+                # time_elapsed = datetime.now()
                 evalweights = self.getevalweights(LEARNING_NOISE_F[-1], LEARNING_NOISE_M[-1])
-                optimalout = evaluate_one(tableau, evalweights)
+                # time_elapsed = datetime.now() - time_elapsed
+                # time_elapsed_new = datetime.now()
+                # evalweights_new = self.getevalweights_new(LEARNING_NOISE_F[-1], LEARNING_NOISE_M[-1])
+                # time_elapsed_new = datetime.now() - time_elapsed_new
+                # print("newtime - oldtime = ", time_elapsed_new - time_elapsed)
+                # print("evalweights are", ("same" if evalweights == evalweights_new else "not same"))
+                # time_elapsed = datetime.now()
+                # optimalout = evaluate_one(tableau, evalweights)
+                # time_elapsed = datetime.now() - time_elapsed
+                # time_elapsed_new = datetime.now()
+                optimalout_new = evaluate_one(tableau, evalweights)
+                # time_elapsed_new = datetime.now() - time_elapsed_new
+                # print("newtime - oldtime = ", time_elapsed_new - time_elapsed)
+                # print("optimal outs are", ("same" if optimalout == optimalout_new else ("not same:", optimalout, "orig vs", optimalout_new, "new")))
                 ur = tableau.columns[0]
-                forms[ur][optimalout] += 1
+                forms[ur][optimalout_new] += 1
         forms_normalized = {}
         for ur in forms.keys():
             cands, freqs = zip(*list(forms[ur].items()))
@@ -1006,6 +878,55 @@ class Learner:
 
 
 # end of class Learner #
+
+
+def read_input_static(infilepath):
+    with io.open(infilepath, "r") as infile:
+        df = pd.read_csv(infile, sep="\t", header=1, keep_default_na=False)
+        df.rename(
+            columns=({'Unnamed: 0': 'input', 'Unnamed: 1': 'candidate', 'Unnamed: 2': 'frequency'}),
+            inplace=True,
+        )
+
+        tableaux = {}
+
+        cur_input = ""
+        cur_tableau = {}
+        for idx, row in df.iterrows():
+            if row["input"] != "":
+                if len(cur_tableau.keys()) > 0:
+                    # save previous input's tableau
+                    tableaux[cur_input] = cur_tableau
+                # start a new tableau
+                cur_input = row["input"]
+                cur_tableau = {}
+            cur_candidate = row["candidate"]
+            cur_frequency = row["frequency"]
+            if cur_frequency == "":
+                cur_frequency = 0
+            else:
+                cur_frequency = float(cur_frequency)
+
+            cur_violations = getviolations(cur_input, cur_candidate, list(df.columns[3:]), row[3:])  # , rules)
+            cur_tableau[cur_candidate] = {}
+            cur_tableau[cur_candidate]["frequency"] = cur_frequency
+            cur_tableau[cur_candidate]["violations"] = cur_violations
+
+        # save the final input's tableau
+        tableaux[cur_input] = cur_tableau
+
+    # return tableaux, list(df.columns[3:])
+    constraints = list(df.columns[3:])
+    weights = {c:0 for c in constraints}
+
+    # initialize constraint set and weights
+    if len(INIT_WEIGHTS.keys()) > 0:
+        # initial weights have been specified; use them
+        for con in constraints:
+            weights[con] = INIT_WEIGHTS[con]
+            # in theory could just assign the dictionary wholesale but order could be relevant somewhere else...
+
+    return tableaux, constraints, weights
 
 
 def getmaxdigit(conname):
@@ -1026,40 +947,43 @@ def getmindigit(conname):
     else: return 0
 
 
-def getviolations(ur, candidate, cons, cellvalues, rules):
+def getviolations(ur, candidate, cons, cellvalues):  # , rules):
     violations = []
     for idx, cell in enumerate(cellvalues):
-        numviolations = 0
+        # numviolations = 0
         if re.match("\d+", str(cell)):
             # number of violations was explicitly assigned
             numviolations = int(cell)
-        else:  # violation mark(s) hasn't been explicitly assigned
-            constraint = cons[idx]
-            if constraint in rules.keys():
-                if rules[constraint][ctype] == f:
-                    # do this twice: group1 --> group2, and then reverse
-                    for direction in [0, 1]:
-                        grp1 = rules[constraint][g1]
-                        grp2 = rules[constraint][g2]
-                        if direction == 1:
-                            grp2 = rules[constraint][g1]
-                            grp1 = rules[constraint][g2]
-                        for in_substr in grp1:
-                            numinstances = ur.count(in_substr)
-                            i = -1
-                            while numinstances > 0:
-                                i = ur.index(in_substr, i+1)
-                                cand_substr = candidate[i:i+len(in_substr)]
-                                if cand_substr in grp2:
-                                    numviolations += 1
-                                numinstances -= 1
-                else:  # it's m
-                    numviolations = 0
-                    for substring in rules[constraint][g1]:
-                        numviolations += candidate.count(substring)
-            else:
-                # it's just empty
-                numviolations = 0
+        else:
+            # it's just empty
+            numviolations = 0
+        # else:  # violation mark(s) hasn't been explicitly assigned
+        #     constraint = cons[idx]
+        #     if constraint in rules.keys():
+        #         if rules[constraint][ctype] == f:
+        #             # do this twice: group1 --> group2, and then reverse
+        #             for direction in [0, 1]:
+        #                 grp1 = rules[constraint][g1]
+        #                 grp2 = rules[constraint][g2]
+        #                 if direction == 1:
+        #                     grp2 = rules[constraint][g1]
+        #                     grp1 = rules[constraint][g2]
+        #                 for in_substr in grp1:
+        #                     numinstances = ur.count(in_substr)
+        #                     i = -1
+        #                     while numinstances > 0:
+        #                         i = ur.index(in_substr, i+1)
+        #                         cand_substr = candidate[i:i+len(in_substr)]
+        #                         if cand_substr in grp2:
+        #                             numviolations += 1
+        #                         numinstances -= 1
+        #         else:  # it's m
+        #             numviolations = 0
+        #             for substring in rules[constraint][g1]:
+        #                 numviolations += candidate.count(substring)
+        #     else:
+        #         # it's just empty
+        #         numviolations = 0
         violations.append(numviolations)
     return violations
 
@@ -1082,14 +1006,54 @@ def get_tableau(ur, tableau, constraints):
 
 
 # evalweights is a dictionary of constraint names --> evaluation weights
-def evaluate_one(tableau_df, evalweights):
+def evaluate_one_new(tableau_df, evalweights):
+    tableau_df = tableau_df.copy(deep=True)
+    ur = tableau_df.columns[0]
+
+    wts = list(evalweights.items())  # make it a list of key-value pairs (tuples)
+    wts.sort(key=lambda x: x[1], reverse=True)
+    ranking = [c for (c, w) in wts]
+
+    winner = ""
+    idx = 0
+    while winner == "" and idx < len(ranking):
+        c = ranking[idx]
+        c_min = tableau_df.min(axis=0)[c]
+        tableau_df.drop(tableau_df[tableau_df[c] > c_min].index, inplace=True)
+        # tableau_df = tableau_df.loc[tableau_df[c] == c_min]
+        if tableau_df.shape[0] == 1:
+            winner = tableau_df[ur].iloc[0]
+        else:
+            # need to use next constraint in ranking to reduce further
+            pass
+        idx += 1
+    return winner
+
+
+# evalweights is a dictionary of constraint names --> evaluation weights
+def evaluate_one(tableau_df, evalweights):  # , curweights):
 
     ur = tableau_df.columns[0]
     candidate_contenders = [cand for cand in tableau_df[ur].values]
 
     wts = list(evalweights.items())  # make it a list of key-value pairs (tuples)
     wts.sort(key=lambda x: x[1], reverse=True)
+
+    # # for testing - todo remove
+    # wts_c = list(curweights.items())
+    # wts_c.sort(key=lambda x: x[1], reverse=True)
+    # top20_wts_c = [c for c, v in wts_c[:20]]
+    # top20_wts = [c for c, v in wts[:20]]
+    # if 'Id(Bk)Syl1' in top20_wts_c + top20_wts:
+    #     temp = 1
+    # weightdiffs = {c: abs(evalweights[c] - curweights[c]) for c in curweights.keys()}
+    # maxwd = max(weightdiffs.values())
+    # if maxwd > 0.5:
+    #     print(("*** " if maxwd > 1 else "") + "max(weightdiffs) is " + str(maxwd))
+
     ranking = [c for (c, w) in wts]
+    # if ranking[0] == 'Id(Bk)Syl1':
+    #     temp = 1
 
     winner = ""
     idx = 0
@@ -1177,17 +1141,43 @@ def meetsminbenchmark(foldername, minbenchmark):
         thisfolderresults = float(resultsfiles[0].replace(".averagegoodresults", ""))
         return thisfolderresults >= minbenchmark
     else:
-        return True
+        return False
 
 
-def justtests(skipifalreadydone=True, onlyatleastasgoodas=0):
+def justtests(skipifalreadydone=True, onlyatleastasgoodas=0, folderstotest=None):
     files_exps = {
         'NE': ('OTSoft-PDDP-NEst_GLA.txt', 'NE894'),
         'Fi': ('OTSoft-PDDP-Fin_GLA.txt', 'Fi894'),
         'NS': ('OTSoft-PDDP-NSeto_GLA.txt', 'NS894'),
     }
 
-    resultsfolders = os.listdir(OUTPUTS_DIR)
+    tableaux_bylang = {
+        'NE': {},
+        'Fi': {},
+        'NS': {},
+    }
+
+    cons_bylang = {
+        'NE': {},
+        'Fi': {},
+        'NS': {},
+    }
+
+    weights_bylang = {
+        'NE': {},
+        'Fi': {},
+        'NS': {},
+    }
+
+    for lang in files_exps.keys():
+        infilepath = DATA_DIR + "/" + files_exps[lang][0]
+        tableaux_bylang[lang], cons_bylang[lang], weights_bylang[lang] = read_input_static(infilepath)
+
+    if folderstotest is None:
+        resultsfolders = os.listdir(OUTPUTS_DIR)
+    else:
+        resultsfolders = [fol for fol in os.listdir(OUTPUTS_DIR) if fol in folderstotest]
+
     resultsfolders = [fol for fol in resultsfolders if os.path.isdir(os.path.join(OUTPUTS_DIR, fol))
                       and meetsminbenchmark(fol, onlyatleastasgoodas)]
     numfolders = len(resultsfolders)
@@ -1196,21 +1186,31 @@ def justtests(skipifalreadydone=True, onlyatleastasgoodas=0):
         print("folder", idx+1, "of", numfolders)
         resultsfile = os.listdir(os.path.join(OUTPUTS_DIR, fol))
         resultsfile = [fi for fi in resultsfile if "RESULTS" in fi][0]
+        # if "Fin" in resultsfile:
+        #     inputsfile = files_exps['Fi'][0]
+        # elif "NEst" in resultsfile:
+        #     inputsfile = files_exps['NE'][0]
+        # elif 'NSeto' in resultsfile:
+        #     inputsfile = files_exps['NS'][0]
         if "Fin" in resultsfile:
-            inputsfile = files_exps['Fi'][0]
+            la = 'Fi'
         elif "NEst" in resultsfile:
-            inputsfile = files_exps['NE'][0]
+            la = 'NE'
         elif 'NSeto' in resultsfile:
-            inputsfile = files_exps['NS'][0]
+            la = 'NS'
 
         testresultsfilename = os.path.join(fol, resultsfile.replace("RESULTS", "TESTS"))
         if os.path.exists(os.path.join(OUTPUTS_DIR, testresultsfilename)) and skipifalreadydone:
             print("skipping; already done:", testresultsfilename)
             continue
 
-        learner = Learner(srcfilepath=DATA_DIR + "/" + inputsfile, destdir="", expnum="xx123")
-        tableaux = learner.read_input()
-        learner.set_tableaux(get_tableaux(tableaux, learner.constraints))
+        # learner = Learner(srcfilepath=DATA_DIR + "/" + inputsfile, destdir="", expnum="xx123")
+        learner = Learner(srcfilepath=files_exps[la][0], destdir="", expnum="xx123")
+        # tableaux = learner.read_input()
+        # tableaux_fromfile, cons_fromfile, wts_fromfile = read_input_static(learner.file)
+        learner.set_info_from_inputfile(tableaux_bylang[la], cons_bylang[la], weights_bylang[la])
+        # learner.set_tableaux(get_tableaux(tableaux_fromfile, cons_fromfile))
+        # learner.set_tableaux(get_tableaux(tableaux, learner.constraints))
 
         # read weights from grammar file
         finalweights = readfinalweightsfromgrammar(os.path.join(OUTPUTS_DIR, fol, resultsfile))
@@ -1278,8 +1278,8 @@ def main(prefix="", argstuple=None):
     # files_exps = sort_files_exps_list(files_exps)
     files_exps = [
         ('OTSoft-PDDP-NEst_GLA.txt', 'NE894'),
-        ('OTSoft-PDDP-Fin_GLA.txt', 'Fi894'),
         ('OTSoft-PDDP-NSeto_GLA.txt', 'NS894'),
+        ('OTSoft-PDDP-Fin_GLA.txt', 'Fi894'),
 
         # ('OTSoft-PDDP-NEst_GLA.txt', 'NE893'),
         # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi893'),
@@ -1302,7 +1302,7 @@ def main(prefix="", argstuple=None):
 
         print("running " + expnum + " simulation for file", fname)
         resultsdirpath = WORKING_DIR + "/" + resultsdir
-        if os.path.exists(resultsdirpath):
+        if os.path.exists(resultsdirpath):  #  or os.path.exists(os.path.join(OUTPUTS_DIR, resultsdir)):  # TODO may need to comment out second disjunct!
             print("results folder for " + expnum + " already exists; skipping!")
         else:
             os.mkdir(resultsdirpath)
@@ -1316,7 +1316,7 @@ def main(prefix="", argstuple=None):
 def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
     starttime = datetime.now()
     if argstuple is None:
-        learner = Learner(srcfilepath, destdir, expnum, demoteunlyundominatedlosers=DEMOTEONLYUNDOMINATEDLOSERS, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, gravityconst=GRAVITYCONST, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY, expandslowlydecreasingrate=EXPANDSLOWLYDECREASINGRATE, initrankingswMgen_type=INITRANKINGSWMGEN, initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=RELU)
+        learner = Learner(srcfilepath, destdir, expnum, demoteunlyundominatedlosers=DEMOTEONLYUNDOMINATEDLOSERS, magri=MAGRI, magritype=MAGRITYPE, specgenbias=SPECGENBIAS, gravity=GRAVITY, gravityconst=GRAVITYCONST, preferspecificity=PREFERSPECIFICITY, expandingbias=EXPANDINGBIAS, expandslowly=EXPANDSLOWLY, expandslowlydecreasingrate=EXPANDSLOWLYDECREASINGRATE, initrankingswMgen_type=INITRANKINGSWMGEN,  init_m=INIT_M, initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=RELU)
     else:
         learner = Learner(srcfilepath, destdir, expnum, *argstuple)
 
@@ -1371,13 +1371,16 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         elif learner.initrankingswMgen_int > 0:
             initwtstr = "initial markedness weights based on generality (type "
             initwtstr += learner.initrankingswMgen_type
-            initwtstr += " - calc by " + learner.initMrankings_calchow
-            initwtstr += " of " + learner.initMrankings_whichcand + " candidates); "
-            initwtstr += "initial faithfulness weights = " + str(INIT_F)
+            if learner.initrankingswMgen_int == 4:
+                initwtstr += " - calc by " + learner.initMrankings_calchow
+                initwtstr += " of " + learner.initMrankings_whichcand + " candidates"
+            elif learner.initrankingswMgen_int == 5:
+                initwtstr += " - randomized"
+            initwtstr += "); initial faithfulness weights = " + str(INIT_F)
             rf.write(initwtstr)
             # rf.write("initial markedness weights based on generality (type " + str(learner.initrankingswMgen) + "); initial faithfulness weights = " + str(INIT_F))
         else:
-            rf.write("initial markedness weights = " + str(INIT_M) + "; initial faithfulness weights = " + str(INIT_F))
+            rf.write("initial markedness weights = " + str(learner.init_m) + "; initial faithfulness weights = " + str(INIT_F))
 
         rf.write("\n")
 
@@ -1409,49 +1412,117 @@ def onesimulation(srcfilepath, destdir, expnum, argstuple=None):
         rf.write("time elapsed: " + str(endtime-starttime))
 
 
-def run_combinations():
-    for demoteonlyundominatedlosers in [False, True]:  # , True]:  # , True]:
-        for magri in [False, True]:  # , True]:
-            for magritype in [1, 2, 3, 4] if magri else [0]:  # [1, 2, 3]
-                for gravity in [False]:  # [True]:  # , False]:
+def run_combinations(justcountiterations=False):
+    totaliterations = 0
+    iterations_counter = 0
+    if not justcountiterations:
+        totaliterations = run_combinations(justcountiterations=True)
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [True]:  # [True, False]:
+            for magritype in [3]:  #  [4, 3, 2, 1] if magri else [0]:
+                for gravity in [False]:
                     for gravityconst in [2] if gravity else [0]:
-                        for preferspecificity in [False, True]:  # , True]:
-                            for specgenbias in [-1, 0, 10, 20, 30, 40]:  # [20, 25, 30, 35, 40]:  # , 20, 30]:  # -1, 0, 20, 30]:
-                                for expandingbias in [False]:  # , True]:  # , True] if specgenbias >= 0 else [False]:
+                        for preferspecificity in [True]:  # [True, False]:
+                            for specgenbias in [-1, 0, 10]:  # 20]:  # [-1, 0, 20, 30, 10, 40]:  # , 0, 20, 30]:
+                                for expandingbias in [False]:  # [True] if specgenbias >= 0 else [False]:
                                     for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
                                         for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
-                                            for initrankingswMgen_type in ["1.050.050", "1.050.100", "1.100.050", "1.100.100", "1.150.050", "1.150.100"]:
-                                                for initMrankings_whichcand in ["faithful"]:  # , "random", "all"]:
-                                                    for initMrankings_calchow in ["sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
-                                                        for ReLU in [False, True]:
-                                                            abbrevstr = "T_"  # tested
-                                                            abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
-                                                            if int(initrankingswMgen_type[0]) > 0:
-                                                                abbrevstr += "Mgen" + initrankingswMgen_type
-                                                                abbrevstr += initMrankings_whichcand[0] + initMrankings_calchow[0] + "_"
-                                                            else:
-                                                                abbrevstr += "M" + str(INIT_M) + "_"
-                                                            # abbrevstr += "Mgen" + initrankingswMgen + "_" if initrankingswMgen > 0 else ""
-                                                            abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
-                                                            abbrevstr += "gr_" if gravity else ""
-                                                            abbrevstr += "fs_" if preferspecificity else ""
-                                                            if specgenbias >= 0:
-                                                                abbrevstr += "sg" + str(specgenbias) + "_"
-                                                                if expandingbias:
-                                                                    abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
-                                                            if ReLU:
-                                                                abbrevstr += "ReLU_"
-                                                            print(abbrevstr)
-                                                            # fs_sg20_ex - r
-                                                            main(prefix=abbrevstr, argstuple=(
-                                                                demoteonlyundominatedlosers, magri, magritype,
-                                                                specgenbias, gravity, gravityconst, preferspecificity,
-                                                                expandingbias, expandingslowly,
-                                                                expandslowlydecreasingrate, initrankingswMgen_type,
-                                                                initMrankings_whichcand, initMrankings_calchow, ReLU))
+                                            for initrankingswMgen_type in ["0"]:  # ["0", "3.1.1", "3.2a.1", "3.2b.1", "4.050.050", "4.050.100", "4.100.050", "4.100.100", "4.150.050", "4.150.100", "5.050.050", "5.050.100", "5.100.050", "5.100.100", "5.150.050", "5.150.100"]:  #  ["4.050.025", "4.100.025"]:   #
+                                                for init_m in [100, 300, 500]:  # [100, 300, 500] if initrankingswMgen_type == "0" else [100]:
+                                                    for initMrankings_whichcand in ["faithful"]:  # "omniscient"]:  # "faithful"]:  # , "random", "all"]:
+                                                        for initMrankings_calchow in ["sum"]:  # sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
+                                                            for ReLU in [False]:
+                                                                iterations_counter += 1
+                                                                if not justcountiterations:
+                                                                    abbrevstr = "T_"  # tested
+                                                                    abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
+                                                                    if int(initrankingswMgen_type[0]) > 0:
+                                                                        abbrevstr += "Mgen" + initrankingswMgen_type
+                                                                        if int(initrankingswMgen_type[0]) == 4:
+                                                                            abbrevstr += initMrankings_whichcand[0] + initMrankings_calchow[0]
+                                                                        abbrevstr += "_"
+                                                                    else:
+                                                                        abbrevstr += "M" + str(init_m) + "_"
+                                                                    # abbrevstr += "Mgen" + initrankingswMgen + "_" if initrankingswMgen > 0 else ""
+                                                                    abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                                                    abbrevstr += "gr_" if gravity else ""
+                                                                    abbrevstr += "fs_" if preferspecificity else ""
+                                                                    if specgenbias >= 0:
+                                                                        abbrevstr += "sg" + str(specgenbias) + "_"
+                                                                        if expandingbias:
+                                                                            abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
+                                                                    if ReLU:
+                                                                        abbrevstr += "ReLU_"
+                                                                    # abbrevstr += "0.1noise_"
+                                                                    print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " triples")
+                                                                    # fs_sg20_ex - r
+                                                                    main(prefix=abbrevstr, argstuple=(
+                                                                        demoteonlyundominatedlosers, magri, magritype,
+                                                                        specgenbias, gravity, gravityconst, preferspecificity,
+                                                                        expandingbias, expandingslowly,
+                                                                        expandslowlydecreasingrate, initrankingswMgen_type, init_m,
+                                                                        initMrankings_whichcand, initMrankings_calchow, ReLU))
+        if justcountiterations:
+            return iterations_counter
+
+
+def testsuperhighmarkednesswithapriori(justcountiterations=False):
+    totaliterations = 0
+    iterations_counter = 0
+    if not justcountiterations:
+        totaliterations = testsuperhighmarkednesswithapriori(justcountiterations=True)
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [False]:
+            for magritype in [4, 3, 2, 1] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [False]:
+                            for specgenbias in [30]:  # , 0, 20, 30]:
+                                for expandingbias in [False]:  # [True] if specgenbias >= 0 else [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["0"]:  # , "3.1.1", "3.2a.1", "3.2b.1", "4.050.050", "4.050.100", "4.100.050", "4.100.100", "4.150.050", "4.150.100", "5.050.050", "5.050.100", "5.100.050", "5.100.100", "5.150.050", "5.150.100"]:  #  ["4.050.025", "4.100.025"]:   #
+                                                for init_m in [500] if initrankingswMgen_type == "0" else [100]:
+                                                    for initMrankings_whichcand in ["faithful"]:  # "omniscient"]:  # "faithful"]:  # , "random", "all"]:
+                                                        for initMrankings_calchow in ["sum"]:  # sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
+                                                            for ReLU in [False]:
+                                                                iterations_counter += 1
+                                                                if not justcountiterations:
+                                                                    abbrevstr = "T_"  # tested
+                                                                    abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
+                                                                    if int(initrankingswMgen_type[0]) > 0:
+                                                                        abbrevstr += "Mgen" + initrankingswMgen_type
+                                                                        if int(initrankingswMgen_type[0]) == 4:
+                                                                            abbrevstr += initMrankings_whichcand[0] + initMrankings_calchow[0]
+                                                                        abbrevstr += "_"
+                                                                    else:
+                                                                        abbrevstr += "M" + str(init_m) + "_"
+                                                                    # abbrevstr += "Mgen" + initrankingswMgen + "_" if initrankingswMgen > 0 else ""
+                                                                    abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                                                    abbrevstr += "gr_" if gravity else ""
+                                                                    abbrevstr += "fs_" if preferspecificity else ""
+                                                                    if specgenbias >= 0:
+                                                                        abbrevstr += "sg" + str(specgenbias) + "_"
+                                                                        if expandingbias:
+                                                                            abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
+                                                                    if ReLU:
+                                                                        abbrevstr += "ReLU_"
+                                                                    print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " triples")
+                                                                    # fs_sg20_ex - r
+                                                                    main(prefix=abbrevstr, argstuple=(
+                                                                        demoteonlyundominatedlosers, magri, magritype,
+                                                                        specgenbias, gravity, gravityconst, preferspecificity,
+                                                                        expandingbias, expandingslowly,
+                                                                        expandslowlydecreasingrate, initrankingswMgen_type, init_m,
+                                                                        initMrankings_whichcand, initMrankings_calchow, ReLU))
+        if justcountiterations:
+            return iterations_counter
 
 
 if __name__ == "__main__":
     # main()
+    # print(run_combinations(justcountiterations=True))
+    # testsuperhighmarkednesswithapriori()
+    # justtests(skipifalreadydone=True, folderstotest=['T_M100_sg20_NE894_python_OTSoft-PDDP-NEst_GLA'])
+    # justtests(skipifalreadydone=True, onlyatleastasgoodas=0.95)
     run_combinations()
-    # justtests(skipifalreadydone=True)

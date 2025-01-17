@@ -1,0 +1,141 @@
+---
+title: "rankingvaluehistograms"
+output: html_document
+date: "2025-01-08"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load}
+# for data wrangling
+library(tidyverse)
+# for plotting
+library(ggplot2)
+library(cowplot)
+library(readr)
+library(dplyr)
+# library(ggbeeswarm)
+# library(vipor)
+# library(viridis)
+# library(ggstance)
+# library(ggrepel)
+# library(scales)
+```
+
+
+## Data
+
+Load the data from file
+
+```{r data}
+prepare_data <- function(filepath) {
+
+  # load data from file, name columns, remove unwanted columns
+  df <- read_tsv(filepath,
+                 # https://stackoverflow.com/questions/20641222/reading-csv-using-r-where-header-is-on-the-second-line
+                 # skip = 1,
+                 # https://readr.tidyverse.org/reference/read_delim.html
+                 # col_names = coltitlesall,
+                 col_types = list(
+                   constraint = col_character(),
+                   finalrankingvalue = col_double())
+                 )
+  
+  return(df)
+}
+```
+## Plots
+
+Prepare and plot the histograms
+
+```{r plots}
+
+plot_histograms <- function(df) {
+
+  histogramplot <-
+    ggplot(data = df, aes(x = finalrankingvalue)) +
+    geom_histogram(binwidth=20, boundary=20) +
+    labs(x ='final ranking value', y='number of constraints', title = 'Final ranking values')
+  
+    
+  #   ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
+  #   # geom_line(linewidth=0.6, show.legend=FALSE) +
+  #   geom_line(linewidth=0.4, show.legend=FALSE, position=position_jitter(w=0, h=1)) +
+  #   # geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), linewidth=0.6, show.legend=FALSE) +  # can replace all the fct business with just "constraint"
+  #   # ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", lang, experimentnum, ": ", foldername, ")")) +
+  #   ggtitle(paste0("4x", trialsperbatch, " trials (", foldername, ")")) +
+  #   theme(axis.text=element_text(size=11, colour="black"),
+  #       plot.title = element_text(hjust = 0.5),
+  #       panel.grid.minor.x = element_blank(),
+  #       panel.grid.minor.y = element_blank()) +
+  #   labs(y= "Constraint value", x = "Learning trial #") +
+  #   # https://tidyverse.github.io/ggplot2-docs/reference/scale_manual.html
+  #   scale_colour_manual(values=colourmap, aesthetics="colour", na.value="red") +
+  #   # scale_color_viridis_d(name = "constraint") +
+  #   scale_x_continuous(trans="log10", labels=comma_format(accuracy=1)) +
+  #   # TODO maybe specify limits dependent on actual range of ending values?
+  #   # scale_y_continuous(limits=c(50,150), breaks=seq(from=50, to=150, by=10))
+  #   scale_y_continuous(limits=c(80,120), breaks=seq(from=80, to=120, by=10))
+  #   # scale_y_continuous(sec.axis = sec_axis(~ ., breaks = data_ends2)) +
+  # # geom_text_repel(
+  # #   aes(label = constraint), data = data_ends, 
+  # #   size = 3
+  # #   )
+    
+  print(histogramplot)
+}
+
+
+```
+
+```{r specifyfiles}
+
+simnames <- c("Learner 0", "Learner A")
+rankingfiles <- c(
+  "../sim_outs/20240507_GLA_outputs/T_M100_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NEst_T_M100_sg20_finalrankingvalues.txt",
+  "../sim_outs/20240507_GLA_outputs/T_M100_mg4_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NEst_T_M100_mg4_sg20_finalrankingvalues.txt"
+  # "TODO",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt"
+  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
+  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
+  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
+)
+
+for (rankingfilepath in rankingfiles) {
+  rf_df <- prepare_data(rankingfilepath)
+  plot_histograms(rf_df)
+}
+
+
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

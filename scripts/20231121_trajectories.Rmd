@@ -83,6 +83,7 @@ coltitlesall_max1nonempty1 <- c(num_out_in, identconswchanges, maxconswchanges, 
 coltitlestoselect_max0nonempty0 <- c("trialnum", identcons, starfronts, starbacks, starfrontbacks, starbackfronts)
 coltitlestoselect_max1nonempty0 <- c("trialnum", identcons, maxcons, starfronts, starbacks, starfrontbacks, starbackfronts)
 coltitlestoselect_max1nonempty1 <- c("trialnum", identcons, maxcons, nonempty, starfronts, starbacks, starfrontbacks, starbackfronts)
+coltitlestoselect_justrelevantfincons <- c("trialnum", identcons, starfronts, starbacks, "starF3B5", "starF3_B5", "starB5F3", "starB5_F3")
 
 ```
 
@@ -103,9 +104,10 @@ prepare_data <- function(filename) {
     coltitlesall <- coltitlesall_max1nonempty0
     coltitlestoselect <- coltitlestoselect_max1nonempty0
   }
+  coltitlestoselect <- coltitlestoselect_justrelevantfincons
   
   # load data from file, name columns, remove unwanted columns
-  df <- read_tsv(paste0("..\\sim_outs\\",filename),
+  df <- read_tsv(paste0("../sim_outs/",filename),
                  # https://stackoverflow.com/questions/20641222/reading-csv-using-r-where-header-is-on-the-second-line
                  skip = 1,
                  # https://readr.tidyverse.org/reference/read_delim.html
@@ -190,17 +192,17 @@ map_colours <- function(lang, cons, labels) {
   # per-language colour codings
   if (tolower(lang) == 'ne') {
     # full bans
-    colourmap[c("*B1")] <- "cyan"
+    colourmap[c("*B1")] <- "purple"
     # vowel harmony
     # n/a 
     # positional restrictions
     colourmap[c("*B2", "*F3")] <- "green"
     # must be inactive (outranked by Id(Bk))
     colourmap[c("*B3", "*B5", "*F4", "*F5")] <- "orange"
-    colourmap[c("*F1B3", "*F1...B3", "*F1B5", "*F1...B5", "*F3B3", "*F3...B3", "*F3B5", "*F3...B5", "*F4B5", "*F4...B5", "*F5B3", "*F5...B3", "*F5B5", "*F5...B5", "*B2F4", "*B2...F4", "*B2F5", "*B2...F5", "*B3F4", "*B3...F4", "*B3F5", "*B3...F5", "*B5F4", "*B5...F4", "*B5F5", "*B5...F5")] <- "orange"
+    colourmap[c("*F1B3", "*F1...B3", "*F1B5", "*F1...B5", "*F3B3", "*F3...B3", "*F3B5", "*F3...B5", "*F4B3", "*F4...B3", "*F4B5", "*F4...B5", "*F5B3", "*F5...B3", "*F5B5", "*F5...B5", "*B2F4", "*B2...F4", "*B2F5", "*B2...F5", "*B3F4", "*B3...F4", "*B3F5", "*B3...F5", "*B5F4", "*B5...F4", "*B5F5", "*B5...F5")] <- "orange"
   } else if (tolower(lang) == 'fi') {
     # full bans
-    colourmap[c("*B2")] <- "cyan"
+    colourmap[c("*B2")] <- "purple"
     # vowel harmony
     colourmap[c("*F1B5", "*F1...B5", "*F3B5", "*F3...B5", "*B3F3", "*B3...F3", "*B5F3", "*B5...F3")] <- "cyan"
     # positional restrictions
@@ -238,7 +240,8 @@ plot_trajectories <- function(df, colourmap, lang, trialsperbatch, experimentnum
 
   trajectoryplot <-
     ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
-    geom_line(linewidth=0.6, show.legend=FALSE) +
+    # geom_line(linewidth=0.6, show.legend=FALSE) +
+    geom_line(linewidth=0.4, show.legend=FALSE, position=position_jitter(w=0, h=1)) +
     # geom_line(aes(color=fct_reorder2(constraint, trialnum, value, .fun = last2)), linewidth=0.6, show.legend=FALSE) +  # can replace all the fct business with just "constraint"
     # ggtitle(paste0(lang, " learning trajectories over 4x", trialsperbatch, " trials (exp ", lang, experimentnum, ": ", foldername, ")")) +
     ggtitle(paste0("4x", trialsperbatch, " trials (", foldername, ")")) +
@@ -252,7 +255,8 @@ plot_trajectories <- function(df, colourmap, lang, trialsperbatch, experimentnum
     # scale_color_viridis_d(name = "constraint") +
     scale_x_continuous(trans="log10", labels=comma_format(accuracy=1)) +
     # TODO maybe specify limits dependent on actual range of ending values?
-    scale_y_continuous(limits=c(50,150), breaks=seq(from=50, to=150, by=10))
+    # scale_y_continuous(limits=c(50,150), breaks=seq(from=50, to=150, by=10))
+    scale_y_continuous(limits=c(80,120), breaks=seq(from=80, to=120, by=10))
     # scale_y_continuous(sec.axis = sec_axis(~ ., breaks = data_ends2)) +
   # geom_text_repel(
   #   aes(label = constraint), data = data_ends, 
@@ -302,7 +306,7 @@ Loop through the specified history files and collect/organize metadata.
 ```{r metadata}
 
 extract_langtrialsexpnum <- function(filename) {
-  filename_levels <- str_split_1(filename, "\\\\")
+  filename_levels <- str_split_1(filename, "/")
   num_levels <- length(filename_levels)
   filename_only <- filename_levels[num_levels]
   containing_folder <- filename_levels[num_levels-1]
@@ -342,16 +346,17 @@ makeplot <- function(filename) {
 }
 
 historyfiles <- c(
+  "20240507_GLA_outputs/T_M100_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NE894_OTSoft-PDDP-NEst_GLA_HISTORY5000_forR.txt"
   # "TODO",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt"
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
+    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt"
   # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
   # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
   # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"

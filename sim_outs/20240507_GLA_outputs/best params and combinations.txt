@@ -1,0 +1,221 @@
+for Mgen0:
+---------------------------------------------------------------------
+
+*** best results are with:
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 0, 20, 30
+lowest result with above params = 0.9181
+
+*** splitting...
+
+1) when M=100:
+best results with:
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 0, 20, 30
+lowest result with above params = 0.9181
+
+2) when M=300:
+best results with:
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 0, 20, 30
+lowest result with above params = 0.9436
+
+*** worst results are with:
+ - mg = 0, (1)
+ - fs = 0, (1)
+ - sg = -1, 0
+highest result with above params = 0.6835, (0.2798)
+
+
+
+for Mgen3:	TODO
+---------------------------------------------------------------------
+
+*** best results are with:
+ - type = 3.1.1, 3.2a.1, 3.2b.1
+ - mg = 2, 4
+ - fs = 1
+ - sg = 0, 20, 30
+lowest result with above params = 0.87109
+
+*** splitting...
+
+1) when type = 3.1.1
+
+
+2) when type = 3.2a.1
+
+
+3) when type = 3.2b.1
+
+
+
+
+for Mgen4:
+---------------------------------------------------------------------
+
+*** best results are with:
+ - m = any, b = any
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 10, 20, 30, 40
+lowest result with above params = 0.5955
+
+*** splitting...
+
+1) when b=50:
+best results with:
+ - m = any
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 10, 20, 30, 40
+lowest result with above params = 0.7672 TODO
+
+2) when b=100:
+best results with:
+ - m = any
+ - mg = 2, 4
+ - fs = 1
+ - sg = 10, 20, 30, 40
+lowest result with above params = 0.8999 TODO
+
+*** worst results are with:
+ - m = any, b = any
+ - mg = 0, 1, (3)
+ - fs = 0
+ - sg = any
+highest result with above params = 0.5054
+
+
+
+for Mgen5:
+---------------------------------------------------------------------
+
+*** best results are with:
+ - m = any, b = any
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 20, 30 TODO need to run 0
+lowest result with above params = 0.87739
+
+*** splitting...
+
+1) when b=50:
+best results with:
+ - m = any
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 20, 30 TODO need to run 0
+lowest result with above params = 0.8999
+
+2) when b=100:
+best results with:
+ - m = any
+ - mg = 2, 3, 4
+ - fs = 1
+ - sg = 20, 30 TODO need to run 0
+lowest result with above params = 0.87739
+
+*** worst results are with:
+ - m = any, b = any
+ - mg = 0, 1
+ - fs = 0
+ - sg = 20, 30 TODO need to run 0
+highest result with above params = 0.7766
+
+
+
+
+for fs = 0:
+---------------------------------------------------------------------
+
+
+
+for fs = 1:
+---------------------------------------------------------------------
+
+
+
+for mg = 0:
+---------------------------------------------------------------------
+
+*** best results are with:
+ - Mgentype = 5, 0
+ - fs = 1, 0
+ - sg = 20, 30 TODO need to run Mgen5 with 0
+lowest result with above params = 0.34636
+
+*** worst results are with:
+ - Mgentype = 4, 0
+ - fs = 0
+ - sg = -1, 0, (and the rest)
+
+highest result with above params = 0.2798
+
+
+
+for mg = 1:
+---------------------------------------------------------------------
+
+*** best results are with:
+ - Mgentype = 5, 0, 3
+ - fs = 1
+ - sg = 0, 20, 30 TODO need to run Mgen5 with 0
+lowest result with above params = 0.6634
+
+*** worst results are with:
+ - Mgentype = 
+ - fs = 
+ - sg = 
+
+highest result with above params = 0.
+
+
+
+
+for mg = 2:
+---------------------------------------------------------------------
+
+
+
+
+for mg = 3:
+---------------------------------------------------------------------
+
+
+
+
+for mg = 4:
+---------------------------------------------------------------------
+
+
+
+
+for sg = -1:
+---------------------------------------------------------------------
+
+
+
+
+for sg = 0:
+---------------------------------------------------------------------
+
+
+
+
+for sg = 20:
+---------------------------------------------------------------------
+
+
+
+
+for sg = 30:
+---------------------------------------------------------------------
+
+
+
+for sg = 40: ???
+---------------------------------------------------------------------

@@ -1,23 +1,88 @@
 import os
+import io
 
 
-def main():
-    outputs_folder = os.path.join("..", "sim_outs", "20240507_GLA_outputs")
+def main(displayonly=False):
+    outputs_folder = os.path.join("..", "sim_outs", "20240507_GLA_outputs")  # , "rename_slopeandyint_multipliers")
     os.chdir(outputs_folder)
     inputfolders = [f for f in os.listdir() if os.path.isdir(f)]
-    for f in inputfolders:
-        f_new = f
-        # TODO uncomment whichever methods you need!
-        # f_new = renumber_OG_Mgen(f_new)
-        # f_new = rejig_2ndtry_folders(f_new)
-        # f_new = renumber_Mgen_methods(f_new)
-        # f_new = rename_Mgen_refineALL(f_new)
 
-        if f == f_new:
-            print("no change:", f)
-        else:
-            print(f, "-->", f_new)
-            os.rename(f, f_new)
+    if displayonly:  # then we're just displaying
+        # TODO uncomment whichever methods you need!
+        # orig_As_outputs(inputfolders)
+        anyoutputswith_(inputfolders, "os_")
+    else:  # then we're actually renaming
+        for f in inputfolders:
+            f_new = f
+            # TODO uncomment whichever methods you need!
+            # f_new = renumber_OG_Mgen(f_new)
+            # f_new = rejig_2ndtry_folders(f_new)
+            # f_new = renumber_Mgen_methods(f_new)
+            # f_new = rename_Mgen_refineALL(f_new)
+            # f_new = relabel_OG_Mgen_candcalc(f_new)
+            # f_new = relabel_misnumbered_Mgen_runs(f_new)
+            f_new = relabel_50to050_folders(f_new)
+
+            if f == f_new:
+                print("no change:", f)
+            else:
+                if f_new in inputfolders:
+                    f_new = f_new + " try2"
+                print(f, "-->", f_new)
+                os.rename(f, f_new)
+
+
+def relabel_50to050_folders(f):
+    return f.replace(".50", ".050")
+
+
+def relabel_misnumbered_Mgen_runs(f):
+    Mgentype_startidx = f.find("Mgen")
+    if Mgentype_startidx >= 0:
+        edit_summary_test_inside_results_file(f)
+
+        Mgentype_stopidx = f.find("_", Mgentype_startidx)
+        Mgentype_full = f[Mgentype_startidx:Mgentype_stopidx]
+
+        # renaming y-int and slope multipliers to be 3x as big as they originally were
+        Mgentype_pieces = Mgentype_full.split(".")
+        new_yint = 3 * int(Mgentype_pieces[1])
+        new_slope = 3 * int(Mgentype_pieces[2])
+
+        newcode = ".".join([Mgentype_pieces[0], str(new_yint), str(new_slope)])
+        newfoldername = f[:Mgentype_startidx] + newcode + f[Mgentype_stopidx:]
+        return newfoldername
+
+    else:
+        return f
+
+
+def edit_summary_test_inside_results_file(folder):
+    resultsfile = [f for f in os.listdir(folder) if "RESULTS" in f][0]
+    thetext = ""
+    with io.open(os.path.join(folder, resultsfile), "r") as f:
+        thetext = f.read().replace("type 5.150", "type 5.450").replace("type 5.100", "type 5.300").replace("type 5.050", "type 5.150").replace(".050 - randomized", ".150 - randomized").replace(".100 - randomized", ".300 - randomized")
+    with io.open(os.path.join(folder, resultsfile), "w") as f:
+        f.write(thetext)
+
+
+def relabel_OG_Mgen_candcalc(f):
+    Mgentype_startidx = f.find("Mgen")
+    if Mgentype_startidx >= 0:
+        Mgentype_stopidx = f.find("_", Mgentype_startidx)
+        Mgentype_full = f[Mgentype_startidx:Mgentype_stopidx]
+
+        newcode = Mgentype_full  # defaults to no change
+
+        # renaming candidate choice & calculation strategy from "As" to "Fs"
+        if Mgentype_full.endswith("Os"):
+            newcode = Mgentype_full[:-2] + "os"
+
+        newfoldername = f[:Mgentype_startidx] + newcode + f[Mgentype_stopidx:]
+        return newfoldername
+
+    else:
+        return f
 
 
 def renumber_Mgen_methods(f):
@@ -39,7 +104,7 @@ def renumber_Mgen_methods(f):
         elif Mgentype == "2.1":
             newcode = "3.2a.1"
         elif Mgentype == "3.1":
-            newcord = "3.1.1"
+            newcode = "3.1.1"
         elif Mgentype == "4.1":
             newcode = "3.2b.1"
         elif Mgentype.startswith("4.") and len(Mgentype) > 6:
@@ -156,5 +221,29 @@ def renumber_OG_Mgen(f):
         return f
 
 
+def orig_As_outputs(folderslist):
+    foundany = False
+    for folder in folderslist:
+        filesinfolder = os.listdir(folder)
+        # TESTfilesinfolder = [f for f in filesinfolder if "TEST" in f]
+        if "As_" in folder and len(filesinfolder) <= 4:
+            print("folder " + folder + " has 4 or fewer files and may have been calculated recently")
+            foundany = True
+    if not foundany:
+        print("didn't find any suspicious folders")
+
+
+def anyoutputswith_(folderslist, seq):
+    foundany = False
+    for folder in folderslist:
+        filesinfolder = os.listdir(folder)
+        # TESTfilesinfolder = [f for f in filesinfolder if "TEST" in f]
+        if seq in folder:
+            print(folder)
+            foundany = True
+    if not foundany:
+        print("didn't find any " + seq + " folders")
+
+
 if __name__ == "__main__":
-    main()
+    main(displayonly=False)

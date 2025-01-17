@@ -1,4 +1,4 @@
-20240923-20240925 (1440 combinations x 3 languages = 4320 runs)
+20240923-20240927 (1440 combinations x 3 languages = 4320 runs)
 
 def run_combinations():
     for demoteonlyundominatedlosers in [False, True]: 
@@ -16,11 +16,170 @@ def run_combinations():
                                                     for initMrankings_calchow in ["sum"]:  
                                                         for ReLU in [False, True]:
 
+20240927: 
+ - M100 + super-plain with UnL, favour specificity, and/or ReLU (8 combinations x 3 languages = 24 runs)
+ - M300 + super-plain with UnL, favour specificity, and/or ReLU (8 combinations x 3 languages = 24 runs)
 
-*** need to compare other initrankingswMgen_type values, as well as (eventually) gravity, expanding bias, etc.
-*** what about randomly distributed M constraints?
-*** redo "all/sum" sims due to incorrect calculations:
+def run_combinations():
+    for demoteonlyundominatedlosers in [False, True]:  # , True]:  # , True]:
+        for magri in [False]:  # , True]:  # , True]:
+            for magritype in [1, 2, 3, 4] if magri else [0]:  # [1, 2, 3]
+                for gravity in [False]:  # [True]:  # , False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [False, True]:  # , True]:
+                            for specgenbias in [-1]:  #  [-1, 0, 10, 20, 30, 40]:  # [20, 25, 30, 35, 40]:  # , 20, 30]:  # -1, 0, 20, 30]:
+                                for expandingbias in [False]:  # , True]:  # , True] if specgenbias >= 0 else [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["0"]:  # "1.050.050", "1.050.100", "1.100.050", "1.100.100", "1.150.050", "1.150.100"]:
+                                                for initMrankings_whichcand in ["faithful"]:  # , "random", "all"]:
+                                                    for initMrankings_calchow in ["sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
+                                                        for ReLU in [False, True]:
+
+20240927:
+ - redo omniscient sims due to incorrect calculations:
 	redoT_Mgen1.050.025as
-	redoT_Mgen1.050.025as_mg4_fs_sg20
 	redoT_Mgen1.100.025as
+	redoT_Mgen1.050.025as_mg4_fs_sg20
 	redoT_Mgen1.100.025as_mg4_fs_sg20
+
+
+20240927 (24 combinations x 3 languages = 72 runs)
+ - randomly distributed M constraints
+
+def run_combinations():
+    for demoteonlyundominatedlosers in [False]:  
+        for magri in [True]:  
+            for magritype in [4] if magri else [0]:  
+                for gravity in [False]: 
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [True]: 
+                            for specgenbias in [20, 30]:  
+                                for expandingbias in [False]: 
+                                    for expandingslowly in [True] if expandingbias else [False]:  
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["5.050.050", "5.050.100", "5.100.050", "5.100.100", "5.150.050", "5.150.100"]:
+                                                for initMrankings_whichcand in [""]: 
+                                                    for initMrankings_calchow in [""]:
+                                                        for ReLU in [False, True]: 
+
+
+20240927-20241013 - run 100-sample tests for all grammars with average good results frequency >= 0.8
+
+
+20241016-20241018 (192 down to 96 combinations x 3 languages = 576 down to 288 runs)
+ - randomly distributed M constraints with a broader cross-section of other parameters
+	started running with ReLU= both on and off, but then turned it fully off partway through
+
+def run_combinationsFINISHRANDOM():
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [True, False]:
+            for magritype in [1, 2, 3] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [True, False]:
+                            for specgenbias in [20, 30]:
+                                for expandingbias in [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["5.050.050", "5.050.100", "5.100.050", "5.100.100", "5.150.050", "5.150.100"]:
+                                                for initMrankings_whichcand in [""]:
+                                                    for initMrankings_calchow in [""]:
+                                                        for ReLU in [False]:  # reduced partway, True]:
+
+20241017-20241018 (30 combinations x 3 languages = 90 runs)
+ - test all-same initial M=100 values with a broader cross-section of other parameters
+20241018-20241019 (30 combinations x 3 languages = 90 runs)
+ - and then also for M=300
+
+def run_combinations():
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [True, False]:
+            for magritype in [1, 2, 3, 4] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [True, False]:
+                            for specgenbias in [0, 20, 30]:
+                                for expandingbias in [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["0"]:
+                                                for initMrankings_whichcand in [""]:
+                                                    for initMrankings_calchow in [""]:
+                                                        for ReLU in [False]:
+
+
+20241019-20241023 (90 combinations x 3 langs = 270 runs) [took a break on oct 20-22]
+ - test Mgen stratification approaches 3.1.1, 3.2a.1, 3.2b.1
+
+def run_combinations():
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [True, False]:
+            for magritype in [1, 2, 3, 4] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [True, False]:
+                            for specgenbias in [0, 20, 30]:
+                                for expandingbias in [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["3.1.1", "3.2a.1", "3.2b.1"]:
+                                                for initMrankings_whichcand in [""]:
+                                                    for initMrankings_calchow in [""]:
+                                                        for ReLU in [False]:
+
+20241023-202410XX (240 combinations x 3 langs = 720 runs)
+	--> but I think actually half of these are already done so hopefully only 120 combos x 3 = 360 runs?
+ - test Mgen5 with sg=-1,0
+*** FINISH THIS!! [took a break on oct 24-XX]
+
+def run_combinations(justcountiterations=False):
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [True, False]:
+            for magritype in [4, 3, 2, 1] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [True, False]:
+                            for specgenbias in [-1, 0, 20, 30]:  # last two have already been run, I'm pretty sure
+                                for expandingbias in [False]: 
+                                    for expandingslowly in [True] if expandingbias else [False]:
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["5.050.050", "5.050.100", "5.100.050", "5.100.100", "5.150.050", "5.150.100"]:
+                                                for initMrankings_whichcand in [""]:
+                                                    for initMrankings_calchow in [""]:
+                                                        for ReLU in [False]:
+
+
+20241019-20241023 (90 combinations x 3 langs = 270 runs) [took a break on oct 20-22]
+ - test Mgen stratification approaches 3.1.1, 3.2a.1, 3.2b.1 with sg=-1,10
+
+def run_combinations():
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [True, False]:
+            for magritype in [1, 2, 3, 4] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [True, False]:
+                            for specgenbias in [0, 20, 30]:
+                                for expandingbias in [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["3.1.1", "3.2a.1", "3.2b.1"]:
+                                                for initMrankings_whichcand in [""]:
+                                                    for initMrankings_calchow in [""]:
+                                                        for ReLU in [False]:
+
+20241024-202410XX - run M100, M300, Mgen3, and Mgen5 with sg=-1
+
+
+20241020-202410XX - run 100-sample tests for all grammars with average good results frequency >= 0.95
+*** FINISH THIS!! [took a break on oct 22-XX]
+
+*** need to run Mgen5 with sg0 AND EVERYTHING BECAUSE IT WAS 3X TOO BIG
+
+*** what if we make sg quite high, like 50 or 60? will everything still work?
+*** what about slope coeff 1.5?
+
+*** 100-sample tests!
+*** need to compare (eventually) expanding bias, etc.
+

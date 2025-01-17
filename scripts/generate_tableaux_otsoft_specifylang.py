@@ -20,6 +20,7 @@ rnd = "round"
 # KE = "KE"
 # SE = "SE"
 NEst = "NEst"
+# KEst = "KEst"
 SEst = "SEst"
 SSeto = "SSeto"
 NSeto = "NSeto"
@@ -629,11 +630,16 @@ class OTSoftTableauxGenerator:
                             outstring = wd if idx == 0 else ""
                             outstring += "\t" + cand + "\t"
                             iswinner = isintendedwinner(wd, cand, self.lang, self.special)
+                            isalternate = isalternatewinner(wd, cand, self.lang)
                             if iswinner and wd == cand and (self.inittransp_inputs or not initialtransparent(wd, self.lang)) :
                                 # faithful winner; use in learning (and testing) data
                                 outstring += "1\t"
                                 ct += 1
                                 hasfaithfulwinner = True
+                            # elif isalternate and self.lang == KEst and self.fortesting:
+                            #     # unfaithful winner where e harmonizes backward
+                            #     outstring += "1\t"
+                            #     ct += 1
                             elif iswinner and (self.fortesting or usenegativeevidenceforopacity):
                                 # unfaithful winner; use only in testing data or
                                 # if generating some targeted negative inputs for SSeto opacity
@@ -900,7 +906,7 @@ def checksetsinpositions(vowelset, position, candidate):
 
 
 def initialtransparent(wd, lang):
-    if lang in [Fin, SSeto]:
+    if lang in [Fin, SSeto]:  # , KEst]:
         return wd[0] in [i, e]
     elif lang == NSeto:
         return wd[0] == i
@@ -913,6 +919,16 @@ def iswordinlang(wd, lang, special=0):
     # In case we're looking at a substring of a word in SSeto that either started with /e/ or contained an /o/
     if len(wd) == 0:
         return True
+
+    # elif lang == KEst:
+    #     # check inventory
+    #     if checksetsinpositions(b1, anywhere, wd):
+    #         return False
+    #     # make sure we don't have both backs and nonneutral fronts in the same word
+    #     elif checksetsinpositions(b5, anywhere, wd) and checksetsinpositions(f3, anywhere, wd):
+    #         return False
+    #     else:
+    #         return True
 
     elif lang == NEst:
         # check inventory
@@ -970,7 +986,10 @@ def iswordinlang(wd, lang, special=0):
 
 
 def isintendedwinner(inputform, candidate, lang, special=0):
-    if lang not in langnames:
+    if inputform == "eO":
+        pass
+
+    if lang not in langnames:  #  + [KEst]:
         print("language " + lang + " not recognized; sorry")
         sys.exit(1)
 
@@ -1002,6 +1021,7 @@ def isintendedwinner(inputform, candidate, lang, special=0):
         return True
 
     # check first-syllable faithfulness
+    # elif (lang in [NEst, KEst] and (inputform[0] not in b1 and inputform[0] != candidate[0])) \
     elif (lang == NEst and (inputform[0] not in b1 and inputform[0] != candidate[0])) \
             or (lang == Fin and (inputform[0] not in b2 and inputform[0] != candidate[0])) \
             or (lang == NSeto and (inputform[0] != candidate[0])) \
@@ -1022,6 +1042,16 @@ def isintendedwinner(inputform, candidate, lang, special=0):
 
 def isalternatewinner(inputform, candidate, lang):
 
+    if inputform == "eO":
+        pass
+
+    # if lang == KEst:
+    #     if inputform[0] in b5 and inputform[0] == candidate[0]:
+    #         for idx, v in enumerate(inputform):
+    #             if v == e and candidate[idx] == E and iswordinlang(candidate, lang):
+    #                 return True
+
+
     initURsegtransparent = initialtransparent(inputform, lang)
     candinlang = iswordinlang(candidate, lang)
 
@@ -1029,8 +1059,8 @@ def isalternatewinner(inputform, candidate, lang):
         if initURsegtransparent:
             return True
         else:
-            if lang == NEst:
-                initURsegfixedtransparent = (inputform[0] not in b1) and initialtransparent(candidate[0], NEst)
+            if lang == NEst:  # in [NEst, KEst]:
+                initURsegfixedtransparent = (inputform[0] not in b1) and initialtransparent(candidate[0], lang)
             elif lang == Fin:
                 initURsegfixedtransparent = (inputform[0] not in b2) and initialtransparent(candidate[0], Fin)
             else:
@@ -1263,8 +1293,8 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
     length1words = makeinputstrings([allsegments], ucla=uclayes_otsoftno)
     length2words = makeinputstrings([allsegments, allsegments], ucla=uclayes_otsoftno)
     length3words = makeinputstrings([allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
-    length4words = []  # makeinputstrings([allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
-    length5words = []  # makeinputstrings([allsegments, allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
+    length4words = makeinputstrings([allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
+    length5words = makeinputstrings([allsegments, allsegments, allsegments, allsegments, allsegments], ucla=uclayes_otsoftno)
     # somelongerwords = ["iieB", "iiFõ", "iiiBe", "iiiiõF", "iiiiõ"]
 
     if not uclayes_otsoftno:  # OTSoft
@@ -1293,11 +1323,11 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
             tableaux_generator.generatetext(length2words + length3words, foldername=foldername, customizations=customizations)
 
     if uclayes_otsoftno:  # UCLA
-        foldername = datetime.now().strftime('%Y%m%d.%H%M%S') + '-OTSoft-files'
+        foldername = datetime.now().strftime('%Y%m%d.%H%M%S') + '-UCLAPL-files'
         os.mkdir(foldername)
-        for langname in langnames:
+        for langname in langnames:  #  + [KEst]:
             inputandtest_generator = UCLAPLGenerator(langname)  # , simple=False)
-            lengthupto = 5
+            lengthupto = 4
             wordlists = [length1words, length2words, length3words, length4words, length5words]
             allwords = []
             for wdlen in range(lengthupto):
@@ -1309,7 +1339,7 @@ if __name__ == "__main__":
     ft = [False, True]
 
     # generate inputs for all languages, under all combinations of arguments as of 20240507
-    if True:
+    if False:
         counter = 1
         for DEL in ft:
             deletebyfeature = [False, True] if DEL else [False]
@@ -1348,5 +1378,6 @@ if __name__ == "__main__":
 
     # generate inputs for all languages but for only one specific combination of arguments
     else:
-        main_helper(SPECIALin=0, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, IDFTin=False, TESTin=True)
+        for t in [False, True]:
+            main_helper(SPECIALin=0, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, IDFTin=False, TESTin=t, ITRANSPin=True, REDUCEDin=False)
 

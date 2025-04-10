@@ -1,0 +1,32 @@
+    \textramshorns...i & \textscripta...i & u...i & o...i \\* 
+    \textramshorns...e & \textscripta...e & u...e & o...e \\* 
+    \textramshorns...\textscripta & \textscripta...\textscripta & u...\textscripta & o...\textscripta \\* 
+    \textramshorns...u & \textscripta...u & u...u & o...u \\* 
+    \textramshorns...o & \textscripta...o & u...o & o...o \\* 
+    \midrule
+    \textramshorns...i...i & \textscripta...i...i & u...i...i & o...i...i \\ 
+    \textramshorns...i...e & \textscripta...i...e & u...i...e & o...i...e \\ 
+    \textramshorns...i...\textscripta & \textscripta...i...\textscripta & u...i...\textscripta & o...i...\textscripta \\ 
+    \textramshorns...i...u & \textscripta...i...u & u...i...u & o...i...u \\ 
+    \textramshorns...i...o & \textscripta...i...o & u...i...o & o...i...o \\ 
+    \textramshorns...e...i & \textscripta...e...i & u...e...i & o...e...i \\ 
+    \textramshorns...e...e & \textscripta...e...e & u...e...e & o...e...e \\ 
+    \textramshorns...e...\textscripta & \textscripta...e...\textscripta & u...e...\textscripta & o...e...\textscripta \\ 
+    \textramshorns...e...u & \textscripta...e...u & u...e...u & o...e...u \\ 
+    \textramshorns...e...o & \textscripta...e...o & u...e...o & o...e...o \\ 
+    \textramshorns...\textscripta...i & \textscripta...\textscripta...i & u...\textscripta...i & o...\textscripta...i \\ 
+    \textramshorns...\textscripta...e & \textscripta...\textscripta...e & u...\textscripta...e & o...\textscripta...e \\ 
+    \textramshorns...\textscripta...\textscripta & \textscripta...\textscripta...\textscripta & u...\textscripta...\textscripta & o...\textscripta...\textscripta \\ 
+    \textramshorns...\textscripta...u & \textscripta...\textscripta...u & u...\textscripta...u & o...\textscripta...u \\ 
+    \textramshorns...\textscripta...o & \textscripta...\textscripta...o & u...\textscripta...o & o...\textscripta...o \\ 
+    \textramshorns...u...i & \textscripta...u...i & u...u...i & o...u...i \\ 
+    \textramshorns...u...e & \textscripta...u...e & u...u...e & o...u...e \\ 
+    \textramshorns...u...\textscripta & \textscripta...u...\textscripta & u...u...\textscripta & o...u...\textscripta \\ 
+    \textramshorns...u...u & \textscripta...u...u & u...u...u & o...u...u \\ 
+    \textramshorns...u...o & \textscripta...u...o & u...u...o & o...u...o \\ 
+    \textramshorns...o...i & \textscripta...o...i & u...o...i & o...o...i \\ 
+    \textramshorns...o...e & \textscripta...o...e & u...o...e & o...o...e \\ 
+    \textramshorns...o...\textscripta & \textscripta...o...\textscripta & u...o...\textscripta & o...o...\textscripta \\ 
+    \textramshorns...o...u & \textscripta...o...u & u...o...u & o...o...u \\ 
+    \textramshorns...o...o & \textscripta...o...o & u...o...o & o...o...o \\ 
+    \bottomrule

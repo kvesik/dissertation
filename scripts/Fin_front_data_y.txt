@@ -1,0 +1,56 @@
+    i...i & e...i & \ae...i & y...i & \o...i \\* 
+    i...e & e...e & \ae...e & y...e & \o...e \\* 
+    i...\ae & e...\ae & \ae...\ae & y...\ae & \o...\ae \\* 
+    i...y & e...y & \ae...y & y...y & \o...y \\* 
+    i...\o & e...\o & \ae...\o & y...\o & \o...\o \\* 
+    i...\textscripta & e...\textscripta &  &  &  \\* 
+    i...u & e...u &  &  &  \\* 
+    i...o & e...o &  &  &  \\* 
+    \midrule
+    i...i...i & e...i...i & \ae...i...i & y...i...i & \o...i...i \\ 
+    i...i...e & e...i...e & \ae...i...e & y...i...e & \o...i...e \\ 
+    i...i...\ae & e...i...\ae & \ae...i...\ae & y...i...\ae & \o...i...\ae \\ 
+    i...i...y & e...i...y & \ae...i...y & y...i...y & \o...i...y \\ 
+    i...i...\o & e...i...\o & \ae...i...\o & y...i...\o & \o...i...\o \\ 
+    i...i...\textscripta & e...i...\textscripta & \ae...e...i & y...e...i & \o...e...i \\ 
+    i...i...u & e...i...u & \ae...e...e & y...e...e & \o...e...e \\ 
+    i...i...o & e...i...o & \ae...e...\ae & y...e...\ae & \o...e...\ae \\ 
+    i...e...i & e...e...i & \ae...e...y & y...e...y & \o...e...y \\ 
+    i...e...e & e...e...e & \ae...e...\o & y...e...\o & \o...e...\o \\ 
+    i...e...\ae & e...e...\ae & \ae...\ae...i & y...\ae...i & \o...\ae...i \\ 
+    i...e...y & e...e...y & \ae...\ae...e & y...\ae...e & \o...\ae...e \\ 
+    i...e...\o & e...e...\o & \ae...\ae...\ae & y...\ae...\ae & \o...\ae...\ae \\ 
+    i...e...\textscripta & e...e...\textscripta & \ae...\ae...y & y...\ae...y & \o...\ae...y \\ 
+    i...e...u & e...e...u & \ae...\ae...\o & y...\ae...\o & \o...\ae...\o \\ 
+    i...e...o & e...e...o & \ae...y...i & y...y...i & \o...y...i \\ 
+    i...\ae...i & e...\ae...i & \ae...y...e & y...y...e & \o...y...e \\ 
+    i...\ae...e & e...\ae...e & \ae...y...\ae & y...y...\ae & \o...y...\ae \\ 
+    i...\ae...\ae & e...\ae...\ae & \ae...y...y & y...y...y & \o...y...y \\ 
+    i...\ae...y & e...\ae...y & \ae...y...\o & y...y...\o & \o...y...\o \\ 
+    i...\ae...\o & e...\ae...\o & \ae...\o...i & y...\o...i & \o...\o...i \\ 
+    i...y...i & e...y...i & \ae...\o...e & y...\o...e & \o...\o...e \\ 
+    i...y...e & e...y...e & \ae...\o...\ae & y...\o...\ae & \o...\o...\ae \\ 
+    i...y...\ae & e...y...\ae & \ae...\o...y & y...\o...y & \o...\o...y \\ 
+    i...y...y & e...y...y & \ae...\o...\o & y...\o...\o & \o...\o...\o \\ 
+    i...y...\o & e...y...\o &  &  &  \\ 
+    i...\o...i & e...\o...i &  &  &  \\ 
+    i...\o...e & e...\o...e &  &  &  \\ 
+    i...\o...\ae & e...\o...\ae &  &  &  \\ 
+    i...\o...y & e...\o...y &  &  &  \\ 
+    i...\o...\o & e...\o...\o &  &  &  \\ 
+    i...\textscripta...i & e...\textscripta...i &  &  &  \\ 
+    i...\textscripta...e & e...\textscripta...e &  &  &  \\ 
+    i...\textscripta...\textscripta & e...\textscripta...\textscripta &  &  &  \\ 
+    i...\textscripta...u & e...\textscripta...u &  &  &  \\ 
+    i...\textscripta...o & e...\textscripta...o &  &  &  \\ 
+    i...u...i & e...u...i &  &  &  \\ 
+    i...u...e & e...u...e &  &  &  \\ 
+    i...u...\textscripta & e...u...\textscripta &  &  &  \\ 
+    i...u...u & e...u...u &  &  &  \\ 
+    i...u...o & e...u...o &  &  &  \\ 
+    i...o...i & e...o...i &  &  &  \\ 
+    i...o...e & e...o...e &  &  &  \\ 
+    i...o...\textscripta & e...o...\textscripta &  &  &  \\ 
+    i...o...u & e...o...u &  &  &  \\ 
+    i...o...o & e...o...o &  &  &  \\ 
+    \bottomrule

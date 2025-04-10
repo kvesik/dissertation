@@ -1,0 +1,112 @@
+    \textturnm...i & \textramshorns...i & \textscripta...\ae & u...\ae & o...\ae \\* 
+    \textturnm...e & \textramshorns...e & \textscripta...y & u...y & o...y \\* 
+    \textturnm...\ae & \textramshorns...\ae & \textscripta...\o & u...\o & o...\o \\* 
+    \textturnm...y & \textramshorns...y & \textscripta...\textturnm & u...\textturnm & o...\textturnm \\* 
+    \textturnm...\o & \textramshorns...\o & \textscripta...\textramshorns & u...\textramshorns & o...\textramshorns \\* 
+    \textturnm...\textturnm & \textramshorns...\textturnm &  &  &  \\* 
+    \textturnm...\textramshorns & \textramshorns...\textramshorns &  &  &  \\* 
+    \textturnm...\textscripta & \textramshorns...\textscripta &  &  &  \\* 
+    \textturnm...u & \textramshorns...u &  &  &  \\* 
+    \textturnm...o & \textramshorns...o &  &  &  \\* 
+    \midrule
+    \textturnm...i...i & \textramshorns...i...i & \textscripta...i...\ae & u...i...\ae & o...i...\ae \\ 
+    \textturnm...i...e & \textramshorns...i...e & \textscripta...i...y & u...i...y & o...i...y \\ 
+    \textturnm...i...\ae & \textramshorns...i...\ae & \textscripta...i...\o & u...i...\o & o...i...\o \\ 
+    \textturnm...i...y & \textramshorns...i...y & \textscripta...i...\textturnm & u...i...\textturnm & o...i...\textturnm \\ 
+    \textturnm...i...\o & \textramshorns...i...\o & \textscripta...i...\textramshorns & u...i...\textramshorns & o...i...\textramshorns \\ 
+    \textturnm...i...\textturnm & \textramshorns...i...\textturnm & \textscripta...e...\ae & u...e...\ae & o...e...\ae \\ 
+    \textturnm...i...\textramshorns & \textramshorns...i...\textramshorns & \textscripta...e...y & u...e...y & o...e...y \\ 
+    \textturnm...i...\textscripta & \textramshorns...i...\textscripta & \textscripta...e...\o & u...e...\o & o...e...\o \\ 
+    \textturnm...i...u & \textramshorns...i...u & \textscripta...e...\textturnm & u...e...\textturnm & o...e...\textturnm \\ 
+    \textturnm...i...o & \textramshorns...i...o & \textscripta...e...\textramshorns & u...e...\textramshorns & o...e...\textramshorns \\ 
+    \textturnm...e...i & \textramshorns...e...i & \textscripta...\ae...i & u...\ae...i & o...\ae...i \\ 
+    \textturnm...e...e & \textramshorns...e...e & \textscripta...\ae...e & u...\ae...e & o...\ae...e \\ 
+    \textturnm...e...\ae & \textramshorns...e...\ae & \textscripta...\ae...\ae & u...\ae...\ae & o...\ae...\ae \\ 
+    \textturnm...e...y & \textramshorns...e...y & \textscripta...\ae...y & u...\ae...y & o...\ae...y \\ 
+    \textturnm...e...\o & \textramshorns...e...\o & \textscripta...\ae...\o & u...\ae...\o & o...\ae...\o \\ 
+    \textturnm...e...\textturnm & \textramshorns...e...\textturnm & \textscripta...\ae...\textturnm & u...\ae...\textturnm & o...\ae...\textturnm \\ 
+    \textturnm...e...\textramshorns & \textramshorns...e...\textramshorns & \textscripta...\ae...\textramshorns & u...\ae...\textramshorns & o...\ae...\textramshorns \\ 
+    \textturnm...e...\textscripta & \textramshorns...e...\textscripta & \textscripta...\ae...\textscripta & u...\ae...\textscripta & o...\ae...\textscripta \\ 
+    \textturnm...e...u & \textramshorns...e...u & \textscripta...\ae...u & u...\ae...u & o...\ae...u \\ 
+    \textturnm...e...o & \textramshorns...e...o & \textscripta...\ae...o & u...\ae...o & o...\ae...o \\ 
+    \textturnm...\ae...i & \textramshorns...\ae...i & \textscripta...y...i & u...y...i & o...y...i \\ 
+    \textturnm...\ae...e & \textramshorns...\ae...e & \textscripta...y...e & u...y...e & o...y...e \\ 
+    \textturnm...\ae...\ae & \textramshorns...\ae...\ae & \textscripta...y...\ae & u...y...\ae & o...y...\ae \\ 
+    \textturnm...\ae...y & \textramshorns...\ae...y & \textscripta...y...y & u...y...y & o...y...y \\ 
+    \textturnm...\ae...\o & \textramshorns...\ae...\o & \textscripta...y...\o & u...y...\o & o...y...\o \\ 
+    \textturnm...\ae...\textturnm & \textramshorns...\ae...\textturnm & \textscripta...y...\textturnm & u...y...\textturnm & o...y...\textturnm \\ 
+    \textturnm...\ae...\textramshorns & \textramshorns...\ae...\textramshorns & \textscripta...y...\textramshorns & u...y...\textramshorns & o...y...\textramshorns \\ 
+    \textturnm...\ae...\textscripta & \textramshorns...\ae...\textscripta & \textscripta...y...\textscripta & u...y...\textscripta & o...y...\textscripta \\ 
+    \textturnm...\ae...u & \textramshorns...\ae...u & \textscripta...y...u & u...y...u & o...y...u \\ 
+    \textturnm...\ae...o & \textramshorns...\ae...o & \textscripta...y...o & u...y...o & o...y...o \\ 
+    \textturnm...y...i & \textramshorns...y...i & \textscripta...\o...i & u...\o...i & o...\o...i \\ 
+    \textturnm...y...e & \textramshorns...y...e & \textscripta...\o...e & u...\o...e & o...\o...e \\ 
+    \textturnm...y...\ae & \textramshorns...y...\ae & \textscripta...\o...\ae & u...\o...\ae & o...\o...\ae \\ 
+    \textturnm...y...y & \textramshorns...y...y & \textscripta...\o...y & u...\o...y & o...\o...y \\ 
+    \textturnm...y...\o & \textramshorns...y...\o & \textscripta...\o...\o & u...\o...\o & o...\o...\o \\ 
+    \textturnm...y...\textturnm & \textramshorns...y...\textturnm & \textscripta...\o...\textturnm & u...\o...\textturnm & o...\o...\textturnm \\ 
+    \textturnm...y...\textramshorns & \textramshorns...y...\textramshorns & \textscripta...\o...\textramshorns & u...\o...\textramshorns & o...\o...\textramshorns \\ 
+    \textturnm...y...\textscripta & \textramshorns...y...\textscripta & \textscripta...\o...\textscripta & u...\o...\textscripta & o...\o...\textscripta \\ 
+    \textturnm...y...u & \textramshorns...y...u & \textscripta...\o...u & u...\o...u & o...\o...u \\ 
+    \textturnm...y...o & \textramshorns...y...o & \textscripta...\o...o & u...\o...o & o...\o...o \\ 
+    \textturnm...\o...i & \textramshorns...\o...i & \textscripta...\textturnm...i & u...\textturnm...i & o...\textturnm...i \\ 
+    \textturnm...\o...e & \textramshorns...\o...e & \textscripta...\textturnm...e & u...\textturnm...e & o...\textturnm...e \\ 
+    \textturnm...\o...\ae & \textramshorns...\o...\ae & \textscripta...\textturnm...\ae & u...\textturnm...\ae & o...\textturnm...\ae \\ 
+    \textturnm...\o...y & \textramshorns...\o...y & \textscripta...\textturnm...y & u...\textturnm...y & o...\textturnm...y \\ 
+    \textturnm...\o...\o & \textramshorns...\o...\o & \textscripta...\textturnm...\o & u...\textturnm...\o & o...\textturnm...\o \\ 
+    \textturnm...\o...\textturnm & \textramshorns...\o...\textturnm & \textscripta...\textturnm...\textturnm & u...\textturnm...\textturnm & o...\textturnm...\textturnm \\ 
+    \textturnm...\o...\textramshorns & \textramshorns...\o...\textramshorns & \textscripta...\textturnm...\textramshorns & u...\textturnm...\textramshorns & o...\textturnm...\textramshorns \\ 
+    \textturnm...\o...\textscripta & \textramshorns...\o...\textscripta & \textscripta...\textturnm...\textscripta & u...\textturnm...\textscripta & o...\textturnm...\textscripta \\ 
+    \textturnm...\o...u & \textramshorns...\o...u & \textscripta...\textturnm...u & u...\textturnm...u & o...\textturnm...u \\ 
+    \textturnm...\o...o & \textramshorns...\o...o & \textscripta...\textturnm...o & u...\textturnm...o & o...\textturnm...o \\ 
+    \textturnm...\textturnm...i & \textramshorns...\textturnm...i & \textscripta...\textramshorns...i & u...\textramshorns...i & o...\textramshorns...i \\ 
+    \textturnm...\textturnm...e & \textramshorns...\textturnm...e & \textscripta...\textramshorns...e & u...\textramshorns...e & o...\textramshorns...e \\ 
+    \textturnm...\textturnm...\ae & \textramshorns...\textturnm...\ae & \textscripta...\textramshorns...\ae & u...\textramshorns...\ae & o...\textramshorns...\ae \\ 
+    \textturnm...\textturnm...y & \textramshorns...\textturnm...y & \textscripta...\textramshorns...y & u...\textramshorns...y & o...\textramshorns...y \\ 
+    \textturnm...\textturnm...\o & \textramshorns...\textturnm...\o & \textscripta...\textramshorns...\o & u...\textramshorns...\o & o...\textramshorns...\o \\ 
+    \textturnm...\textturnm...\textturnm & \textramshorns...\textturnm...\textturnm & \textscripta...\textramshorns...\textturnm & u...\textramshorns...\textturnm & o...\textramshorns...\textturnm \\ 
+    \textturnm...\textturnm...\textramshorns & \textramshorns...\textturnm...\textramshorns & \textscripta...\textramshorns...\textramshorns & u...\textramshorns...\textramshorns & o...\textramshorns...\textramshorns \\ 
+    \textturnm...\textturnm...\textscripta & \textramshorns...\textturnm...\textscripta & \textscripta...\textramshorns...\textscripta & u...\textramshorns...\textscripta & o...\textramshorns...\textscripta \\ 
+    \textturnm...\textturnm...u & \textramshorns...\textturnm...u & \textscripta...\textramshorns...u & u...\textramshorns...u & o...\textramshorns...u \\ 
+    \textturnm...\textturnm...o & \textramshorns...\textturnm...o & \textscripta...\textramshorns...o & u...\textramshorns...o & o...\textramshorns...o \\ 
+    \textturnm...\textramshorns...i & \textramshorns...\textramshorns...i & \textscripta...\textscripta...\ae & u...\textscripta...\ae & o...\textscripta...\ae \\ 
+    \textturnm...\textramshorns...e & \textramshorns...\textramshorns...e & \textscripta...\textscripta...y & u...\textscripta...y & o...\textscripta...y \\ 
+    \textturnm...\textramshorns...\ae & \textramshorns...\textramshorns...\ae & \textscripta...\textscripta...\o & u...\textscripta...\o & o...\textscripta...\o \\ 
+    \textturnm...\textramshorns...y & \textramshorns...\textramshorns...y & \textscripta...\textscripta...\textturnm & u...\textscripta...\textturnm & o...\textscripta...\textturnm \\ 
+    \textturnm...\textramshorns...\o & \textramshorns...\textramshorns...\o & \textscripta...\textscripta...\textramshorns & u...\textscripta...\textramshorns & o...\textscripta...\textramshorns \\ 
+    \textturnm...\textramshorns...\textturnm & \textramshorns...\textramshorns...\textturnm & \textscripta...u...\ae & u...u...\ae & o...u...\ae \\ 
+    \textturnm...\textramshorns...\textramshorns & \textramshorns...\textramshorns...\textramshorns & \textscripta...u...y & u...u...y & o...u...y \\ 
+    \textturnm...\textramshorns...\textscripta & \textramshorns...\textramshorns...\textscripta & \textscripta...u...\o & u...u...\o & o...u...\o \\ 
+    \textturnm...\textramshorns...u & \textramshorns...\textramshorns...u & \textscripta...u...\textturnm & u...u...\textturnm & o...u...\textturnm \\ 
+    \textturnm...\textramshorns...o & \textramshorns...\textramshorns...o & \textscripta...u...\textramshorns & u...u...\textramshorns & o...u...\textramshorns \\ 
+    \textturnm...\textscripta...i & \textramshorns...\textscripta...i & \textscripta...o...\ae & u...o...\ae & o...o...\ae \\ 
+    \textturnm...\textscripta...e & \textramshorns...\textscripta...e & \textscripta...o...y & u...o...y & o...o...y \\ 
+    \textturnm...\textscripta...\ae & \textramshorns...\textscripta...\ae & \textscripta...o...\o & u...o...\o & o...o...\o \\ 
+    \textturnm...\textscripta...y & \textramshorns...\textscripta...y & \textscripta...o...\textturnm & u...o...\textturnm & o...o...\textturnm \\ 
+    \textturnm...\textscripta...\o & \textramshorns...\textscripta...\o & \textscripta...o...\textramshorns & u...o...\textramshorns & o...o...\textramshorns \\ 
+    \textturnm...\textscripta...\textturnm & \textramshorns...\textscripta...\textturnm &  &  &  \\ 
+    \textturnm...\textscripta...\textramshorns & \textramshorns...\textscripta...\textramshorns &  &  &  \\ 
+    \textturnm...\textscripta...\textscripta & \textramshorns...\textscripta...\textscripta &  &  &  \\ 
+    \textturnm...\textscripta...u & \textramshorns...\textscripta...u &  &  &  \\ 
+    \textturnm...\textscripta...o & \textramshorns...\textscripta...o &  &  &  \\ 
+    \textturnm...u...i & \textramshorns...u...i &  &  &  \\ 
+    \textturnm...u...e & \textramshorns...u...e &  &  &  \\ 
+    \textturnm...u...\ae & \textramshorns...u...\ae &  &  &  \\ 
+    \textturnm...u...y & \textramshorns...u...y &  &  &  \\ 
+    \textturnm...u...\o & \textramshorns...u...\o &  &  &  \\ 
+    \textturnm...u...\textturnm & \textramshorns...u...\textturnm &  &  &  \\ 
+    \textturnm...u...\textramshorns & \textramshorns...u...\textramshorns &  &  &  \\ 
+    \textturnm...u...\textscripta & \textramshorns...u...\textscripta &  &  &  \\ 
+    \textturnm...u...u & \textramshorns...u...u &  &  &  \\ 
+    \textturnm...u...o & \textramshorns...u...o &  &  &  \\ 
+    \textturnm...o...i & \textramshorns...o...i &  &  &  \\ 
+    \textturnm...o...e & \textramshorns...o...e &  &  &  \\ 
+    \textturnm...o...\ae & \textramshorns...o...\ae &  &  &  \\ 
+    \textturnm...o...y & \textramshorns...o...y &  &  &  \\ 
+    \textturnm...o...\o & \textramshorns...o...\o &  &  &  \\ 
+    \textturnm...o...\textturnm & \textramshorns...o...\textturnm &  &  &  \\ 
+    \textturnm...o...\textramshorns & \textramshorns...o...\textramshorns &  &  &  \\ 
+    \textturnm...o...\textscripta & \textramshorns...o...\textscripta &  &  &  \\ 
+    \textturnm...o...u & \textramshorns...o...u &  &  &  \\ 
+    \textturnm...o...o & \textramshorns...o...o &  &  &  \\ 
+    \bottomrule

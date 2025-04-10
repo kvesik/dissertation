@@ -1,0 +1,32 @@
+    i...i & e...i & \ae...i & y...i & \o...i \\* 
+    i...e & e...e & \ae...e & y...e & \o...e \\* 
+    i...\textscripta & e...\textscripta & \ae...\textscripta & y...\textscripta & \o...\textscripta \\* 
+    i...u & e...u & \ae...u & y...u & \o...u \\* 
+    i...o & e...o & \ae...o & y...o & \o...o \\* 
+    \midrule
+    i...i...i & e...i...i & \ae...i...i & y...i...i & \o...i...i \\ 
+    i...i...e & e...i...e & \ae...i...e & y...i...e & \o...i...e \\ 
+    i...i...\textscripta & e...i...\textscripta & \ae...i...\textscripta & y...i...\textscripta & \o...i...\textscripta \\ 
+    i...i...u & e...i...u & \ae...i...u & y...i...u & \o...i...u \\ 
+    i...i...o & e...i...o & \ae...i...o & y...i...o & \o...i...o \\ 
+    i...e...i & e...e...i & \ae...e...i & y...e...i & \o...e...i \\ 
+    i...e...e & e...e...e & \ae...e...e & y...e...e & \o...e...e \\ 
+    i...e...\textscripta & e...e...\textscripta & \ae...e...\textscripta & y...e...\textscripta & \o...e...\textscripta \\ 
+    i...e...u & e...e...u & \ae...e...u & y...e...u & \o...e...u \\ 
+    i...e...o & e...e...o & \ae...e...o & y...e...o & \o...e...o \\ 
+    i...\textscripta...i & e...\textscripta...i & \ae...\textscripta...i & y...\textscripta...i & \o...\textscripta...i \\ 
+    i...\textscripta...e & e...\textscripta...e & \ae...\textscripta...e & y...\textscripta...e & \o...\textscripta...e \\ 
+    i...\textscripta...\textscripta & e...\textscripta...\textscripta & \ae...\textscripta...\textscripta & y...\textscripta...\textscripta & \o...\textscripta...\textscripta \\ 
+    i...\textscripta...u & e...\textscripta...u & \ae...\textscripta...u & y...\textscripta...u & \o...\textscripta...u \\ 
+    i...\textscripta...o & e...\textscripta...o & \ae...\textscripta...o & y...\textscripta...o & \o...\textscripta...o \\ 
+    i...u...i & e...u...i & \ae...u...i & y...u...i & \o...u...i \\ 
+    i...u...e & e...u...e & \ae...u...e & y...u...e & \o...u...e \\ 
+    i...u...\textscripta & e...u...\textscripta & \ae...u...\textscripta & y...u...\textscripta & \o...u...\textscripta \\ 
+    i...u...u & e...u...u & \ae...u...u & y...u...u & \o...u...u \\ 
+    i...u...o & e...u...o & \ae...u...o & y...u...o & \o...u...o \\ 
+    i...o...i & e...o...i & \ae...o...i & y...o...i & \o...o...i \\ 
+    i...o...e & e...o...e & \ae...o...e & y...o...e & \o...o...e \\ 
+    i...o...\textscripta & e...o...\textscripta & \ae...o...\textscripta & y...o...\textscripta & \o...o...\textscripta \\ 
+    i...o...u & e...o...u & \ae...o...u & y...o...u & \o...o...u \\ 
+    i...o...o & e...o...o & \ae...o...o & y...o...o & \o...o...o \\ 
+    \bottomrule

@@ -1,0 +1,72 @@
+     961. & none & inactive & default & $49.49$ & $39.16$ & $42.78$\\* 
+     962. & none & inactive & Type 1: \promtype{1} & $24.55$ & $71.85$ & $63.58$\\* 
+     963. & none & inactive & Type 2: \promtype{2} & $63.93$ & $90.94$ & $72.55$\\* 
+     964. & none & inactive & Type 3: \promtype{3} & $57.98$ & $86.82$ & $68.84$\\* 
+     965. & none & inactive & Type 4: \promtype{4} & $63.91$ & $91.01$ & $71.84$\\* 
+     \cmidrule{3-7}
+     966. & none & active & default & $89.89$ & $86.16$ & $68.60$\\* 
+     967. & none & active & Type 1: \promtype{1} & $89.99$ & $97.26$ & $99.97$\\* 
+     968. & none & active & Type 2: \promtype{2} & $83.11$ & $100.00$ & $99.97$\\* 
+     969. & none & active & Type 3: \promtype{3} & $99.98$ & $100.00$ & $99.96$\\* 
+     970. & none & active & Type 4: \promtype{4} & $83.58$ & $100.00$ & $99.95$\\* 
+     \cmidrule{2-7}
+     971. & 0 & inactive & default & $46.04$ & $72.05$ & $31.76$\\* 
+     972. & 0 & inactive & Type 1: \promtype{1} & $24.58$ & $63.25$ & $66.09$\\* 
+     973. & 0 & inactive & Type 2: \promtype{2} & $66.85$ & $97.55$ & $82.95$\\* 
+     974. & 0 & inactive & Type 3: \promtype{3} & $41.05$ & $96.14$ & $82.82$\\* 
+     975. & 0 & inactive & Type 4: \promtype{4} & $66.73$ & $97.50$ & $82.76$\\* 
+     \cmidrule{3-7}
+     976. & 0 & active & default & $90.02$ & $32.27$ & $67.53$\\* 
+     977. & 0 & active & Type 1: \promtype{1} & $89.91$ & $98.26$ & $98.84$\\* 
+     978. & 0 & active & Type 2: \promtype{2} & $83.55$ & $100.00$ & $99.96$\\* 
+     979. & 0 & active & Type 3: \promtype{3} & $99.99$ & $100.00$ & $99.96$\\* 
+     980. & 0 & active & Type 4: \promtype{4} & $83.16$ & $100.00$ & $99.99$\\* 
+     \cmidrule{2-7}
+     981. & 10 & inactive & default & $41.05$ & $26.38$ & $68.73$\\* 
+     982. & 10 & inactive & Type 1: \promtype{1} & $26.78$ & $68.27$ & $89.93$\\* 
+     983. & 10 & inactive & Type 2: \promtype{2} & $68.64$ & $100.00$ & $94.61$\\* 
+     984. & 10 & inactive & Type 3: \promtype{3} & $67.07$ & $100.00$ & $91.80$\\* 
+     985. & 10 & inactive & Type 4: \promtype{4} & $71.45$ & $100.00$ & $92.42$\\* 
+     \cmidrule{3-7}
+     986. & 10 & active & default & $89.98$ & $51.55$ & $91.89$\\* 
+     987. & 10 & active & Type 1: \promtype{1} & $89.96$ & $89.69$ & $96.66$\\* 
+     988. & 10 & active & Type 2: \promtype{2} & $83.62$ & $100.00$ & $99.98$\\* 
+     989. & 10 & active & Type 3: \promtype{3} & $99.96$ & $100.00$ & $99.99$\\* 
+     990. & 10 & active & Type 4: \promtype{4} & $83.62$ & $100.00$ & $99.96$\\* 
+     \cmidrule{2-7}
+     991. & 20 & inactive & default & $40.16$ & $64.02$ & $56.69$\\* 
+     992. & 20 & inactive & Type 1: \promtype{1} & $54.20$ & $60.95$ & $84.96$\\* 
+     993. & 20 & inactive & Type 2: \promtype{2} & $68.73$ & $100.00$ & $98.65$\\* 
+     994. & 20 & inactive & Type 3: \promtype{3} & $68.71$ & $98.11$ & $90.37$\\* 
+     995. & 20 & inactive & Type 4: \promtype{4} & $74.22$ & $100.00$ & $99.76$\\* 
+     \cmidrule{3-7}
+     996. & 20 & active & default & $90.61$ & $58.09$ & $85.09$\\* 
+     997. & 20 & active & Type 1: \promtype{1} & $89.98$ & $63.40$ & $100.00$\\* 
+     998. & 20 & active & Type 2: \promtype{2} & $83.64$ & $100.00$ & $99.98$\\* 
+     999. & 20 & active & Type 3: \promtype{3} & $99.06$ & $100.00$ & $99.99$\\* 
+     1000. & 20 & active & Type 4: \promtype{4} & $83.61$ & $100.00$ & $99.88$\\* 
+     \cmidrule{2-7}
+     1001. & 30 & inactive & default & $80.07$ & $49.82$ & $40.33$\\* 
+     1002. & 30 & inactive & Type 1: \promtype{1} & $27.47$ & $60.58$ & $94.35$\\* 
+     1003. & 30 & inactive & Type 2: \promtype{2} & $76.53$ & $100.00$ & $99.99$\\* 
+     1004. & 30 & inactive & Type 3: \promtype{3} & $85.51$ & $80.00$ & $99.38$\\* 
+     1005. & 30 & inactive & Type 4: \promtype{4} & $76.51$ & $100.00$ & $99.98$\\* 
+     \cmidrule{3-7}
+     1006. & 30 & active & default & $89.99$ & $26.35$ & $81.65$\\* 
+     1007. & 30 & active & Type 1: \promtype{1} & $89.98$ & $73.44$ & $99.99$\\* 
+     1008. & 30 & active & Type 2: \promtype{2} & $85.00$ & $100.00$ & $99.97$\\* 
+     1009. & 30 & active & Type 3: \promtype{3} & $99.99$ & $100.00$ & $99.98$\\* 
+     1010. & 30 & active & Type 4: \promtype{4} & $83.60$ & $100.00$ & $99.95$\\* 
+     \cmidrule{2-7}
+     1011. & 40 & inactive & default & $63.31$ & $58.55$ & $83.33$\\* 
+     1012. & 40 & inactive & Type 1: \promtype{1} & $90.00$ & $58.85$ & $86.02$\\* 
+     1013. & 40 & inactive & Type 2: \promtype{2} & $75.62$ & $100.00$ & $99.99$\\* 
+     1014. & 40 & inactive & Type 3: \promtype{3} & $87.95$ & $80.00$ & $100.00$\\* 
+     1015. & 40 & inactive & Type 4: \promtype{4} & $77.02$ & $100.00$ & $100.00$\\* 
+     \cmidrule{3-7}
+     1016. & 40 & active & default & $89.96$ & $47.65$ & $34.24$\\* 
+     1017. & 40 & active & Type 1: \promtype{1} & $89.98$ & $68.38$ & $99.61$\\* 
+     1018. & 40 & active & Type 2: \promtype{2} & $99.98$ & $100.00$ & $99.99$\\* 
+     1019. & 40 & active & Type 3: \promtype{3} & $97.06$ & $90.81$ & $99.99$\\* 
+     1020. & 40 & active & Type 4: \promtype{4} & $83.58$ & $100.00$ & $99.96$\\* 
+     \bottomrule

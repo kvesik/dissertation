@@ -1,0 +1,4 @@
+specs	avg_freq_good_results	lowest_inputs_above_100	lowest_inputs_above_99	lowest_inputs_above_95	lowest_inputs_above_90	M_string	uniform_M	M_value	Mgen_type	b_3str	m_3str	b	m	which_cand	calc_how	magri_type	favour_spec	apriori_type	ReLU
+T_M100_EIP	0.8878571428571428	9	9	9	9	100	1	100	0							0	0	-1	0
+T_M100_RRIP	0.8660714285714287	3	3	3	3	100	1	100	0							0	0	-1	0
+T_M100_RIP	0.8583333333333335	3	3	3	3	100	1	100	0							0	0	-1	0

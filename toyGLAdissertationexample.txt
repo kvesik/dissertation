@@ -1,0 +1,10 @@
+			starF3	starB5F3	IdSyl1Bk	IdBk
+			starF3	starB5F3	IdSyl1Bk	IdBk
+sasa	sasa	1	0	0	0	0
+	sasA		1	1	0	1
+	sAsa		1	0	1	1
+	sAsA		2	0	1	2
+sAsa	sAsa	1	1	0	0	0
+	sAsA		2	0	0	1
+	sasa		0	0	1	1
+	sasA		1	1	1	2

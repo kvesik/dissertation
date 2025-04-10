@@ -11,3 +11,7 @@ ResultsForOTSoft*.htm
 .idea/*
 sim_outs/*/*/StringencyRelationsAmongContraints*.txt
 sim_outs/*/*/*/StringencyRelationsAmongContraints*.txt
+
+LaTeX/*
+admin/*
+drafts and feedback/*

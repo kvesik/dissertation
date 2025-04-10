@@ -16,9 +16,8 @@ library(ggplot2)
 library(cowplot)
 library(readr)
 library(dplyr)
-# library(ggbeeswarm)
 # library(vipor)
-# library(viridis)
+library(viridis)
 # library(ggstance)
 # library(ggrepel)
 # library(scales)
@@ -52,12 +51,20 @@ Prepare and plot the histograms
 
 ```{r plots}
 
-plot_histograms <- function(df) {
+plot_histograms <- function(df, simname) {
 
   histogramplot <-
     ggplot(data = df, aes(x = finalrankingvalue)) +
-    geom_histogram(binwidth=20, boundary=20) +
-    labs(x ='final ranking value', y='number of constraints', title = 'Final ranking values')
+    geom_histogram(bins=9,breaks=c(50,60,70,80,90,100,110,120,130,140), colour="black", fill="#1F8179") +
+    # geom_histogram(binwidth=20, boundary=20) +
+    labs(x ='final ranking value', y='number of constraints') +  #, title = paste0('Final ranking values - ', simname)) +
+    theme(axis.text=element_text(size=16, colour="black"),
+          axis.title.x = element_text(size=16, colour="black"),
+          axis.title.y = element_text(size=16, colour="black"),
+          panel.grid.minor.x = element_blank(),
+          panel.grid.minor.y = element_blank()) +
+    scale_x_continuous(limits=c(50,140), breaks=seq(from=50, to=140, by=10)) +
+    scale_y_continuous(limits=c(0,50))  # , breaks=seq(from=0, to=50, by=10))
   
     
   #   ggplot(data=df, mapping=aes(x=trialnum, y=value, group=constraint, colour=constraint)) +
@@ -92,29 +99,19 @@ plot_histograms <- function(df) {
 
 ```{r specifyfiles}
 
-simnames <- c("Learner 0", "Learner A")
+simnames <- c("North Estonian Learner B", "Finnish Learner B", "North Seto Learner B")
 rankingfiles <- c(
   "../sim_outs/20240507_GLA_outputs/T_M100_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NEst_T_M100_sg20_finalrankingvalues.txt",
-  "../sim_outs/20240507_GLA_outputs/T_M100_mg4_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NEst_T_M100_mg4_sg20_finalrankingvalues.txt"
-  # "TODO",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_Fi993_python_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn\\Fi993_OTSoft-PDDP-Fin_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NE993_python_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn\\NE993_OTSoft-PDDP-NEst_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTgr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg1_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt",
-    # "..\\sim_outs\\20240119_GLA_outputs\\NTmg3_gr_sg20_NS993_python_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn\\NS993_OTSoft-PDDP-NSeto_GLA_wdel-gen-ne_ixn_HISTORY1000_forR.txt"
-  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\Fi153_python_OTSoft-PDDP-Fin_GLA\\Fi153_OTSoft-PDDP-Fin_GLA_HISTORY1000_forR.txt",
-  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240104_Magri_outputs\\NE153_python_OTSoft-PDDP-NEst_GLA\\NE153_OTSoft-PDDP-NEst_GLA_HISTORY1000_forR.txt",
-  # "zzzNOPE_(old_and-or_nonempty_is_backwards)\\20240105_GLA_KVoutputs\\NE103_FilesForOTSoft-PDDP-NEst_GLA\\OTSoft-PDDP-NEst_GLAFullHistory.xls"
+  "../sim_outs/20240507_GLA_outputs/T_M100_sg20_Fi894_python_OTSoft-PDDP-Fin_GLA/Fin_T_M100_sg20_finalrankingvalues.txt",
+  "../sim_outs/20240507_GLA_outputs/T_M100_sg20_NS894_python_OTSoft-PDDP-NSeto_GLA/NSeto_T_M100_sg20_finalrankingvalues.txt"
 )
 
-for (rankingfilepath in rankingfiles) {
-  rf_df <- prepare_data(rankingfilepath)
-  plot_histograms(rf_df)
+# for (rankingfilepath in rankingfiles) {
+for (idx in 1:3) {
+  rf_df <- prepare_data(rankingfiles[idx])
+  plot_histograms(rf_df, simnames[idx])
 }
+
 
 
 

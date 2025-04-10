@@ -6,6 +6,7 @@ import re
 import os
 import random
 import numpy as np
+from copy import deepcopy
 from fractions import Fraction
 from datetime import datetime
 from generate_tableaux_otsoft_specifylang import langnames
@@ -15,9 +16,9 @@ INIT_WEIGHTS = {}
 INIT_F = 0
 INIT_M = 100
 
-WORKING_DIR = "../sim_ins/20240507 on - OTSoft inputs"  # "OTSoft2.6old"
-OUTPUTS_DIR = "../sim_outs/20240507_GLA_outputs"
-DATA_DIR = WORKING_DIR + "/20240507_OTS" #  + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
+WORKING_DIR = "../sim_ins/20250317 on - stress"  # 20240507 on - OTSoft inputs"  # "OTSoft2.6old"
+OUTPUTS_DIR = "../sim_outs/20250317_stress_outputs"  # 20240507_GLA_outputs"
+DATA_DIR = WORKING_DIR + "/20250320_OTS"  # "/20240507_OTS" #  + "_wdel-gen-ne_ixn"  # "/20240117_forOTS"  # "/20231107MagriRuns"
 
 DEMOTEONLYUNDOMINATEDLOSERS = False
 MAGRI = True
@@ -55,8 +56,8 @@ LEARNING_TRIALS_DICT = {
     5: [10000, 10000, 10000, 10000]
 }
 
-LEARNING_R_F = [2, 0.2, 0.02, 0.002]
-LEARNING_R_M = [2, 0.2, 0.02, 0.002]
+LEARNING_R_F = [1, 0.1, 0.01, 0.001]  # [2, 0.2, 0.02, 0.002]
+LEARNING_R_M = [1, 0.1, 0.01, 0.001]  # [2, 0.2, 0.02, 0.002]
 LEARNING_NOISE_F = [2, 2, 2, 2]  # [0.1, 0.1, 0.1, 0.1]  # [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
 LEARNING_NOISE_M = [2, 2, 2, 2]  # [0.1, 0.1, 0.1, 0.1]  # [2, 2, 2, 2]  # [2, 0.2, 0.02, 0.002]
 
@@ -171,7 +172,7 @@ class Learner:
     #       where yyy% is the y-intercept multiplier
     #       and sss% is the slope multiplier
     #       e.g. the application rate gets *INIT_M*y.yy + INIT_M*s.ss
-    def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswMgen_type="0",  init_m=100, initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=False):
+    def __init__(self, srcfilepath, destdir, expnum, demoteunlyundominatedlosers=False, magri=True, magritype=1, specgenbias=0, gravity=False, gravityconst=2, preferspecificity=False, expandingbias=False, expandslowly=False, expandslowlydecreasingrate=False, initrankingswMgen_type="0",  init_m=100, initMrankings_whichcand="faithful", initMrankings_calchow="sum", relu=False, parsingstrategy=None):
         numtrials_id = int(expnum[-1])
         self.learning_trials = LEARNING_TRIALS_DICT[numtrials_id]
         self.file = srcfilepath
@@ -205,6 +206,7 @@ class Learner:
         self.initMrankings_whichcand = initMrankings_whichcand
         self.initMrankings_calchow = initMrankings_calchow
         self.relu = relu
+        self.parsingstrategy = parsingstrategy
 
     def set_info_from_inputfile(self, tableaux_list, constraints, weights):
         self.constraints = constraints
@@ -213,8 +215,12 @@ class Learner:
 
     def set_tableaux(self, tableaux_list):
         self.tableaux_list = tableaux_list
-        # only try and learn from the tableaux that have input frequency information
-        self.training_tableaux_list = [t for t in tableaux_list if sum(t["frequency"].values) > 0]
+        if self.parsingstrategy:
+            # just use them all
+            self.training_tableaux_list = [t for t in tableaux_list]
+        else:
+            # only try and learn from the tableaux that have input frequency information
+            self.training_tableaux_list = [t for t in tableaux_list if sum(t["frequency"].values) > 0]
 
     def read_input(self):
         with io.open(self.file, "r") as infile:
@@ -496,12 +502,6 @@ class Learner:
                 noise = noise_m
             evalweights[con] = np.random.normal(loc=self.weights[con], scale=noise)
 
-        # for testing - todo remove
-        # weightdiffs = {c: abs(evalweights[c]-self.weights[c]) for c in self.constraints}
-        # maxwd = max(weightdiffs.values())
-        # if maxwd > 0.5:
-        #     print(("*** " if maxwd > 1 else "") + "max(weightdiffs) is " + str(maxwd))
-
         return evalweights
 
     def getevalweights_new(self, noise_f, noise_m):
@@ -703,7 +703,8 @@ class Learner:
         candidates = tableau_df[ur].values
         frequencies = tableau_df["frequency"].values
         frequencysum = sum(frequencies)
-        frequencies = [f/frequencysum for f in frequencies]
+        if frequencysum > 0:
+            frequencies = [f/frequencysum for f in frequencies]
         sample = random.uniform(0, 1)
         cumulative_freq = 0
         idx = 0
@@ -720,11 +721,37 @@ class Learner:
             # generate the optimal candidate based on current constraint weights (ranking), with or without noise
             evalweights = self.getevalweights(cur_noise_F, cur_noise_M)
             optimal_cand = evaluate_one(tableau_df, evalweights)  # , self.weights)
-            #
+            needs_update = False
+
+            if self.parsingstrategy is None:
+                # not metrical phonology
+                needs_update = datum != optimal_cand
+            else:
+                # we're doing metrical phonology; the intended winner has to be figured out using the given parsing strategy
+                # get the subset of the tableau that is just candidates that match the overt form
+                tableau_df_matchingovertforms = remove_mismatched_overtforms(tableau_df)
+                if self.parsingstrategy == "RIP":
+                    intended_parse = evaluate_one(tableau_df_matchingovertforms, evalweights)
+                    needs_update = intended_parse != optimal_cand
+                    datum = intended_parse
+                elif self.parsingstrategy == "RRIP":
+                    if removeparens(optimal_cand) != ur:  # actually not ur but rather overtform
+                        needs_update = True
+                        evalweights2 = self.getevalweights(cur_noise_F, cur_noise_M)
+                        intended_parse = evaluate_one(tableau_df_matchingovertforms, evalweights2)
+                        datum = intended_parse
+                elif self.parsingstrategy == "EIP":
+                    if removeparens(optimal_cand) != ur:  # actually not ur but rather overtform
+                        needs_update = True
+                        generated = optimal_cand
+                        while removeparens(generated) != ur:  # actually not ur but rather overtform
+                            generated = evaluate_one(tableau_df, self.getevalweights(cur_noise_F, cur_noise_M))
+                        intended_parse = generated
+                        datum = intended_parse
             # if the optimal candidate matches the intended winner, do nothing
             #
             # if the optimal candidate does not match the intended winner, update the weights
-            if datum != optimal_cand:
+            if needs_update:
                 self.errorcounter += 1
                 self.updateweights(tableau_df, datum, optimal_cand, cur_R_F, cur_R_M, learningtrial_num, historystream)
             #
@@ -878,6 +905,45 @@ class Learner:
 
 
 # end of class Learner #
+
+
+def removeparens(wd):
+    return wd.replace("(", "").replace(")", "")
+
+
+def removestresses(wd):
+    return wd.replace("1", "").replace("2", "")
+
+
+def remove_mismatched_overtforms(tableau_df):
+    overtform = tableau_df.columns[0]
+    ur = removestresses(removeparens(overtform))
+
+    whichrows = []
+    for idx, row in tableau_df.iterrows():
+        cand = row[overtform]
+        if removeparens(cand) == overtform:
+            whichrows.append(idx)
+
+    tableau_df_reduced = tableau_df.iloc[whichrows]  # Copy rows by integer location
+    return tableau_df_reduced
+
+def remove_mismatched_parsesOLD(tableau_df):
+    ur = tableau_df.columns[0]
+    overtform = ""
+
+    whichrows = []
+    for idx, row in tableau_df.iterrows():
+        if idx == 0:
+            # the overt form is in the first row
+            overtform = row[ur]
+        else:
+            cand = row[ur]
+            if removeparens(cand) == overtform:
+                whichrows.append(idx)
+
+    tableau_df_reduced = tableau_df.iloc[whichrows]  # Copy rows by integer location
+    return tableau_df_reduced
 
 
 def read_input_static(infilepath):
@@ -1039,21 +1105,7 @@ def evaluate_one(tableau_df, evalweights):  # , curweights):
     wts = list(evalweights.items())  # make it a list of key-value pairs (tuples)
     wts.sort(key=lambda x: x[1], reverse=True)
 
-    # # for testing - todo remove
-    # wts_c = list(curweights.items())
-    # wts_c.sort(key=lambda x: x[1], reverse=True)
-    # top20_wts_c = [c for c, v in wts_c[:20]]
-    # top20_wts = [c for c, v in wts[:20]]
-    # if 'Id(Bk)Syl1' in top20_wts_c + top20_wts:
-    #     temp = 1
-    # weightdiffs = {c: abs(evalweights[c] - curweights[c]) for c in curweights.keys()}
-    # maxwd = max(weightdiffs.values())
-    # if maxwd > 0.5:
-    #     print(("*** " if maxwd > 1 else "") + "max(weightdiffs) is " + str(maxwd))
-
     ranking = [c for (c, w) in wts]
-    # if ranking[0] == 'Id(Bk)Syl1':
-    #     temp = 1
 
     winner = ""
     idx = 0
@@ -1277,9 +1329,35 @@ def main(prefix="", argstuple=None):
     # files_exps = make_files_exps_list()
     # files_exps = sort_files_exps_list(files_exps)
     files_exps = [
-        ('OTSoft-PDDP-NEst_GLA.txt', 'NE894'),
-        ('OTSoft-PDDP-NSeto_GLA.txt', 'NS894'),
-        ('OTSoft-PDDP-Fin_GLA.txt', 'Fi894'),
+        # ('OTSoft-PDDP-NEst_GLA.txt', 'NE894'),
+        # ('OTSoft-PDDP-NSeto_GLA.txt', 'NS894'),
+        # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi894'),
+
+        ('OTSoft-t_s_cons-latin_main_GLA.txt', 'TS894'),
+        ('OTSoft-t_s_cons-latin_secondary_GLA.txt', 'TS894'),
+        ('OTSoft-t_s_cons_aug-latin_main_GLA.txt', 'TS894'),
+        ('OTSoft-t_s_cons_aug-latin_secondary_GLA.txt', 'TS894'),
+        ('OTSoft-j_cons-latin_main_GLA.txt', 'JJ894'),
+        ('OTSoft-j_cons-latin_secondary_GLA.txt', 'JJ894'),
+        ('OTSoft-j_cons_aug-latin_main_GLA.txt', 'JJ894'),
+        ('OTSoft-j_cons_aug-latin_secondary_GLA.txt', 'JJ894'),
+        ('OTSoft-p_s_cons-latin_main_GLA.txt', 'PS894'),
+        ('OTSoft-p_s_cons-latin_secondary_GLA.txt', 'PS894'),
+        ('OTSoft-p_s_cons_aug-latin_main_GLA.txt', 'PS894'),
+        ('OTSoft-p_s_cons_aug-latin_secondary_GLA.txt', 'PS894'),
+
+        # ('OTSoft-t_s_cons-latin_main_GLA.txt', 'TS895'),
+        # ('OTSoft-t_s_cons-latin_secondary_GLA.txt', 'TS895'),
+        # ('OTSoft-t_s_cons_aug-latin_main_GLA.txt', 'TS895'),
+        # ('OTSoft-t_s_cons_aug-latin_secondary_GLA.txt', 'TS895'),
+        # ('OTSoft-j_cons-latin_main_GLA.txt', 'JJ895'),
+        # ('OTSoft-j_cons-latin_secondary_GLA.txt', 'JJ895'),
+        # ('OTSoft-j_cons_aug-latin_main_GLA.txt', 'JJ895'),
+        # ('OTSoft-j_cons_aug-latin_secondary_GLA.txt', 'JJ895'),
+        # ('OTSoft-p_s_cons-latin_main_GLA.txt', 'PS895'),
+        # ('OTSoft-p_s_cons-latin_secondary_GLA.txt', 'PS895'),
+        # ('OTSoft-p_s_cons_aug-latin_main_GLA.txt', 'PS895'),
+        # ('OTSoft-p_s_cons_aug-latin_secondary_GLA.txt', 'PS895'),
 
         # ('OTSoft-PDDP-NEst_GLA.txt', 'NE893'),
         # ('OTSoft-PDDP-Fin_GLA.txt', 'Fi893'),
@@ -1454,7 +1532,7 @@ def run_combinations(justcountiterations=False):
                                                                     if ReLU:
                                                                         abbrevstr += "ReLU_"
                                                                     # abbrevstr += "0.1noise_"
-                                                                    print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " triples")
+                                                                    print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " settings")
                                                                     # fs_sg20_ex - r
                                                                     main(prefix=abbrevstr, argstuple=(
                                                                         demoteonlyundominatedlosers, magri, magritype,
@@ -1507,7 +1585,7 @@ def testsuperhighmarkednesswithapriori(justcountiterations=False):
                                                                             abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
                                                                     if ReLU:
                                                                         abbrevstr += "ReLU_"
-                                                                    print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " triples")
+                                                                    print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " settings")
                                                                     # fs_sg20_ex - r
                                                                     main(prefix=abbrevstr, argstuple=(
                                                                         demoteonlyundominatedlosers, magri, magritype,
@@ -1518,11 +1596,67 @@ def testsuperhighmarkednesswithapriori(justcountiterations=False):
         if justcountiterations:
             return iterations_counter
 
+def run_stress_sims(justcountiterations=False):
+    totaliterations = 0
+    iterations_counter = 0
+    if not justcountiterations:
+        totaliterations = run_stress_sims(justcountiterations=True)
+    for demoteonlyundominatedlosers in [False]:
+        for magri in [False]:  # , True]:
+            for magritype in [4, 3, 2, 1] if magri else [0]:
+                for gravity in [False]:
+                    for gravityconst in [2] if gravity else [0]:
+                        for preferspecificity in [False]:  # [True, False]:
+                            for specgenbias in [-1]:  # , 0, 10]:  # 20]:  # [-1, 0, 20, 30, 10, 40]:  # , 0, 20, 30]:
+                                for expandingbias in [False]:  # [True] if specgenbias >= 0 else [False]:
+                                    for expandingslowly in [True] if expandingbias else [False]:  # [False, True]
+                                        for expandslowlydecreasingrate in [True] if expandingslowly else [False]:
+                                            for initrankingswMgen_type in ["0"]:  # ["4.050.050", "4.050.100", "4.100.050", "4.100.100", "4.150.050", "4.150.100"]:  # ["0", "3.1.1", "3.2a.1", "3.2b.1", "4.050.050", "4.050.100", "4.100.050", "4.100.100", "4.150.050", "4.150.100", "5.050.050", "5.050.100", "5.100.050", "5.100.100", "5.150.050", "5.150.100"]:  #  ["4.050.025", "4.100.025"]:   #
+                                                for init_m in [100]:  # [100, 300, 500] if initrankingswMgen_type == "0" else [100]:
+                                                    for initMrankings_whichcand in ["faithful"]:  # "omniscient"]:  # "faithful"]:  # , "random", "all"]:
+                                                        for initMrankings_calchow in ["sum"]:  # sum"]:  # , "average"] if initMrankings_whichcand == "all" else ["sum"]:
+                                                            for ReLU in [False]:
+                                                                for parsingstrategy in ["RIP", "RRIP", "EIP"]:  # "RIP"]:  # , ]:
+                                                                    iterations_counter += 1
+                                                                    if not justcountiterations:
+                                                                        abbrevstr = "T_"  # tested
+                                                                        abbrevstr += "UnL_" if demoteonlyundominatedlosers else ""
+                                                                        if int(initrankingswMgen_type[0]) > 0:
+                                                                            abbrevstr += "Mgen" + initrankingswMgen_type
+                                                                            if int(initrankingswMgen_type[0]) == 4:
+                                                                                abbrevstr += initMrankings_whichcand[0] + initMrankings_calchow[0]
+                                                                            abbrevstr += "_"
+                                                                        else:
+                                                                            abbrevstr += "M" + str(init_m) + "_"
+                                                                        # abbrevstr += "Mgen" + initrankingswMgen + "_" if initrankingswMgen > 0 else ""
+                                                                        abbrevstr += ("mg" + str(magritype) + "_") if magri else ""
+                                                                        abbrevstr += "gr_" if gravity else ""
+                                                                        abbrevstr += "fs_" if preferspecificity else ""
+                                                                        if specgenbias >= 0:
+                                                                            abbrevstr += "sg" + str(specgenbias) + "_"
+                                                                            if expandingbias:
+                                                                                abbrevstr += "ex" + (("-s" + ("-d" if expandslowlydecreasingrate else "")) if expandingslowly else "-r") + "_"
+                                                                        if ReLU:
+                                                                            abbrevstr += "ReLU_"
+                                                                        abbrevstr += parsingstrategy + "_"
+                                                                        # abbrevstr += "0.1noise_"
+                                                                        print("\nspecs: " + abbrevstr + " - " + str(iterations_counter) + " of " + str(totaliterations) + " triples")
+                                                                        # fs_sg20_ex - r
+                                                                        main(prefix=abbrevstr, argstuple=(
+                                                                            demoteonlyundominatedlosers, magri, magritype,
+                                                                            specgenbias, gravity, gravityconst, preferspecificity,
+                                                                            expandingbias, expandingslowly,
+                                                                            expandslowlydecreasingrate, initrankingswMgen_type, init_m,
+                                                                            initMrankings_whichcand, initMrankings_calchow, ReLU, parsingstrategy))
+        if justcountiterations:
+            return iterations_counter
+
 
 if __name__ == "__main__":
     # main()
     # print(run_combinations(justcountiterations=True))
     # testsuperhighmarkednesswithapriori()
     # justtests(skipifalreadydone=True, folderstotest=['T_M100_sg20_NE894_python_OTSoft-PDDP-NEst_GLA'])
-    # justtests(skipifalreadydone=True, onlyatleastasgoodas=0.95)
-    run_combinations()
+    # justtests(skipifalreadydone=True, onlyatleastasgoodas=0.90)
+    run_stress_sims()
+    # run_combinations()

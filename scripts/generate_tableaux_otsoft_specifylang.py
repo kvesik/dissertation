@@ -332,7 +332,7 @@ class OTSoftTableauxGenerator:
     #   = 3 means /e/ is always harmonic in SSeto-- no first-syllable transparency as per literature (cf Finnish, eg)
     #   = 4
     #   = 5 means both 2 and 3
-    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, withidentfoot=False, fortesting=False, inittransp_inputs=True, reducedcons=False):
+    def __init__(self, lang, special=0, bfocus=True, withdeletions=False, deletionbyfeature=False, withnonempty=False, withtranspn=False, groupfeatures=False, countgroupasint=False, withinteractions=False, withidentfoot=False, fortesting=False, inittransp_inputs=True, reducedcons=False, onlylocal=False):
         self.special = special
         self.bfocus = bfocus
         self.lang = lang
@@ -347,6 +347,7 @@ class OTSoftTableauxGenerator:
         self.fortesting = fortesting
         self.inittransp_inputs = inittransp_inputs
         self.reducedcons = reducedcons
+        self.onlylocal = onlylocal
 
         self.stringencysets = sets_dict[self.lang] if self.special == 1 else (self.reduced_setsdict() if self.reducedcons else sets_dict[fullset])
         self.segM_connames = {setname: "*" + setname for setname in self.stringencysets.keys()}
@@ -356,7 +357,7 @@ class OTSoftTableauxGenerator:
         self.nodis_connames = self.reduced_nodis_constraints() if self.reducedcons else [
             nodis_conname(name1, name2, islocal, back if self.bfocus else front)
             for (name1, name2, islocal)
-            in product(self.stringencysets.keys(), self.stringencysets.keys(), [True, False])
+            in product(self.stringencysets.keys(), self.stringencysets.keys(), ([True] if self.onlylocal else [True, False]))
             if name1[0] != name2[0]
         ]
 
@@ -1286,7 +1287,7 @@ class UCLAPLGenerator:
 #   = 3 means /e/ is always harmonic in SSeto-- no first-syllable transparency as per literature (cf Finnish, eg)
 #   = 4
 #   = 5 means both 2 and 3
-def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, IDFTin, TESTin, ITRANSPin, REDUCEDin):
+def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, IXNin, IDFTin, TESTin, ITRANSPin, REDUCEDin, ONLYLOCALin):
 
     uclayes_otsoftno = False  # True for generating UCLA-PL input files; False for OTSoft
 
@@ -1310,6 +1311,7 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
             customizations += "_wtr" + (("-grp" + ("-int" if GRPINTin else "-tf")) if FTGRPin else "-ind")
         customizations += "_ixn" if IXNin else ""
         customizations += "" if ITRANSPin else "_nointra"
+        customizations += "_lcl" if ONLYLOCALin else ""
         customizations += "_test" if TESTin else ""
         foldername = datetime.now().strftime('%Y%m%d') + '_OTS'  # '-OTSoft-files'  # .%H%M%S
         os.mkdir(foldername+customizations)
@@ -1319,7 +1321,7 @@ def main_helper(SPECIALin, DELin, DELFTin, NEMPin, TRANSPin, FTGRPin, GRPINTin, 
                                                          withtranspn=TRANSPin, groupfeatures=FTGRPin,
                                                          countgroupasint=GRPINTin, withinteractions=IXNin,
                                                          withidentfoot=IDFTin, fortesting=TESTin,
-                                                         inittransp_inputs=ITRANSPin, reducedcons=REDUCEDin)
+                                                         inittransp_inputs=ITRANSPin, reducedcons=REDUCEDin, onlylocal=ONLYLOCALin)
             tableaux_generator.generatetext(length2words + length3words, foldername=foldername, customizations=customizations)
 
     if uclayes_otsoftno:  # UCLA
@@ -1357,9 +1359,10 @@ if __name__ == "__main__":
                                         for TEST in ft:
                                             for ITRANSP in ft:
                                                 for REDUCED in ft:
-                                                    print("iteration", counter)
-                                                    counter += 1
-                                                    main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST, ITRANSPin=ITRANSP, REDUCEDin=REDUCED)
+                                                    for ONLYLOCAL in ft:
+                                                        print("iteration", counter)
+                                                        counter += 1
+                                                        main_helper(SPECIALin=0, DELin=DEL, DELFTin=DELFT, NEMPin=NONEMPTY, TRANSPin=TRANSP, FTGRPin=FTGRP, GRPINTin=GRPINT, IXNin=IXN, IDFTin=IDFT, TESTin=TEST, ITRANSPin=ITRANSP, REDUCEDin=REDUCED, ONLYLOCALin=ONLYLOCAL)
 
     elif False:
         counter = 1
@@ -1379,5 +1382,5 @@ if __name__ == "__main__":
     # generate inputs for all languages but for only one specific combination of arguments
     else:
         for t in [False, True]:
-            main_helper(SPECIALin=0, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, IDFTin=False, TESTin=t, ITRANSPin=True, REDUCEDin=False)
+            main_helper(SPECIALin=2, DELin=False, DELFTin=False, NEMPin=False, TRANSPin=False, FTGRPin=False, GRPINTin=False, IXNin=False, IDFTin=True, TESTin=t, ITRANSPin=True, REDUCEDin=False, ONLYLOCALin=False)
 

@@ -420,7 +420,7 @@ def getmatchtype(inputfrequencies, outputfrequencies):
 
 if __name__ == "__main__":
     filesdone = []
-    firstfolder = os.path.join("..", "sim_outs", "20250121_LFCD_outputs")
+    firstfolder = os.path.join("..", "sim_outs", "20250207_LFCD_outputs")
     folderswithLFCDfiles = [fn for fn in os.listdir(firstfolder) if "FilesForOTSoft" in fn and "LFCD" in fn]  #  and fn.endswith("_itra")]  #  and "nos1tr" in fn]
     for secondfolder in folderswithLFCDfiles:
         DraftOutputfiles = [fn for fn in os.listdir(os.path.join(firstfolder, secondfolder)) if fn.endswith("DraftOutput.txt")]

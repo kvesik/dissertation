@@ -1,0 +1,25 @@
+Learner A:
+T_M100
+
+Learner B:
+T_M100_sg20
+
+Learner C:
+T_M100_fs
+
+Learner D:
+T_M100_fs_sg20
+
+Learner E:
+T_M100_mg2
+
+Learner F:
+T_M100_mg2_fs
+
+Learner G:
+T_Mgen4.100.100fs
+
+Learner H:
+T_Mgen4.100.100fs_mg2_fs_sg20
+
+

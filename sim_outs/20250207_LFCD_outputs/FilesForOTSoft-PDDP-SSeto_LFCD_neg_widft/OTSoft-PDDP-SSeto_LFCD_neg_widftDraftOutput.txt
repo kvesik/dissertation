@@ -1,0 +1,19 @@
+Results of Applying Low Faithfulness Constraint Demotion to OTSoft-PDDP-SSeto_LFCD_neg_widft.txt
+
+
+2-08-2025, 2:51 p.m.
+
+OTSoft 2.6, release date 4/11/2021
+
+
+1. Result
+
+There is no ranking of the proposed constraints which yields the correct outputs.  
+You can learn more about why the constraints fail by selecting Show How Ranking Was Done from the View menu.
+
+
+To obtain diagnostic tableaux, try running the program again, first checking the 
+Diagnostics if Ranking Fails box.
+
+You can also diagnose by selecting Show How Ranking Was Done from the View menu.
+

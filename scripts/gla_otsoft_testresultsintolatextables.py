@@ -9,10 +9,10 @@ langstrings = ["NEst", "Fin", "NSeto"]
 apriorivalues = [-1, 0, 10, 20, 30, 40]
 favspecvalues = [0, 1]
 promratepairs = [
-    (0, "default"),
+    (0, "default: 1"),
     (1, "Type 1: \promtype{1}"),
-    (2, "Type 2: \promtype{2}"),
-    (3, "Type 3: \promtype{3}"),
+    (3, "Type 2: \promtype{now2}"),
+    (2, "Type 3: \promtype{now3}"),
     (4, "Type 4: \promtype{4}")
 ]
 

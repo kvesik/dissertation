@@ -42,10 +42,11 @@ def formatforlatex(vowelseq):
     return "".join([latexlookup[v] for v in vowelseq])
 
 
-def buildline(wordsdict, idx, withstar=False):
+def buildline(yesorno, wordsdict, idx, withstar=False):
     linetowrite = ""
     for k in (vowels[front] if i in wordsdict.keys() else vowels[back]):
-        linetowrite += " & " + wordsdict[k][idx]
+        vseq = wordsdict[k][idx]
+        linetowrite += " & " + ("*" if yesorno == no and vseq else "") + vseq
     linetowrite += " \\\\" + ("*" if withstar else "") + " \n"
     linetowrite = "    " + linetowrite.strip(" & ")
     return linetowrite
@@ -59,10 +60,10 @@ def writeliststofile(lang, frontorback, yesorno, lists):
 
     with io.open(filename, "w") as outfile:
         for idx in range(maxlen2):
-            outfile.write(buildline(lists[2], idx, withstar=True))
+            outfile.write(buildline(yesorno, lists[2], idx, withstar=True))
         outfile.write("    \\midrule\n")
         for idx in range(maxlen3):
-            outfile.write(buildline(lists[3], idx))
+            outfile.write(buildline(yesorno, lists[3], idx))
         outfile.write("    \\bottomrule\n")
 
 

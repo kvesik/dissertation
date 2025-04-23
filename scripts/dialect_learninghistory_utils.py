@@ -6,10 +6,10 @@ import statistics
 from itertools import product
 
 HISTORYFILES = [
-    # "../sim_outs/20240507_GLA_outputs/T_M100_sg20_Fi894_python_OTSoft-PDDP-Fin_GLA/Fi894 - OTSoft-PDDP-Fin_GLA_HISTORY5000.txt",
-    "../sim_outs/20240507_GLA_outputs/T_Mgen4.100.100fs_mg2_fs_sg20_Fi894_python_OTSoft-PDDP-Fin_GLA/Fi894 - OTSoft-PDDP-Fin_GLA_HISTORY5000.txt",
-    "../sim_outs/20240507_GLA_outputs/T_Mgen4.100.100fs_mg2_fs_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NE894 - OTSoft-PDDP-NEst_GLA_HISTORY5000.txt",
-    "../sim_outs/20240507_GLA_outputs/T_Mgen4.100.100fs_mg2_fs_sg20_NS894_python_OTSoft-PDDP-NSeto_GLA/NS894 - OTSoft-PDDP-NSeto_GLA_HISTORY5000.txt",
+    "../sim_outs/20240507_GLA_outputs/T_M100_mg2_fs_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NE894 - OTSoft-PDDP-NEst_GLA_HISTORY5000.txt",
+    # "../sim_outs/20240507_GLA_outputs/T_Mgen4.100.100fs_mg2_fs_sg20_Fi894_python_OTSoft-PDDP-Fin_GLA/Fi894 - OTSoft-PDDP-Fin_GLA_HISTORY5000.txt",
+    # "../sim_outs/20240507_GLA_outputs/T_Mgen4.100.100fs_mg2_fs_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NE894 - OTSoft-PDDP-NEst_GLA_HISTORY5000.txt",
+    # "../sim_outs/20240507_GLA_outputs/T_Mgen4.100.100fs_mg2_fs_sg20_NS894_python_OTSoft-PDDP-NSeto_GLA/NS894 - OTSoft-PDDP-NSeto_GLA_HISTORY5000.txt",
     # "../sim_outs/20240507_GLA_outputs/T_M100_sg20_NS894_python_OTSoft-PDDP-NSeto_GLA/NS894 - OTSoft-PDDP-NSeto_GLA_HISTORY5000.txt",
     # "K407p - OT_Soft_KE_iFBfb_forGLA_cat_starBQP2cons_no2xcounts_HISTORY50000.txt",
     # "../sim_outs/20240507_GLA_outputs/T_M100_sg20_NE894_python_OTSoft-PDDP-NEst_GLA/NE894 - OTSoft-PDDP-NEst_GLA_HISTORY5000.txt",

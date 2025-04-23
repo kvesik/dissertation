@@ -1,2 +1,2 @@
-# dissertation
-work, resources, scripts related to my research in typology and acquisition of Balto-Finnic languages
+# Gradual Error-Driven Learning and Typology of Finnic Vowel Interactions
+Welcome! This repo contains work, data, resources, and scripts related to my dissertation research in typology and learnability of vowel patterns in Finnic languages. If you are looking for my Python implementation of the GLA-type learner I describe in the dissertation, you can find it [here]([url](https://github.com/kvesik/dissertation/blob/main/scripts/gla_otsoft_supplement.py)).
